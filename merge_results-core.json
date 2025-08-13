@@ -11,7 +11,6 @@
     "proof_kind": "Contract",
     "time": 2170,
     "props": 161,
-    "with_contract": true,
     "func": {
       "name": "alloc::layout::Layout::align_to",
       "safe": "safe"
@@ -24,7 +23,6 @@
     "proof_kind": "Contract",
     "time": 773,
     "props": 137,
-    "with_contract": true,
     "func": {
       "name": "alloc::layout::Layout::array",
       "safe": "safe"
@@ -37,7 +35,6 @@
     "proof_kind": "Contract",
     "time": 356,
     "props": 87,
-    "with_contract": true,
     "func": {
       "name": "alloc::layout::Layout::dangling",
       "safe": "safe"
@@ -50,7 +47,6 @@
     "proof_kind": "Contract",
     "time": 4601,
     "props": 208,
-    "with_contract": true,
     "func": {
       "name": "alloc::layout::Layout::extend",
       "safe": "safe"
@@ -63,7 +59,6 @@
     "proof_kind": "Contract",
     "time": 1122,
     "props": 154,
-    "with_contract": true,
     "func": {
       "name": "alloc::layout::Layout::extend_packed",
       "safe": "safe"
@@ -76,7 +71,6 @@
     "proof_kind": "Contract",
     "time": 539,
     "props": 151,
-    "with_contract": true,
     "func": {
       "name": "alloc::layout::Layout::for_value",
       "safe": "safe abstraction"
@@ -89,7 +83,6 @@
     "proof_kind": "Contract",
     "time": 563,
     "props": 147,
-    "with_contract": true,
     "func": {
       "name": "alloc::layout::Layout::for_value_raw",
       "safe": "unsafe"
@@ -102,7 +95,6 @@
     "proof_kind": "Contract",
     "time": 135,
     "props": 68,
-    "with_contract": true,
     "func": {
       "name": "alloc::layout::Layout::new",
       "safe": "safe abstraction"
@@ -115,7 +107,6 @@
     "proof_kind": "Contract",
     "time": 2325,
     "props": 151,
-    "with_contract": true,
     "func": {
       "name": "alloc::layout::Layout::pad_to_align",
       "safe": "safe abstraction"
@@ -128,7 +119,6 @@
     "proof_kind": "Contract",
     "time": 628,
     "props": 123,
-    "with_contract": true,
     "func": {
       "name": "alloc::layout::Layout::padding_needed_for",
       "safe": "safe"
@@ -141,7 +131,6 @@
     "proof_kind": "Contract",
     "time": 5618,
     "props": 210,
-    "with_contract": true,
     "func": {
       "name": "alloc::layout::Layout::repeat",
       "safe": "safe"
@@ -154,7 +143,6 @@
     "proof_kind": "Contract",
     "time": 3469,
     "props": 163,
-    "with_contract": true,
     "func": {
       "name": "alloc::layout::Layout::repeat_packed",
       "safe": "safe"
@@ -190,7 +178,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f128::i128::check_float_to_int_unchecked",
     "time": 106,
     "props": 49,
-    "with_contract": true,
     "func": {
       "name": "f128::<impl f128>::to_int_unchecked",
       "safe": "unsafe"
@@ -207,7 +194,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f128::i16::check_float_to_int_unchecked",
     "time": 101,
     "props": 49,
-    "with_contract": true,
     "func": {
       "name": "f128::<impl f128>::to_int_unchecked",
       "safe": "unsafe"
@@ -224,7 +210,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f128::i32::check_float_to_int_unchecked",
     "time": 73,
     "props": 49,
-    "with_contract": true,
     "func": {
       "name": "f128::<impl f128>::to_int_unchecked",
       "safe": "unsafe"
@@ -241,7 +226,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f128::i64::check_float_to_int_unchecked",
     "time": 104,
     "props": 49,
-    "with_contract": true,
     "func": {
       "name": "f128::<impl f128>::to_int_unchecked",
       "safe": "unsafe"
@@ -258,7 +242,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f128::i8::check_float_to_int_unchecked",
     "time": 115,
     "props": 49,
-    "with_contract": true,
     "func": {
       "name": "f128::<impl f128>::to_int_unchecked",
       "safe": "unsafe"
@@ -275,7 +258,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f128::isize::check_float_to_int_unchecked",
     "time": 70,
     "props": 49,
-    "with_contract": true,
     "func": {
       "name": "f128::<impl f128>::to_int_unchecked",
       "safe": "unsafe"
@@ -292,7 +274,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f128::u128::check_float_to_int_unchecked",
     "time": 3307,
     "props": 49,
-    "with_contract": true,
     "func": {
       "name": "f128::<impl f128>::to_int_unchecked",
       "safe": "unsafe"
@@ -309,7 +290,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f128::u16::check_float_to_int_unchecked",
     "time": 3225,
     "props": 49,
-    "with_contract": true,
     "func": {
       "name": "f128::<impl f128>::to_int_unchecked",
       "safe": "unsafe"
@@ -326,7 +306,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f128::u32::check_float_to_int_unchecked",
     "time": 3213,
     "props": 49,
-    "with_contract": true,
     "func": {
       "name": "f128::<impl f128>::to_int_unchecked",
       "safe": "unsafe"
@@ -343,7 +322,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f128::u64::check_float_to_int_unchecked",
     "time": 3171,
     "props": 49,
-    "with_contract": true,
     "func": {
       "name": "f128::<impl f128>::to_int_unchecked",
       "safe": "unsafe"
@@ -360,7 +338,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f128::u8::check_float_to_int_unchecked",
     "time": 3141,
     "props": 49,
-    "with_contract": true,
     "func": {
       "name": "f128::<impl f128>::to_int_unchecked",
       "safe": "unsafe"
@@ -377,7 +354,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f128::usize::check_float_to_int_unchecked",
     "time": 3166,
     "props": 49,
-    "with_contract": true,
     "func": {
       "name": "f128::<impl f128>::to_int_unchecked",
       "safe": "unsafe"
@@ -394,7 +370,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f16::i128::check_float_to_int_unchecked",
     "time": 62,
     "props": 49,
-    "with_contract": true,
     "func": {
       "name": "f16::<impl f16>::to_int_unchecked",
       "safe": "unsafe"
@@ -411,7 +386,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f16::i16::check_float_to_int_unchecked",
     "time": 98,
     "props": 49,
-    "with_contract": true,
     "func": {
       "name": "f16::<impl f16>::to_int_unchecked",
       "safe": "unsafe"
@@ -428,7 +402,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f16::i32::check_float_to_int_unchecked",
     "time": 62,
     "props": 49,
-    "with_contract": true,
     "func": {
       "name": "f16::<impl f16>::to_int_unchecked",
       "safe": "unsafe"
@@ -445,7 +418,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f16::i64::check_float_to_int_unchecked",
     "time": 61,
     "props": 49,
-    "with_contract": true,
     "func": {
       "name": "f16::<impl f16>::to_int_unchecked",
       "safe": "unsafe"
@@ -462,7 +434,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f16::i8::check_float_to_int_unchecked",
     "time": 88,
     "props": 49,
-    "with_contract": true,
     "func": {
       "name": "f16::<impl f16>::to_int_unchecked",
       "safe": "unsafe"
@@ -479,7 +450,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f16::isize::check_float_to_int_unchecked",
     "time": 75,
     "props": 49,
-    "with_contract": true,
     "func": {
       "name": "f16::<impl f16>::to_int_unchecked",
       "safe": "unsafe"
@@ -496,7 +466,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f16::u128::check_float_to_int_unchecked",
     "time": 66,
     "props": 49,
-    "with_contract": true,
     "func": {
       "name": "f16::<impl f16>::to_int_unchecked",
       "safe": "unsafe"
@@ -513,7 +482,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f16::u16::check_float_to_int_unchecked",
     "time": 61,
     "props": 49,
-    "with_contract": true,
     "func": {
       "name": "f16::<impl f16>::to_int_unchecked",
       "safe": "unsafe"
@@ -530,7 +498,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f16::u32::check_float_to_int_unchecked",
     "time": 62,
     "props": 49,
-    "with_contract": true,
     "func": {
       "name": "f16::<impl f16>::to_int_unchecked",
       "safe": "unsafe"
@@ -547,7 +514,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f16::u64::check_float_to_int_unchecked",
     "time": 91,
     "props": 49,
-    "with_contract": true,
     "func": {
       "name": "f16::<impl f16>::to_int_unchecked",
       "safe": "unsafe"
@@ -564,7 +530,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f16::u8::check_float_to_int_unchecked",
     "time": 98,
     "props": 49,
-    "with_contract": true,
     "func": {
       "name": "f16::<impl f16>::to_int_unchecked",
       "safe": "unsafe"
@@ -581,7 +546,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f16::usize::check_float_to_int_unchecked",
     "time": 91,
     "props": 49,
-    "with_contract": true,
     "func": {
       "name": "f16::<impl f16>::to_int_unchecked",
       "safe": "unsafe"
@@ -598,7 +562,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f32::i128::check_float_to_int_unchecked",
     "time": 90,
     "props": 48,
-    "with_contract": true,
     "func": {
       "name": "f32::<impl f32>::to_int_unchecked",
       "safe": "unsafe"
@@ -615,7 +578,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f32::i16::check_float_to_int_unchecked",
     "time": 87,
     "props": 48,
-    "with_contract": true,
     "func": {
       "name": "f32::<impl f32>::to_int_unchecked",
       "safe": "unsafe"
@@ -632,7 +594,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f32::i32::check_float_to_int_unchecked",
     "time": 88,
     "props": 48,
-    "with_contract": true,
     "func": {
       "name": "f32::<impl f32>::to_int_unchecked",
       "safe": "unsafe"
@@ -649,7 +610,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f32::i64::check_float_to_int_unchecked",
     "time": 88,
     "props": 48,
-    "with_contract": true,
     "func": {
       "name": "f32::<impl f32>::to_int_unchecked",
       "safe": "unsafe"
@@ -666,7 +626,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f32::i8::check_float_to_int_unchecked",
     "time": 90,
     "props": 48,
-    "with_contract": true,
     "func": {
       "name": "f32::<impl f32>::to_int_unchecked",
       "safe": "unsafe"
@@ -683,7 +642,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f32::isize::check_float_to_int_unchecked",
     "time": 82,
     "props": 48,
-    "with_contract": true,
     "func": {
       "name": "f32::<impl f32>::to_int_unchecked",
       "safe": "unsafe"
@@ -700,7 +658,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f32::u128::check_float_to_int_unchecked",
     "time": 87,
     "props": 48,
-    "with_contract": true,
     "func": {
       "name": "f32::<impl f32>::to_int_unchecked",
       "safe": "unsafe"
@@ -717,7 +674,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f32::u16::check_float_to_int_unchecked",
     "time": 88,
     "props": 48,
-    "with_contract": true,
     "func": {
       "name": "f32::<impl f32>::to_int_unchecked",
       "safe": "unsafe"
@@ -734,7 +690,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f32::u32::check_float_to_int_unchecked",
     "time": 62,
     "props": 48,
-    "with_contract": true,
     "func": {
       "name": "f32::<impl f32>::to_int_unchecked",
       "safe": "unsafe"
@@ -751,7 +706,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f32::u64::check_float_to_int_unchecked",
     "time": 59,
     "props": 48,
-    "with_contract": true,
     "func": {
       "name": "f32::<impl f32>::to_int_unchecked",
       "safe": "unsafe"
@@ -768,7 +722,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f32::u8::check_float_to_int_unchecked",
     "time": 61,
     "props": 48,
-    "with_contract": true,
     "func": {
       "name": "f32::<impl f32>::to_int_unchecked",
       "safe": "unsafe"
@@ -785,7 +738,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f32::usize::check_float_to_int_unchecked",
     "time": 87,
     "props": 48,
-    "with_contract": true,
     "func": {
       "name": "f32::<impl f32>::to_int_unchecked",
       "safe": "unsafe"
@@ -802,7 +754,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f64::i128::check_float_to_int_unchecked",
     "time": 80,
     "props": 48,
-    "with_contract": true,
     "func": {
       "name": "f64::<impl f64>::to_int_unchecked",
       "safe": "unsafe"
@@ -819,7 +770,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f64::i16::check_float_to_int_unchecked",
     "time": 91,
     "props": 48,
-    "with_contract": true,
     "func": {
       "name": "f64::<impl f64>::to_int_unchecked",
       "safe": "unsafe"
@@ -836,7 +786,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f64::i32::check_float_to_int_unchecked",
     "time": 99,
     "props": 48,
-    "with_contract": true,
     "func": {
       "name": "f64::<impl f64>::to_int_unchecked",
       "safe": "unsafe"
@@ -853,7 +802,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f64::i64::check_float_to_int_unchecked",
     "time": 69,
     "props": 48,
-    "with_contract": true,
     "func": {
       "name": "f64::<impl f64>::to_int_unchecked",
       "safe": "unsafe"
@@ -870,7 +818,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f64::i8::check_float_to_int_unchecked",
     "time": 86,
     "props": 48,
-    "with_contract": true,
     "func": {
       "name": "f64::<impl f64>::to_int_unchecked",
       "safe": "unsafe"
@@ -887,7 +834,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f64::isize::check_float_to_int_unchecked",
     "time": 59,
     "props": 48,
-    "with_contract": true,
     "func": {
       "name": "f64::<impl f64>::to_int_unchecked",
       "safe": "unsafe"
@@ -904,7 +850,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f64::u128::check_float_to_int_unchecked",
     "time": 60,
     "props": 48,
-    "with_contract": true,
     "func": {
       "name": "f64::<impl f64>::to_int_unchecked",
       "safe": "unsafe"
@@ -921,7 +866,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f64::u16::check_float_to_int_unchecked",
     "time": 89,
     "props": 48,
-    "with_contract": true,
     "func": {
       "name": "f64::<impl f64>::to_int_unchecked",
       "safe": "unsafe"
@@ -938,7 +882,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f64::u32::check_float_to_int_unchecked",
     "time": 60,
     "props": 48,
-    "with_contract": true,
     "func": {
       "name": "f64::<impl f64>::to_int_unchecked",
       "safe": "unsafe"
@@ -955,7 +898,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f64::u64::check_float_to_int_unchecked",
     "time": 59,
     "props": 48,
-    "with_contract": true,
     "func": {
       "name": "f64::<impl f64>::to_int_unchecked",
       "safe": "unsafe"
@@ -972,7 +914,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f64::u8::check_float_to_int_unchecked",
     "time": 85,
     "props": 48,
-    "with_contract": true,
     "func": {
       "name": "f64::<impl f64>::to_int_unchecked",
       "safe": "unsafe"
@@ -989,7 +930,6 @@
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f64::usize::check_float_to_int_unchecked",
     "time": 62,
     "props": 48,
-    "with_contract": true,
     "func": {
       "name": "f64::<impl f64>::to_int_unchecked",
       "safe": "unsafe"
@@ -1883,7 +1823,6 @@
     "proof_kind": "Contract",
     "time": 135751,
     "props": 322,
-    "with_contract": true,
     "func": {
       "name": "ffi::c_str::CStr::from_bytes_with_nul_unchecked",
       "safe": "unsafe"
@@ -1896,7 +1835,6 @@
     "proof_kind": "Contract",
     "time": 11461,
     "props": 245,
-    "with_contract": true,
     "func": {
       "name": "ffi::c_str::CStr::from_ptr",
       "safe": "unsafe"
@@ -1915,7 +1853,6 @@
     "proof_kind": "Contract",
     "time": 1445,
     "props": 104,
-    "with_contract": true,
     "func": {
       "name": "ffi::c_str::strlen",
       "safe": "unsafe"
@@ -2198,7 +2135,6 @@
     "proof_kind": "Contract",
     "time": 12033,
     "props": 517,
-    "with_contract": true,
     "func": {
       "name": "intrinsics::typed_swap_nonoverlapping",
       "safe": "unsafe"
@@ -2211,7 +2147,6 @@
     "proof_kind": "Contract",
     "time": 9286,
     "props": 462,
-    "with_contract": true,
     "func": {
       "name": "intrinsics::typed_swap_nonoverlapping",
       "safe": "unsafe"
@@ -2224,7 +2159,6 @@
     "proof_kind": "Contract",
     "time": 4318,
     "props": 443,
-    "with_contract": true,
     "func": {
       "name": "intrinsics::typed_swap_nonoverlapping",
       "safe": "unsafe"
@@ -3071,7 +3005,6 @@
     "proof_kind": "Standard",
     "time": 223,
     "props": 59,
-    "with_contract": false,
     "func": {
       "name": "intrinsics::transmute_unchecked",
       "safe": "unsafe"
@@ -3084,7 +3017,6 @@
     "proof_kind": "Standard",
     "time": 297,
     "props": 59,
-    "with_contract": false,
     "func": {
       "name": "intrinsics::transmute_unchecked",
       "safe": "unsafe"
@@ -3097,7 +3029,6 @@
     "proof_kind": "Standard",
     "time": 444,
     "props": 129,
-    "with_contract": false,
     "func": {
       "name": "intrinsics::transmute_unchecked",
       "safe": "unsafe"
@@ -3110,7 +3041,6 @@
     "proof_kind": "Standard",
     "time": 495,
     "props": 129,
-    "with_contract": false,
     "func": {
       "name": "intrinsics::transmute_unchecked",
       "safe": "unsafe"
@@ -3123,7 +3053,6 @@
     "proof_kind": "Standard",
     "time": 628,
     "props": 129,
-    "with_contract": false,
     "func": {
       "name": "intrinsics::transmute_unchecked",
       "safe": "unsafe"
@@ -3136,7 +3065,6 @@
     "proof_kind": "Standard",
     "time": 1503,
     "props": 66,
-    "with_contract": false,
     "func": {
       "name": "intrinsics::transmute_unchecked",
       "safe": "unsafe"
@@ -3149,7 +3077,6 @@
     "proof_kind": "Standard",
     "time": 1561,
     "props": 60,
-    "with_contract": false,
     "func": {
       "name": "intrinsics::transmute_unchecked",
       "safe": "unsafe"
@@ -3162,7 +3089,6 @@
     "proof_kind": "Standard",
     "time": 1004,
     "props": 60,
-    "with_contract": false,
     "func": {
       "name": "intrinsics::transmute_unchecked",
       "safe": "unsafe"
@@ -3175,7 +3101,6 @@
     "proof_kind": "Standard",
     "time": 1354,
     "props": 60,
-    "with_contract": false,
     "func": {
       "name": "intrinsics::transmute_unchecked",
       "safe": "unsafe"
@@ -3188,7 +3113,6 @@
     "proof_kind": "Standard",
     "time": 1547,
     "props": 60,
-    "with_contract": false,
     "func": {
       "name": "intrinsics::transmute_unchecked",
       "safe": "unsafe"
@@ -3201,7 +3125,6 @@
     "proof_kind": "Standard",
     "time": 318,
     "props": 59,
-    "with_contract": false,
     "func": {
       "name": "intrinsics::transmute_unchecked",
       "safe": "unsafe"
@@ -3214,7 +3137,6 @@
     "proof_kind": "Standard",
     "time": 408,
     "props": 59,
-    "with_contract": false,
     "func": {
       "name": "intrinsics::transmute_unchecked",
       "safe": "unsafe"
@@ -3227,7 +3149,6 @@
     "proof_kind": "Standard",
     "time": 484,
     "props": 65,
-    "with_contract": false,
     "func": {
       "name": "intrinsics::transmute_unchecked",
       "safe": "unsafe"
@@ -3240,7 +3161,6 @@
     "proof_kind": "Standard",
     "time": 522,
     "props": 59,
-    "with_contract": false,
     "func": {
       "name": "intrinsics::transmute_unchecked",
       "safe": "unsafe"
@@ -3253,7 +3173,6 @@
     "proof_kind": "Standard",
     "time": 526,
     "props": 59,
-    "with_contract": false,
     "func": {
       "name": "intrinsics::transmute_unchecked",
       "safe": "unsafe"
@@ -3266,7 +3185,6 @@
     "proof_kind": "Standard",
     "time": 567,
     "props": 59,
-    "with_contract": false,
     "func": {
       "name": "intrinsics::transmute_unchecked",
       "safe": "unsafe"
@@ -3279,7 +3197,6 @@
     "proof_kind": "Standard",
     "time": 554,
     "props": 59,
-    "with_contract": false,
     "func": {
       "name": "intrinsics::transmute_unchecked",
       "safe": "unsafe"
@@ -3292,7 +3209,6 @@
     "proof_kind": "Standard",
     "time": 522,
     "props": 65,
-    "with_contract": false,
     "func": {
       "name": "intrinsics::transmute_unchecked",
       "safe": "unsafe"
@@ -3305,7 +3221,6 @@
     "proof_kind": "Standard",
     "time": 467,
     "props": 59,
-    "with_contract": false,
     "func": {
       "name": "intrinsics::transmute_unchecked",
       "safe": "unsafe"
@@ -3318,7 +3233,6 @@
     "proof_kind": "Standard",
     "time": 549,
     "props": 59,
-    "with_contract": false,
     "func": {
       "name": "intrinsics::transmute_unchecked",
       "safe": "unsafe"
@@ -3331,7 +3245,6 @@
     "proof_kind": "Standard",
     "time": 373,
     "props": 59,
-    "with_contract": false,
     "func": {
       "name": "intrinsics::transmute_unchecked",
       "safe": "unsafe"
@@ -3344,7 +3257,6 @@
     "proof_kind": "Standard",
     "time": 410,
     "props": 65,
-    "with_contract": false,
     "func": {
       "name": "intrinsics::transmute_unchecked",
       "safe": "unsafe"
@@ -3357,7 +3269,6 @@
     "proof_kind": "Standard",
     "time": 575,
     "props": 59,
-    "with_contract": false,
     "func": {
       "name": "intrinsics::transmute_unchecked",
       "safe": "unsafe"
@@ -3370,7 +3281,6 @@
     "proof_kind": "Standard",
     "time": 449,
     "props": 59,
-    "with_contract": false,
     "func": {
       "name": "intrinsics::transmute_unchecked",
       "safe": "unsafe"
@@ -3383,7 +3293,6 @@
     "proof_kind": "Standard",
     "time": 446,
     "props": 59,
-    "with_contract": false,
     "func": {
       "name": "intrinsics::transmute_unchecked",
       "safe": "unsafe"
@@ -3396,7 +3305,6 @@
     "proof_kind": "Standard",
     "time": 541,
     "props": 59,
-    "with_contract": false,
     "func": {
       "name": "intrinsics::transmute_unchecked",
       "safe": "unsafe"
@@ -3409,7 +3317,6 @@
     "proof_kind": "Standard",
     "time": 596,
     "props": 65,
-    "with_contract": false,
     "func": {
       "name": "intrinsics::transmute_unchecked",
       "safe": "unsafe"
@@ -3422,7 +3329,6 @@
     "proof_kind": "Standard",
     "time": 490,
     "props": 59,
-    "with_contract": false,
     "func": {
       "name": "intrinsics::transmute_unchecked",
       "safe": "unsafe"
@@ -4041,7 +3947,6 @@
     "proof_kind": "Contract",
     "time": 950,
     "props": 343,
-    "with_contract": true,
     "func": {
       "name": "mem::swap",
       "safe": "safe abstraction"
@@ -4054,7 +3959,6 @@
     "proof_kind": "Contract",
     "time": 907,
     "props": 275,
-    "with_contract": true,
     "func": {
       "name": "mem::swap",
       "safe": "safe abstraction"
@@ -4067,7 +3971,6 @@
     "proof_kind": "Contract",
     "time": 1059,
     "props": 119,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<i128>::unchecked_mul",
       "safe": "unsafe"
@@ -4080,7 +3983,6 @@
     "proof_kind": "Contract",
     "time": 1322,
     "props": 117,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<i128>::unchecked_mul",
       "safe": "unsafe"
@@ -4093,7 +3995,6 @@
     "proof_kind": "Contract",
     "time": 1242,
     "props": 113,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<i128>::unchecked_mul",
       "safe": "unsafe"
@@ -4106,7 +4007,6 @@
     "proof_kind": "Contract",
     "time": 935,
     "props": 111,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<i128>::unchecked_mul",
       "safe": "unsafe"
@@ -4119,7 +4019,6 @@
     "proof_kind": "Contract",
     "time": 11109,
     "props": 109,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<i128>::unchecked_mul",
       "safe": "unsafe"
@@ -4132,7 +4031,6 @@
     "proof_kind": "Contract",
     "time": 275,
     "props": 119,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<i32>::unchecked_mul",
       "safe": "unsafe"
@@ -4145,7 +4043,6 @@
     "proof_kind": "Contract",
     "time": 182,
     "props": 117,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<i32>::unchecked_mul",
       "safe": "unsafe"
@@ -4158,7 +4055,6 @@
     "proof_kind": "Contract",
     "time": 269,
     "props": 113,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<i32>::unchecked_mul",
       "safe": "unsafe"
@@ -4171,7 +4067,6 @@
     "proof_kind": "Contract",
     "time": 179,
     "props": 111,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<i32>::unchecked_mul",
       "safe": "unsafe"
@@ -4184,7 +4079,6 @@
     "proof_kind": "Contract",
     "time": 573,
     "props": 109,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<i32>::unchecked_mul",
       "safe": "unsafe"
@@ -4197,7 +4091,6 @@
     "proof_kind": "Contract",
     "time": 387,
     "props": 119,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<i64>::unchecked_mul",
       "safe": "unsafe"
@@ -4210,7 +4103,6 @@
     "proof_kind": "Contract",
     "time": 521,
     "props": 117,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<i64>::unchecked_mul",
       "safe": "unsafe"
@@ -4223,7 +4115,6 @@
     "proof_kind": "Contract",
     "time": 415,
     "props": 113,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<i64>::unchecked_mul",
       "safe": "unsafe"
@@ -4236,7 +4127,6 @@
     "proof_kind": "Contract",
     "time": 485,
     "props": 111,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<i64>::unchecked_mul",
       "safe": "unsafe"
@@ -4249,7 +4139,6 @@
     "proof_kind": "Contract",
     "time": 2622,
     "props": 109,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<i64>::unchecked_mul",
       "safe": "unsafe"
@@ -4262,7 +4151,6 @@
     "proof_kind": "Contract",
     "time": 491,
     "props": 119,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<isize>::unchecked_mul",
       "safe": "unsafe"
@@ -4275,7 +4163,6 @@
     "proof_kind": "Contract",
     "time": 519,
     "props": 117,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<isize>::unchecked_mul",
       "safe": "unsafe"
@@ -4288,7 +4175,6 @@
     "proof_kind": "Contract",
     "time": 341,
     "props": 113,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<isize>::unchecked_mul",
       "safe": "unsafe"
@@ -4301,7 +4187,6 @@
     "proof_kind": "Contract",
     "time": 324,
     "props": 111,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<isize>::unchecked_mul",
       "safe": "unsafe"
@@ -4314,7 +4199,6 @@
     "proof_kind": "Contract",
     "time": 2884,
     "props": 109,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<isize>::unchecked_mul",
       "safe": "unsafe"
@@ -4327,7 +4211,6 @@
     "proof_kind": "Contract",
     "time": 1991,
     "props": 113,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<u128>::unchecked_mul",
       "safe": "unsafe"
@@ -4340,7 +4223,6 @@
     "proof_kind": "Contract",
     "time": 562,
     "props": 111,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<u128>::unchecked_mul",
       "safe": "unsafe"
@@ -4353,7 +4235,6 @@
     "proof_kind": "Contract",
     "time": 1655,
     "props": 109,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<u128>::unchecked_mul",
       "safe": "unsafe"
@@ -4366,7 +4247,6 @@
     "proof_kind": "Contract",
     "time": 162,
     "props": 113,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<u32>::unchecked_mul",
       "safe": "unsafe"
@@ -4379,7 +4259,6 @@
     "proof_kind": "Contract",
     "time": 155,
     "props": 111,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<u32>::unchecked_mul",
       "safe": "unsafe"
@@ -4392,7 +4271,6 @@
     "proof_kind": "Contract",
     "time": 163,
     "props": 109,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<u32>::unchecked_mul",
       "safe": "unsafe"
@@ -4405,7 +4283,6 @@
     "proof_kind": "Contract",
     "time": 428,
     "props": 113,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<u64>::unchecked_mul",
       "safe": "unsafe"
@@ -4418,7 +4295,6 @@
     "proof_kind": "Contract",
     "time": 240,
     "props": 111,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<u64>::unchecked_mul",
       "safe": "unsafe"
@@ -4431,7 +4307,6 @@
     "proof_kind": "Contract",
     "time": 301,
     "props": 109,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<u64>::unchecked_mul",
       "safe": "unsafe"
@@ -4444,7 +4319,6 @@
     "proof_kind": "Contract",
     "time": 462,
     "props": 113,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<usize>::unchecked_mul",
       "safe": "unsafe"
@@ -4457,7 +4331,6 @@
     "proof_kind": "Contract",
     "time": 287,
     "props": 111,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<usize>::unchecked_mul",
       "safe": "unsafe"
@@ -4470,7 +4343,6 @@
     "proof_kind": "Contract",
     "time": 324,
     "props": 109,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<usize>::unchecked_mul",
       "safe": "unsafe"
@@ -4698,7 +4570,6 @@
     "harness": "num::nonzero::verify::nonzero_check_from_mut_unchecked_i128",
     "time": 1096,
     "props": 152,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<T>::from_mut_unchecked",
       "safe": "unsafe"
@@ -4709,7 +4580,6 @@
     "harness": "num::nonzero::verify::nonzero_check_from_mut_unchecked_i16",
     "time": 428,
     "props": 152,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<T>::from_mut_unchecked",
       "safe": "unsafe"
@@ -4720,7 +4590,6 @@
     "harness": "num::nonzero::verify::nonzero_check_from_mut_unchecked_i32",
     "time": 372,
     "props": 152,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<T>::from_mut_unchecked",
       "safe": "unsafe"
@@ -4731,7 +4600,6 @@
     "harness": "num::nonzero::verify::nonzero_check_from_mut_unchecked_i64",
     "time": 676,
     "props": 152,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<T>::from_mut_unchecked",
       "safe": "unsafe"
@@ -4742,7 +4610,6 @@
     "harness": "num::nonzero::verify::nonzero_check_from_mut_unchecked_i8",
     "time": 394,
     "props": 152,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<T>::from_mut_unchecked",
       "safe": "unsafe"
@@ -4753,7 +4620,6 @@
     "harness": "num::nonzero::verify::nonzero_check_from_mut_unchecked_isize",
     "time": 686,
     "props": 152,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<T>::from_mut_unchecked",
       "safe": "unsafe"
@@ -4764,7 +4630,6 @@
     "harness": "num::nonzero::verify::nonzero_check_from_mut_unchecked_u128",
     "time": 994,
     "props": 152,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<T>::from_mut_unchecked",
       "safe": "unsafe"
@@ -4775,7 +4640,6 @@
     "harness": "num::nonzero::verify::nonzero_check_from_mut_unchecked_u16",
     "time": 439,
     "props": 152,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<T>::from_mut_unchecked",
       "safe": "unsafe"
@@ -4786,7 +4650,6 @@
     "harness": "num::nonzero::verify::nonzero_check_from_mut_unchecked_u32",
     "time": 516,
     "props": 152,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<T>::from_mut_unchecked",
       "safe": "unsafe"
@@ -4797,7 +4660,6 @@
     "harness": "num::nonzero::verify::nonzero_check_from_mut_unchecked_u64",
     "time": 697,
     "props": 152,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<T>::from_mut_unchecked",
       "safe": "unsafe"
@@ -4808,7 +4670,6 @@
     "harness": "num::nonzero::verify::nonzero_check_from_mut_unchecked_u8",
     "time": 403,
     "props": 152,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<T>::from_mut_unchecked",
       "safe": "unsafe"
@@ -4819,7 +4680,6 @@
     "harness": "num::nonzero::verify::nonzero_check_from_mut_unchecked_usize",
     "time": 459,
     "props": 152,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<T>::from_mut_unchecked",
       "safe": "unsafe"
@@ -4975,7 +4835,6 @@
     "proof_kind": "Contract",
     "time": 14881,
     "props": 106,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<i16>::unchecked_mul",
       "safe": "unsafe"
@@ -4988,7 +4847,6 @@
     "proof_kind": "Contract",
     "time": 375,
     "props": 106,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<i8>::unchecked_mul",
       "safe": "unsafe"
@@ -5001,7 +4859,6 @@
     "proof_kind": "Contract",
     "time": 6430,
     "props": 106,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<u16>::unchecked_mul",
       "safe": "unsafe"
@@ -5014,7 +4871,6 @@
     "proof_kind": "Contract",
     "time": 209,
     "props": 106,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<u8>::unchecked_mul",
       "safe": "unsafe"
@@ -5027,7 +4883,6 @@
     "proof_kind": "Contract",
     "time": 977,
     "props": 189,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<T>::new_unchecked",
       "safe": "unsafe"
@@ -5040,7 +4895,6 @@
     "proof_kind": "Contract",
     "time": 264,
     "props": 189,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<T>::new_unchecked",
       "safe": "unsafe"
@@ -5053,7 +4907,6 @@
     "proof_kind": "Contract",
     "time": 356,
     "props": 189,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<T>::new_unchecked",
       "safe": "unsafe"
@@ -5066,7 +4919,6 @@
     "proof_kind": "Contract",
     "time": 481,
     "props": 189,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<T>::new_unchecked",
       "safe": "unsafe"
@@ -5079,7 +4931,6 @@
     "proof_kind": "Contract",
     "time": 292,
     "props": 189,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<T>::new_unchecked",
       "safe": "unsafe"
@@ -5092,7 +4943,6 @@
     "proof_kind": "Contract",
     "time": 481,
     "props": 189,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<T>::new_unchecked",
       "safe": "unsafe"
@@ -5105,7 +4955,6 @@
     "proof_kind": "Contract",
     "time": 891,
     "props": 189,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<T>::new_unchecked",
       "safe": "unsafe"
@@ -5118,7 +4967,6 @@
     "proof_kind": "Contract",
     "time": 286,
     "props": 189,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<T>::new_unchecked",
       "safe": "unsafe"
@@ -5131,7 +4979,6 @@
     "proof_kind": "Contract",
     "time": 413,
     "props": 189,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<T>::new_unchecked",
       "safe": "unsafe"
@@ -5144,7 +4991,6 @@
     "proof_kind": "Contract",
     "time": 442,
     "props": 189,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<T>::new_unchecked",
       "safe": "unsafe"
@@ -5157,7 +5003,6 @@
     "proof_kind": "Contract",
     "time": 247,
     "props": 189,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<T>::new_unchecked",
       "safe": "unsafe"
@@ -5170,7 +5015,6 @@
     "proof_kind": "Contract",
     "time": 527,
     "props": 189,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<T>::new_unchecked",
       "safe": "unsafe"
@@ -5183,7 +5027,6 @@
     "proof_kind": "Contract",
     "time": 230,
     "props": 107,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<u128>::unchecked_add",
       "safe": "unsafe"
@@ -5196,7 +5039,6 @@
     "proof_kind": "Contract",
     "time": 156,
     "props": 107,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<u16>::unchecked_add",
       "safe": "unsafe"
@@ -5209,7 +5051,6 @@
     "proof_kind": "Contract",
     "time": 163,
     "props": 107,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<u32>::unchecked_add",
       "safe": "unsafe"
@@ -5222,7 +5063,6 @@
     "proof_kind": "Contract",
     "time": 183,
     "props": 107,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<u64>::unchecked_add",
       "safe": "unsafe"
@@ -5235,7 +5075,6 @@
     "proof_kind": "Contract",
     "time": 151,
     "props": 107,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<u8>::unchecked_add",
       "safe": "unsafe"
@@ -5248,7 +5087,6 @@
     "proof_kind": "Contract",
     "time": 186,
     "props": 107,
-    "with_contract": true,
     "func": {
       "name": "num::nonzero::NonZero::<usize>::unchecked_add",
       "safe": "unsafe"
@@ -5308,7 +5146,6 @@
     "harness": "num::verify::checked_f128_to_int_unchecked_i128",
     "time": 1548,
     "props": 99,
-    "with_contract": true,
     "func": {
       "name": "f128::<impl f128>::to_int_unchecked",
       "safe": "unsafe"
@@ -5325,7 +5162,6 @@
     "harness": "num::verify::checked_f128_to_int_unchecked_i16",
     "time": 515,
     "props": 99,
-    "with_contract": true,
     "func": {
       "name": "f128::<impl f128>::to_int_unchecked",
       "safe": "unsafe"
@@ -5342,7 +5178,6 @@
     "harness": "num::verify::checked_f128_to_int_unchecked_i32",
     "time": 992,
     "props": 99,
-    "with_contract": true,
     "func": {
       "name": "f128::<impl f128>::to_int_unchecked",
       "safe": "unsafe"
@@ -5359,7 +5194,6 @@
     "harness": "num::verify::checked_f128_to_int_unchecked_i64",
     "time": 1532,
     "props": 99,
-    "with_contract": true,
     "func": {
       "name": "f128::<impl f128>::to_int_unchecked",
       "safe": "unsafe"
@@ -5376,7 +5210,6 @@
     "harness": "num::verify::checked_f128_to_int_unchecked_i8",
     "time": 735,
     "props": 99,
-    "with_contract": true,
     "func": {
       "name": "f128::<impl f128>::to_int_unchecked",
       "safe": "unsafe"
@@ -5393,7 +5226,6 @@
     "harness": "num::verify::checked_f128_to_int_unchecked_isize",
     "time": 982,
     "props": 99,
-    "with_contract": true,
     "func": {
       "name": "f128::<impl f128>::to_int_unchecked",
       "safe": "unsafe"
@@ -5410,7 +5242,6 @@
     "harness": "num::verify::checked_f128_to_int_unchecked_u128",
     "time": 1525,
     "props": 99,
-    "with_contract": true,
     "func": {
       "name": "f128::<impl f128>::to_int_unchecked",
       "safe": "unsafe"
@@ -5427,7 +5258,6 @@
     "harness": "num::verify::checked_f128_to_int_unchecked_u16",
     "time": 608,
     "props": 99,
-    "with_contract": true,
     "func": {
       "name": "f128::<impl f128>::to_int_unchecked",
       "safe": "unsafe"
@@ -5444,7 +5274,6 @@
     "harness": "num::verify::checked_f128_to_int_unchecked_u32",
     "time": 651,
     "props": 99,
-    "with_contract": true,
     "func": {
       "name": "f128::<impl f128>::to_int_unchecked",
       "safe": "unsafe"
@@ -5461,7 +5290,6 @@
     "harness": "num::verify::checked_f128_to_int_unchecked_u64",
     "time": 1256,
     "props": 99,
-    "with_contract": true,
     "func": {
       "name": "f128::<impl f128>::to_int_unchecked",
       "safe": "unsafe"
@@ -5478,7 +5306,6 @@
     "harness": "num::verify::checked_f128_to_int_unchecked_u8",
     "time": 459,
     "props": 99,
-    "with_contract": true,
     "func": {
       "name": "f128::<impl f128>::to_int_unchecked",
       "safe": "unsafe"
@@ -5495,7 +5322,6 @@
     "harness": "num::verify::checked_f128_to_int_unchecked_usize",
     "time": 804,
     "props": 99,
-    "with_contract": true,
     "func": {
       "name": "f128::<impl f128>::to_int_unchecked",
       "safe": "unsafe"
@@ -5512,7 +5338,6 @@
     "harness": "num::verify::checked_f16_to_int_unchecked_i128",
     "time": 749,
     "props": 99,
-    "with_contract": true,
     "func": {
       "name": "f16::<impl f16>::to_int_unchecked",
       "safe": "unsafe"
@@ -5529,7 +5354,6 @@
     "harness": "num::verify::checked_f16_to_int_unchecked_i16",
     "time": 742,
     "props": 99,
-    "with_contract": true,
     "func": {
       "name": "f16::<impl f16>::to_int_unchecked",
       "safe": "unsafe"
@@ -5546,7 +5370,6 @@
     "harness": "num::verify::checked_f16_to_int_unchecked_i32",
     "time": 515,
     "props": 99,
-    "with_contract": true,
     "func": {
       "name": "f16::<impl f16>::to_int_unchecked",
       "safe": "unsafe"
@@ -5563,7 +5386,6 @@
     "harness": "num::verify::checked_f16_to_int_unchecked_i64",
     "time": 636,
     "props": 99,
-    "with_contract": true,
     "func": {
       "name": "f16::<impl f16>::to_int_unchecked",
       "safe": "unsafe"
@@ -5580,7 +5402,6 @@
     "harness": "num::verify::checked_f16_to_int_unchecked_i8",
     "time": 438,
     "props": 99,
-    "with_contract": true,
     "func": {
       "name": "f16::<impl f16>::to_int_unchecked",
       "safe": "unsafe"
@@ -5597,7 +5418,6 @@
     "harness": "num::verify::checked_f16_to_int_unchecked_isize",
     "time": 630,
     "props": 99,
-    "with_contract": true,
     "func": {
       "name": "f16::<impl f16>::to_int_unchecked",
       "safe": "unsafe"
@@ -5614,7 +5434,6 @@
     "harness": "num::verify::checked_f16_to_int_unchecked_u128",
     "time": 460,
     "props": 99,
-    "with_contract": true,
     "func": {
       "name": "f16::<impl f16>::to_int_unchecked",
       "safe": "unsafe"
@@ -5631,7 +5450,6 @@
     "harness": "num::verify::checked_f16_to_int_unchecked_u16",
     "time": 733,
     "props": 99,
-    "with_contract": true,
     "func": {
       "name": "f16::<impl f16>::to_int_unchecked",
       "safe": "unsafe"
@@ -5648,7 +5466,6 @@
     "harness": "num::verify::checked_f16_to_int_unchecked_u32",
     "time": 503,
     "props": 99,
-    "with_contract": true,
     "func": {
       "name": "f16::<impl f16>::to_int_unchecked",
       "safe": "unsafe"
@@ -5665,7 +5482,6 @@
     "harness": "num::verify::checked_f16_to_int_unchecked_u64",
     "time": 730,
     "props": 99,
-    "with_contract": true,
     "func": {
       "name": "f16::<impl f16>::to_int_unchecked",
       "safe": "unsafe"
@@ -5682,7 +5498,6 @@
     "harness": "num::verify::checked_f16_to_int_unchecked_u8",
     "time": 571,
     "props": 99,
-    "with_contract": true,
     "func": {
       "name": "f16::<impl f16>::to_int_unchecked",
       "safe": "unsafe"
@@ -5699,7 +5514,6 @@
     "harness": "num::verify::checked_f16_to_int_unchecked_usize",
     "time": 511,
     "props": 99,
-    "with_contract": true,
     "func": {
       "name": "f16::<impl f16>::to_int_unchecked",
       "safe": "unsafe"
@@ -5716,7 +5530,6 @@
     "harness": "num::verify::checked_f32_to_int_unchecked_i128",
     "time": 943,
     "props": 98,
-    "with_contract": true,
     "func": {
       "name": "f32::<impl f32>::to_int_unchecked",
       "safe": "unsafe"
@@ -5733,7 +5546,6 @@
     "harness": "num::verify::checked_f32_to_int_unchecked_i16",
     "time": 595,
     "props": 98,
-    "with_contract": true,
     "func": {
       "name": "f32::<impl f32>::to_int_unchecked",
       "safe": "unsafe"
@@ -5750,7 +5562,6 @@
     "harness": "num::verify::checked_f32_to_int_unchecked_i32",
     "time": 489,
     "props": 98,
-    "with_contract": true,
     "func": {
       "name": "f32::<impl f32>::to_int_unchecked",
       "safe": "unsafe"
@@ -5767,7 +5578,6 @@
     "harness": "num::verify::checked_f32_to_int_unchecked_i64",
     "time": 846,
     "props": 98,
-    "with_contract": true,
     "func": {
       "name": "f32::<impl f32>::to_int_unchecked",
       "safe": "unsafe"
@@ -5784,7 +5594,6 @@
     "harness": "num::verify::checked_f32_to_int_unchecked_i8",
     "time": 604,
     "props": 98,
-    "with_contract": true,
     "func": {
       "name": "f32::<impl f32>::to_int_unchecked",
       "safe": "unsafe"
@@ -5801,7 +5610,6 @@
     "harness": "num::verify::checked_f32_to_int_unchecked_isize",
     "time": 881,
     "props": 98,
-    "with_contract": true,
     "func": {
       "name": "f32::<impl f32>::to_int_unchecked",
       "safe": "unsafe"
@@ -5818,7 +5626,6 @@
     "harness": "num::verify::checked_f32_to_int_unchecked_u128",
     "time": 950,
     "props": 98,
-    "with_contract": true,
     "func": {
       "name": "f32::<impl f32>::to_int_unchecked",
       "safe": "unsafe"
@@ -5835,7 +5642,6 @@
     "harness": "num::verify::checked_f32_to_int_unchecked_u16",
     "time": 534,
     "props": 98,
-    "with_contract": true,
     "func": {
       "name": "f32::<impl f32>::to_int_unchecked",
       "safe": "unsafe"
@@ -5852,7 +5658,6 @@
     "harness": "num::verify::checked_f32_to_int_unchecked_u32",
     "time": 478,
     "props": 98,
-    "with_contract": true,
     "func": {
       "name": "f32::<impl f32>::to_int_unchecked",
       "safe": "unsafe"
@@ -5869,7 +5674,6 @@
     "harness": "num::verify::checked_f32_to_int_unchecked_u64",
     "time": 542,
     "props": 98,
-    "with_contract": true,
     "func": {
       "name": "f32::<impl f32>::to_int_unchecked",
       "safe": "unsafe"
@@ -5886,7 +5690,6 @@
     "harness": "num::verify::checked_f32_to_int_unchecked_u8",
     "time": 532,
     "props": 98,
-    "with_contract": true,
     "func": {
       "name": "f32::<impl f32>::to_int_unchecked",
       "safe": "unsafe"
@@ -5903,7 +5706,6 @@
     "harness": "num::verify::checked_f32_to_int_unchecked_usize",
     "time": 713,
     "props": 98,
-    "with_contract": true,
     "func": {
       "name": "f32::<impl f32>::to_int_unchecked",
       "safe": "unsafe"
@@ -5920,7 +5722,6 @@
     "harness": "num::verify::checked_f64_to_int_unchecked_i128",
     "time": 2024,
     "props": 98,
-    "with_contract": true,
     "func": {
       "name": "f64::<impl f64>::to_int_unchecked",
       "safe": "unsafe"
@@ -5937,7 +5738,6 @@
     "harness": "num::verify::checked_f64_to_int_unchecked_i16",
     "time": 504,
     "props": 98,
-    "with_contract": true,
     "func": {
       "name": "f64::<impl f64>::to_int_unchecked",
       "safe": "unsafe"
@@ -5954,7 +5754,6 @@
     "harness": "num::verify::checked_f64_to_int_unchecked_i32",
     "time": 900,
     "props": 98,
-    "with_contract": true,
     "func": {
       "name": "f64::<impl f64>::to_int_unchecked",
       "safe": "unsafe"
@@ -5971,7 +5770,6 @@
     "harness": "num::verify::checked_f64_to_int_unchecked_i64",
     "time": 1137,
     "props": 98,
-    "with_contract": true,
     "func": {
       "name": "f64::<impl f64>::to_int_unchecked",
       "safe": "unsafe"
@@ -5988,7 +5786,6 @@
     "harness": "num::verify::checked_f64_to_int_unchecked_i8",
     "time": 428,
     "props": 98,
-    "with_contract": true,
     "func": {
       "name": "f64::<impl f64>::to_int_unchecked",
       "safe": "unsafe"
@@ -6005,7 +5802,6 @@
     "harness": "num::verify::checked_f64_to_int_unchecked_isize",
     "time": 939,
     "props": 98,
-    "with_contract": true,
     "func": {
       "name": "f64::<impl f64>::to_int_unchecked",
       "safe": "unsafe"
@@ -6022,7 +5818,6 @@
     "harness": "num::verify::checked_f64_to_int_unchecked_u128",
     "time": 899,
     "props": 98,
-    "with_contract": true,
     "func": {
       "name": "f64::<impl f64>::to_int_unchecked",
       "safe": "unsafe"
@@ -6039,7 +5834,6 @@
     "harness": "num::verify::checked_f64_to_int_unchecked_u16",
     "time": 520,
     "props": 98,
-    "with_contract": true,
     "func": {
       "name": "f64::<impl f64>::to_int_unchecked",
       "safe": "unsafe"
@@ -6056,7 +5850,6 @@
     "harness": "num::verify::checked_f64_to_int_unchecked_u32",
     "time": 460,
     "props": 98,
-    "with_contract": true,
     "func": {
       "name": "f64::<impl f64>::to_int_unchecked",
       "safe": "unsafe"
@@ -6073,7 +5866,6 @@
     "harness": "num::verify::checked_f64_to_int_unchecked_u64",
     "time": 1057,
     "props": 98,
-    "with_contract": true,
     "func": {
       "name": "f64::<impl f64>::to_int_unchecked",
       "safe": "unsafe"
@@ -6090,7 +5882,6 @@
     "harness": "num::verify::checked_f64_to_int_unchecked_u8",
     "time": 393,
     "props": 98,
-    "with_contract": true,
     "func": {
       "name": "f64::<impl f64>::to_int_unchecked",
       "safe": "unsafe"
@@ -6107,7 +5898,6 @@
     "harness": "num::verify::checked_f64_to_int_unchecked_usize",
     "time": 951,
     "props": 98,
-    "with_contract": true,
     "func": {
       "name": "f64::<impl f64>::to_int_unchecked",
       "safe": "unsafe"
@@ -6124,7 +5914,6 @@
     "harness": "num::verify::checked_unchecked_mul_i16",
     "time": 1059,
     "props": 70,
-    "with_contract": true,
     "func": {
       "name": "num::<impl i16>::unchecked_mul",
       "safe": "unsafe"
@@ -6141,7 +5930,6 @@
     "harness": "num::verify::checked_unchecked_mul_i8",
     "time": 129,
     "props": 70,
-    "with_contract": true,
     "func": {
       "name": "num::<impl i8>::unchecked_mul",
       "safe": "unsafe"
@@ -6164,7 +5952,6 @@
     "harness": "num::verify::checked_unchecked_mul_u16",
     "time": 370,
     "props": 70,
-    "with_contract": true,
     "func": {
       "name": "num::<impl u16>::unchecked_mul",
       "safe": "unsafe"
@@ -6181,7 +5968,6 @@
     "harness": "num::verify::checked_unchecked_mul_u8",
     "time": 92,
     "props": 70,
-    "with_contract": true,
     "func": {
       "name": "num::<impl u8>::unchecked_mul",
       "safe": "unsafe"
@@ -6192,7 +5978,6 @@
     "harness": "num::verify::unchecked_mul_i128_edge_neg",
     "time": 1274,
     "props": 78,
-    "with_contract": true,
     "func": {
       "name": "num::<impl i128>::unchecked_mul",
       "safe": "unsafe"
@@ -6209,7 +5994,6 @@
     "harness": "num::verify::unchecked_mul_i128_edge_pos",
     "time": 1373,
     "props": 78,
-    "with_contract": true,
     "func": {
       "name": "num::<impl i128>::unchecked_mul",
       "safe": "unsafe"
@@ -6226,7 +6010,6 @@
     "harness": "num::verify::unchecked_mul_i128_large_neg",
     "time": 1337,
     "props": 72,
-    "with_contract": true,
     "func": {
       "name": "num::<impl i128>::unchecked_mul",
       "safe": "unsafe"
@@ -6243,7 +6026,6 @@
     "harness": "num::verify::unchecked_mul_i128_large_pos",
     "time": 1159,
     "props": 72,
-    "with_contract": true,
     "func": {
       "name": "num::<impl i128>::unchecked_mul",
       "safe": "unsafe"
@@ -6260,7 +6042,6 @@
     "harness": "num::verify::unchecked_mul_i128_small",
     "time": 1219,
     "props": 70,
-    "with_contract": true,
     "func": {
       "name": "num::<impl i128>::unchecked_mul",
       "safe": "unsafe"
@@ -6277,7 +6058,6 @@
     "harness": "num::verify::unchecked_mul_i32_edge_neg",
     "time": 173,
     "props": 78,
-    "with_contract": true,
     "func": {
       "name": "num::<impl i32>::unchecked_mul",
       "safe": "unsafe"
@@ -6294,7 +6074,6 @@
     "harness": "num::verify::unchecked_mul_i32_edge_pos",
     "time": 176,
     "props": 78,
-    "with_contract": true,
     "func": {
       "name": "num::<impl i32>::unchecked_mul",
       "safe": "unsafe"
@@ -6311,7 +6090,6 @@
     "harness": "num::verify::unchecked_mul_i32_large_neg",
     "time": 173,
     "props": 72,
-    "with_contract": true,
     "func": {
       "name": "num::<impl i32>::unchecked_mul",
       "safe": "unsafe"
@@ -6328,7 +6106,6 @@
     "harness": "num::verify::unchecked_mul_i32_large_pos",
     "time": 169,
     "props": 72,
-    "with_contract": true,
     "func": {
       "name": "num::<impl i32>::unchecked_mul",
       "safe": "unsafe"
@@ -6345,7 +6122,6 @@
     "harness": "num::verify::unchecked_mul_i32_small",
     "time": 163,
     "props": 70,
-    "with_contract": true,
     "func": {
       "name": "num::<impl i32>::unchecked_mul",
       "safe": "unsafe"
@@ -6362,7 +6138,6 @@
     "harness": "num::verify::unchecked_mul_i64_edge_neg",
     "time": 401,
     "props": 78,
-    "with_contract": true,
     "func": {
       "name": "num::<impl i64>::unchecked_mul",
       "safe": "unsafe"
@@ -6379,7 +6154,6 @@
     "harness": "num::verify::unchecked_mul_i64_edge_pos",
     "time": 396,
     "props": 78,
-    "with_contract": true,
     "func": {
       "name": "num::<impl i64>::unchecked_mul",
       "safe": "unsafe"
@@ -6396,7 +6170,6 @@
     "harness": "num::verify::unchecked_mul_i64_large_neg",
     "time": 409,
     "props": 72,
-    "with_contract": true,
     "func": {
       "name": "num::<impl i64>::unchecked_mul",
       "safe": "unsafe"
@@ -6413,7 +6186,6 @@
     "harness": "num::verify::unchecked_mul_i64_large_pos",
     "time": 374,
     "props": 72,
-    "with_contract": true,
     "func": {
       "name": "num::<impl i64>::unchecked_mul",
       "safe": "unsafe"
@@ -6430,7 +6202,6 @@
     "harness": "num::verify::unchecked_mul_i64_small",
     "time": 381,
     "props": 70,
-    "with_contract": true,
     "func": {
       "name": "num::<impl i64>::unchecked_mul",
       "safe": "unsafe"
@@ -6447,7 +6218,6 @@
     "harness": "num::verify::unchecked_mul_isize_edge_neg",
     "time": 387,
     "props": 78,
-    "with_contract": true,
     "func": {
       "name": "num::<impl isize>::unchecked_mul",
       "safe": "unsafe"
@@ -6464,7 +6234,6 @@
     "harness": "num::verify::unchecked_mul_isize_edge_pos",
     "time": 409,
     "props": 78,
-    "with_contract": true,
     "func": {
       "name": "num::<impl isize>::unchecked_mul",
       "safe": "unsafe"
@@ -6481,7 +6250,6 @@
     "harness": "num::verify::unchecked_mul_isize_large_neg",
     "time": 402,
     "props": 72,
-    "with_contract": true,
     "func": {
       "name": "num::<impl isize>::unchecked_mul",
       "safe": "unsafe"
@@ -6498,7 +6266,6 @@
     "harness": "num::verify::unchecked_mul_isize_large_pos",
     "time": 375,
     "props": 72,
-    "with_contract": true,
     "func": {
       "name": "num::<impl isize>::unchecked_mul",
       "safe": "unsafe"
@@ -6515,7 +6282,6 @@
     "harness": "num::verify::unchecked_mul_isize_small",
     "time": 381,
     "props": 70,
-    "with_contract": true,
     "func": {
       "name": "num::<impl isize>::unchecked_mul",
       "safe": "unsafe"
@@ -6538,7 +6304,6 @@
     "harness": "num::verify::unchecked_mul_u128_edge",
     "time": 640,
     "props": 74,
-    "with_contract": true,
     "func": {
       "name": "num::<impl u128>::unchecked_mul",
       "safe": "unsafe"
@@ -6555,7 +6320,6 @@
     "harness": "num::verify::unchecked_mul_u128_large",
     "time": 585,
     "props": 72,
-    "with_contract": true,
     "func": {
       "name": "num::<impl u128>::unchecked_mul",
       "safe": "unsafe"
@@ -6572,7 +6336,6 @@
     "harness": "num::verify::unchecked_mul_u128_small",
     "time": 584,
     "props": 70,
-    "with_contract": true,
     "func": {
       "name": "num::<impl u128>::unchecked_mul",
       "safe": "unsafe"
@@ -6589,7 +6352,6 @@
     "harness": "num::verify::unchecked_mul_u32_edge",
     "time": 127,
     "props": 74,
-    "with_contract": true,
     "func": {
       "name": "num::<impl u32>::unchecked_mul",
       "safe": "unsafe"
@@ -6606,7 +6368,6 @@
     "harness": "num::verify::unchecked_mul_u32_large",
     "time": 122,
     "props": 72,
-    "with_contract": true,
     "func": {
       "name": "num::<impl u32>::unchecked_mul",
       "safe": "unsafe"
@@ -6623,7 +6384,6 @@
     "harness": "num::verify::unchecked_mul_u32_small",
     "time": 118,
     "props": 70,
-    "with_contract": true,
     "func": {
       "name": "num::<impl u32>::unchecked_mul",
       "safe": "unsafe"
@@ -6640,7 +6400,6 @@
     "harness": "num::verify::unchecked_mul_u64_edge",
     "time": 224,
     "props": 74,
-    "with_contract": true,
     "func": {
       "name": "num::<impl u64>::unchecked_mul",
       "safe": "unsafe"
@@ -6657,7 +6416,6 @@
     "harness": "num::verify::unchecked_mul_u64_large",
     "time": 143,
     "props": 72,
-    "with_contract": true,
     "func": {
       "name": "num::<impl u64>::unchecked_mul",
       "safe": "unsafe"
@@ -6674,7 +6432,6 @@
     "harness": "num::verify::unchecked_mul_u64_small",
     "time": 219,
     "props": 70,
-    "with_contract": true,
     "func": {
       "name": "num::<impl u64>::unchecked_mul",
       "safe": "unsafe"
@@ -6691,7 +6448,6 @@
     "harness": "num::verify::unchecked_mul_usize_edge",
     "time": 154,
     "props": 74,
-    "with_contract": true,
     "func": {
       "name": "num::<impl usize>::unchecked_mul",
       "safe": "unsafe"
@@ -6708,7 +6464,6 @@
     "harness": "num::verify::unchecked_mul_usize_large",
     "time": 241,
     "props": 72,
-    "with_contract": true,
     "func": {
       "name": "num::<impl usize>::unchecked_mul",
       "safe": "unsafe"
@@ -6725,7 +6480,6 @@
     "harness": "num::verify::unchecked_mul_usize_small",
     "time": 220,
     "props": 70,
-    "with_contract": true,
     "func": {
       "name": "num::<impl usize>::unchecked_mul",
       "safe": "unsafe"
@@ -6803,7 +6557,6 @@
     "proof_kind": "Contract",
     "time": 323,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::add",
       "safe": "unsafe"
@@ -6816,7 +6569,6 @@
     "proof_kind": "Contract",
     "time": 243,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::add",
       "safe": "unsafe"
@@ -6829,7 +6581,6 @@
     "proof_kind": "Contract",
     "time": 244,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::add",
       "safe": "unsafe"
@@ -6842,7 +6593,6 @@
     "proof_kind": "Contract",
     "time": 325,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::add",
       "safe": "unsafe"
@@ -6855,7 +6605,6 @@
     "proof_kind": "Contract",
     "time": 308,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::add",
       "safe": "unsafe"
@@ -6868,7 +6617,6 @@
     "proof_kind": "Contract",
     "time": 232,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::add",
       "safe": "unsafe"
@@ -6881,7 +6629,6 @@
     "proof_kind": "Contract",
     "time": 243,
     "props": 121,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::add",
       "safe": "unsafe"
@@ -6894,7 +6641,6 @@
     "proof_kind": "Contract",
     "time": 231,
     "props": 121,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::add",
       "safe": "unsafe"
@@ -6907,7 +6653,6 @@
     "proof_kind": "Contract",
     "time": 233,
     "props": 121,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::add",
       "safe": "unsafe"
@@ -6920,7 +6665,6 @@
     "proof_kind": "Contract",
     "time": 166,
     "props": 121,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::add",
       "safe": "unsafe"
@@ -6933,7 +6677,6 @@
     "proof_kind": "Contract",
     "time": 235,
     "props": 121,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::add",
       "safe": "unsafe"
@@ -6946,7 +6689,6 @@
     "proof_kind": "Contract",
     "time": 163,
     "props": 121,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::add",
       "safe": "unsafe"
@@ -6959,7 +6701,6 @@
     "proof_kind": "Contract",
     "time": 530,
     "props": 316,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::add",
       "safe": "unsafe"
@@ -6972,7 +6713,6 @@
     "proof_kind": "Contract",
     "time": 824,
     "props": 316,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::add",
       "safe": "unsafe"
@@ -6985,7 +6725,6 @@
     "proof_kind": "Contract",
     "time": 824,
     "props": 316,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::add",
       "safe": "unsafe"
@@ -6998,7 +6737,6 @@
     "proof_kind": "Contract",
     "time": 913,
     "props": 316,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::add",
       "safe": "unsafe"
@@ -7011,7 +6749,6 @@
     "proof_kind": "Contract",
     "time": 168,
     "props": 121,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::add",
       "safe": "unsafe"
@@ -7024,7 +6761,6 @@
     "proof_kind": "Contract",
     "time": 172,
     "props": 121,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::add",
       "safe": "unsafe"
@@ -7037,7 +6773,6 @@
     "proof_kind": "Contract",
     "time": 171,
     "props": 121,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::add",
       "safe": "unsafe"
@@ -7050,7 +6785,6 @@
     "proof_kind": "Contract",
     "time": 241,
     "props": 121,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::add",
       "safe": "unsafe"
@@ -7063,7 +6797,6 @@
     "proof_kind": "Contract",
     "time": 215,
     "props": 121,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::add",
       "safe": "unsafe"
@@ -7076,7 +6809,6 @@
     "proof_kind": "Contract",
     "time": 244,
     "props": 121,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::add",
       "safe": "unsafe"
@@ -7089,7 +6821,6 @@
     "proof_kind": "Contract",
     "time": 319,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::add",
       "safe": "unsafe"
@@ -7102,7 +6833,6 @@
     "proof_kind": "Contract",
     "time": 329,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::add",
       "safe": "unsafe"
@@ -7115,7 +6845,6 @@
     "proof_kind": "Contract",
     "time": 342,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::add",
       "safe": "unsafe"
@@ -7128,7 +6857,6 @@
     "proof_kind": "Contract",
     "time": 386,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::add",
       "safe": "unsafe"
@@ -7141,7 +6869,6 @@
     "proof_kind": "Contract",
     "time": 335,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::add",
       "safe": "unsafe"
@@ -7154,7 +6881,6 @@
     "proof_kind": "Contract",
     "time": 345,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::add",
       "safe": "unsafe"
@@ -7167,7 +6893,6 @@
     "proof_kind": "Contract",
     "time": 318,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::add",
       "safe": "unsafe"
@@ -7180,7 +6905,6 @@
     "proof_kind": "Contract",
     "time": 323,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::add",
       "safe": "unsafe"
@@ -7193,7 +6917,6 @@
     "proof_kind": "Contract",
     "time": 325,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::add",
       "safe": "unsafe"
@@ -7206,7 +6929,6 @@
     "proof_kind": "Contract",
     "time": 224,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::add",
       "safe": "unsafe"
@@ -7219,7 +6941,6 @@
     "proof_kind": "Contract",
     "time": 323,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::add",
       "safe": "unsafe"
@@ -7238,7 +6959,6 @@
     "proof_kind": "Contract",
     "time": 942,
     "props": 230,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset_from",
       "safe": "unsafe"
@@ -7251,7 +6971,6 @@
     "proof_kind": "Contract",
     "time": 862,
     "props": 230,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset_from",
       "safe": "unsafe"
@@ -7264,7 +6983,6 @@
     "proof_kind": "Contract",
     "time": 946,
     "props": 230,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset_from",
       "safe": "unsafe"
@@ -7277,7 +6995,6 @@
     "proof_kind": "Contract",
     "time": 1043,
     "props": 230,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset_from",
       "safe": "unsafe"
@@ -7290,7 +7007,6 @@
     "proof_kind": "Contract",
     "time": 750,
     "props": 230,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset_from",
       "safe": "unsafe"
@@ -7303,7 +7019,6 @@
     "proof_kind": "Contract",
     "time": 855,
     "props": 230,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset_from",
       "safe": "unsafe"
@@ -7316,7 +7031,6 @@
     "proof_kind": "Contract",
     "time": 921,
     "props": 230,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset_from",
       "safe": "unsafe"
@@ -7329,7 +7043,6 @@
     "proof_kind": "Contract",
     "time": 1176,
     "props": 230,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset_from",
       "safe": "unsafe"
@@ -7342,7 +7055,6 @@
     "proof_kind": "Contract",
     "time": 792,
     "props": 230,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset_from",
       "safe": "unsafe"
@@ -7355,7 +7067,6 @@
     "proof_kind": "Contract",
     "time": 896,
     "props": 230,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset_from",
       "safe": "unsafe"
@@ -7368,7 +7079,6 @@
     "proof_kind": "Contract",
     "time": 789,
     "props": 230,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset_from",
       "safe": "unsafe"
@@ -7381,7 +7091,6 @@
     "proof_kind": "Contract",
     "time": 1117,
     "props": 230,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset_from",
       "safe": "unsafe"
@@ -7394,7 +7103,6 @@
     "proof_kind": "Contract",
     "time": 929,
     "props": 230,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset_from",
       "safe": "unsafe"
@@ -7407,7 +7115,6 @@
     "proof_kind": "Contract",
     "time": 1114,
     "props": 230,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset_from",
       "safe": "unsafe"
@@ -7420,7 +7127,6 @@
     "proof_kind": "Contract",
     "time": 684,
     "props": 230,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset_from",
       "safe": "unsafe"
@@ -7433,7 +7139,6 @@
     "proof_kind": "Contract",
     "time": 943,
     "props": 230,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset_from",
       "safe": "unsafe"
@@ -7446,7 +7151,6 @@
     "proof_kind": "Contract",
     "time": 1069,
     "props": 230,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset_from",
       "safe": "unsafe"
@@ -7459,7 +7163,6 @@
     "proof_kind": "Contract",
     "time": 1980,
     "props": 230,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset_from",
       "safe": "unsafe"
@@ -7472,7 +7175,6 @@
     "proof_kind": "Contract",
     "time": 1035,
     "props": 230,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset_from",
       "safe": "unsafe"
@@ -7485,7 +7187,6 @@
     "proof_kind": "Contract",
     "time": 1902,
     "props": 230,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset_from",
       "safe": "unsafe"
@@ -7498,7 +7199,6 @@
     "proof_kind": "Contract",
     "time": 904,
     "props": 230,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset_from",
       "safe": "unsafe"
@@ -7511,7 +7211,6 @@
     "proof_kind": "Contract",
     "time": 871,
     "props": 230,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset_from",
       "safe": "unsafe"
@@ -7524,7 +7223,6 @@
     "proof_kind": "Contract",
     "time": 663,
     "props": 230,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset_from",
       "safe": "unsafe"
@@ -7537,7 +7235,6 @@
     "proof_kind": "Contract",
     "time": 933,
     "props": 230,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset_from",
       "safe": "unsafe"
@@ -7550,7 +7247,6 @@
     "proof_kind": "Contract",
     "time": 682,
     "props": 230,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset_from",
       "safe": "unsafe"
@@ -7563,7 +7259,6 @@
     "proof_kind": "Contract",
     "time": 981,
     "props": 230,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset_from",
       "safe": "unsafe"
@@ -7576,7 +7271,6 @@
     "proof_kind": "Contract",
     "time": 945,
     "props": 230,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset_from",
       "safe": "unsafe"
@@ -7589,7 +7283,6 @@
     "proof_kind": "Contract",
     "time": 1045,
     "props": 230,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset_from",
       "safe": "unsafe"
@@ -7602,7 +7295,6 @@
     "proof_kind": "Contract",
     "time": 676,
     "props": 230,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset_from",
       "safe": "unsafe"
@@ -7615,7 +7307,6 @@
     "proof_kind": "Contract",
     "time": 764,
     "props": 230,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset_from",
       "safe": "unsafe"
@@ -7628,7 +7319,6 @@
     "proof_kind": "Contract",
     "time": 100,
     "props": 149,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset_from",
       "safe": "unsafe"
@@ -7641,7 +7331,6 @@
     "proof_kind": "Contract",
     "time": 846,
     "props": 230,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset_from",
       "safe": "unsafe"
@@ -7654,7 +7343,6 @@
     "proof_kind": "Contract",
     "time": 871,
     "props": 230,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset_from",
       "safe": "unsafe"
@@ -7667,7 +7355,6 @@
     "proof_kind": "Contract",
     "time": 264,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset",
       "safe": "unsafe"
@@ -7680,7 +7367,6 @@
     "proof_kind": "Contract",
     "time": 240,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset",
       "safe": "unsafe"
@@ -7693,7 +7379,6 @@
     "proof_kind": "Contract",
     "time": 272,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset",
       "safe": "unsafe"
@@ -7706,7 +7391,6 @@
     "proof_kind": "Contract",
     "time": 286,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset",
       "safe": "unsafe"
@@ -7719,7 +7403,6 @@
     "proof_kind": "Contract",
     "time": 306,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset",
       "safe": "unsafe"
@@ -7732,7 +7415,6 @@
     "proof_kind": "Contract",
     "time": 420,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset",
       "safe": "unsafe"
@@ -7745,7 +7427,6 @@
     "proof_kind": "Contract",
     "time": 250,
     "props": 118,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset",
       "safe": "unsafe"
@@ -7758,7 +7439,6 @@
     "proof_kind": "Contract",
     "time": 158,
     "props": 118,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset",
       "safe": "unsafe"
@@ -7771,7 +7451,6 @@
     "proof_kind": "Contract",
     "time": 234,
     "props": 118,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset",
       "safe": "unsafe"
@@ -7784,7 +7463,6 @@
     "proof_kind": "Contract",
     "time": 241,
     "props": 118,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset",
       "safe": "unsafe"
@@ -7797,7 +7475,6 @@
     "proof_kind": "Contract",
     "time": 163,
     "props": 118,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset",
       "safe": "unsafe"
@@ -7810,7 +7487,6 @@
     "proof_kind": "Contract",
     "time": 179,
     "props": 118,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset",
       "safe": "unsafe"
@@ -7823,7 +7499,6 @@
     "proof_kind": "Contract",
     "time": 780,
     "props": 316,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset",
       "safe": "unsafe"
@@ -7836,7 +7511,6 @@
     "proof_kind": "Contract",
     "time": 664,
     "props": 316,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset",
       "safe": "unsafe"
@@ -7849,7 +7523,6 @@
     "proof_kind": "Contract",
     "time": 808,
     "props": 316,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset",
       "safe": "unsafe"
@@ -7862,7 +7535,6 @@
     "proof_kind": "Contract",
     "time": 854,
     "props": 316,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset",
       "safe": "unsafe"
@@ -7875,7 +7547,6 @@
     "proof_kind": "Contract",
     "time": 260,
     "props": 118,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset",
       "safe": "unsafe"
@@ -7888,7 +7559,6 @@
     "proof_kind": "Contract",
     "time": 225,
     "props": 118,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset",
       "safe": "unsafe"
@@ -7901,7 +7571,6 @@
     "proof_kind": "Contract",
     "time": 260,
     "props": 118,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset",
       "safe": "unsafe"
@@ -7914,7 +7583,6 @@
     "proof_kind": "Contract",
     "time": 169,
     "props": 118,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset",
       "safe": "unsafe"
@@ -7927,7 +7595,6 @@
     "proof_kind": "Contract",
     "time": 209,
     "props": 118,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset",
       "safe": "unsafe"
@@ -7940,7 +7607,6 @@
     "proof_kind": "Contract",
     "time": 182,
     "props": 118,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset",
       "safe": "unsafe"
@@ -7953,7 +7619,6 @@
     "proof_kind": "Contract",
     "time": 340,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset",
       "safe": "unsafe"
@@ -7966,7 +7631,6 @@
     "proof_kind": "Contract",
     "time": 244,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset",
       "safe": "unsafe"
@@ -7979,7 +7643,6 @@
     "proof_kind": "Contract",
     "time": 309,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset",
       "safe": "unsafe"
@@ -7992,7 +7655,6 @@
     "proof_kind": "Contract",
     "time": 428,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset",
       "safe": "unsafe"
@@ -8005,7 +7667,6 @@
     "proof_kind": "Contract",
     "time": 242,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset",
       "safe": "unsafe"
@@ -8018,7 +7679,6 @@
     "proof_kind": "Contract",
     "time": 303,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset",
       "safe": "unsafe"
@@ -8031,7 +7691,6 @@
     "proof_kind": "Contract",
     "time": 382,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset",
       "safe": "unsafe"
@@ -8044,7 +7703,6 @@
     "proof_kind": "Contract",
     "time": 400,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset",
       "safe": "unsafe"
@@ -8057,7 +7715,6 @@
     "proof_kind": "Contract",
     "time": 219,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset",
       "safe": "unsafe"
@@ -8070,7 +7727,6 @@
     "proof_kind": "Contract",
     "time": 178,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset",
       "safe": "unsafe"
@@ -8083,7 +7739,6 @@
     "proof_kind": "Contract",
     "time": 351,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::offset",
       "safe": "unsafe"
@@ -8096,7 +7751,6 @@
     "proof_kind": "Contract",
     "time": 250,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::sub",
       "safe": "unsafe"
@@ -8109,7 +7763,6 @@
     "proof_kind": "Contract",
     "time": 262,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::sub",
       "safe": "unsafe"
@@ -8122,7 +7775,6 @@
     "proof_kind": "Contract",
     "time": 297,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::sub",
       "safe": "unsafe"
@@ -8135,7 +7787,6 @@
     "proof_kind": "Contract",
     "time": 373,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::sub",
       "safe": "unsafe"
@@ -8148,7 +7799,6 @@
     "proof_kind": "Contract",
     "time": 327,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::sub",
       "safe": "unsafe"
@@ -8161,7 +7811,6 @@
     "proof_kind": "Contract",
     "time": 270,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::sub",
       "safe": "unsafe"
@@ -8174,7 +7823,6 @@
     "proof_kind": "Contract",
     "time": 229,
     "props": 126,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::sub",
       "safe": "unsafe"
@@ -8187,7 +7835,6 @@
     "proof_kind": "Contract",
     "time": 225,
     "props": 126,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::sub",
       "safe": "unsafe"
@@ -8200,7 +7847,6 @@
     "proof_kind": "Contract",
     "time": 200,
     "props": 126,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::sub",
       "safe": "unsafe"
@@ -8213,7 +7859,6 @@
     "proof_kind": "Contract",
     "time": 237,
     "props": 126,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::sub",
       "safe": "unsafe"
@@ -8226,7 +7871,6 @@
     "proof_kind": "Contract",
     "time": 219,
     "props": 126,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::sub",
       "safe": "unsafe"
@@ -8239,7 +7883,6 @@
     "proof_kind": "Contract",
     "time": 226,
     "props": 126,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::sub",
       "safe": "unsafe"
@@ -8252,7 +7895,6 @@
     "proof_kind": "Contract",
     "time": 740,
     "props": 324,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::sub",
       "safe": "unsafe"
@@ -8265,7 +7907,6 @@
     "proof_kind": "Contract",
     "time": 582,
     "props": 324,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::sub",
       "safe": "unsafe"
@@ -8278,7 +7919,6 @@
     "proof_kind": "Contract",
     "time": 612,
     "props": 324,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::sub",
       "safe": "unsafe"
@@ -8291,7 +7931,6 @@
     "proof_kind": "Contract",
     "time": 901,
     "props": 324,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::sub",
       "safe": "unsafe"
@@ -8304,7 +7943,6 @@
     "proof_kind": "Contract",
     "time": 170,
     "props": 126,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::sub",
       "safe": "unsafe"
@@ -8317,7 +7955,6 @@
     "proof_kind": "Contract",
     "time": 163,
     "props": 126,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::sub",
       "safe": "unsafe"
@@ -8330,7 +7967,6 @@
     "proof_kind": "Contract",
     "time": 241,
     "props": 126,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::sub",
       "safe": "unsafe"
@@ -8343,7 +7979,6 @@
     "proof_kind": "Contract",
     "time": 162,
     "props": 126,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::sub",
       "safe": "unsafe"
@@ -8356,7 +7991,6 @@
     "proof_kind": "Contract",
     "time": 211,
     "props": 126,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::sub",
       "safe": "unsafe"
@@ -8369,7 +8003,6 @@
     "proof_kind": "Contract",
     "time": 159,
     "props": 126,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::sub",
       "safe": "unsafe"
@@ -8382,7 +8015,6 @@
     "proof_kind": "Contract",
     "time": 282,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::sub",
       "safe": "unsafe"
@@ -8395,7 +8027,6 @@
     "proof_kind": "Contract",
     "time": 243,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::sub",
       "safe": "unsafe"
@@ -8408,7 +8039,6 @@
     "proof_kind": "Contract",
     "time": 253,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::sub",
       "safe": "unsafe"
@@ -8421,7 +8051,6 @@
     "proof_kind": "Contract",
     "time": 419,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::sub",
       "safe": "unsafe"
@@ -8434,7 +8063,6 @@
     "proof_kind": "Contract",
     "time": 340,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::sub",
       "safe": "unsafe"
@@ -8447,7 +8075,6 @@
     "proof_kind": "Contract",
     "time": 380,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::sub",
       "safe": "unsafe"
@@ -8460,7 +8087,6 @@
     "proof_kind": "Contract",
     "time": 293,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::sub",
       "safe": "unsafe"
@@ -8473,7 +8099,6 @@
     "proof_kind": "Contract",
     "time": 353,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::sub",
       "safe": "unsafe"
@@ -8486,7 +8111,6 @@
     "proof_kind": "Contract",
     "time": 221,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::sub",
       "safe": "unsafe"
@@ -8499,7 +8123,6 @@
     "proof_kind": "Contract",
     "time": 222,
     "props": 155,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::sub",
       "safe": "unsafe"
@@ -8512,7 +8135,6 @@
     "proof_kind": "Contract",
     "time": 247,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "ptr::const_ptr::<impl *const T>::sub",
       "safe": "unsafe"
@@ -8525,7 +8147,6 @@
     "proof_kind": "Contract",
     "time": 421,
     "props": 231,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::add",
       "safe": "unsafe"
@@ -8538,7 +8159,6 @@
     "proof_kind": "Contract",
     "time": 434,
     "props": 231,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::add",
       "safe": "unsafe"
@@ -8551,7 +8171,6 @@
     "proof_kind": "Contract",
     "time": 298,
     "props": 231,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::add",
       "safe": "unsafe"
@@ -8564,7 +8183,6 @@
     "proof_kind": "Contract",
     "time": 306,
     "props": 231,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::add",
       "safe": "unsafe"
@@ -8577,7 +8195,6 @@
     "proof_kind": "Contract",
     "time": 300,
     "props": 231,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::add",
       "safe": "unsafe"
@@ -8590,7 +8207,6 @@
     "proof_kind": "Contract",
     "time": 432,
     "props": 231,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::add",
       "safe": "unsafe"
@@ -8603,7 +8219,6 @@
     "proof_kind": "Contract",
     "time": 169,
     "props": 121,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::add",
       "safe": "unsafe"
@@ -8616,7 +8231,6 @@
     "proof_kind": "Contract",
     "time": 176,
     "props": 121,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::add",
       "safe": "unsafe"
@@ -8629,7 +8243,6 @@
     "proof_kind": "Contract",
     "time": 168,
     "props": 121,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::add",
       "safe": "unsafe"
@@ -8642,7 +8255,6 @@
     "proof_kind": "Contract",
     "time": 173,
     "props": 121,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::add",
       "safe": "unsafe"
@@ -8655,7 +8267,6 @@
     "proof_kind": "Contract",
     "time": 154,
     "props": 121,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::add",
       "safe": "unsafe"
@@ -8668,7 +8279,6 @@
     "proof_kind": "Contract",
     "time": 255,
     "props": 121,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::add",
       "safe": "unsafe"
@@ -8681,7 +8291,6 @@
     "proof_kind": "Contract",
     "time": 544,
     "props": 388,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::add",
       "safe": "unsafe"
@@ -8694,7 +8303,6 @@
     "proof_kind": "Contract",
     "time": 622,
     "props": 388,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::add",
       "safe": "unsafe"
@@ -8707,7 +8315,6 @@
     "proof_kind": "Contract",
     "time": 888,
     "props": 388,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::add",
       "safe": "unsafe"
@@ -8720,7 +8327,6 @@
     "proof_kind": "Contract",
     "time": 648,
     "props": 388,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::add",
       "safe": "unsafe"
@@ -8733,7 +8339,6 @@
     "proof_kind": "Contract",
     "time": 172,
     "props": 121,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::add",
       "safe": "unsafe"
@@ -8746,7 +8351,6 @@
     "proof_kind": "Contract",
     "time": 160,
     "props": 121,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::add",
       "safe": "unsafe"
@@ -8759,7 +8363,6 @@
     "proof_kind": "Contract",
     "time": 165,
     "props": 121,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::add",
       "safe": "unsafe"
@@ -8772,7 +8375,6 @@
     "proof_kind": "Contract",
     "time": 170,
     "props": 121,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::add",
       "safe": "unsafe"
@@ -8785,7 +8387,6 @@
     "proof_kind": "Contract",
     "time": 162,
     "props": 121,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::add",
       "safe": "unsafe"
@@ -8798,7 +8399,6 @@
     "proof_kind": "Contract",
     "time": 259,
     "props": 121,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::add",
       "safe": "unsafe"
@@ -8811,7 +8411,6 @@
     "proof_kind": "Contract",
     "time": 287,
     "props": 231,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::add",
       "safe": "unsafe"
@@ -8824,7 +8423,6 @@
     "proof_kind": "Contract",
     "time": 434,
     "props": 231,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::add",
       "safe": "unsafe"
@@ -8837,7 +8435,6 @@
     "proof_kind": "Contract",
     "time": 442,
     "props": 231,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::add",
       "safe": "unsafe"
@@ -8850,7 +8447,6 @@
     "proof_kind": "Contract",
     "time": 319,
     "props": 231,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::add",
       "safe": "unsafe"
@@ -8863,7 +8459,6 @@
     "proof_kind": "Contract",
     "time": 285,
     "props": 231,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::add",
       "safe": "unsafe"
@@ -8876,7 +8471,6 @@
     "proof_kind": "Contract",
     "time": 426,
     "props": 231,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::add",
       "safe": "unsafe"
@@ -8889,7 +8483,6 @@
     "proof_kind": "Contract",
     "time": 294,
     "props": 231,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::add",
       "safe": "unsafe"
@@ -8902,7 +8495,6 @@
     "proof_kind": "Contract",
     "time": 300,
     "props": 231,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::add",
       "safe": "unsafe"
@@ -8915,7 +8507,6 @@
     "proof_kind": "Contract",
     "time": 323,
     "props": 231,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::add",
       "safe": "unsafe"
@@ -8928,7 +8519,6 @@
     "proof_kind": "Contract",
     "time": 436,
     "props": 231,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::add",
       "safe": "unsafe"
@@ -8947,7 +8537,6 @@
     "proof_kind": "Contract",
     "time": 749,
     "props": 233,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset_from",
       "safe": "unsafe"
@@ -8960,7 +8549,6 @@
     "proof_kind": "Contract",
     "time": 1055,
     "props": 233,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset_from",
       "safe": "unsafe"
@@ -8973,7 +8561,6 @@
     "proof_kind": "Contract",
     "time": 703,
     "props": 233,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset_from",
       "safe": "unsafe"
@@ -8986,7 +8573,6 @@
     "proof_kind": "Contract",
     "time": 866,
     "props": 233,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset_from",
       "safe": "unsafe"
@@ -8999,7 +8585,6 @@
     "proof_kind": "Contract",
     "time": 1022,
     "props": 233,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset_from",
       "safe": "unsafe"
@@ -9012,7 +8597,6 @@
     "proof_kind": "Contract",
     "time": 1292,
     "props": 233,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset_from",
       "safe": "unsafe"
@@ -9025,7 +8609,6 @@
     "proof_kind": "Contract",
     "time": 1034,
     "props": 233,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset_from",
       "safe": "unsafe"
@@ -9038,7 +8621,6 @@
     "proof_kind": "Contract",
     "time": 1136,
     "props": 233,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset_from",
       "safe": "unsafe"
@@ -9051,7 +8633,6 @@
     "proof_kind": "Contract",
     "time": 647,
     "props": 233,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset_from",
       "safe": "unsafe"
@@ -9064,7 +8645,6 @@
     "proof_kind": "Contract",
     "time": 1139,
     "props": 233,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset_from",
       "safe": "unsafe"
@@ -9077,7 +8657,6 @@
     "proof_kind": "Contract",
     "time": 836,
     "props": 233,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset_from",
       "safe": "unsafe"
@@ -9090,7 +8669,6 @@
     "proof_kind": "Contract",
     "time": 1110,
     "props": 233,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset_from",
       "safe": "unsafe"
@@ -9103,7 +8681,6 @@
     "proof_kind": "Contract",
     "time": 1022,
     "props": 233,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset_from",
       "safe": "unsafe"
@@ -9116,7 +8693,6 @@
     "proof_kind": "Contract",
     "time": 1037,
     "props": 233,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset_from",
       "safe": "unsafe"
@@ -9129,7 +8705,6 @@
     "proof_kind": "Contract",
     "time": 1045,
     "props": 233,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset_from",
       "safe": "unsafe"
@@ -9142,7 +8717,6 @@
     "proof_kind": "Contract",
     "time": 838,
     "props": 233,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset_from",
       "safe": "unsafe"
@@ -9155,7 +8729,6 @@
     "proof_kind": "Contract",
     "time": 1013,
     "props": 233,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset_from",
       "safe": "unsafe"
@@ -9168,7 +8741,6 @@
     "proof_kind": "Contract",
     "time": 1687,
     "props": 233,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset_from",
       "safe": "unsafe"
@@ -9181,7 +8753,6 @@
     "proof_kind": "Contract",
     "time": 1413,
     "props": 233,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset_from",
       "safe": "unsafe"
@@ -9194,7 +8765,6 @@
     "proof_kind": "Contract",
     "time": 2237,
     "props": 233,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset_from",
       "safe": "unsafe"
@@ -9207,7 +8777,6 @@
     "proof_kind": "Contract",
     "time": 1025,
     "props": 233,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset_from",
       "safe": "unsafe"
@@ -9220,7 +8789,6 @@
     "proof_kind": "Contract",
     "time": 1085,
     "props": 233,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset_from",
       "safe": "unsafe"
@@ -9233,7 +8801,6 @@
     "proof_kind": "Contract",
     "time": 1004,
     "props": 233,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset_from",
       "safe": "unsafe"
@@ -9246,7 +8813,6 @@
     "proof_kind": "Contract",
     "time": 854,
     "props": 233,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset_from",
       "safe": "unsafe"
@@ -9259,7 +8825,6 @@
     "proof_kind": "Contract",
     "time": 924,
     "props": 233,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset_from",
       "safe": "unsafe"
@@ -9272,7 +8837,6 @@
     "proof_kind": "Contract",
     "time": 1022,
     "props": 233,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset_from",
       "safe": "unsafe"
@@ -9285,7 +8849,6 @@
     "proof_kind": "Contract",
     "time": 1038,
     "props": 233,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset_from",
       "safe": "unsafe"
@@ -9298,7 +8861,6 @@
     "proof_kind": "Contract",
     "time": 1125,
     "props": 233,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset_from",
       "safe": "unsafe"
@@ -9311,7 +8873,6 @@
     "proof_kind": "Contract",
     "time": 631,
     "props": 233,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset_from",
       "safe": "unsafe"
@@ -9324,7 +8885,6 @@
     "proof_kind": "Contract",
     "time": 874,
     "props": 233,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset_from",
       "safe": "unsafe"
@@ -9337,7 +8897,6 @@
     "proof_kind": "Contract",
     "time": 107,
     "props": 152,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset_from",
       "safe": "unsafe"
@@ -9350,7 +8909,6 @@
     "proof_kind": "Contract",
     "time": 901,
     "props": 233,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset_from",
       "safe": "unsafe"
@@ -9363,7 +8921,6 @@
     "proof_kind": "Contract",
     "time": 1155,
     "props": 233,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset_from",
       "safe": "unsafe"
@@ -9376,7 +8933,6 @@
     "proof_kind": "Contract",
     "time": 226,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset",
       "safe": "unsafe"
@@ -9389,7 +8945,6 @@
     "proof_kind": "Contract",
     "time": 356,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset",
       "safe": "unsafe"
@@ -9402,7 +8957,6 @@
     "proof_kind": "Contract",
     "time": 392,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset",
       "safe": "unsafe"
@@ -9415,7 +8969,6 @@
     "proof_kind": "Contract",
     "time": 291,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset",
       "safe": "unsafe"
@@ -9428,7 +8981,6 @@
     "proof_kind": "Contract",
     "time": 306,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset",
       "safe": "unsafe"
@@ -9441,7 +8993,6 @@
     "proof_kind": "Contract",
     "time": 408,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset",
       "safe": "unsafe"
@@ -9454,7 +9005,6 @@
     "proof_kind": "Contract",
     "time": 174,
     "props": 118,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset",
       "safe": "unsafe"
@@ -9467,7 +9017,6 @@
     "proof_kind": "Contract",
     "time": 247,
     "props": 118,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset",
       "safe": "unsafe"
@@ -9480,7 +9029,6 @@
     "proof_kind": "Contract",
     "time": 275,
     "props": 118,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset",
       "safe": "unsafe"
@@ -9493,7 +9041,6 @@
     "proof_kind": "Contract",
     "time": 258,
     "props": 118,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset",
       "safe": "unsafe"
@@ -9506,7 +9053,6 @@
     "proof_kind": "Contract",
     "time": 215,
     "props": 118,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset",
       "safe": "unsafe"
@@ -9519,7 +9065,6 @@
     "proof_kind": "Contract",
     "time": 256,
     "props": 118,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset",
       "safe": "unsafe"
@@ -9532,7 +9077,6 @@
     "proof_kind": "Contract",
     "time": 804,
     "props": 316,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset",
       "safe": "unsafe"
@@ -9545,7 +9089,6 @@
     "proof_kind": "Contract",
     "time": 581,
     "props": 316,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset",
       "safe": "unsafe"
@@ -9558,7 +9101,6 @@
     "proof_kind": "Contract",
     "time": 646,
     "props": 316,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset",
       "safe": "unsafe"
@@ -9571,7 +9113,6 @@
     "proof_kind": "Contract",
     "time": 732,
     "props": 316,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset",
       "safe": "unsafe"
@@ -9584,7 +9125,6 @@
     "proof_kind": "Contract",
     "time": 174,
     "props": 118,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset",
       "safe": "unsafe"
@@ -9597,7 +9137,6 @@
     "proof_kind": "Contract",
     "time": 169,
     "props": 118,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset",
       "safe": "unsafe"
@@ -9610,7 +9149,6 @@
     "proof_kind": "Contract",
     "time": 280,
     "props": 118,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset",
       "safe": "unsafe"
@@ -9623,7 +9161,6 @@
     "proof_kind": "Contract",
     "time": 258,
     "props": 118,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset",
       "safe": "unsafe"
@@ -9636,7 +9173,6 @@
     "proof_kind": "Contract",
     "time": 217,
     "props": 118,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset",
       "safe": "unsafe"
@@ -9649,7 +9185,6 @@
     "proof_kind": "Contract",
     "time": 173,
     "props": 118,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset",
       "safe": "unsafe"
@@ -9662,7 +9197,6 @@
     "proof_kind": "Contract",
     "time": 355,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset",
       "safe": "unsafe"
@@ -9675,7 +9209,6 @@
     "proof_kind": "Contract",
     "time": 257,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset",
       "safe": "unsafe"
@@ -9688,7 +9221,6 @@
     "proof_kind": "Contract",
     "time": 245,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset",
       "safe": "unsafe"
@@ -9701,7 +9233,6 @@
     "proof_kind": "Contract",
     "time": 457,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset",
       "safe": "unsafe"
@@ -9714,7 +9245,6 @@
     "proof_kind": "Contract",
     "time": 374,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset",
       "safe": "unsafe"
@@ -9727,7 +9257,6 @@
     "proof_kind": "Contract",
     "time": 246,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset",
       "safe": "unsafe"
@@ -9740,7 +9269,6 @@
     "proof_kind": "Contract",
     "time": 311,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset",
       "safe": "unsafe"
@@ -9753,7 +9281,6 @@
     "proof_kind": "Contract",
     "time": 414,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset",
       "safe": "unsafe"
@@ -9766,7 +9293,6 @@
     "proof_kind": "Contract",
     "time": 164,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset",
       "safe": "unsafe"
@@ -9779,7 +9305,6 @@
     "proof_kind": "Contract",
     "time": 343,
     "props": 159,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::offset",
       "safe": "unsafe"
@@ -9792,7 +9317,6 @@
     "proof_kind": "Contract",
     "time": 365,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::sub",
       "safe": "unsafe"
@@ -9805,7 +9329,6 @@
     "proof_kind": "Contract",
     "time": 394,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::sub",
       "safe": "unsafe"
@@ -9818,7 +9341,6 @@
     "proof_kind": "Contract",
     "time": 384,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::sub",
       "safe": "unsafe"
@@ -9831,7 +9353,6 @@
     "proof_kind": "Contract",
     "time": 266,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::sub",
       "safe": "unsafe"
@@ -9844,7 +9365,6 @@
     "proof_kind": "Contract",
     "time": 342,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::sub",
       "safe": "unsafe"
@@ -9857,7 +9377,6 @@
     "proof_kind": "Contract",
     "time": 249,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::sub",
       "safe": "unsafe"
@@ -9870,7 +9389,6 @@
     "proof_kind": "Contract",
     "time": 246,
     "props": 126,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::sub",
       "safe": "unsafe"
@@ -9883,7 +9401,6 @@
     "proof_kind": "Contract",
     "time": 234,
     "props": 126,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::sub",
       "safe": "unsafe"
@@ -9896,7 +9413,6 @@
     "proof_kind": "Contract",
     "time": 254,
     "props": 126,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::sub",
       "safe": "unsafe"
@@ -9909,7 +9425,6 @@
     "proof_kind": "Contract",
     "time": 161,
     "props": 126,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::sub",
       "safe": "unsafe"
@@ -9922,7 +9437,6 @@
     "proof_kind": "Contract",
     "time": 221,
     "props": 126,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::sub",
       "safe": "unsafe"
@@ -9935,7 +9449,6 @@
     "proof_kind": "Contract",
     "time": 238,
     "props": 126,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::sub",
       "safe": "unsafe"
@@ -9948,7 +9461,6 @@
     "proof_kind": "Contract",
     "time": 771,
     "props": 324,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::sub",
       "safe": "unsafe"
@@ -9961,7 +9473,6 @@
     "proof_kind": "Contract",
     "time": 594,
     "props": 324,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::sub",
       "safe": "unsafe"
@@ -9974,7 +9485,6 @@
     "proof_kind": "Contract",
     "time": 581,
     "props": 324,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::sub",
       "safe": "unsafe"
@@ -9987,7 +9497,6 @@
     "proof_kind": "Contract",
     "time": 965,
     "props": 324,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::sub",
       "safe": "unsafe"
@@ -10000,7 +9509,6 @@
     "proof_kind": "Contract",
     "time": 162,
     "props": 126,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::sub",
       "safe": "unsafe"
@@ -10013,7 +9521,6 @@
     "proof_kind": "Contract",
     "time": 233,
     "props": 126,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::sub",
       "safe": "unsafe"
@@ -10026,7 +9533,6 @@
     "proof_kind": "Contract",
     "time": 167,
     "props": 126,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::sub",
       "safe": "unsafe"
@@ -10039,7 +9545,6 @@
     "proof_kind": "Contract",
     "time": 240,
     "props": 126,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::sub",
       "safe": "unsafe"
@@ -10052,7 +9557,6 @@
     "proof_kind": "Contract",
     "time": 149,
     "props": 126,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::sub",
       "safe": "unsafe"
@@ -10065,7 +9569,6 @@
     "proof_kind": "Contract",
     "time": 160,
     "props": 126,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::sub",
       "safe": "unsafe"
@@ -10078,7 +9581,6 @@
     "proof_kind": "Contract",
     "time": 376,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::sub",
       "safe": "unsafe"
@@ -10091,7 +9593,6 @@
     "proof_kind": "Contract",
     "time": 330,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::sub",
       "safe": "unsafe"
@@ -10104,7 +9605,6 @@
     "proof_kind": "Contract",
     "time": 360,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::sub",
       "safe": "unsafe"
@@ -10117,7 +9617,6 @@
     "proof_kind": "Contract",
     "time": 429,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::sub",
       "safe": "unsafe"
@@ -10130,7 +9629,6 @@
     "proof_kind": "Contract",
     "time": 315,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::sub",
       "safe": "unsafe"
@@ -10143,7 +9641,6 @@
     "proof_kind": "Contract",
     "time": 386,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::sub",
       "safe": "unsafe"
@@ -10156,7 +9653,6 @@
     "proof_kind": "Contract",
     "time": 277,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::sub",
       "safe": "unsafe"
@@ -10169,7 +9665,6 @@
     "proof_kind": "Contract",
     "time": 382,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::sub",
       "safe": "unsafe"
@@ -10182,7 +9677,6 @@
     "proof_kind": "Contract",
     "time": 158,
     "props": 155,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::sub",
       "safe": "unsafe"
@@ -10195,7 +9689,6 @@
     "proof_kind": "Contract",
     "time": 243,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "ptr::mut_ptr::<impl *mut T>::sub",
       "safe": "unsafe"
@@ -10208,7 +9701,6 @@
     "proof_kind": "Contract",
     "time": 275,
     "props": 130,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::byte_offset_from",
       "safe": "unsafe"
@@ -10221,7 +9713,6 @@
     "proof_kind": "Contract",
     "time": 783,
     "props": 181,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::byte_offset_from",
       "safe": "unsafe"
@@ -10234,7 +9725,6 @@
     "proof_kind": "Contract",
     "time": 449,
     "props": 178,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::byte_offset",
       "safe": "unsafe"
@@ -10247,7 +9737,6 @@
     "proof_kind": "Contract",
     "time": 492,
     "props": 200,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::add",
       "safe": "unsafe"
@@ -10260,7 +9749,6 @@
     "proof_kind": "Contract",
     "time": 153,
     "props": 80,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::addr",
       "safe": "safe abstraction"
@@ -10273,7 +9761,6 @@
     "proof_kind": "Contract",
     "time": 3490,
     "props": 237,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::align_offset",
       "safe": "safe abstraction"
@@ -10286,7 +9773,6 @@
     "proof_kind": "Contract",
     "time": 1893,
     "props": 237,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::align_offset",
       "safe": "safe abstraction"
@@ -10299,7 +9785,6 @@
     "proof_kind": "Contract",
     "time": 106,
     "props": 95,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::as_mut",
       "safe": "unsafe"
@@ -10312,7 +9797,6 @@
     "proof_kind": "Contract",
     "time": 721,
     "props": 108,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<[T]>::as_mut_ptr",
       "safe": "safe"
@@ -10325,7 +9809,6 @@
     "proof_kind": "Contract",
     "time": 648,
     "props": 104,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<[T]>::as_non_null_ptr",
       "safe": "safe"
@@ -10338,7 +9821,6 @@
     "proof_kind": "Contract",
     "time": 119,
     "props": 69,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::as_ptr",
       "safe": "safe"
@@ -10351,7 +9833,6 @@
     "proof_kind": "Contract",
     "time": 105,
     "props": 95,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::as_ref",
       "safe": "unsafe"
@@ -10364,7 +9845,6 @@
     "proof_kind": "Contract",
     "time": 128,
     "props": 98,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::as_uninit_mut",
       "safe": "unsafe"
@@ -10377,7 +9857,6 @@
     "proof_kind": "Contract",
     "time": 127,
     "props": 98,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::as_uninit_ref",
       "safe": "unsafe"
@@ -10390,7 +9869,6 @@
     "proof_kind": "Contract",
     "time": 905,
     "props": 240,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<[T]>::as_uninit_slice",
       "safe": "unsafe"
@@ -10403,7 +9881,6 @@
     "proof_kind": "Contract",
     "time": 681,
     "props": 240,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<[T]>::as_uninit_slice_mut",
       "safe": "unsafe"
@@ -10416,7 +9893,6 @@
     "proof_kind": "Contract",
     "time": 140,
     "props": 77,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::cast",
       "safe": "safe"
@@ -10429,7 +9905,6 @@
     "proof_kind": "Contract",
     "time": 1446,
     "props": 212,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::copy_from",
       "safe": "unsafe"
@@ -10442,7 +9917,6 @@
     "proof_kind": "Contract",
     "time": 2416,
     "props": 231,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::copy_from_nonoverlapping",
       "safe": "unsafe"
@@ -10455,7 +9929,6 @@
     "proof_kind": "Contract",
     "time": 1397,
     "props": 212,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::copy_to",
       "safe": "unsafe"
@@ -10468,7 +9941,6 @@
     "proof_kind": "Contract",
     "time": 1516,
     "props": 231,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::copy_to_nonoverlapping",
       "safe": "unsafe"
@@ -10481,7 +9953,6 @@
     "proof_kind": "Contract",
     "time": 119,
     "props": 75,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::drop_in_place",
       "safe": "unsafe"
@@ -10494,7 +9965,6 @@
     "proof_kind": "Contract",
     "time": 191,
     "props": 140,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::from_raw_parts",
       "safe": "safe abstraction"
@@ -10507,7 +9977,6 @@
     "proof_kind": "Contract",
     "time": 234,
     "props": 130,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<[T]>::get_unchecked_mut",
       "safe": "unsafe"
@@ -10520,7 +9989,6 @@
     "proof_kind": "Contract",
     "time": 774,
     "props": 103,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::is_aligned_to",
       "safe": "safe"
@@ -10551,7 +10019,6 @@
     "proof_kind": "Contract",
     "time": 152,
     "props": 103,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::map_addr",
       "safe": "safe"
@@ -10564,7 +10031,6 @@
     "proof_kind": "Contract",
     "time": 389,
     "props": 97,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::new",
       "safe": "safe abstraction"
@@ -10577,7 +10043,6 @@
     "proof_kind": "Contract",
     "time": 112,
     "props": 73,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::new_unchecked",
       "safe": "unsafe"
@@ -10590,7 +10055,6 @@
     "proof_kind": "Contract",
     "time": 966,
     "props": 185,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::offset",
       "safe": "unsafe"
@@ -10603,7 +10067,6 @@
     "proof_kind": "Contract",
     "time": 926,
     "props": 208,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::offset_from",
       "safe": "unsafe"
@@ -10616,7 +10079,6 @@
     "proof_kind": "Contract",
     "time": 94360,
     "props": 173,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::read",
       "safe": "unsafe"
@@ -10629,7 +10091,6 @@
     "proof_kind": "Contract",
     "time": 47938,
     "props": 206,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::read_unaligned",
       "safe": "unsafe"
@@ -10642,7 +10103,6 @@
     "proof_kind": "Contract",
     "time": 94260,
     "props": 183,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::read_volatile",
       "safe": "unsafe"
@@ -10655,7 +10115,6 @@
     "proof_kind": "Contract",
     "time": 1160,
     "props": 165,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::replace",
       "safe": "unsafe"
@@ -10668,7 +10127,6 @@
     "proof_kind": "Contract",
     "time": 21789,
     "props": 171,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<[T]>::slice_from_raw_parts",
       "safe": "safe abstraction"
@@ -10681,7 +10139,6 @@
     "proof_kind": "Contract",
     "time": 962,
     "props": 198,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::sub",
       "safe": "unsafe"
@@ -10694,7 +10151,6 @@
     "proof_kind": "Contract",
     "time": 1504,
     "props": 219,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::offset_from_unsigned",
       "safe": "unsafe"
@@ -10707,7 +10163,6 @@
     "proof_kind": "Contract",
     "time": 1050,
     "props": 202,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::swap",
       "safe": "unsafe"
@@ -10720,7 +10175,6 @@
     "proof_kind": "Contract",
     "time": 126,
     "props": 90,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::to_raw_parts",
       "safe": "safe"
@@ -10733,7 +10187,6 @@
     "proof_kind": "Contract",
     "time": 142,
     "props": 124,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::with_addr",
       "safe": "safe abstraction"
@@ -10746,7 +10199,6 @@
     "proof_kind": "Contract",
     "time": 55052,
     "props": 264,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write_bytes",
       "safe": "unsafe"
@@ -10759,7 +10211,6 @@
     "proof_kind": "Contract",
     "time": 2659,
     "props": 264,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write_bytes",
       "safe": "unsafe"
@@ -10772,7 +10223,6 @@
     "proof_kind": "Contract",
     "time": 9707,
     "props": 264,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write_bytes",
       "safe": "unsafe"
@@ -10785,7 +10235,6 @@
     "proof_kind": "Contract",
     "time": 9715,
     "props": 264,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write_bytes",
       "safe": "unsafe"
@@ -10798,7 +10247,6 @@
     "proof_kind": "Contract",
     "time": 1890,
     "props": 264,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write_bytes",
       "safe": "unsafe"
@@ -10811,7 +10259,6 @@
     "proof_kind": "Contract",
     "time": 18138,
     "props": 264,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write_bytes",
       "safe": "unsafe"
@@ -10824,7 +10271,6 @@
     "proof_kind": "Contract",
     "time": 131619,
     "props": 264,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write_bytes",
       "safe": "unsafe"
@@ -10837,7 +10283,6 @@
     "proof_kind": "Contract",
     "time": 2256,
     "props": 264,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write_bytes",
       "safe": "unsafe"
@@ -10850,7 +10295,6 @@
     "proof_kind": "Contract",
     "time": 5208,
     "props": 264,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write_bytes",
       "safe": "unsafe"
@@ -10863,7 +10307,6 @@
     "proof_kind": "Contract",
     "time": 15855,
     "props": 264,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write_bytes",
       "safe": "unsafe"
@@ -10876,7 +10319,6 @@
     "proof_kind": "Contract",
     "time": 1970,
     "props": 259,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write_bytes",
       "safe": "unsafe"
@@ -10889,7 +10331,6 @@
     "proof_kind": "Contract",
     "time": 495,
     "props": 196,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write_bytes",
       "safe": "unsafe"
@@ -10902,7 +10343,6 @@
     "proof_kind": "Contract",
     "time": 22897,
     "props": 264,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write_bytes",
       "safe": "unsafe"
@@ -10915,7 +10355,6 @@
     "proof_kind": "Contract",
     "time": 49362,
     "props": 177,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write",
       "safe": "unsafe"
@@ -10928,7 +10367,6 @@
     "proof_kind": "Contract",
     "time": 909,
     "props": 177,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write",
       "safe": "unsafe"
@@ -10941,7 +10379,6 @@
     "proof_kind": "Contract",
     "time": 1936,
     "props": 177,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write",
       "safe": "unsafe"
@@ -10954,7 +10391,6 @@
     "proof_kind": "Contract",
     "time": 4518,
     "props": 177,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write",
       "safe": "unsafe"
@@ -10967,7 +10403,6 @@
     "proof_kind": "Contract",
     "time": 1184,
     "props": 177,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write",
       "safe": "unsafe"
@@ -10980,7 +10415,6 @@
     "proof_kind": "Contract",
     "time": 4563,
     "props": 177,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write",
       "safe": "unsafe"
@@ -10993,7 +10427,6 @@
     "proof_kind": "Contract",
     "time": 43539,
     "props": 177,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write",
       "safe": "unsafe"
@@ -11006,7 +10439,6 @@
     "proof_kind": "Contract",
     "time": 870,
     "props": 177,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write",
       "safe": "unsafe"
@@ -11019,7 +10451,6 @@
     "proof_kind": "Contract",
     "time": 1423,
     "props": 177,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write",
       "safe": "unsafe"
@@ -11032,7 +10463,6 @@
     "proof_kind": "Contract",
     "time": 4589,
     "props": 177,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write",
       "safe": "unsafe"
@@ -11045,7 +10475,6 @@
     "proof_kind": "Contract",
     "time": 730,
     "props": 177,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write",
       "safe": "unsafe"
@@ -11058,7 +10487,6 @@
     "proof_kind": "Contract",
     "time": 174780,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write_unaligned",
       "safe": "unsafe"
@@ -11071,7 +10499,6 @@
     "proof_kind": "Contract",
     "time": 1717,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write_unaligned",
       "safe": "unsafe"
@@ -11084,7 +10511,6 @@
     "proof_kind": "Contract",
     "time": 3208,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write_unaligned",
       "safe": "unsafe"
@@ -11097,7 +10523,6 @@
     "proof_kind": "Contract",
     "time": 17549,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write_unaligned",
       "safe": "unsafe"
@@ -11110,7 +10535,6 @@
     "proof_kind": "Contract",
     "time": 810,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write_unaligned",
       "safe": "unsafe"
@@ -11123,7 +10547,6 @@
     "proof_kind": "Contract",
     "time": 15410,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write_unaligned",
       "safe": "unsafe"
@@ -11136,7 +10559,6 @@
     "proof_kind": "Contract",
     "time": 164594,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write_unaligned",
       "safe": "unsafe"
@@ -11149,7 +10571,6 @@
     "proof_kind": "Contract",
     "time": 2016,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write_unaligned",
       "safe": "unsafe"
@@ -11162,7 +10583,6 @@
     "proof_kind": "Contract",
     "time": 3797,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write_unaligned",
       "safe": "unsafe"
@@ -11175,7 +10595,6 @@
     "proof_kind": "Contract",
     "time": 20008,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write_unaligned",
       "safe": "unsafe"
@@ -11188,7 +10607,6 @@
     "proof_kind": "Contract",
     "time": 840,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write_unaligned",
       "safe": "unsafe"
@@ -11201,7 +10619,6 @@
     "proof_kind": "Contract",
     "time": 289,
     "props": 146,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write_unaligned",
       "safe": "unsafe"
@@ -11214,7 +10631,6 @@
     "proof_kind": "Contract",
     "time": 15416,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write_unaligned",
       "safe": "unsafe"
@@ -11227,7 +10643,6 @@
     "proof_kind": "Contract",
     "time": 540,
     "props": 149,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write",
       "safe": "unsafe"
@@ -11240,7 +10655,6 @@
     "proof_kind": "Contract",
     "time": 6208,
     "props": 177,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write",
       "safe": "unsafe"
@@ -11253,7 +10667,6 @@
     "proof_kind": "Contract",
     "time": 44861,
     "props": 187,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write_volatile",
       "safe": "unsafe"
@@ -11266,7 +10679,6 @@
     "proof_kind": "Contract",
     "time": 1278,
     "props": 187,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write_volatile",
       "safe": "unsafe"
@@ -11279,7 +10691,6 @@
     "proof_kind": "Contract",
     "time": 2420,
     "props": 187,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write_volatile",
       "safe": "unsafe"
@@ -11292,7 +10703,6 @@
     "proof_kind": "Contract",
     "time": 5590,
     "props": 187,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write_volatile",
       "safe": "unsafe"
@@ -11305,7 +10715,6 @@
     "proof_kind": "Contract",
     "time": 929,
     "props": 187,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write_volatile",
       "safe": "unsafe"
@@ -11318,7 +10727,6 @@
     "proof_kind": "Contract",
     "time": 3880,
     "props": 187,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write_volatile",
       "safe": "unsafe"
@@ -11331,7 +10739,6 @@
     "proof_kind": "Contract",
     "time": 47036,
     "props": 187,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write_volatile",
       "safe": "unsafe"
@@ -11344,7 +10751,6 @@
     "proof_kind": "Contract",
     "time": 1046,
     "props": 187,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write_volatile",
       "safe": "unsafe"
@@ -11357,7 +10763,6 @@
     "proof_kind": "Contract",
     "time": 2877,
     "props": 187,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write_volatile",
       "safe": "unsafe"
@@ -11370,7 +10775,6 @@
     "proof_kind": "Contract",
     "time": 3928,
     "props": 187,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write_volatile",
       "safe": "unsafe"
@@ -11383,7 +10787,6 @@
     "proof_kind": "Contract",
     "time": 1002,
     "props": 187,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write_volatile",
       "safe": "unsafe"
@@ -11396,7 +10799,6 @@
     "proof_kind": "Contract",
     "time": 352,
     "props": 165,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write_volatile",
       "safe": "unsafe"
@@ -11409,7 +10811,6 @@
     "proof_kind": "Contract",
     "time": 4153,
     "props": 187,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::write_volatile",
       "safe": "unsafe"
@@ -11422,7 +10823,6 @@
     "proof_kind": "Contract",
     "time": 176,
     "props": 79,
-    "with_contract": true,
     "func": {
       "name": "ptr::non_null::NonNull::<T>::is_aligned",
       "safe": "safe"
@@ -11441,7 +10841,6 @@
     "proof_kind": "Contract",
     "time": 77,
     "props": 69,
-    "with_contract": true,
     "func": {
       "name": "ptr::unique::Unique::<T>::as_non_null_ptr",
       "safe": "safe"
@@ -11454,7 +10853,6 @@
     "proof_kind": "Contract",
     "time": 399,
     "props": 103,
-    "with_contract": true,
     "func": {
       "name": "ptr::unique::Unique::<T>::as_ptr",
       "safe": "safe"
@@ -11479,7 +10877,6 @@
     "proof_kind": "Contract",
     "time": 109,
     "props": 105,
-    "with_contract": true,
     "func": {
       "name": "ptr::unique::Unique::<T>::new",
       "safe": "safe"
@@ -11492,7 +10889,6 @@
     "proof_kind": "Contract",
     "time": 82,
     "props": 75,
-    "with_contract": true,
     "func": {
       "name": "ptr::unique::Unique::<T>::new_unchecked",
       "safe": "unsafe"
@@ -11505,7 +10901,6 @@
     "proof_kind": "Contract",
     "time": 4026,
     "props": 266,
-    "with_contract": true,
     "func": {
       "name": "ptr::align_offset",
       "safe": "unsafe"
@@ -11518,7 +10913,6 @@
     "proof_kind": "Contract",
     "time": 77743,
     "props": 266,
-    "with_contract": true,
     "func": {
       "name": "ptr::align_offset",
       "safe": "unsafe"
@@ -11531,7 +10925,6 @@
     "proof_kind": "Contract",
     "time": 4987,
     "props": 266,
-    "with_contract": true,
     "func": {
       "name": "ptr::align_offset",
       "safe": "unsafe"
@@ -11544,7 +10937,6 @@
     "proof_kind": "Contract",
     "time": 2195,
     "props": 266,
-    "with_contract": true,
     "func": {
       "name": "ptr::align_offset",
       "safe": "unsafe"
@@ -11557,7 +10949,6 @@
     "proof_kind": "Contract",
     "time": 1683,
     "props": 266,
-    "with_contract": true,
     "func": {
       "name": "ptr::align_offset",
       "safe": "unsafe"
@@ -11570,7 +10961,6 @@
     "proof_kind": "Contract",
     "time": 2309,
     "props": 266,
-    "with_contract": true,
     "func": {
       "name": "ptr::align_offset",
       "safe": "unsafe"
@@ -11583,7 +10973,6 @@
     "proof_kind": "Contract",
     "time": 491,
     "props": 266,
-    "with_contract": true,
     "func": {
       "name": "ptr::align_offset",
       "safe": "unsafe"
@@ -11596,7 +10985,6 @@
     "proof_kind": "Contract",
     "time": 224,
     "props": 266,
-    "with_contract": true,
     "func": {
       "name": "ptr::align_offset",
       "safe": "unsafe"
@@ -11609,7 +10997,6 @@
     "proof_kind": "Contract",
     "time": 692,
     "props": 118,
-    "with_contract": true,
     "func": {
       "name": "ptr::read_volatile",
       "safe": "unsafe"
@@ -11699,7 +11086,6 @@
     "harness": "slice::iter::verify::verify_char::check_next_back_unchecked",
     "time": 13071,
     "props": 551,
-    "with_contract": true,
     "func": {
       "name": "slice::iter::Iter::<'a, T>::next_back_unchecked",
       "safe": "unsafe"
@@ -11728,7 +11114,6 @@
     "harness": "slice::iter::verify::verify_char::check_post_inc_start",
     "time": 14309,
     "props": 585,
-    "with_contract": true,
     "func": {
       "name": "slice::iter::Iter::<'a, T>::post_inc_start",
       "safe": "unsafe"
@@ -11745,7 +11130,6 @@
     "harness": "slice::iter::verify::verify_char::check_pre_dec_end",
     "time": 21072,
     "props": 609,
-    "with_contract": true,
     "func": {
       "name": "slice::iter::Iter::<'a, T>::pre_dec_end",
       "safe": "unsafe"
@@ -11840,7 +11224,6 @@
     "harness": "slice::iter::verify::verify_tup::check_next_back_unchecked",
     "time": 12000,
     "props": 551,
-    "with_contract": true,
     "func": {
       "name": "slice::iter::Iter::<'a, T>::next_back_unchecked",
       "safe": "unsafe"
@@ -11869,7 +11252,6 @@
     "harness": "slice::iter::verify::verify_tup::check_post_inc_start",
     "time": 22182,
     "props": 585,
-    "with_contract": true,
     "func": {
       "name": "slice::iter::Iter::<'a, T>::post_inc_start",
       "safe": "unsafe"
@@ -11886,7 +11268,6 @@
     "harness": "slice::iter::verify::verify_tup::check_pre_dec_end",
     "time": 21829,
     "props": 609,
-    "with_contract": true,
     "func": {
       "name": "slice::iter::Iter::<'a, T>::pre_dec_end",
       "safe": "unsafe"
@@ -11981,7 +11362,6 @@
     "harness": "slice::iter::verify::verify_u8::check_next_back_unchecked",
     "time": 6418,
     "props": 294,
-    "with_contract": true,
     "func": {
       "name": "slice::iter::Iter::<'a, T>::next_back_unchecked",
       "safe": "unsafe"
@@ -12010,7 +11390,6 @@
     "harness": "slice::iter::verify::verify_u8::check_post_inc_start",
     "time": 5137,
     "props": 329,
-    "with_contract": true,
     "func": {
       "name": "slice::iter::Iter::<'a, T>::post_inc_start",
       "safe": "unsafe"
@@ -12027,7 +11406,6 @@
     "harness": "slice::iter::verify::verify_u8::check_pre_dec_end",
     "time": 5376,
     "props": 353,
-    "with_contract": true,
     "func": {
       "name": "slice::iter::Iter::<'a, T>::pre_dec_end",
       "safe": "unsafe"
@@ -12122,7 +11500,6 @@
     "harness": "slice::iter::verify::verify_unit::check_next_back_unchecked",
     "time": 2130,
     "props": 268,
-    "with_contract": true,
     "func": {
       "name": "slice::iter::Iter::<'a, T>::next_back_unchecked",
       "safe": "unsafe"
@@ -12151,7 +11528,6 @@
     "harness": "slice::iter::verify::verify_unit::check_post_inc_start",
     "time": 880,
     "props": 297,
-    "with_contract": true,
     "func": {
       "name": "slice::iter::Iter::<'a, T>::post_inc_start",
       "safe": "unsafe"
@@ -12168,7 +11544,6 @@
     "harness": "slice::iter::verify::verify_unit::check_pre_dec_end",
     "time": 1183,
     "props": 297,
-    "with_contract": true,
     "func": {
       "name": "slice::iter::Iter::<'a, T>::pre_dec_end",
       "safe": "unsafe"
@@ -12185,7 +11560,6 @@
     "harness": "slice::verify::align_to_from_bool::align_to_bool",
     "time": 12083,
     "props": 421,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12196,7 +11570,6 @@
     "harness": "slice::verify::align_to_from_bool::align_to_char",
     "time": 13687,
     "props": 436,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12207,7 +11580,6 @@
     "harness": "slice::verify::align_to_from_bool::align_to_u128",
     "time": 13160,
     "props": 429,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12218,7 +11590,6 @@
     "harness": "slice::verify::align_to_from_bool::align_to_u16",
     "time": 11991,
     "props": 429,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12229,7 +11600,6 @@
     "harness": "slice::verify::align_to_from_bool::align_to_u32",
     "time": 16242,
     "props": 436,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12240,7 +11610,6 @@
     "harness": "slice::verify::align_to_from_bool::align_to_u64",
     "time": 14639,
     "props": 429,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12251,7 +11620,6 @@
     "harness": "slice::verify::align_to_from_bool::align_to_u8",
     "time": 9923,
     "props": 429,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12262,7 +11630,6 @@
     "harness": "slice::verify::align_to_from_bool::align_to_unit",
     "time": 7100,
     "props": 427,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12273,7 +11640,6 @@
     "harness": "slice::verify::align_to_from_char::align_to_bool",
     "time": 30298,
     "props": 504,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12284,7 +11650,6 @@
     "harness": "slice::verify::align_to_from_char::align_to_char",
     "time": 25749,
     "props": 496,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12295,7 +11660,6 @@
     "harness": "slice::verify::align_to_from_char::align_to_u128",
     "time": 27373,
     "props": 504,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12306,7 +11670,6 @@
     "harness": "slice::verify::align_to_from_char::align_to_u16",
     "time": 26564,
     "props": 497,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12317,7 +11680,6 @@
     "harness": "slice::verify::align_to_from_char::align_to_u32",
     "time": 21997,
     "props": 497,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12328,7 +11690,6 @@
     "harness": "slice::verify::align_to_from_char::align_to_u64",
     "time": 21816,
     "props": 497,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12339,7 +11700,6 @@
     "harness": "slice::verify::align_to_from_char::align_to_u8",
     "time": 30608,
     "props": 504,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12350,7 +11710,6 @@
     "harness": "slice::verify::align_to_from_char::align_to_unit",
     "time": 18304,
     "props": 502,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12361,7 +11720,6 @@
     "harness": "slice::verify::align_to_from_u128::align_to_bool",
     "time": 2005,
     "props": 239,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12372,7 +11730,6 @@
     "harness": "slice::verify::align_to_from_u128::align_to_char",
     "time": 1398,
     "props": 239,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12383,7 +11740,6 @@
     "harness": "slice::verify::align_to_from_u128::align_to_u128",
     "time": 5002,
     "props": 238,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12394,7 +11750,6 @@
     "harness": "slice::verify::align_to_from_u128::align_to_u16",
     "time": 3884,
     "props": 246,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12405,7 +11760,6 @@
     "harness": "slice::verify::align_to_from_u128::align_to_u32",
     "time": 1957,
     "props": 239,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12416,7 +11770,6 @@
     "harness": "slice::verify::align_to_from_u128::align_to_u64",
     "time": 2064,
     "props": 239,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12427,7 +11780,6 @@
     "harness": "slice::verify::align_to_from_u128::align_to_u8",
     "time": 1493,
     "props": 239,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12438,7 +11790,6 @@
     "harness": "slice::verify::align_to_from_u128::align_to_unit",
     "time": 882,
     "props": 239,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12449,7 +11800,6 @@
     "harness": "slice::verify::align_to_from_u16::align_to_bool",
     "time": 1832,
     "props": 239,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12460,7 +11810,6 @@
     "harness": "slice::verify::align_to_from_u16::align_to_char",
     "time": 5654,
     "props": 246,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12471,7 +11820,6 @@
     "harness": "slice::verify::align_to_from_u16::align_to_u128",
     "time": 3779,
     "props": 239,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12482,7 +11830,6 @@
     "harness": "slice::verify::align_to_from_u16::align_to_u16",
     "time": 3521,
     "props": 238,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12493,7 +11840,6 @@
     "harness": "slice::verify::align_to_from_u16::align_to_u32",
     "time": 3001,
     "props": 239,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12504,7 +11850,6 @@
     "harness": "slice::verify::align_to_from_u16::align_to_u64",
     "time": 4361,
     "props": 246,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12515,7 +11860,6 @@
     "harness": "slice::verify::align_to_from_u16::align_to_u8",
     "time": 5469,
     "props": 246,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12526,7 +11870,6 @@
     "harness": "slice::verify::align_to_from_u16::align_to_unit",
     "time": 739,
     "props": 239,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12537,7 +11880,6 @@
     "harness": "slice::verify::align_to_from_u32::align_to_bool",
     "time": 4550,
     "props": 246,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12548,7 +11890,6 @@
     "harness": "slice::verify::align_to_from_u32::align_to_char",
     "time": 2369,
     "props": 239,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12559,7 +11900,6 @@
     "harness": "slice::verify::align_to_from_u32::align_to_u128",
     "time": 4162,
     "props": 239,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12570,7 +11910,6 @@
     "harness": "slice::verify::align_to_from_u32::align_to_u16",
     "time": 1857,
     "props": 239,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12581,7 +11920,6 @@
     "harness": "slice::verify::align_to_from_u32::align_to_u32",
     "time": 1600,
     "props": 231,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12592,7 +11930,6 @@
     "harness": "slice::verify::align_to_from_u32::align_to_u64",
     "time": 3125,
     "props": 239,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12603,7 +11940,6 @@
     "harness": "slice::verify::align_to_from_u32::align_to_u8",
     "time": 1463,
     "props": 239,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12614,7 +11950,6 @@
     "harness": "slice::verify::align_to_from_u32::align_to_unit",
     "time": 541,
     "props": 239,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12625,7 +11960,6 @@
     "harness": "slice::verify::align_to_from_u64::align_to_bool",
     "time": 1434,
     "props": 239,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12636,7 +11970,6 @@
     "harness": "slice::verify::align_to_from_u64::align_to_char",
     "time": 3996,
     "props": 246,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12647,7 +11980,6 @@
     "harness": "slice::verify::align_to_from_u64::align_to_u128",
     "time": 2515,
     "props": 239,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12658,7 +11990,6 @@
     "harness": "slice::verify::align_to_from_u64::align_to_u16",
     "time": 1499,
     "props": 239,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12669,7 +12000,6 @@
     "harness": "slice::verify::align_to_from_u64::align_to_u32",
     "time": 1418,
     "props": 239,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12680,7 +12010,6 @@
     "harness": "slice::verify::align_to_from_u64::align_to_u64",
     "time": 3394,
     "props": 238,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12691,7 +12020,6 @@
     "harness": "slice::verify::align_to_from_u64::align_to_u8",
     "time": 3671,
     "props": 246,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12702,7 +12030,6 @@
     "harness": "slice::verify::align_to_from_u64::align_to_unit",
     "time": 967,
     "props": 246,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12713,7 +12040,6 @@
     "harness": "slice::verify::align_to_from_u8::align_to_bool",
     "time": 4859,
     "props": 246,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12724,7 +12050,6 @@
     "harness": "slice::verify::align_to_from_u8::align_to_char",
     "time": 3462,
     "props": 239,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12735,7 +12060,6 @@
     "harness": "slice::verify::align_to_from_u8::align_to_u128",
     "time": 2042,
     "props": 239,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12746,7 +12070,6 @@
     "harness": "slice::verify::align_to_from_u8::align_to_u16",
     "time": 2176,
     "props": 239,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12757,7 +12080,6 @@
     "harness": "slice::verify::align_to_from_u8::align_to_u32",
     "time": 3148,
     "props": 239,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12768,7 +12090,6 @@
     "harness": "slice::verify::align_to_from_u8::align_to_u64",
     "time": 2056,
     "props": 239,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12779,7 +12100,6 @@
     "harness": "slice::verify::align_to_from_u8::align_to_u8",
     "time": 1436,
     "props": 231,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12790,7 +12110,6 @@
     "harness": "slice::verify::align_to_from_u8::align_to_unit",
     "time": 605,
     "props": 239,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12801,7 +12120,6 @@
     "harness": "slice::verify::align_to_from_unit::align_to_bool",
     "time": 491,
     "props": 239,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12812,7 +12130,6 @@
     "harness": "slice::verify::align_to_from_unit::align_to_char",
     "time": 510,
     "props": 246,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12823,7 +12140,6 @@
     "harness": "slice::verify::align_to_from_unit::align_to_u128",
     "time": 768,
     "props": 239,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12834,7 +12150,6 @@
     "harness": "slice::verify::align_to_from_unit::align_to_u16",
     "time": 878,
     "props": 246,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12845,7 +12160,6 @@
     "harness": "slice::verify::align_to_from_unit::align_to_u32",
     "time": 534,
     "props": 246,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12856,7 +12170,6 @@
     "harness": "slice::verify::align_to_from_unit::align_to_u64",
     "time": 505,
     "props": 239,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12867,7 +12180,6 @@
     "harness": "slice::verify::align_to_from_unit::align_to_u8",
     "time": 501,
     "props": 239,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12878,7 +12190,6 @@
     "harness": "slice::verify::align_to_from_unit::align_to_unit",
     "time": 757,
     "props": 238,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to",
       "safe": "unsafe"
@@ -12889,7 +12200,6 @@
     "harness": "slice::verify::align_to_mut_from_bool::align_to_mut_bool",
     "time": 12252,
     "props": 460,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -12900,7 +12210,6 @@
     "harness": "slice::verify::align_to_mut_from_bool::align_to_mut_char",
     "time": 17561,
     "props": 468,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -12911,7 +12220,6 @@
     "harness": "slice::verify::align_to_mut_from_bool::align_to_mut_u128",
     "time": 11555,
     "props": 468,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -12922,7 +12230,6 @@
     "harness": "slice::verify::align_to_mut_from_bool::align_to_mut_u16",
     "time": 12408,
     "props": 468,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -12933,7 +12240,6 @@
     "harness": "slice::verify::align_to_mut_from_bool::align_to_mut_u32",
     "time": 14219,
     "props": 468,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -12944,7 +12250,6 @@
     "harness": "slice::verify::align_to_mut_from_bool::align_to_mut_u64",
     "time": 12350,
     "props": 468,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -12955,7 +12260,6 @@
     "harness": "slice::verify::align_to_mut_from_bool::align_to_mut_u8",
     "time": 12371,
     "props": 468,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -12966,7 +12270,6 @@
     "harness": "slice::verify::align_to_mut_from_bool::align_to_mut_unit",
     "time": 6826,
     "props": 464,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -12977,7 +12280,6 @@
     "harness": "slice::verify::align_to_mut_from_char::align_to_mut_bool",
     "time": 26110,
     "props": 536,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -12988,7 +12290,6 @@
     "harness": "slice::verify::align_to_mut_from_char::align_to_mut_char",
     "time": 39525,
     "props": 528,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -12999,7 +12300,6 @@
     "harness": "slice::verify::align_to_mut_from_char::align_to_mut_u128",
     "time": 30126,
     "props": 536,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13010,7 +12310,6 @@
     "harness": "slice::verify::align_to_mut_from_char::align_to_mut_u16",
     "time": 24833,
     "props": 536,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13021,7 +12320,6 @@
     "harness": "slice::verify::align_to_mut_from_char::align_to_mut_u32",
     "time": 28384,
     "props": 536,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13032,7 +12330,6 @@
     "harness": "slice::verify::align_to_mut_from_char::align_to_mut_u64",
     "time": 28795,
     "props": 536,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13043,7 +12340,6 @@
     "harness": "slice::verify::align_to_mut_from_char::align_to_mut_u8",
     "time": 33159,
     "props": 536,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13054,7 +12350,6 @@
     "harness": "slice::verify::align_to_mut_from_char::align_to_mut_unit",
     "time": 17576,
     "props": 532,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13065,7 +12360,6 @@
     "harness": "slice::verify::align_to_mut_from_u128::align_to_mut_bool",
     "time": 5684,
     "props": 279,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13076,7 +12370,6 @@
     "harness": "slice::verify::align_to_mut_from_u128::align_to_mut_char",
     "time": 5401,
     "props": 279,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13087,7 +12380,6 @@
     "harness": "slice::verify::align_to_mut_from_u128::align_to_mut_u128",
     "time": 3344,
     "props": 271,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13098,7 +12390,6 @@
     "harness": "slice::verify::align_to_mut_from_u128::align_to_mut_u16",
     "time": 3589,
     "props": 279,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13109,7 +12400,6 @@
     "harness": "slice::verify::align_to_mut_from_u128::align_to_mut_u32",
     "time": 4003,
     "props": 279,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13120,7 +12410,6 @@
     "harness": "slice::verify::align_to_mut_from_u128::align_to_mut_u64",
     "time": 5995,
     "props": 279,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13131,7 +12420,6 @@
     "harness": "slice::verify::align_to_mut_from_u128::align_to_mut_u8",
     "time": 5798,
     "props": 279,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13142,7 +12430,6 @@
     "harness": "slice::verify::align_to_mut_from_u128::align_to_mut_unit",
     "time": 960,
     "props": 279,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13153,7 +12440,6 @@
     "harness": "slice::verify::align_to_mut_from_u16::align_to_mut_bool",
     "time": 6109,
     "props": 279,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13164,7 +12450,6 @@
     "harness": "slice::verify::align_to_mut_from_u16::align_to_mut_char",
     "time": 3531,
     "props": 279,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13175,7 +12460,6 @@
     "harness": "slice::verify::align_to_mut_from_u16::align_to_mut_u128",
     "time": 3403,
     "props": 279,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13186,7 +12470,6 @@
     "harness": "slice::verify::align_to_mut_from_u16::align_to_mut_u16",
     "time": 3519,
     "props": 271,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13197,7 +12480,6 @@
     "harness": "slice::verify::align_to_mut_from_u16::align_to_mut_u32",
     "time": 4685,
     "props": 279,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13208,7 +12490,6 @@
     "harness": "slice::verify::align_to_mut_from_u16::align_to_mut_u64",
     "time": 5663,
     "props": 279,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13219,7 +12500,6 @@
     "harness": "slice::verify::align_to_mut_from_u16::align_to_mut_u8",
     "time": 5252,
     "props": 279,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13230,7 +12510,6 @@
     "harness": "slice::verify::align_to_mut_from_u16::align_to_mut_unit",
     "time": 983,
     "props": 279,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13241,7 +12520,6 @@
     "harness": "slice::verify::align_to_mut_from_u32::align_to_mut_bool",
     "time": 5157,
     "props": 279,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13252,7 +12530,6 @@
     "harness": "slice::verify::align_to_mut_from_u32::align_to_mut_char",
     "time": 5003,
     "props": 279,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13263,7 +12540,6 @@
     "harness": "slice::verify::align_to_mut_from_u32::align_to_mut_u128",
     "time": 5657,
     "props": 279,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13274,7 +12550,6 @@
     "harness": "slice::verify::align_to_mut_from_u32::align_to_mut_u16",
     "time": 5658,
     "props": 279,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13285,7 +12560,6 @@
     "harness": "slice::verify::align_to_mut_from_u32::align_to_mut_u32",
     "time": 5193,
     "props": 271,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13296,7 +12570,6 @@
     "harness": "slice::verify::align_to_mut_from_u32::align_to_mut_u64",
     "time": 5852,
     "props": 279,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13307,7 +12580,6 @@
     "harness": "slice::verify::align_to_mut_from_u32::align_to_mut_u8",
     "time": 5627,
     "props": 279,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13318,7 +12590,6 @@
     "harness": "slice::verify::align_to_mut_from_u32::align_to_mut_unit",
     "time": 975,
     "props": 279,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13329,7 +12600,6 @@
     "harness": "slice::verify::align_to_mut_from_u64::align_to_mut_bool",
     "time": 5862,
     "props": 279,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13340,7 +12610,6 @@
     "harness": "slice::verify::align_to_mut_from_u64::align_to_mut_char",
     "time": 3939,
     "props": 279,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13351,7 +12620,6 @@
     "harness": "slice::verify::align_to_mut_from_u64::align_to_mut_u128",
     "time": 3928,
     "props": 279,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13362,7 +12630,6 @@
     "harness": "slice::verify::align_to_mut_from_u64::align_to_mut_u16",
     "time": 5261,
     "props": 279,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13373,7 +12640,6 @@
     "harness": "slice::verify::align_to_mut_from_u64::align_to_mut_u32",
     "time": 3744,
     "props": 279,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13384,7 +12650,6 @@
     "harness": "slice::verify::align_to_mut_from_u64::align_to_mut_u64",
     "time": 3339,
     "props": 271,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13395,7 +12660,6 @@
     "harness": "slice::verify::align_to_mut_from_u64::align_to_mut_u8",
     "time": 5838,
     "props": 279,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13406,7 +12670,6 @@
     "harness": "slice::verify::align_to_mut_from_u64::align_to_mut_unit",
     "time": 851,
     "props": 279,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13417,7 +12680,6 @@
     "harness": "slice::verify::align_to_mut_from_u8::align_to_mut_bool",
     "time": 4975,
     "props": 279,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13428,7 +12690,6 @@
     "harness": "slice::verify::align_to_mut_from_u8::align_to_mut_char",
     "time": 5169,
     "props": 279,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13439,7 +12700,6 @@
     "harness": "slice::verify::align_to_mut_from_u8::align_to_mut_u128",
     "time": 4370,
     "props": 279,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13450,7 +12710,6 @@
     "harness": "slice::verify::align_to_mut_from_u8::align_to_mut_u16",
     "time": 4686,
     "props": 279,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13461,7 +12720,6 @@
     "harness": "slice::verify::align_to_mut_from_u8::align_to_mut_u32",
     "time": 2970,
     "props": 279,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13472,7 +12730,6 @@
     "harness": "slice::verify::align_to_mut_from_u8::align_to_mut_u64",
     "time": 5017,
     "props": 279,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13483,7 +12740,6 @@
     "harness": "slice::verify::align_to_mut_from_u8::align_to_mut_u8",
     "time": 3146,
     "props": 271,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13494,7 +12750,6 @@
     "harness": "slice::verify::align_to_mut_from_u8::align_to_mut_unit",
     "time": 911,
     "props": 279,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13505,7 +12760,6 @@
     "harness": "slice::verify::align_to_mut_from_unit::align_to_mut_bool",
     "time": 772,
     "props": 279,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13516,7 +12770,6 @@
     "harness": "slice::verify::align_to_mut_from_unit::align_to_mut_char",
     "time": 496,
     "props": 279,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13527,7 +12780,6 @@
     "harness": "slice::verify::align_to_mut_from_unit::align_to_mut_u128",
     "time": 678,
     "props": 279,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13538,7 +12790,6 @@
     "harness": "slice::verify::align_to_mut_from_unit::align_to_mut_u16",
     "time": 761,
     "props": 279,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13549,7 +12800,6 @@
     "harness": "slice::verify::align_to_mut_from_unit::align_to_mut_u32",
     "time": 794,
     "props": 279,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13560,7 +12810,6 @@
     "harness": "slice::verify::align_to_mut_from_unit::align_to_mut_u64",
     "time": 450,
     "props": 279,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13571,7 +12820,6 @@
     "harness": "slice::verify::align_to_mut_from_unit::align_to_mut_u8",
     "time": 596,
     "props": 279,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13582,7 +12830,6 @@
     "harness": "slice::verify::align_to_mut_from_unit::align_to_mut_unit",
     "time": 565,
     "props": 271,
-    "with_contract": true,
     "func": {
       "name": "slice::<impl [T]>::align_to_mut",
       "safe": "unsafe"
@@ -13593,7 +12840,6 @@
     "harness": "str::pattern::verify::check_small_slice_eq",
     "time": 134240,
     "props": 424,
-    "with_contract": false,
     "func": {
       "name": "str::pattern::small_slice_eq",
       "safe": "unsafe"
@@ -13605,7 +12851,6 @@
     "proof_kind": "Standard",
     "time": 68072,
     "props": 405,
-    "with_contract": false,
     "func": {
       "name": "str::validations::run_utf8_validation",
       "safe": "safe abstraction"
@@ -13618,7 +12863,6 @@
     "proof_kind": "Contract",
     "time": 86081,
     "props": 104,
-    "with_contract": true,
     "func": {
       "name": "time::Duration::as_micros",
       "safe": "safe"
@@ -13631,7 +12875,6 @@
     "proof_kind": "Contract",
     "time": 52291,
     "props": 96,
-    "with_contract": true,
     "func": {
       "name": "time::Duration::as_micros",
       "safe": "safe"
@@ -13644,7 +12887,6 @@
     "proof_kind": "Contract",
     "time": 30637,
     "props": 104,
-    "with_contract": true,
     "func": {
       "name": "time::Duration::as_millis",
       "safe": "safe"
@@ -13657,7 +12899,6 @@
     "proof_kind": "Contract",
     "time": 46198,
     "props": 96,
-    "with_contract": true,
     "func": {
       "name": "time::Duration::as_millis",
       "safe": "safe"
@@ -13682,7 +12923,6 @@
     "proof_kind": "Contract",
     "time": 143,
     "props": 74,
-    "with_contract": true,
     "func": {
       "name": "time::Duration::as_secs",
       "safe": "safe"
@@ -13695,7 +12935,6 @@
     "proof_kind": "Contract",
     "time": 132,
     "props": 66,
-    "with_contract": true,
     "func": {
       "name": "time::Duration::as_secs",
       "safe": "safe"
@@ -13708,7 +12947,6 @@
     "proof_kind": "Contract",
     "time": 635,
     "props": 109,
-    "with_contract": true,
     "func": {
       "name": "time::Duration::checked_add",
       "safe": "safe"
@@ -13721,7 +12959,6 @@
     "proof_kind": "Contract",
     "time": 523,
     "props": 101,
-    "with_contract": true,
     "func": {
       "name": "time::Duration::checked_add",
       "safe": "safe"
@@ -13734,7 +12971,6 @@
     "proof_kind": "Contract",
     "time": 443,
     "props": 175,
-    "with_contract": true,
     "func": {
       "name": "time::Duration::checked_div",
       "safe": "safe"
@@ -13747,7 +12983,6 @@
     "proof_kind": "Contract",
     "time": 463,
     "props": 167,
-    "with_contract": true,
     "func": {
       "name": "time::Duration::checked_div",
       "safe": "safe"
@@ -13760,7 +12995,6 @@
     "proof_kind": "Contract",
     "time": 1747,
     "props": 115,
-    "with_contract": true,
     "func": {
       "name": "time::Duration::checked_mul",
       "safe": "safe"
@@ -13773,7 +13007,6 @@
     "proof_kind": "Contract",
     "time": 631,
     "props": 107,
-    "with_contract": true,
     "func": {
       "name": "time::Duration::checked_mul",
       "safe": "safe"
@@ -13786,7 +13019,6 @@
     "proof_kind": "Contract",
     "time": 578,
     "props": 136,
-    "with_contract": true,
     "func": {
       "name": "time::Duration::checked_sub",
       "safe": "safe"
@@ -13799,7 +13031,6 @@
     "proof_kind": "Contract",
     "time": 964,
     "props": 128,
-    "with_contract": true,
     "func": {
       "name": "time::Duration::checked_sub",
       "safe": "safe"
@@ -13812,7 +13043,6 @@
     "proof_kind": "Contract",
     "time": 165,
     "props": 86,
-    "with_contract": true,
     "func": {
       "name": "time::Duration::new",
       "safe": "safe abstraction"
@@ -13825,7 +13055,6 @@
     "proof_kind": "Contract",
     "time": 138,
     "props": 78,
-    "with_contract": true,
     "func": {
       "name": "time::Duration::new",
       "safe": "safe abstraction"
@@ -13838,7 +13067,6 @@
     "proof_kind": "Contract",
     "time": 4086,
     "props": 80,
-    "with_contract": true,
     "func": {
       "name": "time::Duration::subsec_micros",
       "safe": "safe"
@@ -13851,7 +13079,6 @@
     "proof_kind": "Contract",
     "time": 3001,
     "props": 72,
-    "with_contract": true,
     "func": {
       "name": "time::Duration::subsec_micros",
       "safe": "safe"
@@ -13864,7 +13091,6 @@
     "proof_kind": "Contract",
     "time": 816,
     "props": 80,
-    "with_contract": true,
     "func": {
       "name": "time::Duration::subsec_millis",
       "safe": "safe"
@@ -13877,7 +13103,6 @@
     "proof_kind": "Contract",
     "time": 590,
     "props": 72,
-    "with_contract": true,
     "func": {
       "name": "time::Duration::subsec_millis",
       "safe": "safe"
@@ -13890,7 +13115,6 @@
     "proof_kind": "Contract",
     "time": 103,
     "props": 74,
-    "with_contract": true,
     "func": {
       "name": "time::Duration::subsec_nanos",
       "safe": "safe"
@@ -13903,7 +13127,6 @@
     "proof_kind": "Contract",
     "time": 95,
     "props": 66,
-    "with_contract": true,
     "func": {
       "name": "time::Duration::subsec_nanos",
       "safe": "safe"

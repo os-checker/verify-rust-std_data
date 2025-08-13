@@ -11,19 +11,25 @@ merge_diff() {
 
 results() {
   jq '[
-    .[] | select(.result.crate == "core") # filter in core results
-    | .result #+{ thread_id: .thread_id } # merge thread_id into result
+    .[] 
+    | .result
+    | select(.crate == "core") # filter in core results
     | select(.is_autoharness | not) | del(.is_autoharness) # remove autoharness
-    | .file_name |= sub("^/home/runner/work/verify-rust-std/verify-rust-std/library/"; "") # strip local path
+    | {
+      file: .file_name | sub("^/home/runner/work/verify-rust-std/verify-rust-std/library/"; ""), # strip local path
+      harness,
+      ok: (if (.result // "" | startswith("SUCCESSFUL") | not) then false else null end), # convert SUCCESSFUL to ok, omission as true
+      time: (.time | select(. != null) | sub("s$"; "") | tonumber * 1000 | floor), # convert time into milliseconds
+      props: .n_total_properties,
+      n_failed_properties,
+      func: { name: .function, safe: .function_safeness },
+      output
+    }
+
+    | del(.ok | select(. == null)) # remove null time
+    | del(.time | select(. == null)) # remove null time
+    | del(.output | select(. == [])) # remove .output field if empty
     | del(.n_failed_properties | select(. == 0)) # remove .n_failed_properties field if zero
-    | . += (if (.result // "" | startswith("SUCCESSFUL") | not) then {ok: false} else {} end) # convert SUCCESSFUL to ok, omission as true
-    | .props = .n_total_properties | del(.n_total_properties) # shorten long field names
-    | .file = .file_name | del(.file_name) # shorten long field names
-    | .func_ = { name: .function, safe: .function_safeness } | del(.function, .function_safeness) # shorten long field names
-    | del(.time | select(. == null))      # remove null time
-    | del(.output | select(. == []))      # remove .output field if empty
-    | del(.crate, .result, .public_target, .autoharness_result)  # remove less important fields to save space
-    | (.time | select(. != null)) |= (sub("s$"; "") | tonumber * 1000 | floor) # convert time into milliseconds
   ]' ../../tmp/ubuntu-latest-results.json/results.json >results-core.json
 }
 
@@ -32,7 +38,7 @@ merge_results() {
     (.[0] + .[1])
     | group_by(.harness + "#" + .file)
     | map(
-        add | { file, harness , proof_kind, time, props, with_contract, func, hash }
+        add | { file, harness , proof_kind, time, props, func, hash }
       )
     | walk(if type == "object" then with_entries(select(.value != null)) else . end)
   ' results-core.json merge_diff-proofs-only.json >merge_results-core.json
