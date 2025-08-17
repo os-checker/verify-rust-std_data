@@ -13,7 +13,7 @@ results() {
   jq '[
     .[] 
     | .result
-    | select(.crate == "core") # filter in core results
+    # | select(.crate == "core") # filter in core results
     | select(.is_autoharness | not) | del(.is_autoharness) # remove autoharness
     | {
       file: .file_name | sub("^/home/runner/work/verify-rust-std/verify-rust-std/library/"; ""), # strip local path
