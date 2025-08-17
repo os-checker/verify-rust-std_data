@@ -16,13 +16,16 @@ results() {
     # | select(.crate == "core") # filter in core results
     | select(.is_autoharness | not) | del(.is_autoharness) # remove autoharness
     | {
-      file: .file_name | sub("^/home/runner/work/verify-rust-std/verify-rust-std/library/"; ""), # strip local path
       harness,
       ok: (if (.result // "" | startswith("SUCCESSFUL") | not) then false else null end), # convert SUCCESSFUL to ok, omission as true
       time: (.time | select(. != null) | sub("s$"; "") | tonumber * 1000 | floor), # convert time into milliseconds
       props: .n_total_properties,
       n_failed_properties,
-      func: { name: .function, safe: .function_safeness },
+      func: {
+        name: .function,
+        safe: .function_safeness,
+        file: .file_name | sub("^/home/runner/work/verify-rust-std/verify-rust-std/library/"; ""), # strip local path
+      },
       output
     }
 
@@ -36,9 +39,9 @@ results() {
 merge_results() {
   jq --slurp '
     (.[0] + .[1])
-    | group_by(.harness + "#" + .file)
+    | group_by(.harness)
     | map(
-        add | { file, harness , proof_kind, time, props, func, hash }
+        add | { file, harness, proof_kind, time, props, func, hash }
       )
     | walk(if type == "object" then with_entries(select(.value != null)) else . end)
   ' results-core.json merge_diff-proofs-only.json >merge_results-core.json
