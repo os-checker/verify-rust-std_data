@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/dec2flt/parse.rs",
+  "name": "num::dec2flt::parse::parse_scientific::{closure#0}",
+  "hash": "42132847473787316957559301466158283936",
+  "hash_direct": "2850203733554013243786532329963073075",
+  "src": "|digit| {\n            // no overflows here, saturate well before overflow\n            if exponent < 0x10000 {\n                exponent = 10 * exponent + digit as i64;\n            }\n        }"
+}

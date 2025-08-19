@@ -1,0 +1,13 @@
+{
+  "file": "core/src/intrinsics/fallback.rs",
+  "name": "<i16 as intrinsics::fallback::CarryingMulAdd>::carrying_mul_add",
+  "hash": "953881564743249153315779998435426162544",
+  "hash_direct": "1184324347241599784411092388781848331665",
+  "src": "fn carrying_mul_add(self, a: Self, b: Self, c: Self) -> ($u, $t) {\n                let wide = (self as $w) * (a as $w) + (b as $w) + (c as $w);\n                (wide as _, (wide >> Self::BITS) as _)\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "impl_carrying_mul_add_by_widening! {\n    u8 u8 u16,\n    u16 u16 u32,\n    u32 u32 u64,\n    u64 u64 u128,\n    usize usize UDoubleSize,\n    i8 u8 i16,\n    i16 u16 i32,\n    i32 u32 i64,\n    i64 u64 i128,\n    isize usize UDoubleSize,\n}",
+      "defsite": "macro_rules! impl_carrying_mul_add_by_widening {\n    ($($t:ident $u:ident $w:ident,)+) => {$(\n        #[rustc_const_unstable(feature = \"core_intrinsics_fallbacks\", issue = \"none\")]\n        impl const CarryingMulAdd for $t {\n            type Unsigned = $u;\n            #[inline]\n            fn carrying_mul_add(self, a: Self, b: Self, c: Self) -> ($u, $t) {\n                let wide = (self as $w) * (a as $w) + (b as $w) + (c as $w);\n                (wide as _, (wide >> Self::BITS) as _)\n            }\n        }\n    )+};\n}"
+    }
+  ]
+}

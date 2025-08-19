@@ -1,0 +1,13 @@
+{
+  "file": "core/src/str/pattern.rs",
+  "name": "<str::pattern::Utf8Pattern<'_> as cmp::Eq>::assert_receiver_is_total_eq",
+  "hash": "1701533268364534342616968822826596418154",
+  "hash_direct": "653255319718569124515008573343337791337",
+  "src": "Eq",
+  "macro_backtrace": [
+    {
+      "callsite": "Eq",
+      "defsite": "pub macro Eq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

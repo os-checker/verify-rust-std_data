@@ -1,0 +1,8 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "ptr::drop_in_place::<&char::CaseMappingIter>",
+  "hash": "1039842471319075210713814076179962808389",
+  "hash_direct": "1161697831820851810210834278343755077768",
+  "inst_kind": "\"Shim\"",
+  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
+}

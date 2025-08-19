@@ -1,0 +1,18 @@
+{
+  "file": "core/src/slice/index.rs",
+  "name": "<ops::range::Range<usize> as slice::index::SliceIndex<[mem::maybe_uninit::MaybeUninit<(char, u8)>]>>::get_unchecked_mut",
+  "hash": "626061183747735738311219292790402372629",
+  "hash_direct": "2399353392873937235789881763078690940",
+  "src": "unsafe fn get_unchecked_mut(self, slice: *mut [T]) -> *mut [T] {\n        assert_unsafe_precondition!(\n            check_library_ub,\n            \"slice::get_unchecked_mut requires that the range is within the slice\",\n            (\n                start: usize = self.start,\n                end: usize = self.end,\n                len: usize = slice.len()\n            ) => end >= start && end <= len\n        );\n        // SAFETY: see comments for `get_unchecked` above.\n        unsafe {\n            let new_len = crate::intrinsics::unchecked_sub(self.end, self.start);\n            get_offset_len_mut_noubcheck(slice, self.start, new_len)\n        }\n    }",
+  "callees": [
+    "47323665595455568617290020941376774286",
+    "1329845230409163288212548289525672875535",
+    "841904668883726495316837415609641023349",
+    "1258931108755458209614962827106116332072",
+    "105125143701458073564296455695110349394",
+    "4990756322398885889067371377127489863",
+    "50253568519481701847154759086382746704",
+    "902611429001890371314444169506717726806",
+    "109562649191060178038182565159088266799"
+  ]
+}

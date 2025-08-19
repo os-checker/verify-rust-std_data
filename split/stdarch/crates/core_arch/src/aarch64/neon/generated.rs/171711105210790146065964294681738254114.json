@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vaddv_u16",
+  "hash": "171711105210790146065964294681738254114",
+  "hash_direct": "126110737463769337362516795093892444528",
+  "src": "pub fn vaddv_u16(a: uint16x4_t) -> u16 {\n    unsafe { simd_reduce_add_unordered(a) }\n}"
+}

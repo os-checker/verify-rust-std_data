@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vpadal_u32",
+  "hash": "42881123740852276412877742081579494710",
+  "hash_direct": "155353505181633850624987641496832982316",
+  "src": "pub fn vpadal_u32(a: uint64x1_t, b: uint32x2_t) -> uint64x1_t {\n    let x: uint64x1_t;\n    #[cfg(target_arch = \"arm\")]\n    {\n        x = priv_vpadal_u32(a, b);\n    }\n    #[cfg(any(target_arch = \"aarch64\", target_arch = \"arm64ec\"))]\n    unsafe {\n        x = simd_add(vpaddl_u32(b), a);\n    };\n    x\n}",
+  "callees": [
+    "14854918275845916895601567484586913491"
+  ]
+}

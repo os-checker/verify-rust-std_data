@@ -1,0 +1,7 @@
+{
+  "file": "core/src/cmp.rs",
+  "name": "cmp::impls::<impl cmp::Ord for bool>::max",
+  "hash": "88235331103495295243143247034391180586",
+  "hash_direct": "150801049414869423197414532566830570154",
+  "src": "fn max(self, other: bool) -> bool {\n            self | other\n        }"
+}

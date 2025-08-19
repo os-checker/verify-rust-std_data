@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/mod.rs",
+  "name": "num::<impl u8>::is_ascii",
+  "hash": "54605058554859736136630060697047510881",
+  "hash_direct": "37749567627429735724195257443512446859",
+  "src": "pub const fn is_ascii(&self) -> bool {\n        *self <= 127\n    }"
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/metadata.rs",
+  "name": "ptr::metadata::metadata::<task::wake::Context<'_>>",
+  "hash": "43661041595659953884752318585653212085",
+  "hash_direct": "499379477147455439211132481336401217314",
+  "src": "pub const fn metadata<T: PointeeSized>(ptr: *const T) -> <T as Pointee>::Metadata {\n    ptr_metadata(ptr)\n}"
+}

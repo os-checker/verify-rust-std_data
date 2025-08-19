@@ -1,0 +1,7 @@
+{
+  "file": "core/src/option.rs",
+  "name": "option::Option::<u64>::is_some",
+  "hash": "12714096241827567054343400615967899489",
+  "hash_direct": "54460400634895161894883072878780052673",
+  "src": "pub const fn is_some(&self) -> bool {\n        matches!(*self, Some(_))\n    }"
+}

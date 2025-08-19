@@ -1,0 +1,16 @@
+{
+  "file": "core/src/option.rs",
+  "name": "option::Option::<usize>::unwrap_or_else::<{closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/slice/index.rs:996:47: 996:49}>",
+  "hash": "1030350506233019441114381199225054380597",
+  "hash_direct": "45218079101776307644213901908831096960",
+  "src": "pub const fn unwrap_or_else<F>(self, f: F) -> T\n    where\n        F: ~const FnOnce() -> T + ~const Destruct,\n    {\n        match self {\n            Some(x) => x,\n            None => f(),\n        }\n    }",
+  "callees": [
+    "47323665595455568617290020941376774286",
+    "841904668883726495316837415609641023349",
+    "1258931108755458209614962827106116332072",
+    "1243847030362955698517207199029174369810",
+    "10849414877331114943798470177582891777",
+    "47380096949955473066056352830892057526",
+    "553184652678432063712515810568440288616"
+  ]
+}

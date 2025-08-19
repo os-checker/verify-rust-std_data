@@ -1,0 +1,12 @@
+{
+  "file": "core/src/slice/cmp.rs",
+  "name": "<u8 as slice::cmp::SliceOrd>::compare",
+  "hash": "163906383346533864348863052873823119227",
+  "hash_direct": "1787489976950017449510679961297778977782",
+  "src": "fn compare(left: &[Self], right: &[Self]) -> Ordering {\n        // Since the length of a slice is always less than or equal to\n        // isize::MAX, this never underflows.\n        let diff = left.len() as isize - right.len() as isize;\n        // This comparison gets optimized away (on x86_64 and ARM) because the\n        // subtraction updates flags.\n        let len = if left.len() < right.len() { left.len() } else { right.len() };\n        let left = left.as_ptr().cast();\n        let right = right.as_ptr().cast();\n        // SAFETY: `left` and `right` are references and are thus guaranteed to\n        // be valid. `UnsignedBytewiseOrd` is only implemented for types that\n        // are valid u8s and can be compared the same way. We use the minimum\n        // of both lengths which guarantees that both regions are valid for\n        // reads in that interval.\n        let mut order = unsafe { compare_bytes(left, right, len) as isize };\n        if order == 0 {\n            order = diff;\n        }\n        order.cmp(&0)\n    }",
+  "callees": [
+    "12830781968796055498487701291165720995",
+    "1739756135460607146015986385828700584958",
+    "156130332443363785142369276941490088427"
+  ]
+}

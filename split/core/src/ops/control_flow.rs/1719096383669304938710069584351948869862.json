@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ops/control_flow.rs",
+  "name": "<ops::control_flow::ControlFlow<ops::try_trait::NeverShortCircuit<usize>, usize> as ops::try_trait::Try>::from_output",
+  "hash": "1719096383669304938710069584351948869862",
+  "hash_direct": "127389353602782863841146015965981180017",
+  "src": "fn from_output(output: Self::Output) -> Self {\n        ControlFlow::Continue(output)\n    }"
+}

@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/const_ptr.rs",
+  "name": "ptr::const_ptr::<impl *const ffi::c_void>::expose_provenance",
+  "hash": "88833920563052985647848782440301792195",
+  "hash_direct": "152456190484852505029728522365087797893",
+  "src": "pub fn expose_provenance(self) -> usize {\n        self.cast::<()>() as usize\n    }",
+  "callees": [
+    "1441687682617596981114184612340606154440"
+  ]
+}

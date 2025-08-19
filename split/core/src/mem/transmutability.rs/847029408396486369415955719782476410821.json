@@ -1,0 +1,7 @@
+{
+  "file": "core/src/mem/transmutability.rs",
+  "name": "mem::transmutability::Assume::SAFETY",
+  "hash": "847029408396486369415955719782476410821",
+  "hash_direct": "489374661104163067916529161305151036001",
+  "src": "pub const SAFETY: Self = Self { safety: true, ..Self::NOTHING };"
+}

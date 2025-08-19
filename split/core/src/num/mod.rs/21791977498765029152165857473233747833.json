@@ -1,0 +1,35 @@
+{
+  "file": "core/src/num/mod.rs",
+  "name": "num::verify::checked_unchecked_mul_i16",
+  "hash": "21791977498765029152165857473233747833",
+  "hash_direct": "55116615649982270712329724756690479038",
+  "proof_kind": "\"Contract\"",
+  "attrs": [
+    "#[kanitool::proof_for_contract = \"i16 :: unchecked_mul\"]\n"
+  ],
+  "src": "pub fn $harness_name() {\n                let num1: $type = kani::any::<$type>();\n                let num2: $type = kani::any::<$type>();\n\n                unsafe {\n                    num1.$method(num2);\n                }\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "generate_unchecked_math_harness!(i16, unchecked_mul, checked_unchecked_mul_i16)",
+      "defsite": "macro_rules! generate_unchecked_math_harness {\n        ($type:ty, $method:ident, $harness_name:ident) => {\n            #[kani::proof_for_contract($type::$method)]\n            pub fn $harness_name() {\n                let num1: $type = kani::any::<$type>();\n                let num2: $type = kani::any::<$type>();\n\n                unsafe {\n                    num1.$method(num2);\n                }\n            }\n        };\n    }"
+    }
+  ],
+  "callees": [
+    "760616515452318504213703466162062514975",
+    "345298179698351853515511005668004063164",
+    "266466827199358294113067661536972302700",
+    "816423146626932101618290422735086583154",
+    "55268624181377464941500382738073713012",
+    "151911643321790013536813475838790071308",
+    "47323665595455568617290020941376774286",
+    "1329845230409163288212548289525672875535",
+    "16824420916691935049705640393259467449",
+    "56474312323955851898707778271643438569",
+    "182048094102897627489635334413292024083",
+    "841904668883726495316837415609641023349",
+    "1258931108755458209614962827106116332072",
+    "105125143701458073564296455695110349394",
+    "168990841392628215046190398086522770223",
+    "399232661239117480517401994520839366833"
+  ]
+}

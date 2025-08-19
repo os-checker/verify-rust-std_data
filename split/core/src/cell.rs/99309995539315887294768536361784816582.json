@@ -1,0 +1,19 @@
+{
+  "file": "core/src/cell.rs",
+  "name": "<cell::BorrowRef<'_> as clone::Clone>::clone",
+  "hash": "99309995539315887294768536361784816582",
+  "hash_direct": "11353763921441058363525177252201608670",
+  "src": "fn clone(&self) -> Self {\n        // Since this Ref exists, we know the borrow flag\n        // is a reading borrow.\n        let borrow = self.borrow.get();\n        debug_assert!(is_reading(borrow));\n        // Prevent the borrow counter from overflowing into\n        // a writing borrow.\n        assert!(borrow != BorrowCounter::MAX);\n        self.borrow.replace(borrow + 1);\n        BorrowRef { borrow: self.borrow }\n    }",
+  "callees": [
+    "1648937430752263403014689212458312107169",
+    "13525327814073394196069781794515098822",
+    "1126956795907967858912765181239235513524",
+    "32248880528759840584053932239783595705",
+    "47323665595455568617290020941376774286",
+    "11706327030119393035693707895851625770",
+    "841904668883726495316837415609641023349",
+    "1258931108755458209614962827106116332072",
+    "53589810041120365110998933211304468616",
+    "1243847030362955698517207199029174369810"
+  ]
+}

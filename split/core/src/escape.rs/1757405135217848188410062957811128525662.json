@@ -1,0 +1,7 @@
+{
+  "file": "core/src/escape.rs",
+  "name": "escape::verbatim::<4>",
+  "hash": "1757405135217848188410062957811128525662",
+  "hash_direct": "1267509646145366261412324791451125422479",
+  "src": "const fn verbatim<const N: usize>(a: ascii::Char) -> ([ascii::Char; N], Range<u8>) {\n    const { assert!(N >= 1) };\n\n    let mut output = [ascii::Char::Null; N];\n\n    output[0] = a;\n\n    (output, 0..1)\n}"
+}

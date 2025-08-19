@@ -1,0 +1,11 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<iter::adapters::flatten::Flatten<option::IntoIter<char::EscapeDebug>> as iter::traits::iterator::Iterator>::chain::<iter::adapters::flatten::FlatMap<str::iter::Chars<'_>, char::EscapeDebug, str::CharEscapeDebugContinue>>",
+  "hash": "60745286165181921598691671145728864237",
+  "hash_direct": "12395276114346229162923483902909282462",
+  "src": "fn chain<U>(self, other: U) -> Chain<Self, U::IntoIter>\n    where\n        Self: Sized,\n        U: IntoIterator<Item = Self::Item>,\n    {\n        Chain::new(self, other.into_iter())\n    }",
+  "callees": [
+    "374696322185182388813255363790931507388",
+    "146224643472419231726429632838309950028"
+  ]
+}

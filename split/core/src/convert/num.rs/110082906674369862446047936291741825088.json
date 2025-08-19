@@ -1,0 +1,30 @@
+{
+  "file": "core/src/convert/num.rs",
+  "name": "convert::num::<impl convert::TryFrom<num::nonzero::NonZero<u32>> for num::nonzero::NonZero<usize>>::try_from",
+  "hash": "110082906674369862446047936291741825088",
+  "hash_direct": "115312057357462446966508846555500933426",
+  "src": "fn try_from(value: NonZero<$source>) -> Result<Self, Self::Error> {\n                // SAFETY: Input is guaranteed to be non-zero.\n                Ok(unsafe { Self::new_unchecked(<$target>::try_from(value.get())?) })\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "impl_nonzero_int_try_from_nonzero_int!(u32 => u8, u16, usize)",
+      "defsite": "macro_rules! impl_nonzero_int_try_from_nonzero_int {\n    ($source:ty => $($target:ty),+) => {$(\n        #[stable(feature = \"nzint_try_from_nzint_conv\", since = \"1.49.0\")]\n        #[rustc_const_unstable(feature = \"const_try\", issue = \"74935\")]\n        impl const TryFrom<NonZero<$source>> for NonZero<$target> {\n            type Error = TryFromIntError;\n\n            // Rustdocs on the impl block show a \"[+] show undocumented items\" toggle.\n            // Rustdocs on functions do not.\n            #[doc = concat!(\"Attempts to convert <code>[NonZero]\\\\<[\", stringify!($source), \"]></code> \")]\n            #[doc = concat!(\"to <code>[NonZero]\\\\<[\", stringify!($target), \"]></code>.\")]\n            #[inline]\n            fn try_from(value: NonZero<$source>) -> Result<Self, Self::Error> {\n                // SAFETY: Input is guaranteed to be non-zero.\n                Ok(unsafe { Self::new_unchecked(<$target>::try_from(value.get())?) })\n            }\n        }\n    )*};\n}"
+    }
+  ],
+  "callees": [
+    "1473552132596932755917887878319894637468",
+    "70861105468698357887314581219043050057",
+    "47323665595455568617290020941376774286",
+    "1329845230409163288212548289525672875535",
+    "16824420916691935049705640393259467449",
+    "153953568740411547842071076677083183613",
+    "375485108047544468212954122974188100514",
+    "133406493184733961254247820125865521283",
+    "841904668883726495316837415609641023349",
+    "1258931108755458209614962827106116332072",
+    "105125143701458073564296455695110349394",
+    "583705266503621093187268217875620132",
+    "622701282370214177318119526651210624159",
+    "1218790289670026660418434748374709001141",
+    "399232661239117480517401994520839366833"
+  ]
+}

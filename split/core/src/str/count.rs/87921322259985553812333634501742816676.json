@@ -1,0 +1,7 @@
+{
+  "file": "core/src/str/count.rs",
+  "name": "str::count::contains_non_continuation_byte",
+  "hash": "87921322259985553812333634501742816676",
+  "hash_direct": "159727287805903993867877722400579271456",
+  "src": "fn contains_non_continuation_byte(w: usize) -> usize {\n    const LSB: usize = usize::repeat_u8(0x01);\n    ((!w >> 7) | (w >> 6)) & LSB\n}"
+}

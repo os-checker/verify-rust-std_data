@@ -1,0 +1,7 @@
+{
+  "file": "core/src/task/wake.rs",
+  "name": "<task::wake::LocalWaker as ops::drop::Drop>::drop",
+  "hash": "151431068598116787484601127406604553764",
+  "hash_direct": "526043847615097660613111259501091385231",
+  "src": "fn drop(&mut self) {\n        // SAFETY: This is safe because `LocalWaker::from_raw` is the only way\n        // to initialize `drop` and `data` requiring the user to acknowledge\n        // that the contract of `RawWaker` is upheld.\n        unsafe { (self.waker.vtable.drop)(self.waker.data) }\n    }"
+}

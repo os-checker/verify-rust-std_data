@@ -1,0 +1,12 @@
+{
+  "file": "core/src/intrinsics/mod.rs",
+  "name": "intrinsics::minimumf64",
+  "hash": "162641143356097440813876075844430845273",
+  "hash_direct": "173074134284320605607698128637045318673",
+  "src": "pub const fn minimumf64(x: f64, y: f64) -> f64 {\n    if x < y {\n        x\n    } else if y < x {\n        y\n    } else if x == y {\n        if x.is_sign_negative() && y.is_sign_positive() { x } else { y }\n    } else {\n        // At least one input is NaN. Use `+` to perform NaN propagation and quieting.\n        x + y\n    }\n}",
+  "callees": [
+    "34360288244467616574619726772327931304",
+    "655739947985592217914945729043838123632",
+    "85253214614932633916524759824229868238"
+  ]
+}

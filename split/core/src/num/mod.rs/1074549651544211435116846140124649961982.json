@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/mod.rs",
+  "name": "num::<impl u8>::is_ascii_punctuation",
+  "hash": "1074549651544211435116846140124649961982",
+  "hash_direct": "1709064787568039061810270150218708479246",
+  "src": "pub const fn is_ascii_punctuation(&self) -> bool {\n        matches!(*self, b'!'..=b'/')\n            | matches!(*self, b':'..=b'@')\n            | matches!(*self, b'['..=b'`')\n            | matches!(*self, b'{'..=b'~')\n    }"
+}

@@ -1,0 +1,11 @@
+{
+  "file": "core/src/time.rs",
+  "name": "time::Duration::MICROSECOND",
+  "hash": "1696350404118064682315712100559436090620",
+  "hash_direct": "175673659601198254654429100802295212768",
+  "src": "pub const MICROSECOND: Duration = Duration::from_micros(1);",
+  "callees": [
+    "51225830451726158312709701652983201891",
+    "956715107061211077011368306451590602413"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vraddhn_u32",
+  "hash": "58349126138382271334337526497464655619",
+  "hash_direct": "125401061416003704698819799201396212168",
+  "src": "pub fn vraddhn_u32(a: uint32x4_t, b: uint32x4_t) -> uint16x4_t {\n    unsafe { transmute(vraddhn_s32(transmute(a), transmute(b))) }\n}",
+  "callees": [
+    "25902435343903385986363696665573510269"
+  ]
+}

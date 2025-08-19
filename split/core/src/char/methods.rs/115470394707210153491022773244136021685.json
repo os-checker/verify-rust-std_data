@@ -1,0 +1,12 @@
+{
+  "file": "core/src/char/methods.rs",
+  "name": "char::methods::<impl char>::is_uppercase",
+  "hash": "115470394707210153491022773244136021685",
+  "hash_direct": "1007311937458528366210513104251074334837",
+  "src": "pub const fn is_uppercase(self) -> bool {\n        match self {\n            'A'..='Z' => true,\n            c => c > '\\x7f' && unicode::Uppercase(c),\n        }\n    }",
+  "callees": [
+    "1019971856294636275912140629221298594282",
+    "150469576120420169338356377529406897662",
+    "61501442861196712018349926480493883086"
+  ]
+}

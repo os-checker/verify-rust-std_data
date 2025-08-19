@@ -1,0 +1,19 @@
+{
+  "file": "core/src/num/dec2flt/float.rs",
+  "name": "<f64 as num::dec2flt::float::RawFloat>::integer_decode",
+  "hash": "1708968781940648710717439176282927091489",
+  "hash_direct": "40696799107275285195719797799288903008",
+  "src": "fn integer_decode(self) -> (u64, i16, i8) {\n        let bits = self.to_bits();\n        let sign: i8 = if bits >> (Self::BITS - 1) == Self::Int::ZERO { 1 } else { -1 };\n        let mut exponent: i16 = ((bits & Self::EXP_MASK) >> Self::SIG_BITS).cast();\n        let mantissa = if exponent == 0 {\n            (bits & Self::SIG_MASK) << 1\n        } else {\n            (bits & Self::SIG_MASK) | (Self::Int::ONE << Self::SIG_BITS)\n        };\n        // Exponent bias + mantissa shift\n        exponent -= (Self::EXP_BIAS + Self::SIG_BITS) as i16;\n        (mantissa.into(), exponent, sign)\n    }",
+  "callees": [
+    "762484418174721663513071567709372013136",
+    "55295120284764659869020411630045985731",
+    "1826292820406642714414563807574772186023",
+    "141559984418901664399565561463953748867",
+    "568655774299591228617312074412775920003",
+    "85253214614932633916524759824229868238",
+    "157384825566194582281443637416363853707",
+    "1074668066197654286811568059305248982842",
+    "42124438380263116169932795754435635924",
+    "71224684941573721096956691946966245309"
+  ]
+}

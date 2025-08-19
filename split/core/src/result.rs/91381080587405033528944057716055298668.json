@@ -1,0 +1,7 @@
+{
+  "file": "core/src/result.rs",
+  "name": "result::Result::<&ffi::c_str::CStr, ffi::c_str::FromBytesUntilNulError>::is_ok",
+  "hash": "91381080587405033528944057716055298668",
+  "hash_direct": "1459491217351424568715614328645807983086",
+  "src": "pub const fn is_ok(&self) -> bool {\n        matches!(*self, Ok(_))\n    }"
+}

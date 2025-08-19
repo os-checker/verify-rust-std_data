@@ -1,0 +1,13 @@
+{
+  "file": "core/src/ops/bit.rs",
+  "name": "<isize as ops::bit::BitOr>::bitor",
+  "hash": "145074959297777485174757826180098609983",
+  "hash_direct": "102382215738588199983720724764265261554",
+  "src": "fn bitor(self, rhs: $t) -> $t { self | rhs }",
+  "macro_backtrace": [
+    {
+      "callsite": "bitor_impl! { bool usize u8 u16 u32 u64 u128 isize i8 i16 i32 i64 i128 }",
+      "defsite": "macro_rules! bitor_impl {\n    ($($t:ty)*) => ($(\n        #[stable(feature = \"rust1\", since = \"1.0.0\")]\n        impl BitOr for $t {\n            type Output = $t;\n\n            #[inline]\n            fn bitor(self, rhs: $t) -> $t { self | rhs }\n        }\n\n        forward_ref_binop! { impl BitOr, bitor for $t, $t }\n    )*)\n}"
+    }
+  ]
+}

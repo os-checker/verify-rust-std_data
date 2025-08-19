@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/alignment.rs",
+  "name": "ptr::alignment::Alignment::of::<char>",
+  "hash": "1334583364183485558310857240654623213048",
+  "hash_direct": "52330954039878971449516393479042780698",
+  "src": "pub const fn of<T>() -> Self {\n        // This can't actually panic since type alignment is always a power of two.\n        const { Alignment::new(align_of::<T>()).unwrap() }\n    }"
+}

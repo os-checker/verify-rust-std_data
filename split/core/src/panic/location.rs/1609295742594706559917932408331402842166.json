@@ -1,0 +1,7 @@
+{
+  "file": "core/src/panic/location.rs",
+  "name": "panic::location::Location::<'_>::column",
+  "hash": "1609295742594706559917932408331402842166",
+  "hash_direct": "924698718151368427510416828356579732598",
+  "src": "pub const fn column(&self) -> u32 {\n        self.col\n    }"
+}

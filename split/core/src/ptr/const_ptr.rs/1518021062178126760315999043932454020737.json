@@ -1,0 +1,12 @@
+{
+  "file": "core/src/ptr/const_ptr.rs",
+  "name": "ptr::const_ptr::<impl *const intrinsics::verify::i32_mod::generated_struct>::is_null",
+  "hash": "1518021062178126760315999043932454020737",
+  "hash_direct": "119315883760248852385860218310635414172",
+  "src": "pub const fn is_null(self) -> bool {\n        // Compare via a cast to a thin pointer, so fat pointers are only\n        // considering their \"data\" part for null-ness.\n        let ptr = self as *const u8;\n        const_eval_select!(\n            @capture { ptr: *const u8 } -> bool:\n            // This use of `const_raw_ptr_comparison` has been explicitly blessed by t-lang.\n            if const #[rustc_allow_const_fn_unstable(const_raw_ptr_comparison)] {\n                match (ptr).guaranteed_eq(null_mut()) {\n                    Some(res) => res,\n                    // To remain maximally conservative, we stop execution when we don't\n                    // know whether the pointer is null or not.\n                    // We can *not* return `false` here, that would be unsound in `NonNull::new`!\n                    None => panic!(\"null-ness of this pointer cannot be determined in const context\"),\n                }\n            } else {\n                ptr.addr() == 0\n            }\n        )\n    }",
+  "callees": [
+    "109763229663154342343123224747831634619",
+    "703663108277374327010040438608357482834",
+    "1100495660517602822510660091708953776518"
+  ]
+}

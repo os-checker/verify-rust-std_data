@@ -1,0 +1,13 @@
+{
+  "file": "core/src/marker.rs",
+  "name": "<marker::PhantomPinned as cmp::PartialEq>::eq",
+  "hash": "93492289013747638784264107470152443119",
+  "hash_direct": "1463398784872803430112012696999095316502",
+  "src": "PartialEq",
+  "macro_backtrace": [
+    {
+      "callsite": "PartialEq",
+      "defsite": "pub macro PartialEq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vqabsd_s64",
+  "hash": "36406145275147762958736338427295453859",
+  "hash_direct": "91153877130840985449273681349622208450",
+  "src": "pub fn vqabsd_s64(a: i64) -> i64 {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.sqabs.i64\"\n        )]\n        fn _vqabsd_s64(a: i64) -> i64;\n    }\n    unsafe { _vqabsd_s64(a) }\n}"
+}

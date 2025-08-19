@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vrsubhn_s64",
+  "hash": "1481019053656018935915904554639133656499",
+  "hash_direct": "112559115152704099233413335495589269980",
+  "src": "pub fn vrsubhn_s64(a: int64x2_t, b: int64x2_t) -> int32x2_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(target_arch = \"arm\", link_name = \"llvm.arm.neon.vrsubhn.v2i32\")]\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.rsubhn.v2i32\"\n        )]\n        fn _vrsubhn_s64(a: int64x2_t, b: int64x2_t) -> int32x2_t;\n    }\n    unsafe { _vrsubhn_s64(a, b) }\n}"
+}

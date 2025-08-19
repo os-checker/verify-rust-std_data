@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/adapters/flatten.rs",
+  "name": "iter::adapters::flatten::FlattenCompat::<I, U>::iter_try_fold::flatten::<char::EscapeUnicode, (), result::Result<(), fmt::Error>, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/iter/adapters/flatten.rs:563:13: 563:29}>",
+  "hash": "320871781821139239311314262343622690470",
+  "hash_direct": "161869335086789456205573969972940409628",
+  "src": "fn flatten<'a, T: IntoIterator, Acc, R: Try<Output = Acc>>(\n            frontiter: &'a mut Option<T::IntoIter>,\n            fold: &'a mut impl FnMut(Acc, &mut T::IntoIter) -> R,\n        ) -> impl FnMut(Acc, T) -> R + 'a {\n            move |acc, iter| fold(acc, frontiter.insert(iter.into_iter()))\n        }"
+}

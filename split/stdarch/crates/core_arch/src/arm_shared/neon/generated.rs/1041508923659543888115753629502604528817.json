@@ -1,0 +1,11 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vmov_n_s16",
+  "hash": "1041508923659543888115753629502604528817",
+  "hash_direct": "7157611379074584368849693083626388505",
+  "src": "pub fn vmov_n_s16(value: i16) -> int16x4_t {\n    vdup_n_s16(value)\n}",
+  "callees": [
+    "1624296003189241846812809316037265487822",
+    "1271200498436182357316478493060983504202"
+  ]
+}

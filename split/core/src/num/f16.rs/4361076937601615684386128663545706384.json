@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f16.rs",
+  "name": "f16::<impl f16>::to_radians",
+  "hash": "4361076937601615684386128663545706384",
+  "hash_direct": "6849171910686160701580378548905985357",
+  "src": "pub const fn to_radians(self) -> f16 {\n        // Use a literal for better precision.\n        const RADS_PER_DEG: f16 = 0.017453292519943295769236907684886_f16;\n        self * RADS_PER_DEG\n    }"
+}

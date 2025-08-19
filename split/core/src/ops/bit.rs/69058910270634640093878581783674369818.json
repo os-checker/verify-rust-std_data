@@ -1,0 +1,13 @@
+{
+  "file": "core/src/ops/bit.rs",
+  "name": "<u64 as ops::bit::Not>::not",
+  "hash": "69058910270634640093878581783674369818",
+  "hash_direct": "77459407554484112413833796442042824950",
+  "src": "fn not(self) -> $t { !self }",
+  "macro_backtrace": [
+    {
+      "callsite": "not_impl! { bool usize u8 u16 u32 u64 u128 isize i8 i16 i32 i64 i128 }",
+      "defsite": "macro_rules! not_impl {\n    ($($t:ty)*) => ($(\n        #[stable(feature = \"rust1\", since = \"1.0.0\")]\n        impl Not for $t {\n            type Output = $t;\n\n            #[inline]\n            fn not(self) -> $t { !self }\n        }\n\n        forward_ref_unop! { impl Not, not for $t }\n    )*)\n}"
+    }
+  ]
+}

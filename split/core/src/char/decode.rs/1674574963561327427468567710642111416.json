@@ -1,0 +1,7 @@
+{
+  "file": "core/src/char/decode.rs",
+  "name": "char::decode::DecodeUtf16Error::unpaired_surrogate",
+  "hash": "1674574963561327427468567710642111416",
+  "hash_direct": "144195719181392406562898338690178022116",
+  "src": "pub fn unpaired_surrogate(&self) -> u16 {\n        self.code\n    }"
+}

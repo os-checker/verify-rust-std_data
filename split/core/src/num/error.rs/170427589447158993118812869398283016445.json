@@ -1,0 +1,16 @@
+{
+  "file": "core/src/num/error.rs",
+  "name": "<num::error::ParseIntError as cmp::PartialEq>::eq",
+  "hash": "170427589447158993118812869398283016445",
+  "hash_direct": "224576459581285809612527247590517714565",
+  "src": "PartialEq",
+  "macro_backtrace": [
+    {
+      "callsite": "PartialEq",
+      "defsite": "pub macro PartialEq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ],
+  "callees": [
+    "1718602885755309833017410274471124051953"
+  ]
+}

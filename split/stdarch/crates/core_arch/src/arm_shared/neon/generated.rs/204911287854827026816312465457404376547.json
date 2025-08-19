@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vmla_f32",
+  "hash": "204911287854827026816312465457404376547",
+  "hash_direct": "5930247599815146201496562560431098959",
+  "src": "pub fn vmla_f32(a: float32x2_t, b: float32x2_t, c: float32x2_t) -> float32x2_t {\n    unsafe { simd_add(a, simd_mul(b, c)) }\n}"
+}

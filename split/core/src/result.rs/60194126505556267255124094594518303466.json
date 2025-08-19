@@ -1,0 +1,11 @@
+{
+  "file": "core/src/result.rs",
+  "name": "result::Result::<usize, convert::Infallible>::unwrap_or",
+  "hash": "60194126505556267255124094594518303466",
+  "hash_direct": "175280490479824301925337913193610465538",
+  "src": "pub fn unwrap_or(self, default: T) -> T {\n        match self {\n            Ok(t) => t,\n            Err(_) => default,\n        }\n    }",
+  "callees": [
+    "1564558378327345884017945983304327614304",
+    "136032794974893814259994759472454752644"
+  ]
+}

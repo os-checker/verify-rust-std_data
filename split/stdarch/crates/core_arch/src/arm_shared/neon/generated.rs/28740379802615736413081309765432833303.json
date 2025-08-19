@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vmulq_f32",
+  "hash": "28740379802615736413081309765432833303",
+  "hash_direct": "7637561817877414762356989240961768187",
+  "src": "pub fn vmulq_f32(a: float32x4_t, b: float32x4_t) -> float32x4_t {\n    unsafe { simd_mul(a, b) }\n}"
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/adapters/step_by.rs",
+  "name": "<iter::adapters::step_by::StepBy<I> as iter::adapters::step_by::StepByImpl<I>>::spec_size_hint::first_size",
+  "hash": "124348348342317746635773361060782085724",
+  "hash_direct": "5371386787673669313620304625801019306",
+  "src": "fn first_size(step: NonZero<usize>) -> impl Fn(usize) -> usize {\n            move |n| if n == 0 { 0 } else { 1 + (n - 1) / step }\n        }"
+}

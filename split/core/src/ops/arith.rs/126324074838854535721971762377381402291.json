@@ -1,0 +1,13 @@
+{
+  "file": "core/src/ops/arith.rs",
+  "name": "<i8 as ops::arith::Add>::add",
+  "hash": "126324074838854535721971762377381402291",
+  "hash_direct": "411317135101191511813721059098868793210",
+  "src": "fn add(self, other: $t) -> $t { self + other }",
+  "macro_backtrace": [
+    {
+      "callsite": "add_impl! { usize u8 u16 u32 u64 u128 isize i8 i16 i32 i64 i128 f16 f32 f64 f128 }",
+      "defsite": "macro_rules! add_impl {\n    ($($t:ty)*) => ($(\n        #[stable(feature = \"rust1\", since = \"1.0.0\")]\n        #[rustc_const_unstable(feature = \"const_ops\", issue = \"143802\")]\n        impl const Add for $t {\n            type Output = $t;\n\n            #[inline]\n            #[track_caller]\n            #[rustc_inherit_overflow_checks]\n            fn add(self, other: $t) -> $t { self + other }\n        }\n\n        forward_ref_binop! { impl Add, add for $t, $t }\n    )*)\n}"
+    }
+  ]
+}

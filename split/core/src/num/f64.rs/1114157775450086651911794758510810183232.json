@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f64.rs",
+  "name": "f64::<impl f64>::algebraic_sub",
+  "hash": "1114157775450086651911794758510810183232",
+  "hash_direct": "936169636073239250316685329498955806866",
+  "src": "pub const fn algebraic_sub(self, rhs: f64) -> f64 {\n        intrinsics::fsub_algebraic(self, rhs)\n    }"
+}

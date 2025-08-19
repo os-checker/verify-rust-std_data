@@ -1,0 +1,11 @@
+{
+  "file": "core/src/slice/ascii.rs",
+  "name": "slice::ascii::is_ascii::runtime::contains_nonascii::NONASCII_MASK",
+  "hash": "1543885686513700665559361733533913570",
+  "hash_direct": "642364647875084298415372923594994647777",
+  "src": "const NONASCII_MASK: usize = usize::repeat_u8(0x80);",
+  "callees": [
+    "59784951958023534311340742558790816074",
+    "1187394330470290540315609612625104918416"
+  ]
+}

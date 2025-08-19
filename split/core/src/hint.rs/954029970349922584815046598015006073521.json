@@ -1,0 +1,12 @@
+{
+  "file": "core/src/hint.rs",
+  "name": "hint::spin_loop",
+  "hash": "954029970349922584815046598015006073521",
+  "hash_direct": "35410629049956314810075712235028985783",
+  "src": "pub fn spin_loop() {\n    #[cfg(target_arch = \"x86\")]\n    {\n        // SAFETY: the `cfg` attr ensures that we only execute this on x86 targets.\n        unsafe { crate::arch::x86::_mm_pause() };\n    }\n\n    #[cfg(target_arch = \"x86_64\")]\n    {\n        // SAFETY: the `cfg` attr ensures that we only execute this on x86_64 targets.\n        unsafe { crate::arch::x86_64::_mm_pause() };\n    }\n\n    #[cfg(target_arch = \"riscv32\")]\n    {\n        crate::arch::riscv32::pause();\n    }\n\n    #[cfg(target_arch = \"riscv64\")]\n    {\n        crate::arch::riscv64::pause();\n    }\n\n    #[cfg(any(target_arch = \"aarch64\", target_arch = \"arm64ec\"))]\n    {\n        // SAFETY: the `cfg` attr ensures that we only execute this on aarch64 targets.\n        unsafe { crate::arch::aarch64::__isb(crate::arch::aarch64::SY) };\n    }\n\n    #[cfg(all(target_arch = \"arm\", target_feature = \"v6\"))]\n    {\n        // SAFETY: the `cfg` attr ensures that we only execute this on arm targets\n        // with support for the v6 feature.\n        unsafe { crate::arch::arm::__yield() };\n    }\n}",
+  "callees": [
+    "157511887225439876674198497926849978336",
+    "1259428696148752802714749940818585659087",
+    "100724701892471500945037384013226681262"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<slice::iter::Iter<'_, *const ()> as iter::traits::iterator::Iterator>::copied::<'_, *const ()>",
+  "hash": "81628651353098128377942060164060871747",
+  "hash_direct": "361004358756992840111771203309158616153",
+  "src": "fn copied<'a, T>(self) -> Copied<Self>\n    where\n        T: Copy + 'a,\n        Self: Sized + Iterator<Item = &'a T>,\n    {\n        Copied::new(self)\n    }",
+  "callees": [
+    "64872693500588010035580732100977982536"
+  ]
+}

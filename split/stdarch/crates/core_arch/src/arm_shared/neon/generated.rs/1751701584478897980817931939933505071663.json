@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::veorq_s64",
+  "hash": "1751701584478897980817931939933505071663",
+  "hash_direct": "46968223371240430210228309077935000052",
+  "src": "pub fn veorq_s64(a: int64x2_t, b: int64x2_t) -> int64x2_t {\n    unsafe { simd_xor(a, b) }\n}"
+}

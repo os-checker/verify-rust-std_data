@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vcvth_f16_s32",
+  "hash": "6593830567234816647747624970037699310",
+  "hash_direct": "1244298861936573379216877907249164863319",
+  "src": "pub fn vcvth_f16_s32(a: i32) -> f16 {\n    a as f16\n}"
+}

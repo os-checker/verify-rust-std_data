@@ -1,0 +1,12 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<iter::adapters::step_by::StepBy<ops::range::Range<usize>> as iter::traits::iterator::Iterator::advance_by::SpecAdvanceBy>::spec_advance_by::{closure#0}",
+  "hash": "551460649396782033713811602768223730696",
+  "hash_direct": "1229692959616555995214185814697960639003",
+  "src": "|n, _| NonZero::new(n.get() - 1)",
+  "callees": [
+    "161003650625398914518944455314788757627",
+    "375485108047544468212954122974188100514",
+    "136032794974893814259994759472454752644"
+  ]
+}

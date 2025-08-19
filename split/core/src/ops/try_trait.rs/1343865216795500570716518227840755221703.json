@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ops/try_trait.rs",
+  "name": "<ops::try_trait::NeverShortCircuit<[intrinsics::verify::u8_struct; 2]> as ops::try_trait::Try>::from_output",
+  "hash": "1343865216795500570716518227840755221703",
+  "hash_direct": "12154433959378798643737849314920601995",
+  "src": "fn from_output(x: T) -> Self {\n        NeverShortCircuit(x)\n    }"
+}

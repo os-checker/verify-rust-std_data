@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vbicq_s32",
+  "hash": "943398004674405110713821697983013038111",
+  "hash_direct": "24268365245382439077717616359150875541",
+  "src": "pub fn vbicq_s32(a: int32x4_t, b: int32x4_t) -> int32x4_t {\n    let c = int32x4_t::splat(-1);\n    unsafe { simd_and(simd_xor(b, c), a) }\n}",
+  "callees": [
+    "1045622767002741780710058350398333727897"
+  ]
+}

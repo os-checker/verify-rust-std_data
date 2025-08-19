@@ -1,0 +1,12 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vclezd_f64",
+  "hash": "11712025784518818803900676582365890596",
+  "hash_direct": "761832310539181035010810212826170936344",
+  "src": "pub fn vclezd_f64(a: f64) -> u64 {\n    unsafe { simd_extract!(vclez_f64(vdup_n_f64(a)), 0) }\n}",
+  "callees": [
+    "82106497958610164259890309089984187738",
+    "1403816634140737690610222307569872863933",
+    "1833378110133069415316612384629614156751"
+  ]
+}

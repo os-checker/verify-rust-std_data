@@ -1,0 +1,12 @@
+{
+  "file": "core/src/slice/mod.rs",
+  "name": "slice::<impl [unicode::unicode_data::ShortOffsetRunHeader]>::binary_search_by_key::<'_, u32, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/unicode/unicode_data.rs:85:71: 85:79}>::{closure#0}",
+  "hash": "44890546023157111515751256432958487666",
+  "hash_direct": "918857417880033861015758400078493488726",
+  "src": "|k| f(k).cmp(b)",
+  "callees": [
+    "6805562217973734478490858430748473698",
+    "178908583266819311171056730682051642189",
+    "9733044161860866278920013215739955961"
+  ]
+}

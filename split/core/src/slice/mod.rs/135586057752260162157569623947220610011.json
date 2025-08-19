@@ -1,0 +1,7 @@
+{
+  "file": "core/src/slice/mod.rs",
+  "name": "slice::<impl [mem::maybe_uninit::MaybeUninit<u8>]>::as_mut_ptr",
+  "hash": "135586057752260162157569623947220610011",
+  "hash_direct": "964940751382515625815763214608929164698",
+  "src": "pub const fn as_mut_ptr(&mut self) -> *mut T {\n        self as *mut [T] as *mut T\n    }"
+}

@@ -1,0 +1,12 @@
+{
+  "file": "core/src/option.rs",
+  "name": "option::Option::<u8>::map::<char, fn(u8) -> char {<char as convert::From<u8>>::from}>",
+  "hash": "1162694293024091137010317740508727272799",
+  "hash_direct": "1712110017668059368316840836597902820269",
+  "src": "pub const fn map<U, F>(self, f: F) -> Option<U>\n    where\n        F: ~const FnOnce(T) -> U + ~const Destruct,\n    {\n        match self {\n            Some(x) => Some(f(x)),\n            None => None,\n        }\n    }",
+  "callees": [
+    "68581623244024013215145596633238016545",
+    "72900543697507853812573092871834848798",
+    "147805498262972405437090907625689719118"
+  ]
+}

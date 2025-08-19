@@ -1,0 +1,12 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vqdmulh_n_s32",
+  "hash": "40426802430707970017080388428406076407",
+  "hash_direct": "163568935138916166812239968192558839809",
+  "src": "pub fn vqdmulh_n_s32(a: int32x2_t, b: i32) -> int32x2_t {\n    let b: int32x2_t = vdup_n_s32(b);\n    vqdmulh_s32(a, b)\n}",
+  "callees": [
+    "100787763912327303112397924980212985444",
+    "169420747951666745422852218741378743445",
+    "1772407401334837915612343259476096199033"
+  ]
+}

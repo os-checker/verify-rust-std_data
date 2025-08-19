@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vst1_u8_x4",
+  "hash": "877998992012206049017951519952486861632",
+  "hash_direct": "134835825985704131963437065083828718493",
+  "src": "pub unsafe fn vst1_u8_x4(a: *mut u8, b: uint8x8x4_t) {\n    vst1_s8_x4(transmute(a), transmute(b))\n}",
+  "callees": [
+    "622408123919308856011765096279691975171"
+  ]
+}

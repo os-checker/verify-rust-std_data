@@ -1,0 +1,7 @@
+{
+  "file": "core/src/slice/iter.rs",
+  "name": "slice::iter::verify::any_slice::<(char, u8)>::{closure#0}",
+  "hash": "15420122427237519357160429550013365994",
+  "hash_direct": "47456677588419397410766897615760683395",
+  "src": "|idx: &usize| *idx <= orig_slice.len()"
+}

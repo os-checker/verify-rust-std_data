@@ -1,0 +1,13 @@
+{
+  "file": "core/src/slice/cmp.rs",
+  "name": "<usize as slice::cmp::SliceContains>::slice_contains::{closure#1}",
+  "hash": "1174405261437610547511867158011741763706",
+  "hash_direct": "1604450088810163702012382898192785070788",
+  "src": "|x| *x == *self",
+  "macro_backtrace": [
+    {
+      "callsite": "impl_slice_contains!(u16, u32, u64, i16, i32, i64, f32, f64, usize, isize, char)",
+      "defsite": "macro_rules! impl_slice_contains {\n    ($($t:ty),*) => {\n        $(\n            impl SliceContains for $t {\n                #[inline]\n                fn slice_contains(&self, arr: &[$t]) -> bool {\n                    // Make our LANE_COUNT 4x the normal lane count (aiming for 128 bit vectors).\n                    // The compiler will nicely unroll it.\n                    const LANE_COUNT: usize = 4 * (128 / (size_of::<$t>() * 8));\n                    // SIMD\n                    let mut chunks = arr.chunks_exact(LANE_COUNT);\n                    for chunk in &mut chunks {\n                        if chunk.iter().fold(false, |acc, x| acc | (*x == *self)) {\n                            return true;\n                        }\n                    }\n                    // Scalar remainder\n                    return chunks.remainder().iter().any(|x| *x == *self);\n                }\n            }\n        )*\n    };\n}"
+    }
+  ]
+}

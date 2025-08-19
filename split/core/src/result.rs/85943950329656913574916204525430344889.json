@@ -1,0 +1,10 @@
+{
+  "file": "core/src/result.rs",
+  "name": "result::Result::<u16, num::error::TryFromIntError>::ok",
+  "hash": "85943950329656913574916204525430344889",
+  "hash_direct": "693203568259341460217340922413807666064",
+  "src": "pub fn ok(self) -> Option<T> {\n        match self {\n            Ok(x) => Some(x),\n            Err(_) => None,\n        }\n    }",
+  "callees": [
+    "160181710596894879409206814565814475412"
+  ]
+}

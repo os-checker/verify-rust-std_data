@@ -1,0 +1,26 @@
+{
+  "file": "core/src/intrinsics/mod.rs",
+  "name": "intrinsics::verify::transmute_unchecked_u64_to_i64",
+  "hash": "122337735156644273472426175594335932962",
+  "hash_direct": "1405758214494428811811255949607936804990",
+  "proof_kind": "\"Contract\"",
+  "attrs": [
+    "#[kanitool::proof_for_contract = \"transmute_unchecked_wrapper\"]\n"
+  ],
+  "src": "fn $harness() {\n                let src: $src = kani::any();\n                let dst: $dst = unsafe { transmute_unchecked_wrapper(src) };\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "proof_of_contract_for_transmute_unchecked!(transmute_unchecked_u64_to_i64, u64, i64)",
+      "defsite": "macro_rules! proof_of_contract_for_transmute_unchecked {\n        ($harness:ident, $src:ty, $dst:ty) => {\n            #[kani::proof_for_contract(transmute_unchecked_wrapper)]\n            fn $harness() {\n                let src: $src = kani::any();\n                let dst: $dst = unsafe { transmute_unchecked_wrapper(src) };\n            }\n        };\n    }"
+    }
+  ],
+  "callees": [
+    "55732587752735335945356669824614635762",
+    "1648886390739730508816615733445262410614",
+    "778713662165510584811932027160146289674",
+    "155903546558043130181109834204848741707",
+    "55268624181377464941500382738073713012",
+    "110627676895616442107840116311482708557",
+    "206711928084960000417195103145608164103"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vpadalq_u8",
+  "hash": "102008159346227112947029037133011627770",
+  "hash_direct": "40848536804829733143490201691665749274",
+  "src": "pub fn vpadalq_u8(a: uint16x8_t, b: uint8x16_t) -> uint16x8_t {\n    let x: uint16x8_t;\n    #[cfg(target_arch = \"arm\")]\n    {\n        x = priv_vpadalq_u8(a, b);\n    }\n    #[cfg(any(target_arch = \"aarch64\", target_arch = \"arm64ec\"))]\n    unsafe {\n        x = simd_add(vpaddlq_u8(b), a);\n    };\n    x\n}",
+  "callees": [
+    "132049741727070805414968454566947976234"
+  ]
+}

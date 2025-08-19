@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vst4_f64",
+  "hash": "1585134220231885668914121215691246391230",
+  "hash_direct": "146394784941154372461160787176910227830",
+  "src": "pub unsafe fn vst4_f64(a: *mut f64, b: float64x1x4_t) {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.st4.v1f64.p0\"\n        )]\n        fn _vst4_f64(a: float64x1_t, b: float64x1_t, c: float64x1_t, d: float64x1_t, ptr: *mut i8);\n    }\n    _vst4_f64(b.0, b.1, b.2, b.3, a as _)\n}"
+}

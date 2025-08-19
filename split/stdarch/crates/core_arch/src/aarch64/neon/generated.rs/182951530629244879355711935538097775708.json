@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vuzp1q_p64",
+  "hash": "182951530629244879355711935538097775708",
+  "hash_direct": "50625582892121450355208828143159155983",
+  "src": "pub fn vuzp1q_p64(a: poly64x2_t, b: poly64x2_t) -> poly64x2_t {\n    unsafe { simd_shuffle!(a, b, [0, 2]) }\n}"
+}

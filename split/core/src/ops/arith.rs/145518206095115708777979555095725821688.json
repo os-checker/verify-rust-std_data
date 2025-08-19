@@ -1,0 +1,13 @@
+{
+  "file": "core/src/ops/arith.rs",
+  "name": "<u16 as ops::arith::AddAssign>::add_assign",
+  "hash": "145518206095115708777979555095725821688",
+  "hash_direct": "51004831340403438272058541722635040350",
+  "src": "fn add_assign(&mut self, other: $t) { *self += other }",
+  "macro_backtrace": [
+    {
+      "callsite": "add_assign_impl! { usize u8 u16 u32 u64 u128 isize i8 i16 i32 i64 i128 f16 f32 f64 f128 }",
+      "defsite": "macro_rules! add_assign_impl {\n    ($($t:ty)+) => ($(\n        #[stable(feature = \"op_assign_traits\", since = \"1.8.0\")]\n        impl AddAssign for $t {\n            #[inline]\n            #[track_caller]\n            #[rustc_inherit_overflow_checks]\n            fn add_assign(&mut self, other: $t) { *self += other }\n        }\n\n        forward_ref_op_assign! { impl AddAssign, add_assign for $t, $t }\n    )+)\n}"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "file": "core/src/cell.rs",
+  "name": "<cell::BorrowError as fmt::Debug>::fmt",
+  "hash": "450117126394122119214821886739855516853",
+  "hash_direct": "566114717739930523714073046821617441965",
+  "src": "Debug",
+  "macro_backtrace": [
+    {
+      "callsite": "Debug",
+      "defsite": "pub macro Debug($item:item) {\n        /* compiler built-in */\n    }"
+    }
+  ],
+  "callees": [
+    "1557257459089412723814481849913677699848"
+  ]
+}

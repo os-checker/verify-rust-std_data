@@ -1,0 +1,10 @@
+{
+  "file": "core/src/num/f64.rs",
+  "name": "f64::math::div_euclid",
+  "hash": "967726063111021628512663348474997599923",
+  "hash_direct": "54961761025863288055614350532186032703",
+  "src": "pub fn div_euclid(x: f64, rhs: f64) -> f64 {\n        let q = trunc(x / rhs);\n        if x % rhs < 0.0 {\n            return if rhs > 0.0 { q - 1.0 } else { q + 1.0 };\n        }\n        q\n    }",
+  "callees": [
+    "639789307973945731412387404173655386032"
+  ]
+}

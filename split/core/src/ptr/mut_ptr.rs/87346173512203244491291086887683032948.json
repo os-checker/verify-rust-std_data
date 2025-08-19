@@ -1,0 +1,18 @@
+{
+  "file": "core/src/ptr/mut_ptr.rs",
+  "name": "ptr::mut_ptr::<impl *mut T>::offset::runtime_offset_nowrap",
+  "hash": "87346173512203244491291086887683032948",
+  "hash_direct": "511704218711236954015767588268628804279",
+  "src": "const fn runtime_offset_nowrap(this: *const (), count: isize, size: usize) -> bool {\n            // We can use const_eval_select here because this is only for UB checks.\n            const_eval_select!(\n                @capture { this: *const (), count: isize, size: usize } -> bool:\n                if const {\n                    true\n                } else {\n                    // `size` is the size of a Rust type, so we know that\n                    // `size <= isize::MAX` and thus `as` cast here is not lossy.\n                    let Some(byte_offset) = count.checked_mul(size as isize) else {\n                        return false;\n                    };\n                    let (_, overflow) = this.addr().overflowing_add_signed(byte_offset);\n                    !overflow\n                }\n            )\n        }",
+  "callees": [
+    "111425599901702694743874629435682172347",
+    "714811817540972740211524868124730226803",
+    "84036482349477941418118718092243335116",
+    "5799168648008231539489194599709139249",
+    "167551103293259876125260225730930841946",
+    "1182371843420022111010336901757313084440",
+    "10420533920630692833318814471402444097",
+    "25930241974724637292994171257021210872",
+    "617554482545947003412104686554524783687"
+  ]
+}

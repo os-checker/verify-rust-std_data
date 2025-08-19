@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vtstq_u16",
+  "hash": "1145333588408895745116979147502881439712",
+  "hash_direct": "169034383916972751732539267584284832640",
+  "src": "pub fn vtstq_u16(a: uint16x8_t, b: uint16x8_t) -> uint16x8_t {\n    unsafe {\n        let c: uint16x8_t = simd_and(a, b);\n        let d: u16x8 = u16x8::new(0, 0, 0, 0, 0, 0, 0, 0);\n        simd_ne(c, transmute(d))\n    }\n}",
+  "callees": [
+    "1380417266783807060215210184986807342222"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "file": "core/src/num/nonzero.rs",
+  "name": "num::nonzero::NonZero::<i64>::from_mut_unchecked",
+  "hash": "1060287159806661261513640806785494315894",
+  "hash_direct": "777483839208247505316931487252956892290",
+  "src": "pub unsafe fn from_mut_unchecked(n: &mut T) -> &mut Self {\n        match Self::from_mut(n) {\n            Some(n) => n,\n            None => {\n                // SAFETY: The caller guarantees that `n` references a value that is non-zero, so this is unreachable.\n                unsafe {\n                    ub_checks::assert_unsafe_precondition!(\n                        check_library_ub,\n                        \"NonZero::from_mut_unchecked requires the argument to dereference as non-zero\",\n                        () => false,\n                    );\n                    intrinsics::unreachable()\n                }\n            }\n        }\n    }",
+  "callees": [
+    "47323665595455568617290020941376774286",
+    "1329845230409163288212548289525672875535",
+    "1576266885972913934117883165239978293916",
+    "350177515774339917612185754560591788015",
+    "841904668883726495316837415609641023349",
+    "1258931108755458209614962827106116332072",
+    "105125143701458073564296455695110349394",
+    "159132285134265396473978406162089584535",
+    "1766441432436836631114302118489199963748",
+    "962045741537776018613762800291523164529"
+  ]
+}

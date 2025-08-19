@@ -1,0 +1,7 @@
+{
+  "file": "core/src/str/traits.rs",
+  "name": "str::traits::<impl slice::index::SliceIndex<str> for ops::range::RangeFull>::get",
+  "hash": "1770400176794421121315899409122088784882",
+  "hash_direct": "93543968958032156297204099125473715896",
+  "src": "fn get(self, slice: &str) -> Option<&Self::Output> {\n        Some(slice)\n    }"
+}

@@ -1,0 +1,11 @@
+{
+  "file": "core/src/num/dec2flt/float.rs",
+  "name": "<f32 as num::dec2flt::float::RawFloat>::classify",
+  "hash": "154795349396181500551758663392331568488",
+  "hash_direct": "177478326175933568417606853417177563575",
+  "src": "fn classify(self) -> FpCategory {\n        self.classify()\n    }",
+  "callees": [
+    "18427937391375551140814136183166666164",
+    "162361112433299032238584891523845488474"
+  ]
+}

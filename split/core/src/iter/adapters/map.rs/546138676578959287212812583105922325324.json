@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/adapters/map.rs",
+  "name": "iter::adapters::map::map_fold::<&num::fmt::Part<'_>, usize, usize, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/num/fmt.rs:73:49: 73:55}, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/iter/traits/accum.rs:53:21: 53:27}>",
+  "hash": "546138676578959287212812583105922325324",
+  "hash_direct": "125537284135383815441922938452648114127",
+  "src": "fn map_fold<T, B, Acc>(\n    mut f: impl FnMut(T) -> B,\n    mut g: impl FnMut(Acc, B) -> Acc,\n) -> impl FnMut(Acc, T) -> Acc {\n    move |acc, elt| g(acc, f(elt))\n}"
+}

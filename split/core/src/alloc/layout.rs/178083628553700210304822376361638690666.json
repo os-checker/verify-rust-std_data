@@ -1,0 +1,7 @@
+{
+  "file": "core/src/alloc/layout.rs",
+  "name": "alloc::layout::Layout::alignment",
+  "hash": "178083628553700210304822376361638690666",
+  "hash_direct": "70054899479680435709951107304639234886",
+  "src": "pub const fn alignment(&self) -> Alignment {\n        self.align\n    }"
+}

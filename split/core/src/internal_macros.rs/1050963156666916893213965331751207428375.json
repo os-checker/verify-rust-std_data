@@ -1,0 +1,28 @@
+{
+  "file": "core/src/internal_macros.rs",
+  "name": "<usize as ops::bit::ShlAssign<&usize>>::shl_assign",
+  "hash": "1050963156666916893213965331751207428375",
+  "hash_direct": "124873129732440233493275028935752142739",
+  "src": "fn $method(&mut self, other: &$u) {\n                $imp::$method(self, *other);\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "forward_ref_op_assign!(impl $imp, $method for $t, $u,\n                #[stable(feature = \"op_assign_builtins_by_ref\", since = \"1.22.0\")])",
+      "defsite": "macro_rules! forward_ref_op_assign {\n    (impl $imp:ident, $method:ident for $t:ty, $u:ty) => {\n        forward_ref_op_assign!(impl $imp, $method for $t, $u,\n                #[stable(feature = \"op_assign_builtins_by_ref\", since = \"1.22.0\")]);\n    };\n    (impl $imp:ident, $method:ident for $t:ty, $u:ty, #[$attr:meta]) => {\n        #[$attr]\n        impl $imp<&$u> for $t {\n            #[inline]\n            #[track_caller]\n            fn $method(&mut self, other: &$u) {\n                $imp::$method(self, *other);\n            }\n        }\n    }\n}"
+    },
+    {
+      "callsite": "forward_ref_op_assign! { impl ShlAssign, shl_assign for $t, $f }",
+      "defsite": "macro_rules! forward_ref_op_assign {\n    (impl $imp:ident, $method:ident for $t:ty, $u:ty) => {\n        forward_ref_op_assign!(impl $imp, $method for $t, $u,\n                #[stable(feature = \"op_assign_builtins_by_ref\", since = \"1.22.0\")]);\n    };\n    (impl $imp:ident, $method:ident for $t:ty, $u:ty, #[$attr:meta]) => {\n        #[$attr]\n        impl $imp<&$u> for $t {\n            #[inline]\n            #[track_caller]\n            fn $method(&mut self, other: &$u) {\n                $imp::$method(self, *other);\n            }\n        }\n    }\n}"
+    },
+    {
+      "callsite": "shl_assign_impl! { $t, usize }",
+      "defsite": "macro_rules! shl_assign_impl {\n    ($t:ty, $f:ty) => {\n        #[stable(feature = \"op_assign_traits\", since = \"1.8.0\")]\n        impl ShlAssign<$f> for $t {\n            #[inline]\n            #[rustc_inherit_overflow_checks]\n            fn shl_assign(&mut self, other: $f) {\n                *self <<= other\n            }\n        }\n\n        forward_ref_op_assign! { impl ShlAssign, shl_assign for $t, $f }\n    };\n}"
+    },
+    {
+      "callsite": "shl_assign_impl_all! { u8 u16 u32 u64 u128 usize i8 i16 i32 i64 i128 isize }",
+      "defsite": "macro_rules! shl_assign_impl_all {\n    ($($t:ty)*) => ($(\n        shl_assign_impl! { $t, u8 }\n        shl_assign_impl! { $t, u16 }\n        shl_assign_impl! { $t, u32 }\n        shl_assign_impl! { $t, u64 }\n        shl_assign_impl! { $t, u128 }\n        shl_assign_impl! { $t, usize }\n\n        shl_assign_impl! { $t, i8 }\n        shl_assign_impl! { $t, i16 }\n        shl_assign_impl! { $t, i32 }\n        shl_assign_impl! { $t, i64 }\n        shl_assign_impl! { $t, i128 }\n        shl_assign_impl! { $t, isize }\n    )*)\n}"
+    }
+  ],
+  "callees": [
+    "1157533558387052876014699219680240198438"
+  ]
+}

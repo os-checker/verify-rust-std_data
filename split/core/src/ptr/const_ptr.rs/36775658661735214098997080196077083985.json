@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/const_ptr.rs",
+  "name": "ptr::const_ptr::<impl *const &str>::cast::<()>",
+  "hash": "36775658661735214098997080196077083985",
+  "hash_direct": "117238688504752266917919687514413103291",
+  "src": "pub const fn cast<U>(self) -> *const U {\n        self as _\n    }"
+}

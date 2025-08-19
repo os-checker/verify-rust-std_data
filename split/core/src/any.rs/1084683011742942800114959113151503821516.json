@@ -1,0 +1,13 @@
+{
+  "file": "core/src/any.rs",
+  "name": "<any::TypeId as cmp::Eq>::assert_receiver_is_total_eq",
+  "hash": "1084683011742942800114959113151503821516",
+  "hash_direct": "397172931657927928413507302448374601977",
+  "src": "Eq",
+  "macro_backtrace": [
+    {
+      "callsite": "Eq",
+      "defsite": "pub macro Eq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

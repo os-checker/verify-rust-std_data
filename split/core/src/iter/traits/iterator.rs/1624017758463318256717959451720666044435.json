@@ -1,0 +1,10 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<iter::adapters::enumerate::Enumerate<slice::iter::Iter<'_, u8>> as iter::traits::iterator::Iterator>::take",
+  "hash": "1624017758463318256717959451720666044435",
+  "hash_direct": "976602260224799507812671167017391505576",
+  "src": "fn take(self, n: usize) -> Take<Self>\n    where\n        Self: Sized,\n    {\n        Take::new(self, n)\n    }",
+  "callees": [
+    "645692666068687795112510436238024494394"
+  ]
+}

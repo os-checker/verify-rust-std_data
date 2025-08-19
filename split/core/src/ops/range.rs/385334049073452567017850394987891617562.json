@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ops/range.rs",
+  "name": "ops::range::RangeInclusive::<usize>::new",
+  "hash": "385334049073452567017850394987891617562",
+  "hash_direct": "308310748665957560814182643180381643201",
+  "src": "pub const fn new(start: Idx, end: Idx) -> Self {\n        Self { start, end, exhausted: false }\n    }"
+}

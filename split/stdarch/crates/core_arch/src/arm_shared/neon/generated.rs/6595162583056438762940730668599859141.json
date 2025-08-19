@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vaddhn_s64",
+  "hash": "6595162583056438762940730668599859141",
+  "hash_direct": "4835484108335316132903207408317854027",
+  "src": "pub fn vaddhn_s64(a: int64x2_t, b: int64x2_t) -> int32x2_t {\n    unsafe { simd_cast(simd_shr(simd_add(a, b), int64x2_t::splat(32))) }\n}",
+  "callees": [
+    "121058166922186135124216658655292715177"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/mem/mod.rs",
+  "name": "mem::size_of::<intrinsics::verify::u8_struct>",
+  "hash": "675225991825830985916227606149522068921",
+  "hash_direct": "521904593458842079915712283853739259923",
+  "src": "pub const fn size_of<T>() -> usize {\n    intrinsics::size_of::<T>()\n}"
+}

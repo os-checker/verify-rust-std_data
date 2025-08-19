@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vusdot_s32",
+  "hash": "168052159893416318791990245342953969563",
+  "hash_direct": "129377220400181966024194337096308082266",
+  "src": "pub fn vusdot_s32(a: int32x2_t, b: uint8x8_t, c: int8x8_t) -> int32x2_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.usdot.v2i32.v8i8\"\n        )]\n        #[cfg_attr(target_arch = \"arm\", link_name = \"llvm.arm.neon.usdot.v2i32.v8i8\")]\n        fn _vusdot_s32(a: int32x2_t, b: uint8x8_t, c: int8x8_t) -> int32x2_t;\n    }\n    unsafe { _vusdot_s32(a, b, c) }\n}"
+}

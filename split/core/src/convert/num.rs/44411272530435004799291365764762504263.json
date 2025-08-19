@@ -1,0 +1,31 @@
+{
+  "file": "core/src/convert/num.rs",
+  "name": "convert::num::verify::check_f16_to_int_unchecked::f16::i128::check_float_to_int_unchecked",
+  "hash": "44411272530435004799291365764762504263",
+  "hash_direct": "3553417113865185666841685024288837063",
+  "proof_kind": "\"Contract\"",
+  "attrs": [
+    "#[kanitool::proof_for_contract = \"< f16 > :: to_int_unchecked\"]\n"
+  ],
+  "src": "pub fn $harness() {\n                let x: $Float = kani::any();\n                let _: $Int = unsafe { x.to_int_unchecked() };\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "generate_float_to_int_harness!(\n                                    $Float => $Int,\n                                    check_float_to_int_unchecked\n                                )",
+      "defsite": "macro_rules! generate_float_to_int_harness {\n        ($Float:ty => $Int:ty, $harness:ident) => {\n            #[kani::proof_for_contract(<$Float>::to_int_unchecked)]\n            pub fn $harness() {\n                let x: $Float = kani::any();\n                let _: $Int = unsafe { x.to_int_unchecked() };\n            }\n        };\n    }"
+    },
+    {
+      "callsite": "generate_float_to_int_harnesses!(\n        check_f16_to_int_unchecked,\n        (f16 => u8, u16, u32, u64, u128, usize, i8, i16, i32, i64, i128, isize),\n        (f32 => u8, u16, u32, u64, u128, usize, i8, i16, i32, i64, i128, isize),\n        (f64 => u8, u16, u32, u64, u128, usize, i8, i16, i32, i64, i128, isize),\n        (f128 => u8, u16, u32, u64, u128, usize, i8, i16, i32, i64, i128, isize),\n    )",
+      "defsite": "macro_rules! generate_float_to_int_harnesses {\n        ($ns:ident, $(($Float:tt => $($Int:tt),+ $(,)?)),+ $(,)?) => {\n            mod $ns {\n                use super::*;\n\n                $(\n                    mod $Float {\n                        use super::*;\n\n                        $(\n                            mod $Int {\n                                use super::*;\n\n                                generate_float_to_int_harness!(\n                                    $Float => $Int,\n                                    check_float_to_int_unchecked\n                                );\n                            }\n                        )+\n                    }\n                )+\n            }\n        };\n    }"
+    }
+  ],
+  "callees": [
+    "233307804237730583015169197873546006860",
+    "92012443527258215049347306281901756735",
+    "119956393784102742609631262779850530880",
+    "61147185324529966426686145706726235784",
+    "55268624181377464941500382738073713012",
+    "534399918367884783013500279927748273247",
+    "156526944514267291632122689926823097428",
+    "97350523534649114755439683413328508973"
+  ]
+}

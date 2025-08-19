@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vamaxq_f64",
+  "hash": "1280277156389528502515606630165750591783",
+  "hash_direct": "133486430559791708815074197460990700604",
+  "src": "pub fn vamaxq_f64(a: float64x2_t, b: float64x2_t) -> float64x2_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.famax.v2f64\"\n        )]\n        fn _vamaxq_f64(a: float64x2_t, b: float64x2_t) -> float64x2_t;\n    }\n    unsafe { _vamaxq_f64(a, b) }\n}"
+}

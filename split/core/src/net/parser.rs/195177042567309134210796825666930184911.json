@@ -1,0 +1,13 @@
+{
+  "file": "core/src/net/parser.rs",
+  "name": "<net::parser::AddrKind as cmp::Eq>::assert_receiver_is_total_eq",
+  "hash": "195177042567309134210796825666930184911",
+  "hash_direct": "49603686408160237725064599790063027604",
+  "src": "Eq",
+  "macro_backtrace": [
+    {
+      "callsite": "Eq",
+      "defsite": "pub macro Eq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

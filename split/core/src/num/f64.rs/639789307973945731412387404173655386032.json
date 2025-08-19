@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f64.rs",
+  "name": "f64::math::trunc",
+  "hash": "639789307973945731412387404173655386032",
+  "hash_direct": "11878130302559945324118155083118420236",
+  "src": "pub const fn trunc(x: f64) -> f64 {\n        // SAFETY: intrinsic with no preconditions\n        unsafe { intrinsics::truncf64(x) }\n    }"
+}

@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/mod.rs",
+  "name": "core_arch::aarch64::neon::vdupq_n_p64",
+  "hash": "720173577272886779213555865928197232276",
+  "hash_direct": "118390803357932372706417661962515874397",
+  "src": "pub fn vdupq_n_p64(value: p64) -> poly64x2_t {\n    unsafe { transmute(u64x2::new(value, value)) }\n}",
+  "callees": [
+    "94729128224216549511986669975881506681"
+  ]
+}

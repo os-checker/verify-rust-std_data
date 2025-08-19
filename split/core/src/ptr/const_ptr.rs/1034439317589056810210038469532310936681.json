@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/const_ptr.rs",
+  "name": "ptr::const_ptr::<impl *const mem::manually_drop::ManuallyDrop<core_arch::aarch64::neon::float64x1_t>>::cast::<core_arch::aarch64::neon::float64x1_t>",
+  "hash": "1034439317589056810210038469532310936681",
+  "hash_direct": "19387751412078266574277141018574021946",
+  "src": "pub const fn cast<U>(self) -> *const U {\n        self as _\n    }"
+}

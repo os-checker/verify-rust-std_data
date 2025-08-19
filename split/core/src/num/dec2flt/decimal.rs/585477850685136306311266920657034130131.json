@@ -1,0 +1,18 @@
+{
+  "file": "core/src/num/dec2flt/decimal.rs",
+  "name": "<num::dec2flt::decimal::Decimal as default::Default>::default",
+  "hash": "585477850685136306311266920657034130131",
+  "hash_direct": "1827233255783350026311656731673620599322",
+  "src": "Default",
+  "macro_backtrace": [
+    {
+      "callsite": "Default",
+      "defsite": "pub macro Default($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ],
+  "callees": [
+    "1259604175243604340917474789954571448793",
+    "174286527209052435998943855575772441704",
+    "1396567977910257078410393043945253075424"
+  ]
+}

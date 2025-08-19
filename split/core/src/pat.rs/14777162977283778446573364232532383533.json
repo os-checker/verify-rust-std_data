@@ -1,0 +1,23 @@
+{
+  "file": "core/src/pat.rs",
+  "name": "<i64 as pat::RangePattern>::sub_one",
+  "hash": "14777162977283778446573364232532383533",
+  "hash_direct": "70190380511830439175750763471246882035",
+  "src": "fn sub_one(self) -> Self {\n                    match self.checked_sub(1) {\n                        Some(val) => val,\n                        None => panic!(\"exclusive range end at minimum value of type\")\n                    }\n                }",
+  "macro_backtrace": [
+    {
+      "callsite": "impl_range_pat! {\n    i8, i16, i32, i64, i128, isize,\n    u8, u16, u32, u64, u128, usize,\n}",
+      "defsite": "macro_rules! impl_range_pat {\n    ($($ty:ty,)*) => {\n        $(\n            #[rustc_const_unstable(feature = \"pattern_type_range_trait\", issue = \"123646\")]\n            impl const RangePattern for $ty {\n                const MIN: $ty = <$ty>::MIN;\n                const MAX: $ty = <$ty>::MAX;\n                fn sub_one(self) -> Self {\n                    match self.checked_sub(1) {\n                        Some(val) => val,\n                        None => panic!(\"exclusive range end at minimum value of type\")\n                    }\n                }\n            }\n        )*\n    }\n}"
+    }
+  ],
+  "callees": [
+    "47323665595455568617290020941376774286",
+    "111425599901702694743874629435682172347",
+    "714811817540972740211524868124730226803",
+    "140483581845458623943241238277603798666",
+    "23602374300165607828568580071116145419",
+    "841904668883726495316837415609641023349",
+    "1258931108755458209614962827106116332072",
+    "1243847030362955698517207199029174369810"
+  ]
+}

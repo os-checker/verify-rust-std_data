@@ -1,0 +1,8 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "ptr::drop_in_place::<&str::pattern::EmptyNeedle>",
+  "hash": "27649737678768376213745443892772886766",
+  "hash_direct": "104131283711740088945149833262045069186",
+  "inst_kind": "\"Shim\"",
+  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
+}

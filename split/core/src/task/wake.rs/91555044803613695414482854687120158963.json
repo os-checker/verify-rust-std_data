@@ -1,0 +1,7 @@
+{
+  "file": "core/src/task/wake.rs",
+  "name": "task::wake::ContextBuilder::<'_>::build",
+  "hash": "91555044803613695414482854687120158963",
+  "hash_direct": "73998772479374713194989512650262071403",
+  "src": "pub const fn build(self) -> Context<'a> {\n        let ContextBuilder { waker, local_waker, ext, _marker, _marker2 } = self;\n        Context { waker, local_waker, ext: AssertUnwindSafe(ext), _marker, _marker2 }\n    }"
+}

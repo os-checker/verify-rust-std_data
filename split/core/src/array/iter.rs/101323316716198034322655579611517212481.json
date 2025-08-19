@@ -1,0 +1,11 @@
+{
+  "file": "core/src/array/iter.rs",
+  "name": "<array::iter::IntoIter<char, 3> as iter::traits::exact_size::ExactSizeIterator>::is_empty",
+  "hash": "101323316716198034322655579611517212481",
+  "hash_direct": "317866482126671099215612615369778720071",
+  "src": "fn is_empty(&self) -> bool {\n        self.inner.len() == 0\n    }",
+  "callees": [
+    "66681207356073687792288512627553526437",
+    "305374531381368603518383057774771282949"
+  ]
+}

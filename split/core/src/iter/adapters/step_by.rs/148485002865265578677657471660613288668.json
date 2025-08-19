@@ -1,0 +1,43 @@
+{
+  "file": "core/src/iter/adapters/step_by.rs",
+  "name": "<iter::adapters::step_by::StepBy<ops::range::Range<u32>> as iter::adapters::step_by::StepByBackImpl<ops::range::Range<u32>>>::spec_nth_back",
+  "hash": "148485002865265578677657471660613288668",
+  "hash_direct": "93201552716263642168211651403833930151",
+  "src": "fn spec_nth_back(&mut self, n: usize) -> Option<Self::Item> {\n                if self.advance_back_by(n).is_err() {\n                    return None;\n                }\n                self.next_back()\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "spec_int_ranges_r!(u8 u16 u32 usize)",
+      "defsite": "macro_rules! spec_int_ranges_r {\n    ($($t:ty)*) => ($(\n        const _: () = assert!(usize::BITS >= <$t>::BITS);\n\n        unsafe impl StepByBackImpl<Range<$t>> for StepBy<Range<$t>> {\n\n            #[inline]\n            fn spec_next_back(&mut self) -> Option<Self::Item> {\n                let step = self.original_step().get() as $t;\n                let remaining = self.iter.end;\n                if remaining > 0 {\n                    let start = self.iter.start;\n                    self.iter.end = remaining - 1;\n                    Some(start + step * (remaining - 1))\n                } else {\n                    None\n                }\n            }\n\n            // The methods below are all copied from the Iterator trait default impls.\n            // We have to repeat them here so that the specialization overrides the StepByImplBack defaults\n\n            #[inline]\n            fn spec_nth_back(&mut self, n: usize) -> Option<Self::Item> {\n                if self.advance_back_by(n).is_err() {\n                    return None;\n                }\n                self.next_back()\n            }\n\n            #[inline]\n            fn spec_try_rfold<Acc, F, R>(&mut self, init: Acc, mut f: F) -> R\n            where\n                F: FnMut(Acc, Self::Item) -> R,\n                R: Try<Output = Acc>\n            {\n                let mut accum = init;\n                while let Some(x) = self.next_back() {\n                    accum = f(accum, x)?;\n                }\n                try { accum }\n            }\n\n            #[inline]\n            fn spec_rfold<Acc, F>(mut self, init: Acc, mut f: F) -> Acc\n            where\n                F: FnMut(Acc, Self::Item) -> Acc\n            {\n                let mut accum = init;\n                while let Some(x) = self.next_back() {\n                    accum = f(accum, x);\n                }\n                accum\n            }\n        }\n    )*)\n}"
+    }
+  ],
+  "callees": [
+    "589599466487462365011430963401962118509",
+    "47323665595455568617290020941376774286",
+    "1329845230409163288212548289525672875535",
+    "16824420916691935049705640393259467449",
+    "62754338932682819914446897962630839476",
+    "765667256721999179416385213262350968652",
+    "1157575099177598361814044055512526465166",
+    "1438611585775203574910130895685408999981",
+    "180874735662080423702617202418949819065",
+    "1388505351152652276212287879007466526739",
+    "526814189773195139817557993623059721647",
+    "382205621107476370313360037104818680241",
+    "161003650625398914518944455314788757627",
+    "375485108047544468212954122974188100514",
+    "133406493184733961254247820125865521283",
+    "1182371843420022111010336901757313084440",
+    "13796074939706337624507826801091410480",
+    "163394636913786159345259614198733661079",
+    "23882414329025749689761660045954070725",
+    "841904668883726495316837415609641023349",
+    "1258931108755458209614962827106116332072",
+    "105125143701458073564296455695110349394",
+    "123850870404158706907409499655311853480",
+    "144719093308136720612355350160513473734",
+    "10325251379691215165219881512671074150",
+    "156558724737321886766153526308848840146",
+    "1218790289670026660418434748374709001141",
+    "399232661239117480517401994520839366833"
+  ]
+}

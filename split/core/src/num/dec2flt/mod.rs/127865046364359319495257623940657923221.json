@@ -1,0 +1,13 @@
+{
+  "file": "core/src/num/dec2flt/mod.rs",
+  "name": "<num::dec2flt::FloatErrorKind as cmp::PartialEq>::eq",
+  "hash": "127865046364359319495257623940657923221",
+  "hash_direct": "1220800524273617994515179137195155953889",
+  "src": "PartialEq",
+  "macro_backtrace": [
+    {
+      "callsite": "PartialEq",
+      "defsite": "pub macro PartialEq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

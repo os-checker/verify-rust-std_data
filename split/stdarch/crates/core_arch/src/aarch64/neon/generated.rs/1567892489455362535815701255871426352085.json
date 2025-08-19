@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vnegh_f16",
+  "hash": "1567892489455362535815701255871426352085",
+  "hash_direct": "94957631685586536971663505916761647399",
+  "src": "pub fn vnegh_f16(a: f16) -> f16 {\n    -a\n}"
+}

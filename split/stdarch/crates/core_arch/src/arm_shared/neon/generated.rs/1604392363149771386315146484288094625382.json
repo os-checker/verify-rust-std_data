@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vst3_u32",
+  "hash": "1604392363149771386315146484288094625382",
+  "hash_direct": "476006536715075598011133955363318225315",
+  "src": "pub unsafe fn vst3_u32(a: *mut u32, b: uint32x2x3_t) {\n    vst3_s32(transmute(a), transmute(b))\n}",
+  "callees": [
+    "956319039933204966516203905786269646102"
+  ]
+}

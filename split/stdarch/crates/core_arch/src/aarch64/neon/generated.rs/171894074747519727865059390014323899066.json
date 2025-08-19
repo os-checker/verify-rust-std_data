@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vpmaxqd_f64",
+  "hash": "171894074747519727865059390014323899066",
+  "hash_direct": "531022699867721594417460489222684318788",
+  "src": "pub fn vpmaxqd_f64(a: float64x2_t) -> f64 {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.fmaxv.f64.v2f64\"\n        )]\n        fn _vpmaxqd_f64(a: float64x2_t) -> f64;\n    }\n    unsafe { _vpmaxqd_f64(a) }\n}"
+}

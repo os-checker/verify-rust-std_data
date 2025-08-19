@@ -1,0 +1,23 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/lib.rs",
+  "name": "kani::internal::automatic_harness",
+  "hash": "405742606690577563918253180173937942493",
+  "hash_direct": "1139817891025423176414905866980200194918",
+  "attrs": [
+    "#[kanitool::fn_marker = \"AutomaticHarnessIntrinsic\"]\n"
+  ],
+  "src": "pub fn automatic_harness() {\n                super::kani_intrinsic()\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "kani_core::kani_intrinsics!()",
+      "defsite": "macro_rules! kani_intrinsics"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ],
+  "callees": [
+    "194549954392298174017290392613951205598"
+  ]
+}

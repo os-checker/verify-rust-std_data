@@ -1,0 +1,24 @@
+{
+  "file": "core/src/escape.rs",
+  "name": "escape::EscapeIterInner::<10, escape::MaybeEscaped>::to_str_unchecked",
+  "hash": "39211368339227280213933229930845375940",
+  "hash_direct": "30294184093385265611976389615333435476",
+  "src": "unsafe fn to_str_unchecked(&self) -> &str {\n        debug_assert!(self.alive.end <= Self::LITERAL_ESCAPE_START);\n\n        // SAFETY: The caller guarantees `self.data` contains printable ASCII\n        //         characters in its `escape_seq` variant, and `self.alive` is\n        //         a valid range for `self.data.escape_seq`.\n        unsafe {\n            self.data\n                .escape_seq\n                .get_unchecked(usize::from(self.alive.start)..usize::from(self.alive.end))\n                .as_str()\n        }\n    }",
+  "callees": [
+    "114072873302150917978059682736368582411",
+    "117083133034458006019709376097028492273",
+    "47323665595455568617290020941376774286",
+    "1329845230409163288212548289525672875535",
+    "841904668883726495316837415609641023349",
+    "1258931108755458209614962827106116332072",
+    "53589810041120365110998933211304468616",
+    "1243847030362955698517207199029174369810",
+    "105125143701458073564296455695110349394",
+    "174434980853599669988324850529807540275",
+    "1129159093616037571015539647390591854279",
+    "56364391895129709541437909632157767041",
+    "3546863310933298453416507613937622634",
+    "133281385506070407678974574054883137026",
+    "113814366055626271438047374284421353461"
+  ]
+}

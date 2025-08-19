@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::veor_s16",
+  "hash": "74281506641720272284319018392111229877",
+  "hash_direct": "8908892159688980818084054421180900131",
+  "src": "pub fn veor_s16(a: int16x4_t, b: int16x4_t) -> int16x4_t {\n    unsafe { simd_xor(a, b) }\n}"
+}

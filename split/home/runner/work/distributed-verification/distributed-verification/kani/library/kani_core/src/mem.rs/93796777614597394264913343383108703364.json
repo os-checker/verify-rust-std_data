@@ -1,0 +1,39 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/mem.rs",
+  "name": "kani::mem::can_dereference::<[i64; 2]>",
+  "hash": "93796777614597394264913343383108703364",
+  "hash_direct": "98060219303224546514500580403971144697",
+  "attrs": [
+    "#[kanitool::unstable(feature = \"mem-predicates\", issue = 2690, reason =\n\"experimental memory predicate API\")]\n"
+  ],
+  "src": "pub fn can_dereference<T: MetaSized>(ptr: *const T) -> bool {\n            // Need to assert `is_initialized` because non-determinism is used under the hood, so it\n            // does not make sense to use it inside assumption context.\n            is_ptr_aligned(ptr)\n                && is_inbounds(ptr)\n                && assert_is_initialized(ptr)\n                && unsafe { has_valid_value(ptr) }\n        }",
+  "macro_backtrace": [
+    {
+      "callsite": "kani_core::kani_mem!(core)",
+      "defsite": "macro_rules! kani_mem"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ],
+  "callees": [
+    "1481625861283808858614014583013705247864",
+    "55198556141731503835375909318612911906",
+    "22359847832734915742325702083995179865",
+    "24611647080965273959983533232723557439",
+    "48354165617588990549448172553336931019",
+    "55114859870414943831277262632669830040",
+    "46988142156706968568471137347388932155",
+    "792981177836621297917653060482925001780",
+    "143977448709265911012143372392989284537",
+    "131448732132345852092743020617208534612",
+    "1302521488698007936410075428016095692240",
+    "550354545046808960611972987560825719250",
+    "736351342901746577115812809899390977599",
+    "109763229663154342343123224747831634619",
+    "98105790516360604972242395519623827880",
+    "703663108277374327010040438608357482834",
+    "1100495660517602822510660091708953776518"
+  ]
+}

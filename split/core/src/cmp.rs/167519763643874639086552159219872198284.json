@@ -1,0 +1,10 @@
+{
+  "file": "core/src/cmp.rs",
+  "name": "cmp::Ordering::is_le",
+  "hash": "167519763643874639086552159219872198284",
+  "hash_direct": "105437234697192159836707492412705732271",
+  "src": "pub const fn is_le(self) -> bool {\n        self.as_raw() <= 0\n    }",
+  "callees": [
+    "181009869758296371464394283723152239762"
+  ]
+}

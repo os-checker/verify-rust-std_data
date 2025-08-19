@@ -1,0 +1,13 @@
+{
+  "file": "core/src/num/int_sqrt.rs",
+  "name": "num::int_sqrt::u32_stages::LOWER_HALF_1_BITS",
+  "hash": "120736096214169267676138805464991361829",
+  "hash_direct": "970187586516412649510513320558666854473",
+  "src": "const LOWER_HALF_1_BITS: $ty = (1 << HALF_BITS) - 1;",
+  "macro_backtrace": [
+    {
+      "callsite": "last_stage!(u32, n, s, r)",
+      "defsite": "macro_rules! last_stage {\n    ($ty:ty, $n:ident, $s:ident, $r:ident) => {{\n        debug_assert!($s != 0, \"`$s` is  zero in `last_stage!`.\");\n\n        const HALF_BITS: u32 = <$ty>::BITS >> 1;\n        const QUARTER_BITS: u32 = <$ty>::BITS >> 2;\n        const LOWER_HALF_1_BITS: $ty = (1 << HALF_BITS) - 1;\n\n        let lo = $n & LOWER_HALF_1_BITS;\n        let numerator = (($r as $ty) << QUARTER_BITS) | (lo >> QUARTER_BITS);\n        let denominator = ($s as $ty) << 1;\n\n        let q = numerator / denominator;\n        let mut s = ($s << QUARTER_BITS) as $ty + q;\n        let (s_squared, overflow) = s.overflowing_mul(s);\n        if overflow || s_squared > $n {\n            s -= 1;\n        }\n        s\n    }};\n}"
+    }
+  ]
+}

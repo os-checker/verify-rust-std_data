@@ -1,0 +1,7 @@
+{
+  "file": "core/src/char/convert.rs",
+  "name": "char::convert::<impl convert::From<char> for u64>::from",
+  "hash": "37589655947410760725557791464149005424",
+  "hash_direct": "602246969796893659811006299808599478879",
+  "src": "fn from(c: char) -> Self {\n        // The char is casted to the value of the code point, then zero-extended to 64 bit.\n        // See [https://doc.rust-lang.org/reference/expressions/operator-expr.html#semantics]\n        c as u64\n    }"
+}

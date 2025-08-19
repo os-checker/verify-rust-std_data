@@ -1,0 +1,15 @@
+{
+  "file": "core/src/ops/range.rs",
+  "name": "<ops::range::RangeInclusive<u32> as ops::range::RangeBounds<u32>>::contains::<u32>",
+  "hash": "147465130328255915597764214201908579268",
+  "hash_direct": "46051206286162238369807086699883209256",
+  "src": "fn contains<U>(&self, item: &U) -> bool\n    where\n        T: PartialOrd<U>,\n        U: ?Sized + PartialOrd<T>,\n    {\n        (match self.start_bound() {\n            Included(start) => start <= item,\n            Excluded(start) => start < item,\n            Unbounded => true,\n        }) && (match self.end_bound() {\n            Included(end) => item <= end,\n            Excluded(end) => item < end,\n            Unbounded => true,\n        })\n    }",
+  "callees": [
+    "115671913322884761716817010932509633814",
+    "946466411968311523711785700563111534214",
+    "1400700966637783537377421359389119848",
+    "519478665170207159314235095145570757294",
+    "31247418776957791969248822181415540956",
+    "167770153702066478424411263638880757007"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "file": "core/src/convert/num.rs",
+  "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i32>> for num::nonzero::NonZero<i128>>::from",
+  "hash": "1553430871918413027217186325063386647532",
+  "hash_direct": "26033791993660031618912774653254341029",
+  "src": "fn from(small: NonZero<$Small>) -> Self {\n                // SAFETY: input type guarantees the value is non-zero\n                unsafe { Self::new_unchecked(From::from(small.get())) }\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "impl_nonzero_int_from_nonzero_int!(i32 => i128)",
+      "defsite": "macro_rules! impl_nonzero_int_from_nonzero_int {\n    ($Small:ty => $Large:ty) => {\n        #[stable(feature = \"nz_int_conv\", since = \"1.41.0\")]\n        #[rustc_const_unstable(feature = \"const_try\", issue = \"74935\")]\n        impl const From<NonZero<$Small>> for NonZero<$Large> {\n            // Rustdocs on the impl block show a \"[+] show undocumented items\" toggle.\n            // Rustdocs on functions do not.\n            #[doc = concat!(\"Converts <code>[NonZero]\\\\<[\", stringify!($Small), \"]></code> \")]\n            #[doc = concat!(\"to <code>[NonZero]\\\\<[\", stringify!($Large), \"]></code> losslessly.\")]\n            #[inline]\n            fn from(small: NonZero<$Small>) -> Self {\n                // SAFETY: input type guarantees the value is non-zero\n                unsafe { Self::new_unchecked(From::from(small.get())) }\n            }\n        }\n    };\n}"
+    }
+  ],
+  "callees": [
+    "31559739315062481178790767226288922385",
+    "47323665595455568617290020941376774286",
+    "1329845230409163288212548289525672875535",
+    "16824420916691935049705640393259467449",
+    "422227233868703869115214172499681347219",
+    "1655846349029393744513904233317344962913",
+    "1167598062746341909115379266965834806332",
+    "841904668883726495316837415609641023349",
+    "1258931108755458209614962827106116332072",
+    "105125143701458073564296455695110349394",
+    "1218790289670026660418434748374709001141",
+    "399232661239117480517401994520839366833"
+  ]
+}

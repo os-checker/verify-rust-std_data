@@ -1,0 +1,12 @@
+{
+  "file": "core/src/char/mod.rs",
+  "name": "<char::CaseMappingIter as iter::traits::exact_size::ExactSizeIterator>::is_empty",
+  "hash": "177084258698979094443484885746728471898",
+  "hash_direct": "1775593407189280763518239843025105395274",
+  "src": "fn is_empty(&self) -> bool {\n        self.0.is_empty()\n    }",
+  "callees": [
+    "101323316716198034322655579611517212481",
+    "66681207356073687792288512627553526437",
+    "305374531381368603518383057774771282949"
+  ]
+}

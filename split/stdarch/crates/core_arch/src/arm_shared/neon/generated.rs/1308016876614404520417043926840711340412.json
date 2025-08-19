@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vneg_s16",
+  "hash": "1308016876614404520417043926840711340412",
+  "hash_direct": "950685618195809358710180416872589219708",
+  "src": "pub fn vneg_s16(a: int16x4_t) -> int16x4_t {\n    unsafe { simd_neg(a) }\n}"
+}

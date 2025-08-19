@@ -1,0 +1,36 @@
+{
+  "file": "core/src/slice/iter.rs",
+  "name": "slice::iter::verify::verify_char::check_len::{closure#0}",
+  "hash": "1818623252627227432411892700488547763316",
+  "hash_direct": "626710317711154818815245613447669286774",
+  "src": "|iter: &mut Iter<'_, $ty>| {\n                    let _ = iter.len();\n                }",
+  "macro_backtrace": [
+    {
+      "callsite": "check_iter_with_ty!(verify_char, char, 50)",
+      "defsite": "macro_rules! check_iter_with_ty {\n        ($module:ident, $ty:ty, $max:expr) => {\n            mod $module {\n                use super::*;\n                const MAX_LEN: usize = $max;\n\n                #[kani::proof]\n                fn check_new_iter() {\n                    let array: [$ty; MAX_LEN] = kani::any();\n                    let slice = any_slice::<$ty>(&array);\n                    let mut iter = Iter::new(slice);\n                    kani::assert(iter.is_safe(), \"Iter is safe\");\n                }\n\n                /// Count consumes the value, thus, invoke it directly.\n                #[kani::proof]\n                fn check_count() {\n                    let array: [$ty; MAX_LEN] = kani::any();\n                    let mut iter = any_iter::<$ty>(&array);\n                    iter.count();\n                }\n\n                #[kani::proof]\n                fn check_default() {\n                    let iter: Iter<'_, $ty> = Iter::default();\n                    kani::assert(iter.is_safe(), \"Iter is safe\");\n                }\n\n                check_unsafe_contracts!(check_next_back_unchecked, $ty, next_back_unchecked());\n                check_unsafe_contracts!(check_post_inc_start, $ty, post_inc_start(kani::any()));\n                check_unsafe_contracts!(check_pre_dec_end, $ty, pre_dec_end(kani::any()));\n\n                // Public functions that call safe abstraction `make_slice`.\n                check_safe_abstraction!(check_as_slice, $ty, |iter: &mut Iter<'_, $ty>| {\n                    iter.as_slice();\n                });\n                check_safe_abstraction!(check_as_ref, $ty, |iter: &mut Iter<'_, $ty>| {\n                    iter.as_ref();\n                });\n\n                check_safe_abstraction!(check_advance_back_by, $ty, |iter: &mut Iter<'_, $ty>| {\n                    iter.advance_back_by(kani::any());\n                });\n\n                check_safe_abstraction!(check_is_empty, $ty, |iter: &mut Iter<'_, $ty>| {\n                    let _ = iter.is_empty();\n                });\n                check_safe_abstraction!(check_len, $ty, |iter: &mut Iter<'_, $ty>| {\n                    let _ = iter.len();\n                });\n                check_safe_abstraction!(check_size_hint, $ty, |iter: &mut Iter<'_, $ty>| {\n                    let _ = iter.size_hint();\n                });\n                check_safe_abstraction!(check_nth, $ty, |iter: &mut Iter<'_, $ty>| {\n                    let _ = iter.nth(kani::any());\n                });\n                check_safe_abstraction!(check_advance_by, $ty, |iter: &mut Iter<'_, $ty>| {\n                    let _ = iter.advance_by(kani::any());\n                });\n                check_safe_abstraction!(check_next_back, $ty, |iter: &mut Iter<'_, $ty>| {\n                    let _ = iter.next_back();\n                });\n                check_safe_abstraction!(check_nth_back, $ty, |iter: &mut Iter<'_, $ty>| {\n                    let _ = iter.nth_back(kani::any());\n                });\n                check_safe_abstraction!(check_next, $ty, |iter: &mut Iter<'_, $ty>| {\n                    let _ = iter.next();\n                });\n\n                // Ensure that clone always generates a safe object.\n                check_safe_abstraction!(check_clone, $ty, |iter: &mut Iter<'_, $ty>| {\n                    kani::assert(iter.clone().is_safe(), \"Clone is safe\");\n                });\n            }\n        };\n    }"
+    }
+  ],
+  "callees": [
+    "47323665595455568617290020941376774286",
+    "1329845230409163288212548289525672875535",
+    "47278574192031232971799194590021398469",
+    "16824420916691935049705640393259467449",
+    "102647708928649668289159677582754083089",
+    "1156543629781806943613236490158137181630",
+    "841904668883726495316837415609641023349",
+    "1258931108755458209614962827106116332072",
+    "53589810041120365110998933211304468616",
+    "1243847030362955698517207199029174369810",
+    "105125143701458073564296455695110349394",
+    "14289085791843058303972699274315536239",
+    "19175242352379257894524511946426654035",
+    "157419191093478936518787831921895095700",
+    "1195934742954190154118432795911407274332",
+    "7252890572114370307317666805867717317",
+    "542107969656591403611120475955569064682",
+    "52407632342254686257204761749902704057",
+    "1273183309602148189910562282570555361383",
+    "1137271765924114987514947403158445640283",
+    "399232661239117480517401994520839366833"
+  ]
+}

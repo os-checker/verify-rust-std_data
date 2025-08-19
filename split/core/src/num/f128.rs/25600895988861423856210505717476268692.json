@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f128.rs",
+  "name": "f128::<impl f128>::NEG_TINY_BITS",
+  "hash": "25600895988861423856210505717476268692",
+  "hash_direct": "8074339024086934309688025924814612081",
+  "src": "const NEG_TINY_BITS: u128 = Self::TINY_BITS | Self::SIGN_MASK;"
+}

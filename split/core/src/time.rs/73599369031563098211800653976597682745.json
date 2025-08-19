@@ -1,0 +1,10 @@
+{
+  "file": "core/src/time.rs",
+  "name": "time::Duration::from_nanos",
+  "hash": "73599369031563098211800653976597682745",
+  "hash_direct": "352757444703548579813786125239236964515",
+  "src": "pub const fn from_nanos(nanos: u64) -> Duration {\n        const NANOS_PER_SEC: u64 = self::NANOS_PER_SEC as u64;\n        let secs = nanos / NANOS_PER_SEC;\n        let subsec_nanos = (nanos % NANOS_PER_SEC) as u32;\n        // SAFETY: x % 1_000_000_000 < 1_000_000_000\n        let subsec_nanos = unsafe { Nanoseconds::new_unchecked(subsec_nanos) };\n\n        Duration { secs, nanos: subsec_nanos }\n    }",
+  "callees": [
+    "51225830451726158312709701652983201891"
+  ]
+}

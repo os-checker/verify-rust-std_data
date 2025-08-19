@@ -1,0 +1,8 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "ptr::drop_in_place::<str::lossy::Utf8Chunks<'_>>",
+  "hash": "1623105193936503811613238695042552651779",
+  "hash_direct": "71612277030199621191048049270472331226",
+  "inst_kind": "\"Shim\"",
+  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
+}

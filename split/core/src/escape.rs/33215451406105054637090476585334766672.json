@@ -1,0 +1,14 @@
+{
+  "file": "core/src/escape.rs",
+  "name": "escape::EscapeIterInner::<4, escape::AlwaysEscaped>::new",
+  "hash": "33215451406105054637090476585334766672",
+  "hash_direct": "1306814665096657111017661637698341936882",
+  "src": "const unsafe fn new(data: MaybeEscapedCharacter<N>, alive: Range<u8>) -> Self {\n        // Longer escape sequences are not useful given `alive.end` is at most\n        // `Self::LITERAL_ESCAPE_START`.\n        const { assert!(N < Self::LITERAL_ESCAPE_START as usize) };\n\n        // Check bounds, which implicitly also checks the invariant\n        // `alive.end <= Self::LITERAL_ESCAPE_START`.\n        debug_assert!(alive.end <= (N + 1) as u8);\n\n        Self { data, alive, escaping: PhantomData }\n    }",
+  "callees": [
+    "47323665595455568617290020941376774286",
+    "841904668883726495316837415609641023349",
+    "1258931108755458209614962827106116332072",
+    "53589810041120365110998933211304468616",
+    "1243847030362955698517207199029174369810"
+  ]
+}

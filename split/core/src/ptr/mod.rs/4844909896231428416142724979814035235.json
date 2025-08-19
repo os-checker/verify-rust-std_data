@@ -1,0 +1,8 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "ptr::drop_in_place::<task::wake::ExtData<'_>>",
+  "hash": "4844909896231428416142724979814035235",
+  "hash_direct": "147347892013118260551159111635362019282",
+  "inst_kind": "\"Shim\"",
+  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
+}

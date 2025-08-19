@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "iter::traits::iterator::_assert_is_dyn_compatible",
+  "hash": "103973725195520724358485953453501011314",
+  "hash_direct": "1357533275571365174316758974579519516089",
+  "src": "fn _assert_is_dyn_compatible(_: &dyn Iterator<Item = ()>) {}"
+}

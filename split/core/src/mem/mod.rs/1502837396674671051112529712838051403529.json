@@ -1,0 +1,7 @@
+{
+  "file": "core/src/mem/mod.rs",
+  "name": "mem::align_of::<core_arch::arm_shared::neon::uint32x4_t>",
+  "hash": "1502837396674671051112529712838051403529",
+  "hash_direct": "630315875615532515516479297260085297002",
+  "src": "pub const fn align_of<T>() -> usize {\n    intrinsics::align_of::<T>()\n}"
+}

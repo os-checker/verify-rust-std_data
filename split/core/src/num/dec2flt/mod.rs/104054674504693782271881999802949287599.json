@@ -1,0 +1,16 @@
+{
+  "file": "core/src/num/dec2flt/mod.rs",
+  "name": "<num::dec2flt::ParseFloatError as clone::Clone>::clone",
+  "hash": "104054674504693782271881999802949287599",
+  "hash_direct": "182276191131220179106450862276386570766",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ],
+  "callees": [
+    "231447795483417265514514268056817062999"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/task/wake.rs",
+  "name": "task::wake::Context::<'_>::local_waker",
+  "hash": "913770604668128997414712369245704788291",
+  "hash_direct": "680171259039113527111676678858313254043",
+  "src": "pub const fn local_waker(&self) -> &'a LocalWaker {\n        &self.local_waker\n    }"
+}

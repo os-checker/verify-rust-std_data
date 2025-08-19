@@ -1,0 +1,16 @@
+{
+  "file": "core/src/escape.rs",
+  "name": "escape::EscapeIterInner::<10, escape::MaybeEscaped>::backslash",
+  "hash": "22520946451422268468819368222811218494",
+  "hash_direct": "1771146613530058078912666376919155440063",
+  "src": "pub(crate) const fn backslash(c: ascii::Char) -> Self {\n        let (escape_seq, alive) = backslash(c);\n        // SAFETY: `escape_seq` contains an escape sequence in the range given by `alive`.\n        unsafe { Self::new(MaybeEscapedCharacter { escape_seq }, alive) }\n    }",
+  "callees": [
+    "566737276310115629513798456193914181499",
+    "39437333748502814549799659117940154402",
+    "47323665595455568617290020941376774286",
+    "841904668883726495316837415609641023349",
+    "1258931108755458209614962827106116332072",
+    "53589810041120365110998933211304468616",
+    "1243847030362955698517207199029174369810"
+  ]
+}

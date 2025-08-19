@@ -1,0 +1,8 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "ptr::drop_in_place::<for<'a> fn(&'a mut char::EscapeDefault) -> option::Option<<char::EscapeDefault as iter::traits::iterator::Iterator>::Item> {<char::EscapeDefault as iter::traits::iterator::Iterator>::next}>",
+  "hash": "32502946623806377743382604511605322421",
+  "hash_direct": "128580066405851768031022671616853169683",
+  "inst_kind": "\"Shim\"",
+  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
+}

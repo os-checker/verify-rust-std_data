@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vfms_f16",
+  "hash": "59218631219158841443194324567184875700",
+  "hash_direct": "142655825332895231068330962257105510568",
+  "src": "pub fn vfms_f16(a: float16x4_t, b: float16x4_t, c: float16x4_t) -> float16x4_t {\n    unsafe {\n        let b: float16x4_t = simd_neg(b);\n        vfma_f16(a, b, c)\n    }\n}",
+  "callees": [
+    "631153473045110646714452737963839091913"
+  ]
+}

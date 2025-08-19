@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vpadalq_s16",
+  "hash": "745041832908447816912537052260020820917",
+  "hash_direct": "1709763585236716853411993080141483250787",
+  "src": "pub fn vpadalq_s16(a: int32x4_t, b: int16x8_t) -> int32x4_t {\n    let x: int32x4_t;\n    #[cfg(target_arch = \"arm\")]\n    {\n        x = priv_vpadalq_s16(a, b);\n    }\n    #[cfg(any(target_arch = \"aarch64\", target_arch = \"arm64ec\"))]\n    unsafe {\n        x = simd_add(vpaddlq_s16(b), a);\n    };\n    x\n}",
+  "callees": [
+    "11147515584670518479038000191487139431"
+  ]
+}

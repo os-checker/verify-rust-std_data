@@ -1,0 +1,11 @@
+{
+  "file": "core/src/net/socket_addr.rs",
+  "name": "net::socket_addr::SocketAddr::new",
+  "hash": "76579910860073623511173061873780050390",
+  "hash_direct": "82001580646004791368921958701917150382",
+  "src": "pub const fn new(ip: IpAddr, port: u16) -> SocketAddr {\n        match ip {\n            IpAddr::V4(a) => SocketAddr::V4(SocketAddrV4::new(a, port)),\n            IpAddr::V6(a) => SocketAddr::V6(SocketAddrV6::new(a, port, 0, 0)),\n        }\n    }",
+  "callees": [
+    "6077482691357867889050902356832141359",
+    "83408518758570948874562596302013211952"
+  ]
+}

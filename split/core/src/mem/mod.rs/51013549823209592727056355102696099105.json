@@ -1,0 +1,7 @@
+{
+  "file": "core/src/mem/mod.rs",
+  "name": "mem::size_of::<mem::maybe_uninit::MaybeUninit<[u8; 8]>>",
+  "hash": "51013549823209592727056355102696099105",
+  "hash_direct": "1425177880029162487617789428206747059949",
+  "src": "pub const fn size_of<T>() -> usize {\n    intrinsics::size_of::<T>()\n}"
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/mut_ptr.rs",
+  "name": "ptr::mut_ptr::<impl *mut usize>::cast::<sync::atomic::AtomicUsize>",
+  "hash": "113608324590997998687739319516186299653",
+  "hash_direct": "1001077391045099982915776457152303618231",
+  "src": "pub const fn cast<U>(self) -> *mut U {\n        self as _\n    }"
+}

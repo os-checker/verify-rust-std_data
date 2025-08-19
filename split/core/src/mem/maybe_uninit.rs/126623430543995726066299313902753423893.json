@@ -1,0 +1,10 @@
+{
+  "file": "core/src/mem/maybe_uninit.rs",
+  "name": "mem::maybe_uninit::MaybeUninit::<(f64, bool)>::new",
+  "hash": "126623430543995726066299313902753423893",
+  "hash_direct": "319854014743090775313297084737329460647",
+  "src": "pub const fn new(val: T) -> MaybeUninit<T> {\n        MaybeUninit { value: ManuallyDrop::new(val) }\n    }",
+  "callees": [
+    "1124834892803768124214023775356146416051"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/net/ip_addr.rs",
+  "name": "net::ip_addr::IpAddr::is_ipv6",
+  "hash": "184428448895295116306167910575598370512",
+  "hash_direct": "106299111704038474678147782788017832424",
+  "src": "pub const fn is_ipv6(&self) -> bool {\n        matches!(self, IpAddr::V6(_))\n    }"
+}

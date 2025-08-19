@@ -1,0 +1,13 @@
+{
+  "file": "core/src/ops/arith.rs",
+  "name": "<i32 as ops::arith::MulAssign>::mul_assign",
+  "hash": "87490971307212034615352071210425216839",
+  "hash_direct": "3044131198009372798257069147152965927",
+  "src": "fn mul_assign(&mut self, other: $t) { *self *= other }",
+  "macro_backtrace": [
+    {
+      "callsite": "mul_assign_impl! { usize u8 u16 u32 u64 u128 isize i8 i16 i32 i64 i128 f16 f32 f64 f128 }",
+      "defsite": "macro_rules! mul_assign_impl {\n    ($($t:ty)+) => ($(\n        #[stable(feature = \"op_assign_traits\", since = \"1.8.0\")]\n        impl MulAssign for $t {\n            #[inline]\n            #[track_caller]\n            #[rustc_inherit_overflow_checks]\n            fn mul_assign(&mut self, other: $t) { *self *= other }\n        }\n\n        forward_ref_op_assign! { impl MulAssign, mul_assign for $t, $t }\n    )+)\n}"
+    }
+  ]
+}

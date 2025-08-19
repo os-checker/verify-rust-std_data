@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/traits/collect.rs",
+  "name": "<iter::adapters::zip::Zip<slice::iter::Iter<'_, &str>, slice::iter::Iter<'_, &dyn fmt::Debug>> as iter::traits::collect::IntoIterator>::into_iter",
+  "hash": "706533795925716273114582043010630492599",
+  "hash_direct": "137372403343427829825379774308376626106",
+  "src": "fn into_iter(self) -> I {\n        self\n    }"
+}

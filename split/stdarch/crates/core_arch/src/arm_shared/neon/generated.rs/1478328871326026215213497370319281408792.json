@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vabs_s16",
+  "hash": "1478328871326026215213497370319281408792",
+  "hash_direct": "9520089392227988431700432205478527232",
+  "src": "pub fn vabs_s16(a: int16x4_t) -> int16x4_t {\n    unsafe {\n        let neg: int16x4_t = simd_neg(a);\n        let mask: int16x4_t = simd_ge(a, neg);\n        simd_select(mask, a, neg)\n    }\n}"
+}

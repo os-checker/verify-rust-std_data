@@ -1,0 +1,7 @@
+{
+  "file": "core/src/sync/atomic.rs",
+  "name": "sync::atomic::AtomicBool::from_mut",
+  "hash": "1104376838313049160317051170314090710182",
+  "hash_direct": "223938814195513948818340048399916879087",
+  "src": "pub fn from_mut(v: &mut bool) -> &mut Self {\n        // SAFETY: the mutable reference guarantees unique ownership, and\n        // alignment of both `bool` and `Self` is 1.\n        unsafe { &mut *(v as *mut bool as *mut Self) }\n    }"
+}

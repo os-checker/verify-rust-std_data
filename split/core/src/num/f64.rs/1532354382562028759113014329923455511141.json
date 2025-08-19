@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f64.rs",
+  "name": "f64::<impl f64>::INFINITY",
+  "hash": "1532354382562028759113014329923455511141",
+  "hash_direct": "570176810055438259591629917256793820",
+  "src": "pub const INFINITY: f64 = 1.0_f64 / 0.0_f64;"
+}

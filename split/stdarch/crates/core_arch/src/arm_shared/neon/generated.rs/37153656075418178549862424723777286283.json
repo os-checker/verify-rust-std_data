@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vabsq_s8",
+  "hash": "37153656075418178549862424723777286283",
+  "hash_direct": "14281956807129948978574421894951519078",
+  "src": "pub fn vabsq_s8(a: int8x16_t) -> int8x16_t {\n    unsafe {\n        let neg: int8x16_t = simd_neg(a);\n        let mask: int8x16_t = simd_ge(a, neg);\n        simd_select(mask, a, neg)\n    }\n}"
+}

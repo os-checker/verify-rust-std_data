@@ -1,0 +1,7 @@
+{
+  "file": "core/src/slice/sort/unstable/quicksort.rs",
+  "name": "slice::sort::unstable::quicksort::inst_partition::MAX_BRANCHLESS_PARTITION_SIZE",
+  "hash": "43920555443636882033303264448904572667",
+  "hash_direct": "865635276844003559810308010439705665725",
+  "src": "const MAX_BRANCHLESS_PARTITION_SIZE: usize = 96;"
+}

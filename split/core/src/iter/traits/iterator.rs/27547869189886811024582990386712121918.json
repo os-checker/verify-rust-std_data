@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "iter::traits::iterator::Iterator::eq_by::compare::<u8, u8, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/iter/traits/iterator.rs:3791:27: 3791:33}>",
+  "hash": "27547869189886811024582990386712121918",
+  "hash_direct": "456049690108958277115992272983458545639",
+  "src": "fn compare<X, Y, F>(mut eq: F) -> impl FnMut(X, Y) -> ControlFlow<()>\n        where\n            F: FnMut(X, Y) -> bool,\n        {\n            move |x, y| {\n                if eq(x, y) { ControlFlow::Continue(()) } else { ControlFlow::Break(()) }\n            }\n        }"
+}

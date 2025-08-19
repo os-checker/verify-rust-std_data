@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/const_ptr.rs",
+  "name": "ptr::const_ptr::<impl *const [mem::maybe_uninit::MaybeUninit<u8>]>::len",
+  "hash": "55767955768979135724569809046456107380",
+  "hash_direct": "565713126910283028816065951555878319510",
+  "src": "pub const fn len(self) -> usize {\n        metadata(self)\n    }",
+  "callees": [
+    "11646453575295718315251820797250120902"
+  ]
+}

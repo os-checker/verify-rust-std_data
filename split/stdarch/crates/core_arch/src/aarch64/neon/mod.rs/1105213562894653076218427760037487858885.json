@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/mod.rs",
+  "name": "core_arch::aarch64::neon::vget_low_p64",
+  "hash": "1105213562894653076218427760037487858885",
+  "hash_direct": "112882713165023723531171479473021488800",
+  "src": "pub fn vget_low_p64(a: poly64x2_t) -> poly64x1_t {\n    unsafe { transmute(u64x1::new(simd_extract!(a, 0))) }\n}",
+  "callees": [
+    "1120284434464785501814343884387011780766"
+  ]
+}

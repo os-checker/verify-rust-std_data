@@ -1,0 +1,13 @@
+{
+  "file": "core/src/str/mod.rs",
+  "name": "str::<impl str>::trim_ascii_end",
+  "hash": "1351676112196201382812992889243153160441",
+  "hash_direct": "89495697779019583373290425192784054689",
+  "src": "pub const fn trim_ascii_end(&self) -> &str {\n        // SAFETY: Removing ASCII characters from a `&str` does not invalidate\n        // UTF-8.\n        unsafe { core::str::from_utf8_unchecked(self.as_bytes().trim_ascii_end()) }\n    }",
+  "callees": [
+    "82152198621563519385273738632868570109",
+    "8053251180527785811206498600423594764",
+    "121719316555113793862003739913395039268",
+    "45819503778375231969038300244556098990"
+  ]
+}

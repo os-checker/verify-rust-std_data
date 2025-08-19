@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ops/index_range.rs",
+  "name": "ops::index_range::IndexRange::end",
+  "hash": "426660444221673690915890253082845174214",
+  "hash_direct": "1347694606164623046310130150160346631100",
+  "src": "pub(crate) const fn end(&self) -> usize {\n        self.end\n    }"
+}

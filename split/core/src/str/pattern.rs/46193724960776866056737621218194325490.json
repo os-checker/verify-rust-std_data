@@ -1,0 +1,13 @@
+{
+  "file": "core/src/str/pattern.rs",
+  "name": "<str::pattern::EmptyNeedle as clone::Clone>::clone",
+  "hash": "46193724960776866056737621218194325490",
+  "hash_direct": "826433114468923595413494589839099480099",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

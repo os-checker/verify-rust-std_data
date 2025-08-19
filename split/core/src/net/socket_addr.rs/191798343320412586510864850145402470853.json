@@ -1,0 +1,7 @@
+{
+  "file": "core/src/net/socket_addr.rs",
+  "name": "net::socket_addr::SocketAddrV6::set_port",
+  "hash": "191798343320412586510864850145402470853",
+  "hash_direct": "27165336027289046742801397841065220079",
+  "src": "pub const fn set_port(&mut self, new_port: u16) {\n        self.port = new_port;\n    }"
+}

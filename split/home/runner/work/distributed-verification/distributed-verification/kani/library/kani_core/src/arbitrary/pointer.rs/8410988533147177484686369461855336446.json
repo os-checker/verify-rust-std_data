@@ -1,0 +1,27 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/arbitrary/pointer.rs",
+  "name": "kani::arbitrary_ptr::PointerGenerator::<2>::new",
+  "hash": "8410988533147177484686369461855336446",
+  "hash_direct": "137561774200992417298998730723773189765",
+  "attrs": [
+    "#[kanitool::unstable(feature = \"mem-predicates\", issue = 2690, reason =\n\"experimental memory predicates and manipulation feature\")]\n"
+  ],
+  "src": "pub fn new() -> Self {\n                let _ = Self::VALID;\n                PointerGenerator { buf: MaybeUninit::uninit() }\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "kani_core::ptr_generator!()",
+      "defsite": "macro_rules! ptr_generator"
+    },
+    {
+      "callsite": "kani_core::generate_arbitrary!()",
+      "defsite": "macro_rules! generate_arbitrary"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ],
+  "callees": [
+    "43855134154080831711256560388179850370"
+  ]
+}

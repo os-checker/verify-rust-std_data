@@ -1,0 +1,8 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "ptr::drop_in_place::<&option::Option<char::EscapeDefault>>",
+  "hash": "183064325354305010893070111113909130573",
+  "hash_direct": "139078011459591038349326314703268789173",
+  "inst_kind": "\"Shim\"",
+  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
+}

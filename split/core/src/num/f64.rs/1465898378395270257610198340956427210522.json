@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f64.rs",
+  "name": "f64::<impl f64>::algebraic_add",
+  "hash": "1465898378395270257610198340956427210522",
+  "hash_direct": "324606017759641153015658556797933122357",
+  "src": "pub const fn algebraic_add(self, rhs: f64) -> f64 {\n        intrinsics::fadd_algebraic(self, rhs)\n    }"
+}

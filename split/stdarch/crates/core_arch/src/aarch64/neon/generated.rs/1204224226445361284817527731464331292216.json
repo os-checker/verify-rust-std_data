@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vrndn_f64",
+  "hash": "1204224226445361284817527731464331292216",
+  "hash_direct": "1568904927215408693216275474406711813540",
+  "src": "pub fn vrndn_f64(a: float64x1_t) -> float64x1_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.roundeven.v1f64\"\n        )]\n        fn _vrndn_f64(a: float64x1_t) -> float64x1_t;\n    }\n    unsafe { _vrndn_f64(a) }\n}"
+}

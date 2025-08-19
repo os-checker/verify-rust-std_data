@@ -1,0 +1,47 @@
+{
+  "file": "core/src/ub_checks.rs",
+  "name": "ptr::copy_nonoverlapping::precondition_check",
+  "hash": "153999075255816246604435272140943255557",
+  "hash_direct": "176713042325449695644509268382593533613",
+  "src": "const fn precondition_check($($name:$ty),*) {\n                if !$e {\n                    let msg = concat!(\"unsafe precondition(s) violated: \", $message,\n                        \"\\n\\nThis indicates a bug in the program. \\\n                        This Undefined Behavior check is optional, and cannot be relied on for safety.\");\n                    ::core::panicking::panic_nounwind_fmt(::core::fmt::Arguments::new_const(&[msg]), false);\n                }\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "ub_checks::assert_unsafe_precondition!(\n        check_language_ub,\n        \"ptr::copy_nonoverlapping requires that both pointer arguments are aligned and non-null \\\n        and the specified memory ranges do not overlap\",\n        (\n            src: *const () = src as *const (),\n            dst: *mut () = dst as *mut (),\n            size: usize = size_of::<T>(),\n            align: usize = align_of::<T>(),\n            count: usize = count,\n        ) => {\n            let zero_size = count == 0 || size == 0;\n            ub_checks::maybe_is_aligned_and_not_null(src, align, zero_size)\n                && ub_checks::maybe_is_aligned_and_not_null(dst, align, zero_size)\n                && ub_checks::maybe_is_nonoverlapping(src, dst, size, count)\n        }\n    )",
+      "defsite": "macro_rules! assert_unsafe_precondition {\n    ($kind:ident, $message:expr, ($($name:ident:$ty:ty = $arg:expr),*$(,)?) => $e:expr $(,)?) => {\n        {\n            // This check is inlineable, but not by the MIR inliner.\n            // The reason for this is that the MIR inliner is in an exceptionally bad position\n            // to think about whether or not to inline this. In MIR, this call is gated behind `debug_assertions`,\n            // which will codegen to `false` in release builds. Inlining the check would be wasted work in that case and\n            // would be bad for compile times.\n            //\n            // LLVM on the other hand sees the constant branch, so if it's `false`, it can immediately delete it without\n            // inlining the check. If it's `true`, it can inline it and get significantly better performance.\n            #[rustc_no_mir_inline]\n            #[inline]\n            #[rustc_nounwind]\n            #[track_caller]\n            const fn precondition_check($($name:$ty),*) {\n                if !$e {\n                    let msg = concat!(\"unsafe precondition(s) violated: \", $message,\n                        \"\\n\\nThis indicates a bug in the program. \\\n                        This Undefined Behavior check is optional, and cannot be relied on for safety.\");\n                    ::core::panicking::panic_nounwind_fmt(::core::fmt::Arguments::new_const(&[msg]), false);\n                }\n            }\n\n            if ::core::ub_checks::$kind() {\n                precondition_check($($arg,)*);\n            }\n        }\n    };\n}"
+    }
+  ],
+  "callees": [
+    "47323665595455568617290020941376774286",
+    "111425599901702694743874629435682172347",
+    "714811817540972740211524868124730226803",
+    "1329845230409163288212548289525672875535",
+    "109763229663154342343123224747831634619",
+    "561445107989240208511361370086377379752",
+    "161225022469363908823200354701136905531",
+    "1067675883129992420314174327751912045205",
+    "79307503347131170578315604022567527135",
+    "1160150031813070275716801291559951969968",
+    "45465200458951020712268855471874148461",
+    "10276831356989197177291225683156882265",
+    "145583995108105043133401862026582368143",
+    "8850644696306119287964523545649044939",
+    "841346702487865802717731804342903065853",
+    "1617054938297627622011998382328717871744",
+    "1196638383615410162910723134175805433641",
+    "26064680123257945312537992217601395168",
+    "841904668883726495316837415609641023349",
+    "1258931108755458209614962827106116332072",
+    "1243847030362955698517207199029174369810",
+    "380262551218047276514654482281297551654",
+    "105125143701458073564296455695110349394",
+    "25930241974724637292994171257021210872",
+    "617554482545947003412104686554524783687",
+    "1445917162577882149418297081791436471284",
+    "849628185942532211610194183090257053256",
+    "703663108277374327010040438608357482834",
+    "1100495660517602822510660091708953776518",
+    "165260604638305226342101042842060873588",
+    "34478597508049401479557782585707843723",
+    "15859584444614920947579563356650829639"
+  ]
+}

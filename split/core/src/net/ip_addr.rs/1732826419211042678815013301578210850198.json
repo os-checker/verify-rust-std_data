@@ -1,0 +1,22 @@
+{
+  "file": "core/src/net/ip_addr.rs",
+  "name": "net::ip_addr::Ipv6Addr::is_global",
+  "hash": "1732826419211042678815013301578210850198",
+  "hash_direct": "95404969748816808043613497642554830569",
+  "src": "pub const fn is_global(&self) -> bool {\n        !(self.is_unspecified()\n            || self.is_loopback()\n            // IPv4-mapped Address (`::ffff:0:0/96`)\n            || matches!(self.segments(), [0, 0, 0, 0, 0, 0xffff, _, _])\n            // IPv4-IPv6 Translat. (`64:ff9b:1::/48`)\n            || matches!(self.segments(), [0x64, 0xff9b, 1, _, _, _, _, _])\n            // Discard-Only Address Block (`100::/64`)\n            || matches!(self.segments(), [0x100, 0, 0, 0, _, _, _, _])\n            // IETF Protocol Assignments (`2001::/23`)\n            || (matches!(self.segments(), [0x2001, b, _, _, _, _, _, _] if b < 0x200)\n                && !(\n                    // Port Control Protocol Anycast (`2001:1::1`)\n                    u128::from_be_bytes(self.octets()) == 0x2001_0001_0000_0000_0000_0000_0000_0001\n                    // Traversal Using Relays around NAT Anycast (`2001:1::2`)\n                    || u128::from_be_bytes(self.octets()) == 0x2001_0001_0000_0000_0000_0000_0000_0002\n                    // AMT (`2001:3::/32`)\n                    || matches!(self.segments(), [0x2001, 3, _, _, _, _, _, _])\n                    // AS112-v6 (`2001:4:112::/48`)\n                    || matches!(self.segments(), [0x2001, 4, 0x112, _, _, _, _, _])\n                    // ORCHIDv2 (`2001:20::/28`)\n                    // Drone Remote ID Protocol Entity Tags (DETs) Prefix (`2001:30::/28`)`\n                    || matches!(self.segments(), [0x2001, b, _, _, _, _, _, _] if b >= 0x20 && b <= 0x3F)\n                ))\n            // 6to4 (`2002::/16`) – it's not explicitly documented as globally reachable,\n            // IANA says N/A.\n            || matches!(self.segments(), [0x2002, _, _, _, _, _, _, _])\n            || self.is_documentation()\n            // Segment Routing (SRv6) SIDs (`5f00::/16`)\n            || matches!(self.segments(), [0x5f00, ..])\n            || self.is_unique_local()\n            || self.is_unicast_link_local())\n    }",
+  "callees": [
+    "117397357766109002510199343126014715165",
+    "1887145868209918998920863894967104565",
+    "1347861231236379894912602193322915290552",
+    "116526157165477763216805668488632446608",
+    "69902665193040646196174643016542802748",
+    "34991565871808719706323435058542387885",
+    "42261456769457946986279526644059666770",
+    "1264896989240975708016033217926356458981",
+    "1077407027989477815011430825066037636619",
+    "170205791765965620310985965664367007282",
+    "45676127315938087648195038888562758345",
+    "655364994638183711117813449037291777950",
+    "965869043725195656313548384614345090910"
+  ]
+}

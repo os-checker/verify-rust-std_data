@@ -1,0 +1,35 @@
+{
+  "file": "core/src/num/nonzero.rs",
+  "name": "num::nonzero::verify::nonzero_check_new_unchecked_for_32",
+  "hash": "1444563538815844291912900556631268340711",
+  "hash_direct": "177124546109864028557976051750320913019",
+  "proof_kind": "\"Contract\"",
+  "attrs": [
+    "#[kanitool::proof_for_contract = \"NonZero :: new_unchecked\"]\n"
+  ],
+  "src": "pub fn $nonzero_check_new_unchecked_for() {\n                let x: $t = kani::any(); // Generates a symbolic value of the provided type\n\n                unsafe {\n                    <$nonzero_type>::new_unchecked(x); // Calls NonZero::new_unchecked for the specified NonZero type\n                }\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "nonzero_check!(i32, core::num::NonZeroI32, nonzero_check_new_unchecked_for_32)",
+      "defsite": "macro_rules! nonzero_check {\n        ($t:ty, $nonzero_type:ty, $nonzero_check_new_unchecked_for:ident) => {\n            #[kani::proof_for_contract(NonZero::new_unchecked)]\n            pub fn $nonzero_check_new_unchecked_for() {\n                let x: $t = kani::any(); // Generates a symbolic value of the provided type\n\n                unsafe {\n                    <$nonzero_type>::new_unchecked(x); // Calls NonZero::new_unchecked for the specified NonZero type\n                }\n            }\n        };\n    }"
+    }
+  ],
+  "callees": [
+    "110286732951253459166416707375649721039",
+    "1050757777987272307317753801956772021235",
+    "28733051149244335398155852330546270084",
+    "42990063052958904976718600653175958912",
+    "55268624181377464941500382738073713012",
+    "769871191376860825616640549555308478966",
+    "47323665595455568617290020941376774286",
+    "1329845230409163288212548289525672875535",
+    "16824420916691935049705640393259467449",
+    "1049883898637507642310329773294598188904",
+    "159334758770196416718850430056465063807",
+    "841904668883726495316837415609641023349",
+    "1258931108755458209614962827106116332072",
+    "105125143701458073564296455695110349394",
+    "1218790289670026660418434748374709001141",
+    "399232661239117480517401994520839366833"
+  ]
+}

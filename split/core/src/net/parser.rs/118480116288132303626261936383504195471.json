@@ -1,0 +1,7 @@
+{
+  "file": "core/src/net/parser.rs",
+  "name": "net::parser::Parser::<'_>::new",
+  "hash": "118480116288132303626261936383504195471",
+  "hash_direct": "145232001048647866004321701060803785448",
+  "src": "fn new(input: &'a [u8]) -> Parser<'a> {\n        Parser { state: input }\n    }"
+}

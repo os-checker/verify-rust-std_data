@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vtst_p64",
+  "hash": "108611544314344912187979871702531387842",
+  "hash_direct": "1058692547234865130516300633492629929292",
+  "src": "pub fn vtst_p64(a: poly64x1_t, b: poly64x1_t) -> uint64x1_t {\n    unsafe {\n        let c: poly64x1_t = simd_and(a, b);\n        let d: i64x1 = i64x1::new(0);\n        simd_ne(c, transmute(d))\n    }\n}",
+  "callees": [
+    "265257202789630272910580064516726782498"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vrecpsq_f32",
+  "hash": "1805873803049110504915088206912022876224",
+  "hash_direct": "1537109657919466767813464634811195450923",
+  "src": "pub fn vrecpsq_f32(a: float32x4_t, b: float32x4_t) -> float32x4_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(target_arch = \"arm\", link_name = \"llvm.arm.neon.vrecps.v4f32\")]\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.frecps.v4f32\"\n        )]\n        fn _vrecpsq_f32(a: float32x4_t, b: float32x4_t) -> float32x4_t;\n    }\n    unsafe { _vrecpsq_f32(a, b) }\n}"
+}

@@ -1,0 +1,8 @@
+{
+  "file": "core/src/intrinsics/mod.rs",
+  "name": "intrinsics::ptr_guaranteed_cmp::<u8>",
+  "hash": "172384763780532020498448621349957903594",
+  "hash_direct": "97216565327600494762834991493582214682",
+  "inst_kind": "\"Intrinsic\"",
+  "src": "pub const fn ptr_guaranteed_cmp<T>(ptr: *const T, other: *const T) -> u8 {\n    (ptr == other) as u8\n}"
+}

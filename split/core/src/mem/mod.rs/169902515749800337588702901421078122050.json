@@ -1,0 +1,10 @@
+{
+  "file": "core/src/mem/mod.rs",
+  "name": "mem::forget::<slice::sort::unstable::quicksort::GapGuardRaw<f32>>",
+  "hash": "169902515749800337588702901421078122050",
+  "hash_direct": "126235409205381124454278532326313503050",
+  "src": "pub const fn forget<T>(t: T) {\n    let _ = ManuallyDrop::new(t);\n}",
+  "callees": [
+    "1410004887989501644515845180698037014023"
+  ]
+}

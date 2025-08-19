@@ -1,0 +1,10 @@
+{
+  "file": "core/src/str/mod.rs",
+  "name": "str::<impl str>::from_utf8_unchecked",
+  "hash": "13605905620477354116325918803075131720",
+  "hash_direct": "92216953353998333998117396387302930286",
+  "src": "pub const unsafe fn from_utf8_unchecked(v: &[u8]) -> &str {\n        // SAFETY: converts::from_utf8_unchecked has the same safety requirements as this function.\n        unsafe { converts::from_utf8_unchecked(v) }\n    }",
+  "callees": [
+    "121719316555113793862003739913395039268"
+  ]
+}

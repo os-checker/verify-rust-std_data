@@ -1,0 +1,7 @@
+{
+  "file": "core/src/fmt/builders.rs",
+  "name": "<fmt::builders::PadAdapterState as default::Default>::default",
+  "hash": "133438993749786418975081779688101424321",
+  "hash_direct": "20167000988868277723114274018037942382",
+  "src": "fn default() -> Self {\n        PadAdapterState { on_newline: true }\n    }"
+}

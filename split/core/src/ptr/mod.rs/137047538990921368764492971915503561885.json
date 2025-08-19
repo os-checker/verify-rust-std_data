@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "ptr::without_provenance::<intrinsics::verify::u8_struct>",
+  "hash": "137047538990921368764492971915503561885",
+  "hash_direct": "84116722831208382379726100855980431232",
+  "src": "pub const fn without_provenance<T>(addr: usize) -> *const T {\n    without_provenance_mut(addr)\n}",
+  "callees": [
+    "33341200447383822566935452804013209664"
+  ]
+}

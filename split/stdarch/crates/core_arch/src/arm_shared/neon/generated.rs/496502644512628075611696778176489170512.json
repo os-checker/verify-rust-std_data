@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vabaq_s8",
+  "hash": "496502644512628075611696778176489170512",
+  "hash_direct": "34306495769330622162279725481285254325",
+  "src": "pub fn vabaq_s8(a: int8x16_t, b: int8x16_t, c: int8x16_t) -> int8x16_t {\n    unsafe { simd_add(a, vabdq_s8(b, c)) }\n}",
+  "callees": [
+    "155509974329779150468987838461781289182"
+  ]
+}

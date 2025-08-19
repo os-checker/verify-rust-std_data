@@ -1,0 +1,11 @@
+{
+  "file": "core/src/ptr/mut_ptr.rs",
+  "name": "ptr::mut_ptr::<impl *mut u8>::with_metadata_of::<[u8]>",
+  "hash": "160892498072148805983887866123245033387",
+  "hash_direct": "121111665001830728461687846370339794443",
+  "src": "pub const fn with_metadata_of<U>(self, meta: *const U) -> *mut U\n    where\n        U: PointeeSized,\n    {\n        from_raw_parts_mut::<U>(self as *mut (), metadata(meta))\n    }",
+  "callees": [
+    "1345144252413091289511188113312454803880",
+    "180824515799235861855048294605620195261"
+  ]
+}

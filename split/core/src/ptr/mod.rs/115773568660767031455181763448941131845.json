@@ -1,0 +1,8 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "ptr::drop_in_place::<option::Option<fmt::builders::PadAdapter<'_, '_>>>",
+  "hash": "115773568660767031455181763448941131845",
+  "hash_direct": "72683195776462162299336108572887688025",
+  "inst_kind": "\"Shim\"",
+  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
+}

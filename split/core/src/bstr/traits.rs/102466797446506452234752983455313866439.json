@@ -1,0 +1,27 @@
+{
+  "file": "core/src/bstr/traits.rs",
+  "name": "bstr::traits::<impl slice::index::SliceIndex<bstr::ByteStr> for (ops::range::Bound<usize>, ops::range::Bound<usize>)>::get_unchecked_mut",
+  "hash": "102466797446506452234752983455313866439",
+  "hash_direct": "121093629247560316258150861556315751662",
+  "src": "unsafe fn get_unchecked_mut(self, slice: *mut ByteStr) -> *mut Self::Output {\n                // SAFETY: the caller has to uphold the safety contract for `get_unchecked_mut`.\n                unsafe { self.get_unchecked_mut(slice as *mut [u8]) as *mut ByteStr }\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "impl_slice_index!((ops::Bound<usize>, ops::Bound<usize>))",
+      "defsite": "macro_rules! impl_slice_index {\n    ($index:ty) => {\n        #[unstable(feature = \"bstr\", issue = \"134915\")]\n        unsafe impl SliceIndex<ByteStr> for $index {\n            type Output = ByteStr;\n            #[inline]\n            fn get(self, slice: &ByteStr) -> Option<&Self::Output> {\n                self.get(slice.as_bytes()).map(ByteStr::from_bytes)\n            }\n            #[inline]\n            fn get_mut(self, slice: &mut ByteStr) -> Option<&mut Self::Output> {\n                self.get_mut(slice.as_bytes_mut()).map(ByteStr::from_bytes_mut)\n            }\n            #[inline]\n            unsafe fn get_unchecked(self, slice: *const ByteStr) -> *const Self::Output {\n                // SAFETY: the caller has to uphold the safety contract for `get_unchecked`.\n                unsafe { self.get_unchecked(slice as *const [u8]) as *const ByteStr }\n            }\n            #[inline]\n            unsafe fn get_unchecked_mut(self, slice: *mut ByteStr) -> *mut Self::Output {\n                // SAFETY: the caller has to uphold the safety contract for `get_unchecked_mut`.\n                unsafe { self.get_unchecked_mut(slice as *mut [u8]) as *mut ByteStr }\n            }\n            #[inline]\n            fn index(self, slice: &ByteStr) -> &Self::Output {\n                ByteStr::from_bytes(self.index(slice.as_bytes()))\n            }\n            #[inline]\n            fn index_mut(self, slice: &mut ByteStr) -> &mut Self::Output {\n                ByteStr::from_bytes_mut(self.index_mut(slice.as_bytes_mut()))\n            }\n        }\n    };\n}"
+    }
+  ],
+  "callees": [
+    "47323665595455568617290020941376774286",
+    "1329845230409163288212548289525672875535",
+    "841904668883726495316837415609641023349",
+    "1258931108755458209614962827106116332072",
+    "105125143701458073564296455695110349394",
+    "180824515799235861855048294605620195261",
+    "176175348416071052808448244681033673599",
+    "13153496586363174725455961669742179702",
+    "1730156553098966156318256096338569794492",
+    "27239306046078710208621715496220229574",
+    "226668690405311114416916600684719728393",
+    "109562649191060178038182565159088266799"
+  ]
+}

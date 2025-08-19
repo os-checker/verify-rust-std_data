@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vrnda_f16",
+  "hash": "27732347641694815910682885397815068705",
+  "hash_direct": "87767882116853352589389324666343742975",
+  "src": "pub fn vrnda_f16(a: float16x4_t) -> float16x4_t {\n    unsafe { simd_round(a) }\n}"
+}

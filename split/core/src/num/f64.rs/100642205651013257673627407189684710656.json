@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f64.rs",
+  "name": "f64::<impl f64>::is_nan",
+  "hash": "100642205651013257673627407189684710656",
+  "hash_direct": "1235272461485612093410688431543844577336",
+  "src": "pub const fn is_nan(self) -> bool {\n        self != self\n    }"
+}

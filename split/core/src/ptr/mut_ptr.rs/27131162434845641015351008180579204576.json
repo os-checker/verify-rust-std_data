@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/mut_ptr.rs",
+  "name": "ptr::mut_ptr::<impl *mut mem::verify::CannotDrop<char>>::cast::<u8>",
+  "hash": "27131162434845641015351008180579204576",
+  "hash_direct": "1219503629903316645312023450342978294085",
+  "src": "pub const fn cast<U>(self) -> *mut U {\n        self as _\n    }"
+}

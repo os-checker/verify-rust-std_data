@@ -1,0 +1,7 @@
+{
+  "file": "core/src/slice/sort/stable/drift.rs",
+  "name": "slice::sort::stable::drift::DriftsortRun::sorted",
+  "hash": "80396092051270889894190922500965024334",
+  "hash_direct": "117616397450085672496559461248219086698",
+  "src": "fn sorted(self) -> bool {\n        self.0 & 1 == 1\n    }"
+}

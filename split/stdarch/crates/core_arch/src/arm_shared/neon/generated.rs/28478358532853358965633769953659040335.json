@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vst3q_s32",
+  "hash": "28478358532853358965633769953659040335",
+  "hash_direct": "8358489007221567125834784591039733270",
+  "src": "pub unsafe fn vst3q_s32(a: *mut i32, b: int32x4x3_t) {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.st3.v4i32.p0\"\n        )]\n        fn _vst3q_s32(a: int32x4_t, b: int32x4_t, c: int32x4_t, ptr: *mut i8);\n    }\n    _vst3q_s32(b.0, b.1, b.2, a as _)\n}"
+}

@@ -1,0 +1,11 @@
+{
+  "file": "core/src/result.rs",
+  "name": "result::Result::<u16, num::error::TryFromIntError>::map_err::<char::TryFromCharError, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/char/convert.rs:146:45: 146:48}>",
+  "hash": "587264348438744382617650986111402746646",
+  "hash_direct": "1129526104274719466614164643272486356251",
+  "src": "pub fn map_err<F, O: FnOnce(E) -> F>(self, op: O) -> Result<T, F> {\n        match self {\n            Ok(t) => Ok(t),\n            Err(e) => Err(op(e)),\n        }\n    }",
+  "callees": [
+    "1183349400524719739813706302685294324957",
+    "1149040152649284572517987463120726976029"
+  ]
+}

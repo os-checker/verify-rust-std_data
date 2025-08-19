@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vpaddl_s32",
+  "hash": "86660263160420555552065658287869091282",
+  "hash_direct": "588420885200297855310723537263157460783",
+  "src": "pub fn vpaddl_s32(a: int32x2_t) -> int64x1_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.saddlp.v1i64.v2i32\"\n        )]\n        #[cfg_attr(target_arch = \"arm\", link_name = \"llvm.arm.neon.vpaddls.v1i64.v2i32\")]\n        fn _vpaddl_s32(a: int32x2_t) -> int64x1_t;\n    }\n    unsafe { _vpaddl_s32(a) }\n}"
+}

@@ -1,0 +1,21 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/mem_init.rs",
+  "name": "<kani::mem_init::ArgumentBuffer as clone::Clone>::clone",
+  "hash": "1457094714827231314711247809542890559124",
+  "hash_direct": "27257237197557772433560590512222173205",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    },
+    {
+      "callsite": "kani_core::kani_mem_init!(core)",
+      "defsite": "macro_rules! kani_mem_init"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ]
+}

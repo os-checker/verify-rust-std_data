@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "iter::traits::iterator::Iterator::cmp_by::compare::<u8, u8, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/iter/traits/iterator.rs:3639:28: 3639:34}>",
+  "hash": "136771405849462015983413101035312098497",
+  "hash_direct": "29144767757734456125707722849465674920",
+  "src": "fn compare<X, Y, F>(mut cmp: F) -> impl FnMut(X, Y) -> ControlFlow<Ordering>\n        where\n            F: FnMut(X, Y) -> Ordering,\n        {\n            move |x, y| match cmp(x, y) {\n                Ordering::Equal => ControlFlow::Continue(()),\n                non_eq => ControlFlow::Break(non_eq),\n            }\n        }"
+}

@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vcgtz_s32",
+  "hash": "792092867390392245315667381022866074335",
+  "hash_direct": "300943326687154318510075745311468459717",
+  "src": "pub fn vcgtz_s32(a: int32x2_t) -> uint32x2_t {\n    let b: i32x2 = i32x2::new(0, 0);\n    unsafe { simd_gt(a, transmute(b)) }\n}",
+  "callees": [
+    "1028503317080214898718079212053662600938"
+  ]
+}

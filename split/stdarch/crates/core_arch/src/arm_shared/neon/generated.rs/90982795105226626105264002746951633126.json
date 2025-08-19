@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vornq_u16",
+  "hash": "90982795105226626105264002746951633126",
+  "hash_direct": "154346142608061957662225813723839767720",
+  "src": "pub fn vornq_u16(a: uint16x8_t, b: uint16x8_t) -> uint16x8_t {\n    let c = int16x8_t::splat(-1);\n    unsafe { simd_or(simd_xor(b, transmute(c)), a) }\n}",
+  "callees": [
+    "61888492278808791246036000419231622870"
+  ]
+}

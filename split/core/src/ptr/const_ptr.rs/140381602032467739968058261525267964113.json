@@ -1,0 +1,12 @@
+{
+  "file": "core/src/ptr/const_ptr.rs",
+  "name": "ptr::const_ptr::<impl *const f32>::wrapping_sub",
+  "hash": "140381602032467739968058261525267964113",
+  "hash_direct": "19443611723509897994474146175904167653",
+  "src": "pub const fn wrapping_sub(self, count: usize) -> Self\n    where\n        T: Sized,\n    {\n        self.wrapping_offset((count as isize).wrapping_neg())\n    }",
+  "callees": [
+    "25602688744340186171314083485517995425",
+    "1660513410314982984011153915826543479765",
+    "112961645855638968208766737642047064341"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f128.rs",
+  "name": "f128::<impl f128>::algebraic_sub",
+  "hash": "752617449389850476410882996884468435291",
+  "hash_direct": "177061878472791880992159940904445768649",
+  "src": "pub const fn algebraic_sub(self, rhs: f128) -> f128 {\n        intrinsics::fsub_algebraic(self, rhs)\n    }"
+}

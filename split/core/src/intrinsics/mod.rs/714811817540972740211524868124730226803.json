@@ -1,0 +1,10 @@
+{
+  "file": "core/src/intrinsics/mod.rs",
+  "name": "intrinsics::unlikely",
+  "hash": "714811817540972740211524868124730226803",
+  "hash_direct": "1749027424986835028712495173033608986935",
+  "src": "pub const fn unlikely(b: bool) -> bool {\n    if b {\n        cold_path();\n        true\n    } else {\n        false\n    }\n}",
+  "callees": [
+    "111425599901702694743874629435682172347"
+  ]
+}

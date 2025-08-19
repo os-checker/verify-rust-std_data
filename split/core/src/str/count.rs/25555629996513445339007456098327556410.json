@@ -1,0 +1,11 @@
+{
+  "file": "core/src/str/count.rs",
+  "name": "str::count::contains_non_continuation_byte::LSB",
+  "hash": "25555629996513445339007456098327556410",
+  "hash_direct": "1523391950938377189710994198115368120286",
+  "src": "const LSB: usize = usize::repeat_u8(0x01);",
+  "callees": [
+    "59784951958023534311340742558790816074",
+    "1187394330470290540315609612625104918416"
+  ]
+}

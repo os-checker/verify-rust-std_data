@@ -1,0 +1,16 @@
+{
+  "file": "core/src/iter/adapters/enumerate.rs",
+  "name": "<iter::adapters::enumerate::Enumerate<I> as iter::traits::iterator::Iterator>::__iterator_get_unchecked::kani_contract_mode",
+  "hash": "1841164002011043672217822579808411982086",
+  "hash_direct": "800937077854210789811427880622502721252",
+  "attrs": [
+    "#[kanitool::fn_marker = \"kani_contract_mode\"]\n"
+  ],
+  "src": "#[cfg_attr(kani, kani::modifies(self))]",
+  "macro_backtrace": [
+    {
+      "callsite": "#[cfg_attr(kani, kani::modifies(self))]",
+      "defsite": "pub fn modifies(attr: TokenStream, item: TokenStream) -> TokenStream"
+    }
+  ]
+}

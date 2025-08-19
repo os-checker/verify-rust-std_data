@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vclezq_f16",
+  "hash": "356161579944851644318408147149622338375",
+  "hash_direct": "1594280427983463967010020818485335160221",
+  "src": "pub fn vclezq_f16(a: float16x8_t) -> uint16x8_t {\n    let b: f16x8 = f16x8::new(0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);\n    unsafe { simd_le(a, transmute(b)) }\n}",
+  "callees": [
+    "180841945400344555843702174654300041383"
+  ]
+}

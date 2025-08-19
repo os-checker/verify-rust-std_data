@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ops/try_trait.rs",
+  "name": "<ops::try_trait::NeverShortCircuit<[bool; 2]> as ops::try_trait::Try>::from_output",
+  "hash": "481194121300711429717882123356434450967",
+  "hash_direct": "1767754001019266535015234438766381915858",
+  "src": "fn from_output(x: T) -> Self {\n        NeverShortCircuit(x)\n    }"
+}

@@ -1,0 +1,15 @@
+{
+  "file": "core/src/iter/adapters/flatten.rs",
+  "name": "iter::adapters::flatten::FlatMap::<slice::iter::Iter<'_, u8>, ascii::EscapeDefault, slice::ascii::EscapeByte>::into_parts",
+  "hash": "236783793231894258218003862398178363692",
+  "hash_direct": "11900909484720617940330931656352187103",
+  "src": "pub(crate) fn into_parts(self) -> (Option<U::IntoIter>, Option<I>, Option<U::IntoIter>) {\n        (\n            self.inner.frontiter,\n            self.inner.iter.into_inner().map(Map::into_inner),\n            self.inner.backiter,\n        )\n    }",
+  "callees": [
+    "1539750181492469984513296695202628395782",
+    "131452362973939067875591629387409204630",
+    "186929579532000070113180948070482693192",
+    "1425216175636455607010814051931334132121",
+    "1007442139812573642614009524609470792288",
+    "69028075797953767515192967005287126715"
+  ]
+}

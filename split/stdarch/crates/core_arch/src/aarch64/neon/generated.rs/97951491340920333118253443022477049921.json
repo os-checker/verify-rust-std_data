@@ -1,0 +1,11 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vcvt_high_f32_f16",
+  "hash": "97951491340920333118253443022477049921",
+  "hash_direct": "708054157945535567014109606568566478338",
+  "src": "pub fn vcvt_high_f32_f16(a: float16x8_t) -> float32x4_t {\n    vcvt_f32_f16(vget_high_f16(a))\n}",
+  "callees": [
+    "120337680555049926186380532654322120656",
+    "62082714433129761102562900658287471562"
+  ]
+}

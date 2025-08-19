@@ -1,0 +1,13 @@
+{
+  "file": "core/src/num/int_sqrt.rs",
+  "name": "num::int_sqrt::u128_stages::N_SHIFT",
+  "hash": "495100140420729427215776730173593060991",
+  "hash_direct": "422648454560421234014616080169291942336",
+  "src": "const N_SHIFT: u32 = $original_bits - <$ty>::BITS;",
+  "macro_backtrace": [
+    {
+      "callsite": "middle_stage!(128, u16, n, s, r)",
+      "defsite": "macro_rules! middle_stage {\n    ($original_bits:literal, $ty:ty, $n:ident, $s:ident, $r:ident) => {{\n        debug_assert!($s != 0, \"`$s` is  zero in `middle_stage!`.\");\n\n        const N_SHIFT: u32 = $original_bits - <$ty>::BITS;\n        let n = ($n >> N_SHIFT) as $ty;\n\n        const HALF_BITS: u32 = <$ty>::BITS >> 1;\n        const QUARTER_BITS: u32 = <$ty>::BITS >> 2;\n        const LOWER_HALF_1_BITS: $ty = (1 << HALF_BITS) - 1;\n        const LOWEST_QUARTER_1_BITS: $ty = (1 << QUARTER_BITS) - 1;\n\n        let lo = n & LOWER_HALF_1_BITS;\n        let numerator = (($r as $ty) << QUARTER_BITS) | (lo >> QUARTER_BITS);\n        let denominator = ($s as $ty) << 1;\n        let q = numerator / denominator;\n        let u = numerator % denominator;\n\n        let mut s = ($s << QUARTER_BITS) as $ty + q;\n        let (mut r, overflow) =\n            ((u << QUARTER_BITS) | (lo & LOWEST_QUARTER_1_BITS)).overflowing_sub(q * q);\n        if overflow {\n            r = r.wrapping_add(2 * s - 1);\n            s -= 1;\n        }\n\n        // Inform the optimizer that `s` is nonzero. This will allow it to\n        // avoid generating code to handle division-by-zero panics in the next\n        // stage.\n        //\n        // SAFETY: If the original `$n` is zero, the top of the `unsigned_fn`\n        // macro recurses instead of continuing to this point, so the original\n        // `$n` wasn't a 0 if we've reached here.\n        //\n        // Then the `unsigned_fn` macro normalizes `$n` so that at least one of\n        // its two most-significant bits is a 1.\n        //\n        // Then these stages take as many of the most-significant bits of `$n`\n        // as will fit in this stage's type. For example, the stage that\n        // handles `u32` deals with the 32 most-significant bits of `$n`. This\n        // means that each stage has at least one 1 bit in `n`'s two\n        // most-significant bits, making `n` nonzero.\n        //\n        // Then this stage will produce the correct integer square root for\n        // that `n` value. Since `n` is nonzero, `s` will also be nonzero.\n        unsafe { crate::hint::assert_unchecked(s != 0) };\n        (s, r)\n    }};\n}"
+    }
+  ]
+}

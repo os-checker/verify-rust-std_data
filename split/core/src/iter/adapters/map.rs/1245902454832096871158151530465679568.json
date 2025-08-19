@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/adapters/map.rs",
+  "name": "iter::adapters::map::map_try_fold::<'_, char, char::EscapeDefault, (), result::Result<(), fmt::Error>, str::CharEscapeDefault, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/iter/adapters/flatten.rs:420:13: 420:29}>",
+  "hash": "1245902454832096871158151530465679568",
+  "hash_direct": "513633941647336651514103583541898296016",
+  "src": "fn map_try_fold<'a, T, B, Acc, R>(\n    f: &'a mut impl FnMut(T) -> B,\n    mut g: impl FnMut(Acc, B) -> R + 'a,\n) -> impl FnMut(Acc, T) -> R + 'a {\n    move |acc, elt| g(acc, f(elt))\n}"
+}

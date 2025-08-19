@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vld2_dup_p64",
+  "hash": "18106242301513353478573647308195587064",
+  "hash_direct": "34778553877170382796281843200733305700",
+  "src": "pub unsafe fn vld2_dup_p64(a: *const p64) -> poly64x1x2_t {\n    transmute(vld2_dup_s64(transmute(a)))\n}",
+  "callees": [
+    "1168291012341858175815804285328278243501"
+  ]
+}

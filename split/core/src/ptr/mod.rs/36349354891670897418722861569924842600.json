@@ -1,0 +1,8 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "ptr::drop_in_place::<for<'b, 'a> fn(&'b num::flt2dec::decoder::Decoded, &'a mut [mem::maybe_uninit::MaybeUninit<u8>], i16) -> (&'a [u8], i16) {num::flt2dec::strategy::grisu::format_exact}>",
+  "hash": "36349354891670897418722861569924842600",
+  "hash_direct": "18443726033457356298674611148150169123",
+  "inst_kind": "\"Shim\"",
+  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
+}

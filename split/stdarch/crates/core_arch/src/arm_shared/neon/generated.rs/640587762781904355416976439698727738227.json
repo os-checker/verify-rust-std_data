@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vqmovn_s16",
+  "hash": "640587762781904355416976439698727738227",
+  "hash_direct": "1149356317394199235717765400891044724511",
+  "src": "pub fn vqmovn_s16(a: int16x8_t) -> int8x8_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(target_arch = \"arm\", link_name = \"llvm.arm.neon.vqmovns.v8i8\")]\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.sqxtn.v8i8\"\n        )]\n        fn _vqmovn_s16(a: int16x8_t) -> int8x8_t;\n    }\n    unsafe { _vqmovn_s16(a) }\n}"
+}

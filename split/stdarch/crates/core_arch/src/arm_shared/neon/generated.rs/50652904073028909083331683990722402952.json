@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vld1q_lane_p64::<0>",
+  "hash": "50652904073028909083331683990722402952",
+  "hash_direct": "1715354883448038391616310290240455997012",
+  "src": "pub unsafe fn vld1q_lane_p64<const LANE: i32>(ptr: *const p64, src: poly64x2_t) -> poly64x2_t {\n    static_assert_uimm_bits!(LANE, 1);\n    simd_insert!(src, LANE as u32, *ptr)\n}"
+}

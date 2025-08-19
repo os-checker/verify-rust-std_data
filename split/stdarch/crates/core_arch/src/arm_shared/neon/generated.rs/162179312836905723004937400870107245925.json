@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vbic_s16",
+  "hash": "162179312836905723004937400870107245925",
+  "hash_direct": "1113723873643760023010463974574695953553",
+  "src": "pub fn vbic_s16(a: int16x4_t, b: int16x4_t) -> int16x4_t {\n    let c = int16x4_t::splat(-1);\n    unsafe { simd_and(simd_xor(b, c), a) }\n}",
+  "callees": [
+    "1271200498436182357316478493060983504202"
+  ]
+}

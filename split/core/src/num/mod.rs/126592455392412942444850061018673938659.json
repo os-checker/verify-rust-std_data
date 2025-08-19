@@ -1,0 +1,36 @@
+{
+  "file": "core/src/num/mod.rs",
+  "name": "num::verify::unchecked_mul_isize_small",
+  "hash": "126592455392412942444850061018673938659",
+  "hash_direct": "163373007871866927747617276615119425859",
+  "proof_kind": "\"Contract\"",
+  "attrs": [
+    "#[kanitool::proof_for_contract = \"isize :: unchecked_mul\"]\n"
+  ],
+  "src": "pub fn $harness_name() {\n                    let num1: $type = kani::any::<$type>();\n                    let num2: $type = kani::any::<$type>();\n\n                    kani::assume(num1 >= $min && num1 <= $max);\n                    kani::assume(num2 >= $min && num2 <= $max);\n\n                    // Ensure that multiplication does not overflow\n                    kani::assume(!num1.overflowing_mul(num2).1);\n\n                    unsafe {\n                        num1.$method(num2);\n                    }\n                }",
+  "macro_backtrace": [
+    {
+      "callsite": "generate_unchecked_mul_intervals!(\n        isize,\n        unchecked_mul,\n        unchecked_mul_isize_small,\n        -10isize,\n        10isize,\n        unchecked_mul_isize_large_pos,\n        isize::MAX - 1000isize,\n        isize::MAX,\n        unchecked_mul_isize_large_neg,\n        isize::MIN,\n        isize::MIN + 1000isize,\n        unchecked_mul_isize_edge_pos,\n        isize::MAX / 2,\n        isize::MAX,\n        unchecked_mul_isize_edge_neg,\n        isize::MIN,\n        isize::MIN / 2\n    )",
+      "defsite": "macro_rules! generate_unchecked_mul_intervals {\n        ($type:ty, $method:ident, $($harness_name:ident, $min:expr, $max:expr),+) => {\n            $(\n                #[kani::proof_for_contract($type::$method)]\n                pub fn $harness_name() {\n                    let num1: $type = kani::any::<$type>();\n                    let num2: $type = kani::any::<$type>();\n\n                    kani::assume(num1 >= $min && num1 <= $max);\n                    kani::assume(num2 >= $min && num2 <= $max);\n\n                    // Ensure that multiplication does not overflow\n                    kani::assume(!num1.overflowing_mul(num2).1);\n\n                    unsafe {\n                        num1.$method(num2);\n                    }\n                }\n            )+\n        }\n    }"
+    }
+  ],
+  "callees": [
+    "1531009987700713627114841153360395264198",
+    "1230748672991072180016692955695644415710",
+    "64428221957133332357265093654334493",
+    "24614872288685298643967355800714012655",
+    "162562988142812920362309614379838072419",
+    "55268624181377464941500382738073713012",
+    "128103941581933882561095523931319593650",
+    "47323665595455568617290020941376774286",
+    "1329845230409163288212548289525672875535",
+    "16824420916691935049705640393259467449",
+    "167551103293259876125260225730930841946",
+    "26164794358626337495607581875755762373",
+    "841904668883726495316837415609641023349",
+    "1258931108755458209614962827106116332072",
+    "105125143701458073564296455695110349394",
+    "1267363241542004475510559808307357722059",
+    "399232661239117480517401994520839366833"
+  ]
+}

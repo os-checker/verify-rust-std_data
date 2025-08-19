@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f16.rs",
+  "name": "f16::<impl f16>::NEG_INFINITY",
+  "hash": "94031887360958147422290426614371773951",
+  "hash_direct": "743911897578822767111902228797290883917",
+  "src": "pub const NEG_INFINITY: f16 = -1.0_f16 / 0.0_f16;"
+}

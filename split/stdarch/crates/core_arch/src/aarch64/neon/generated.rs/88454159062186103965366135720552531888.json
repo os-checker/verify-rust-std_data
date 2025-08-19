@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vfma_f64",
+  "hash": "88454159062186103965366135720552531888",
+  "hash_direct": "117352556678219101346265244638238464869",
+  "src": "pub fn vfma_f64(a: float64x1_t, b: float64x1_t, c: float64x1_t) -> float64x1_t {\n    unsafe { simd_fma(b, c, a) }\n}"
+}

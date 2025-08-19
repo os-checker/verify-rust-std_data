@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vmovl_high_u32",
+  "hash": "91101265341250848412680519129149537326",
+  "hash_direct": "966413347159518789315421245113259892901",
+  "src": "pub fn vmovl_high_u32(a: uint32x4_t) -> uint64x2_t {\n    unsafe {\n        let a: uint32x2_t = simd_shuffle!(a, a, [2, 3]);\n        vmovl_u32(a)\n    }\n}",
+  "callees": [
+    "44730504744935156061064273006184260191"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "file": "core/src/char/methods.rs",
+  "name": "char::methods::<impl char>::eq_ignore_ascii_case",
+  "hash": "153906962229337013017224477843347534251",
+  "hash_direct": "20494663093931865749124315690054845193",
+  "src": "pub const fn eq_ignore_ascii_case(&self, other: &char) -> bool {\n        self.to_ascii_lowercase() == other.to_ascii_lowercase()\n    }",
+  "callees": [
+    "75192597763840636289907384411943310117",
+    "1839459436011528688312162557257495744527",
+    "123407188166887326661006025909347164494"
+  ]
+}

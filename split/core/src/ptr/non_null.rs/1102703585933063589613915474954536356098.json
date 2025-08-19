@@ -1,0 +1,13 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "ptr::non_null::verify::non_null_check_write_bytes_u8::{constant#0}",
+  "hash": "1102703585933063589613915474954536356098",
+  "hash_direct": "923601568834900788716997962114703581866",
+  "src": "ARR_SIZE",
+  "macro_backtrace": [
+    {
+      "callsite": "generate_write_bytes_harness!(u8, non_null_check_write_bytes_u8)",
+      "defsite": "macro_rules! generate_write_bytes_harness {\n        ($type:ty, $harness_name:ident) => {\n            #[kani::proof_for_contract(NonNull::write_bytes)]\n            pub fn $harness_name() {\n                // Create a pointer generator for the given type with appropriate byte size\n                const ARR_SIZE: usize = mem::size_of::<$type>() * 10;\n                let mut generator = kani::PointerGenerator::<ARR_SIZE>::new();\n\n                // Get a raw pointer from the generator\n                let raw_ptr: *mut $type = generator.any_in_bounds().ptr;\n\n                // Create a non-null pointer from the raw pointer\n                let ptr = NonNull::new(raw_ptr).unwrap();\n\n                // Create a non-deterministic value to write\n                let val: u8 = kani::any();\n\n                // Create a non-deterministic count\n                let count: usize = kani::any();\n\n                unsafe {\n                    // Perform the volatile write operation\n                    ptr.write_bytes(val, count);\n\n                    // Create a non-deterministic count\n                    let i: usize = kani::any_where(|&x| x < count * mem::size_of::<$type>());\n                    let ptr_byte = ptr.as_ptr() as *const u8;\n\n                    // Read back the value and assert it's correct\n                    assert_eq!(*ptr_byte.add(i), val);\n                }\n            }\n        };\n    }"
+    }
+  ]
+}

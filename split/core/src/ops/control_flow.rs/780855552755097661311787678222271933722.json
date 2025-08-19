@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ops/control_flow.rs",
+  "name": "<ops::control_flow::ControlFlow<&str> as ops::try_trait::Try>::from_output",
+  "hash": "780855552755097661311787678222271933722",
+  "hash_direct": "93097954417342495864941510160184889816",
+  "src": "fn from_output(output: Self::Output) -> Self {\n        ControlFlow::Continue(output)\n    }"
+}

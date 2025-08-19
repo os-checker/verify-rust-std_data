@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vminv_s8",
+  "hash": "19754698007282797337150976357116720606",
+  "hash_direct": "175722180570972559104772473212559429608",
+  "src": "pub fn vminv_s8(a: int8x8_t) -> i8 {\n    unsafe { simd_reduce_min(a) }\n}"
+}

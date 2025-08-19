@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ascii/ascii_char.rs",
+  "name": "<ascii::ascii_char::AsciiChar as fmt::Debug>::fmt::backslash",
+  "hash": "91161792688912637816741412973571994153",
+  "hash_direct": "156617443377071622829145553230334994850",
+  "src": "fn backslash(a: AsciiChar) -> ([AsciiChar; 6], usize) {\n            ([Apostrophe, Backslash, a, Apostrophe, Null, Null], 4)\n        }"
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/panic/location.rs",
+  "name": "panic::location::Location::<'_>::line",
+  "hash": "349479746572545411712499898938214967380",
+  "hash_direct": "158484114905365127533633802159041353934",
+  "src": "pub const fn line(&self) -> u32 {\n        self.line\n    }"
+}

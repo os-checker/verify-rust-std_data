@@ -1,0 +1,7 @@
+{
+  "file": "core/src/sync/atomic.rs",
+  "name": "sync::atomic::atomic_min::<i32>",
+  "hash": "1577604318362838722015395699083620506060",
+  "hash_direct": "12914162325889777022537419851453261292",
+  "src": "unsafe fn atomic_min<T: Copy>(dst: *mut T, val: T, order: Ordering) -> T {\n    // SAFETY: the caller must uphold the safety contract for `atomic_min`\n    unsafe {\n        match order {\n            Relaxed => intrinsics::atomic_min::<T, { AO::Relaxed }>(dst, val),\n            Acquire => intrinsics::atomic_min::<T, { AO::Acquire }>(dst, val),\n            Release => intrinsics::atomic_min::<T, { AO::Release }>(dst, val),\n            AcqRel => intrinsics::atomic_min::<T, { AO::AcqRel }>(dst, val),\n            SeqCst => intrinsics::atomic_min::<T, { AO::SeqCst }>(dst, val),\n        }\n    }\n}"
+}

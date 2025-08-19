@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f32.rs",
+  "name": "f32::<impl f32>::INFINITY",
+  "hash": "144496306081155255453217802765073327234",
+  "hash_direct": "922487676085303361514230960688607290680",
+  "src": "pub const INFINITY: f32 = 1.0_f32 / 0.0_f32;"
+}

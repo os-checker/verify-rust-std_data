@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f32.rs",
+  "name": "f32::<impl f32>::abs",
+  "hash": "1085489109560079462430857907814768808",
+  "hash_direct": "134789396974550788363046511150056317063",
+  "src": "pub const fn abs(self) -> f32 {\n        // SAFETY: this is actually a safe intrinsic\n        unsafe { intrinsics::fabsf32(self) }\n    }"
+}

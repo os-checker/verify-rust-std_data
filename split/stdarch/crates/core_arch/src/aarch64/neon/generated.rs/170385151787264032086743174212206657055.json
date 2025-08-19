@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vpminq_u32",
+  "hash": "170385151787264032086743174212206657055",
+  "hash_direct": "979558831113905719112755034625272967160",
+  "src": "pub fn vpminq_u32(a: uint32x4_t, b: uint32x4_t) -> uint32x4_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.uminp.v4i32\"\n        )]\n        fn _vpminq_u32(a: uint32x4_t, b: uint32x4_t) -> uint32x4_t;\n    }\n    unsafe { _vpminq_u32(a, b) }\n}"
+}

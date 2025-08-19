@@ -1,0 +1,14 @@
+{
+  "file": "core/src/iter/adapters/map.rs",
+  "name": "iter::adapters::map::map_fold::<&u8, usize, usize, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/iter/adapters/filter.rs:138:13: 138:21}, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/iter/traits/accum.rs:53:21: 53:27}>::{closure#0}",
+  "hash": "78937725557049865865312472258624739921",
+  "hash_direct": "49433800656428465711827211184537439792",
+  "src": "move |acc, elt| g(acc, f(elt))",
+  "callees": [
+    "14314158248731667467224830801301140817",
+    "146047412284994450699670763407526667493",
+    "134444069993780397564703136863158148716",
+    "774656650382130508918215221937405910597",
+    "121973516639670562835557836045994389718"
+  ]
+}

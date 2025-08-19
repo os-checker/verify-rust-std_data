@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/mod.rs",
+  "name": "num::<impl u8>::is_ascii_alphabetic",
+  "hash": "231161484222598660810956623263225276517",
+  "hash_direct": "97065250463941524215249079346797003020",
+  "src": "pub const fn is_ascii_alphabetic(&self) -> bool {\n        matches!(*self, b'A'..=b'Z' | b'a'..=b'z')\n    }"
+}

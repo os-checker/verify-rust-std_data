@@ -1,0 +1,11 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vceqzd_u64",
+  "hash": "110630308714074273453956555730736609569",
+  "hash_direct": "1700677281172349563917658112120553711814",
+  "src": "pub fn vceqzd_u64(a: u64) -> u64 {\n    unsafe { transmute(vceqz_u64(transmute(a))) }\n}",
+  "callees": [
+    "67551943674932821463845101581134022081",
+    "1120284434464785501814343884387011780766"
+  ]
+}

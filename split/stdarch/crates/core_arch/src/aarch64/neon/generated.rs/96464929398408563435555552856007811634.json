@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vst3q_u64",
+  "hash": "96464929398408563435555552856007811634",
+  "hash_direct": "1758720484510830618714262320336751747286",
+  "src": "pub unsafe fn vst3q_u64(a: *mut u64, b: uint64x2x3_t) {\n    vst3q_s64(transmute(a), transmute(b))\n}",
+  "callees": [
+    "1560695939692328442710678687660747355953"
+  ]
+}

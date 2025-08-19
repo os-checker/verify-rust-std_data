@@ -1,0 +1,11 @@
+{
+  "file": "core/src/array/iter.rs",
+  "name": "array::iter::<impl iter::traits::collect::IntoIterator for [usize; 2]>::into_iter",
+  "hash": "161967501866362000719610220294224204176",
+  "hash_direct": "4453128896151771715643891338108521580",
+  "src": "fn into_iter(self) -> Self::IntoIter {\n        // SAFETY: The transmute here is actually safe. The docs of `MaybeUninit`\n        // promise:\n        //\n        // > `MaybeUninit<T>` is guaranteed to have the same size and alignment\n        // > as `T`.\n        //\n        // The docs even show a transmute from an array of `MaybeUninit<T>` to\n        // an array of `T`.\n        //\n        // With that, this initialization satisfies the invariants.\n        //\n        // FIXME: If normal `transmute` ever gets smart enough to allow this\n        // directly, use it instead of `transmute_unchecked`.\n        let data: [MaybeUninit<T>; N] = unsafe { transmute_unchecked(self) };\n        // SAFETY: The original array was entirely initialized and the the alive\n        // range we're passing here represents that fact.\n        let inner = unsafe { InnerSized::new_unchecked(IndexRange::zero_to(N), data) };\n        IntoIter { inner }\n    }",
+  "callees": [
+    "3163624712046351175290487647362043116",
+    "807459588385208510417001782946551009910"
+  ]
+}

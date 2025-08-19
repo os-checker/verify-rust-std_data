@@ -1,0 +1,8 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "ptr::drop_in_place::<&intrinsics::verify::u64_mod::generated_struct>",
+  "hash": "14879626970320453229107121583097263960",
+  "hash_direct": "143348398317159067927385448562967629872",
+  "inst_kind": "\"Shim\"",
+  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
+}

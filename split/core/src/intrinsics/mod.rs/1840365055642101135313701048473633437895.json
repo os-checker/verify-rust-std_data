@@ -1,0 +1,38 @@
+{
+  "file": "core/src/intrinsics/mod.rs",
+  "name": "ffi::c_str::strlen::compiletime",
+  "hash": "1840365055642101135313701048473633437895",
+  "hash_direct": "505218268465330930916232719116120586637",
+  "src": "const fn compiletime$(<$($binders)*>)?($($arg: $ty),*) $( -> $ret )? {\n            // Don't warn if one of the arguments is unused.\n            $(let _ = $arg;)*\n\n            $compiletime\n        }",
+  "macro_backtrace": [
+    {
+      "callsite": "$crate::intrinsics::const_eval_select!(\n            @capture$([$($binders)*])? { $($arg : $ty = $val),* } $(-> $ret)? :\n            #[noinline]\n            if const\n                #[inline] // prevent codegen on this function\n                $(#[$compiletime_attr])*\n                $compiletime\n            else\n                #[inline] // avoid the overhead of an extra fn call\n                $(#[$runtime_attr])*\n                $runtime\n        )",
+      "defsite": "pub(crate) macro const_eval_select {\n    (\n        @capture$([$($binders:tt)*])? { $($arg:ident : $ty:ty = $val:expr),* $(,)? } $( -> $ret:ty )? :\n        if const\n            $(#[$compiletime_attr:meta])* $compiletime:block\n        else\n            $(#[$runtime_attr:meta])* $runtime:block\n    ) => {\n        // Use the `noinline` arm, after adding explicit `inline` attributes\n        $crate::intrinsics::const_eval_select!(\n            @capture$([$($binders)*])? { $($arg : $ty = $val),* } $(-> $ret)? :\n            #[noinline]\n            if const\n                #[inline] // prevent codegen on this function\n                $(#[$compiletime_attr])*\n                $compiletime\n            else\n                #[inline] // avoid the overhead of an extra fn call\n                $(#[$runtime_attr])*\n                $runtime\n        )\n    },\n    // With a leading #[noinline], we don't add inline attributes\n    (\n        @capture$([$($binders:tt)*])? { $($arg:ident : $ty:ty = $val:expr),* $(,)? } $( -> $ret:ty )? :\n        #[noinline]\n        if const\n            $(#[$compiletime_attr:meta])* $compiletime:block\n        else\n            $(#[$runtime_attr:meta])* $runtime:block\n    ) => {{\n        $(#[$runtime_attr])*\n        fn runtime$(<$($binders)*>)?($($arg: $ty),*) $( -> $ret )? {\n            $runtime\n        }\n\n        $(#[$compiletime_attr])*\n        const fn compiletime$(<$($binders)*>)?($($arg: $ty),*) $( -> $ret )? {\n            // Don't warn if one of the arguments is unused.\n            $(let _ = $arg;)*\n\n            $compiletime\n        }\n\n        const_eval_select(($($val,)*), compiletime, runtime)\n    }},\n    // We support leaving away the `val` expressions for *all* arguments\n    // (but not for *some* arguments, that's too tricky).\n    (\n        @capture$([$($binders:tt)*])? { $($arg:ident : $ty:ty),* $(,)? } $( -> $ret:ty )? :\n        if const\n            $(#[$compiletime_attr:meta])* $compiletime:block\n        else\n            $(#[$runtime_attr:meta])* $runtime:block\n    ) => {\n        $crate::intrinsics::const_eval_select!(\n            @capture$([$($binders)*])? { $($arg : $ty = $arg),* } $(-> $ret)? :\n            if const\n                $(#[$compiletime_attr])* $compiletime\n            else\n                $(#[$runtime_attr])* $runtime\n        )\n    },\n}"
+    },
+    {
+      "callsite": "const_eval_select!(\n        @capture { s: *const c_char = ptr } -> usize:\n        if const {\n            let mut len = 0;\n\n            // SAFETY: Outer caller has provided a pointer to a valid C string.\n            while unsafe { *s.add(len) } != 0 {\n                len += 1;\n            }\n\n            len\n        } else {\n            unsafe extern \"C\" {\n                /// Provided by libc or compiler_builtins.\n                fn strlen(s: *const c_char) -> usize;\n            }\n\n            // SAFETY: Outer caller has provided a pointer to a valid C string.\n            unsafe { strlen(s) }\n        }\n    )",
+      "defsite": "pub(crate) macro const_eval_select {\n    (\n        @capture$([$($binders:tt)*])? { $($arg:ident : $ty:ty = $val:expr),* $(,)? } $( -> $ret:ty )? :\n        if const\n            $(#[$compiletime_attr:meta])* $compiletime:block\n        else\n            $(#[$runtime_attr:meta])* $runtime:block\n    ) => {\n        // Use the `noinline` arm, after adding explicit `inline` attributes\n        $crate::intrinsics::const_eval_select!(\n            @capture$([$($binders)*])? { $($arg : $ty = $val),* } $(-> $ret)? :\n            #[noinline]\n            if const\n                #[inline] // prevent codegen on this function\n                $(#[$compiletime_attr])*\n                $compiletime\n            else\n                #[inline] // avoid the overhead of an extra fn call\n                $(#[$runtime_attr])*\n                $runtime\n        )\n    },\n    // With a leading #[noinline], we don't add inline attributes\n    (\n        @capture$([$($binders:tt)*])? { $($arg:ident : $ty:ty = $val:expr),* $(,)? } $( -> $ret:ty )? :\n        #[noinline]\n        if const\n            $(#[$compiletime_attr:meta])* $compiletime:block\n        else\n            $(#[$runtime_attr:meta])* $runtime:block\n    ) => {{\n        $(#[$runtime_attr])*\n        fn runtime$(<$($binders)*>)?($($arg: $ty),*) $( -> $ret )? {\n            $runtime\n        }\n\n        $(#[$compiletime_attr])*\n        const fn compiletime$(<$($binders)*>)?($($arg: $ty),*) $( -> $ret )? {\n            // Don't warn if one of the arguments is unused.\n            $(let _ = $arg;)*\n\n            $compiletime\n        }\n\n        const_eval_select(($($val,)*), compiletime, runtime)\n    }},\n    // We support leaving away the `val` expressions for *all* arguments\n    // (but not for *some* arguments, that's too tricky).\n    (\n        @capture$([$($binders:tt)*])? { $($arg:ident : $ty:ty),* $(,)? } $( -> $ret:ty )? :\n        if const\n            $(#[$compiletime_attr:meta])* $compiletime:block\n        else\n            $(#[$runtime_attr:meta])* $runtime:block\n    ) => {\n        $crate::intrinsics::const_eval_select!(\n            @capture$([$($binders)*])? { $($arg : $ty = $arg),* } $(-> $ret)? :\n            if const\n                $(#[$compiletime_attr])* $compiletime\n            else\n                $(#[$runtime_attr])* $runtime\n        )\n    },\n}"
+    }
+  ],
+  "callees": [
+    "47323665595455568617290020941376774286",
+    "111425599901702694743874629435682172347",
+    "714811817540972740211524868124730226803",
+    "1329845230409163288212548289525672875535",
+    "80772345035046942210372022594843481570",
+    "16824420916691935049705640393259467449",
+    "1712898201300478840215074793236064467963",
+    "841346702487865802717731804342903065853",
+    "1182371843420022111010336901757313084440",
+    "26064680123257945312537992217601395168",
+    "841904668883726495316837415609641023349",
+    "1258931108755458209614962827106116332072",
+    "105125143701458073564296455695110349394",
+    "25930241974724637292994171257021210872",
+    "617554482545947003412104686554524783687",
+    "152018209062913109616942758022114057971",
+    "102887121523905452179262747329207775596",
+    "7839859953712079114640771271960005865",
+    "399232661239117480517401994520839366833"
+  ]
+}

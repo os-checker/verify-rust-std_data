@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vorn_u64",
+  "hash": "63733377524322610468781511144625827852",
+  "hash_direct": "167382333698155388826155683187553381248",
+  "src": "pub fn vorn_u64(a: uint64x1_t, b: uint64x1_t) -> uint64x1_t {\n    let c = int64x1_t::splat(-1);\n    unsafe { simd_or(simd_xor(b, transmute(c)), a) }\n}",
+  "callees": [
+    "771755012971767351510579946884035813260"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "iter::traits::iterator::Iterator::try_for_each::call::<u8, ops::control_flow::ControlFlow<ops::control_flow::ControlFlow<cmp::Ordering, cmp::Ordering>>, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/iter/traits/iterator.rs:4071:9: 4071:17}>",
+  "hash": "28489693406659734525206091094698557245",
+  "hash_direct": "126566399109807679414960688125120215367",
+  "src": "fn call<T, R>(mut f: impl FnMut(T) -> R) -> impl FnMut((), T) -> R {\n            move |(), x| f(x)\n        }"
+}

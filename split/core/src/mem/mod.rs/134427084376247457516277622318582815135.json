@@ -1,0 +1,16 @@
+{
+  "file": "core/src/mem/mod.rs",
+  "name": "mem::swap::{closure#0}::REENTRY",
+  "hash": "134427084376247457516277622318582815135",
+  "hash_direct": "177189232042437169191587523255316153899",
+  "attrs": [
+    "#[kanitool::recursion_tracker]\n"
+  ],
+  "src": "crate::kani::modifies(x)",
+  "macro_backtrace": [
+    {
+      "callsite": "crate::kani::modifies(x)",
+      "defsite": "pub fn modifies(attr: TokenStream, item: TokenStream) -> TokenStream"
+    }
+  ]
+}

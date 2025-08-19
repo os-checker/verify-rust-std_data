@@ -1,0 +1,13 @@
+{
+  "file": "core/src/net/ip_addr.rs",
+  "name": "<net::ip_addr::Ipv4Addr as cmp::Eq>::assert_receiver_is_total_eq",
+  "hash": "1313368208223487828413411179490700964826",
+  "hash_direct": "1552889301013212879610993884212961512580",
+  "src": "Eq",
+  "macro_backtrace": [
+    {
+      "callsite": "Eq",
+      "defsite": "pub macro Eq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

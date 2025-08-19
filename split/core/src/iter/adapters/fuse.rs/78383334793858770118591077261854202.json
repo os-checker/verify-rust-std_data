@@ -1,0 +1,13 @@
+{
+  "file": "core/src/iter/adapters/fuse.rs",
+  "name": "<iter::adapters::fuse::Fuse<option::IntoIter<char::EscapeDebug>> as iter::traits::iterator::Iterator>::size_hint",
+  "hash": "78383334793858770118591077261854202",
+  "hash_direct": "11722571487962198512509996446779239269",
+  "src": "fn size_hint(&self) -> (usize, Option<usize>) {\n        match self.iter {\n            Some(ref iter) => iter.size_hint(),\n            None => (0, Some(0)),\n        }\n    }",
+  "callees": [
+    "2947276155848069201435012473948255765",
+    "109309382241892590941522813339041451375",
+    "31011351988809774928421693103015440650",
+    "68866666773163028433826909591480067324"
+  ]
+}

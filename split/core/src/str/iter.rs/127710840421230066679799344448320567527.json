@@ -1,0 +1,11 @@
+{
+  "file": "core/src/str/iter.rs",
+  "name": "<str::iter::SplitInclusive<'_, char> as clone::Clone>::clone",
+  "hash": "127710840421230066679799344448320567527",
+  "hash_direct": "78903225060653460287029158637983023106",
+  "src": "fn clone(&self) -> Self {\n        SplitInclusive(self.0.clone())\n    }",
+  "callees": [
+    "29837640395221326708343503260275090725",
+    "101553712435657713409365536759361252860"
+  ]
+}

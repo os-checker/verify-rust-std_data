@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vuzpq_u16",
+  "hash": "1765986605510066691213828793378777571409",
+  "hash_direct": "8818568533042026194728657380378971958",
+  "src": "pub fn vuzpq_u16(a: uint16x8_t, b: uint16x8_t) -> uint16x8x2_t {\n    unsafe {\n        let a0: uint16x8_t = simd_shuffle!(a, b, [0, 2, 4, 6, 8, 10, 12, 14]);\n        let b0: uint16x8_t = simd_shuffle!(a, b, [1, 3, 5, 7, 9, 11, 13, 15]);\n        transmute((a0, b0))\n    }\n}"
+}

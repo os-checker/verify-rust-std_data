@@ -1,0 +1,11 @@
+{
+  "file": "core/src/ptr/unique.rs",
+  "name": "ptr::unique::Unique::<i32>::as_mut",
+  "hash": "180330739543512535442332564904640499796",
+  "hash_direct": "932932560887703187211882383917474342873",
+  "src": "pub const unsafe fn as_mut(&mut self) -> &mut T {\n        // SAFETY: the caller must guarantee that `self` meets all the\n        // requirements for a mutable reference.\n        unsafe { self.pointer.as_mut() }\n    }",
+  "callees": [
+    "102001143801279418108701003698431914398",
+    "66641183364798998117636454762623096696"
+  ]
+}

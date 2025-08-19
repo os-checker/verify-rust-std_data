@@ -1,0 +1,7 @@
+{
+  "file": "core/src/option.rs",
+  "name": "option::Option::<iter::adapters::map::Map<str::iter::Chars<'_>, str::CharEscapeUnicode>>::as_mut",
+  "hash": "568973621715704458914401591535392312336",
+  "hash_direct": "122981245964239982574443138080288800794",
+  "src": "pub const fn as_mut(&mut self) -> Option<&mut T> {\n        match *self {\n            Some(ref mut x) => Some(x),\n            None => None,\n        }\n    }"
+}

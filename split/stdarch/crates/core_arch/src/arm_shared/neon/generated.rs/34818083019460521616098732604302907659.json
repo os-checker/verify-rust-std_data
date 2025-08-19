@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vmaxq_s32",
+  "hash": "34818083019460521616098732604302907659",
+  "hash_direct": "49194649762269407915299956774983345502",
+  "src": "pub fn vmaxq_s32(a: int32x4_t, b: int32x4_t) -> int32x4_t {\n    unsafe {\n        let mask: int32x4_t = simd_ge(a, b);\n        simd_select(mask, a, b)\n    }\n}"
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/option.rs",
+  "name": "option::Option::<u32>::len",
+  "hash": "61324068168977176312433676740423576843",
+  "hash_direct": "906036658453886211911065795382577555124",
+  "src": "const fn len(&self) -> usize {\n        // Using the intrinsic avoids emitting a branch to get the 0 or 1.\n        let discriminant: isize = crate::intrinsics::discriminant_value(self);\n        discriminant as usize\n    }"
+}

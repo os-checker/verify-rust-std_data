@@ -1,0 +1,7 @@
+{
+  "file": "core/src/error.rs",
+  "name": "<fmt::Error as error::Error>::description",
+  "hash": "922543298193393322811621057549836086666",
+  "hash_direct": "17789556403497364839220439028987780983",
+  "src": "fn description(&self) -> &str {\n        \"an error occurred when formatting an argument\"\n    }"
+}

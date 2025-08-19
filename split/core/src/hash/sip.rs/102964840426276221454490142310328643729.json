@@ -1,0 +1,18 @@
+{
+  "file": "core/src/hash/sip.rs",
+  "name": "<hash::sip::SipHasher24 as default::Default>::default",
+  "hash": "102964840426276221454490142310328643729",
+  "hash_direct": "301663811992286260311838561641125748022",
+  "src": "Default",
+  "macro_backtrace": [
+    {
+      "callsite": "Default",
+      "defsite": "pub macro Default($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ],
+  "callees": [
+    "33543175900306178853588208769625922169",
+    "33940540403593756878459337451382258769",
+    "527888368825396283513005984713849596857"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vaesmcq_u8",
+  "hash": "1223747651268047366011601679385988115652",
+  "hash_direct": "110369164649778333736650183695334007883",
+  "src": "pub fn vaesmcq_u8(data: uint8x16_t) -> uint8x16_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.crypto.aesmc\"\n        )]\n        #[cfg_attr(target_arch = \"arm\", link_name = \"llvm.arm.neon.aesmc\")]\n        fn _vaesmcq_u8(data: uint8x16_t) -> uint8x16_t;\n    }\n    unsafe { _vaesmcq_u8(data) }\n}"
+}

@@ -1,0 +1,32 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/mem.rs",
+  "name": "kani::mem::is_inbounds::<intrinsics::verify::u64_mod::generated_struct>",
+  "hash": "945935307275204569311454417006648798107",
+  "hash_direct": "2790958611276219314300867431982162138",
+  "attrs": [
+    "#[kanitool::unstable(feature = \"mem-predicates\", issue = 3946, reason =\n\"experimental memory predicate API\")]\n"
+  ],
+  "src": "pub fn is_inbounds<T: MetaSized>(ptr: *const T) -> bool {\n            // If size overflows, then pointer cannot be inbounds.\n            let Some(sz) = checked_size_of_raw(ptr) else { return false };\n            if sz == 0 {\n                true // ZST pointers are always valid including nullptr.\n            } else if ptr.is_null() {\n                false\n            } else {\n                // Note that this branch can't be tested in concrete execution as `is_read_ok` needs to be\n                // stubbed.\n                // We first assert that the data_ptr points to a valid allocation.\n                let data_ptr = ptr as *const ();\n                if !unsafe { is_allocated(data_ptr, 0) } {\n                    crate::kani::unsupported(\n                        \"Kani does not support reasoning about pointer to unallocated memory\",\n                    );\n                }\n                unsafe { is_allocated(data_ptr, sz) }\n            }\n        }",
+  "macro_backtrace": [
+    {
+      "callsite": "kani_core::kani_mem!(core)",
+      "defsite": "macro_rules! kani_mem"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ],
+  "callees": [
+    "55198556141731503835375909318612911906",
+    "22359847832734915742325702083995179865",
+    "24611647080965273959983533232723557439",
+    "48354165617588990549448172553336931019",
+    "1204320458848267036895741750450188256",
+    "131448732132345852092743020617208534612",
+    "109763229663154342343123224747831634619",
+    "91321439919477097411407515086744619958",
+    "703663108277374327010040438608357482834",
+    "1100495660517602822510660091708953776518"
+  ]
+}

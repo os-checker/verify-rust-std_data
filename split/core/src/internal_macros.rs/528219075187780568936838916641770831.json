@@ -1,0 +1,28 @@
+{
+  "file": "core/src/internal_macros.rs",
+  "name": "<&u64 as ops::bit::Shr<&i16>>::shr",
+  "hash": "528219075187780568936838916641770831",
+  "hash_direct": "1536058051277424273411455185671693427615",
+  "src": "fn $method(self, other: &$u) -> <$t as $imp<$u>>::Output {\n                $imp::$method(*self, *other)\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "forward_ref_binop!(impl $imp, $method for $t, $u,\n                #[stable(feature = \"rust1\", since = \"1.0.0\")])",
+      "defsite": "macro_rules! forward_ref_binop {\n    (impl $imp:ident, $method:ident for $t:ty, $u:ty) => {\n        forward_ref_binop!(impl $imp, $method for $t, $u,\n                #[stable(feature = \"rust1\", since = \"1.0.0\")]);\n    };\n    (impl $imp:ident, $method:ident for $t:ty, $u:ty, #[$attr:meta]) => {\n        #[$attr]\n        impl<'a> $imp<$u> for &'a $t {\n            type Output = <$t as $imp<$u>>::Output;\n\n            #[inline]\n            #[track_caller]\n            fn $method(self, other: $u) -> <$t as $imp<$u>>::Output {\n                $imp::$method(*self, other)\n            }\n        }\n\n        #[$attr]\n        impl $imp<&$u> for $t {\n            type Output = <$t as $imp<$u>>::Output;\n\n            #[inline]\n            #[track_caller]\n            fn $method(self, other: &$u) -> <$t as $imp<$u>>::Output {\n                $imp::$method(self, *other)\n            }\n        }\n\n        #[$attr]\n        impl $imp<&$u> for &$t {\n            type Output = <$t as $imp<$u>>::Output;\n\n            #[inline]\n            #[track_caller]\n            fn $method(self, other: &$u) -> <$t as $imp<$u>>::Output {\n                $imp::$method(*self, *other)\n            }\n        }\n    }\n}"
+    },
+    {
+      "callsite": "forward_ref_binop! { impl Shr, shr for $t, $f }",
+      "defsite": "macro_rules! forward_ref_binop {\n    (impl $imp:ident, $method:ident for $t:ty, $u:ty) => {\n        forward_ref_binop!(impl $imp, $method for $t, $u,\n                #[stable(feature = \"rust1\", since = \"1.0.0\")]);\n    };\n    (impl $imp:ident, $method:ident for $t:ty, $u:ty, #[$attr:meta]) => {\n        #[$attr]\n        impl<'a> $imp<$u> for &'a $t {\n            type Output = <$t as $imp<$u>>::Output;\n\n            #[inline]\n            #[track_caller]\n            fn $method(self, other: $u) -> <$t as $imp<$u>>::Output {\n                $imp::$method(*self, other)\n            }\n        }\n\n        #[$attr]\n        impl $imp<&$u> for $t {\n            type Output = <$t as $imp<$u>>::Output;\n\n            #[inline]\n            #[track_caller]\n            fn $method(self, other: &$u) -> <$t as $imp<$u>>::Output {\n                $imp::$method(self, *other)\n            }\n        }\n\n        #[$attr]\n        impl $imp<&$u> for &$t {\n            type Output = <$t as $imp<$u>>::Output;\n\n            #[inline]\n            #[track_caller]\n            fn $method(self, other: &$u) -> <$t as $imp<$u>>::Output {\n                $imp::$method(*self, *other)\n            }\n        }\n    }\n}"
+    },
+    {
+      "callsite": "shr_impl! { $t, i16 }",
+      "defsite": "macro_rules! shr_impl {\n    ($t:ty, $f:ty) => {\n        #[stable(feature = \"rust1\", since = \"1.0.0\")]\n        impl Shr<$f> for $t {\n            type Output = $t;\n\n            #[inline]\n            #[rustc_inherit_overflow_checks]\n            fn shr(self, other: $f) -> $t {\n                self >> other\n            }\n        }\n\n        forward_ref_binop! { impl Shr, shr for $t, $f }\n    };\n}"
+    },
+    {
+      "callsite": "shr_impl_all! { u8 u16 u32 u64 u128 usize i8 i16 i32 i64 i128 isize }",
+      "defsite": "macro_rules! shr_impl_all {\n    ($($t:ty)*) => ($(\n        shr_impl! { $t, u8 }\n        shr_impl! { $t, u16 }\n        shr_impl! { $t, u32 }\n        shr_impl! { $t, u64 }\n        shr_impl! { $t, u128 }\n        shr_impl! { $t, usize }\n\n        shr_impl! { $t, i8 }\n        shr_impl! { $t, i16 }\n        shr_impl! { $t, i32 }\n        shr_impl! { $t, i64 }\n        shr_impl! { $t, i128 }\n        shr_impl! { $t, isize }\n    )*)\n}"
+    }
+  ],
+  "callees": [
+    "623176598417623045613614167717151534523"
+  ]
+}

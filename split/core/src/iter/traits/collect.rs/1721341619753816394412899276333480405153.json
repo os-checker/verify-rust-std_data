@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/traits/collect.rs",
+  "name": "<iter::adapters::enumerate::Enumerate<slice::iter::IterMut<'_, u16>> as iter::traits::collect::IntoIterator>::into_iter",
+  "hash": "1721341619753816394412899276333480405153",
+  "hash_direct": "1418564173908646021112916670078024708775",
+  "src": "fn into_iter(self) -> I {\n        self\n    }"
+}

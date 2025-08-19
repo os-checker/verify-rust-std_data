@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vcgezq_s32",
+  "hash": "164570725891083636129571329232883642624",
+  "hash_direct": "72659144528283583143527635527341151470",
+  "src": "pub fn vcgezq_s32(a: int32x4_t) -> uint32x4_t {\n    let b: i32x4 = i32x4::new(0, 0, 0, 0);\n    unsafe { simd_ge(a, transmute(b)) }\n}",
+  "callees": [
+    "103951139083939401238315455580863565777"
+  ]
+}

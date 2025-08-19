@@ -1,0 +1,23 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "ptr::non_null::NonNull::<i32>::sub",
+  "hash": "161340811689850243229172025532989894072",
+  "hash_direct": "88646246858880892009747254643411246673",
+  "src": "pub const unsafe fn sub(self, count: usize) -> Self\n    where\n        T: Sized,\n    {\n        if T::IS_ZST {\n            // Pointer arithmetic does nothing when the pointee is a ZST.\n            self\n        } else {\n            // SAFETY: the caller must uphold the safety contract for `offset`.\n            // Because the pointee is *not* a ZST, that means that `count` is\n            // at most `isize::MAX`, and thus the negation cannot overflow.\n            unsafe { self.offset((count as isize).unchecked_neg()) }\n        }\n    }",
+  "callees": [
+    "47323665595455568617290020941376774286",
+    "111425599901702694743874629435682172347",
+    "714811817540972740211524868124730226803",
+    "1329845230409163288212548289525672875535",
+    "16824420916691935049705640393259467449",
+    "6221741227072437069508312353437850718",
+    "841528230883583910260472553997390736",
+    "841904668883726495316837415609641023349",
+    "1258931108755458209614962827106116332072",
+    "105125143701458073564296455695110349394",
+    "66641183364798998117636454762623096696",
+    "619827157783236598710758895693970178463",
+    "160761334367309494176444203284255754796",
+    "399232661239117480517401994520839366833"
+  ]
+}

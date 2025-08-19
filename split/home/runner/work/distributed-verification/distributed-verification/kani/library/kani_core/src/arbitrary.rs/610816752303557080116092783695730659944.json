@@ -1,0 +1,38 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/arbitrary.rs",
+  "name": "<num::nonzero::NonZero<u64> as kani::Arbitrary>::any",
+  "hash": "610816752303557080116092783695730659944",
+  "hash_direct": "3885037031415327184154380675726532463",
+  "src": "fn any() -> Self {\n                        let val = <$base>::any();\n                        assume(val != 0);\n                        unsafe { <$type>::new_unchecked(val) }\n                    }",
+  "macro_backtrace": [
+    {
+      "callsite": "nonzero_arbitrary!(NonZeroU64, u64)",
+      "defsite": "macro_rules! nonzero_arbitrary {\n            ( $type: ty, $base: ty ) => {\n                use core_path::num::*;\n                impl Arbitrary for $type {\n                    #[inline(always)]\n                    fn any() -> Self {\n                        let val = <$base>::any();\n                        assume(val != 0);\n                        unsafe { <$type>::new_unchecked(val) }\n                    }\n                }\n            };\n        }"
+    },
+    {
+      "callsite": "kani_core::generate_arbitrary!()",
+      "defsite": "macro_rules! generate_arbitrary"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ],
+  "callees": [
+    "55732587752735335945356669824614635762",
+    "778713662165510584811932027160146289674",
+    "155903546558043130181109834204848741707",
+    "162562988142812920362309614379838072419",
+    "110627676895616442107840116311482708557",
+    "47323665595455568617290020941376774286",
+    "1329845230409163288212548289525672875535",
+    "16824420916691935049705640393259467449",
+    "86149906497652422709198706302615219549",
+    "181188309777117069329883468812680038631",
+    "841904668883726495316837415609641023349",
+    "1258931108755458209614962827106116332072",
+    "105125143701458073564296455695110349394",
+    "1218790289670026660418434748374709001141",
+    "399232661239117480517401994520839366833"
+  ]
+}

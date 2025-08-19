@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vget_high_p8",
+  "hash": "877761298369667231211437164104495857882",
+  "hash_direct": "96327382383159532703003915520111656235",
+  "src": "pub fn vget_high_p8(a: poly8x16_t) -> poly8x8_t {\n    unsafe { simd_shuffle!(a, a, [8, 9, 10, 11, 12, 13, 14, 15]) }\n}"
+}

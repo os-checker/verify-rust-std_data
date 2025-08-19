@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vstrq_p128",
+  "hash": "861538971153639492311077149508251678969",
+  "hash_direct": "1277354904753862888112895702260142337197",
+  "src": "pub unsafe fn vstrq_p128(a: *mut p128, b: p128) {\n    *a = b\n}"
+}

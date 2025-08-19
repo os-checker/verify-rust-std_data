@@ -1,0 +1,7 @@
+{
+  "file": "core/src/net/socket_addr.rs",
+  "name": "net::socket_addr::SocketAddrV6::new",
+  "hash": "83408518758570948874562596302013211952",
+  "hash_direct": "1423218826598080187111302651548415877070",
+  "src": "pub const fn new(ip: Ipv6Addr, port: u16, flowinfo: u32, scope_id: u32) -> SocketAddrV6 {\n        SocketAddrV6 { ip, port, flowinfo, scope_id }\n    }"
+}

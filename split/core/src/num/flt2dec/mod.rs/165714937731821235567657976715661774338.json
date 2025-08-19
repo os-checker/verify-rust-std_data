@@ -1,0 +1,13 @@
+{
+  "file": "core/src/num/flt2dec/mod.rs",
+  "name": "<num::flt2dec::Sign as clone::Clone>::clone",
+  "hash": "165714937731821235567657976715661774338",
+  "hash_direct": "58765563992323017717332013971523842281",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

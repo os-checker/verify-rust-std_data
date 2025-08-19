@@ -1,0 +1,13 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vmull_high_n_s32",
+  "hash": "1395807926583368555613911720488771647525",
+  "hash_direct": "121499992536781551805960148819666724225",
+  "src": "pub fn vmull_high_n_s32(a: int32x4_t, b: i32) -> int64x2_t {\n    vmull_high_s32(a, vdupq_n_s32(b))\n}",
+  "callees": [
+    "1420055858397686069112605519584759067609",
+    "971095597215540094316503555512994515818",
+    "31647986099020327663246706056242304184",
+    "1045622767002741780710058350398333727897"
+  ]
+}

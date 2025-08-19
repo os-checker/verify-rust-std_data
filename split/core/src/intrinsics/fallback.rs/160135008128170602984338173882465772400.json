@@ -1,0 +1,13 @@
+{
+  "file": "core/src/intrinsics/fallback.rs",
+  "name": "<isize as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+  "hash": "160135008128170602984338173882465772400",
+  "hash_direct": "123064705693688813795873421541194570970",
+  "src": "unsafe fn disjoint_bitor(self, other: Self) -> Self {\n                // Note that the assume here is required for UB detection in Miri!\n\n                // SAFETY: our precondition is that there are no bits in common,\n                // so this is just telling that to the backend.\n                unsafe { super::assume((self & other) == zero!($t)) };\n                self | other\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "impl_disjoint_bitor! {\n    bool,\n    u8, u16, u32, u64, u128, usize,\n    i8, i16, i32, i64, i128, isize,\n}",
+      "defsite": "macro_rules! impl_disjoint_bitor {\n    ($($t:ident,)+) => {$(\n        #[rustc_const_unstable(feature = \"core_intrinsics_fallbacks\", issue = \"none\")]\n        impl const DisjointBitOr for $t {\n            #[cfg_attr(miri, track_caller)]\n            #[inline]\n            #[requires((self & other) == zero!($t))]\n            unsafe fn disjoint_bitor(self, other: Self) -> Self {\n                // Note that the assume here is required for UB detection in Miri!\n\n                // SAFETY: our precondition is that there are no bits in common,\n                // so this is just telling that to the backend.\n                unsafe { super::assume((self & other) == zero!($t)) };\n                self | other\n            }\n        }\n    )+};\n}"
+    }
+  ]
+}

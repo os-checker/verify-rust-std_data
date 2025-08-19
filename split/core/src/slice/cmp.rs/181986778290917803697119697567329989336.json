@@ -1,0 +1,10 @@
+{
+  "file": "core/src/slice/cmp.rs",
+  "name": "<u16 as slice::cmp::SliceOrd>::compare::{closure#1}",
+  "hash": "181986778290917803697119697567329989336",
+  "hash_direct": "1057743699285254593612154505880157002199",
+  "src": "|a: &_, b: &_| ControlFlow::Break(usize::cmp(a, b))",
+  "callees": [
+    "181664272175242433525604547462516925447"
+  ]
+}

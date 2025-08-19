@@ -1,0 +1,13 @@
+{
+  "file": "core/src/slice/sort/stable/drift.rs",
+  "name": "<slice::sort::stable::drift::DriftsortRun as clone::Clone>::clone",
+  "hash": "50707934406672101386754877161806847820",
+  "hash_direct": "167526048978126461251848684211755611774",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

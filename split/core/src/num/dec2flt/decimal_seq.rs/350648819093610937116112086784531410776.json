@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/dec2flt/decimal_seq.rs",
+  "name": "<num::dec2flt::decimal_seq::DecimalSeq as default::Default>::default",
+  "hash": "350648819093610937116112086784531410776",
+  "hash_direct": "745962208415367423916732020834045925715",
+  "src": "fn default() -> Self {\n        Self { num_digits: 0, decimal_point: 0, truncated: false, digits: [0; Self::MAX_DIGITS] }\n    }"
+}

@@ -1,0 +1,25 @@
+{
+  "file": "core/src/alloc/layout.rs",
+  "name": "alloc::layout::Layout::from_size_align_unchecked",
+  "hash": "1578994998615824856317820460975113366188",
+  "hash_direct": "14296664214873663563259762418240540381",
+  "src": "pub const unsafe fn from_size_align_unchecked(size: usize, align: usize) -> Self {\n        assert_unsafe_precondition!(\n            check_library_ub,\n            \"Layout::from_size_align_unchecked requires that align is a power of 2 \\\n            and the rounded-up allocation size does not exceed isize::MAX\",\n            (\n                size: usize = size,\n                align: usize = align,\n            ) => Layout::is_size_align_valid(size, align)\n        );\n        // SAFETY: the caller is required to uphold the preconditions.\n        unsafe { Layout { size, align: mem::transmute(align) } }\n    }",
+  "callees": [
+    "1181075802237898706213442782841232723352",
+    "31265288173249298141030810952705142187",
+    "47323665595455568617290020941376774286",
+    "1329845230409163288212548289525672875535",
+    "16824420916691935049705640393259467449",
+    "1617054938297627622011998382328717871744",
+    "1196638383615410162910723134175805433641",
+    "841904668883726495316837415609641023349",
+    "1258931108755458209614962827106116332072",
+    "105125143701458073564296455695110349394",
+    "96976906222507875941165858861254841419",
+    "130784102331378573718503834980433583949",
+    "90298716668925847872657680437039980974",
+    "797719437272703523812892712801878713523",
+    "501832527150057417714281136227809585904",
+    "399232661239117480517401994520839366833"
+  ]
+}

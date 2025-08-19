@@ -1,0 +1,19 @@
+{
+  "file": "core/src/ffi/c_str.rs",
+  "name": "<ffi::c_str::CStr as cmp::PartialEq>::eq",
+  "hash": "1463967965609494380016369515267746096324",
+  "hash_direct": "58518406783948668410146592250146717213",
+  "src": "PartialEq",
+  "macro_backtrace": [
+    {
+      "callsite": "PartialEq",
+      "defsite": "pub macro PartialEq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ],
+  "callees": [
+    "7832507060962758874697651425918563686",
+    "126692834448097932228994692025940173998",
+    "25558485697757400065874176408609551720",
+    "156130332443363785142369276941490088427"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "file": "core/src/num/mod.rs",
+  "name": "<num::FpCategory as cmp::PartialEq>::eq",
+  "hash": "120564003416314136307327655969447510826",
+  "hash_direct": "29178974690491271617020841890128636093",
+  "src": "PartialEq",
+  "macro_backtrace": [
+    {
+      "callsite": "PartialEq",
+      "defsite": "pub macro PartialEq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

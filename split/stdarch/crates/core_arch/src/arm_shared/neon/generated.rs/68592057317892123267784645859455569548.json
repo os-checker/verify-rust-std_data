@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vmvn_u16",
+  "hash": "68592057317892123267784645859455569548",
+  "hash_direct": "1177048761028388125318123888155481464118",
+  "src": "pub fn vmvn_u16(a: uint16x4_t) -> uint16x4_t {\n    let b = uint16x4_t::splat(65_535);\n    unsafe { simd_xor(a, b) }\n}",
+  "callees": [
+    "507733922651895815211135859891795583900"
+  ]
+}

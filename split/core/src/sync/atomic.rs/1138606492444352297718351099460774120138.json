@@ -1,0 +1,7 @@
+{
+  "file": "core/src/sync/atomic.rs",
+  "name": "sync::atomic::atomic_xor::<i64>",
+  "hash": "1138606492444352297718351099460774120138",
+  "hash_direct": "824649483648645637217943475914003065310",
+  "src": "unsafe fn atomic_xor<T: Copy>(dst: *mut T, val: T, order: Ordering) -> T {\n    // SAFETY: the caller must uphold the safety contract for `atomic_xor`\n    unsafe {\n        match order {\n            SeqCst => intrinsics::atomic_xor::<T, { AO::SeqCst }>(dst, val),\n            Acquire => intrinsics::atomic_xor::<T, { AO::Acquire }>(dst, val),\n            Release => intrinsics::atomic_xor::<T, { AO::Release }>(dst, val),\n            AcqRel => intrinsics::atomic_xor::<T, { AO::AcqRel }>(dst, val),\n            Relaxed => intrinsics::atomic_xor::<T, { AO::Relaxed }>(dst, val),\n        }\n    }\n}"
+}

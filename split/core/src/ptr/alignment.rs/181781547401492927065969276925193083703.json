@@ -1,0 +1,16 @@
+{
+  "file": "core/src/ptr/alignment.rs",
+  "name": "<ptr::alignment::Alignment as cmp::PartialEq>::eq",
+  "hash": "181781547401492927065969276925193083703",
+  "hash_direct": "29318226908893138478017381308103223711",
+  "src": "PartialEq",
+  "macro_backtrace": [
+    {
+      "callsite": "PartialEq",
+      "defsite": "pub macro PartialEq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ],
+  "callees": [
+    "24934898558293488234568272945133110966"
+  ]
+}

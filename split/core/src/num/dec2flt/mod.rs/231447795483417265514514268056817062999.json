@@ -1,0 +1,13 @@
+{
+  "file": "core/src/num/dec2flt/mod.rs",
+  "name": "<num::dec2flt::FloatErrorKind as clone::Clone>::clone",
+  "hash": "231447795483417265514514268056817062999",
+  "hash_direct": "128421666317912092904878708855891325736",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

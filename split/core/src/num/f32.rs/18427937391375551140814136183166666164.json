@@ -1,0 +1,10 @@
+{
+  "file": "core/src/num/f32.rs",
+  "name": "f32::<impl f32>::classify",
+  "hash": "18427937391375551140814136183166666164",
+  "hash_direct": "736285083879821078517360577269774684842",
+  "src": "pub const fn classify(self) -> FpCategory {\n        // We used to have complicated logic here that avoids the simple bit-based tests to work\n        // around buggy codegen for x87 targets (see\n        // https://github.com/rust-lang/rust/issues/114479). However, some LLVM versions later, none\n        // of our tests is able to find any difference between the complicated and the naive\n        // version, so now we are back to the naive version.\n        let b = self.to_bits();\n        match (b & Self::MAN_MASK, b & Self::EXP_MASK) {\n            (0, Self::EXP_MASK) => FpCategory::Infinite,\n            (_, Self::EXP_MASK) => FpCategory::Nan,\n            (0, 0) => FpCategory::Zero,\n            (_, 0) => FpCategory::Subnormal,\n            _ => FpCategory::Normal,\n        }\n    }",
+  "callees": [
+    "162361112433299032238584891523845488474"
+  ]
+}

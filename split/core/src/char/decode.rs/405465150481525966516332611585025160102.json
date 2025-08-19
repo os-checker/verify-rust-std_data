@@ -1,0 +1,13 @@
+{
+  "file": "core/src/char/decode.rs",
+  "name": "<char::decode::DecodeUtf16Error as clone::Clone>::clone",
+  "hash": "405465150481525966516332611585025160102",
+  "hash_direct": "180320314896331981993188785700843765171",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

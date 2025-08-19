@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f32.rs",
+  "name": "f32::<impl f32>::algebraic_mul",
+  "hash": "1561241477811885982512978575833371945909",
+  "hash_direct": "1349415857161340313413624263337116056078",
+  "src": "pub const fn algebraic_mul(self, rhs: f32) -> f32 {\n        intrinsics::fmul_algebraic(self, rhs)\n    }"
+}

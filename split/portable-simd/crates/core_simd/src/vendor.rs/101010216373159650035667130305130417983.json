@@ -1,0 +1,17 @@
+{
+  "file": "core/src/../../portable-simd/crates/core_simd/src/vendor.rs",
+  "name": "core_simd::vendor::arm::neon::<impl convert::From<core_simd::vector::Simd<u8, 16>> for core_arch::arm_shared::neon::poly8x16_t>::from",
+  "hash": "101010216373159650035667130305130417983",
+  "hash_direct": "167754354822004225336067508850986930293",
+  "src": "fn from(value: $from) -> $to {\n                // Safety: transmuting between vectors is safe, but the caller of this macro\n                // checks the invariants\n                unsafe { core::mem::transmute(value) }\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "from_transmute!{ @impl $a => $b }",
+      "defsite": "macro_rules! from_transmute {\n    { unsafe $a:ty => $b:ty } => {\n        from_transmute!{ @impl $a => $b }\n        from_transmute!{ @impl $b => $a }\n    };\n    { @impl $from:ty => $to:ty } => {\n        impl core::convert::From<$from> for $to {\n            #[inline]\n            fn from(value: $from) -> $to {\n                // Safety: transmuting between vectors is safe, but the caller of this macro\n                // checks the invariants\n                unsafe { core::mem::transmute(value) }\n            }\n        }\n    };\n}"
+    },
+    {
+      "callsite": "from_transmute! { unsafe u8x16 => poly8x16_t }",
+      "defsite": "macro_rules! from_transmute {\n    { unsafe $a:ty => $b:ty } => {\n        from_transmute!{ @impl $a => $b }\n        from_transmute!{ @impl $b => $a }\n    };\n    { @impl $from:ty => $to:ty } => {\n        impl core::convert::From<$from> for $to {\n            #[inline]\n            fn from(value: $from) -> $to {\n                // Safety: transmuting between vectors is safe, but the caller of this macro\n                // checks the invariants\n                unsafe { core::mem::transmute(value) }\n            }\n        }\n    };\n}"
+    }
+  ]
+}

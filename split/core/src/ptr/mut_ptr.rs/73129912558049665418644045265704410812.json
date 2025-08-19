@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/mut_ptr.rs",
+  "name": "ptr::mut_ptr::<impl *mut bool>::cast::<sync::atomic::AtomicBool>",
+  "hash": "73129912558049665418644045265704410812",
+  "hash_direct": "40281961629298787269258662902544577967",
+  "src": "pub const fn cast<U>(self) -> *mut U {\n        self as _\n    }"
+}

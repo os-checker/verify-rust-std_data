@@ -1,0 +1,13 @@
+{
+  "file": "core/src/fmt/num.rs",
+  "name": "<fmt::num::LowerHex as fmt::num::GenericRadix>::PREFIX",
+  "hash": "912036173330789813356758299279359483",
+  "hash_direct": "4811314915209225379583158194834628156",
+  "src": "const PREFIX: &'static str = $prefix;",
+  "macro_backtrace": [
+    {
+      "callsite": "radix! { LowerHex, 16, \"0x\", x @  0 ..=  9 => b'0' + x, x @ 10 ..= 15 => b'a' + (x - 10) }",
+      "defsite": "macro_rules! radix {\n    ($T:ident, $base:expr, $prefix:expr, $($x:pat => $conv:expr),+) => {\n        unsafe impl GenericRadix for $T {\n            const BASE: u8 = $base;\n            const PREFIX: &'static str = $prefix;\n            fn digit(x: u8) -> u8 {\n                match x {\n                    $($x => $conv,)+\n                    x => panic!(\"number not in the range 0..={}: {}\", Self::BASE - 1, x),\n                }\n            }\n        }\n    }\n}"
+    }
+  ]
+}

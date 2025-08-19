@@ -1,0 +1,13 @@
+{
+  "file": "core/src/option.rs",
+  "name": "option::Option::<num::nonzero::NonZero<usize>>::map_or::<result::Result<(), num::nonzero::NonZero<usize>>, fn(num::nonzero::NonZero<usize>) -> result::Result<(), num::nonzero::NonZero<usize>> {result::Result::<(), num::nonzero::NonZero<usize>>::Err}>",
+  "hash": "164068019671410046984473820423655882669",
+  "hash_direct": "97202121694125724753145124180834743274",
+  "src": "pub const fn map_or<U, F>(self, default: U, f: F) -> U\n    where\n        F: ~const FnOnce(T) -> U + ~const Destruct,\n        U: ~const Destruct,\n    {\n        match self {\n            Some(t) => f(t),\n            None => default,\n        }\n    }",
+  "callees": [
+    "61243377896084322717777372197237784668",
+    "1345903579787689058715689038732564730769",
+    "379994518897277131216528315043767400790",
+    "151921782545986132711095630321482724997"
+  ]
+}

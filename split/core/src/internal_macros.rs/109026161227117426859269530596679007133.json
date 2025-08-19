@@ -1,0 +1,24 @@
+{
+  "file": "core/src/internal_macros.rs",
+  "name": "<i64 as ops::bit::BitXorAssign<&i64>>::bitxor_assign",
+  "hash": "109026161227117426859269530596679007133",
+  "hash_direct": "165206383984666932208570917393802558180",
+  "src": "fn $method(&mut self, other: &$u) {\n                $imp::$method(self, *other);\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "forward_ref_op_assign!(impl $imp, $method for $t, $u,\n                #[stable(feature = \"op_assign_builtins_by_ref\", since = \"1.22.0\")])",
+      "defsite": "macro_rules! forward_ref_op_assign {\n    (impl $imp:ident, $method:ident for $t:ty, $u:ty) => {\n        forward_ref_op_assign!(impl $imp, $method for $t, $u,\n                #[stable(feature = \"op_assign_builtins_by_ref\", since = \"1.22.0\")]);\n    };\n    (impl $imp:ident, $method:ident for $t:ty, $u:ty, #[$attr:meta]) => {\n        #[$attr]\n        impl $imp<&$u> for $t {\n            #[inline]\n            #[track_caller]\n            fn $method(&mut self, other: &$u) {\n                $imp::$method(self, *other);\n            }\n        }\n    }\n}"
+    },
+    {
+      "callsite": "forward_ref_op_assign! { impl BitXorAssign, bitxor_assign for $t, $t }",
+      "defsite": "macro_rules! forward_ref_op_assign {\n    (impl $imp:ident, $method:ident for $t:ty, $u:ty) => {\n        forward_ref_op_assign!(impl $imp, $method for $t, $u,\n                #[stable(feature = \"op_assign_builtins_by_ref\", since = \"1.22.0\")]);\n    };\n    (impl $imp:ident, $method:ident for $t:ty, $u:ty, #[$attr:meta]) => {\n        #[$attr]\n        impl $imp<&$u> for $t {\n            #[inline]\n            #[track_caller]\n            fn $method(&mut self, other: &$u) {\n                $imp::$method(self, *other);\n            }\n        }\n    }\n}"
+    },
+    {
+      "callsite": "bitxor_assign_impl! { bool usize u8 u16 u32 u64 u128 isize i8 i16 i32 i64 i128 }",
+      "defsite": "macro_rules! bitxor_assign_impl {\n    ($($t:ty)+) => ($(\n        #[stable(feature = \"op_assign_traits\", since = \"1.8.0\")]\n        impl BitXorAssign for $t {\n            #[inline]\n            fn bitxor_assign(&mut self, other: $t) { *self ^= other }\n        }\n\n        forward_ref_op_assign! { impl BitXorAssign, bitxor_assign for $t, $t }\n    )+)\n}"
+    }
+  ],
+  "callees": [
+    "1266685452591711758111118124172154992318"
+  ]
+}

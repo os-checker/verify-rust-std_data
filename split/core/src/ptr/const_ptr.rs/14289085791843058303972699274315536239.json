@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/const_ptr.rs",
+  "name": "ptr::const_ptr::<impl *const T>::offset_from_unsigned::runtime_ptr_ge",
+  "hash": "14289085791843058303972699274315536239",
+  "hash_direct": "1099054212793523325415759669382202949627",
+  "src": "const fn runtime_ptr_ge(this: *const (), origin: *const ()) -> bool {\n            const_eval_select!(\n                @capture { this: *const (), origin: *const () } -> bool:\n                if const {\n                    true\n                } else {\n                    this >= origin\n                }\n            )\n        }",
+  "callees": [
+    "47278574192031232971799194590021398469"
+  ]
+}

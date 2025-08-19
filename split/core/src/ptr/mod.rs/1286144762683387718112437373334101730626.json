@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "ptr::slice_from_raw_parts_mut::<mem::verify::CannotDrop<char>>",
+  "hash": "1286144762683387718112437373334101730626",
+  "hash_direct": "145575773971381450712586871770250522466",
+  "src": "pub const fn slice_from_raw_parts_mut<T>(data: *mut T, len: usize) -> *mut [T] {\n    from_raw_parts_mut(data, len)\n}",
+  "callees": [
+    "1138620045661902867510034653828371676336"
+  ]
+}

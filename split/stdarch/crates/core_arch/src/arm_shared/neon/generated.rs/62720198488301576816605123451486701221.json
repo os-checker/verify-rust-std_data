@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vabal_s32",
+  "hash": "62720198488301576816605123451486701221",
+  "hash_direct": "22087699997012698925634137963563958033",
+  "src": "pub fn vabal_s32(a: int64x2_t, b: int32x2_t, c: int32x2_t) -> int64x2_t {\n    let d: int32x2_t = vabd_s32(b, c);\n    unsafe {\n        let e: uint32x2_t = simd_cast(d);\n        simd_add(a, simd_cast(e))\n    }\n}",
+  "callees": [
+    "141491112955306257633688338375481745145"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "file": "core/src/default.rs",
+  "name": "<i64 as default::Default>::default",
+  "hash": "174286527209052435998943855575772441704",
+  "hash_direct": "431240394086678919315073452090902290149",
+  "src": "fn default() -> $t {\n                $v\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "default_impl! { i64, 0, \"Returns the default value of `0`\" }",
+      "defsite": "macro_rules! default_impl {\n    ($t:ty, $v:expr, $doc:tt) => {\n        #[stable(feature = \"rust1\", since = \"1.0.0\")]\n        #[rustc_const_unstable(feature = \"const_default\", issue = \"143894\")]\n        impl const Default for $t {\n            #[inline(always)]\n            #[doc = $doc]\n            fn default() -> $t {\n                $v\n            }\n        }\n    };\n}"
+    }
+  ]
+}

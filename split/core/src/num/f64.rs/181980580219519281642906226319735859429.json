@@ -1,0 +1,11 @@
+{
+  "file": "core/src/num/f64.rs",
+  "name": "f64::<impl f64>::is_normal",
+  "hash": "181980580219519281642906226319735859429",
+  "hash_direct": "16793310053575662891158175947613689164",
+  "src": "pub const fn is_normal(self) -> bool {\n        matches!(self.classify(), FpCategory::Normal)\n    }",
+  "callees": [
+    "162537370977980029316478152370412396428",
+    "85253214614932633916524759824229868238"
+  ]
+}

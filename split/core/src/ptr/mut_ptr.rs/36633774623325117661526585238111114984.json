@@ -1,0 +1,26 @@
+{
+  "file": "core/src/ptr/mut_ptr.rs",
+  "name": "ptr::mut_ptr::<impl *mut u32>::sub",
+  "hash": "36633774623325117661526585238111114984",
+  "hash_direct": "57070357441202759005633992910145640990",
+  "src": "pub const unsafe fn sub(self, count: usize) -> Self\n    where\n        T: Sized,\n    {\n        #[cfg(debug_assertions)]\n        #[inline]\n        #[rustc_allow_const_fn_unstable(const_eval_select)]\n        const fn runtime_sub_nowrap(this: *const (), count: usize, size: usize) -> bool {\n            const_eval_select!(\n                @capture { this: *const (), count: usize, size: usize } -> bool:\n                if const {\n                    true\n                } else {\n                    let Some(byte_offset) = count.checked_mul(size) else {\n                        return false;\n                    };\n                    byte_offset <= (isize::MAX as usize) && this.addr() >= byte_offset\n                }\n            )\n        }\n\n        #[cfg(debug_assertions)] // Expensive, and doesn't catch much in the wild.\n        ub_checks::assert_unsafe_precondition!(\n            check_language_ub,\n            \"ptr::sub requires that the address calculation does not overflow\",\n            (\n                this: *const () = self as *const (),\n                count: usize = count,\n                size: usize = size_of::<T>(),\n            ) => runtime_sub_nowrap(this, count, size)\n        );\n\n        if T::IS_ZST {\n            // Pointer arithmetic does nothing when the pointee is a ZST.\n            self\n        } else {\n            // SAFETY: the caller must uphold the safety contract for `offset`.\n            // Because the pointee is *not* a ZST, that means that `count` is\n            // at most `isize::MAX`, and thus the negation cannot overflow.\n            unsafe { intrinsics::offset(self, intrinsics::unchecked_sub(0, count as isize)) }\n        }\n    }",
+  "callees": [
+    "47323665595455568617290020941376774286",
+    "111425599901702694743874629435682172347",
+    "714811817540972740211524868124730226803",
+    "1329845230409163288212548289525672875535",
+    "104310221742716516106825842456563485195",
+    "16824420916691935049705640393259467449",
+    "107365534946901948286099583667090509800",
+    "841346702487865802717731804342903065853",
+    "26064680123257945312537992217601395168",
+    "841904668883726495316837415609641023349",
+    "1258931108755458209614962827106116332072",
+    "105125143701458073564296455695110349394",
+    "25930241974724637292994171257021210872",
+    "617554482545947003412104686554524783687",
+    "174277204108153543316058831477041384365",
+    "1564004178496337119316507105125054707476",
+    "399232661239117480517401994520839366833"
+  ]
+}

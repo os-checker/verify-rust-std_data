@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vraddhn_high_s32",
+  "hash": "1665266215901600251014869478737235281328",
+  "hash_direct": "81293242546246581432401310674679493393",
+  "src": "pub fn vraddhn_high_s32(a: int16x4_t, b: int32x4_t, c: int32x4_t) -> int16x8_t {\n    let x = vraddhn_s32(b, c);\n    unsafe { simd_shuffle!(a, x, [0, 1, 2, 3, 4, 5, 6, 7]) }\n}",
+  "callees": [
+    "25902435343903385986363696665573510269"
+  ]
+}

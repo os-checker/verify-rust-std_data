@@ -1,0 +1,10 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<slice::iter::Iter<'_, u8> as iter::traits::iterator::Iterator>::take_while::<{closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/slice/ascii.rs:301:50: 301:55}>",
+  "hash": "62785410078650370443116865412020701319",
+  "hash_direct": "57637616612620841477387687146694517322",
+  "src": "fn take_while<P>(self, predicate: P) -> TakeWhile<Self, P>\n    where\n        Self: Sized,\n        P: FnMut(&Self::Item) -> bool,\n    {\n        TakeWhile::new(self, predicate)\n    }",
+  "callees": [
+    "4294136855494197264303953600654982547"
+  ]
+}

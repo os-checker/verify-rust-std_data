@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vcgt_f16",
+  "hash": "1476214078149461465916723407993059332577",
+  "hash_direct": "67553687363175154497619891090966289296",
+  "src": "pub fn vcgt_f16(a: float16x4_t, b: float16x4_t) -> uint16x4_t {\n    unsafe { simd_gt(a, b) }\n}"
+}

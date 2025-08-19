@@ -1,0 +1,13 @@
+{
+  "file": "core/src/net/socket_addr.rs",
+  "name": "<net::socket_addr::SocketAddrV6 as clone::Clone>::clone",
+  "hash": "24924756343777319992673160986363572787",
+  "hash_direct": "161020021335320853314413547217710477052",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

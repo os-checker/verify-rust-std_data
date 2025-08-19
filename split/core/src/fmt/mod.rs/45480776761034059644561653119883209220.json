@@ -1,0 +1,17 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "<&time::TryFromFloatSecsErrorKind as fmt::Debug>::fmt",
+  "hash": "45480776761034059644561653119883209220",
+  "hash_direct": "169435145453264545515219230216372224924",
+  "src": "fn fmt(&self, f: &mut Formatter<'_>) -> Result { $tr::fmt(&**self, f) }",
+  "macro_backtrace": [
+    {
+      "callsite": "fmt_refs! { Debug, Display, Octal, Binary, LowerHex, UpperHex, LowerExp, UpperExp }",
+      "defsite": "macro_rules! fmt_refs {\n    ($($tr:ident),*) => {\n        $(\n        #[stable(feature = \"rust1\", since = \"1.0.0\")]\n        impl<T: PointeeSized + $tr> $tr for &T {\n            fn fmt(&self, f: &mut Formatter<'_>) -> Result { $tr::fmt(&**self, f) }\n        }\n        #[stable(feature = \"rust1\", since = \"1.0.0\")]\n        impl<T: PointeeSized + $tr> $tr for &mut T {\n            fn fmt(&self, f: &mut Formatter<'_>) -> Result { $tr::fmt(&**self, f) }\n        }\n        )*\n    }\n}"
+    }
+  ],
+  "callees": [
+    "1557257459089412723814481849913677699848",
+    "160824126319766218624419540970455828752"
+  ]
+}

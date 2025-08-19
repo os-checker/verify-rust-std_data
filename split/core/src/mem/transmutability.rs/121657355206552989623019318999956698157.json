@@ -1,0 +1,7 @@
+{
+  "file": "core/src/mem/transmutability.rs",
+  "name": "mem::transmutability::Assume::but_not",
+  "hash": "121657355206552989623019318999956698157",
+  "hash_direct": "51205112124829111302529028887266760654",
+  "src": "pub const fn but_not(self, other_assumptions: Self) -> Self {\n        Self {\n            alignment: self.alignment && !other_assumptions.alignment,\n            lifetimes: self.lifetimes && !other_assumptions.lifetimes,\n            safety: self.safety && !other_assumptions.safety,\n            validity: self.validity && !other_assumptions.validity,\n        }\n    }"
+}

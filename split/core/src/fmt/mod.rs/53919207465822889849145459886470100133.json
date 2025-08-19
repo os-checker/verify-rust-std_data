@@ -1,0 +1,13 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "<fmt::Error as cmp::Ord>::cmp",
+  "hash": "53919207465822889849145459886470100133",
+  "hash_direct": "1818876620421788105211958131603459279984",
+  "src": "Ord",
+  "macro_backtrace": [
+    {
+      "callsite": "Ord",
+      "defsite": "pub macro Ord($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

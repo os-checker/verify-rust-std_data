@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vmvn_s32",
+  "hash": "329645773018584879116928252660690947289",
+  "hash_direct": "1657767339984529039010365992238091156345",
+  "src": "pub fn vmvn_s32(a: int32x2_t) -> int32x2_t {\n    let b = int32x2_t::splat(-1);\n    unsafe { simd_xor(a, b) }\n}",
+  "callees": [
+    "1772407401334837915612343259476096199033"
+  ]
+}

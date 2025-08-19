@@ -1,0 +1,24 @@
+{
+  "file": "core/src/internal_macros.rs",
+  "name": "<&u16 as ops::bit::Not>::not",
+  "hash": "158521587800528491913146330280054034004",
+  "hash_direct": "1184490090820914842817339532955944523913",
+  "src": "fn $method(self) -> <$t as $imp>::Output {\n                $imp::$method(*self)\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "forward_ref_unop!(impl $imp, $method for $t,\n                #[stable(feature = \"rust1\", since = \"1.0.0\")])",
+      "defsite": "macro_rules! forward_ref_unop {\n    (impl $imp:ident, $method:ident for $t:ty) => {\n        forward_ref_unop!(impl $imp, $method for $t,\n                #[stable(feature = \"rust1\", since = \"1.0.0\")]);\n    };\n    (impl $imp:ident, $method:ident for $t:ty, #[$attr:meta]) => {\n        #[$attr]\n        impl $imp for &$t {\n            type Output = <$t as $imp>::Output;\n\n            #[inline]\n            fn $method(self) -> <$t as $imp>::Output {\n                $imp::$method(*self)\n            }\n        }\n    }\n}"
+    },
+    {
+      "callsite": "forward_ref_unop! { impl Not, not for $t }",
+      "defsite": "macro_rules! forward_ref_unop {\n    (impl $imp:ident, $method:ident for $t:ty) => {\n        forward_ref_unop!(impl $imp, $method for $t,\n                #[stable(feature = \"rust1\", since = \"1.0.0\")]);\n    };\n    (impl $imp:ident, $method:ident for $t:ty, #[$attr:meta]) => {\n        #[$attr]\n        impl $imp for &$t {\n            type Output = <$t as $imp>::Output;\n\n            #[inline]\n            fn $method(self) -> <$t as $imp>::Output {\n                $imp::$method(*self)\n            }\n        }\n    }\n}"
+    },
+    {
+      "callsite": "not_impl! { bool usize u8 u16 u32 u64 u128 isize i8 i16 i32 i64 i128 }",
+      "defsite": "macro_rules! not_impl {\n    ($($t:ty)*) => ($(\n        #[stable(feature = \"rust1\", since = \"1.0.0\")]\n        impl Not for $t {\n            type Output = $t;\n\n            #[inline]\n            fn not(self) -> $t { !self }\n        }\n\n        forward_ref_unop! { impl Not, not for $t }\n    )*)\n}"
+    }
+  ],
+  "callees": [
+    "274261816378859948211831698560505615439"
+  ]
+}

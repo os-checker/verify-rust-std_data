@@ -1,0 +1,24 @@
+{
+  "file": "core/src/internal_macros.rs",
+  "name": "<i128 as ops::arith::RemAssign<&i128>>::rem_assign",
+  "hash": "1761396176496638309714320640761109503084",
+  "hash_direct": "847776080358121806213282124204107745721",
+  "src": "fn $method(&mut self, other: &$u) {\n                $imp::$method(self, *other);\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "forward_ref_op_assign!(impl $imp, $method for $t, $u,\n                #[stable(feature = \"op_assign_builtins_by_ref\", since = \"1.22.0\")])",
+      "defsite": "macro_rules! forward_ref_op_assign {\n    (impl $imp:ident, $method:ident for $t:ty, $u:ty) => {\n        forward_ref_op_assign!(impl $imp, $method for $t, $u,\n                #[stable(feature = \"op_assign_builtins_by_ref\", since = \"1.22.0\")]);\n    };\n    (impl $imp:ident, $method:ident for $t:ty, $u:ty, #[$attr:meta]) => {\n        #[$attr]\n        impl $imp<&$u> for $t {\n            #[inline]\n            #[track_caller]\n            fn $method(&mut self, other: &$u) {\n                $imp::$method(self, *other);\n            }\n        }\n    }\n}"
+    },
+    {
+      "callsite": "forward_ref_op_assign! { impl RemAssign, rem_assign for $t, $t }",
+      "defsite": "macro_rules! forward_ref_op_assign {\n    (impl $imp:ident, $method:ident for $t:ty, $u:ty) => {\n        forward_ref_op_assign!(impl $imp, $method for $t, $u,\n                #[stable(feature = \"op_assign_builtins_by_ref\", since = \"1.22.0\")]);\n    };\n    (impl $imp:ident, $method:ident for $t:ty, $u:ty, #[$attr:meta]) => {\n        #[$attr]\n        impl $imp<&$u> for $t {\n            #[inline]\n            #[track_caller]\n            fn $method(&mut self, other: &$u) {\n                $imp::$method(self, *other);\n            }\n        }\n    }\n}"
+    },
+    {
+      "callsite": "rem_assign_impl! { usize u8 u16 u32 u64 u128 isize i8 i16 i32 i64 i128 f16 f32 f64 f128 }",
+      "defsite": "macro_rules! rem_assign_impl {\n    ($($t:ty)+) => ($(\n        #[stable(feature = \"op_assign_traits\", since = \"1.8.0\")]\n        impl RemAssign for $t {\n            #[inline]\n            #[track_caller]\n            fn rem_assign(&mut self, other: $t) { *self %= other }\n        }\n\n        forward_ref_op_assign! { impl RemAssign, rem_assign for $t, $t }\n    )+)\n}"
+    }
+  ],
+  "callees": [
+    "49309284177352142112187459021719285639"
+  ]
+}

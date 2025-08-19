@@ -1,0 +1,7 @@
+{
+  "file": "core/src/str/pattern.rs",
+  "name": "<str::pattern::MultiCharEqSearcher<'_, str::IsWhitespace> as str::pattern::Searcher<'_>>::haystack",
+  "hash": "174021508517090363981489080681335794283",
+  "hash_direct": "192784158556832794918429954780921356232",
+  "src": "fn haystack(&self) -> &'a str {\n        self.haystack\n    }"
+}

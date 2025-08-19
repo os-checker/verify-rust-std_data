@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vzipq_f16",
+  "hash": "142293880075197303608456949821437474666",
+  "hash_direct": "180296111933698671783210863282962063488",
+  "src": "pub fn vzipq_f16(a: float16x8_t, b: float16x8_t) -> float16x8x2_t {\n    unsafe {\n        let a0: float16x8_t = simd_shuffle!(a, b, [0, 8, 1, 9, 2, 10, 3, 11]);\n        let b0: float16x8_t = simd_shuffle!(a, b, [4, 12, 5, 13, 6, 14, 7, 15]);\n        transmute((a0, b0))\n    }\n}"
+}

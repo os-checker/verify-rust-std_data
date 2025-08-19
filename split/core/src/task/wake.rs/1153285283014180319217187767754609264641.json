@@ -1,0 +1,7 @@
+{
+  "file": "core/src/task/wake.rs",
+  "name": "task::wake::LocalWaker::wake_by_ref",
+  "hash": "1153285283014180319217187767754609264641",
+  "hash_direct": "176281990974018862432861197341580991326",
+  "src": "pub fn wake_by_ref(&self) {\n        // The actual wakeup call is delegated through a virtual function call\n        // to the implementation which is defined by the executor.\n\n        // SAFETY: see `wake`\n        unsafe { (self.waker.vtable.wake_by_ref)(self.waker.data) }\n    }"
+}

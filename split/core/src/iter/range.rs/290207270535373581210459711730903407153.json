@@ -1,0 +1,26 @@
+{
+  "file": "core/src/iter/range.rs",
+  "name": "<char as iter::range::Step>::forward_unchecked",
+  "hash": "290207270535373581210459711730903407153",
+  "hash_direct": "1414764073480365313516615015078480625403",
+  "src": "unsafe fn forward_unchecked(start: char, count: usize) -> char {\n        let start = start as u32;\n        // SAFETY: the caller must guarantee that this doesn't overflow\n        // the range of values for a char.\n        let mut res = unsafe { Step::forward_unchecked(start, count) };\n        if start < 0xD800 && 0xD800 <= res {\n            // SAFETY: the caller must guarantee that this doesn't overflow\n            // the range of values for a char.\n            res = unsafe { Step::forward_unchecked(res, 0x800) };\n        }\n        // SAFETY: because of the previous contract, this is guaranteed\n        // by the caller to be a valid char.\n        unsafe { char::from_u32_unchecked(res) }\n    }",
+  "callees": [
+    "1096154568935207292118411765173724766739",
+    "1615780015787215128316594883786605832883",
+    "40063093336585792095766602796070126518",
+    "47323665595455568617290020941376774286",
+    "1329845230409163288212548289525672875535",
+    "16824420916691935049705640393259467449",
+    "176756492329868819509330469850120887391",
+    "88899199360268001426482462938213067141",
+    "159952308768169655546419997904899044321",
+    "164769300933020566656262923669273525158",
+    "841904668883726495316837415609641023349",
+    "1258931108755458209614962827106116332072",
+    "105125143701458073564296455695110349394",
+    "182972684513709302288440602073677891408",
+    "158338167874674576194838212405987326951",
+    "171544005344696284717704595093144721836",
+    "399232661239117480517401994520839366833"
+  ]
+}

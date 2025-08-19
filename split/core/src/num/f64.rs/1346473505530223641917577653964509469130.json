@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f64.rs",
+  "name": "f64::<impl f64>::to_radians",
+  "hash": "1346473505530223641917577653964509469130",
+  "hash_direct": "1764406135664247421216306435283027748245",
+  "src": "pub const fn to_radians(self) -> f64 {\n        const RADS_PER_DEG: f64 = consts::PI / 180.0;\n        self * RADS_PER_DEG\n    }"
+}

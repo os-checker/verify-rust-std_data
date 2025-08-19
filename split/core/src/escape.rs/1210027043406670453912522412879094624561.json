@@ -1,0 +1,13 @@
+{
+  "file": "core/src/escape.rs",
+  "name": "<escape::MaybeEscaped as clone::Clone>::clone",
+  "hash": "1210027043406670453912522412879094624561",
+  "hash_direct": "43946063667736896981261004740921139913",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

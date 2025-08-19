@@ -1,0 +1,10 @@
+{
+  "file": "core/src/any.rs",
+  "name": "<panic::panic_info::PanicInfo<'a>::payload::NoPayload as any::Any>::type_id",
+  "hash": "6772205497505804660952167879778326960",
+  "hash_direct": "94022208640400678910463240044388944620",
+  "src": "fn type_id(&self) -> TypeId {\n        TypeId::of::<T>()\n    }",
+  "callees": [
+    "1276299388104375293317814591183538369560"
+  ]
+}

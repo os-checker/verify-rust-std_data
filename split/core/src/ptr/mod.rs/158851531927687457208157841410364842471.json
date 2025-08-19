@@ -1,0 +1,8 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "ptr::drop_in_place::<str::pattern::CharPredicateSearcher<'_, str::IsWhitespace>>",
+  "hash": "158851531927687457208157841410364842471",
+  "hash_direct": "143269582073975911611240093032613210238",
+  "inst_kind": "\"Shim\"",
+  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
+}

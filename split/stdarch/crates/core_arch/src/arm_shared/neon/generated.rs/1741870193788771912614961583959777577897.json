@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vst3_p64",
+  "hash": "1741870193788771912614961583959777577897",
+  "hash_direct": "34657826461690460877679959611154238633",
+  "src": "pub unsafe fn vst3_p64(a: *mut p64, b: poly64x1x3_t) {\n    vst3_s64(transmute(a), transmute(b))\n}",
+  "callees": [
+    "105074874074924966954757698012909702033"
+  ]
+}

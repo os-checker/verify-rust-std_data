@@ -1,0 +1,8 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "ptr::drop_in_place::<net::display_buffer::DisplayBuffer<39>>",
+  "hash": "114259148388358284935668915438501502019",
+  "hash_direct": "1645371042671858034114425597877256750006",
+  "inst_kind": "\"Shim\"",
+  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/str/validations.rs",
+  "name": "str::validations::contains_nonascii",
+  "hash": "53703104570138002865479014552427780648",
+  "hash_direct": "1561507892343105170213238515214613713384",
+  "src": "const fn contains_nonascii(x: usize) -> bool {\n    (x & NONASCII_MASK) != 0\n}"
+}

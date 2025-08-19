@@ -1,0 +1,12 @@
+{
+  "file": "core/src/slice/mod.rs",
+  "name": "slice::<impl [mem::maybe_uninit::MaybeUninit<u8>]>::get_mut::<ops::range::Range<usize>>",
+  "hash": "1146258992166653542917646273565870231905",
+  "hash_direct": "97385593171969258509323061847791057595",
+  "src": "pub const fn get_mut<I>(&mut self, index: I) -> Option<&mut I::Output>\n    where\n        I: ~const SliceIndex<Self>,\n    {\n        index.get_mut(self)\n    }",
+  "callees": [
+    "290360310864386898714327273451929980463",
+    "741911464818456271112585036181404595486",
+    "254980726983347633512203575532483066364"
+  ]
+}

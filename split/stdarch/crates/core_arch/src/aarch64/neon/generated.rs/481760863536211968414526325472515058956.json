@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vqshld_s64",
+  "hash": "481760863536211968414526325472515058956",
+  "hash_direct": "16353833432147505235340926261221326223",
+  "src": "pub fn vqshld_s64(a: i64, b: i64) -> i64 {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.sqshl.i64\"\n        )]\n        fn _vqshld_s64(a: i64, b: i64) -> i64;\n    }\n    unsafe { _vqshld_s64(a, b) }\n}"
+}

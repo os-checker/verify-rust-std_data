@@ -1,0 +1,7 @@
+{
+  "file": "core/src/intrinsics/fallback.rs",
+  "name": "intrinsics::fallback::wide_mul_u128::from_low_high",
+  "hash": "149177879054194305854706121912784527721",
+  "hash_direct": "65711371606571625399408985140614876584",
+  "src": "const fn from_low_high(x: [u128; 2]) -> u128 {\n        x[0] | (x[1] << 64)\n    }"
+}

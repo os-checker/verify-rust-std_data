@@ -1,0 +1,15 @@
+{
+  "file": "core/src/str/mod.rs",
+  "name": "str::<impl str>::trim_ascii",
+  "hash": "15871577522535182653337789668985937528",
+  "hash_direct": "1146316018896565481817528333714163190482",
+  "src": "pub const fn trim_ascii(&self) -> &str {\n        // SAFETY: Removing ASCII characters from a `&str` does not invalidate\n        // UTF-8.\n        unsafe { core::str::from_utf8_unchecked(self.as_bytes().trim_ascii()) }\n    }",
+  "callees": [
+    "82152198621563519385273738632868570109",
+    "1428601115880412600412824568909090756324",
+    "8053251180527785811206498600423594764",
+    "2900263818517856557127578210020041131",
+    "121719316555113793862003739913395039268",
+    "45819503778375231969038300244556098990"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/cmp.rs",
+  "name": "cmp::impls::<impl cmp::Ord for !>::cmp",
+  "hash": "277158240958228507612998895888463028198",
+  "hash_direct": "1365097446058437172015694629794740818614",
+  "src": "fn cmp(&self, _: &!) -> Ordering {\n            *self\n        }"
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vst1q_s8_x2",
+  "hash": "80213224378137955018521439651356300511",
+  "hash_direct": "7478916630942612904975454936025424789",
+  "src": "pub unsafe fn vst1q_s8_x2(a: *mut i8, b: int8x16x2_t) {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.st1x2.v16i8.p0\"\n        )]\n        fn _vst1q_s8_x2(a: int8x16_t, b: int8x16_t, ptr: *mut i8);\n    }\n    _vst1q_s8_x2(b.0, b.1, a)\n}"
+}

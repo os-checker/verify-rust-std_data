@@ -1,0 +1,11 @@
+{
+  "file": "core/src/ops/function.rs",
+  "name": "<fn(net::ip_addr::Ipv6Addr) -> net::ip_addr::IpAddr {net::ip_addr::IpAddr::V6} as ops::function::FnOnce<(net::ip_addr::Ipv6Addr,)>>::call_once",
+  "hash": "1577039850279723670616194839378817523408",
+  "hash_direct": "863477678194926254311216651870928156143",
+  "inst_kind": "\"Shim\"",
+  "src": "extern \"rust-call\" fn call_once(self, args: Args) -> Self::Output;",
+  "callees": [
+    "1760478056698579632810274082697005590944"
+  ]
+}

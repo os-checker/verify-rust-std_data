@@ -1,0 +1,10 @@
+{
+  "file": "core/src/str/count.rs",
+  "name": "str::count::USIZE_SIZE",
+  "hash": "77592854134157077463053872205853862126",
+  "hash_direct": "158101113185104833389976680740661976779",
+  "src": "const USIZE_SIZE: usize = size_of::<usize>();",
+  "callees": [
+    "1067675883129992420314174327751912045205"
+  ]
+}

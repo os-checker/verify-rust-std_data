@@ -1,0 +1,16 @@
+{
+  "file": "core/src/option.rs",
+  "name": "option::Option::<&char::EscapeDebug>::map_or::<(usize, option::Option<usize>), for<'a> fn(&'a char::EscapeDebug) -> (usize, option::Option<usize>) {<char::EscapeDebug as iter::traits::iterator::Iterator>::size_hint}>",
+  "hash": "42523253189355314164484348599926004811",
+  "hash_direct": "18265528456648902234987082105953212322",
+  "src": "pub const fn map_or<U, F>(self, default: U, f: F) -> U\n    where\n        F: ~const FnOnce(T) -> U + ~const Destruct,\n        U: ~const Destruct,\n    {\n        match self {\n            Some(t) => f(t),\n            None => default,\n        }\n    }",
+  "callees": [
+    "106726561740174065288083703776090095863",
+    "1177793451448240943264134372733044320",
+    "117083133034458006019709376097028492273",
+    "1716460902311557784514218128632988891446",
+    "600069391829922519813981122490086755085",
+    "72467560964661004181658302583155500260",
+    "108602431076763355397849575214602926480"
+  ]
+}

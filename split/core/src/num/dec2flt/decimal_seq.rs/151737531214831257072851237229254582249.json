@@ -1,0 +1,24 @@
+{
+  "file": "core/src/num/dec2flt/decimal_seq.rs",
+  "name": "num::dec2flt::decimal_seq::DecimalSeq::round",
+  "hash": "151737531214831257072851237229254582249",
+  "hash_direct": "31426287281344472547475457402716496215",
+  "src": "pub(super) fn round(&self) -> u64 {\n        if self.num_digits == 0 || self.decimal_point < 0 {\n            return 0;\n        } else if self.decimal_point >= Self::MAX_DIGITS_WITHOUT_OVERFLOW as i32 {\n            return 0xFFFF_FFFF_FFFF_FFFF_u64;\n        }\n\n        let dp = self.decimal_point as usize;\n        let mut n = 0_u64;\n\n        for i in 0..dp {\n            n *= 10;\n            if i < self.num_digits {\n                n += self.digits[i] as u64;\n            }\n        }\n\n        let mut round_up = false;\n\n        if dp < self.num_digits {\n            round_up = self.digits[dp] >= 5;\n            if self.digits[dp] == 5 && dp + 1 == self.num_digits {\n                round_up = self.truncated || ((dp != 0) && (1 & self.digits[dp - 1] != 0))\n            }\n        }\n\n        if round_up {\n            n += 1;\n        }\n        n\n    }",
+  "callees": [
+    "589599466487462365011430963401962118509",
+    "47323665595455568617290020941376774286",
+    "1329845230409163288212548289525672875535",
+    "16824420916691935049705640393259467449",
+    "1438611585775203574910130895685408999981",
+    "180874735662080423702617202418949819065",
+    "1388505351152652276212287879007466526739",
+    "526814189773195139817557993623059721647",
+    "1182371843420022111010336901757313084440",
+    "13796074939706337624507826801091410480",
+    "841904668883726495316837415609641023349",
+    "1258931108755458209614962827106116332072",
+    "105125143701458073564296455695110349394",
+    "156558724737321886766153526308848840146",
+    "399232661239117480517401994520839366833"
+  ]
+}

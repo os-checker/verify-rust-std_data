@@ -1,0 +1,11 @@
+{
+  "file": "core/src/char/convert.rs",
+  "name": "char::convert::<impl convert::TryFrom<u32> for char>::try_from",
+  "hash": "1062765977261690253014827334478353985346",
+  "hash_direct": "1289117450150739118816857254215874077235",
+  "src": "fn try_from(i: u32) -> Result<Self, Self::Error> {\n        char_try_from_u32(i)\n    }",
+  "callees": [
+    "1096154568935207292118411765173724766739",
+    "164769300933020566656262923669273525158"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "file": "core/src/ascii/ascii_char.rs",
+  "name": "<[ascii::ascii_char::AsciiChar]>::as_bytes",
+  "hash": "17198339743453630150581388778304301741",
+  "hash_direct": "1568863081279909420010784283634175383454",
+  "src": "pub const fn as_bytes(&self) -> &[u8] {\n        self.as_str().as_bytes()\n    }",
+  "callees": [
+    "114072873302150917978059682736368582411",
+    "45819503778375231969038300244556098990"
+  ]
+}

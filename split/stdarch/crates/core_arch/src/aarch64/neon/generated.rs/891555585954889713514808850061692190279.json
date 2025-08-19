@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vqmovn_high_s64",
+  "hash": "891555585954889713514808850061692190279",
+  "hash_direct": "177835223817681477926973773990565399396",
+  "src": "pub fn vqmovn_high_s64(a: int32x2_t, b: int64x2_t) -> int32x4_t {\n    unsafe { simd_shuffle!(a, vqmovn_s64(b), [0, 1, 2, 3]) }\n}",
+  "callees": [
+    "69288923697776369119475857641595367794"
+  ]
+}

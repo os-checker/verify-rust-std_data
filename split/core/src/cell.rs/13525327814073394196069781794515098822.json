@@ -1,0 +1,11 @@
+{
+  "file": "core/src/cell.rs",
+  "name": "cell::Cell::<isize>::replace",
+  "hash": "13525327814073394196069781794515098822",
+  "hash_direct": "83855020212965040894893549147715053604",
+  "src": "pub const fn replace(&self, val: T) -> T {\n        // SAFETY: This can cause data races if called from a separate thread,\n        // but `Cell` is `!Sync` so this won't happen.\n        mem::replace(unsafe { &mut *self.value.get() }, val)\n    }",
+  "callees": [
+    "1126956795907967858912765181239235513524",
+    "11706327030119393035693707895851625770"
+  ]
+}

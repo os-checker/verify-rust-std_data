@@ -1,0 +1,7 @@
+{
+  "file": "core/src/error.rs",
+  "name": "<char::convert::CharTryFromError as error::Error>::description",
+  "hash": "1581348495398491442615413626820064239012",
+  "hash_direct": "96946748394414619425183418427363896532",
+  "src": "fn description(&self) -> &str {\n        \"converted integer out of range for `char`\"\n    }"
+}

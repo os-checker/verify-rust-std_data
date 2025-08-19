@@ -1,0 +1,13 @@
+{
+  "file": "core/src/ops/bit.rs",
+  "name": "<i128 as ops::bit::BitAnd>::bitand",
+  "hash": "1752148883115699614714925016538695659498",
+  "hash_direct": "181331073019133874408452456268411073945",
+  "src": "fn bitand(self, rhs: $t) -> $t { self & rhs }",
+  "macro_backtrace": [
+    {
+      "callsite": "bitand_impl! { bool usize u8 u16 u32 u64 u128 isize i8 i16 i32 i64 i128 }",
+      "defsite": "macro_rules! bitand_impl {\n    ($($t:ty)*) => ($(\n        #[stable(feature = \"rust1\", since = \"1.0.0\")]\n        impl BitAnd for $t {\n            type Output = $t;\n\n            #[inline]\n            fn bitand(self, rhs: $t) -> $t { self & rhs }\n        }\n\n        forward_ref_binop! { impl BitAnd, bitand for $t, $t }\n    )*)\n}"
+    }
+  ]
+}

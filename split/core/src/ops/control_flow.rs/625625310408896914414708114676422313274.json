@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ops/control_flow.rs",
+  "name": "<ops::control_flow::ControlFlow<ops::control_flow::ControlFlow<(), cmp::Ordering>> as ops::try_trait::Try>::from_output",
+  "hash": "625625310408896914414708114676422313274",
+  "hash_direct": "56935954141106741266959820441756357169",
+  "src": "fn from_output(output: Self::Output) -> Self {\n        ControlFlow::Continue(output)\n    }"
+}

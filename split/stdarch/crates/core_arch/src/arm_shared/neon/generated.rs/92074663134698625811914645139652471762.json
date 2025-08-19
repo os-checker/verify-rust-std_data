@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vabdl_s16",
+  "hash": "92074663134698625811914645139652471762",
+  "hash_direct": "744671779546429429416770760691625566844",
+  "src": "pub fn vabdl_s16(a: int16x4_t, b: int16x4_t) -> int32x4_t {\n    unsafe {\n        let c: uint16x4_t = simd_cast(vabd_s16(a, b));\n        simd_cast(c)\n    }\n}",
+  "callees": [
+    "100041939091487208824036865414321875174"
+  ]
+}

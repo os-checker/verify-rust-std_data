@@ -1,0 +1,7 @@
+{
+  "file": "core/src/slice/index.rs",
+  "name": "<usize as slice::index::SliceIndex<[u8]>>::get_mut",
+  "hash": "152090112581637314203245991740121256647",
+  "hash_direct": "1537519445195678291110169625941574186011",
+  "src": "fn get_mut(self, slice: &mut [T]) -> Option<&mut T> {\n        if self < slice.len() {\n            // SAFETY: `self` is checked to be in bounds.\n            unsafe { Some(slice_get_unchecked(slice, self)) }\n        } else {\n            None\n        }\n    }"
+}

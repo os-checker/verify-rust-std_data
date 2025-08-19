@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f16.rs",
+  "name": "f16::<impl f16>::mul_add",
+  "hash": "1728805213170435905816732554922939884856",
+  "hash_direct": "12068598227174125144528397853698834794",
+  "src": "pub fn mul_add(self, a: f16, b: f16) -> f16 {\n        // SAFETY: intrinsic with no preconditions\n        unsafe { intrinsics::fmaf16(self, a, b) }\n    }"
+}

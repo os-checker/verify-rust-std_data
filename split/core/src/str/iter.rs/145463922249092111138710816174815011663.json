@@ -1,0 +1,16 @@
+{
+  "file": "core/src/str/iter.rs",
+  "name": "<str::iter::EscapeUnicode<'_> as fmt::Display>::fmt::{closure#0}",
+  "hash": "145463922249092111138710816174815011663",
+  "hash_direct": "180182955626113374144861000783009258164",
+  "src": "|c| f.write_char(c)",
+  "macro_backtrace": [
+    {
+      "callsite": "escape_types_impls!(EscapeDebug, EscapeDefault, EscapeUnicode)",
+      "defsite": "macro_rules! escape_types_impls {\n    ($( $Name: ident ),+) => {$(\n        #[stable(feature = \"str_escape\", since = \"1.34.0\")]\n        impl<'a> fmt::Display for $Name<'a> {\n            fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {\n                self.clone().try_for_each(|c| f.write_char(c))\n            }\n        }\n\n        #[stable(feature = \"str_escape\", since = \"1.34.0\")]\n        impl<'a> Iterator for $Name<'a> {\n            type Item = char;\n\n            #[inline]\n            fn next(&mut self) -> Option<char> { self.inner.next() }\n\n            #[inline]\n            fn size_hint(&self) -> (usize, Option<usize>) { self.inner.size_hint() }\n\n            #[inline]\n            fn try_fold<Acc, Fold, R>(&mut self, init: Acc, fold: Fold) -> R where\n                Self: Sized, Fold: FnMut(Acc, Self::Item) -> R, R: Try<Output = Acc>\n            {\n                self.inner.try_fold(init, fold)\n            }\n\n            #[inline]\n            fn fold<Acc, Fold>(self, init: Acc, fold: Fold) -> Acc\n                where Fold: FnMut(Acc, Self::Item) -> Acc,\n            {\n                self.inner.fold(init, fold)\n            }\n        }\n\n        #[stable(feature = \"str_escape\", since = \"1.34.0\")]\n        impl<'a> FusedIterator for $Name<'a> {}\n    )+}\n}"
+    }
+  ],
+  "callees": [
+    "42514022329330556029652802619584803476"
+  ]
+}

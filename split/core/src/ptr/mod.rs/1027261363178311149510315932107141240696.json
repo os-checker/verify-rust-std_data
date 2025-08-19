@@ -1,0 +1,8 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "ptr::drop_in_place::<ffi::c_str::FromBytesUntilNulError>",
+  "hash": "1027261363178311149510315932107141240696",
+  "hash_direct": "628774579368875173513408928848395453544",
+  "inst_kind": "\"Shim\"",
+  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
+}

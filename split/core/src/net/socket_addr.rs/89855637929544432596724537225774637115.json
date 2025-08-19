@@ -1,0 +1,18 @@
+{
+  "file": "core/src/net/socket_addr.rs",
+  "name": "<net::socket_addr::SocketAddrV4 as cmp::PartialEq>::eq",
+  "hash": "89855637929544432596724537225774637115",
+  "hash_direct": "1053252188488073376911020968658730788063",
+  "src": "PartialEq",
+  "macro_backtrace": [
+    {
+      "callsite": "PartialEq",
+      "defsite": "pub macro PartialEq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ],
+  "callees": [
+    "1515015863001731213018140009252560317082",
+    "149956162545870752397589278195085771517",
+    "22514557286134941142872601844211532905"
+  ]
+}

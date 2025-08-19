@@ -1,0 +1,10 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<iter::adapters::take_while::TakeWhile<slice::iter::Iter<'_, u8>, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/slice/ascii.rs:301:50: 301:55}> as iter::traits::iterator::Iterator>::count::{closure#0}",
+  "hash": "77328248096946497558356094065401065985",
+  "hash_direct": "98237747630145186041350891694944026465",
+  "src": "|count, _| count + 1",
+  "callees": [
+    "134444069993780397564703136863158148716"
+  ]
+}

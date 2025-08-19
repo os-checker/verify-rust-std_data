@@ -1,0 +1,12 @@
+{
+  "file": "core/src/iter/adapters/flatten.rs",
+  "name": "iter::adapters::flatten::Flatten::<option::IntoIter<char::EscapeDebug>>::new",
+  "hash": "1667758806955287056011599258471151797033",
+  "hash_direct": "21540486428755224913786996477770883032",
+  "src": "pub(in super::super) fn new(iter: I) -> Flatten<I> {\n        Flatten { inner: FlattenCompat::new(iter) }\n    }",
+  "callees": [
+    "147092169516382043437542011004845858622",
+    "63841875241618556712129625010832255350",
+    "64008405505242811695538648338902736165"
+  ]
+}

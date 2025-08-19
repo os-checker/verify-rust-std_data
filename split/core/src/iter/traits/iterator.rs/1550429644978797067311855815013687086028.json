@@ -1,0 +1,11 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<iter::adapters::rev::Rev<iter::adapters::cloned::Cloned<slice::iter::Iter<'_, u32>>> as iter::traits::iterator::Iterator>::cmp::<iter::adapters::rev::Rev<iter::adapters::cloned::Cloned<slice::iter::Iter<'_, u32>>>>::{closure#0}",
+  "hash": "1550429644978797067311855815013687086028",
+  "hash_direct": "169570771660278628766555497679708171729",
+  "src": "|x, y| x.cmp(&y)",
+  "callees": [
+    "6805562217973734478490858430748473698",
+    "178908583266819311171056730682051642189"
+  ]
+}

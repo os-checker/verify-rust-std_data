@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vceqzq_u64",
+  "hash": "1314387839129558221110715444299599467697",
+  "hash_direct": "1068709056050860535516007731075625722300",
+  "src": "pub fn vceqzq_u64(a: uint64x2_t) -> uint64x2_t {\n    let b: u64x2 = u64x2::new(0, 0);\n    unsafe { simd_eq(a, transmute(b)) }\n}",
+  "callees": [
+    "94729128224216549511986669975881506681"
+  ]
+}

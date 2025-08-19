@@ -1,0 +1,13 @@
+{
+  "file": "core/src/net/ip_addr.rs",
+  "name": "<net::ip_addr::Ipv4Addr as cmp::PartialEq<net::ip_addr::IpAddr>>::eq",
+  "hash": "107815965860260856227666891890345449330",
+  "hash_direct": "27679200907775415728404830752921630175",
+  "src": "fn eq(&self, other: &IpAddr) -> bool {\n        match other {\n            IpAddr::V4(v4) => self == v4,\n            IpAddr::V6(_) => false,\n        }\n    }",
+  "callees": [
+    "1515015863001731213018140009252560317082",
+    "149956162545870752397589278195085771517",
+    "47436180064425903369342608358554098306",
+    "22514557286134941142872601844211532905"
+  ]
+}

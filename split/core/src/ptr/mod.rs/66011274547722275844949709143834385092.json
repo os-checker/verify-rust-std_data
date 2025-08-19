@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "ptr::eq::<task::wake::RawWakerVTable>",
+  "hash": "66011274547722275844949709143834385092",
+  "hash_direct": "38777717992855850233127688499796864905",
+  "src": "pub fn eq<T: PointeeSized>(a: *const T, b: *const T) -> bool {\n    a == b\n}"
+}

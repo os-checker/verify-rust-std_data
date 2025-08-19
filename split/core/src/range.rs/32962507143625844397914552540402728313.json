@@ -1,0 +1,10 @@
+{
+  "file": "core/src/range.rs",
+  "name": "range::<impl convert::From<range::RangeInclusive<usize>> for ops::range::RangeInclusive<usize>>::from",
+  "hash": "32962507143625844397914552540402728313",
+  "hash_direct": "28460103716187465510224253431584903086",
+  "src": "fn from(value: RangeInclusive<T>) -> Self {\n        Self::new(value.start, value.end)\n    }",
+  "callees": [
+    "385334049073452567017850394987891617562"
+  ]
+}

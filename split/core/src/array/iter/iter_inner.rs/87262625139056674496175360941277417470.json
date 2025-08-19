@@ -1,0 +1,11 @@
+{
+  "file": "core/src/array/iter/iter_inner.rs",
+  "name": "array::iter::iter_inner::PolymorphicIter::<[mem::maybe_uninit::MaybeUninit<char>]>::size_hint",
+  "hash": "87262625139056674496175360941277417470",
+  "hash_direct": "1145231237253556087713152631433767115127",
+  "src": "pub(super) fn size_hint(&self) -> (usize, Option<usize>) {\n        let len = self.len();\n        (len, Some(len))\n    }",
+  "callees": [
+    "1401757372494319951314054333981944169428",
+    "305374531381368603518383057774771282949"
+  ]
+}

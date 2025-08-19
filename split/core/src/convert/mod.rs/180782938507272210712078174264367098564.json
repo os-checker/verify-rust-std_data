@@ -1,0 +1,7 @@
+{
+  "file": "core/src/convert/mod.rs",
+  "name": "<str as convert::AsMut<str>>::as_mut",
+  "hash": "180782938507272210712078174264367098564",
+  "hash_direct": "52808258450275417113123024103592585313",
+  "src": "fn as_mut(&mut self) -> &mut str {\n        self\n    }"
+}

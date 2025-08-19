@@ -1,0 +1,10 @@
+{
+  "file": "core/src/slice/sort/stable/drift.rs",
+  "name": "slice::sort::stable::drift::merge_tree_depth",
+  "hash": "101691175156354173702985109895893238897",
+  "hash_direct": "171390840025243745565612393938571308432",
+  "src": "fn merge_tree_depth(left: usize, mid: usize, right: usize, scale_factor: u64) -> u8 {\n    let x = left as u64 + mid as u64;\n    let y = mid as u64 + right as u64;\n    ((scale_factor * x) ^ (scale_factor * y)).leading_zeros() as u8\n}",
+  "callees": [
+    "48354854979115560144022655123531408337"
+  ]
+}

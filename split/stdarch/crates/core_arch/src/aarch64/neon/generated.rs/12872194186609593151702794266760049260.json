@@ -1,0 +1,11 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vtbl2_u8",
+  "hash": "12872194186609593151702794266760049260",
+  "hash_direct": "135921877353625787781762876940315914931",
+  "src": "pub fn vtbl2_u8(a: uint8x8x2_t, b: uint8x8_t) -> uint8x8_t {\n    unsafe { transmute(vqtbl1(transmute(vcombine_u8(a.0, a.1)), b)) }\n}",
+  "callees": [
+    "515252831145664627813003684464528047385",
+    "1233255526937231591714000160034204943743"
+  ]
+}

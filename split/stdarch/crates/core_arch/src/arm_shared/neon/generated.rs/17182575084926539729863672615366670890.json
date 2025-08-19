@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vabaq_u32",
+  "hash": "17182575084926539729863672615366670890",
+  "hash_direct": "662455447658827440514479280110101289484",
+  "src": "pub fn vabaq_u32(a: uint32x4_t, b: uint32x4_t, c: uint32x4_t) -> uint32x4_t {\n    unsafe { simd_add(a, vabdq_u32(b, c)) }\n}",
+  "callees": [
+    "904508657294188688884766244588360876"
+  ]
+}

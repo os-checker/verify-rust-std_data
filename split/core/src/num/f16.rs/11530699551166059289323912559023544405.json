@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f16.rs",
+  "name": "f16::<impl f16>::sqrt",
+  "hash": "11530699551166059289323912559023544405",
+  "hash_direct": "125553952398421527328648961094909297138",
+  "src": "pub fn sqrt(self) -> f16 {\n        // SAFETY: intrinsic with no preconditions\n        unsafe { intrinsics::sqrtf16(self) }\n    }"
+}

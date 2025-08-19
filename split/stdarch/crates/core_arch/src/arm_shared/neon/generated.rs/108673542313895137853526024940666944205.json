@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vmul_s16",
+  "hash": "108673542313895137853526024940666944205",
+  "hash_direct": "63381062373676940114508423466191454135",
+  "src": "pub fn vmul_s16(a: int16x4_t, b: int16x4_t) -> int16x4_t {\n    unsafe { simd_mul(a, b) }\n}"
+}

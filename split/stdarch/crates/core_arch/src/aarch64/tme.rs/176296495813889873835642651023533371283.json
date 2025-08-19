@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/tme.rs",
+  "name": "core_arch::aarch64::tme::_TMFAILURE_ERR",
+  "hash": "176296495813889873835642651023533371283",
+  "hash_direct": "163846379425399708336229021419920174021",
+  "src": "pub const _TMFAILURE_ERR: u64 = 1 << 19;"
+}

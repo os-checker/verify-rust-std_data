@@ -1,0 +1,23 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/mem.rs",
+  "name": "kani::mem::pointer_object::<()>",
+  "hash": "1482549208266437846313053181281464435035",
+  "hash_direct": "19181867496540481764232461190062793841",
+  "attrs": [
+    "#[kanitool::fn_marker = \"PointerObjectHook\"]\n"
+  ],
+  "src": "pub(crate) fn pointer_object<T: PointeeSized>(_ptr: *const T) -> usize {\n            kani_intrinsic()\n        }",
+  "macro_backtrace": [
+    {
+      "callsite": "kani_core::kani_mem!(core)",
+      "defsite": "macro_rules! kani_mem"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ],
+  "callees": [
+    "22860541058604836916644685381819606237"
+  ]
+}

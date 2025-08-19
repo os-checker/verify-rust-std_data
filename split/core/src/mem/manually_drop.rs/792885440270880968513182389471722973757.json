@@ -1,0 +1,7 @@
+{
+  "file": "core/src/mem/manually_drop.rs",
+  "name": "mem::manually_drop::ManuallyDrop::<array::Guard<'_, [u8; 2]>>::new",
+  "hash": "792885440270880968513182389471722973757",
+  "hash_direct": "64915873460037428818461559277829891510",
+  "src": "pub const fn new(value: T) -> ManuallyDrop<T> {\n        ManuallyDrop { value }\n    }"
+}

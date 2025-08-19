@@ -1,0 +1,7 @@
+{
+  "file": "core/src/cell.rs",
+  "name": "cell::UnsafeCell::<isize>::into_inner",
+  "hash": "594308554361543642216252327170439876408",
+  "hash_direct": "211856067671069456914301459032291727044",
+  "src": "pub const fn into_inner(self) -> T {\n        self.value\n    }"
+}

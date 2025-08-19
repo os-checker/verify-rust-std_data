@@ -1,0 +1,10 @@
+{
+  "file": "core/src/char/mod.rs",
+  "name": "char::EscapeDebug::printable",
+  "hash": "111306436546440123701793324078278082257",
+  "hash_direct": "1012717062395817551110214914220028774145",
+  "src": "const fn printable(chr: char) -> Self {\n        Self(EscapeIterInner::printable(chr))\n    }",
+  "callees": [
+    "290879985864858155710538021889327886550"
+  ]
+}

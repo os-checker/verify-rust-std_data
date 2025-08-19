@@ -1,0 +1,16 @@
+{
+  "file": "core/src/net/parser.rs",
+  "name": "<net::parser::AddrParseError as clone::Clone>::clone",
+  "hash": "302143686293362919117391973111953902757",
+  "hash_direct": "551051195916911147115742316184935741820",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ],
+  "callees": [
+    "1370019093155152902010401177936591575917"
+  ]
+}

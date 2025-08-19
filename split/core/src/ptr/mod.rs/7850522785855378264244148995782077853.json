@@ -1,0 +1,8 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "ptr::drop_in_place::<for<'a> fn(&'a char::EscapeDefault) -> (usize, option::Option<usize>) {<char::EscapeDefault as iter::traits::iterator::Iterator>::size_hint}>",
+  "hash": "7850522785855378264244148995782077853",
+  "hash_direct": "31502105711441917977636233878663695468",
+  "inst_kind": "\"Shim\"",
+  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
+}

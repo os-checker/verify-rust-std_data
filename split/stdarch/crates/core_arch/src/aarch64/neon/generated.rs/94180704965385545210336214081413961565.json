@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vceqq_p64",
+  "hash": "94180704965385545210336214081413961565",
+  "hash_direct": "133378947979104394513881966133753555444",
+  "src": "pub fn vceqq_p64(a: poly64x2_t, b: poly64x2_t) -> uint64x2_t {\n    unsafe { simd_eq(a, b) }\n}"
+}

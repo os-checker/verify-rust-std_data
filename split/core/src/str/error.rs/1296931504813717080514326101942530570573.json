@@ -1,0 +1,13 @@
+{
+  "file": "core/src/str/error.rs",
+  "name": "<str::error::ParseBoolError as clone::Clone>::clone",
+  "hash": "1296931504813717080514326101942530570573",
+  "hash_direct": "172402115631793428108485894919874067362",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

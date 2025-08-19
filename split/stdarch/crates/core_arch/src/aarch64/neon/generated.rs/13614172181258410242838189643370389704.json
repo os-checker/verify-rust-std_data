@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vcmlaq_rot180_f64",
+  "hash": "13614172181258410242838189643370389704",
+  "hash_direct": "42529786883803052176961093069371082673",
+  "src": "pub fn vcmlaq_rot180_f64(a: float64x2_t, b: float64x2_t, c: float64x2_t) -> float64x2_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.vcmla.rot180.v2f64\"\n        )]\n        fn _vcmlaq_rot180_f64(a: float64x2_t, b: float64x2_t, c: float64x2_t) -> float64x2_t;\n    }\n    unsafe { _vcmlaq_rot180_f64(a, b, c) }\n}"
+}

@@ -1,0 +1,16 @@
+{
+  "file": "core/src/cmp.rs",
+  "name": "<cmp::Ordering as cmp::Ord>::cmp",
+  "hash": "1464642642282031549015568910828516882983",
+  "hash_direct": "109413177954937401503849963719504553311",
+  "src": "Ord",
+  "macro_backtrace": [
+    {
+      "callsite": "Ord",
+      "defsite": "pub macro Ord($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ],
+  "callees": [
+    "1777835704063727361110005647405088134471"
+  ]
+}

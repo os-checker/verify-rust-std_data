@@ -1,0 +1,16 @@
+{
+  "file": "core/src/ptr/mut_ptr.rs",
+  "name": "ptr::mut_ptr::<impl *mut T>::sub::runtime_sub_nowrap",
+  "hash": "174277204108153543316058831477041384365",
+  "hash_direct": "1101666412247750126117189284922743603",
+  "src": "const fn runtime_sub_nowrap(this: *const (), count: usize, size: usize) -> bool {\n            const_eval_select!(\n                @capture { this: *const (), count: usize, size: usize } -> bool:\n                if const {\n                    true\n                } else {\n                    let Some(byte_offset) = count.checked_mul(size) else {\n                        return false;\n                    };\n                    byte_offset <= (isize::MAX as usize) && this.addr() >= byte_offset\n                }\n            )\n        }",
+  "callees": [
+    "111425599901702694743874629435682172347",
+    "714811817540972740211524868124730226803",
+    "104310221742716516106825842456563485195",
+    "841346702487865802717731804342903065853",
+    "26064680123257945312537992217601395168",
+    "25930241974724637292994171257021210872",
+    "617554482545947003412104686554524783687"
+  ]
+}

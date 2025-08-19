@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ops/try_trait.rs",
+  "name": "ops::try_trait::NeverShortCircuit::<intrinsics::verify::u8_struct>::wrap_mut_1::<(), {closure@/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/arbitrary.rs:28:44: 28:47}>",
+  "hash": "709834557368487262016522280542032798665",
+  "hash_direct": "62114317178309508447586759847159197846",
+  "src": "pub(crate) fn wrap_mut_1<A>(\n        mut f: impl FnMut(A) -> T,\n    ) -> impl FnMut(A) -> NeverShortCircuit<T> {\n        move |a| NeverShortCircuit(f(a))\n    }"
+}

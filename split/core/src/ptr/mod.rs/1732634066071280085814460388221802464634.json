@@ -1,0 +1,8 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "ptr::drop_in_place::<&&task::wake::RawWakerVTable>",
+  "hash": "1732634066071280085814460388221802464634",
+  "hash_direct": "66206816669238311116182392797151492",
+  "inst_kind": "\"Shim\"",
+  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
+}

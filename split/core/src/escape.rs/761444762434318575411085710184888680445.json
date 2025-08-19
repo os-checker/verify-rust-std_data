@@ -1,0 +1,7 @@
+{
+  "file": "core/src/escape.rs",
+  "name": "escape::hex_escape::<4>",
+  "hash": "761444762434318575411085710184888680445",
+  "hash_direct": "645045569062834097921975954753820944",
+  "src": "const fn hex_escape<const N: usize>(byte: u8) -> ([ascii::Char; N], Range<u8>) {\n    const { assert!(N >= 4) };\n\n    let mut output = [ascii::Char::Null; N];\n\n    let hi = HEX_DIGITS[(byte >> 4) as usize];\n    let lo = HEX_DIGITS[(byte & 0xf) as usize];\n\n    output[0] = ascii::Char::ReverseSolidus;\n    output[1] = ascii::Char::SmallX;\n    output[2] = hi;\n    output[3] = lo;\n\n    (output, 0..4)\n}"
+}

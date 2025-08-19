@@ -1,0 +1,14 @@
+{
+  "file": "core/src/str/pattern.rs",
+  "name": "str::pattern::TwoWaySearcher::reverse_maximal_suffix",
+  "hash": "124426753189275491563405063588981513677",
+  "hash_direct": "662596860736866139911821987187679445748",
+  "src": "fn reverse_maximal_suffix(arr: &[u8], known_period: usize, order_greater: bool) -> usize {\n        let mut left = 0; // Corresponds to i in the paper\n        let mut right = 1; // Corresponds to j in the paper\n        let mut offset = 0; // Corresponds to k in the paper, but starting at 0\n        // to match 0-based indexing.\n        let mut period = 1; // Corresponds to p in the paper\n        let n = arr.len();\n\n        while right + offset < n {\n            let a = arr[n - (1 + right + offset)];\n            let b = arr[n - (1 + left + offset)];\n            if (a < b && !order_greater) || (a > b && order_greater) {\n                // Suffix is smaller, period is entire prefix so far.\n                right += offset + 1;\n                offset = 0;\n                period = right - left;\n            } else if a == b {\n                // Advance through repetition of the current period.\n                if offset + 1 == period {\n                    right += offset + 1;\n                    offset = 0;\n                } else {\n                    offset += 1;\n                }\n            } else {\n                // Suffix is larger, start over from current location.\n                left = right;\n                right += 1;\n                offset = 0;\n                period = 1;\n            }\n            if period == known_period {\n                break;\n            }\n        }\n        debug_assert!(period <= known_period);\n        left\n    }",
+  "callees": [
+    "47323665595455568617290020941376774286",
+    "841904668883726495316837415609641023349",
+    "1258931108755458209614962827106116332072",
+    "53589810041120365110998933211304468616",
+    "1243847030362955698517207199029174369810"
+  ]
+}

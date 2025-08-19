@@ -1,0 +1,11 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vmlsl_high_u16",
+  "hash": "17929473104017092289274165310380525208",
+  "hash_direct": "103366642921709607024228662924268185393",
+  "src": "pub fn vmlsl_high_u16(a: uint32x4_t, b: uint16x8_t, c: uint16x8_t) -> uint32x4_t {\n    unsafe {\n        let b: uint16x4_t = simd_shuffle!(b, b, [4, 5, 6, 7]);\n        let c: uint16x4_t = simd_shuffle!(c, c, [4, 5, 6, 7]);\n        vmlsl_u16(a, b, c)\n    }\n}",
+  "callees": [
+    "40221015756315533372599526026576651763",
+    "10682280033029181848486058936537171870"
+  ]
+}

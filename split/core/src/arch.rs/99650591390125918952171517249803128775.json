@@ -1,0 +1,7 @@
+{
+  "file": "core/src/arch.rs",
+  "name": "arch::breakpoint",
+  "hash": "99650591390125918952171517249803128775",
+  "hash_direct": "5905194355766483511548018124696370232",
+  "src": "pub fn breakpoint() {\n    core::intrinsics::breakpoint();\n}"
+}

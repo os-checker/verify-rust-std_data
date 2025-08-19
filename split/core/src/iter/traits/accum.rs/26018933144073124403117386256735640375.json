@@ -1,0 +1,53 @@
+{
+  "file": "core/src/iter/traits/accum.rs",
+  "name": "<usize as iter::traits::accum::Sum>::sum::<iter::adapters::map::Map<slice::iter::Iter<'_, u8>, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/iter/adapters/filter.rs:138:13: 138:21}>>",
+  "hash": "26018933144073124403117386256735640375",
+  "hash_direct": "1350799498536538279316976579065819711046",
+  "src": "fn sum<I: Iterator<Item=Self>>(iter: I) -> Self {\n                iter.fold(\n                    $zero,\n                    #[rustc_inherit_overflow_checks]\n                    |a, b| a + b,\n                )\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "integer_sum_product!(@impls 0, 1,\n                #[stable(feature = \"iter_arith_traits\", since = \"1.12.0\")],\n                $($a)*)",
+      "defsite": "macro_rules! integer_sum_product {\n    (@impls $zero:expr, $one:expr, #[$attr:meta], $($a:ty)*) => ($(\n        #[$attr]\n        impl Sum for $a {\n            fn sum<I: Iterator<Item=Self>>(iter: I) -> Self {\n                iter.fold(\n                    $zero,\n                    #[rustc_inherit_overflow_checks]\n                    |a, b| a + b,\n                )\n            }\n        }\n\n        #[$attr]\n        impl Product for $a {\n            fn product<I: Iterator<Item=Self>>(iter: I) -> Self {\n                iter.fold(\n                    $one,\n                    #[rustc_inherit_overflow_checks]\n                    |a, b| a * b,\n                )\n            }\n        }\n\n        #[$attr]\n        impl<'a> Sum<&'a $a> for $a {\n            fn sum<I: Iterator<Item=&'a Self>>(iter: I) -> Self {\n                iter.fold(\n                    $zero,\n                    #[rustc_inherit_overflow_checks]\n                    |a, b| a + b,\n                )\n            }\n        }\n\n        #[$attr]\n        impl<'a> Product<&'a $a> for $a {\n            fn product<I: Iterator<Item=&'a Self>>(iter: I) -> Self {\n                iter.fold(\n                    $one,\n                    #[rustc_inherit_overflow_checks]\n                    |a, b| a * b,\n                )\n            }\n        }\n    )*);\n    ($($a:ty)*) => (\n        integer_sum_product!(@impls 0, 1,\n                #[stable(feature = \"iter_arith_traits\", since = \"1.12.0\")],\n                $($a)*);\n        integer_sum_product!(@impls Wrapping(0), Wrapping(1),\n                #[stable(feature = \"wrapping_iter_arith\", since = \"1.14.0\")],\n                $(Wrapping<$a>)*);\n    );\n}"
+    },
+    {
+      "callsite": "integer_sum_product! { i8 i16 i32 i64 i128 isize u8 u16 u32 u64 u128 usize }",
+      "defsite": "macro_rules! integer_sum_product {\n    (@impls $zero:expr, $one:expr, #[$attr:meta], $($a:ty)*) => ($(\n        #[$attr]\n        impl Sum for $a {\n            fn sum<I: Iterator<Item=Self>>(iter: I) -> Self {\n                iter.fold(\n                    $zero,\n                    #[rustc_inherit_overflow_checks]\n                    |a, b| a + b,\n                )\n            }\n        }\n\n        #[$attr]\n        impl Product for $a {\n            fn product<I: Iterator<Item=Self>>(iter: I) -> Self {\n                iter.fold(\n                    $one,\n                    #[rustc_inherit_overflow_checks]\n                    |a, b| a * b,\n                )\n            }\n        }\n\n        #[$attr]\n        impl<'a> Sum<&'a $a> for $a {\n            fn sum<I: Iterator<Item=&'a Self>>(iter: I) -> Self {\n                iter.fold(\n                    $zero,\n                    #[rustc_inherit_overflow_checks]\n                    |a, b| a + b,\n                )\n            }\n        }\n\n        #[$attr]\n        impl<'a> Product<&'a $a> for $a {\n            fn product<I: Iterator<Item=&'a Self>>(iter: I) -> Self {\n                iter.fold(\n                    $one,\n                    #[rustc_inherit_overflow_checks]\n                    |a, b| a * b,\n                )\n            }\n        }\n    )*);\n    ($($a:ty)*) => (\n        integer_sum_product!(@impls 0, 1,\n                #[stable(feature = \"iter_arith_traits\", since = \"1.12.0\")],\n                $($a)*);\n        integer_sum_product!(@impls Wrapping(0), Wrapping(1),\n                #[stable(feature = \"wrapping_iter_arith\", since = \"1.14.0\")],\n                $(Wrapping<$a>)*);\n    );\n}"
+    }
+  ],
+  "callees": [
+    "47323665595455568617290020941376774286",
+    "1329845230409163288212548289525672875535",
+    "47278574192031232971799194590021398469",
+    "16824420916691935049705640393259467449",
+    "14314158248731667467224830801301140817",
+    "1740349853341161241318022375811744789656",
+    "117866791398837999916729913240660212602",
+    "78937725557049865865312472258624739921",
+    "146047412284994450699670763407526667493",
+    "1712898201300478840215074793236064467963",
+    "1182371843420022111010336901757313084440",
+    "13796074939706337624507826801091410480",
+    "841904668883726495316837415609641023349",
+    "1258931108755458209614962827106116332072",
+    "53589810041120365110998933211304468616",
+    "1243847030362955698517207199029174369810",
+    "105125143701458073564296455695110349394",
+    "14289085791843058303972699274315536239",
+    "703663108277374327010040438608357482834",
+    "1100495660517602822510660091708953776518",
+    "261114641164087560416314538374841383619",
+    "134444069993780397564703136863158148716",
+    "120554772527146371477803731781472626688",
+    "591163883570913488917341250007887670228",
+    "934375696446284627516563118665690549226",
+    "1302514623760732210917631482165556335973",
+    "1028023859496283824714006082102994000183",
+    "13445532662779670761228880372488293329",
+    "1775737194777331674985764993211109601",
+    "774656650382130508918215221937405910597",
+    "121973516639670562835557836045994389718",
+    "156558724737321886766153526308848840146",
+    "1137271765924114987514947403158445640283",
+    "399232661239117480517401994520839366833"
+  ]
+}

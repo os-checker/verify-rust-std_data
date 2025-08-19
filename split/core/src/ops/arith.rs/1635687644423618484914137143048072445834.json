@@ -1,0 +1,13 @@
+{
+  "file": "core/src/ops/arith.rs",
+  "name": "<u16 as ops::arith::Mul>::mul",
+  "hash": "1635687644423618484914137143048072445834",
+  "hash_direct": "124292582259494771369867440313156767391",
+  "src": "fn mul(self, other: $t) -> $t { self * other }",
+  "macro_backtrace": [
+    {
+      "callsite": "mul_impl! { usize u8 u16 u32 u64 u128 isize i8 i16 i32 i64 i128 f16 f32 f64 f128 }",
+      "defsite": "macro_rules! mul_impl {\n    ($($t:ty)*) => ($(\n        #[stable(feature = \"rust1\", since = \"1.0.0\")]\n        #[rustc_const_unstable(feature = \"const_ops\", issue = \"143802\")]\n        impl const Mul for $t {\n            type Output = $t;\n\n            #[inline]\n            #[track_caller]\n            #[rustc_inherit_overflow_checks]\n            fn mul(self, other: $t) -> $t { self * other }\n        }\n\n        forward_ref_binop! { impl Mul, mul for $t, $t }\n    )*)\n}"
+    }
+  ]
+}

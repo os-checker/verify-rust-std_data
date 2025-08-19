@@ -1,0 +1,7 @@
+{
+  "file": "core/src/str/converts.rs",
+  "name": "str::converts::from_utf8_unchecked_mut",
+  "hash": "1378841877187097314016728178981803040846",
+  "hash_direct": "991101651646495257210386756137781209337",
+  "src": "pub const unsafe fn from_utf8_unchecked_mut(v: &mut [u8]) -> &mut str {\n    // SAFETY: the caller must guarantee that the bytes `v`\n    // are valid UTF-8, thus the cast to `*mut str` is safe.\n    // Also, the pointer dereference is safe because that pointer\n    // comes from a reference which is guaranteed to be valid for writes.\n    unsafe { &mut *(v as *mut [u8] as *mut str) }\n}"
+}

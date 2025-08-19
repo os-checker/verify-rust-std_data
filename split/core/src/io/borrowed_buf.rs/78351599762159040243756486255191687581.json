@@ -1,0 +1,13 @@
+{
+  "file": "core/src/io/borrowed_buf.rs",
+  "name": "io::borrowed_buf::BorrowedBuf::<'_>::set_init",
+  "hash": "78351599762159040243756486255191687581",
+  "hash_direct": "1511400660843119010314144370342831389198",
+  "src": "pub unsafe fn set_init(&mut self, n: usize) -> &mut Self {\n        self.init = cmp::max(self.init, n);\n        self\n    }",
+  "callees": [
+    "1098097363774377275016969441593029895798",
+    "589599466487462365011430963401962118509",
+    "1011714002625413459616499351526972005335",
+    "136032794974893814259994759472454752644"
+  ]
+}

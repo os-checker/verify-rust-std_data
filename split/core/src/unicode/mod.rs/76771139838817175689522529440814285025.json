@@ -1,0 +1,7 @@
+{
+  "file": "core/src/unicode/mod.rs",
+  "name": "unicode::UNICODE_VERSION",
+  "hash": "76771139838817175689522529440814285025",
+  "hash_direct": "171397065539634908822442538443576156132",
+  "src": "pub const UNICODE_VERSION: (u8, u8, u8) = unicode_data::UNICODE_VERSION;"
+}

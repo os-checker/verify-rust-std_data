@@ -1,0 +1,7 @@
+{
+  "file": "core/src/convert/mod.rs",
+  "name": "<convert::Infallible as cmp::PartialOrd>::partial_cmp",
+  "hash": "544024595072671771918050731785592496432",
+  "hash_direct": "83991806167435033757410232283126461078",
+  "src": "fn partial_cmp(&self, _other: &Self) -> Option<crate::cmp::Ordering> {\n        match *self {}\n    }"
+}

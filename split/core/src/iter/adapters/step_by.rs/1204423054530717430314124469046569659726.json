@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/adapters/step_by.rs",
+  "name": "<iter::adapters::step_by::StepBy<I> as iter::adapters::step_by::StepByImpl<I>>::spec_size_hint::other_size",
+  "hash": "1204423054530717430314124469046569659726",
+  "hash_direct": "16901054533776379040939946620854648900",
+  "src": "fn other_size(step: NonZero<usize>) -> impl Fn(usize) -> usize {\n            move |n| n / step\n        }"
+}

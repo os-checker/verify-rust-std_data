@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vclt_f64",
+  "hash": "48350247315912853557121340008670529347",
+  "hash_direct": "140081210776372332691065435474933924112",
+  "src": "pub fn vclt_f64(a: float64x1_t, b: float64x1_t) -> uint64x1_t {\n    unsafe { simd_lt(a, b) }\n}"
+}

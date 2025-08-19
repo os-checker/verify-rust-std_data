@@ -1,0 +1,10 @@
+{
+  "file": "core/src/escape.rs",
+  "name": "escape::escape_unicode::<10>",
+  "hash": "802059967958499159511222978781090659237",
+  "hash_direct": "112912655572818341522035021792319028304",
+  "src": "const fn escape_unicode<const N: usize>(c: char) -> ([ascii::Char; N], Range<u8>) {\n    const { assert!(N >= 10 && N < u8::MAX as usize) };\n\n    let c = c as u32;\n\n    // OR-ing `1` ensures that for `c == 0` the code computes that\n    // one digit should be printed.\n    let start = (c | 1).leading_zeros() as usize / 4 - 2;\n\n    let mut output = [ascii::Char::Null; N];\n    output[3] = HEX_DIGITS[((c >> 20) & 15) as usize];\n    output[4] = HEX_DIGITS[((c >> 16) & 15) as usize];\n    output[5] = HEX_DIGITS[((c >> 12) & 15) as usize];\n    output[6] = HEX_DIGITS[((c >> 8) & 15) as usize];\n    output[7] = HEX_DIGITS[((c >> 4) & 15) as usize];\n    output[8] = HEX_DIGITS[((c >> 0) & 15) as usize];\n    output[9] = ascii::Char::RightCurlyBracket;\n    output[start + 0] = ascii::Char::ReverseSolidus;\n    output[start + 1] = ascii::Char::SmallU;\n    output[start + 2] = ascii::Char::LeftCurlyBracket;\n\n    (output, (start as u8)..(N as u8))\n}",
+  "callees": [
+    "14336217352403889789696607974386324455"
+  ]
+}

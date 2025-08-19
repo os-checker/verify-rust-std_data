@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f16.rs",
+  "name": "f16::<impl f16>::midpoint::LO",
+  "hash": "129210496245315942905314682755420762494",
+  "hash_direct": "971494385033259694614877246804958921615",
+  "src": "const LO: f16 = f16::MIN_POSITIVE * 2.;"
+}

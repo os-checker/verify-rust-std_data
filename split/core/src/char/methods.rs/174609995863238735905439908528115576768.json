@@ -1,0 +1,7 @@
+{
+  "file": "core/src/char/methods.rs",
+  "name": "char::methods::<impl char>::is_ascii_octdigit",
+  "hash": "174609995863238735905439908528115576768",
+  "hash_direct": "134400124300011702359732930114397492834",
+  "src": "pub const fn is_ascii_octdigit(&self) -> bool {\n        matches!(*self, '0'..='7')\n    }"
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/range.rs",
+  "name": "range::RangeInclusive::<usize>::into_slice_range",
+  "hash": "61371796455300910816665044439415196949",
+  "hash_direct": "1336657072579656127915753417805414001036",
+  "src": "pub(crate) const fn into_slice_range(self) -> Range<usize> {\n        Range { start: self.start, end: self.end + 1 }\n    }"
+}

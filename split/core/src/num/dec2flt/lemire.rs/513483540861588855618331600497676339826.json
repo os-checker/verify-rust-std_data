@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/dec2flt/lemire.rs",
+  "name": "num::dec2flt::lemire::full_multiplication",
+  "hash": "513483540861588855618331600497676339826",
+  "hash_direct": "427830208045642218217594931685285265600",
+  "src": "fn full_multiplication(a: u64, b: u64) -> (u64, u64) {\n    let r = (a as u128) * (b as u128);\n    (r as u64, (r >> 64) as u64)\n}"
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vcmla_rot270_f32",
+  "hash": "1411033094847322307712951312873943259134",
+  "hash_direct": "122745573124986988896905515258399107323",
+  "src": "pub fn vcmla_rot270_f32(a: float32x2_t, b: float32x2_t, c: float32x2_t) -> float32x2_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.vcmla.rot270.v2f32\"\n        )]\n        fn _vcmla_rot270_f32(a: float32x2_t, b: float32x2_t, c: float32x2_t) -> float32x2_t;\n    }\n    unsafe { _vcmla_rot270_f32(a, b, c) }\n}"
+}

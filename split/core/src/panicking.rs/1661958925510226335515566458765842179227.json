@@ -1,0 +1,15 @@
+{
+  "file": "core/src/panicking.rs",
+  "name": "panicking::panic_in_cleanup",
+  "hash": "1661958925510226335515566458765842179227",
+  "hash_direct": "129603136614019600927002537594270367213",
+  "src": "fn panic_in_cleanup() -> ! {\n    // Keep the text in sync with `UnwindTerminateReason::as_str` in `rustc_middle`.\n    panic_nounwind_nobacktrace(\"panic in a destructor during cleanup\")\n}",
+  "callees": [
+    "47323665595455568617290020941376774286",
+    "1329845230409163288212548289525672875535",
+    "841904668883726495316837415609641023349",
+    "1258931108755458209614962827106116332072",
+    "105125143701458073564296455695110349394",
+    "999818737792873603417961145082235471568"
+  ]
+}

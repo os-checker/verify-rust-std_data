@@ -1,0 +1,10 @@
+{
+  "file": "core/src/str/pattern.rs",
+  "name": "<&str as str::pattern::Pattern>::as_utf8_pattern",
+  "hash": "847449013153260269717475643089311310993",
+  "hash_direct": "1707438599491096982515531814124561006118",
+  "src": "fn as_utf8_pattern(&self) -> Option<Utf8Pattern<'_>> {\n        Some(Utf8Pattern::StringPattern(self.as_bytes()))\n    }",
+  "callees": [
+    "45819503778375231969038300244556098990"
+  ]
+}

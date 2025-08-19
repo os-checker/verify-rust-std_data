@@ -1,0 +1,11 @@
+{
+  "file": "core/src/num/f16.rs",
+  "name": "f16::<impl f16>::signum",
+  "hash": "24385429581725819651047640655405819163",
+  "hash_direct": "28300709398496712522636540891431232748",
+  "src": "pub const fn signum(self) -> f16 {\n        if self.is_nan() { Self::NAN } else { 1.0_f16.copysign(self) }\n    }",
+  "callees": [
+    "108874174590053510907512472740743574003",
+    "325778596882228985815328037091464060945"
+  ]
+}

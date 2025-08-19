@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vdupq_n_f32_vfp4",
+  "hash": "50704216287980736683789929155331479303",
+  "hash_direct": "37569208277379459602010840012213578312",
+  "src": "fn vdupq_n_f32_vfp4(value: f32) -> float32x4_t {\n    float32x4_t::splat(value)\n}",
+  "callees": [
+    "2253656419093198434266333379824196881"
+  ]
+}

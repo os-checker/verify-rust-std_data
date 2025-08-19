@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vcale_f32",
+  "hash": "1456328387020277371915410365890288706133",
+  "hash_direct": "15381005605305193327812703608459091031",
+  "src": "pub fn vcale_f32(a: float32x2_t, b: float32x2_t) -> uint32x2_t {\n    vcage_f32(b, a)\n}",
+  "callees": [
+    "33261883409381889932791118801302191753"
+  ]
+}

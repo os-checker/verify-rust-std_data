@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "ptr::non_null::NonNull::<cell::BorrowMutError>::cast::<()>",
+  "hash": "172752860472733698529869465454947679410",
+  "hash_direct": "8876626832873566217465304010744833570",
+  "src": "pub const fn cast<U>(self) -> NonNull<U> {\n        // SAFETY: `self` is a `NonNull` pointer which is necessarily non-null\n        unsafe { NonNull { pointer: self.as_ptr() as *mut U } }\n    }",
+  "callees": [
+    "872245547867451655717338945342161446212"
+  ]
+}

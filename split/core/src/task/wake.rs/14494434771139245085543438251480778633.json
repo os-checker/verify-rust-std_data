@@ -1,0 +1,7 @@
+{
+  "file": "core/src/task/wake.rs",
+  "name": "task::wake::Waker::from_raw",
+  "hash": "14494434771139245085543438251480778633",
+  "hash_direct": "27732098870923096637309688473486866210",
+  "src": "pub const unsafe fn from_raw(waker: RawWaker) -> Waker {\n        Waker { waker }\n    }"
+}

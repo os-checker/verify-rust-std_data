@@ -1,0 +1,7 @@
+{
+  "file": "core/src/net/ip_addr.rs",
+  "name": "<net::ip_addr::Ipv4Addr as convert::From<[u8; 4]>>::from",
+  "hash": "1403877265646685064613124593493548670732",
+  "hash_direct": "1403605360536116988809389941136573114",
+  "src": "fn from(octets: [u8; 4]) -> Ipv4Addr {\n        Ipv4Addr { octets }\n    }"
+}

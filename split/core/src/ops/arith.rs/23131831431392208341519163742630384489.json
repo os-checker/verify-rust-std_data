@@ -1,0 +1,13 @@
+{
+  "file": "core/src/ops/arith.rs",
+  "name": "<i8 as ops::arith::Rem>::rem",
+  "hash": "23131831431392208341519163742630384489",
+  "hash_direct": "175597304947937653505543125270997684660",
+  "src": "fn rem(self, other: $t) -> $t { self % other }",
+  "macro_backtrace": [
+    {
+      "callsite": "rem_impl_integer! {\n    (usize u8 u16 u32 u64 u128) => \"This operation will panic if `other == 0`.\",\n    (isize i8 i16 i32 i64 i128) => \"This operation will panic if `other == 0` or if `self / other` results in overflow.\"\n}",
+      "defsite": "macro_rules! rem_impl_integer {\n    ($(($($t:ty)*) => $panic:expr),*) => ($($(\n        /// This operation satisfies `n % d == n - (n / d) * d`. The\n        /// result has the same sign as the left operand.\n        ///\n        /// # Panics\n        ///\n        #[doc = $panic]\n        #[stable(feature = \"rust1\", since = \"1.0.0\")]\n        #[rustc_const_unstable(feature = \"const_ops\", issue = \"143802\")]\n        impl const Rem for $t {\n            type Output = $t;\n\n            #[inline]\n            #[track_caller]\n            fn rem(self, other: $t) -> $t { self % other }\n        }\n\n        forward_ref_binop! { impl Rem, rem for $t, $t }\n    )*)*)\n}"
+    }
+  ]
+}

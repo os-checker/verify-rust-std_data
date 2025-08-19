@@ -1,0 +1,7 @@
+{
+  "file": "core/src/str/pattern.rs",
+  "name": "<char as str::pattern::Pattern>::as_utf8_pattern",
+  "hash": "1379016533706268986011304858043157544042",
+  "hash_direct": "310941954242760329317738957065936900201",
+  "src": "fn as_utf8_pattern(&self) -> Option<Utf8Pattern<'_>> {\n        Some(Utf8Pattern::CharPattern(*self))\n    }"
+}

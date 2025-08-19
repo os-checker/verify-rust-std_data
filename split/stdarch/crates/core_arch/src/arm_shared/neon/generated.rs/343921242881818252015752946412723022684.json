@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vld4_p16",
+  "hash": "343921242881818252015752946412723022684",
+  "hash_direct": "6069322633688052017152093871793451250",
+  "src": "pub unsafe fn vld4_p16(a: *const p16) -> poly16x4x4_t {\n    transmute(vld4_s16(transmute(a)))\n}",
+  "callees": [
+    "7856641971802510374185517250711876584"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/mem_init.rs",
+  "name": "kani::mem_init::MEM_INIT_STATE",
+  "hash": "159443638333439120896851184630942797194",
+  "hash_direct": "457808022409554934916754091773043770345",
+  "src": "static mut MEM_INIT_STATE: MemoryInitializationState = MemoryInitializationState::new();",
+  "macro_backtrace": [
+    {
+      "callsite": "kani_core::kani_mem_init!(core)",
+      "defsite": "macro_rules! kani_mem_init"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ],
+  "callees": [
+    "86724980348318880836898315211351274744"
+  ]
+}

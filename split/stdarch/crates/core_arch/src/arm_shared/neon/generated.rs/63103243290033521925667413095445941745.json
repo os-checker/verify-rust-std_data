@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vaddl_high_s16",
+  "hash": "63103243290033521925667413095445941745",
+  "hash_direct": "14264808532953309902479809068373044558",
+  "src": "pub fn vaddl_high_s16(a: int16x8_t, b: int16x8_t) -> int32x4_t {\n    unsafe {\n        let a: int16x4_t = simd_shuffle!(a, a, [4, 5, 6, 7]);\n        let b: int16x4_t = simd_shuffle!(b, b, [4, 5, 6, 7]);\n        let a: int32x4_t = simd_cast(a);\n        let b: int32x4_t = simd_cast(b);\n        simd_add(a, b)\n    }\n}"
+}

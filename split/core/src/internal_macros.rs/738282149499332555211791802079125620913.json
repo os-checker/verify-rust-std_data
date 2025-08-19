@@ -1,0 +1,24 @@
+{
+  "file": "core/src/internal_macros.rs",
+  "name": "<i16 as ops::bit::BitAndAssign<&i16>>::bitand_assign",
+  "hash": "738282149499332555211791802079125620913",
+  "hash_direct": "421453118648394537712964426321388294154",
+  "src": "fn $method(&mut self, other: &$u) {\n                $imp::$method(self, *other);\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "forward_ref_op_assign!(impl $imp, $method for $t, $u,\n                #[stable(feature = \"op_assign_builtins_by_ref\", since = \"1.22.0\")])",
+      "defsite": "macro_rules! forward_ref_op_assign {\n    (impl $imp:ident, $method:ident for $t:ty, $u:ty) => {\n        forward_ref_op_assign!(impl $imp, $method for $t, $u,\n                #[stable(feature = \"op_assign_builtins_by_ref\", since = \"1.22.0\")]);\n    };\n    (impl $imp:ident, $method:ident for $t:ty, $u:ty, #[$attr:meta]) => {\n        #[$attr]\n        impl $imp<&$u> for $t {\n            #[inline]\n            #[track_caller]\n            fn $method(&mut self, other: &$u) {\n                $imp::$method(self, *other);\n            }\n        }\n    }\n}"
+    },
+    {
+      "callsite": "forward_ref_op_assign! { impl BitAndAssign, bitand_assign for $t, $t }",
+      "defsite": "macro_rules! forward_ref_op_assign {\n    (impl $imp:ident, $method:ident for $t:ty, $u:ty) => {\n        forward_ref_op_assign!(impl $imp, $method for $t, $u,\n                #[stable(feature = \"op_assign_builtins_by_ref\", since = \"1.22.0\")]);\n    };\n    (impl $imp:ident, $method:ident for $t:ty, $u:ty, #[$attr:meta]) => {\n        #[$attr]\n        impl $imp<&$u> for $t {\n            #[inline]\n            #[track_caller]\n            fn $method(&mut self, other: &$u) {\n                $imp::$method(self, *other);\n            }\n        }\n    }\n}"
+    },
+    {
+      "callsite": "bitand_assign_impl! { bool usize u8 u16 u32 u64 u128 isize i8 i16 i32 i64 i128 }",
+      "defsite": "macro_rules! bitand_assign_impl {\n    ($($t:ty)+) => ($(\n        #[stable(feature = \"op_assign_traits\", since = \"1.8.0\")]\n        impl BitAndAssign for $t {\n            #[inline]\n            fn bitand_assign(&mut self, other: $t) { *self &= other }\n        }\n\n        forward_ref_op_assign! { impl BitAndAssign, bitand_assign for $t, $t }\n    )+)\n}"
+    }
+  ],
+  "callees": [
+    "184303431352984232111119874959197813484"
+  ]
+}

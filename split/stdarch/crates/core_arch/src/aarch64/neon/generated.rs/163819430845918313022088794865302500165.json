@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vzip2_u16",
+  "hash": "163819430845918313022088794865302500165",
+  "hash_direct": "1751831323184375984613603258660019822729",
+  "src": "pub fn vzip2_u16(a: uint16x4_t, b: uint16x4_t) -> uint16x4_t {\n    unsafe { simd_shuffle!(a, b, [2, 6, 3, 7]) }\n}"
+}

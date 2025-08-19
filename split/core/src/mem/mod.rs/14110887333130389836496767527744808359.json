@@ -1,0 +1,7 @@
+{
+  "file": "core/src/mem/mod.rs",
+  "name": "mem::align_of::<ffi::va_list::VaListImpl<'_>>",
+  "hash": "14110887333130389836496767527744808359",
+  "hash_direct": "126589114371470252199063240989792527554",
+  "src": "pub const fn align_of<T>() -> usize {\n    intrinsics::align_of::<T>()\n}"
+}

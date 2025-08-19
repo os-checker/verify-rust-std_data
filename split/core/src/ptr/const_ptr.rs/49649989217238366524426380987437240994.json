@@ -1,0 +1,27 @@
+{
+  "file": "core/src/ptr/const_ptr.rs",
+  "name": "ptr::const_ptr::<impl *const i128>::add",
+  "hash": "49649989217238366524426380987437240994",
+  "hash_direct": "593843143516675426117819649464202153912",
+  "src": "pub const unsafe fn add(self, count: usize) -> Self\n    where\n        T: Sized,\n    {\n        #[cfg(debug_assertions)]\n        #[inline]\n        #[rustc_allow_const_fn_unstable(const_eval_select)]\n        const fn runtime_add_nowrap(this: *const (), count: usize, size: usize) -> bool {\n            const_eval_select!(\n                @capture { this: *const (), count: usize, size: usize } -> bool:\n                if const {\n                    true\n                } else {\n                    let Some(byte_offset) = count.checked_mul(size) else {\n                        return false;\n                    };\n                    let (_, overflow) = this.addr().overflowing_add(byte_offset);\n                    byte_offset <= (isize::MAX as usize) && !overflow\n                }\n            )\n        }\n\n        #[cfg(debug_assertions)] // Expensive, and doesn't catch much in the wild.\n        ub_checks::assert_unsafe_precondition!(\n            check_language_ub,\n            \"ptr::add requires that the address calculation does not overflow\",\n            (\n                this: *const () = self as *const (),\n                count: usize = count,\n                size: usize = size_of::<T>(),\n            ) => runtime_add_nowrap(this, count, size)\n        );\n\n        // SAFETY: the caller must uphold the safety contract for `offset`.\n        unsafe { intrinsics::offset(self, count) }\n    }",
+  "callees": [
+    "47323665595455568617290020941376774286",
+    "111425599901702694743874629435682172347",
+    "714811817540972740211524868124730226803",
+    "1329845230409163288212548289525672875535",
+    "80772345035046942210372022594843481570",
+    "16824420916691935049705640393259467449",
+    "119134434012351003089965286432906201131",
+    "841346702487865802717731804342903065853",
+    "1182371843420022111010336901757313084440",
+    "26064680123257945312537992217601395168",
+    "841904668883726495316837415609641023349",
+    "1258931108755458209614962827106116332072",
+    "105125143701458073564296455695110349394",
+    "25930241974724637292994171257021210872",
+    "617554482545947003412104686554524783687",
+    "152018209062913109616942758022114057971",
+    "7839859953712079114640771271960005865",
+    "399232661239117480517401994520839366833"
+  ]
+}

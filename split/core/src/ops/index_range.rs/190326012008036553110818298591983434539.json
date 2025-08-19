@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ops/index_range.rs",
+  "name": "<ops::index_range::IndexRange as iter::traits::exact_size::ExactSizeIterator>::len",
+  "hash": "190326012008036553110818298591983434539",
+  "hash_direct": "322162468114140663917193798113178775227",
+  "src": "fn len(&self) -> usize {\n        self.len()\n    }",
+  "callees": [
+    "305374531381368603518383057774771282949"
+  ]
+}

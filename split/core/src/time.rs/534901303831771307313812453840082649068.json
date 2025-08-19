@@ -1,0 +1,10 @@
+{
+  "file": "core/src/time.rs",
+  "name": "time::Duration::as_secs_f64",
+  "hash": "534901303831771307313812453840082649068",
+  "hash_direct": "409729171652437140115976456906367778202",
+  "src": "pub const fn as_secs_f64(&self) -> f64 {\n        (self.secs as f64) + (self.nanos.as_inner() as f64) / (NANOS_PER_SEC as f64)\n    }",
+  "callees": [
+    "171102691194686778865679271313349643913"
+  ]
+}

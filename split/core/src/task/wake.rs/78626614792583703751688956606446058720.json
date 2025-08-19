@@ -1,0 +1,17 @@
+{
+  "file": "core/src/task/wake.rs",
+  "name": "<task::wake::RawWaker as cmp::PartialEq>::eq",
+  "hash": "78626614792583703751688956606446058720",
+  "hash_direct": "80851351017132353196142983123597304185",
+  "src": "PartialEq",
+  "macro_backtrace": [
+    {
+      "callsite": "PartialEq",
+      "defsite": "pub macro PartialEq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ],
+  "callees": [
+    "110662289854423594697513926681729292818",
+    "1651306322144619395115651748104106717624"
+  ]
+}

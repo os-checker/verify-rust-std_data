@@ -1,0 +1,21 @@
+{
+  "file": "core/src/ascii/ascii_char.rs",
+  "name": "ascii::ascii_char::AsciiChar::digit_unchecked",
+  "hash": "1171663986222399894714726637380419136195",
+  "hash_direct": "180762044830350879254718248169346780058",
+  "src": "pub const unsafe fn digit_unchecked(d: u8) -> Self {\n        assert_unsafe_precondition!(\n            check_language_ub,\n            \"`ascii::Char::digit_unchecked` input cannot exceed 9.\",\n            (d: u8 = d) => d < 10\n        );\n\n        // SAFETY: `'0'` through `'9'` are U+00030 through U+0039,\n        // so because `d` must be 64 or less the addition can return at most\n        // 112 (0x70), which doesn't overflow and is within the ASCII range.\n        unsafe {\n            let byte = b'0'.unchecked_add(d);\n            Self::from_u8_unchecked(byte)\n        }\n    }",
+  "callees": [
+    "652182000514958061713215128671564018150",
+    "47323665595455568617290020941376774286",
+    "1329845230409163288212548289525672875535",
+    "16824420916691935049705640393259467449",
+    "7418434326773042031826248058658687296",
+    "82238255375868304519870604057524476826",
+    "841904668883726495316837415609641023349",
+    "1258931108755458209614962827106116332072",
+    "105125143701458073564296455695110349394",
+    "20545676461242032347398227782422443799",
+    "926431751072447714115290524535080564415",
+    "399232661239117480517401994520839366833"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "file": "core/src/ops/function.rs",
+  "name": "ops::function::impls::<impl ops::function::FnMut<(&&str,)> for &mut str::IsNotEmpty>::call_mut",
+  "hash": "780623159051669385017363469142558743836",
+  "hash_direct": "3531435966488946355867527574759129614",
+  "src": "extern \"rust-call\" fn call_mut(&mut self, args: A) -> F::Output {\n            (*self).call_mut(args)\n        }",
+  "callees": [
+    "589987432056204359210538578399243772199",
+    "1609192272182408851717040380287160569804",
+    "45819503778375231969038300244556098990",
+    "103529232425067372948580977297303381856",
+    "500039049531792023414807911624995133090"
+  ]
+}

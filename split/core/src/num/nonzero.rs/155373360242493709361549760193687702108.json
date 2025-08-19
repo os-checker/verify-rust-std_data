@@ -1,0 +1,36 @@
+{
+  "file": "core/src/num/nonzero.rs",
+  "name": "num::nonzero::verify::nonzero_check_from_mut_unchecked_u32",
+  "hash": "155373360242493709361549760193687702108",
+  "hash_direct": "107913375982189778572183882334392424525",
+  "proof_kind": "\"Contract\"",
+  "attrs": [
+    "#[kanitool::proof_for_contract = \"NonZero :: < u32 > :: from_mut_unchecked\"]\n"
+  ],
+  "src": "pub fn $harness_name() {\n                let mut x: $t = kani::any();\n                unsafe {\n                    <$nonzero_type>::from_mut_unchecked(&mut x);\n                }\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "nonzero_check_from_mut_unchecked!(\n        u32,\n        core::num::NonZeroU32,\n        nonzero_check_from_mut_unchecked_u32\n    )",
+      "defsite": "macro_rules! nonzero_check_from_mut_unchecked {\n        ($t:ty, $nonzero_type:ty, $harness_name:ident) => {\n            #[kani::proof_for_contract(NonZero::<$t>::from_mut_unchecked)]\n            pub fn $harness_name() {\n                let mut x: $t = kani::any();\n                unsafe {\n                    <$nonzero_type>::from_mut_unchecked(&mut x);\n                }\n            }\n        };\n    }"
+    }
+  ],
+  "callees": [
+    "182646802468273491666682311146773467481",
+    "515681955558462618214343941312455628281",
+    "76571812754372020558398594276099164034",
+    "6126120050059266389618947044252600723",
+    "55268624181377464941500382738073713012",
+    "176570557961947031613467122056263026383",
+    "47323665595455568617290020941376774286",
+    "1329845230409163288212548289525672875535",
+    "1281226002299157831811810752502540256648",
+    "1333568287508349583113136189785503294075",
+    "1718274083021789858316196627016640072410",
+    "841904668883726495316837415609641023349",
+    "1258931108755458209614962827106116332072",
+    "105125143701458073564296455695110349394",
+    "737756175173875485915062704142465577672",
+    "99703569556699921012682357914740305709",
+    "962045741537776018613762800291523164529"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/const_ptr.rs",
+  "name": "ptr::const_ptr::<impl *const fmt::rt::Argument<'_>>::cast::<()>",
+  "hash": "258383674090471065712097594685693339627",
+  "hash_direct": "168431262524850988952143120667410612891",
+  "src": "pub const fn cast<U>(self) -> *const U {\n        self as _\n    }"
+}

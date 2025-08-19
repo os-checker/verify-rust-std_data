@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vsubd_u64",
+  "hash": "5787843769027623894730953737375169872",
+  "hash_direct": "16018646360386776498981476170069087316",
+  "src": "pub fn vsubd_u64(a: u64, b: u64) -> u64 {\n    a.wrapping_sub(b)\n}",
+  "callees": [
+    "14979181759249961013207944287770709969"
+  ]
+}

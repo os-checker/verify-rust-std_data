@@ -1,0 +1,12 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "fmt::Formatter::<'a>::pad_integral::write_prefix",
+  "hash": "1252490680533338683910412060151507734433",
+  "hash_direct": "426159568369199771817402353434815563990",
+  "src": "fn write_prefix(f: &mut Formatter<'_>, sign: Option<char>, prefix: Option<&str>) -> Result {\n            if let Some(c) = sign {\n                f.buf.write_char(c)?;\n            }\n            if let Some(prefix) = prefix { f.buf.write_str(prefix) } else { Ok(()) }\n        }",
+  "callees": [
+    "345779094652510990013028497657958621628",
+    "22866183673949532009302817089247357249",
+    "481760318323362098310716245514364463126"
+  ]
+}

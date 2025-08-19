@@ -1,0 +1,16 @@
+{
+  "file": "core/src/char/mod.rs",
+  "name": "<char::TryFromCharError as cmp::PartialEq>::eq",
+  "hash": "1617051635676498971917638526871573056588",
+  "hash_direct": "148405229575043220289586387116254763169",
+  "src": "PartialEq",
+  "macro_backtrace": [
+    {
+      "callsite": "PartialEq",
+      "defsite": "pub macro PartialEq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ],
+  "callees": [
+    "95533671585904158611130484724537740099"
+  ]
+}

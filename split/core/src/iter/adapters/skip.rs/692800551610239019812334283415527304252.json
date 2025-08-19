@@ -1,0 +1,16 @@
+{
+  "file": "core/src/iter/adapters/skip.rs",
+  "name": "<iter::adapters::skip::Skip<I> as iter::traits::iterator::Iterator>::__iterator_get_unchecked::kani_contract_mode",
+  "hash": "692800551610239019812334283415527304252",
+  "hash_direct": "1274189219470161736316415258561528711760",
+  "attrs": [
+    "#[kanitool::fn_marker = \"kani_contract_mode\"]\n"
+  ],
+  "src": "#[cfg_attr(kani, kani::modifies(self))]",
+  "macro_backtrace": [
+    {
+      "callsite": "#[cfg_attr(kani, kani::modifies(self))]",
+      "defsite": "pub fn modifies(attr: TokenStream, item: TokenStream) -> TokenStream"
+    }
+  ]
+}

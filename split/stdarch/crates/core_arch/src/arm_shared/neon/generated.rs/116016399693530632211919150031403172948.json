@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vld2_s8",
+  "hash": "116016399693530632211919150031403172948",
+  "hash_direct": "198356615665418106512613388031753648392",
+  "src": "pub unsafe fn vld2_s8(a: *const i8) -> int8x8x2_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.ld2.v8i8.p0\"\n        )]\n        fn _vld2_s8(ptr: *const int8x8_t) -> int8x8x2_t;\n    }\n    _vld2_s8(a as _)\n}"
+}

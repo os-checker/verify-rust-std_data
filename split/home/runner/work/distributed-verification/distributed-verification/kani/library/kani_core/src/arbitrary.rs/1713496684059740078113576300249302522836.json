@@ -1,0 +1,17 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/arbitrary.rs",
+  "name": "<marker::PhantomPinned as kani::Arbitrary>::any",
+  "hash": "1713496684059740078113576300249302522836",
+  "hash_direct": "61857176807743735992458160951586544356",
+  "src": "fn any() -> Self {\n                PhantomPinned\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "kani_core::generate_arbitrary!()",
+      "defsite": "macro_rules! generate_arbitrary"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ]
+}

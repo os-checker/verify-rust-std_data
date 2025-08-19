@@ -1,0 +1,11 @@
+{
+  "file": "core/src/iter/range.rs",
+  "name": "iter::range::<impl iter::traits::iterator::Iterator for ops::range::Range<u32>>::size_hint",
+  "hash": "141164633681353958117412788946519664444",
+  "hash_direct": "553361338397256033312812166779232293088",
+  "src": "fn size_hint(&self) -> (usize, Option<usize>) {\n        if self.start < self.end {\n            Step::steps_between(&self.start, &self.end)\n        } else {\n            (0, Some(0))\n        }\n    }",
+  "callees": [
+    "519478665170207159314235095145570757294",
+    "19171959075713989941463510649343301993"
+  ]
+}

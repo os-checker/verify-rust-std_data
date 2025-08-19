@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vabsq_f32",
+  "hash": "492530303110889913218299959720289308143",
+  "hash_direct": "292458900443236284611827834487824014428",
+  "src": "pub fn vabsq_f32(a: float32x4_t) -> float32x4_t {\n    unsafe { simd_fabs(a) }\n}"
+}

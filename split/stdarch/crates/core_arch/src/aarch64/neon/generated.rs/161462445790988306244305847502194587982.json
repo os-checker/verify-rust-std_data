@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vrsqrtsd_f64",
+  "hash": "161462445790988306244305847502194587982",
+  "hash_direct": "53251481983073237522302066491646289303",
+  "src": "pub fn vrsqrtsd_f64(a: f64, b: f64) -> f64 {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.frsqrts.f64\"\n        )]\n        fn _vrsqrtsd_f64(a: f64, b: f64) -> f64;\n    }\n    unsafe { _vrsqrtsd_f64(a, b) }\n}"
+}

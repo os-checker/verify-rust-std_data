@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vclzq_s8",
+  "hash": "1067749948979445802718425812598850371645",
+  "hash_direct": "593996925515436669812065118307079201878",
+  "src": "pub fn vclzq_s8(a: int8x16_t) -> int8x16_t {\n    unsafe { simd_ctlz(a) }\n}"
+}

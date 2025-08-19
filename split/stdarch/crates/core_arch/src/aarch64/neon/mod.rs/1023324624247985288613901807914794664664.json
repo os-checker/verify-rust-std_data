@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/mod.rs",
+  "name": "core_arch::aarch64::neon::vadd_u64",
+  "hash": "1023324624247985288613901807914794664664",
+  "hash_direct": "473540050269957527715124947277579927933",
+  "src": "pub fn vadd_u64(a: uint64x1_t, b: uint64x1_t) -> uint64x1_t {\n    unsafe { simd_add(a, b) }\n}"
+}

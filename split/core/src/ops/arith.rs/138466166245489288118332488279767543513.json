@@ -1,0 +1,13 @@
+{
+  "file": "core/src/ops/arith.rs",
+  "name": "<f64 as ops::arith::Div>::div",
+  "hash": "138466166245489288118332488279767543513",
+  "hash_direct": "72460290970739298734285527953559914513",
+  "src": "fn div(self, other: $t) -> $t { self / other }",
+  "macro_backtrace": [
+    {
+      "callsite": "div_impl_float! { f16 f32 f64 f128 }",
+      "defsite": "macro_rules! div_impl_float {\n    ($($t:ty)*) => ($(\n        #[stable(feature = \"rust1\", since = \"1.0.0\")]\n        #[rustc_const_unstable(feature = \"const_ops\", issue = \"143802\")]\n        impl const Div for $t {\n            type Output = $t;\n\n            #[inline]\n            fn div(self, other: $t) -> $t { self / other }\n        }\n\n        forward_ref_binop! { impl Div, div for $t, $t }\n    )*)\n}"
+    }
+  ]
+}

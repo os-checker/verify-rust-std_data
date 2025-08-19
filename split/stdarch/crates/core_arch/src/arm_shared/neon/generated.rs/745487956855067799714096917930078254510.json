@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vbic_u32",
+  "hash": "745487956855067799714096917930078254510",
+  "hash_direct": "145809701695790206235452581100859878102",
+  "src": "pub fn vbic_u32(a: uint32x2_t, b: uint32x2_t) -> uint32x2_t {\n    let c = int32x2_t::splat(-1);\n    unsafe { simd_and(simd_xor(b, transmute(c)), a) }\n}",
+  "callees": [
+    "1772407401334837915612343259476096199033"
+  ]
+}

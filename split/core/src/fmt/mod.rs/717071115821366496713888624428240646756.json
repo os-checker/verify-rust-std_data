@@ -1,0 +1,7 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "fmt::flags::SIGN_PLUS_FLAG",
+  "hash": "717071115821366496713888624428240646756",
+  "hash_direct": "15919409089110671154415620745267434109",
+  "src": "pub(super) const SIGN_PLUS_FLAG: u32 = 1 << 21;"
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "fmt::FormattingOptions::get_debug_as_hex",
+  "hash": "1007635971142344987514295548255952187820",
+  "hash_direct": "642157856020669208611112080916536258337",
+  "src": "pub const fn get_debug_as_hex(&self) -> Option<DebugAsHex> {\n        if self.flags & flags::DEBUG_LOWER_HEX_FLAG != 0 {\n            Some(DebugAsHex::Lower)\n        } else if self.flags & flags::DEBUG_UPPER_HEX_FLAG != 0 {\n            Some(DebugAsHex::Upper)\n        } else {\n            None\n        }\n    }"
+}

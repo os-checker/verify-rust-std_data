@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f16.rs",
+  "name": "f16::<impl f16>::powi",
+  "hash": "182734727219748077415663525526809793648",
+  "hash_direct": "1287465064700737426514772403475074992327",
+  "src": "pub fn powi(self, n: i32) -> f16 {\n        // SAFETY: intrinsic with no preconditions\n        unsafe { intrinsics::powif16(self, n) }\n    }"
+}

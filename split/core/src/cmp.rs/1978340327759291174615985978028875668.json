@@ -1,0 +1,7 @@
+{
+  "file": "core/src/cmp.rs",
+  "name": "cmp::Ordering::reverse",
+  "hash": "1978340327759291174615985978028875668",
+  "hash_direct": "541461063073784283818044645546467162055",
+  "src": "pub const fn reverse(self) -> Ordering {\n        match self {\n            Less => Greater,\n            Equal => Equal,\n            Greater => Less,\n        }\n    }"
+}

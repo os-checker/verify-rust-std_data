@@ -1,0 +1,67 @@
+{
+  "file": "core/src/ptr/const_ptr.rs",
+  "name": "ptr::const_ptr::verify::check_const_offset_slice_u64",
+  "hash": "85023741215773438711695090758847353824",
+  "hash_direct": "30495488497557003216169126714488315661",
+  "proof_kind": "\"Contract\"",
+  "attrs": [
+    "#[kanitool::proof_for_contract = \"< * const u64 > :: offset\"]\n"
+  ],
+  "src": "fn $proof_name() {\n                let arr: [$ty; ARRAY_SIZE] = kani::Arbitrary::any_array();\n                let test_ptr: *const $ty = arr.as_ptr();\n                let offset: usize = kani::any();\n                kani::assume(offset <= ARRAY_SIZE * mem::size_of::<$ty>());\n                let ptr_with_offset: *const $ty = test_ptr.wrapping_byte_add(offset);\n\n                let count: $count_ty = kani::any();\n                unsafe {\n                    ptr_with_offset.$fn_name(count);\n                }\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "generate_single_slice_harness!($ty, $offset_fn_name, offset, isize)",
+      "defsite": "macro_rules! generate_single_slice_harness {\n        ($ty:ty, $proof_name:ident, $fn_name:ident, $count_ty:ty) => {\n            #[kani::proof_for_contract(<*const $ty>::$fn_name)]\n            fn $proof_name() {\n                let arr: [$ty; ARRAY_SIZE] = kani::Arbitrary::any_array();\n                let test_ptr: *const $ty = arr.as_ptr();\n                let offset: usize = kani::any();\n                kani::assume(offset <= ARRAY_SIZE * mem::size_of::<$ty>());\n                let ptr_with_offset: *const $ty = test_ptr.wrapping_byte_add(offset);\n\n                let count: $count_ty = kani::any();\n                unsafe {\n                    ptr_with_offset.$fn_name(count);\n                }\n            }\n        };\n    }"
+    },
+    {
+      "callsite": "generate_slice_harnesses!(\n        u64,\n        check_const_add_slice_u64,\n        check_const_sub_slice_u64,\n        check_const_offset_slice_u64\n    )",
+      "defsite": "macro_rules! generate_slice_harnesses {\n        ($ty:ty, $add_fn_name:ident, $sub_fn_name:ident, $offset_fn_name:ident) => {\n            generate_single_slice_harness!($ty, $add_fn_name, add, usize);\n            generate_single_slice_harness!($ty, $sub_fn_name, sub, usize);\n            generate_single_slice_harness!($ty, $offset_fn_name, offset, isize);\n        };\n    }"
+    }
+  ],
+  "callees": [
+    "1531009987700713627114841153360395264198",
+    "615377764820146604818175235662046266044",
+    "306459423763459115515352307666540674473",
+    "1230748672991072180016692955695644415710",
+    "1221265949630586294716386477749978237909",
+    "152257872242060502104032516677329463215",
+    "64428221957133332357265093654334493",
+    "12523065385450334584774763099255662860",
+    "1351354814752518666711985130677223893470",
+    "24614872288685298643967355800714012655",
+    "940250525962090252914117803890597989072",
+    "162562988142812920362309614379838072419",
+    "55268624181377464941500382738073713012",
+    "175621595140360979825899317866141092868",
+    "128103941581933882561095523931319593650",
+    "22860541058604836916644685381819606237",
+    "47323665595455568617290020941376774286",
+    "111425599901702694743874629435682172347",
+    "714811817540972740211524868124730226803",
+    "1329845230409163288212548289525672875535",
+    "128917387769525037544677199914196994932",
+    "16824420916691935049705640393259467449",
+    "1139034081708029965316433271901076709067",
+    "5799168648008231539489194599709139249",
+    "167551103293259876125260225730930841946",
+    "1182371843420022111010336901757313084440",
+    "10420533920630692833318814471402444097",
+    "841904668883726495316837415609641023349",
+    "1258931108755458209614962827106116332072",
+    "105125143701458073564296455695110349394",
+    "25930241974724637292994171257021210872",
+    "617554482545947003412104686554524783687",
+    "1168797547608280959511174552498263599258",
+    "67600863555135158813967193780828293208",
+    "409004251814188261514978784887420310459",
+    "122434421848471776522154323196873744958",
+    "362590534505565111913837546501428784727",
+    "135504866322984926684773548751465922974",
+    "9967240457479057389968263901254034335",
+    "51896313843567329906653106444816051539",
+    "757030052096869355616869003497339047815",
+    "266043580760822618812742725091803232464",
+    "7860355387381212779506594191023960444",
+    "399232661239117480517401994520839366833"
+  ]
+}

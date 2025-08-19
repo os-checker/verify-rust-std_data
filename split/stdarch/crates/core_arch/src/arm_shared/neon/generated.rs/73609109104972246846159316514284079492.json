@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vaddh_f16",
+  "hash": "73609109104972246846159316514284079492",
+  "hash_direct": "558837765007593985215386541063275309907",
+  "src": "pub fn vaddh_f16(a: f16, b: f16) -> f16 {\n    a + b\n}"
+}

@@ -1,0 +1,11 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<ffi::c_str::Bytes<'_> as iter::traits::iterator::Iterator>::eq::<iter::adapters::copied::Copied<slice::iter::Iter<'_, u8>>>::{closure#0}",
+  "hash": "93298097551584795016994225891304124799",
+  "hash_direct": "1124176082218740272417858920389144061631",
+  "src": "|x, y| x == y",
+  "callees": [
+    "1450824968137209211015779136914157765236",
+    "176215937714928582254709899264658457842"
+  ]
+}

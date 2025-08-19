@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vmin_u16",
+  "hash": "64086661616441324614856814379771586778",
+  "hash_direct": "1617412044687692283616441253291736687903",
+  "src": "pub fn vmin_u16(a: uint16x4_t, b: uint16x4_t) -> uint16x4_t {\n    unsafe {\n        let mask: uint16x4_t = simd_le(a, b);\n        simd_select(mask, a, b)\n    }\n}"
+}

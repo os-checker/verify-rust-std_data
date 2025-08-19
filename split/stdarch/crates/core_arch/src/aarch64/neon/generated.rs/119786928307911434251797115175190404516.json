@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vcvtnh_u64_f16",
+  "hash": "119786928307911434251797115175190404516",
+  "hash_direct": "106089566672365387514508750476523854729",
+  "src": "pub fn vcvtnh_u64_f16(a: f16) -> u64 {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.fcvtnu.i64.f16\"\n        )]\n        fn _vcvtnh_u64_f16(a: f16) -> u64;\n    }\n    unsafe { _vcvtnh_u64_f16(a) }\n}"
+}

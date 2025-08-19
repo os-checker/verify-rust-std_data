@@ -1,0 +1,7 @@
+{
+  "file": "core/src/option.rs",
+  "name": "option::Option::<ascii::EscapeDefault>::as_ref",
+  "hash": "1542609655406876541113869181597643083892",
+  "hash_direct": "35227049316268815066590438887885054173",
+  "src": "pub const fn as_ref(&self) -> Option<&T> {\n        match *self {\n            Some(ref x) => Some(x),\n            None => None,\n        }\n    }"
+}

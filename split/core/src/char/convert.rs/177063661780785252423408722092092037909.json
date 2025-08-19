@@ -1,0 +1,13 @@
+{
+  "file": "core/src/char/convert.rs",
+  "name": "<char::convert::CharErrorKind as cmp::PartialEq>::eq",
+  "hash": "177063661780785252423408722092092037909",
+  "hash_direct": "64705598177203301492504185882511695517",
+  "src": "PartialEq",
+  "macro_backtrace": [
+    {
+      "callsite": "PartialEq",
+      "defsite": "pub macro PartialEq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

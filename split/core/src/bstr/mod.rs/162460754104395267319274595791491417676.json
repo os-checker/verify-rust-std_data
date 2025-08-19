@@ -1,0 +1,7 @@
+{
+  "file": "core/src/bstr/mod.rs",
+  "name": "<bstr::ByteStr as convert::AsRef<[u8]>>::as_ref",
+  "hash": "162460754104395267319274595791491417676",
+  "hash_direct": "1617443554877349343112853902201636329669",
+  "src": "fn as_ref(&self) -> &[u8] {\n        &self.0\n    }"
+}

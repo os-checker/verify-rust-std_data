@@ -1,0 +1,14 @@
+{
+  "file": "core/src/time.rs",
+  "name": "time::Duration::from_weeks",
+  "hash": "70154910395512242614634847618630897024",
+  "hash_direct": "699138551530400266017474505471314963060",
+  "src": "pub const fn from_weeks(weeks: u64) -> Duration {\n        if weeks > u64::MAX / (SECS_PER_MINUTE * MINS_PER_HOUR * HOURS_PER_DAY * DAYS_PER_WEEK) {\n            panic!(\"overflow in Duration::from_weeks\");\n        }\n\n        Duration::from_secs(weeks * MINS_PER_HOUR * SECS_PER_MINUTE * HOURS_PER_DAY * DAYS_PER_WEEK)\n    }",
+  "callees": [
+    "47323665595455568617290020941376774286",
+    "841904668883726495316837415609641023349",
+    "1258931108755458209614962827106116332072",
+    "1243847030362955698517207199029174369810",
+    "96158565650678676051374109365203622923"
+  ]
+}

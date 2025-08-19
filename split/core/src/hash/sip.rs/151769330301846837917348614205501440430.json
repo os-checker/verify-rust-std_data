@@ -1,0 +1,16 @@
+{
+  "file": "core/src/hash/sip.rs",
+  "name": "<hash::sip::SipHasher13 as clone::Clone>::clone",
+  "hash": "151769330301846837917348614205501440430",
+  "hash_direct": "11158358525170683172763906369355661605",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ],
+  "callees": [
+    "386083292246359569116556355965921004554"
+  ]
+}

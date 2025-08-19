@@ -1,0 +1,14 @@
+{
+  "file": "core/src/num/dec2flt/decimal_seq.rs",
+  "name": "num::dec2flt::decimal_seq::DecimalSeq::trim",
+  "hash": "77831701728045682559350397202329929431",
+  "hash_direct": "988820038312062391112033863638043686295",
+  "src": "pub fn trim(&mut self) {\n        // All of the following calls to `DecimalSeq::trim` can't panic because:\n        //\n        //  1. `parse_decimal` sets `num_digits` to a max of `DecimalSeq::MAX_DIGITS`.\n        //  2. `right_shift` sets `num_digits` to `write_index`, which is bounded by `num_digits`.\n        //  3. `left_shift` `num_digits` to a max of `DecimalSeq::MAX_DIGITS`.\n        //\n        // Trim is only called in `right_shift` and `left_shift`.\n        debug_assert!(self.num_digits <= Self::MAX_DIGITS);\n        while self.num_digits != 0 && self.digits[self.num_digits - 1] == 0 {\n            self.num_digits -= 1;\n        }\n    }",
+  "callees": [
+    "47323665595455568617290020941376774286",
+    "841904668883726495316837415609641023349",
+    "1258931108755458209614962827106116332072",
+    "53589810041120365110998933211304468616",
+    "1243847030362955698517207199029174369810"
+  ]
+}

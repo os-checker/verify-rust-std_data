@@ -1,0 +1,13 @@
+{
+  "file": "core/src/fmt/num.rs",
+  "name": "<i16 as fmt::num::DisplayInt>::to_u8",
+  "hash": "106824186235262607683051944883341823447",
+  "hash_direct": "1624483657914897868835331228217949741",
+  "src": "fn to_u8(&self) -> u8 { *self as u8 }",
+  "macro_backtrace": [
+    {
+      "callsite": "impl_int! {\n    i8 i16 i32 i64 i128 isize\n    u8 u16 u32 u64 u128 usize\n}",
+      "defsite": "macro_rules! impl_int {\n    ($($t:ident)*) => (\n        $(impl DisplayInt for $t {\n            fn zero() -> Self { 0 }\n            fn from_u8(u: u8) -> Self { u as Self }\n            fn to_u8(&self) -> u8 { *self as u8 }\n            #[cfg(not(any(target_pointer_width = \"64\", target_arch = \"wasm32\")))]\n            fn to_u32(&self) -> u32 { *self as u32 }\n            fn to_u64(&self) -> u64 { *self as u64 }\n            fn to_u128(&self) -> u128 { *self as u128 }\n        })*\n    )\n}"
+    }
+  ]
+}

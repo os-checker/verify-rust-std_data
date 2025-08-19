@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vminv_u32",
+  "hash": "1089771720282130225810104183995116286505",
+  "hash_direct": "179367064659027103284478849608711113088",
+  "src": "pub fn vminv_u32(a: uint32x2_t) -> u32 {\n    unsafe { simd_reduce_min(a) }\n}"
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vmaxnmv_f32",
+  "hash": "123738381318650344373264587361858691930",
+  "hash_direct": "67226984524927780016654373615079200131",
+  "src": "pub fn vmaxnmv_f32(a: float32x2_t) -> f32 {\n    unsafe { simd_reduce_max(a) }\n}"
+}

@@ -1,0 +1,13 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "<fmt::Error as default::Default>::default",
+  "hash": "49406943391607132334976086968857212332",
+  "hash_direct": "1161497880990272490614132136088036818718",
+  "src": "Default",
+  "macro_backtrace": [
+    {
+      "callsite": "Default",
+      "defsite": "pub macro Default($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

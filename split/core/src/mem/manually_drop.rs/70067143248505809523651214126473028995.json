@@ -1,0 +1,7 @@
+{
+  "file": "core/src/mem/manually_drop.rs",
+  "name": "mem::manually_drop::ManuallyDrop::<task::wake::LocalWaker>::new",
+  "hash": "70067143248505809523651214126473028995",
+  "hash_direct": "104085751291243407794135031321693960693",
+  "src": "pub const fn new(value: T) -> ManuallyDrop<T> {\n        ManuallyDrop { value }\n    }"
+}

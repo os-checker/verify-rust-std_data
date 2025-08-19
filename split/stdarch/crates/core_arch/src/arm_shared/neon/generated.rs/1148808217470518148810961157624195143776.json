@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vclsq_s8",
+  "hash": "1148808217470518148810961157624195143776",
+  "hash_direct": "585668423768945104815388102833263943401",
+  "src": "pub fn vclsq_s8(a: int8x16_t) -> int8x16_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(target_arch = \"arm\", link_name = \"llvm.arm.neon.vcls.v16i8\")]\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.cls.v16i8\"\n        )]\n        fn _vclsq_s8(a: int8x16_t) -> int8x16_t;\n    }\n    unsafe { _vclsq_s8(a) }\n}"
+}

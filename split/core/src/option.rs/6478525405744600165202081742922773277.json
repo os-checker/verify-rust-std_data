@@ -1,0 +1,12 @@
+{
+  "file": "core/src/option.rs",
+  "name": "option::Option::<net::ip_addr::Ipv4Addr>::map::<net::ip_addr::IpAddr, fn(net::ip_addr::Ipv4Addr) -> net::ip_addr::IpAddr {net::ip_addr::IpAddr::V4}>",
+  "hash": "6478525405744600165202081742922773277",
+  "hash_direct": "1178408570882656382117574523358919524029",
+  "src": "pub const fn map<U, F>(self, f: F) -> Option<U>\n    where\n        F: ~const FnOnce(T) -> U + ~const Destruct,\n    {\n        match self {\n            Some(x) => Some(f(x)),\n            None => None,\n        }\n    }",
+  "callees": [
+    "27173655377676458562264406150331719642",
+    "54890037537000009838509806138579701214",
+    "100647429463388024461787841779843749577"
+  ]
+}

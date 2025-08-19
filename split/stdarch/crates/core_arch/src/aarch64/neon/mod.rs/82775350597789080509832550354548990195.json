@@ -1,0 +1,11 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/mod.rs",
+  "name": "core_arch::aarch64::neon::vmovq_n_f64",
+  "hash": "82775350597789080509832550354548990195",
+  "hash_direct": "273106726476442411417916138335537844235",
+  "src": "pub fn vmovq_n_f64(value: f64) -> float64x2_t {\n    vdupq_n_f64(value)\n}",
+  "callees": [
+    "98185521967541796944215192684769061706",
+    "86767706999154888997323522737966898085"
+  ]
+}

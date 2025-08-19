@@ -1,0 +1,16 @@
+{
+  "file": "core/src/time.rs",
+  "name": "<time::TryFromFloatSecsError as clone::Clone>::clone",
+  "hash": "98978971872620248064693277195131215",
+  "hash_direct": "158191891909238294707623225916692290573",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ],
+  "callees": [
+    "1216019695968521358013763653534571424149"
+  ]
+}

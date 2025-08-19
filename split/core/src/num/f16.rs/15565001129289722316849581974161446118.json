@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f16.rs",
+  "name": "f16::<impl f16>::floor",
+  "hash": "15565001129289722316849581974161446118",
+  "hash_direct": "19833733530172007179596069609203945827",
+  "src": "pub const fn floor(self) -> f16 {\n        // SAFETY: intrinsic with no preconditions\n        unsafe { intrinsics::floorf16(self) }\n    }"
+}

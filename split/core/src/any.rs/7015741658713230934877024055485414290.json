@@ -1,0 +1,7 @@
+{
+  "file": "core/src/any.rs",
+  "name": "any::type_name::<fn(&()) -> &()>",
+  "hash": "7015741658713230934877024055485414290",
+  "hash_direct": "151469991904264530534942942198024177103",
+  "src": "pub const fn type_name<T: ?Sized>() -> &'static str {\n    const { intrinsics::type_name::<T>() }\n}"
+}

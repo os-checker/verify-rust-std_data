@@ -1,0 +1,16 @@
+{
+  "file": "core/src/iter/adapters/zip.rs",
+  "name": "<iter::adapters::zip::Zip<A, B> as iter::traits::iterator::Iterator>::__iterator_get_unchecked::{closure#0}::REENTRY",
+  "hash": "142201037619544907096319922518794412093",
+  "hash_direct": "1102613503846855203515544700887167917600",
+  "attrs": [
+    "#[kanitool::recursion_tracker]\n"
+  ],
+  "src": "#[cfg_attr(kani, kani::modifies(self))]",
+  "macro_backtrace": [
+    {
+      "callsite": "#[cfg_attr(kani, kani::modifies(self))]",
+      "defsite": "pub fn modifies(attr: TokenStream, item: TokenStream) -> TokenStream"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "file": "core/src/ops/bit.rs",
+  "name": "<u64 as ops::bit::BitXor>::bitxor",
+  "hash": "3286084844820268733269690724260734749",
+  "hash_direct": "130483947866941735562120025126301807644",
+  "src": "fn bitxor(self, other: $t) -> $t { self ^ other }",
+  "macro_backtrace": [
+    {
+      "callsite": "bitxor_impl! { bool usize u8 u16 u32 u64 u128 isize i8 i16 i32 i64 i128 }",
+      "defsite": "macro_rules! bitxor_impl {\n    ($($t:ty)*) => ($(\n        #[stable(feature = \"rust1\", since = \"1.0.0\")]\n        impl BitXor for $t {\n            type Output = $t;\n\n            #[inline]\n            fn bitxor(self, other: $t) -> $t { self ^ other }\n        }\n\n        forward_ref_binop! { impl BitXor, bitxor for $t, $t }\n    )*)\n}"
+    }
+  ]
+}

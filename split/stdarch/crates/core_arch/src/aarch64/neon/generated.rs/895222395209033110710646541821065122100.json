@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vzip1q_s32",
+  "hash": "895222395209033110710646541821065122100",
+  "hash_direct": "134668956055741238465589035811639938980",
+  "src": "pub fn vzip1q_s32(a: int32x4_t, b: int32x4_t) -> int32x4_t {\n    unsafe { simd_shuffle!(a, b, [0, 4, 1, 5]) }\n}"
+}

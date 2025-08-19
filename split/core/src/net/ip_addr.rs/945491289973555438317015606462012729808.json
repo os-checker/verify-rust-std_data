@@ -1,0 +1,11 @@
+{
+  "file": "core/src/net/ip_addr.rs",
+  "name": "net::ip_addr::Ipv6Addr::new",
+  "hash": "945491289973555438317015606462012729808",
+  "hash_direct": "184441011575940960953658325598518415332",
+  "src": "pub const fn new(a: u16, b: u16, c: u16, d: u16, e: u16, f: u16, g: u16, h: u16) -> Ipv6Addr {\n        let addr16 = [\n            a.to_be(),\n            b.to_be(),\n            c.to_be(),\n            d.to_be(),\n            e.to_be(),\n            f.to_be(),\n            g.to_be(),\n            h.to_be(),\n        ];\n        Ipv6Addr {\n            // All elements in `addr16` are big endian.\n            // SAFETY: `[u16; 8]` is always safe to transmute to `[u8; 16]`.\n            octets: unsafe { transmute::<_, [u8; 16]>(addr16) },\n        }\n    }",
+  "callees": [
+    "965869043725195656313548384614345090910",
+    "918021957478411427616459748505733726037"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "file": "core/src/ffi/c_str.rs",
+  "name": "<ffi::c_str::FromBytesWithNulError as clone::Clone>::clone",
+  "hash": "171086068637151978713637145424930769794",
+  "hash_direct": "1354066584861201602510692337912238185336",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

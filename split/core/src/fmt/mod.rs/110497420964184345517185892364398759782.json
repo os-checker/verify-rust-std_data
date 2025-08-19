@@ -1,0 +1,7 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "fmt::FormattingOptions::new",
+  "hash": "110497420964184345517185892364398759782",
+  "hash_direct": "690126103791687537635323091692208635",
+  "src": "pub const fn new() -> Self {\n        Self {\n            flags: ' ' as u32 | flags::ALIGN_UNKNOWN | flags::ALWAYS_SET,\n            width: 0,\n            precision: 0,\n        }\n    }"
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vrev64_p8",
+  "hash": "30419808422622171648752560654099772408",
+  "hash_direct": "1147917400269489842311022243112137097427",
+  "src": "pub fn vrev64_p8(a: poly8x8_t) -> poly8x8_t {\n    unsafe { simd_shuffle!(a, a, [7, 6, 5, 4, 3, 2, 1, 0]) }\n}"
+}

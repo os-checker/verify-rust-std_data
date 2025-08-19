@@ -1,0 +1,10 @@
+{
+  "file": "core/src/char/methods.rs",
+  "name": "char::methods::<impl char>::len_utf16",
+  "hash": "15844204844651226593172936704391873211",
+  "hash_direct": "129887268915266991455104424650314775707",
+  "src": "pub const fn len_utf16(self) -> usize {\n        len_utf16(self as u32)\n    }",
+  "callees": [
+    "720039401277718266815314291424395701883"
+  ]
+}

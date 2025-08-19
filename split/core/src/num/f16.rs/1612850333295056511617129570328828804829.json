@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f16.rs",
+  "name": "f16::<impl f16>::min",
+  "hash": "1612850333295056511617129570328828804829",
+  "hash_direct": "496914354272343501217735427871426982704",
+  "src": "pub const fn min(self, other: f16) -> f16 {\n        intrinsics::minnumf16(self, other)\n    }"
+}

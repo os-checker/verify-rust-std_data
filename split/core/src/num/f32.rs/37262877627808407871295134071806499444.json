@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f32.rs",
+  "name": "f32::<impl f32>::algebraic_add",
+  "hash": "37262877627808407871295134071806499444",
+  "hash_direct": "45071034912804280227146554252234833223",
+  "src": "pub const fn algebraic_add(self, rhs: f32) -> f32 {\n        intrinsics::fadd_algebraic(self, rhs)\n    }"
+}

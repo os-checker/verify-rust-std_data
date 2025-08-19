@@ -1,0 +1,12 @@
+{
+  "file": "core/src/net/ip_addr.rs",
+  "name": "net::ip_addr::Ipv6Addr::is_documentation",
+  "hash": "117397357766109002510199343126014715165",
+  "hash_direct": "35169615383405737827679788186764841634",
+  "src": "pub const fn is_documentation(&self) -> bool {\n        matches!(self.segments(), [0x2001, 0xdb8, ..] | [0x3fff, 0..=0x0fff, ..])\n    }",
+  "callees": [
+    "42261456769457946986279526644059666770",
+    "655364994638183711117813449037291777950",
+    "965869043725195656313548384614345090910"
+  ]
+}

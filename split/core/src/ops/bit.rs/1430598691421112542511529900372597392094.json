@@ -1,0 +1,13 @@
+{
+  "file": "core/src/ops/bit.rs",
+  "name": "<u32 as ops::bit::BitOrAssign>::bitor_assign",
+  "hash": "1430598691421112542511529900372597392094",
+  "hash_direct": "111826480609375157613284728762913772509",
+  "src": "fn bitor_assign(&mut self, other: $t) { *self |= other }",
+  "macro_backtrace": [
+    {
+      "callsite": "bitor_assign_impl! { bool usize u8 u16 u32 u64 u128 isize i8 i16 i32 i64 i128 }",
+      "defsite": "macro_rules! bitor_assign_impl {\n    ($($t:ty)+) => ($(\n        #[stable(feature = \"op_assign_traits\", since = \"1.8.0\")]\n        impl BitOrAssign for $t {\n            #[inline]\n            fn bitor_assign(&mut self, other: $t) { *self |= other }\n        }\n\n        forward_ref_op_assign! { impl BitOrAssign, bitor_assign for $t, $t }\n    )+)\n}"
+    }
+  ]
+}

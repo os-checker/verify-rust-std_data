@@ -1,0 +1,12 @@
+{
+  "file": "core/src/option.rs",
+  "name": "option::Option::<&[u8]>::map::<&bstr::ByteStr, for<'a> fn(&'a [u8]) -> &'a bstr::ByteStr {bstr::ByteStr::from_bytes}>",
+  "hash": "175469696083468572601362001082877617893",
+  "hash_direct": "1569185201771120271316234253060895425353",
+  "src": "pub const fn map<U, F>(self, f: F) -> Option<U>\n    where\n        F: ~const FnOnce(T) -> U + ~const Destruct,\n    {\n        match self {\n            Some(x) => Some(f(x)),\n            None => None,\n        }\n    }",
+  "callees": [
+    "158580378555991015477562488294933864913",
+    "124853843043214582583541683999989837126",
+    "22011892924825229485026849335216069237"
+  ]
+}

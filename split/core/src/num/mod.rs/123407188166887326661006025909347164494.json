@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/mod.rs",
+  "name": "num::<impl u8>::ascii_change_case_unchecked",
+  "hash": "123407188166887326661006025909347164494",
+  "hash_direct": "1081909828290420802014764209507177187084",
+  "src": "pub(crate) const fn ascii_change_case_unchecked(&self) -> u8 {\n        *self ^ ASCII_CASE_MASK\n    }"
+}

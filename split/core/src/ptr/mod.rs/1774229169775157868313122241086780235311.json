@@ -1,0 +1,8 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "ptr::drop_in_place::<unsafe fn(*const ()) -> task::wake::RawWaker>",
+  "hash": "1774229169775157868313122241086780235311",
+  "hash_direct": "58426121194968959971596282862342878661",
+  "inst_kind": "\"Shim\"",
+  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
+}

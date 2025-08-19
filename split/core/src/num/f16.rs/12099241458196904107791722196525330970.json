@@ -1,0 +1,10 @@
+{
+  "file": "core/src/num/f16.rs",
+  "name": "f16::<impl f16>::div_euclid",
+  "hash": "12099241458196904107791722196525330970",
+  "hash_direct": "6292253004682480189652989710777228996",
+  "src": "pub fn div_euclid(self, rhs: f16) -> f16 {\n        let q = (self / rhs).trunc();\n        if self % rhs < 0.0 {\n            return if rhs > 0.0 { q - 1.0 } else { q + 1.0 };\n        }\n        q\n    }",
+  "callees": [
+    "838360734840352187515531266742340401822"
+  ]
+}

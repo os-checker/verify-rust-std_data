@@ -1,0 +1,7 @@
+{
+  "file": "core/src/unicode/unicode_data.rs",
+  "name": "unicode::unicode_data::ShortOffsetRunHeader::start_index",
+  "hash": "620230244182981955916602356246593208579",
+  "hash_direct": "176155042349639512302060066198910133595",
+  "src": "const fn start_index(&self) -> usize {\n        (self.0 >> 21) as usize\n    }"
+}

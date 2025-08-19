@@ -1,0 +1,13 @@
+{
+  "file": "core/src/net/socket_addr.rs",
+  "name": "<net::socket_addr::SocketAddrV6 as cmp::Eq>::assert_receiver_is_total_eq",
+  "hash": "1004741938491218896510110372317350392763",
+  "hash_direct": "48154166466344263878757313880281186096",
+  "src": "Eq",
+  "macro_backtrace": [
+    {
+      "callsite": "Eq",
+      "defsite": "pub macro Eq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

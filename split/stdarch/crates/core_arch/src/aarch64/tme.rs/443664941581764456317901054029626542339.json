@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/tme.rs",
+  "name": "core_arch::aarch64::tme::__tcommit",
+  "hash": "443664941581764456317901054029626542339",
+  "hash_direct": "715269037296042340411825248649306905846",
+  "src": "pub unsafe fn __tcommit() {\n    aarch64_tcommit()\n}"
+}

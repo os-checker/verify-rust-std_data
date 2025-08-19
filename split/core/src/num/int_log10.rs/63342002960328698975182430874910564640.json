@@ -1,0 +1,10 @@
+{
+  "file": "core/src/num/int_log10.rs",
+  "name": "num::int_log10::u16",
+  "hash": "63342002960328698975182430874910564640",
+  "hash_direct": "78955032246941696947605405645582743848",
+  "src": "pub(super) const fn u16(val: u16) -> u32 {\n    less_than_5(val as u32)\n}",
+  "callees": [
+    "469731897247902151615947250155763551554"
+  ]
+}

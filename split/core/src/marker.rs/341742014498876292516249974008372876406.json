@@ -1,0 +1,13 @@
+{
+  "file": "core/src/marker.rs",
+  "name": "<marker::PhantomPinned as cmp::Ord>::cmp",
+  "hash": "341742014498876292516249974008372876406",
+  "hash_direct": "1143466509475906265916692181035139492932",
+  "src": "Ord",
+  "macro_backtrace": [
+    {
+      "callsite": "Ord",
+      "defsite": "pub macro Ord($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

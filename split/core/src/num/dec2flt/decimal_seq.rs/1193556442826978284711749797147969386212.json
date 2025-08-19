@@ -1,0 +1,10 @@
+{
+  "file": "core/src/num/dec2flt/decimal_seq.rs",
+  "name": "num::dec2flt::decimal_seq::parse_decimal_seq::{closure#0}",
+  "hash": "1193556442826978284711749797147969386212",
+  "hash_direct": "733197932177351981012456017688340051894",
+  "src": "|digit| d.try_add_digit(digit)",
+  "callees": [
+    "1833074744190708295011255743658617072655"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "file": "core/src/ops/function.rs",
+  "name": "<fn(net::socket_addr::SocketAddrV4) -> net::socket_addr::SocketAddr {net::socket_addr::SocketAddr::V4} as ops::function::FnOnce<(net::socket_addr::SocketAddrV4,)>>::call_once",
+  "hash": "20939441410938150523237124933118181161",
+  "hash_direct": "767911647026103738713387589281759202594",
+  "inst_kind": "\"Shim\"",
+  "src": "extern \"rust-call\" fn call_once(self, args: Args) -> Self::Output;",
+  "callees": [
+    "1283361108979301834312527807190587111425"
+  ]
+}

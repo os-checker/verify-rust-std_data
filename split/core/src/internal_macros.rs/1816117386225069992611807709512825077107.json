@@ -1,0 +1,24 @@
+{
+  "file": "core/src/internal_macros.rs",
+  "name": "<&f32 as ops::arith::Neg>::neg",
+  "hash": "1816117386225069992611807709512825077107",
+  "hash_direct": "81316026094753675643992277134819058021",
+  "src": "fn $method(self) -> <$t as $imp>::Output {\n                $imp::$method(*self)\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "forward_ref_unop!(impl $imp, $method for $t,\n                #[stable(feature = \"rust1\", since = \"1.0.0\")])",
+      "defsite": "macro_rules! forward_ref_unop {\n    (impl $imp:ident, $method:ident for $t:ty) => {\n        forward_ref_unop!(impl $imp, $method for $t,\n                #[stable(feature = \"rust1\", since = \"1.0.0\")]);\n    };\n    (impl $imp:ident, $method:ident for $t:ty, #[$attr:meta]) => {\n        #[$attr]\n        impl $imp for &$t {\n            type Output = <$t as $imp>::Output;\n\n            #[inline]\n            fn $method(self) -> <$t as $imp>::Output {\n                $imp::$method(*self)\n            }\n        }\n    }\n}"
+    },
+    {
+      "callsite": "forward_ref_unop! { impl Neg, neg for $t }",
+      "defsite": "macro_rules! forward_ref_unop {\n    (impl $imp:ident, $method:ident for $t:ty) => {\n        forward_ref_unop!(impl $imp, $method for $t,\n                #[stable(feature = \"rust1\", since = \"1.0.0\")]);\n    };\n    (impl $imp:ident, $method:ident for $t:ty, #[$attr:meta]) => {\n        #[$attr]\n        impl $imp for &$t {\n            type Output = <$t as $imp>::Output;\n\n            #[inline]\n            fn $method(self) -> <$t as $imp>::Output {\n                $imp::$method(*self)\n            }\n        }\n    }\n}"
+    },
+    {
+      "callsite": "neg_impl! { isize i8 i16 i32 i64 i128 f16 f32 f64 f128 }",
+      "defsite": "macro_rules! neg_impl {\n    ($($t:ty)*) => ($(\n        #[stable(feature = \"rust1\", since = \"1.0.0\")]\n        impl Neg for $t {\n            type Output = $t;\n\n            #[inline]\n            #[rustc_inherit_overflow_checks]\n            fn neg(self) -> $t { -self }\n        }\n\n        forward_ref_unop! { impl Neg, neg for $t }\n    )*)\n}"
+    }
+  ],
+  "callees": [
+    "8313967490340645318406089482631713184"
+  ]
+}

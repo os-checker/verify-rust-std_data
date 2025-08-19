@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ops/try_trait.rs",
+  "name": "<ops::try_trait::NeverShortCircuit<(i8, i8)> as ops::try_trait::Try>::branch",
+  "hash": "259300916870085746014872721636471590509",
+  "hash_direct": "79490768871620669199488688774775706393",
+  "src": "fn branch(self) -> ControlFlow<NeverShortCircuitResidual, T> {\n        ControlFlow::Continue(self.0)\n    }"
+}

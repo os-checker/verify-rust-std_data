@@ -1,0 +1,7 @@
+{
+  "file": "core/src/char/methods.rs",
+  "name": "char::methods::<impl char>::is_ascii_control",
+  "hash": "114080027764717232045303494274524130023",
+  "hash_direct": "707889328493310313610817734227471542215",
+  "src": "pub const fn is_ascii_control(&self) -> bool {\n        matches!(*self, '\\0'..='\\x1F' | '\\x7F')\n    }"
+}

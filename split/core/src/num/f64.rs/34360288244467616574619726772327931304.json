@@ -1,0 +1,10 @@
+{
+  "file": "core/src/num/f64.rs",
+  "name": "f64::<impl f64>::is_sign_negative",
+  "hash": "34360288244467616574619726772327931304",
+  "hash_direct": "71084719182959457766460042547684680039",
+  "src": "pub const fn is_sign_negative(self) -> bool {\n        // IEEE754 says: isSignMinus(x) is true if and only if x has negative sign. isSignMinus\n        // applies to zeros and NaNs as well.\n        self.to_bits() & Self::SIGN_MASK != 0\n    }",
+  "callees": [
+    "85253214614932633916524759824229868238"
+  ]
+}

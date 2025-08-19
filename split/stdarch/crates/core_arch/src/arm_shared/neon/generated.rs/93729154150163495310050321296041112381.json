@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vaddq_p8",
+  "hash": "93729154150163495310050321296041112381",
+  "hash_direct": "741716624460367085416147599491203139993",
+  "src": "pub fn vaddq_p8(a: poly8x16_t, b: poly8x16_t) -> poly8x16_t {\n    unsafe { simd_xor(a, b) }\n}"
+}

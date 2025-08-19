@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/hints.rs",
+  "name": "core_arch::arm_shared::hints::__nop",
+  "hash": "1422047541215555430814959518870199901869",
+  "hash_direct": "579909677252812006813651916327520792541",
+  "src": "pub unsafe fn __nop() {\n    crate::arch::asm!(\"nop\", options(nomem, nostack, preserves_flags));\n}"
+}

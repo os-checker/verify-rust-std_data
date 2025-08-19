@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/int_sqrt.rs",
+  "name": "num::int_sqrt::u8",
+  "hash": "1347572526195785673616491619380226691733",
+  "hash_direct": "166166052121883509838762986356742835854",
+  "src": "pub(super) const fn u8(n: u8) -> u8 {\n    U8_ISQRT_WITH_REMAINDER[n as usize].0\n}"
+}

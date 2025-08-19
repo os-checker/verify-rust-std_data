@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/alignment.rs",
+  "name": "ptr::alignment::<impl convert::From<ptr::alignment::Alignment> for usize>::from",
+  "hash": "1687074465042211938414968599344031994097",
+  "hash_direct": "455942125641527927717770341506250624322",
+  "src": "fn from(align: Alignment) -> usize {\n        align.as_usize()\n    }",
+  "callees": [
+    "96976906222507875941165858861254841419"
+  ]
+}

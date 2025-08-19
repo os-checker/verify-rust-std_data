@@ -1,0 +1,7 @@
+{
+  "file": "core/src/char/decode.rs",
+  "name": "<char::decode::DecodeUtf16Error as error::Error>::description",
+  "hash": "194409924504005494312814481781281792956",
+  "hash_direct": "152414934113187026701267672886784891841",
+  "src": "fn description(&self) -> &str {\n        \"unpaired surrogate found\"\n    }"
+}

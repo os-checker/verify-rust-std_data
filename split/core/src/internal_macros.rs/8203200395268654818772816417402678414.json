@@ -1,0 +1,29 @@
+{
+  "file": "core/src/internal_macros.rs",
+  "name": "<slice::ascii::EscapeByte as ops::function::Fn<(&u8,)>>::call",
+  "hash": "8203200395268654818772816417402678414",
+  "hash_direct": "1065877843481230833127449128888750293",
+  "src": "extern \"rust-call\" fn call(&self, ($( $arg, )*): ($( $ArgTy, )*)) -> $ReturnTy {\n                    $body\n                }",
+  "macro_backtrace": [
+    {
+      "callsite": "impl_fn_for_zst! {\n    #[derive(Clone)]\n    struct EscapeByte impl Fn = |byte: &u8| -> ascii::EscapeDefault {\n        ascii::escape_default(*byte)\n    };\n}",
+      "defsite": "macro_rules! impl_fn_for_zst {\n    ($(\n        $( #[$attr: meta] )*\n        struct $Name: ident impl$( <$( $lifetime : lifetime ),+> )? Fn =\n            |$( $arg: ident: $ArgTy: ty ),*| -> $ReturnTy: ty\n            $body: block;\n    )+) => {\n        $(\n            $( #[$attr] )*\n            struct $Name;\n\n            impl $( <$( $lifetime ),+> )? Fn<($( $ArgTy, )*)> for $Name {\n                #[inline]\n                extern \"rust-call\" fn call(&self, ($( $arg, )*): ($( $ArgTy, )*)) -> $ReturnTy {\n                    $body\n                }\n            }\n\n            impl $( <$( $lifetime ),+> )? FnMut<($( $ArgTy, )*)> for $Name {\n                #[inline]\n                extern \"rust-call\" fn call_mut(\n                    &mut self,\n                    ($( $arg, )*): ($( $ArgTy, )*)\n                ) -> $ReturnTy {\n                    Fn::call(&*self, ($( $arg, )*))\n                }\n            }\n\n            impl $( <$( $lifetime ),+> )? FnOnce<($( $ArgTy, )*)> for $Name {\n                type Output = $ReturnTy;\n\n                #[inline]\n                extern \"rust-call\" fn call_once(self, ($( $arg, )*): ($( $ArgTy, )*)) -> $ReturnTy {\n                    Fn::call(&self, ($( $arg, )*))\n                }\n            }\n        )+\n    }\n}"
+    }
+  ],
+  "callees": [
+    "89429183355173050947974656781433359425",
+    "74631051240262689468463518349994093872",
+    "652182000514958061713215128671564018150",
+    "160243806883616224414841159457010599527",
+    "33215451406105054637090476585334766672",
+    "467887981586808153414513601618781010815",
+    "10245795853391909905888923449921255259",
+    "761444762434318575411085710184888680445",
+    "1757405135217848188410062957811128525662",
+    "47323665595455568617290020941376774286",
+    "841904668883726495316837415609641023349",
+    "1258931108755458209614962827106116332072",
+    "53589810041120365110998933211304468616",
+    "1243847030362955698517207199029174369810"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "ptr::write::<i16>",
+  "hash": "1762421563219374449011764211306108628865",
+  "hash_direct": "74349136990007028456469938826337017540",
+  "src": "pub const unsafe fn write<T>(dst: *mut T, src: T) {\n    // Semantically, it would be fine for this to be implemented as a\n    // `copy_nonoverlapping` and appropriate drop suppression of `src`.\n\n    // However, implementing via that currently produces more MIR than is ideal.\n    // Using an intrinsic keeps it down to just the simple `*dst = move src` in\n    // MIR (11 statements shorter, at the time of writing), and also allows\n    // `src` to stay an SSA value in codegen_ssa, rather than a memory one.\n\n    // SAFETY: the caller must guarantee that `dst` is valid for writes.\n    // `dst` cannot overlap `src` because the caller has mutable access\n    // to `dst` while `src` is owned by this function.\n    unsafe {\n        #[cfg(debug_assertions)] // Too expensive to always enable (for now?)\n        ub_checks::assert_unsafe_precondition!(\n            check_language_ub,\n            \"ptr::write requires that the pointer argument is aligned and non-null\",\n            (\n                addr: *mut () = dst as *mut (),\n                align: usize = align_of::<T>(),\n                is_zst: bool = T::IS_ZST,\n            ) => ub_checks::maybe_is_aligned_and_not_null(addr, align, is_zst)\n        );\n        intrinsics::write_via_move(dst, src)\n    }\n}",
+  "callees": [
+    "47323665595455568617290020941376774286",
+    "1329845230409163288212548289525672875535",
+    "109763229663154342343123224747831634619",
+    "16824420916691935049705640393259467449",
+    "561445107989240208511361370086377379752",
+    "88482059356660504409578437250418074909",
+    "1617054938297627622011998382328717871744",
+    "1196638383615410162910723134175805433641",
+    "841904668883726495316837415609641023349",
+    "1258931108755458209614962827106116332072",
+    "1243847030362955698517207199029174369810",
+    "105125143701458073564296455695110349394",
+    "25930241974724637292994171257021210872",
+    "617554482545947003412104686554524783687",
+    "1445917162577882149418297081791436471284",
+    "849628185942532211610194183090257053256",
+    "703663108277374327010040438608357482834",
+    "1100495660517602822510660091708953776518",
+    "60567795734927819996314297551758223619",
+    "399232661239117480517401994520839366833",
+    "165260604638305226342101042842060873588",
+    "34478597508049401479557782585707843723"
+  ]
+}

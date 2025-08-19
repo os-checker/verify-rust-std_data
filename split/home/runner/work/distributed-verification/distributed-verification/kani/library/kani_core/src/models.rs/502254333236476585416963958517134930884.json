@@ -1,0 +1,28 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/models.rs",
+  "name": "<usize as kani::rustc_intrinsics::ToISize>::to_isize",
+  "hash": "502254333236476585416963958517134930884",
+  "hash_direct": "57152220101530240483462885047758577801",
+  "src": "fn to_isize(self) -> isize {\n                    if let Ok(val) = self.try_into() {\n                        val\n                    } else {\n                        kani::safety_check(false, \"Offset value overflows isize\");\n                        unreachable!();\n                    }\n                }",
+  "macro_backtrace": [
+    {
+      "callsite": "kani_core::generate_models!()",
+      "defsite": "macro_rules! generate_models"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ],
+  "callees": [
+    "194549954392298174017290392613951205598",
+    "147927258394387413862877948882182121301",
+    "67650563361512667016487847547021018557",
+    "600621346239527097511770572551774702702",
+    "47323665595455568617290020941376774286",
+    "841904668883726495316837415609641023349",
+    "1258931108755458209614962827106116332072",
+    "53589810041120365110998933211304468616",
+    "1243847030362955698517207199029174369810"
+  ]
+}

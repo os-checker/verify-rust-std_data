@@ -1,0 +1,10 @@
+{
+  "file": "core/src/net/ip_addr.rs",
+  "name": "net::ip_addr::Ipv4Addr::is_loopback",
+  "hash": "79687300395009530101441219959955387644",
+  "hash_direct": "11298003530079740395554986899629148584",
+  "src": "pub const fn is_loopback(&self) -> bool {\n        self.octets()[0] == 127\n    }",
+  "callees": [
+    "12017343041207958746844635751563486115"
+  ]
+}

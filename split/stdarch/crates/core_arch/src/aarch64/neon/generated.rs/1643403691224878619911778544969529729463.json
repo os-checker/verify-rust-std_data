@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vsm4eq_u32",
+  "hash": "1643403691224878619911778544969529729463",
+  "hash_direct": "1682218557475616886216003566742884401759",
+  "src": "pub fn vsm4eq_u32(a: uint32x4_t, b: uint32x4_t) -> uint32x4_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.crypto.sm4e\"\n        )]\n        fn _vsm4eq_u32(a: uint32x4_t, b: uint32x4_t) -> uint32x4_t;\n    }\n    unsafe { _vsm4eq_u32(a, b) }\n}"
+}

@@ -1,0 +1,16 @@
+{
+  "file": "core/src/iter/adapters/enumerate.rs",
+  "name": "<iter::adapters::enumerate::Enumerate<I> as iter::traits::iterator::Iterator>::__iterator_get_unchecked::{closure#0}::REENTRY",
+  "hash": "20894049722410170819282479782890357825",
+  "hash_direct": "27453929691886731235804127111958306153",
+  "attrs": [
+    "#[kanitool::recursion_tracker]\n"
+  ],
+  "src": "#[cfg_attr(kani, kani::modifies(self))]",
+  "macro_backtrace": [
+    {
+      "callsite": "#[cfg_attr(kani, kani::modifies(self))]",
+      "defsite": "pub fn modifies(attr: TokenStream, item: TokenStream) -> TokenStream"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "file": "core/src/time.rs",
+  "name": "<time::Duration as ub_checks::Invariant>::is_safe",
+  "hash": "1350241653280072077214979101506031155903",
+  "hash_direct": "486325547378042665917316978803572337333",
+  "src": "Invariant",
+  "macro_backtrace": [
+    {
+      "callsite": "Invariant",
+      "defsite": "#[proc_macro_error]"
+    }
+  ],
+  "callees": [
+    "171102691194686778865679271313349643913",
+    "87241632561322057243800452756348169407",
+    "458943044355303009710281133974144533472"
+  ]
+}

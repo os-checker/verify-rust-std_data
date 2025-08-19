@@ -1,0 +1,11 @@
+{
+  "file": "core/src/ops/function.rs",
+  "name": "<fn(num::nonzero::NonZero<usize>) -> result::Result<(), num::nonzero::NonZero<usize>> {result::Result::<(), num::nonzero::NonZero<usize>>::Err} as ops::function::FnOnce<(num::nonzero::NonZero<usize>,)>>::call_once",
+  "hash": "61243377896084322717777372197237784668",
+  "hash_direct": "62481032635851346348735978063214330476",
+  "inst_kind": "\"Shim\"",
+  "src": "extern \"rust-call\" fn call_once(self, args: Args) -> Self::Output;",
+  "callees": [
+    "151921782545986132711095630321482724997"
+  ]
+}

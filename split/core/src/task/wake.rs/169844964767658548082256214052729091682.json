@@ -1,0 +1,7 @@
+{
+  "file": "core/src/task/wake.rs",
+  "name": "task::wake::ContextBuilder::<'_>::ext",
+  "hash": "169844964767658548082256214052729091682",
+  "hash_direct": "1479236930380742953818174218601744654461",
+  "src": "pub const fn ext(self, data: &'a mut dyn Any) -> Self {\n        Self { ext: ExtData::Some(data), ..self }\n    }"
+}

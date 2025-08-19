@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/mod.rs",
+  "name": "num::<impl u8>::is_ascii_digit",
+  "hash": "115823485503277871174919037446138708138",
+  "hash_direct": "1450425564349244679817881009567479713372",
+  "src": "pub const fn is_ascii_digit(&self) -> bool {\n        matches!(*self, b'0'..=b'9')\n    }"
+}

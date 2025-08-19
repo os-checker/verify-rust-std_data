@@ -1,0 +1,13 @@
+{
+  "file": "core/src/num/dec2flt/decimal_seq.rs",
+  "name": "<num::dec2flt::decimal_seq::DecimalSeq as clone::Clone>::clone",
+  "hash": "1153522991229613923830718532853320428",
+  "hash_direct": "1278085457694899916416986250793379170976",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

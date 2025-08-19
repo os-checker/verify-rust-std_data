@@ -1,0 +1,12 @@
+{
+  "file": "core/src/cmp.rs",
+  "name": "cmp::Ordering::then_with::<{closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/panic/location.rs:67:24: 67:26}>",
+  "hash": "5592847644949520254314199059458852814",
+  "hash_direct": "103460366666464199418085039112515869510",
+  "src": "pub fn then_with<F: FnOnce() -> Ordering>(self, f: F) -> Ordering {\n        match self {\n            Equal => f(),\n            _ => self,\n        }\n    }",
+  "callees": [
+    "6805562217973734478490858430748473698",
+    "102608610784380235634542843447619941674",
+    "37968811424679251064279502791470798662"
+  ]
+}

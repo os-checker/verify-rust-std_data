@@ -1,0 +1,13 @@
+{
+  "file": "core/src/num/dec2flt/common.rs",
+  "name": "<num::dec2flt::common::BiasedFp as cmp::Eq>::assert_receiver_is_total_eq",
+  "hash": "104558809110175468053916315646201362736",
+  "hash_direct": "14827825096316915116476502676394490286",
+  "src": "Eq",
+  "macro_backtrace": [
+    {
+      "callsite": "Eq",
+      "defsite": "pub macro Eq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

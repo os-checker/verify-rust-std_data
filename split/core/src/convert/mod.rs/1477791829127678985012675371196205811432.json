@@ -1,0 +1,11 @@
+{
+  "file": "core/src/convert/mod.rs",
+  "name": "<num::nonzero::NonZero<isize> as convert::Into<isize>>::into",
+  "hash": "1477791829127678985012675371196205811432",
+  "hash_direct": "8376052867950256639315872989132988615",
+  "src": "fn into(self) -> U {\n        U::from(self)\n    }",
+  "callees": [
+    "1784427890075602903111769257932105315142",
+    "147184255988169090691456365499094506676"
+  ]
+}

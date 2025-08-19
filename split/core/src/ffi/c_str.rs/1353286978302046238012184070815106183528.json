@@ -1,0 +1,13 @@
+{
+  "file": "core/src/ffi/c_str.rs",
+  "name": "<ffi::c_str::FromBytesWithNulError as cmp::Eq>::assert_receiver_is_total_eq",
+  "hash": "1353286978302046238012184070815106183528",
+  "hash_direct": "178510237295659195727087448531143571785",
+  "src": "Eq",
+  "macro_backtrace": [
+    {
+      "callsite": "Eq",
+      "defsite": "pub macro Eq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

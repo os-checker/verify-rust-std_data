@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vget_low_u64",
+  "hash": "348409537362495185215410928855787011159",
+  "hash_direct": "11542767438843904445111475461988620528",
+  "src": "pub fn vget_low_u64(a: uint64x2_t) -> uint64x1_t {\n    unsafe { uint64x1_t([simd_extract!(a, 0)]) }\n}"
+}

@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vcged_u64",
+  "hash": "176720409252275922067415777697833050279",
+  "hash_direct": "1418558684844864788315509695904528104202",
+  "src": "pub fn vcged_u64(a: u64, b: u64) -> u64 {\n    unsafe { transmute(vcge_u64(transmute(a), transmute(b))) }\n}",
+  "callees": [
+    "31664235971473300945849458112805478814"
+  ]
+}

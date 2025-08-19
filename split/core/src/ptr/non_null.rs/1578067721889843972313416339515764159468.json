@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "ptr::non_null::NonNull::<&net::ip_addr::Ipv6Addr>::from_ref",
+  "hash": "1578067721889843972313416339515764159468",
+  "hash_direct": "614282258946229330616726802253352183700",
+  "src": "pub const fn from_ref(r: &T) -> Self {\n        // SAFETY: A reference cannot be null.\n        unsafe { NonNull { pointer: r as *const T } }\n    }"
+}

@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vabal_s8",
+  "hash": "1576353803558466240945753961031229457",
+  "hash_direct": "63826215762088367209939423204960638669",
+  "src": "pub fn vabal_s8(a: int16x8_t, b: int8x8_t, c: int8x8_t) -> int16x8_t {\n    let d: int8x8_t = vabd_s8(b, c);\n    unsafe {\n        let e: uint8x8_t = simd_cast(d);\n        simd_add(a, simd_cast(e))\n    }\n}",
+  "callees": [
+    "1602295691029261111113017463623458585997"
+  ]
+}

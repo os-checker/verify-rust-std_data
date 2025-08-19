@@ -1,0 +1,13 @@
+{
+  "file": "core/src/fmt/num.rs",
+  "name": "<fmt::num::Octal as clone::Clone>::clone",
+  "hash": "115749476005323578854142061694952054076",
+  "hash_direct": "132304578291900658933520067693869834553",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

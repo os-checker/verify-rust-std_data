@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/flt2dec/mod.rs",
+  "name": "num::flt2dec::determine_sign",
+  "hash": "1438781855530343917818066995436396679760",
+  "hash_direct": "6366752098822491801392373904224224013",
+  "src": "fn determine_sign(sign: Sign, decoded: &FullDecoded, negative: bool) -> &'static str {\n    match (*decoded, sign) {\n        (FullDecoded::Nan, _) => \"\",\n        (_, Sign::Minus) => {\n            if negative {\n                \"-\"\n            } else {\n                \"\"\n            }\n        }\n        (_, Sign::MinusPlus) => {\n            if negative {\n                \"-\"\n            } else {\n                \"+\"\n            }\n        }\n    }\n}"
+}

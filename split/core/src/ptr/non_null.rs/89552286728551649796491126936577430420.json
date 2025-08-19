@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "ptr::non_null::NonNull::<mem::maybe_uninit::MaybeUninit<u8>>::as_mut::<'_>",
+  "hash": "89552286728551649796491126936577430420",
+  "hash_direct": "248791808733839601615996973204010052919",
+  "src": "pub const unsafe fn as_mut<'a>(&mut self) -> &'a mut T {\n        // SAFETY: the caller must guarantee that `self` meets all the\n        // requirements for a mutable reference.\n        unsafe { &mut *self.as_ptr() }\n    }",
+  "callees": [
+    "754541599624852201812031150559416133797"
+  ]
+}

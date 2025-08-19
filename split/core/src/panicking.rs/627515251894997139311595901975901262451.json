@@ -1,0 +1,10 @@
+{
+  "file": "core/src/panicking.rs",
+  "name": "<panicking::assert_matches_failed::Pattern<'_> as fmt::Debug>::fmt",
+  "hash": "627515251894997139311595901975901262451",
+  "hash_direct": "1770086862339029333112968520490868880046",
+  "src": "fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {\n            f.write_str(self.0)\n        }",
+  "callees": [
+    "1557257459089412723814481849913677699848"
+  ]
+}

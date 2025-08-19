@@ -1,0 +1,12 @@
+{
+  "file": "core/src/slice/ascii.rs",
+  "name": "slice::ascii::<impl [u8]>::make_ascii_uppercase",
+  "hash": "1236419791420101763614870083725137044688",
+  "hash_direct": "1644181144553687161217178554885303188271",
+  "src": "pub const fn make_ascii_uppercase(&mut self) {\n        // FIXME(const-hack): We would like to simply iterate using `for` loops but this isn't currently allowed in constant expressions.\n        let mut i = 0;\n        while i < self.len() {\n            let byte = &mut self[i];\n            byte.make_ascii_uppercase();\n            i += 1;\n        }\n    }",
+  "callees": [
+    "382292664104004222611762716025126739443",
+    "7816934177828743240384459600643505148",
+    "32810955126624412574229702992915577978"
+  ]
+}

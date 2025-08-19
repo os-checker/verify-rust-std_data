@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f64.rs",
+  "name": "f64::<impl f64>::from_bits",
+  "hash": "1617051901138629639615839978579417339483",
+  "hash_direct": "161973559739780055072516270535138512707",
+  "src": "pub const fn from_bits(v: u64) -> Self {\n        // It turns out the safety issues with sNaN were overblown! Hooray!\n        // SAFETY: `u64` is a plain old datatype so we can always transmute from it.\n        unsafe { mem::transmute(v) }\n    }"
+}

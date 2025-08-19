@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vmulx_f16",
+  "hash": "160800593894654250456603969606068261607",
+  "hash_direct": "103360080891106956953414109075828022016",
+  "src": "pub fn vmulx_f16(a: float16x4_t, b: float16x4_t) -> float16x4_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.fmulx.v4f16\"\n        )]\n        fn _vmulx_f16(a: float16x4_t, b: float16x4_t) -> float16x4_t;\n    }\n    unsafe { _vmulx_f16(a, b) }\n}"
+}

@@ -1,0 +1,47 @@
+{
+  "file": "core/src/num/nonzero.rs",
+  "name": "num::nonzero::verify::check_mul_isize_large_neg",
+  "hash": "11234211656077380878001771571418399544",
+  "hash_direct": "66037754534262054434455025992076500004",
+  "proof_kind": "\"Contract\"",
+  "attrs": [
+    "#[kanitool::proof_for_contract = \"NonZero :: < isize > :: unchecked_mul\"]\n"
+  ],
+  "src": "pub fn $nonzero_check_mul_for() {\n                let x = kani::any::<$t>();\n                let y = kani::any::<$t>();\n\n                kani::assume(x != 0 && x >= $min && x <= $max);\n                kani::assume(y != 0 && y >= $min && y <= $max);\n\n                let x = <$nonzero_type>::new(x).unwrap();\n                let y = <$nonzero_type>::new(y).unwrap();\n\n                unsafe {\n                    x.unchecked_mul(y);\n                }\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "check_mul_unchecked_intervals!(\n        isize,\n        NonZeroIsize,\n        check_mul_isize_large_neg,\n        NonZeroIsize::new(isize::MIN + 1000isize).unwrap().into(),\n        NonZeroIsize::new(isize::MIN + 1).unwrap().into()\n    )",
+      "defsite": "macro_rules! check_mul_unchecked_intervals {\n        ($t:ty, $nonzero_type:ty, $nonzero_check_mul_for:ident, $min:expr, $max:expr) => {\n            #[kani::proof_for_contract(NonZero::<$t>::unchecked_mul)]\n            pub fn $nonzero_check_mul_for() {\n                let x = kani::any::<$t>();\n                let y = kani::any::<$t>();\n\n                kani::assume(x != 0 && x >= $min && x <= $max);\n                kani::assume(y != 0 && y >= $min && y <= $max);\n\n                let x = <$nonzero_type>::new(x).unwrap();\n                let y = <$nonzero_type>::new(y).unwrap();\n\n                unsafe {\n                    x.unchecked_mul(y);\n                }\n            }\n        };\n    }"
+    }
+  ],
+  "callees": [
+    "1531009987700713627114841153360395264198",
+    "1230748672991072180016692955695644415710",
+    "64428221957133332357265093654334493",
+    "24614872288685298643967355800714012655",
+    "162562988142812920362309614379838072419",
+    "55268624181377464941500382738073713012",
+    "128103941581933882561095523931319593650",
+    "1477791829127678985012675371196205811432",
+    "47323665595455568617290020941376774286",
+    "1329845230409163288212548289525672875535",
+    "16824420916691935049705640393259467449",
+    "167551103293259876125260225730930841946",
+    "26164794358626337495607581875755762373",
+    "1784427890075602903111769257932105315142",
+    "147184255988169090691456365499094506676",
+    "168033210036919138027105984575425727274",
+    "1582347162560296629512262401023546629495",
+    "56853112465566970096799553071139894591",
+    "135018004389098810588056008219402512475",
+    "90154399545981751929034700539601653658",
+    "841904668883726495316837415609641023349",
+    "1258931108755458209614962827106116332072",
+    "53589810041120365110998933211304468616",
+    "1243847030362955698517207199029174369810",
+    "105125143701458073564296455695110349394",
+    "1267363241542004475510559808307357722059",
+    "1218790289670026660418434748374709001141",
+    "399232661239117480517401994520839366833"
+  ]
+}

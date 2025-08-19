@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/mod.rs",
+  "name": "core_arch::aarch64::neon::vcombine_f64",
+  "hash": "68398870226001611237550646290062143647",
+  "hash_direct": "1706097459241368694715852517396575138799",
+  "src": "pub fn vcombine_f64(low: float64x1_t, high: float64x1_t) -> float64x2_t {\n    unsafe { simd_shuffle!(low, high, [0, 1]) }\n}"
+}

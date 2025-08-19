@@ -1,0 +1,12 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vceqd_f64",
+  "hash": "1270282340206590596812396469690715973147",
+  "hash_direct": "136525332029991328866305541940431555922",
+  "src": "pub fn vceqd_f64(a: f64, b: f64) -> u64 {\n    unsafe { simd_extract!(vceq_f64(vdup_n_f64(a), vdup_n_f64(b)), 0) }\n}",
+  "callees": [
+    "15720639538430453524902720474743055332",
+    "1403816634140737690610222307569872863933",
+    "1833378110133069415316612384629614156751"
+  ]
+}

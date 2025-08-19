@@ -1,0 +1,7 @@
+{
+  "file": "core/src/char/methods.rs",
+  "name": "char::methods::<impl char>::is_ascii_graphic",
+  "hash": "682292110242456351717944349352364561670",
+  "hash_direct": "33290930672616762921744431137577423976",
+  "src": "pub const fn is_ascii_graphic(&self) -> bool {\n        matches!(*self, '!'..='~')\n    }"
+}

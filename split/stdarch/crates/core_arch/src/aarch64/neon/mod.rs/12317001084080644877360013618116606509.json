@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/mod.rs",
+  "name": "core_arch::aarch64::neon::float64x2x4_t",
+  "hash": "12317001084080644877360013618116606509",
+  "hash_direct": "56585851260495405172297076189038588980",
+  "attrs": [
+    "#[attr = Repr {reprs: [ReprC]}]\n"
+  ],
+  "src": "pub struct float64x2x4_t"
+}

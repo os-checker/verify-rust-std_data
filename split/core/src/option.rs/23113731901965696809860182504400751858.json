@@ -1,0 +1,13 @@
+{
+  "file": "core/src/option.rs",
+  "name": "<option::Option<iter::adapters::map::Map<str::iter::Chars<'_>, str::CharEscapeUnicode>> as clone::Clone>::clone",
+  "hash": "23113731901965696809860182504400751858",
+  "hash_direct": "1611900113628072877514509186301535631421",
+  "src": "fn clone(&self) -> Self {\n        match self {\n            Some(x) => Some(x.clone()),\n            None => None,\n        }\n    }",
+  "callees": [
+    "130483962882315343034581457960931120249",
+    "58991123638000977218745583776963910489",
+    "179315618913317042017181936913882090799",
+    "133116732257817399838444266896101787238"
+  ]
+}

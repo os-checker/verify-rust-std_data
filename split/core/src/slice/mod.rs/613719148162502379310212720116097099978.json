@@ -1,0 +1,10 @@
+{
+  "file": "core/src/slice/mod.rs",
+  "name": "slice::<impl [u8]>::split::<str::IsAsciiWhitespace>",
+  "hash": "613719148162502379310212720116097099978",
+  "hash_direct": "827294297862225707210235822993112692646",
+  "src": "pub fn split<F>(&self, pred: F) -> Split<'_, T, F>\n    where\n        F: FnMut(&T) -> bool,\n    {\n        Split::new(self, pred)\n    }",
+  "callees": [
+    "48493031189476581199294799105784888167"
+  ]
+}

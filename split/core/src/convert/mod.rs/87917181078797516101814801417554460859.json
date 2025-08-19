@@ -1,0 +1,10 @@
+{
+  "file": "core/src/convert/mod.rs",
+  "name": "<i32 as convert::TryInto<u32>>::try_into",
+  "hash": "87917181078797516101814801417554460859",
+  "hash_direct": "231835069382357305977191034588495515",
+  "src": "fn try_into(self) -> Result<U, U::Error> {\n        U::try_from(self)\n    }",
+  "callees": [
+    "1214258652200928387411644436693302022198"
+  ]
+}

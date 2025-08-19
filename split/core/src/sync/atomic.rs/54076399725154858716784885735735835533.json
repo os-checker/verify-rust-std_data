@@ -1,0 +1,13 @@
+{
+  "file": "core/src/sync/atomic.rs",
+  "name": "<sync::atomic::Ordering as cmp::Eq>::assert_receiver_is_total_eq",
+  "hash": "54076399725154858716784885735735835533",
+  "hash_direct": "1837393146333284873415493857461849366618",
+  "src": "Eq",
+  "macro_backtrace": [
+    {
+      "callsite": "Eq",
+      "defsite": "pub macro Eq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

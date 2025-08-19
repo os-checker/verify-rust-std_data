@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vmin_s8",
+  "hash": "75316944338010380367969285576229077023",
+  "hash_direct": "2851799451818175103762155526516017672",
+  "src": "pub fn vmin_s8(a: int8x8_t, b: int8x8_t) -> int8x8_t {\n    unsafe {\n        let mask: int8x8_t = simd_le(a, b);\n        simd_select(mask, a, b)\n    }\n}"
+}

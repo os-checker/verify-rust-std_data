@@ -1,0 +1,10 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<slice::iter::Split<'_, u8, str::IsAsciiWhitespace> as iter::traits::iterator::Iterator>::filter::<str::BytesIsNotEmpty>",
+  "hash": "19399788487440701854767161525576703805",
+  "hash_direct": "1222678966448404564372398827389967329",
+  "src": "fn filter<P>(self, predicate: P) -> Filter<Self, P>\n    where\n        Self: Sized,\n        P: FnMut(&Self::Item) -> bool,\n    {\n        Filter::new(self, predicate)\n    }",
+  "callees": [
+    "8056754567355983273421104006507275549"
+  ]
+}

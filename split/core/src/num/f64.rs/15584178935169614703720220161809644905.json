@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f64.rs",
+  "name": "f64::<impl f64>::SIGN_MASK",
+  "hash": "15584178935169614703720220161809644905",
+  "hash_direct": "175043960315493649908480137856713098025",
+  "src": "pub(crate) const SIGN_MASK: u64 = 0x8000_0000_0000_0000;"
+}

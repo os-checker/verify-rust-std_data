@@ -1,0 +1,27 @@
+{
+  "file": "core/src/num/dec2flt/decimal.rs",
+  "name": "num::dec2flt::decimal::Decimal::try_fast_path::<f32>",
+  "hash": "99983931406677034614801596181841509324",
+  "hash_direct": "1728785742143032494514662327898516275957",
+  "src": "pub fn try_fast_path<F: RawFloat>(&self) -> Option<F> {\n        // Here we need to work around <https://github.com/rust-lang/rust/issues/114479>.\n        // The fast path crucially depends on arithmetic being rounded to the correct number of bits\n        // without any intermediate rounding. On x86 (without SSE or SSE2) this requires the precision\n        // of the x87 FPU stack to be changed so that it directly rounds to 64/32 bit.\n        // The `set_precision` function takes care of setting the precision on architectures which\n        // require setting it by changing the global state (like the control word of the x87 FPU).\n        let _cw = set_precision::<F>();\n\n        if !self.can_use_fast_path::<F>() {\n            return None;\n        }\n\n        let value = if self.exponent <= F::MAX_EXPONENT_FAST_PATH {\n            // normal fast path\n            let value = F::from_u64(self.mantissa);\n            if self.exponent < 0 {\n                value / F::pow10_fast_path((-self.exponent) as _)\n            } else {\n                value * F::pow10_fast_path(self.exponent as _)\n            }\n        } else {\n            // disguised fast path\n            let shift = self.exponent - F::MAX_EXPONENT_FAST_PATH;\n            let mantissa = self.mantissa.checked_mul(INT_POW10[shift as usize])?;\n            if mantissa > F::MAX_MANTISSA_FAST_PATH {\n                return None;\n            }\n            F::from_u64(mantissa) * F::pow10_fast_path(F::MAX_EXPONENT_FAST_PATH as _)\n        };\n\n        if self.negative { Some(-value) } else { Some(value) }\n    }",
+  "callees": [
+    "47323665595455568617290020941376774286",
+    "111425599901702694743874629435682172347",
+    "714811817540972740211524868124730226803",
+    "22493679695834670849202613190782428962",
+    "540502260302221945017091708678793115568",
+    "718377699897599555210110373784653536659",
+    "811762602563866593116689096744741505325",
+    "1135700635396122493716494855814345262924",
+    "89253289676802301796257942207888358960",
+    "107602553658477623465414018594921488977",
+    "72782397053872702459787085987705343",
+    "8313967490340645318406089482631713184",
+    "1017083964743796581716668297083726712984",
+    "16256197854628515261354176212002416365",
+    "841904668883726495316837415609641023349",
+    "1258931108755458209614962827106116332072",
+    "53589810041120365110998933211304468616",
+    "1243847030362955698517207199029174369810"
+  ]
+}

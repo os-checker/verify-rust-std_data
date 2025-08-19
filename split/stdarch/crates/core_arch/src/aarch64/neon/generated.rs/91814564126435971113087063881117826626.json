@@ -1,0 +1,11 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vqdmlsls_s32",
+  "hash": "91814564126435971113087063881117826626",
+  "hash_direct": "119090476717784489294141604066555445646",
+  "src": "pub fn vqdmlsls_s32(a: i64, b: i32, c: i32) -> i64 {\n    let x: i64 = vqsubd_s64(a, vqdmulls_s32(b, c));\n    x\n}",
+  "callees": [
+    "205410181275088833614117894246109173128",
+    "91788647442519515043812788474151620323"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "file": "core/src/num/int_sqrt.rs",
+  "name": "num::int_sqrt::u16",
+  "hash": "39464981472055978638229202599351542351",
+  "hash_direct": "605151380933190630713307846832057724309",
+  "src": "pub(super) const fn $UnsignedT(mut n: $UnsignedT) -> $UnsignedT {\n            if n <= <$HalfBitsT>::MAX as $UnsignedT {\n                $HalfBitsT(n as $HalfBitsT) as $UnsignedT\n            } else {\n                // The normalization shift satisfies the Karatsuba square root\n                // algorithm precondition \"a₃ ≥ b/4\" where a₃ is the most\n                // significant quarter of `n`'s bits and b is the number of\n                // values that can be represented by that quarter of the bits.\n                //\n                // b/4 would then be all 0s except the second most significant\n                // bit (010...0) in binary. Since a₃ must be at least b/4, a₃'s\n                // most significant bit or its neighbor must be a 1. Since a₃'s\n                // most significant bits are `n`'s most significant bits, the\n                // same applies to `n`.\n                //\n                // The reason to shift by an even number of bits is because an\n                // even number of bits produces the square root shifted to the\n                // left by half of the normalization shift:\n                //\n                // sqrt(n << (2 * p))\n                // sqrt(2.pow(2 * p) * n)\n                // sqrt(2.pow(2 * p)) * sqrt(n)\n                // 2.pow(p) * sqrt(n)\n                // sqrt(n) << p\n                //\n                // Shifting by an odd number of bits leaves an ugly sqrt(2)\n                // multiplied in:\n                //\n                // sqrt(n << (2 * p + 1))\n                // sqrt(2.pow(2 * p + 1) * n)\n                // sqrt(2 * 2.pow(2 * p) * n)\n                // sqrt(2) * sqrt(2.pow(2 * p)) * sqrt(n)\n                // sqrt(2) * 2.pow(p) * sqrt(n)\n                // sqrt(2) * (sqrt(n) << p)\n                const EVEN_MAKING_BITMASK: u32 = !1;\n                let normalization_shift = n.leading_zeros() & EVEN_MAKING_BITMASK;\n                n <<= normalization_shift;\n\n                let s = $stages(n);\n\n                let denormalization_shift = normalization_shift >> 1;\n                s >> denormalization_shift\n            }\n        }",
+  "macro_backtrace": [
+    {
+      "callsite": "unsigned_fn!(u16, u8, u16_stages)",
+      "defsite": "macro_rules! unsigned_fn {\n    ($UnsignedT:ident, $HalfBitsT:ident, $stages:ident) => {\n        /// Returns the [integer square root](\n        /// https://en.wikipedia.org/wiki/Integer_square_root) of any\n        #[doc = concat!(\"[`\", stringify!($UnsignedT), \"`](prim@\", stringify!($UnsignedT), \")\")]\n        /// input.\n        #[must_use = \"this returns the result of the operation, \\\n                      without modifying the original\"]\n        #[inline]\n        pub(super) const fn $UnsignedT(mut n: $UnsignedT) -> $UnsignedT {\n            if n <= <$HalfBitsT>::MAX as $UnsignedT {\n                $HalfBitsT(n as $HalfBitsT) as $UnsignedT\n            } else {\n                // The normalization shift satisfies the Karatsuba square root\n                // algorithm precondition \"a₃ ≥ b/4\" where a₃ is the most\n                // significant quarter of `n`'s bits and b is the number of\n                // values that can be represented by that quarter of the bits.\n                //\n                // b/4 would then be all 0s except the second most significant\n                // bit (010...0) in binary. Since a₃ must be at least b/4, a₃'s\n                // most significant bit or its neighbor must be a 1. Since a₃'s\n                // most significant bits are `n`'s most significant bits, the\n                // same applies to `n`.\n                //\n                // The reason to shift by an even number of bits is because an\n                // even number of bits produces the square root shifted to the\n                // left by half of the normalization shift:\n                //\n                // sqrt(n << (2 * p))\n                // sqrt(2.pow(2 * p) * n)\n                // sqrt(2.pow(2 * p)) * sqrt(n)\n                // 2.pow(p) * sqrt(n)\n                // sqrt(n) << p\n                //\n                // Shifting by an odd number of bits leaves an ugly sqrt(2)\n                // multiplied in:\n                //\n                // sqrt(n << (2 * p + 1))\n                // sqrt(2.pow(2 * p + 1) * n)\n                // sqrt(2 * 2.pow(2 * p) * n)\n                // sqrt(2) * sqrt(2.pow(2 * p)) * sqrt(n)\n                // sqrt(2) * 2.pow(p) * sqrt(n)\n                // sqrt(2) * (sqrt(n) << p)\n                const EVEN_MAKING_BITMASK: u32 = !1;\n                let normalization_shift = n.leading_zeros() & EVEN_MAKING_BITMASK;\n                n <<= normalization_shift;\n\n                let s = $stages(n);\n\n                let denormalization_shift = normalization_shift >> 1;\n                s >> denormalization_shift\n            }\n        }\n    };\n}"
+    }
+  ],
+  "callees": [
+    "47323665595455568617290020941376774286",
+    "11139495935450220752286966752445431093",
+    "1329845230409163288212548289525672875535",
+    "16824420916691935049705640393259467449",
+    "640596390587764993613584517482851064972",
+    "1347572526195785673616491619380226691733",
+    "606456835314416134214848512741149054761",
+    "105079983965503949187429510421372327552",
+    "841904668883726495316837415609641023349",
+    "1258931108755458209614962827106116332072",
+    "1243847030362955698517207199029174369810",
+    "105125143701458073564296455695110349394",
+    "90175179397242369455372712796954544135",
+    "399232661239117480517401994520839366833"
+  ]
+}

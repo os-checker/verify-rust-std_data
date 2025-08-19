@@ -1,0 +1,14 @@
+{
+  "file": "core/src/str/mod.rs",
+  "name": "str::<impl str>::make_ascii_uppercase",
+  "hash": "97774786102814657985790301494608796495",
+  "hash_direct": "381335655559279327316555837536862563275",
+  "src": "pub const fn make_ascii_uppercase(&mut self) {\n        // SAFETY: changing ASCII letters only does not invalidate UTF-8.\n        let me = unsafe { self.as_bytes_mut() };\n        me.make_ascii_uppercase()\n    }",
+  "callees": [
+    "382292664104004222611762716025126739443",
+    "7816934177828743240384459600643505148",
+    "32810955126624412574229702992915577978",
+    "1236419791420101763614870083725137044688",
+    "71002982073659553613382755596203528322"
+  ]
+}

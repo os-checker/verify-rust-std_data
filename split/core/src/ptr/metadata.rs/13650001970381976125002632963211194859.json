@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/metadata.rs",
+  "name": "ptr::metadata::metadata::<dyn ptr::non_null::verify::SampleTrait>",
+  "hash": "13650001970381976125002632963211194859",
+  "hash_direct": "13601079345992821582928402955290947414",
+  "src": "pub const fn metadata<T: PointeeSized>(ptr: *const T) -> <T as Pointee>::Metadata {\n    ptr_metadata(ptr)\n}"
+}

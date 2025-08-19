@@ -1,0 +1,11 @@
+{
+  "file": "core/src/slice/mod.rs",
+  "name": "<range::Range<usize> as slice::GetDisjointMutIndex>::is_in_bounds",
+  "hash": "87041879726202054463751687315129140789",
+  "hash_direct": "246599665076468363116886631821332672177",
+  "src": "fn is_in_bounds(&self, len: usize) -> bool {\n        Range::from(*self).is_in_bounds(len)\n    }",
+  "callees": [
+    "7285806482818118821959890434814326803",
+    "826610219091811073612920021704822226571"
+  ]
+}

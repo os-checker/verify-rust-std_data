@@ -1,0 +1,10 @@
+{
+  "file": "core/src/alloc/layout.rs",
+  "name": "<alloc::layout::LayoutError as fmt::Display>::fmt",
+  "hash": "1557446858018180564017431539065566427642",
+  "hash_direct": "1780368057246810114417926335888572035793",
+  "src": "fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {\n        f.write_str(\"invalid parameters to Layout::from_size_align\")\n    }",
+  "callees": [
+    "1557257459089412723814481849913677699848"
+  ]
+}

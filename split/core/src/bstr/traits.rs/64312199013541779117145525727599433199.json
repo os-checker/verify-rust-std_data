@@ -1,0 +1,23 @@
+{
+  "file": "core/src/bstr/traits.rs",
+  "name": "bstr::traits::<impl cmp::PartialEq<&str> for bstr::ByteStr>::eq",
+  "hash": "64312199013541779117145525727599433199",
+  "hash_direct": "90939705313258398392623613448293466829",
+  "src": "fn eq(&self, other: &$rhs) -> bool {\n                let other: &[u8] = other.as_ref();\n                PartialEq::eq(self.as_bytes(), other)\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "impl_partial_eq!(ByteStr, &str)",
+      "defsite": "macro_rules! impl_partial_eq {\n    ($lhs:ty, $rhs:ty) => {\n        #[allow(unused_lifetimes)]\n        impl<'a> PartialEq<$rhs> for $lhs {\n            #[inline]\n            fn eq(&self, other: &$rhs) -> bool {\n                let other: &[u8] = other.as_ref();\n                PartialEq::eq(self.as_bytes(), other)\n            }\n        }\n\n        #[allow(unused_lifetimes)]\n        impl<'a> PartialEq<$lhs> for $rhs {\n            #[inline]\n            fn eq(&self, other: &$lhs) -> bool {\n                let this: &[u8] = self.as_ref();\n                PartialEq::eq(this, other.as_bytes())\n            }\n        }\n    };\n}"
+    }
+  ],
+  "callees": [
+    "109876452559006158611413615147675014073",
+    "115379899614578440628837924155041191496",
+    "7832507060962758874697651425918563686",
+    "126692834448097932228994692025940173998",
+    "25558485697757400065874176408609551720",
+    "156130332443363785142369276941490088427",
+    "1365105167415038861311051207304188885322",
+    "45819503778375231969038300244556098990"
+  ]
+}

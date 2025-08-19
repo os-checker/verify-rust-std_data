@@ -1,0 +1,13 @@
+{
+  "file": "core/src/char/mod.rs",
+  "name": "<char::TryFromCharError as cmp::Eq>::assert_receiver_is_total_eq",
+  "hash": "167041428790450939854784985380731586581",
+  "hash_direct": "66174034436959282999611017463557481594",
+  "src": "Eq",
+  "macro_backtrace": [
+    {
+      "callsite": "Eq",
+      "defsite": "pub macro Eq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

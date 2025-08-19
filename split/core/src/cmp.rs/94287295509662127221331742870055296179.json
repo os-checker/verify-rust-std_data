@@ -1,0 +1,11 @@
+{
+  "file": "core/src/cmp.rs",
+  "name": "<u8 as cmp::Ord>::max",
+  "hash": "94287295509662127221331742870055296179",
+  "hash_direct": "70716840824731482863438655884078964274",
+  "src": "fn max(self, other: Self) -> Self\n    where\n        Self: Sized,\n    {\n        if other < self { self } else { other }\n    }",
+  "callees": [
+    "163161463220985676922487198705762823548",
+    "176215937714928582254709899264658457842"
+  ]
+}

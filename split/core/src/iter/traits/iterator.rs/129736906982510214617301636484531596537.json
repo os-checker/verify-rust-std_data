@@ -1,0 +1,12 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "iter::traits::iterator::Iterator::eq_by::compare::<u8, u8, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/iter/traits/iterator.rs:3791:27: 3791:33}>::{closure#0}",
+  "hash": "129736906982510214617301636484531596537",
+  "hash_direct": "1631020036213537144914702243998871949912",
+  "src": "move |x, y| {\n                if eq(x, y) { ControlFlow::Continue(()) } else { ControlFlow::Break(()) }\n            }",
+  "callees": [
+    "1450824968137209211015779136914157765236",
+    "93298097551584795016994225891304124799",
+    "176215937714928582254709899264658457842"
+  ]
+}

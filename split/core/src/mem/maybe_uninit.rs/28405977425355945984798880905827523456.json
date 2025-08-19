@@ -1,0 +1,7 @@
+{
+  "file": "core/src/mem/maybe_uninit.rs",
+  "name": "<[mem::maybe_uninit::MaybeUninit<char>]>::assume_init_mut",
+  "hash": "28405977425355945984798880905827523456",
+  "hash_direct": "3266732188806206424180466509319553885",
+  "src": "pub const unsafe fn assume_init_mut(&mut self) -> &mut [T] {\n        // SAFETY: similar to safety notes for `slice_get_ref`, but we have a\n        // mutable reference which is also guaranteed to be valid for writes.\n        unsafe { &mut *(self as *mut Self as *mut [T]) }\n    }"
+}

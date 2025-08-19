@@ -1,0 +1,7 @@
+{
+  "file": "core/src/str/lossy.rs",
+  "name": "str::lossy::Utf8Chunk::<'_>::valid",
+  "hash": "15579001942886662089181792083076960242",
+  "hash_direct": "750908674811730928213460064883407739808",
+  "src": "pub fn valid(&self) -> &'a str {\n        self.valid\n    }"
+}

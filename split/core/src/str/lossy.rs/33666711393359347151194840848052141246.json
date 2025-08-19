@@ -1,0 +1,7 @@
+{
+  "file": "core/src/str/lossy.rs",
+  "name": "str::lossy::<impl [u8]>::utf8_chunks",
+  "hash": "33666711393359347151194840848052141246",
+  "hash_direct": "617513563964652237315252196645497783023",
+  "src": "pub fn utf8_chunks(&self) -> Utf8Chunks<'_> {\n        Utf8Chunks { source: self }\n    }"
+}

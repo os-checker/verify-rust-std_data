@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vcaltq_f64",
+  "hash": "972217910800561726114308042009408619000",
+  "hash_direct": "41561317378404752813751307927718976789",
+  "src": "pub fn vcaltq_f64(a: float64x2_t, b: float64x2_t) -> uint64x2_t {\n    vcagtq_f64(b, a)\n}",
+  "callees": [
+    "157190043302159176024622298456578630392"
+  ]
+}

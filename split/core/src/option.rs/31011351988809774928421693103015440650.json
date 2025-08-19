@@ -1,0 +1,11 @@
+{
+  "file": "core/src/option.rs",
+  "name": "<option::Item<char::EscapeDebug> as iter::traits::iterator::Iterator>::size_hint",
+  "hash": "31011351988809774928421693103015440650",
+  "hash_direct": "142185495349980903744521592791157321349",
+  "src": "fn size_hint(&self) -> (usize, Option<usize>) {\n        let len = self.len();\n        (len, Some(len))\n    }",
+  "callees": [
+    "109309382241892590941522813339041451375",
+    "68866666773163028433826909591480067324"
+  ]
+}

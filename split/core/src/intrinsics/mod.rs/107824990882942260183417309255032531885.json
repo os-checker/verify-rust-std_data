@@ -1,0 +1,23 @@
+{
+  "file": "core/src/intrinsics/mod.rs",
+  "name": "intrinsics::verify::should_succeed_tuple_to_struct",
+  "hash": "107824990882942260183417309255032531885",
+  "hash_direct": "1038489045062073806812973581181105020782",
+  "proof_kind": "\"Standard\"",
+  "attrs": [
+    "#[kanitool::stub_verified = \"transmute_unchecked_wrapper\"]\n",
+    "#[kanitool::proof]\n"
+  ],
+  "src": "fn should_succeed_tuple_to_struct() {\n        let src: (u8, u8) = (kani::any(), kani::any_where(|x| *x <= 1));\n        let dst: struct_A = unsafe { transmute_unchecked_wrapper(src) };\n    }",
+  "callees": [
+    "162491259761257566482601707483467907610",
+    "765632163473343149313388288187706299654",
+    "1662070016694227139911860440277225290916",
+    "868708452713984376310801203349667993765",
+    "1167206031649019046817898130872423505072",
+    "162562988142812920362309614379838072419",
+    "147326571724930681683605250526187624864",
+    "1721268411270946212114214860570443583652",
+    "174417767137697786455945514649781983678"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/task/wake.rs",
+  "name": "<task::wake::Waker as clone::Clone>::clone",
+  "hash": "2736224209047506606489794730903396119",
+  "hash_direct": "120559455271875480029000180046295802139",
+  "src": "fn clone(&self) -> Self {\n        Waker {\n            // SAFETY: This is safe because `Waker::from_raw` is the only way\n            // to initialize `clone` and `data` requiring the user to acknowledge\n            // that the contract of [`RawWaker`] is upheld.\n            waker: unsafe { (self.waker.vtable.clone)(self.waker.data) },\n        }\n    }"
+}

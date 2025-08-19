@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/mut_ptr.rs",
+  "name": "ptr::mut_ptr::<impl *mut i64>::cast::<option::Option<num::nonzero::NonZero<i64>>>",
+  "hash": "1766441432436836631114302118489199963748",
+  "hash_direct": "15282970043867902322218506857948748744",
+  "src": "pub const fn cast<U>(self) -> *mut U {\n        self as _\n    }"
+}

@@ -1,0 +1,13 @@
+{
+  "file": "core/src/num/int_sqrt.rs",
+  "name": "num::int_sqrt::U8_ISQRT_WITH_REMAINDER",
+  "hash": "697237598683364815517954567159273230192",
+  "hash_direct": "730166481656879992211989967584770041327",
+  "src": "const U8_ISQRT_WITH_REMAINDER: [(u8, u8); 256] = {\n    let mut result = [(0, 0); 256];\n\n    let mut n: usize = 0;\n    let mut isqrt_n: usize = 0;\n    while n < result.len() {\n        result[n] = (isqrt_n as u8, (n - isqrt_n.pow(2)) as u8);\n\n        n += 1;\n        if n == (isqrt_n + 1).pow(2) {\n            isqrt_n += 1;\n        }\n    }\n\n    result\n};",
+  "callees": [
+    "1269520450728758040910600545191457377562",
+    "6776959861457260448151595470512568421",
+    "180768662264275480356017588835610599830",
+    "15999245518501436572708354237448792298"
+  ]
+}

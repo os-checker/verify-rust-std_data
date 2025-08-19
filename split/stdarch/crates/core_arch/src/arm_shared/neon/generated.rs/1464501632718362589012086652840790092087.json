@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vcreate_f32",
+  "hash": "1464501632718362589012086652840790092087",
+  "hash_direct": "1837381364292951861015028362474268470000",
+  "src": "pub fn vcreate_f32(a: u64) -> float32x2_t {\n    unsafe { transmute(a) }\n}"
+}

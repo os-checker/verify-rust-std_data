@@ -1,0 +1,7 @@
+{
+  "file": "core/src/convert/mod.rs",
+  "name": "<convert::Infallible as fmt::Debug>::fmt",
+  "hash": "107834287453083879114985301985281109047",
+  "hash_direct": "153880664013081747156703688964958223312",
+  "src": "fn fmt(&self, _: &mut fmt::Formatter<'_>) -> fmt::Result {\n        match *self {}\n    }"
+}

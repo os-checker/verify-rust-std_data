@@ -1,0 +1,11 @@
+{
+  "file": "core/src/net/socket_addr.rs",
+  "name": "<net::socket_addr::SocketAddrV6 as fmt::Display>::fmt::{constant#0}",
+  "hash": "23159359685411458588191320154948091462",
+  "hash_direct": "14838725183063009335872789763545057522",
+  "src": "{ LONGEST_IPV6_SOCKET_ADDR.len() }",
+  "callees": [
+    "45819503778375231969038300244556098990",
+    "500039049531792023414807911624995133090"
+  ]
+}

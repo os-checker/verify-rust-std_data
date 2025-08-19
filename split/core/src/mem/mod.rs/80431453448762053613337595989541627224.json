@@ -1,0 +1,7 @@
+{
+  "file": "core/src/mem/mod.rs",
+  "name": "mem::replace::<i32>",
+  "hash": "80431453448762053613337595989541627224",
+  "hash_direct": "92090782741913743128006207094134997461",
+  "src": "pub const fn replace<T>(dest: &mut T, src: T) -> T {\n    // It may be tempting to use `swap` to avoid `unsafe` here. Don't!\n    // The compiler optimizes the implementation below to two `memcpy`s\n    // while `swap` would require at least three. See PR#83022 for details.\n\n    // SAFETY: We read from `dest` but directly write `src` into it afterwards,\n    // such that the old value is not duplicated. Nothing is dropped and\n    // nothing here can panic.\n    unsafe {\n        // Ideally we wouldn't use the intrinsics here, but going through the\n        // `ptr` methods introduces two unnecessary UbChecks, so until we can\n        // remove those for pointers that come from references, this uses the\n        // intrinsics instead so this stays very cheap in MIR (and debug).\n\n        let result = crate::intrinsics::read_via_copy(dest);\n        crate::intrinsics::write_via_move(dest, src);\n        result\n    }\n}"
+}

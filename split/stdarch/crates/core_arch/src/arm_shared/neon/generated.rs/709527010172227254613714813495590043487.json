@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::veor_s32",
+  "hash": "709527010172227254613714813495590043487",
+  "hash_direct": "764860433653673366416762610770463940265",
+  "src": "pub fn veor_s32(a: int32x2_t, b: int32x2_t) -> int32x2_t {\n    unsafe { simd_xor(a, b) }\n}"
+}

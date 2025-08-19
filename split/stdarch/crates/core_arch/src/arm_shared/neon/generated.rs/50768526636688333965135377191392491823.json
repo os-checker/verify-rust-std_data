@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vaba_s32",
+  "hash": "50768526636688333965135377191392491823",
+  "hash_direct": "1558580113055722046816091830763296859223",
+  "src": "pub fn vaba_s32(a: int32x2_t, b: int32x2_t, c: int32x2_t) -> int32x2_t {\n    unsafe { simd_add(a, vabd_s32(b, c)) }\n}",
+  "callees": [
+    "141491112955306257633688338375481745145"
+  ]
+}

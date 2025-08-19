@@ -1,0 +1,12 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vqrshlb_s8",
+  "hash": "579752179030879241018073696243479547601",
+  "hash_direct": "2449095456354643533231595186872379195",
+  "src": "pub fn vqrshlb_s8(a: i8, b: i8) -> i8 {\n    let a: int8x8_t = vdup_n_s8(a);\n    let b: int8x8_t = vdup_n_s8(b);\n    unsafe { simd_extract!(vqrshl_s8(a, b), 0) }\n}",
+  "callees": [
+    "316130348175668434415852929880207276243",
+    "1247027550575180421418420037961122777666",
+    "1795933804751112716616251825593960384728"
+  ]
+}

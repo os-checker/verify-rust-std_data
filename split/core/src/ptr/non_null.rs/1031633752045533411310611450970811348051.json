@@ -1,0 +1,12 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "ptr::non_null::NonNull::<dyn ptr::non_null::verify::SampleTrait>::to_raw_parts",
+  "hash": "1031633752045533411310611450970811348051",
+  "hash_direct": "84340336450772728885487254876561428078",
+  "src": "pub const fn to_raw_parts(self) -> (NonNull<()>, <T as super::Pointee>::Metadata) {\n        (self.cast(), super::metadata(self.as_ptr()))\n    }",
+  "callees": [
+    "13650001970381976125002632963211194859",
+    "153937916900710049834629952149367040279",
+    "892958883336362037110511878009017178255"
+  ]
+}

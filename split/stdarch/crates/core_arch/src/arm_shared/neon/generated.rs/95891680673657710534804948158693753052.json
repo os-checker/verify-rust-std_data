@@ -1,0 +1,11 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vqdmlsl_s32",
+  "hash": "95891680673657710534804948158693753052",
+  "hash_direct": "365334351595453151113598195133936575285",
+  "src": "pub fn vqdmlsl_s32(a: int64x2_t, b: int32x2_t, c: int32x2_t) -> int64x2_t {\n    vqsubq_s64(a, vqdmull_s32(b, c))\n}",
+  "callees": [
+    "209164426319673911611363911881916678558",
+    "1371199459633529565416722379432429118824"
+  ]
+}

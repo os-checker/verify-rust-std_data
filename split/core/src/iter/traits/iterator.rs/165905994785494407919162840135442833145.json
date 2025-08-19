@@ -1,0 +1,10 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<str::lossy::Utf8Chunks<'_> as iter::traits::iterator::Iterator>::map::<usize, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/bstr/mod.rs:161:18: 161:25}>",
+  "hash": "165905994785494407919162840135442833145",
+  "hash_direct": "112459835350690382678183555650799319235",
+  "src": "fn map<B, F>(self, f: F) -> Map<Self, F>\n    where\n        Self: Sized,\n        F: FnMut(Self::Item) -> B,\n    {\n        Map::new(self, f)\n    }",
+  "callees": [
+    "136549301549546087053484049000382343639"
+  ]
+}

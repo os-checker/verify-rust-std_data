@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vfmsq_f32",
+  "hash": "913431737408986642913920711494232579901",
+  "hash_direct": "158536532815465297776243991207098421998",
+  "src": "pub fn vfmsq_f32(a: float32x4_t, b: float32x4_t, c: float32x4_t) -> float32x4_t {\n    unsafe {\n        let b: float32x4_t = simd_neg(b);\n        vfmaq_f32(a, b, c)\n    }\n}",
+  "callees": [
+    "119451163545244546492553118726699553372"
+  ]
+}

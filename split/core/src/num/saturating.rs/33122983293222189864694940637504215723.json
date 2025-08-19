@@ -1,0 +1,17 @@
+{
+  "file": "core/src/num/saturating.rs",
+  "name": "num::saturating::Saturating::<u16>::is_power_of_two",
+  "hash": "33122983293222189864694940637504215723",
+  "hash_direct": "859015695766194680510035309392095504280",
+  "src": "pub const fn is_power_of_two(self) -> bool {\n                self.0.is_power_of_two()\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "saturating_int_impl_unsigned! { usize u8 u16 u32 u64 u128 }",
+      "defsite": "macro_rules! saturating_int_impl_unsigned {\n    ($($t:ty)*) => ($(\n        impl Saturating<$t> {\n            /// Returns the number of leading zeros in the binary representation of `self`.\n            ///\n            /// # Examples\n            ///\n            /// ```\n            /// use std::num::Saturating;\n            ///\n            #[doc = concat!(\"let n = Saturating(\", stringify!($t), \"::MAX >> 2);\")]\n            ///\n            /// assert_eq!(n.leading_zeros(), 2);\n            /// ```\n            #[inline]\n            #[rustc_const_stable(feature = \"saturating_int_impl\", since = \"1.74.0\")]\n            #[stable(feature = \"saturating_int_impl\", since = \"1.74.0\")]\n            #[must_use = \"this returns the result of the operation, \\\n                          without modifying the original\"]\n            pub const fn leading_zeros(self) -> u32 {\n                self.0.leading_zeros()\n            }\n\n            /// Returns `true` if and only if `self == 2^k` for some `k`.\n            ///\n            /// # Examples\n            ///\n            /// ```\n            /// use std::num::Saturating;\n            ///\n            #[doc = concat!(\"assert!(Saturating(16\", stringify!($t), \").is_power_of_two());\")]\n            #[doc = concat!(\"assert!(!Saturating(10\", stringify!($t), \").is_power_of_two());\")]\n            /// ```\n            #[must_use]\n            #[inline]\n            #[rustc_const_stable(feature = \"saturating_int_impl\", since = \"1.74.0\")]\n            #[stable(feature = \"saturating_int_impl\", since = \"1.74.0\")]\n            pub const fn is_power_of_two(self) -> bool {\n                self.0.is_power_of_two()\n            }\n\n        }\n    )*)\n}"
+    }
+  ],
+  "callees": [
+    "50847092804033131353584278262338890047",
+    "173579163639774067883824354148181948655"
+  ]
+}

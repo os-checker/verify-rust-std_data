@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vcalts_f32",
+  "hash": "1216999563758253858513342590717075892837",
+  "hash_direct": "60427868213885874952784026731310836439",
+  "src": "pub fn vcalts_f32(a: f32, b: f32) -> u32 {\n    vcagts_f32(b, a)\n}",
+  "callees": [
+    "114937801504415065398395578167244119802"
+  ]
+}

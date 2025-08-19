@@ -1,0 +1,24 @@
+{
+  "file": "core/src/slice/index.rs",
+  "name": "slice::index::into_slice_range",
+  "hash": "920647104800945352718069837732743550106",
+  "hash_direct": "177325628010630237357833009160913777942",
+  "src": "pub(crate) fn into_slice_range(\n    len: usize,\n    (start, end): (ops::Bound<usize>, ops::Bound<usize>),\n) -> ops::Range<usize> {\n    use ops::Bound;\n    let start = match start {\n        Bound::Included(start) => start,\n        Bound::Excluded(start) => {\n            start.checked_add(1).unwrap_or_else(|| slice_start_index_overflow_fail())\n        }\n        Bound::Unbounded => 0,\n    };\n\n    let end = match end {\n        Bound::Included(end) => {\n            end.checked_add(1).unwrap_or_else(|| slice_end_index_overflow_fail())\n        }\n        Bound::Excluded(end) => end,\n        Bound::Unbounded => len,\n    };\n\n    // Don't bother with checking `start < end` and `end <= len`\n    // since these checks are handled by `Range` impls\n\n    start..end\n}",
+  "callees": [
+    "47323665595455568617290020941376774286",
+    "111425599901702694743874629435682172347",
+    "714811817540972740211524868124730226803",
+    "1107975224131503237910671528805011402335",
+    "72294854735061896675036714383304468669",
+    "1030350506233019441114381199225054380597",
+    "841904668883726495316837415609641023349",
+    "1258931108755458209614962827106116332072",
+    "1243847030362955698517207199029174369810",
+    "170665114825142885868235838553978624090",
+    "10849414877331114943798470177582891777",
+    "1391943823064649496312657435128757559198",
+    "47380096949955473066056352830892057526",
+    "553184652678432063712515810568440288616",
+    "1464562601954900368615847969324976540621"
+  ]
+}

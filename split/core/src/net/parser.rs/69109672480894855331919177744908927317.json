@@ -1,0 +1,21 @@
+{
+  "file": "core/src/net/parser.rs",
+  "name": "net::parser::Parser::<'_>::read_atomically::<(), {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/net/parser.rs:82:30: 82:33}>",
+  "hash": "69109672480894855331919177744908927317",
+  "hash_direct": "388665300038503172514111880895849894352",
+  "src": "fn read_atomically<T, F>(&mut self, inner: F) -> Option<T>\n    where\n        F: FnOnce(&mut Parser<'_>) -> Option<T>,\n    {\n        let state = self.state;\n        let result = inner(self);\n        if result.is_none() {\n            self.state = state;\n        }\n        result\n    }",
+  "callees": [
+    "68581623244024013215145596633238016545",
+    "752687342413269091317542133211502201034",
+    "626994940997236582818164055641051462528",
+    "97893762540146259774173948480627469713",
+    "1694908639656248289111147593870928126623",
+    "141007910209282000879729043567797035532",
+    "78776314277709732488018626232252694426",
+    "1204192058449026781513363806603521917477",
+    "1436713016302633156415315922770273563080",
+    "254837619815442127015884532988627347636",
+    "1544757018362105809516952908677450529893",
+    "154502864350574923945507183674678843794"
+  ]
+}

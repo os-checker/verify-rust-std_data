@@ -1,0 +1,13 @@
+{
+  "file": "core/src/sync/atomic.rs",
+  "name": "<sync::atomic::Ordering as cmp::PartialEq>::eq",
+  "hash": "1225614168422162137914335376860858161211",
+  "hash_direct": "346102566634168436817563809152475625315",
+  "src": "PartialEq",
+  "macro_backtrace": [
+    {
+      "callsite": "PartialEq",
+      "defsite": "pub macro PartialEq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

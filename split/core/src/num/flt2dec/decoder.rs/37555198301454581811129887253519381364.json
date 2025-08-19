@@ -1,0 +1,13 @@
+{
+  "file": "core/src/num/flt2dec/decoder.rs",
+  "name": "<num::flt2dec::decoder::FullDecoded as cmp::Eq>::assert_receiver_is_total_eq",
+  "hash": "37555198301454581811129887253519381364",
+  "hash_direct": "832542562750538220416020646883265373183",
+  "src": "Eq",
+  "macro_backtrace": [
+    {
+      "callsite": "Eq",
+      "defsite": "pub macro Eq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

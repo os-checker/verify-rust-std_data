@@ -1,0 +1,7 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "fmt::FormattingOptions::get_align",
+  "hash": "44257266364374505814542935723980878695",
+  "hash_direct": "1396338638927444988915747267664908220455",
+  "src": "pub const fn get_align(&self) -> Option<Alignment> {\n        match self.flags & flags::ALIGN_BITS {\n            flags::ALIGN_LEFT => Some(Alignment::Left),\n            flags::ALIGN_RIGHT => Some(Alignment::Right),\n            flags::ALIGN_CENTER => Some(Alignment::Center),\n            _ => None,\n        }\n    }"
+}

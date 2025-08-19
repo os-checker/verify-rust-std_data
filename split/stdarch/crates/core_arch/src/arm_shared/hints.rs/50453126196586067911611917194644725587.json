@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/hints.rs",
+  "name": "core_arch::arm_shared::hints::__yield",
+  "hash": "50453126196586067911611917194644725587",
+  "hash_direct": "31841141330792213561179837678935375307",
+  "src": "pub unsafe fn __yield() {\n    hint(HINT_YIELD);\n}"
+}

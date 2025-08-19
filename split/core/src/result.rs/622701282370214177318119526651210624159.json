@@ -1,0 +1,7 @@
+{
+  "file": "core/src/result.rs",
+  "name": "<result::Result<usize, num::error::TryFromIntError> as ops::try_trait::Try>::branch",
+  "hash": "622701282370214177318119526651210624159",
+  "hash_direct": "274843694402387115010569740819412554433",
+  "src": "fn branch(self) -> ControlFlow<Self::Residual, Self::Output> {\n        match self {\n            Ok(v) => ControlFlow::Continue(v),\n            Err(e) => ControlFlow::Break(Err(e)),\n        }\n    }"
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/bstr/traits.rs",
+  "name": "bstr::traits::<impl slice::index::SliceIndex<bstr::ByteStr> for ops::range::RangeFull>::get_unchecked",
+  "hash": "1631474002575225901012599273164853720832",
+  "hash_direct": "1644252205900880216116081893274805931894",
+  "src": "unsafe fn get_unchecked(self, slice: *const ByteStr) -> *const Self::Output {\n        slice\n    }"
+}

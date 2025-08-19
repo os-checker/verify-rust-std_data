@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "ptr::swap_chunk::<2>",
+  "hash": "119450477691550228275391839090733931866",
+  "hash_direct": "158341755983494477811283003748840760036",
+  "src": "fn swap_chunk<const N: usize>(x: &mut MaybeUninit<[u8; N]>, y: &mut MaybeUninit<[u8; N]>) {\n    let a = *x;\n    let b = *y;\n    *x = b;\n    *y = a;\n}"
+}

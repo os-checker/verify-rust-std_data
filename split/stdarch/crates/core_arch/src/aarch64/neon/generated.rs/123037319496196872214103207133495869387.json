@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vqmovn_high_u32",
+  "hash": "123037319496196872214103207133495869387",
+  "hash_direct": "145402814153623767981995906461686549504",
+  "src": "pub fn vqmovn_high_u32(a: uint16x4_t, b: uint32x4_t) -> uint16x8_t {\n    unsafe { simd_shuffle!(a, vqmovn_u32(b), [0, 1, 2, 3, 4, 5, 6, 7]) }\n}",
+  "callees": [
+    "123117124876951972543272881591681781837"
+  ]
+}

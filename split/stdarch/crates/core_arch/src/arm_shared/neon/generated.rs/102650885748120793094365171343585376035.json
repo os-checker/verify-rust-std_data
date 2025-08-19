@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vand_u32",
+  "hash": "102650885748120793094365171343585376035",
+  "hash_direct": "64212929679134182242627231378583026647",
+  "src": "pub fn vand_u32(a: uint32x2_t, b: uint32x2_t) -> uint32x2_t {\n    unsafe { simd_and(a, b) }\n}"
+}

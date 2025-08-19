@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vqtbx1_s8",
+  "hash": "151892180033263906535297710068021995451",
+  "hash_direct": "54801740730221634856407415053173421211",
+  "src": "pub fn vqtbx1_s8(a: int8x8_t, b: int8x16_t, c: uint8x8_t) -> int8x8_t {\n    vqtbx1(a, b, c)\n}",
+  "callees": [
+    "1267381784684938294814383587881143734507"
+  ]
+}

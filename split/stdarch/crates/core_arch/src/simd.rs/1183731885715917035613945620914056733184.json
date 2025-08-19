@@ -1,0 +1,17 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/simd.rs",
+  "name": "<core_arch::simd::m64x2::splat::JustOne as clone::Clone>::clone",
+  "hash": "1183731885715917035613945620914056733184",
+  "hash_direct": "56343208120162314117063844588040854121",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    },
+    {
+      "callsite": "simd_m_ty!(m64x2[i64;2]: x0, x1)",
+      "defsite": "macro_rules! simd_m_ty {\n    ($id:ident [$elem_type:ident ; $len:literal]: $($param_name:ident),*) => {\n        #[repr(simd)]\n        #[derive(Copy, Clone)]\n        pub(crate) struct $id([$elem_type; $len]);\n\n        #[allow(clippy::use_self)]\n        impl $id {\n            #[inline(always)]\n            const fn bool_to_internal(x: bool) -> $elem_type {\n                [0 as $elem_type, !(0 as $elem_type)][x as usize]\n            }\n\n            #[inline(always)]\n            pub(crate) const fn new($($param_name: bool),*) -> Self {\n                $id([$(Self::bool_to_internal($param_name)),*])\n            }\n\n            // FIXME: Workaround rust@60637\n            #[inline(always)]\n            pub(crate) fn splat(value: bool) -> Self {\n                #[derive(Copy, Clone)]\n                #[repr(simd)]\n                struct JustOne([$elem_type; 1]);\n                let one = JustOne([Self::bool_to_internal(value)]);\n                // SAFETY: 0 is always in-bounds because we're shuffling\n                // a simd type with exactly one element.\n                unsafe { simd_shuffle!(one, one, [0; $len]) }\n            }\n\n            #[inline]\n            pub(crate) fn as_array(&self) -> &[$elem_type; $len] {\n                let simd_ptr: *const Self = self;\n                let array_ptr: *const [$elem_type; $len] = simd_ptr.cast();\n                // SAFETY: We can always read the prefix of a simd type as an array.\n                // There might be more padding afterwards for some widths, but\n                // that's not a problem for reading less than that.\n                unsafe { &*array_ptr }\n            }\n        }\n\n        impl core::cmp::PartialEq for $id {\n            #[inline]\n            fn eq(&self, other: &Self) -> bool {\n                self.as_array() == other.as_array()\n            }\n        }\n\n        impl core::fmt::Debug for $id {\n            #[inline]\n            fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {\n                debug_simd_finish(f, stringify!($id), self.as_array())\n            }\n        }\n    }\n}"
+    }
+  ]
+}

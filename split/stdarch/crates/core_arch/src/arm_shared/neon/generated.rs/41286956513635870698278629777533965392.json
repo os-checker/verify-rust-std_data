@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vqsub_s64",
+  "hash": "41286956513635870698278629777533965392",
+  "hash_direct": "123277740539144682013115606737017875243",
+  "src": "pub fn vqsub_s64(a: int64x1_t, b: int64x1_t) -> int64x1_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.sqsub.v1i64\"\n        )]\n        #[cfg_attr(target_arch = \"arm\", link_name = \"llvm.ssub.sat.v1i64\")]\n        fn _vqsub_s64(a: int64x1_t, b: int64x1_t) -> int64x1_t;\n    }\n    unsafe { _vqsub_s64(a, b) }\n}"
+}

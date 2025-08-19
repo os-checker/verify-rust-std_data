@@ -1,0 +1,7 @@
+{
+  "file": "core/src/net/ip_addr.rs",
+  "name": "net::ip_addr::Ipv4Addr::as_octets",
+  "hash": "1389290495299856438511536021715866820639",
+  "hash_direct": "192757461342562105717358539935384321781",
+  "src": "pub const fn as_octets(&self) -> &[u8; 4] {\n        &self.octets\n    }"
+}

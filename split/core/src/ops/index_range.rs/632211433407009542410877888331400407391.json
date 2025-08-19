@@ -1,0 +1,13 @@
+{
+  "file": "core/src/ops/index_range.rs",
+  "name": "<ops::index_range::IndexRange as cmp::PartialEq>::eq",
+  "hash": "632211433407009542410877888331400407391",
+  "hash_direct": "270459848548456605616538692736260058199",
+  "src": "PartialEq",
+  "macro_backtrace": [
+    {
+      "callsite": "PartialEq",
+      "defsite": "pub macro PartialEq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

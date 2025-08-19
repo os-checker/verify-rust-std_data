@@ -1,0 +1,30 @@
+{
+  "file": "core/src/fmt/num_buffer.rs",
+  "name": "<u8 as fmt::num_buffer::NumBufferTrait>::BUF_SIZE",
+  "hash": "729629197018296016211046431428956459874",
+  "hash_direct": "153180230404066192462359436202405870043",
+  "src": "const BUF_SIZE: usize = $unsigned::MAX.ilog(10) as usize + 1;",
+  "macro_backtrace": [
+    {
+      "callsite": "impl_NumBufferTrait! {\n    i8, u8,\n    i16, u16,\n    i32, u32,\n    i64, u64,\n    isize, usize,\n    i128, u128,\n}",
+      "defsite": "macro_rules! impl_NumBufferTrait {\n    ($($signed:ident, $unsigned:ident,)*) => {\n        $(\n            #[unstable(feature = \"int_format_into\", issue = \"138215\")]\n            impl NumBufferTrait for $signed {\n                // `+ 2` and not `+ 1` to include the `-` character.\n                const BUF_SIZE: usize = $signed::MAX.ilog(10) as usize + 2;\n            }\n            #[unstable(feature = \"int_format_into\", issue = \"138215\")]\n            impl NumBufferTrait for $unsigned {\n                const BUF_SIZE: usize = $unsigned::MAX.ilog(10) as usize + 1;\n            }\n        )*\n    }\n}"
+    }
+  ],
+  "callees": [
+    "47323665595455568617290020941376774286",
+    "1269520450728758040910600545191457377562",
+    "17669494056957649145896081724806188101",
+    "554909374466736517315488501066447646710",
+    "877068462736194358711112677516690235028",
+    "1000091978697872313911322954860004833985",
+    "97350672900508525961549677067486509148",
+    "930891886916861937113220793911597181611",
+    "79228223270095494796655584926694772210",
+    "132270891841824417113973968606051540364",
+    "869184492806902675613761766519375755339",
+    "112647907988151939021521366936792985164",
+    "841904668883726495316837415609641023349",
+    "1258931108755458209614962827106116332072",
+    "1243847030362955698517207199029174369810"
+  ]
+}

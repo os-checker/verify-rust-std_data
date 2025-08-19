@@ -1,0 +1,11 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vsubhn_high_s64",
+  "hash": "40559293250824495464903013986403764749",
+  "hash_direct": "68337304391442877028201459897969652515",
+  "src": "pub fn vsubhn_high_s64(a: int32x2_t, b: int64x2_t, c: int64x2_t) -> int32x4_t {\n    let d: int32x2_t = vsubhn_s64(b, c);\n    unsafe { simd_shuffle!(a, d, [0, 1, 2, 3]) }\n}",
+  "callees": [
+    "16267386497294735143233989337678134966",
+    "416197707134143554617616980274939123374"
+  ]
+}

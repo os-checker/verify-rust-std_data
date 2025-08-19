@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/const_ptr.rs",
+  "name": "ptr::const_ptr::<impl *const f64>::wrapping_offset",
+  "hash": "606278748447449712310501739003523606747",
+  "hash_direct": "124103854024087784227683369079391240611",
+  "src": "pub const fn wrapping_offset(self, count: isize) -> *const T\n    where\n        T: Sized,\n    {\n        // SAFETY: the `arith_offset` intrinsic has no prerequisites to be called.\n        unsafe { intrinsics::arith_offset(self, count) }\n    }"
+}

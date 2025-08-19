@@ -1,0 +1,10 @@
+{
+  "file": "core/src/slice/mod.rs",
+  "name": "slice::<impl [T]>::align_to_offsets::gcd",
+  "hash": "105529888766907594486492837192683480337",
+  "hash_direct": "1146630545563999495411438053725341901732",
+  "src": "const fn gcd(a: usize, b: usize) -> usize {\n            if b == 0 { a } else { gcd(b, a % b) }\n        }",
+  "callees": [
+    "105529888766907594486492837192683480337"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ops/control_flow.rs",
+  "name": "<ops::control_flow::ControlFlow<&[u8]> as ops::try_trait::FromResidual<ops::control_flow::ControlFlow<&[u8], convert::Infallible>>>::from_residual",
+  "hash": "167191880003137169651119137643453608270",
+  "hash_direct": "854328573031975565514367049406414239468",
+  "src": "fn from_residual(residual: ControlFlow<B, convert::Infallible>) -> Self {\n        match residual {\n            ControlFlow::Break(b) => ControlFlow::Break(b),\n        }\n    }"
+}

@@ -1,0 +1,10 @@
+{
+  "file": "core/src/slice/memchr.rs",
+  "name": "slice::memchr::USIZE_BYTES",
+  "hash": "487723549182351533515828276468772923358",
+  "hash_direct": "1477351051996850998411953982778585542802",
+  "src": "const USIZE_BYTES: usize = size_of::<usize>();",
+  "callees": [
+    "1067675883129992420314174327751912045205"
+  ]
+}

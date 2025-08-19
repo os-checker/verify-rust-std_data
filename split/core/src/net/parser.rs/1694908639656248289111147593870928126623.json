@@ -1,0 +1,7 @@
+{
+  "file": "core/src/net/parser.rs",
+  "name": "net::parser::Parser::<'_>::read_given_char::{closure#0}::{closure#0}",
+  "hash": "1694908639656248289111147593870928126623",
+  "hash_direct": "769751360020982977010310876870946735964",
+  "src": "|c| if c == target { Some(()) } else { None }"
+}

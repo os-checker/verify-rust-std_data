@@ -1,0 +1,13 @@
+{
+  "file": "core/src/future/mod.rs",
+  "name": "<future::ResumeTy as clone::Clone>::clone",
+  "hash": "47012422885003907686484429406356898919",
+  "hash_direct": "16585648876287397427604580496321996531",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

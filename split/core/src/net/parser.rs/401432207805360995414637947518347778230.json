@@ -1,0 +1,7 @@
+{
+  "file": "core/src/net/parser.rs",
+  "name": "<net::parser::AddrParseError as error::Error>::description",
+  "hash": "401432207805360995414637947518347778230",
+  "hash_direct": "1386658430240905846613550297988970324694",
+  "src": "fn description(&self) -> &str {\n        match self.0 {\n            AddrKind::Ip => \"invalid IP address syntax\",\n            AddrKind::Ipv4 => \"invalid IPv4 address syntax\",\n            AddrKind::Ipv6 => \"invalid IPv6 address syntax\",\n            AddrKind::Socket => \"invalid socket address syntax\",\n            AddrKind::SocketV4 => \"invalid IPv4 socket address syntax\",\n            AddrKind::SocketV6 => \"invalid IPv6 socket address syntax\",\n        }\n    }"
+}

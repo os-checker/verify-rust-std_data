@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/dec2flt/float.rs",
+  "name": "num::dec2flt::float::pow2_to_pow10",
+  "hash": "758630140710919939714963712534796146448",
+  "hash_direct": "55054091348690800054978097683872554498",
+  "src": "const fn pow2_to_pow10(a: i64) -> i64 {\n    let res = (a as f64) / f64::consts::LOG2_10;\n    res as i64\n}"
+}

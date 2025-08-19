@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vcltz_s64",
+  "hash": "790319022680021483313693134899997813774",
+  "hash_direct": "779751797591155745418397745587695365267",
+  "src": "pub fn vcltz_s64(a: int64x1_t) -> uint64x1_t {\n    let b: i64x1 = i64x1::new(0);\n    unsafe { simd_lt(a, transmute(b)) }\n}",
+  "callees": [
+    "265257202789630272910580064516726782498"
+  ]
+}

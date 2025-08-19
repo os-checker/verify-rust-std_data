@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::veor_u8",
+  "hash": "1104917863416008706775168571590785216",
+  "hash_direct": "148482643591152120812429520159604120696",
+  "src": "pub fn veor_u8(a: uint8x8_t, b: uint8x8_t) -> uint8x8_t {\n    unsafe { simd_xor(a, b) }\n}"
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vrndq_f16",
+  "hash": "183628756452476190797503480783681843305",
+  "hash_direct": "68877366613834328434481956505585838215",
+  "src": "pub fn vrndq_f16(a: float16x8_t) -> float16x8_t {\n    unsafe { simd_trunc(a) }\n}"
+}

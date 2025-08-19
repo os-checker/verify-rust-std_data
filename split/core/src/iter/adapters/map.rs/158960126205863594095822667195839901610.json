@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/adapters/map.rs",
+  "name": "iter::adapters::map::Map::<str::iter::SplitInclusive<'_, char>, str::LinesMap>::new",
+  "hash": "158960126205863594095822667195839901610",
+  "hash_direct": "1614686257188816543715164654064541932947",
+  "src": "pub(in crate::iter) fn new(iter: I, f: F) -> Map<I, F> {\n        Map { iter, f }\n    }"
+}

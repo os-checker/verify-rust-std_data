@@ -1,0 +1,11 @@
+{
+  "file": "core/src/unicode/unicode_data.rs",
+  "name": "unicode::unicode_data::lowercase::lookup",
+  "hash": "35679812265065387429682589995485417482",
+  "hash_direct": "36856919764726448215087638377561323172",
+  "src": "pub const fn lookup(c: char) -> bool {\n        super::bitset_search(\n            c as u32,\n            &BITSET_CHUNKS_MAP,\n            &BITSET_INDEX_CHUNKS,\n            &BITSET_CANONICAL,\n            &BITSET_MAPPING,\n        )\n    }",
+  "callees": [
+    "1019971856294636275912140629221298594282",
+    "129026191886274183645391770755775260134"
+  ]
+}

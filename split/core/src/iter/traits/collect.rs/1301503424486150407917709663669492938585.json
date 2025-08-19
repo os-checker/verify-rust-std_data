@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/traits/collect.rs",
+  "name": "<iter::adapters::enumerate::Enumerate<iter::adapters::copied::Copied<slice::iter::Iter<'_, *const ()>>> as iter::traits::collect::IntoIterator>::into_iter",
+  "hash": "1301503424486150407917709663669492938585",
+  "hash_direct": "115675824814620657111749014053979575615",
+  "src": "fn into_iter(self) -> I {\n        self\n    }"
+}

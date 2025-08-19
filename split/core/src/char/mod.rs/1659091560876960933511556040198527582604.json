@@ -1,0 +1,11 @@
+{
+  "file": "core/src/char/mod.rs",
+  "name": "<char::EscapeUnicode as iter::traits::exact_size::ExactSizeIterator>::len",
+  "hash": "1659091560876960933511556040198527582604",
+  "hash_direct": "212903537580361979710631696553676463810",
+  "src": "fn len(&self) -> usize {\n        self.0.len()\n    }",
+  "callees": [
+    "117083133034458006019709376097028492273",
+    "137391667718612377513431359952183046986"
+  ]
+}

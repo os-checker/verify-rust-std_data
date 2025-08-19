@@ -1,0 +1,13 @@
+{
+  "file": "core/src/num/fmt.rs",
+  "name": "<num::fmt::Formatted<'_> as clone::Clone>::clone",
+  "hash": "809113415042011674715332424878678053831",
+  "hash_direct": "132241466190186780747466904179479454847",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

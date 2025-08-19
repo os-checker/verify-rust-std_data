@@ -1,0 +1,13 @@
+{
+  "file": "core/src/any.rs",
+  "name": "<any::TypeId as clone::Clone>::clone",
+  "hash": "170168591726658049785811119298555285244",
+  "hash_direct": "74547662684303583322539271735188831574",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

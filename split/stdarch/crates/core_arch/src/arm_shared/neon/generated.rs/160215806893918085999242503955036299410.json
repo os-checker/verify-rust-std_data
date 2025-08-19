@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vcntq_p8",
+  "hash": "160215806893918085999242503955036299410",
+  "hash_direct": "1136458876024555623312926754391210683715",
+  "src": "pub fn vcntq_p8(a: poly8x16_t) -> poly8x16_t {\n    unsafe { transmute(vcntq_s8(transmute(a))) }\n}",
+  "callees": [
+    "384100708967162763410242460078769261693"
+  ]
+}

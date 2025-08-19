@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vst2_u64",
+  "hash": "4385077864637035211644877837111366968",
+  "hash_direct": "127487566242401740007829139307176824145",
+  "src": "pub unsafe fn vst2_u64(a: *mut u64, b: uint64x1x2_t) {\n    vst2_s64(transmute(a), transmute(b))\n}",
+  "callees": [
+    "318952800992776669212045506862077816557"
+  ]
+}

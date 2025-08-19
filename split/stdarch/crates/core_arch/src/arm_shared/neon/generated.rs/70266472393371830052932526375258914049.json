@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vtrn_p8",
+  "hash": "70266472393371830052932526375258914049",
+  "hash_direct": "407395461707557647710372169851796828725",
+  "src": "pub fn vtrn_p8(a: poly8x8_t, b: poly8x8_t) -> poly8x8x2_t {\n    unsafe {\n        let a1: poly8x8_t = simd_shuffle!(a, b, [0, 8, 2, 10, 4, 12, 6, 14]);\n        let b1: poly8x8_t = simd_shuffle!(a, b, [1, 9, 3, 11, 5, 13, 7, 15]);\n        transmute((a1, b1))\n    }\n}"
+}

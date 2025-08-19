@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f64.rs",
+  "name": "f64::math::floor",
+  "hash": "151837913588740677056390801221333888969",
+  "hash_direct": "169693398354468094742732349086698386381",
+  "src": "pub const fn floor(x: f64) -> f64 {\n        // SAFETY: intrinsic with no preconditions\n        unsafe { intrinsics::floorf64(x) }\n    }"
+}

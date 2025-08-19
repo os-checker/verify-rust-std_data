@@ -1,0 +1,14 @@
+{
+  "file": "core/src/iter/adapters/flatten.rs",
+  "name": "iter::adapters::flatten::FlatMap::<slice::iter::Iter<'_, u8>, ascii::EscapeDefault, slice::ascii::EscapeByte>::new",
+  "hash": "81755170318029505719998332098356321897",
+  "hash_direct": "1554226102829463040216493814589301742460",
+  "src": "pub(in crate::iter) fn new(iter: I, f: F) -> FlatMap<I, U, F> {\n        FlatMap { inner: FlattenCompat::new(iter.map(f)) }\n    }",
+  "callees": [
+    "17722473664175750147569061124825482993",
+    "117528012179693294010106707445467101520",
+    "6180519968002482765430810266623155101",
+    "142456790265393929057331795955827072828",
+    "90406384877879671793354917660865182945"
+  ]
+}

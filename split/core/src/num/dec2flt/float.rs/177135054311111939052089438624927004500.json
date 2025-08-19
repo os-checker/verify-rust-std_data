@@ -1,0 +1,10 @@
+{
+  "file": "core/src/num/dec2flt/float.rs",
+  "name": "<f64 as num::dec2flt::float::RawFloat>::from_u64_bits",
+  "hash": "177135054311111939052089438624927004500",
+  "hash_direct": "1102407610549222186410405857971751195478",
+  "src": "fn from_u64_bits(v: u64) -> Self {\n        f64::from_bits(v)\n    }",
+  "callees": [
+    "1617051901138629639615839978579417339483"
+  ]
+}

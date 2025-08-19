@@ -1,0 +1,14 @@
+{
+  "file": "core/src/alloc/layout.rs",
+  "name": "alloc::layout::Layout::extend",
+  "hash": "176763474683698403475250752798557221085",
+  "hash_direct": "707647306276667030316300310416587584640",
+  "src": "pub const fn extend(&self, next: Self) -> Result<(Self, usize), LayoutError> {\n        let new_align = Alignment::max(self.align, next.align);\n        let offset = self.size_rounded_up_to_custom_align(next.align);\n\n        // SAFETY: `offset` is at most `isize::MAX + 1` (such as from aligning\n        // to `Alignment::MAX`) and `next.size` is at most `isize::MAX` (from the\n        // `Layout` type invariant).  Thus the largest possible `new_size` is\n        // `isize::MAX + 1 + isize::MAX`, which is `usize::MAX`, and cannot overflow.\n        let new_size = unsafe { unchecked_add(offset, next.size) };\n\n        if let Ok(layout) = Layout::from_size_alignment(new_size, new_align) {\n            Ok((layout, offset))\n        } else {\n            Err(LayoutError)\n        }\n    }",
+  "callees": [
+    "1628875806215483567415952590565783337775",
+    "31265288173249298141030810952705142187",
+    "815727926531042108615829035158363428525",
+    "96976906222507875941165858861254841419",
+    "65007802261508540012210392616145265221"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vtrn_s16",
+  "hash": "1192505798007061237814168494651319458562",
+  "hash_direct": "751565931208591263710586495649777902444",
+  "src": "pub fn vtrn_s16(a: int16x4_t, b: int16x4_t) -> int16x4x2_t {\n    unsafe {\n        let a1: int16x4_t = simd_shuffle!(a, b, [0, 4, 2, 6]);\n        let b1: int16x4_t = simd_shuffle!(a, b, [1, 5, 3, 7]);\n        transmute((a1, b1))\n    }\n}"
+}

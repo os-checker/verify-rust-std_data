@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vmulq_s8",
+  "hash": "87152811888779000839436157131786209607",
+  "hash_direct": "611542572214442396614112710925702601512",
+  "src": "pub fn vmulq_s8(a: int8x16_t, b: int8x16_t) -> int8x16_t {\n    unsafe { simd_mul(a, b) }\n}"
+}

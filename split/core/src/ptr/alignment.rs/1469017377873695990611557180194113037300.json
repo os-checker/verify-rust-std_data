@@ -1,0 +1,17 @@
+{
+  "file": "core/src/ptr/alignment.rs",
+  "name": "<ptr::alignment::Alignment as ub_checks::Invariant>::is_safe",
+  "hash": "1469017377873695990611557180194113037300",
+  "hash_direct": "124921896346260278278513311066157805420",
+  "src": "#[invariant((self.0 as usize).is_power_of_two())]",
+  "macro_backtrace": [
+    {
+      "callsite": "#[invariant((self.0 as usize).is_power_of_two())]",
+      "defsite": "#[proc_macro_error]"
+    }
+  ],
+  "callees": [
+    "1617054938297627622011998382328717871744",
+    "1196638383615410162910723134175805433641"
+  ]
+}

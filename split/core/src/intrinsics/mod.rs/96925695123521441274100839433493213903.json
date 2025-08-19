@@ -1,0 +1,26 @@
+{
+  "file": "core/src/intrinsics/mod.rs",
+  "name": "<intrinsics::verify::tuple_mod::generated_struct as kani::Arbitrary>::any",
+  "hash": "96925695123521441274100839433493213903",
+  "hash_direct": "665177695856757890911522489177793058324",
+  "src": "kani::Arbitrary",
+  "macro_backtrace": [
+    {
+      "callsite": "kani::Arbitrary",
+      "defsite": "#[proc_macro_error]"
+    },
+    {
+      "callsite": "gen_compound_harnesses!(tuple_mod, (u8, u8))",
+      "defsite": "macro_rules! gen_compound_harnesses {\n        ($mod_name:ident, $base_type:ty) => {\n            mod $mod_name {\n                use super::*;\n\n                #[cfg_attr(kani, derive(kani::Arbitrary))]\n                #[derive(Debug, PartialEq, Clone, Copy)]\n                #[repr(packed)]\n                struct generated_struct {\n                    f1: $base_type,\n                    f2: $base_type,\n                }\n\n                //transmute harnesses\n                transmute_two_ways!(\n                    transmute_2ways_struct_to_arr,\n                    generated_struct,\n                    [$base_type; 2]\n                );\n                transmute_two_ways!(\n                    transmute_2ways_struct_to_tuple,\n                    generated_struct,\n                    ($base_type, $base_type)\n                );\n                transmute_two_ways!(\n                    transmute_2ways_arr_to_struct,\n                    [$base_type; 2],\n                    generated_struct\n                );\n                transmute_two_ways!(\n                    transmute_2ways_arr_to_tuple,\n                    [$base_type; 2],\n                    ($base_type, $base_type)\n                );\n                transmute_two_ways!(\n                    transmute_2ways_tuple_to_struct,\n                    ($base_type, $base_type),\n                    generated_struct\n                );\n                transmute_two_ways!(\n                    transmute_2ways_tuple_to_arr,\n                    ($base_type, $base_type),\n                    [$base_type; 2]\n                );\n                //transmute_unchecked harnesses\n                transmute_unchecked_two_ways!(\n                    transmute_unchecked_2ways_struct_to_arr,\n                    generated_struct,\n                    [$base_type; 2]\n                );\n                transmute_unchecked_two_ways!(\n                    transmute_unchecked_2ways_struct_to_tuple,\n                    generated_struct,\n                    ($base_type, $base_type)\n                );\n                transmute_unchecked_two_ways!(\n                    transmute_unchecked_2ways_arr_to_struct,\n                    [$base_type; 2],\n                    generated_struct\n                );\n                transmute_unchecked_two_ways!(\n                    transmute_unchecked_2ways_arr_to_tuple,\n                    [$base_type; 2],\n                    ($base_type, $base_type)\n                );\n                transmute_unchecked_two_ways!(\n                    transmute_unchecked_2ways_tuple_to_struct,\n                    ($base_type, $base_type),\n                    generated_struct\n                );\n                transmute_unchecked_two_ways!(\n                    transmute_unchecked_2ways_tuple_to_arr,\n                    ($base_type, $base_type),\n                    [$base_type; 2]\n                );\n            }\n        };\n    }"
+    }
+  ],
+  "callees": [
+    "40161443625506134517228696901715077331",
+    "162491259761257566482601707483467907610",
+    "160264277926075745012596376185214741121",
+    "765632163473343149313388288187706299654",
+    "1662070016694227139911860440277225290916",
+    "868708452713984376310801203349667993765",
+    "147326571724930681683605250526187624864"
+  ]
+}

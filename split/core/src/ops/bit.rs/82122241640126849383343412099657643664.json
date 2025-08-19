@@ -1,0 +1,17 @@
+{
+  "file": "core/src/ops/bit.rs",
+  "name": "<i128 as ops::bit::Shl<u32>>::shl",
+  "hash": "82122241640126849383343412099657643664",
+  "hash_direct": "24373468075343848834091708965388125276",
+  "src": "fn shl(self, other: $f) -> $t {\n                self << other\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "shl_impl! { $t, u32 }",
+      "defsite": "macro_rules! shl_impl {\n    ($t:ty, $f:ty) => {\n        #[stable(feature = \"rust1\", since = \"1.0.0\")]\n        impl Shl<$f> for $t {\n            type Output = $t;\n\n            #[inline]\n            #[rustc_inherit_overflow_checks]\n            fn shl(self, other: $f) -> $t {\n                self << other\n            }\n        }\n\n        forward_ref_binop! { impl Shl, shl for $t, $f }\n    };\n}"
+    },
+    {
+      "callsite": "shl_impl_all! { u8 u16 u32 u64 u128 usize i8 i16 i32 i64 i128 isize }",
+      "defsite": "macro_rules! shl_impl_all {\n    ($($t:ty)*) => ($(\n        shl_impl! { $t, u8 }\n        shl_impl! { $t, u16 }\n        shl_impl! { $t, u32 }\n        shl_impl! { $t, u64 }\n        shl_impl! { $t, u128 }\n        shl_impl! { $t, usize }\n\n        shl_impl! { $t, i8 }\n        shl_impl! { $t, i16 }\n        shl_impl! { $t, i32 }\n        shl_impl! { $t, i64 }\n        shl_impl! { $t, i128 }\n        shl_impl! { $t, isize }\n    )*)\n}"
+    }
+  ]
+}

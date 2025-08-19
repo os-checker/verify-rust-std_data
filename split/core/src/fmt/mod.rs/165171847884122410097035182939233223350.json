@@ -1,0 +1,10 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "fmt::Formatter::<'_>::sign",
+  "hash": "165171847884122410097035182939233223350",
+  "hash_direct": "10403974908104601582190195291622442555",
+  "src": "pub const fn sign(&self) -> Option<Sign> {\n        self.options.get_sign()\n    }",
+  "callees": [
+    "1700489761868660815915398471550652319959"
+  ]
+}

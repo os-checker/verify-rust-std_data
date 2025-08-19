@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f32.rs",
+  "name": "f32::<impl f32>::algebraic_rem",
+  "hash": "1049672765436417980316745103790463781703",
+  "hash_direct": "138025778272529390918887808601213591230",
+  "src": "pub const fn algebraic_rem(self, rhs: f32) -> f32 {\n        intrinsics::frem_algebraic(self, rhs)\n    }"
+}

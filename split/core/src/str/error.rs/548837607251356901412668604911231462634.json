@@ -1,0 +1,7 @@
+{
+  "file": "core/src/str/error.rs",
+  "name": "<str::error::ParseBoolError as error::Error>::description",
+  "hash": "548837607251356901412668604911231462634",
+  "hash_direct": "94059588735546320754345670196923867407",
+  "src": "fn description(&self) -> &str {\n        \"failed to parse bool\"\n    }"
+}

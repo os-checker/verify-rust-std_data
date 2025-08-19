@@ -1,0 +1,13 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vqdmlalh_s16",
+  "hash": "44352463930655199212177894830375358314",
+  "hash_direct": "51572189309779274157214635367396807793",
+  "src": "pub fn vqdmlalh_s16(a: i32, b: i16, c: i16) -> i32 {\n    let x: int32x4_t = vqdmull_s16(vdup_n_s16(b), vdup_n_s16(c));\n    unsafe { vqadds_s32(a, simd_extract!(x, 0)) }\n}",
+  "callees": [
+    "1700196152466148077011526623036752348961",
+    "1624296003189241846812809316037265487822",
+    "138673555903447681579256565264955490344",
+    "1271200498436182357316478493060983504202"
+  ]
+}

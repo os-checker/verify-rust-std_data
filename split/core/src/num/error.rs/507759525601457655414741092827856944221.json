@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/error.rs",
+  "name": "<num::error::TryFromIntError as convert::From<convert::Infallible>>::from",
+  "hash": "507759525601457655414741092827856944221",
+  "hash_direct": "1741611727572534433211941043142488787920",
+  "src": "fn from(x: Infallible) -> TryFromIntError {\n        match x {}\n    }"
+}

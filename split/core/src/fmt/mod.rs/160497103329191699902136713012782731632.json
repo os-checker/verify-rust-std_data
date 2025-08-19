@@ -1,0 +1,7 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "fmt::Formatter::<'_>::debug_upper_hex",
+  "hash": "160497103329191699902136713012782731632",
+  "hash_direct": "1050010851404445596812745617889647956519",
+  "src": "fn debug_upper_hex(&self) -> bool {\n        self.options.flags & flags::DEBUG_UPPER_HEX_FLAG != 0\n    }"
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/fmt/num_buffer.rs",
+  "name": "fmt::num_buffer::NumBuffer::<u128>::capacity",
+  "hash": "25056804924925166129732026905986881667",
+  "hash_direct": "165528940656132587883323959654807692833",
+  "src": "pub const fn capacity(&self) -> usize {\n        self.buf.len()\n    }"
+}

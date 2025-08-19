@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f64.rs",
+  "name": "f64::math::ceil",
+  "hash": "58828247350901863231709356070165711421",
+  "hash_direct": "91243803201635950635504268538132039679",
+  "src": "pub const fn ceil(x: f64) -> f64 {\n        // SAFETY: intrinsic with no preconditions\n        unsafe { intrinsics::ceilf64(x) }\n    }"
+}

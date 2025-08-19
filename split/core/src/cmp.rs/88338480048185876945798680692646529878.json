@@ -1,0 +1,13 @@
+{
+  "file": "core/src/cmp.rs",
+  "name": "cmp::impls::<impl cmp::PartialEq for u128>::ne",
+  "hash": "88338480048185876945798680692646529878",
+  "hash_direct": "1097456186933964806915541397972924138106",
+  "src": "fn ne(&self, other: &Self) -> bool { *self != *other }",
+  "macro_backtrace": [
+    {
+      "callsite": "partial_eq_impl! {\n        bool char usize u8 u16 u32 u64 u128 isize i8 i16 i32 i64 i128 f16 f32 f64 f128\n    }",
+      "defsite": "macro_rules! partial_eq_impl {\n        ($($t:ty)*) => ($(\n            #[stable(feature = \"rust1\", since = \"1.0.0\")]\n            #[rustc_const_unstable(feature = \"const_cmp\", issue = \"143800\")]\n            impl const PartialEq for $t {\n                #[inline]\n                fn eq(&self, other: &Self) -> bool { *self == *other }\n                #[inline]\n                fn ne(&self, other: &Self) -> bool { *self != *other }\n            }\n        )*)\n    }"
+    }
+  ]
+}

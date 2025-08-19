@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vaddlv_u32",
+  "hash": "33704150368764890062192578600729457198",
+  "hash_direct": "1366910262133347152413227584642858327346",
+  "src": "pub fn vaddlv_u32(a: uint32x2_t) -> u64 {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.uaddlv.i64.v2i32\"\n        )]\n        fn _vaddlv_u32(a: uint32x2_t) -> u64;\n    }\n    unsafe { _vaddlv_u32(a) }\n}"
+}

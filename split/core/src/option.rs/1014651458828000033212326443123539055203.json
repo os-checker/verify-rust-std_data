@@ -1,0 +1,10 @@
+{
+  "file": "core/src/option.rs",
+  "name": "option::Option::<ascii::EscapeDefault>::unwrap_or",
+  "hash": "1014651458828000033212326443123539055203",
+  "hash_direct": "9148533757281525469375245747865584274",
+  "src": "pub const fn unwrap_or(self, default: T) -> T\n    where\n        T: ~const Destruct,\n    {\n        match self {\n            Some(x) => x,\n            None => default,\n        }\n    }",
+  "callees": [
+    "1015972831054209123115790787142872099489"
+  ]
+}

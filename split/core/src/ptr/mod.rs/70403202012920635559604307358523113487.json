@@ -1,0 +1,31 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "ptr::read::<core_arch::arm_shared::neon::float16x4_t>",
+  "hash": "70403202012920635559604307358523113487",
+  "hash_direct": "155347344988806752807725034919867511702",
+  "src": "pub const unsafe fn read<T>(src: *const T) -> T {\n    // It would be semantically correct to implement this via `copy_nonoverlapping`\n    // and `MaybeUninit`, as was done before PR #109035. Calling `assume_init`\n    // provides enough information to know that this is a typed operation.\n\n    // However, as of March 2023 the compiler was not capable of taking advantage\n    // of that information. Thus, the implementation here switched to an intrinsic,\n    // which lowers to `_0 = *src` in MIR, to address a few issues:\n    //\n    // - Using `MaybeUninit::assume_init` after a `copy_nonoverlapping` was not\n    //   turning the untyped copy into a typed load. As such, the generated\n    //   `load` in LLVM didn't get various metadata, such as `!range` (#73258),\n    //   `!nonnull`, and `!noundef`, resulting in poorer optimization.\n    // - Going through the extra local resulted in multiple extra copies, even\n    //   in optimized MIR.  (Ignoring StorageLive/Dead, the intrinsic is one\n    //   MIR statement, while the previous implementation was eight.)  LLVM\n    //   could sometimes optimize them away, but because `read` is at the core\n    //   of so many things, not having them in the first place improves what we\n    //   hand off to the backend.  For example, `mem::replace::<Big>` previously\n    //   emitted 4 `alloca` and 6 `memcpy`s, but is now 1 `alloc` and 3 `memcpy`s.\n    // - In general, this approach keeps us from getting any more bugs (like\n    //   #106369) that boil down to \"`read(p)` is worse than `*p`\", as this\n    //   makes them look identical to the backend (or other MIR consumers).\n    //\n    // Future enhancements to MIR optimizations might well allow this to return\n    // to the previous implementation, rather than using an intrinsic.\n\n    // SAFETY: the caller must guarantee that `src` is valid for reads.\n    unsafe {\n        #[cfg(debug_assertions)] // Too expensive to always enable (for now?)\n        ub_checks::assert_unsafe_precondition!(\n            check_language_ub,\n            \"ptr::read requires that the pointer argument is aligned and non-null\",\n            (\n                addr: *const () = src as *const (),\n                align: usize = align_of::<T>(),\n                is_zst: bool = T::IS_ZST,\n            ) => ub_checks::maybe_is_aligned_and_not_null(addr, align, is_zst)\n        );\n        crate::intrinsics::read_via_copy(src)\n    }\n}",
+  "callees": [
+    "47323665595455568617290020941376774286",
+    "1329845230409163288212548289525672875535",
+    "109763229663154342343123224747831634619",
+    "16824420916691935049705640393259467449",
+    "561445107989240208511361370086377379752",
+    "172719388149147083609359375952755433557",
+    "1617054938297627622011998382328717871744",
+    "1196638383615410162910723134175805433641",
+    "841904668883726495316837415609641023349",
+    "1258931108755458209614962827106116332072",
+    "1243847030362955698517207199029174369810",
+    "105125143701458073564296455695110349394",
+    "25930241974724637292994171257021210872",
+    "617554482545947003412104686554524783687",
+    "1445917162577882149418297081791436471284",
+    "849628185942532211610194183090257053256",
+    "703663108277374327010040438608357482834",
+    "1100495660517602822510660091708953776518",
+    "48548664629730829953422984265893277498",
+    "399232661239117480517401994520839366833",
+    "165260604638305226342101042842060873588",
+    "34478597508049401479557782585707843723"
+  ]
+}

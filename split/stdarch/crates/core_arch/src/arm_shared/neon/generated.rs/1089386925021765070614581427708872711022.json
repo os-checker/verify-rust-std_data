@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vst4_s16",
+  "hash": "1089386925021765070614581427708872711022",
+  "hash_direct": "1250445808163438088715959294706968519082",
+  "src": "pub unsafe fn vst4_s16(a: *mut i16, b: int16x4x4_t) {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.st4.v4i16.p0\"\n        )]\n        fn _vst4_s16(a: int16x4_t, b: int16x4_t, c: int16x4_t, d: int16x4_t, ptr: *mut i8);\n    }\n    _vst4_s16(b.0, b.1, b.2, b.3, a as _)\n}"
+}

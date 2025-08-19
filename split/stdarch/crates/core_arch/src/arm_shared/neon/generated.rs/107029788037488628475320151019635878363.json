@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vmvnq_p8",
+  "hash": "107029788037488628475320151019635878363",
+  "hash_direct": "53554437734804527582802745318533875393",
+  "src": "pub fn vmvnq_p8(a: poly8x16_t) -> poly8x16_t {\n    let b = poly8x16_t::splat(255);\n    unsafe { simd_xor(a, b) }\n}",
+  "callees": [
+    "502334421616031562214489636620346378278"
+  ]
+}

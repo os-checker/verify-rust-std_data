@@ -1,0 +1,12 @@
+{
+  "file": "core/src/net/ip_addr.rs",
+  "name": "net::ip_addr::Ipv6Addr::is_benchmarking",
+  "hash": "36170628355041565016577362855268629001",
+  "hash_direct": "1401291046733337218219449810943674636",
+  "src": "pub const fn is_benchmarking(&self) -> bool {\n        (self.segments()[0] == 0x2001) && (self.segments()[1] == 0x2) && (self.segments()[2] == 0)\n    }",
+  "callees": [
+    "42261456769457946986279526644059666770",
+    "655364994638183711117813449037291777950",
+    "965869043725195656313548384614345090910"
+  ]
+}

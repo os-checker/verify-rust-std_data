@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/const_ptr.rs",
+  "name": "ptr::const_ptr::<impl *const mem::manually_drop::ManuallyDrop<core_arch::arm_shared::neon::poly8x16_t>>::cast::<core_arch::arm_shared::neon::poly8x16_t>",
+  "hash": "1777816117887434420810286890545656256605",
+  "hash_direct": "161127838969744055046275010869004600844",
+  "src": "pub const fn cast<U>(self) -> *const U {\n        self as _\n    }"
+}

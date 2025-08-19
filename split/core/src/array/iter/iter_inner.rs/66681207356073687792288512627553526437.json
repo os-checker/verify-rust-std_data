@@ -1,0 +1,10 @@
+{
+  "file": "core/src/array/iter/iter_inner.rs",
+  "name": "array::iter::iter_inner::PolymorphicIter::<[mem::maybe_uninit::MaybeUninit<char>; 3]>::len",
+  "hash": "66681207356073687792288512627553526437",
+  "hash_direct": "1090632733692621025414896444595255705540",
+  "src": "pub(super) const fn len(&self) -> usize {\n        self.alive.len()\n    }",
+  "callees": [
+    "305374531381368603518383057774771282949"
+  ]
+}

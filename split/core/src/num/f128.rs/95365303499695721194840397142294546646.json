@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f128.rs",
+  "name": "f128::<impl f128>::max",
+  "hash": "95365303499695721194840397142294546646",
+  "hash_direct": "28040595543984971164004320035998702211",
+  "src": "pub const fn max(self, other: f128) -> f128 {\n        intrinsics::maxnumf128(self, other)\n    }"
+}

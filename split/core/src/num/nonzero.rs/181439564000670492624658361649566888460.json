@@ -1,0 +1,11 @@
+{
+  "file": "core/src/num/nonzero.rs",
+  "name": "<num::nonzero::NonZero<u128> as cmp::PartialEq>::eq",
+  "hash": "181439564000670492624658361649566888460",
+  "hash_direct": "108664988042122588849238735666803940104",
+  "src": "fn eq(&self, other: &Self) -> bool {\n        self.get() == other.get()\n    }",
+  "callees": [
+    "167604581721067505095211763037527842993",
+    "1048662776749122856216106589010375971614"
+  ]
+}

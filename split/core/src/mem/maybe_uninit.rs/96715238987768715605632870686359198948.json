@@ -1,0 +1,7 @@
+{
+  "file": "core/src/mem/maybe_uninit.rs",
+  "name": "mem::maybe_uninit::MaybeUninit::<ffi::va_list::VaListImpl<'_>>::uninit",
+  "hash": "96715238987768715605632870686359198948",
+  "hash_direct": "155010885491858824288920533567659725888",
+  "src": "pub const fn uninit() -> MaybeUninit<T> {\n        MaybeUninit { uninit: () }\n    }"
+}

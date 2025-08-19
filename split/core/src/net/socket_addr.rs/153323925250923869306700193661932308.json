@@ -1,0 +1,7 @@
+{
+  "file": "core/src/net/socket_addr.rs",
+  "name": "<net::socket_addr::SocketAddr as convert::From<net::socket_addr::SocketAddrV4>>::from",
+  "hash": "153323925250923869306700193661932308",
+  "hash_direct": "13674425913539197446468531589730785453",
+  "src": "fn from(sock4: SocketAddrV4) -> SocketAddr {\n        SocketAddr::V4(sock4)\n    }"
+}

@@ -1,0 +1,12 @@
+{
+  "file": "core/src/num/f128.rs",
+  "name": "f128::<impl f128>::is_finite",
+  "hash": "385873668303395517512786136367046801839",
+  "hash_direct": "128338808752634617412706747968608885473",
+  "src": "pub const fn is_finite(self) -> bool {\n        // There's no need to handle NaN separately: if self is NaN,\n        // the comparison is not true, exactly as desired.\n        self.abs() < Self::INFINITY\n    }",
+  "callees": [
+    "138593577866151870709257876221659179848",
+    "513066894812535900215710623547755226647",
+    "165775386293870703954395633549113159997"
+  ]
+}

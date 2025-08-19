@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ops/try_trait.rs",
+  "name": "ops::try_trait::NeverShortCircuit::<&dyn fmt::Debug>::wrap_mut_1::<usize, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/../../stdarch/crates/core_arch/src/simd.rs:1019:64: 1019:67}>",
+  "hash": "53811549510453732226469897307908319851",
+  "hash_direct": "733596095958288551217039258319736361946",
+  "src": "pub(crate) fn wrap_mut_1<A>(\n        mut f: impl FnMut(A) -> T,\n    ) -> impl FnMut(A) -> NeverShortCircuit<T> {\n        move |a| NeverShortCircuit(f(a))\n    }"
+}

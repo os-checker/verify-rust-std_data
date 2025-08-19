@@ -1,0 +1,10 @@
+{
+  "file": "core/src/mem/maybe_uninit.rs",
+  "name": "mem::maybe_uninit::MaybeUninit::<(f64, bool)>::assume_init_mut",
+  "hash": "473756148134689488013117571415749002140",
+  "hash_direct": "420812774097060507710196822316685176113",
+  "src": "pub const unsafe fn assume_init_mut(&mut self) -> &mut T {\n        // SAFETY: the caller must guarantee that `self` is initialized.\n        // This also means that `self` must be a `value` variant.\n        unsafe {\n            intrinsics::assert_inhabited::<T>();\n            &mut *self.as_mut_ptr()\n        }\n    }",
+  "callees": [
+    "541167555230756045315158555004235506701"
+  ]
+}

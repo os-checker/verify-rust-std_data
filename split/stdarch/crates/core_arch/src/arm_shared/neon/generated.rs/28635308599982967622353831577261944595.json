@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vaddhn_u16",
+  "hash": "28635308599982967622353831577261944595",
+  "hash_direct": "1266522871222451463117394659151160466316",
+  "src": "pub fn vaddhn_u16(a: uint16x8_t, b: uint16x8_t) -> uint8x8_t {\n    unsafe { simd_cast(simd_shr(simd_add(a, b), uint16x8_t::splat(8))) }\n}",
+  "callees": [
+    "140794439617428991604305795422537716967"
+  ]
+}

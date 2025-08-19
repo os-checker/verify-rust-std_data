@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vrbitq_p8",
+  "hash": "49217458975906865428531830909207080503",
+  "hash_direct": "81957240522939341097269651730581206077",
+  "src": "pub fn vrbitq_p8(a: poly8x16_t) -> poly8x16_t {\n    unsafe { transmute(vrbitq_s8(transmute(a))) }\n}",
+  "callees": [
+    "27555522751496031629253935554988769710"
+  ]
+}

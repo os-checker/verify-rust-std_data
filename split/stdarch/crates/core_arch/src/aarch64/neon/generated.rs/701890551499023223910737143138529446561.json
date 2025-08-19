@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vld4q_dup_p64",
+  "hash": "701890551499023223910737143138529446561",
+  "hash_direct": "1012521822774089050311120529877527642302",
+  "src": "pub unsafe fn vld4q_dup_p64(a: *const p64) -> poly64x2x4_t {\n    transmute(vld4q_dup_s64(transmute(a)))\n}",
+  "callees": [
+    "1146611371222705012612732569029162114672"
+  ]
+}

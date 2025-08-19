@@ -1,0 +1,12 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "ptr::non_null::NonNull::<i64>::without_provenance",
+  "hash": "305973706604906189117608785438380199160",
+  "hash_direct": "15436490708104865125899725015315518949",
+  "src": "pub const fn without_provenance(addr: NonZero<usize>) -> Self {\n        let pointer = crate::ptr::without_provenance(addr.get());\n        // SAFETY: we know `addr` is non-zero.\n        unsafe { NonNull { pointer } }\n    }",
+  "callees": [
+    "161003650625398914518944455314788757627",
+    "12777244984139077067090081518820596267",
+    "170473093001769744084416700117787022245"
+  ]
+}

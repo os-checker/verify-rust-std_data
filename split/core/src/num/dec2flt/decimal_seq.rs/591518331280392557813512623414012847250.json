@@ -1,0 +1,17 @@
+{
+  "file": "core/src/num/dec2flt/decimal_seq.rs",
+  "name": "<num::dec2flt::decimal_seq::DecimalSeq as cmp::PartialEq>::eq",
+  "hash": "591518331280392557813512623414012847250",
+  "hash_direct": "102187834521335878162762157772673379198",
+  "src": "PartialEq",
+  "macro_backtrace": [
+    {
+      "callsite": "PartialEq",
+      "defsite": "pub macro PartialEq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ],
+  "callees": [
+    "1434289508850403401762081251433040723",
+    "149777324661758074275553291382164443358"
+  ]
+}

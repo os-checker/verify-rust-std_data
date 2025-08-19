@@ -1,0 +1,7 @@
+{
+  "file": "core/src/str/validations.rs",
+  "name": "str::validations::utf8_is_cont_byte",
+  "hash": "121973516639670562835557836045994389718",
+  "hash_direct": "765003636369642978113263604468376065330",
+  "src": "pub(super) const fn utf8_is_cont_byte(byte: u8) -> bool {\n    (byte as i8) < -64\n}"
+}

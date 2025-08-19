@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f16.rs",
+  "name": "f16::<impl f16>::NEG_TINY_BITS",
+  "hash": "89289973367522078119034573442305829039",
+  "hash_direct": "94354886800574012277180094498916373786",
+  "src": "const NEG_TINY_BITS: u16 = Self::TINY_BITS | Self::SIGN_MASK;"
+}

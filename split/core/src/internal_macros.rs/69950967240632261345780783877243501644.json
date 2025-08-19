@@ -1,0 +1,24 @@
+{
+  "file": "core/src/internal_macros.rs",
+  "name": "<i8 as ops::bit::BitXor<&i8>>::bitxor",
+  "hash": "69950967240632261345780783877243501644",
+  "hash_direct": "108934084941666567328889669715979673777",
+  "src": "fn $method(self, other: &$u) -> <$t as $imp<$u>>::Output {\n                $imp::$method(self, *other)\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "forward_ref_binop!(impl $imp, $method for $t, $u,\n                #[stable(feature = \"rust1\", since = \"1.0.0\")])",
+      "defsite": "macro_rules! forward_ref_binop {\n    (impl $imp:ident, $method:ident for $t:ty, $u:ty) => {\n        forward_ref_binop!(impl $imp, $method for $t, $u,\n                #[stable(feature = \"rust1\", since = \"1.0.0\")]);\n    };\n    (impl $imp:ident, $method:ident for $t:ty, $u:ty, #[$attr:meta]) => {\n        #[$attr]\n        impl<'a> $imp<$u> for &'a $t {\n            type Output = <$t as $imp<$u>>::Output;\n\n            #[inline]\n            #[track_caller]\n            fn $method(self, other: $u) -> <$t as $imp<$u>>::Output {\n                $imp::$method(*self, other)\n            }\n        }\n\n        #[$attr]\n        impl $imp<&$u> for $t {\n            type Output = <$t as $imp<$u>>::Output;\n\n            #[inline]\n            #[track_caller]\n            fn $method(self, other: &$u) -> <$t as $imp<$u>>::Output {\n                $imp::$method(self, *other)\n            }\n        }\n\n        #[$attr]\n        impl $imp<&$u> for &$t {\n            type Output = <$t as $imp<$u>>::Output;\n\n            #[inline]\n            #[track_caller]\n            fn $method(self, other: &$u) -> <$t as $imp<$u>>::Output {\n                $imp::$method(*self, *other)\n            }\n        }\n    }\n}"
+    },
+    {
+      "callsite": "forward_ref_binop! { impl BitXor, bitxor for $t, $t }",
+      "defsite": "macro_rules! forward_ref_binop {\n    (impl $imp:ident, $method:ident for $t:ty, $u:ty) => {\n        forward_ref_binop!(impl $imp, $method for $t, $u,\n                #[stable(feature = \"rust1\", since = \"1.0.0\")]);\n    };\n    (impl $imp:ident, $method:ident for $t:ty, $u:ty, #[$attr:meta]) => {\n        #[$attr]\n        impl<'a> $imp<$u> for &'a $t {\n            type Output = <$t as $imp<$u>>::Output;\n\n            #[inline]\n            #[track_caller]\n            fn $method(self, other: $u) -> <$t as $imp<$u>>::Output {\n                $imp::$method(*self, other)\n            }\n        }\n\n        #[$attr]\n        impl $imp<&$u> for $t {\n            type Output = <$t as $imp<$u>>::Output;\n\n            #[inline]\n            #[track_caller]\n            fn $method(self, other: &$u) -> <$t as $imp<$u>>::Output {\n                $imp::$method(self, *other)\n            }\n        }\n\n        #[$attr]\n        impl $imp<&$u> for &$t {\n            type Output = <$t as $imp<$u>>::Output;\n\n            #[inline]\n            #[track_caller]\n            fn $method(self, other: &$u) -> <$t as $imp<$u>>::Output {\n                $imp::$method(*self, *other)\n            }\n        }\n    }\n}"
+    },
+    {
+      "callsite": "bitxor_impl! { bool usize u8 u16 u32 u64 u128 isize i8 i16 i32 i64 i128 }",
+      "defsite": "macro_rules! bitxor_impl {\n    ($($t:ty)*) => ($(\n        #[stable(feature = \"rust1\", since = \"1.0.0\")]\n        impl BitXor for $t {\n            type Output = $t;\n\n            #[inline]\n            fn bitxor(self, other: $t) -> $t { self ^ other }\n        }\n\n        forward_ref_binop! { impl BitXor, bitxor for $t, $t }\n    )*)\n}"
+    }
+  ],
+  "callees": [
+    "437233310386007381215498577575034159002"
+  ]
+}

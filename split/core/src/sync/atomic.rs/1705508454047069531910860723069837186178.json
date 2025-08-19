@@ -1,0 +1,13 @@
+{
+  "file": "core/src/sync/atomic.rs",
+  "name": "<sync::atomic::Ordering as clone::Clone>::clone",
+  "hash": "1705508454047069531910860723069837186178",
+  "hash_direct": "1099426523093662958017044365196540428943",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

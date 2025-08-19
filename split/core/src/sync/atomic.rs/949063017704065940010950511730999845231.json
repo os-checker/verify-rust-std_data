@@ -1,0 +1,7 @@
+{
+  "file": "core/src/sync/atomic.rs",
+  "name": "sync::atomic::atomic_add::<i32>",
+  "hash": "949063017704065940010950511730999845231",
+  "hash_direct": "183871423074702718391664695815122493186",
+  "src": "unsafe fn atomic_add<T: Copy>(dst: *mut T, val: T, order: Ordering) -> T {\n    // SAFETY: the caller must uphold the safety contract for `atomic_add`.\n    unsafe {\n        match order {\n            Relaxed => intrinsics::atomic_xadd::<T, { AO::Relaxed }>(dst, val),\n            Acquire => intrinsics::atomic_xadd::<T, { AO::Acquire }>(dst, val),\n            Release => intrinsics::atomic_xadd::<T, { AO::Release }>(dst, val),\n            AcqRel => intrinsics::atomic_xadd::<T, { AO::AcqRel }>(dst, val),\n            SeqCst => intrinsics::atomic_xadd::<T, { AO::SeqCst }>(dst, val),\n        }\n    }\n}"
+}

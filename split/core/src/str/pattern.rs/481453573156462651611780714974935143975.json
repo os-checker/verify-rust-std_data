@@ -1,0 +1,7 @@
+{
+  "file": "core/src/str/pattern.rs",
+  "name": "str::pattern::TwoWaySearcher::byteset_create::{closure#0}",
+  "hash": "481453573156462651611780714974935143975",
+  "hash_direct": "45738399499978773469266398136019638322",
+  "src": "|a, &b| (1 << (b & 0x3f)) | a"
+}

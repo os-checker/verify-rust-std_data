@@ -1,0 +1,13 @@
+{
+  "file": "core/src/ops/index_range.rs",
+  "name": "<ops::index_range::IndexRange as cmp::Eq>::assert_receiver_is_total_eq",
+  "hash": "125292126548435095769584643450594730444",
+  "hash_direct": "280192710889089412510501010033659882640",
+  "src": "Eq",
+  "macro_backtrace": [
+    {
+      "callsite": "Eq",
+      "defsite": "pub macro Eq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

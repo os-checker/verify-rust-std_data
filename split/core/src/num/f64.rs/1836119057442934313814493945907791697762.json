@@ -1,0 +1,11 @@
+{
+  "file": "core/src/num/f64.rs",
+  "name": "f64::<impl f64>::signum",
+  "hash": "1836119057442934313814493945907791697762",
+  "hash_direct": "6446118163910307483329613352502738220",
+  "src": "pub const fn signum(self) -> f64 {\n        if self.is_nan() { Self::NAN } else { 1.0_f64.copysign(self) }\n    }",
+  "callees": [
+    "365438631184282439011285899670943732554",
+    "100642205651013257673627407189684710656"
+  ]
+}

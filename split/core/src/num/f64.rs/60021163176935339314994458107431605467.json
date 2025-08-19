@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f64.rs",
+  "name": "f64::<impl f64>::abs",
+  "hash": "60021163176935339314994458107431605467",
+  "hash_direct": "1124932502916732435059161794500256919",
+  "src": "pub const fn abs(self) -> f64 {\n        // SAFETY: this is actually a safe intrinsic\n        unsafe { intrinsics::fabsf64(self) }\n    }"
+}

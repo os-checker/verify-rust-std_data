@@ -1,0 +1,12 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vfmaq_n_f64",
+  "hash": "165620485903066449592612922263879754364",
+  "hash_direct": "127933785844833227533390336285958717673",
+  "src": "pub fn vfmaq_n_f64(a: float64x2_t, b: float64x2_t, c: f64) -> float64x2_t {\n    vfmaq_f64(a, b, vdupq_n_f64(c))\n}",
+  "callees": [
+    "1266872721128825193516746196102358946328",
+    "98185521967541796944215192684769061706",
+    "86767706999154888997323522737966898085"
+  ]
+}

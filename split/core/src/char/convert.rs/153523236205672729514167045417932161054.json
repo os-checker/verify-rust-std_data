@@ -1,0 +1,13 @@
+{
+  "file": "core/src/char/convert.rs",
+  "name": "<char::convert::CharTryFromError as cmp::Eq>::assert_receiver_is_total_eq",
+  "hash": "153523236205672729514167045417932161054",
+  "hash_direct": "1552354002497925649313570542808974540067",
+  "src": "Eq",
+  "macro_backtrace": [
+    {
+      "callsite": "Eq",
+      "defsite": "pub macro Eq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

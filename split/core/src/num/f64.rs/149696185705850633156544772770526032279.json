@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f64.rs",
+  "name": "f64::<impl f64>::algebraic_div",
+  "hash": "149696185705850633156544772770526032279",
+  "hash_direct": "492033590239349663015822058415254462891",
+  "src": "pub const fn algebraic_div(self, rhs: f64) -> f64 {\n        intrinsics::fdiv_algebraic(self, rhs)\n    }"
+}

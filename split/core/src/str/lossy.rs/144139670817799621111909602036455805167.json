@@ -1,0 +1,13 @@
+{
+  "file": "core/src/str/lossy.rs",
+  "name": "<str::lossy::Utf8Chunk<'_> as cmp::Eq>::assert_receiver_is_total_eq",
+  "hash": "144139670817799621111909602036455805167",
+  "hash_direct": "151546246493807032665364425464864628080",
+  "src": "Eq",
+  "macro_backtrace": [
+    {
+      "callsite": "Eq",
+      "defsite": "pub macro Eq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

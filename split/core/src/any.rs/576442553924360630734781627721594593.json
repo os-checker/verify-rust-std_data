@@ -1,0 +1,10 @@
+{
+  "file": "core/src/any.rs",
+  "name": "<any::TypeId as cmp::Eq>::assert_receiver_is_total_eq::{constant#0}",
+  "hash": "576442553924360630734781627721594593",
+  "hash_direct": "181717001253576604079364468349826523631",
+  "src": "16 / size_of::<*const ()>()",
+  "callees": [
+    "22478976487043147726964885645241225355"
+  ]
+}

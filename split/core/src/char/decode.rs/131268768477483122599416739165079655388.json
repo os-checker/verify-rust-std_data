@@ -1,0 +1,13 @@
+{
+  "file": "core/src/char/decode.rs",
+  "name": "<char::decode::DecodeUtf16Error as cmp::PartialEq>::eq",
+  "hash": "131268768477483122599416739165079655388",
+  "hash_direct": "164975874796133921969388327440538827798",
+  "src": "PartialEq",
+  "macro_backtrace": [
+    {
+      "callsite": "PartialEq",
+      "defsite": "pub macro PartialEq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/slice/index.rs",
+  "name": "<ops::range::RangeFull as slice::index::SliceIndex<[u8]>>::index_mut",
+  "hash": "19033678452347887663647532945562836571",
+  "hash_direct": "89003053875184221881094359357653200753",
+  "src": "fn index_mut(self, slice: &mut [T]) -> &mut [T] {\n        slice\n    }"
+}

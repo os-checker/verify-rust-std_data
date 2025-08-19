@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vcaleh_f16",
+  "hash": "1816931117608350479614979821605633608525",
+  "hash_direct": "706440042356890056515466890027992462641",
+  "src": "pub fn vcaleh_f16(a: f16, b: f16) -> u16 {\n    vcageh_f16(b, a)\n}",
+  "callees": [
+    "1029046571529633358115640897326796336967"
+  ]
+}

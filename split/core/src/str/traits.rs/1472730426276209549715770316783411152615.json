@@ -1,0 +1,13 @@
+{
+  "file": "core/src/str/traits.rs",
+  "name": "str::traits::str_index_overflow_fail",
+  "hash": "1472730426276209549715770316783411152615",
+  "hash_direct": "17866565108891113788745942161870653509",
+  "src": "const fn str_index_overflow_fail() -> ! {\n    panic!(\"attempted to index str up to maximum usize\");\n}",
+  "callees": [
+    "47323665595455568617290020941376774286",
+    "841904668883726495316837415609641023349",
+    "1258931108755458209614962827106116332072",
+    "1243847030362955698517207199029174369810"
+  ]
+}

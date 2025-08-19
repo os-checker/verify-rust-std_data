@@ -1,0 +1,10 @@
+{
+  "file": "core/src/num/nonzero.rs",
+  "name": "num::nonzero::<impl convert::From<num::nonzero::NonZero<i128>> for i128>::from",
+  "hash": "11791902908307714279691290826407580057",
+  "hash_direct": "3056858338071732722686753149389323684",
+  "src": "fn from(nonzero: NonZero<T>) -> Self {\n        // Call `get` method to keep range information.\n        nonzero.get()\n    }",
+  "callees": [
+    "20778950541755162657702323764137217103"
+  ]
+}

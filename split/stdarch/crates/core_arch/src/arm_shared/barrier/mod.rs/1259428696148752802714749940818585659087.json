@@ -1,0 +1,11 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/barrier/mod.rs",
+  "name": "core_arch::arm_shared::barrier::__isb::<core_arch::arm_shared::barrier::common::SY>",
+  "hash": "1259428696148752802714749940818585659087",
+  "hash_direct": "71038204015059662613024606590888147902",
+  "src": "pub unsafe fn __isb<A>(arg: A)\nwhere\n    A: super::sealed::Isb,\n{\n    arg.__isb()\n}",
+  "callees": [
+    "157511887225439876674198497926849978336",
+    "100724701892471500945037384013226681262"
+  ]
+}

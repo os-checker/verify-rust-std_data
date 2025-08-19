@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vmlsl_s8",
+  "hash": "35791455929196168105031079104721938597",
+  "hash_direct": "147084297441252209182279465128119410209",
+  "src": "pub fn vmlsl_s8(a: int16x8_t, b: int8x8_t, c: int8x8_t) -> int16x8_t {\n    unsafe { simd_sub(a, vmull_s8(b, c)) }\n}",
+  "callees": [
+    "114488624421897435896378662307615781035"
+  ]
+}

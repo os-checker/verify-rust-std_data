@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vcvta_s32_f32",
+  "hash": "1044317723582250964815399021272802956432",
+  "hash_direct": "583729296921059031613792903302539138807",
+  "src": "pub fn vcvta_s32_f32(a: float32x2_t) -> int32x2_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.fcvtas.v2i32.v2f32\"\n        )]\n        fn _vcvta_s32_f32(a: float32x2_t) -> int32x2_t;\n    }\n    unsafe { _vcvta_s32_f32(a) }\n}"
+}

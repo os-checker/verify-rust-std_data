@@ -1,0 +1,7 @@
+{
+  "file": "core/src/mem/manually_drop.rs",
+  "name": "<mem::manually_drop::ManuallyDrop<task::wake::Waker> as ops::deref::Deref>::deref",
+  "hash": "130686558297354740332113434760810761650",
+  "hash_direct": "1650710664225924033710114619648352630354",
+  "src": "fn deref(&self) -> &T {\n        &self.value\n    }"
+}

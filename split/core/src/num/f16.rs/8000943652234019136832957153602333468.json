@@ -1,0 +1,10 @@
+{
+  "file": "core/src/num/f16.rs",
+  "name": "f16::<impl f16>::classify",
+  "hash": "8000943652234019136832957153602333468",
+  "hash_direct": "836926938610271520411640804162838870512",
+  "src": "pub const fn classify(self) -> FpCategory {\n        let b = self.to_bits();\n        match (b & Self::MAN_MASK, b & Self::EXP_MASK) {\n            (0, Self::EXP_MASK) => FpCategory::Infinite,\n            (_, Self::EXP_MASK) => FpCategory::Nan,\n            (0, 0) => FpCategory::Zero,\n            (_, 0) => FpCategory::Subnormal,\n            _ => FpCategory::Normal,\n        }\n    }",
+  "callees": [
+    "85923289477831052692122619536239009122"
+  ]
+}

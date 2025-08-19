@@ -1,0 +1,10 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<iter::adapters::cloned::Cloned<slice::iter::Iter<'_, u32>> as iter::traits::iterator::Iterator>::rev",
+  "hash": "1475576679376177544413254066078076162101",
+  "hash_direct": "158608511095218211179116566513678318247",
+  "src": "fn rev(self) -> Rev<Self>\n    where\n        Self: Sized + DoubleEndedIterator,\n    {\n        Rev::new(self)\n    }",
+  "callees": [
+    "594222112096562933013587020296984127522"
+  ]
+}
