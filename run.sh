@@ -1,6 +1,15 @@
 #!/usr/bin/bash
 
-set -eou pipefail
+set -exou pipefail
+
+all() {
+  verify_rust_std merge --hash-json ../../assets/core.json \
+    --kani-list ../../assets/kani-list_verify-rust-std-CI.json \
+    --strip-kani-list-prefix /home/runner/work/verify-rust-std/verify-rust-std/library/ >merge_diff.json
+  merge_diff
+  results
+  merge_results
+}
 
 merge_diff() {
   jq '
@@ -48,13 +57,14 @@ merge_results() {
 }
 
 declare -A cmds=(
+  [all]=all
   [merge_diff]=merge_diff
   [results]=results
   [merge_results]=merge_results
 )
 
 [[ $# -eq 0 ]] && {
-  echo "Usage: $0 {merge_diff|results} [args...]"
+  echo "Usage: $0 {all|merge_diff|results|merge_results} [args...]"
   exit 1
 }
 
