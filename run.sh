@@ -11,6 +11,8 @@ split() {
   cd assets
   # Generate new split folder.
   ./split.sh ../artifacts/artifact-libcore/core.sqlite3 split.sql ../ui/verify-rust-std_data/split
+  # Generate hash.json
+  sqlite3 ../artifacts/artifact-libcore/core.sqlite3 <hash.sql | jq -s '.' >../ui/verify-rust-std_data/hash.json
 }
 
 # This relies on latest artifact-libcore, so run split first to update it.
