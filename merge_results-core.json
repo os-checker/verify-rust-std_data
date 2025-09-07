@@ -1,5 +1,50 @@
 [
   {
+    "harness": "str::pattern::verify::check_small_slice_eq",
+    "time": 157705,
+    "props": 424,
+    "func": {
+      "name": "str::pattern::small_slice_eq",
+      "safe": "unsafe",
+      "file": "core/src/str/pattern.rs"
+    }
+  },
+  {
+    "harness": "str::pattern::verify::check_small_slice_eq_empty",
+    "time": 1342,
+    "props": 441,
+    "func": {
+      "name": "str::pattern::small_slice_eq_empty",
+      "file": "core/src/str/pattern.rs"
+    }
+  },
+  {
+    "crate": "alloc",
+    "file": "alloc/src/collections/vec_deque/mod.rs",
+    "harness": "collections::vec_deque::verify::check_vecdeque_swap",
+    "proof_kind": "Standard",
+    "time": 11786,
+    "props": 484,
+    "func": {
+      "name": "collections::vec_deque::vecdeque_swap",
+      "file": "alloc/src/collections/vec_deque/mod.rs"
+    },
+    "hash": "3218989151130139729120271887177774406"
+  },
+  {
+    "crate": "alloc",
+    "file": "alloc/src/vec/mod.rs",
+    "harness": "vec::verify::verify_swap_remove",
+    "proof_kind": "Standard",
+    "time": 1817,
+    "props": 392,
+    "func": {
+      "name": "vec::swap_remove",
+      "file": "alloc/src/vec/mod.rs"
+    },
+    "hash": "1384786371727675388810031041165217142170"
+  },
+  {
     "crate": "core",
     "file": "core/src/alloc/layout.rs",
     "harness": "alloc::layout::verify::check_align",
@@ -218,19 +263,6 @@
       "file": "core/src/char/methods.rs"
     },
     "hash": "111857152174512643759787824227444963020"
-  },
-  {
-    "crate": "alloc",
-    "file": "alloc/src/collections/vec_deque/mod.rs",
-    "harness": "collections::vec_deque::verify::check_vecdeque_swap",
-    "proof_kind": "Standard",
-    "time": 11786,
-    "props": 484,
-    "func": {
-      "name": "collections::vec_deque::vecdeque_swap",
-      "file": "alloc/src/collections/vec_deque/mod.rs"
-    },
-    "hash": "3218989151130139729120271887177774406"
   },
   {
     "crate": "core",
@@ -7039,6 +7071,1416 @@
   },
   {
     "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::carrying_mul_u16_full_range",
+    "proof_kind": "Standard",
+    "time": 775,
+    "props": 61,
+    "func": {
+      "name": "num::carrying",
+      "file": "core/src/num/mod.rs"
+    },
+    "hash": "10416188905249321513567191598843229918"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::carrying_mul_u32_large",
+    "proof_kind": "Standard",
+    "time": 802,
+    "props": 64,
+    "func": {
+      "name": "num::carrying",
+      "file": "core/src/num/mod.rs"
+    },
+    "hash": "128100582475068482165775826364412677050"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::carrying_mul_u32_mid_edge",
+    "proof_kind": "Standard",
+    "time": 1531,
+    "props": 79,
+    "func": {
+      "name": "num::carrying",
+      "file": "core/src/num/mod.rs"
+    },
+    "hash": "18286651282131203604110216609430139936"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::carrying_mul_u32_small",
+    "proof_kind": "Standard",
+    "time": 637,
+    "props": 61,
+    "func": {
+      "name": "num::carrying",
+      "file": "core/src/num/mod.rs"
+    },
+    "hash": "127914293167728660897205044395003375319"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::carrying_mul_u64_large",
+    "proof_kind": "Standard",
+    "time": 1668,
+    "props": 64,
+    "func": {
+      "name": "num::carrying",
+      "file": "core/src/num/mod.rs"
+    },
+    "hash": "1469381277171678376413144862662602573327"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::carrying_mul_u64_mid_edge",
+    "proof_kind": "Standard",
+    "time": 3773,
+    "props": 79,
+    "func": {
+      "name": "num::carrying",
+      "file": "core/src/num/mod.rs"
+    },
+    "hash": "114404462413512566782788667573066201512"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::carrying_mul_u64_small",
+    "proof_kind": "Standard",
+    "time": 761,
+    "props": 61,
+    "func": {
+      "name": "num::carrying",
+      "file": "core/src/num/mod.rs"
+    },
+    "hash": "847882787247026000618365580354593063553"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::carrying_mul_u8_full_range",
+    "proof_kind": "Standard",
+    "time": 620,
+    "props": 61,
+    "func": {
+      "name": "num::carrying",
+      "file": "core/src/num/mod.rs"
+    },
+    "hash": "1054661828704601312217137468840312477533"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f128_to_int_unchecked_i128",
+    "proof_kind": "Contract",
+    "time": 1436,
+    "props": 99,
+    "func": {
+      "name": "f128::<impl f128>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f128.rs"
+    },
+    "hash": "82067521220746008176056788954105894464"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f128_to_int_unchecked_i16",
+    "proof_kind": "Contract",
+    "time": 390,
+    "props": 99,
+    "func": {
+      "name": "f128::<impl f128>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f128.rs"
+    },
+    "hash": "980837880862738977017383929102610532117"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f128_to_int_unchecked_i32",
+    "proof_kind": "Contract",
+    "time": 925,
+    "props": 99,
+    "func": {
+      "name": "f128::<impl f128>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f128.rs"
+    },
+    "hash": "1309308289393012704716798949576273029030"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f128_to_int_unchecked_i64",
+    "proof_kind": "Contract",
+    "time": 1434,
+    "props": 99,
+    "func": {
+      "name": "f128::<impl f128>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f128.rs"
+    },
+    "hash": "431996156176605395013985929606711119713"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f128_to_int_unchecked_i8",
+    "proof_kind": "Contract",
+    "time": 457,
+    "props": 99,
+    "func": {
+      "name": "f128::<impl f128>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f128.rs"
+    },
+    "hash": "200838736372821242010759565079372333534"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f128_to_int_unchecked_isize",
+    "proof_kind": "Contract",
+    "time": 1214,
+    "props": 99,
+    "func": {
+      "name": "f128::<impl f128>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f128.rs"
+    },
+    "hash": "47663976349574741229144771844862245580"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f128_to_int_unchecked_u128",
+    "proof_kind": "Contract",
+    "time": 2109,
+    "props": 99,
+    "func": {
+      "name": "f128::<impl f128>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f128.rs"
+    },
+    "hash": "1652073267640112758115463078678880933315"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f128_to_int_unchecked_u16",
+    "proof_kind": "Contract",
+    "time": 380,
+    "props": 99,
+    "func": {
+      "name": "f128::<impl f128>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f128.rs"
+    },
+    "hash": "23616075857831469322912345649429877766"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f128_to_int_unchecked_u32",
+    "proof_kind": "Contract",
+    "time": 745,
+    "props": 99,
+    "func": {
+      "name": "f128::<impl f128>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f128.rs"
+    },
+    "hash": "65769384061334128907986117788727216157"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f128_to_int_unchecked_u64",
+    "proof_kind": "Contract",
+    "time": 900,
+    "props": 99,
+    "func": {
+      "name": "f128::<impl f128>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f128.rs"
+    },
+    "hash": "134378056649124183112664079971803474479"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f128_to_int_unchecked_u8",
+    "proof_kind": "Contract",
+    "time": 579,
+    "props": 99,
+    "func": {
+      "name": "f128::<impl f128>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f128.rs"
+    },
+    "hash": "1394445432169357395216931432431175320665"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f128_to_int_unchecked_usize",
+    "proof_kind": "Contract",
+    "time": 779,
+    "props": 99,
+    "func": {
+      "name": "f128::<impl f128>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f128.rs"
+    },
+    "hash": "1208995128340954408915030868151634809570"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f16_to_int_unchecked_i128",
+    "proof_kind": "Contract",
+    "time": 648,
+    "props": 99,
+    "func": {
+      "name": "f16::<impl f16>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f16.rs"
+    },
+    "hash": "179776433603943851313616701659323941917"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f16_to_int_unchecked_i16",
+    "proof_kind": "Contract",
+    "time": 435,
+    "props": 99,
+    "func": {
+      "name": "f16::<impl f16>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f16.rs"
+    },
+    "hash": "1198807684919882324315603033654605843282"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f16_to_int_unchecked_i32",
+    "proof_kind": "Contract",
+    "time": 588,
+    "props": 99,
+    "func": {
+      "name": "f16::<impl f16>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f16.rs"
+    },
+    "hash": "16213727586108973044155997031850422175"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f16_to_int_unchecked_i64",
+    "proof_kind": "Contract",
+    "time": 682,
+    "props": 99,
+    "func": {
+      "name": "f16::<impl f16>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f16.rs"
+    },
+    "hash": "63911459863472630666950112163850151463"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f16_to_int_unchecked_i8",
+    "proof_kind": "Contract",
+    "time": 385,
+    "props": 99,
+    "func": {
+      "name": "f16::<impl f16>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f16.rs"
+    },
+    "hash": "129473443790721372586787817817175804702"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f16_to_int_unchecked_isize",
+    "proof_kind": "Contract",
+    "time": 655,
+    "props": 99,
+    "func": {
+      "name": "f16::<impl f16>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f16.rs"
+    },
+    "hash": "79256736312283339454159336580271481042"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f16_to_int_unchecked_u128",
+    "proof_kind": "Contract",
+    "time": 391,
+    "props": 99,
+    "func": {
+      "name": "f16::<impl f16>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f16.rs"
+    },
+    "hash": "24240364982146621262026419064000771328"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f16_to_int_unchecked_u16",
+    "proof_kind": "Contract",
+    "time": 348,
+    "props": 99,
+    "func": {
+      "name": "f16::<impl f16>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f16.rs"
+    },
+    "hash": "67028812806974200510410769702225394548"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f16_to_int_unchecked_u32",
+    "proof_kind": "Contract",
+    "time": 403,
+    "props": 99,
+    "func": {
+      "name": "f16::<impl f16>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f16.rs"
+    },
+    "hash": "293855020364253330913400051814580976213"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f16_to_int_unchecked_u64",
+    "proof_kind": "Contract",
+    "time": 404,
+    "props": 99,
+    "func": {
+      "name": "f16::<impl f16>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f16.rs"
+    },
+    "hash": "38185076757768222848835327299257799868"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f16_to_int_unchecked_u8",
+    "proof_kind": "Contract",
+    "time": 399,
+    "props": 99,
+    "func": {
+      "name": "f16::<impl f16>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f16.rs"
+    },
+    "hash": "1793129072984737703717048132723657713283"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f16_to_int_unchecked_usize",
+    "proof_kind": "Contract",
+    "time": 601,
+    "props": 99,
+    "func": {
+      "name": "f16::<impl f16>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f16.rs"
+    },
+    "hash": "1139674424966342294617622322954347023832"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f32_to_int_unchecked_i128",
+    "proof_kind": "Contract",
+    "time": 906,
+    "props": 98,
+    "func": {
+      "name": "f32::<impl f32>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f32.rs"
+    },
+    "hash": "1534459940216075201913042427853015447103"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f32_to_int_unchecked_i16",
+    "proof_kind": "Contract",
+    "time": 451,
+    "props": 98,
+    "func": {
+      "name": "f32::<impl f32>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f32.rs"
+    },
+    "hash": "180118218034761781788558813055534570823"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f32_to_int_unchecked_i32",
+    "proof_kind": "Contract",
+    "time": 729,
+    "props": 98,
+    "func": {
+      "name": "f32::<impl f32>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f32.rs"
+    },
+    "hash": "919226830507159421616094746553852831867"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f32_to_int_unchecked_i64",
+    "proof_kind": "Contract",
+    "time": 734,
+    "props": 98,
+    "func": {
+      "name": "f32::<impl f32>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f32.rs"
+    },
+    "hash": "2137972788632178314513597788626906413"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f32_to_int_unchecked_i8",
+    "proof_kind": "Contract",
+    "time": 607,
+    "props": 98,
+    "func": {
+      "name": "f32::<impl f32>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f32.rs"
+    },
+    "hash": "1411186208637770387815962692480637851973"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f32_to_int_unchecked_isize",
+    "proof_kind": "Contract",
+    "time": 1055,
+    "props": 98,
+    "func": {
+      "name": "f32::<impl f32>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f32.rs"
+    },
+    "hash": "156861189068884614271405462770204467053"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f32_to_int_unchecked_u128",
+    "proof_kind": "Contract",
+    "time": 774,
+    "props": 98,
+    "func": {
+      "name": "f32::<impl f32>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f32.rs"
+    },
+    "hash": "339981141618035793411509210835784095989"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f32_to_int_unchecked_u16",
+    "proof_kind": "Contract",
+    "time": 366,
+    "props": 98,
+    "func": {
+      "name": "f32::<impl f32>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f32.rs"
+    },
+    "hash": "154385111922234161465121594697830343736"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f32_to_int_unchecked_u32",
+    "proof_kind": "Contract",
+    "time": 552,
+    "props": 98,
+    "func": {
+      "name": "f32::<impl f32>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f32.rs"
+    },
+    "hash": "778992331221335935018259236719850653255"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f32_to_int_unchecked_u64",
+    "proof_kind": "Contract",
+    "time": 707,
+    "props": 98,
+    "func": {
+      "name": "f32::<impl f32>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f32.rs"
+    },
+    "hash": "5143623557081029318399595248081727048"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f32_to_int_unchecked_u8",
+    "proof_kind": "Contract",
+    "time": 368,
+    "props": 98,
+    "func": {
+      "name": "f32::<impl f32>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f32.rs"
+    },
+    "hash": "1391951520198688967911836002317116453831"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f32_to_int_unchecked_usize",
+    "proof_kind": "Contract",
+    "time": 423,
+    "props": 98,
+    "func": {
+      "name": "f32::<impl f32>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f32.rs"
+    },
+    "hash": "1314505269910960829813422110464221376988"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f64_to_int_unchecked_i128",
+    "proof_kind": "Contract",
+    "time": 1773,
+    "props": 98,
+    "func": {
+      "name": "f64::<impl f64>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f64.rs"
+    },
+    "hash": "1461542335841895289314315949705512735632"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f64_to_int_unchecked_i16",
+    "proof_kind": "Contract",
+    "time": 619,
+    "props": 98,
+    "func": {
+      "name": "f64::<impl f64>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f64.rs"
+    },
+    "hash": "117541078982600569389476541840860801127"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f64_to_int_unchecked_i32",
+    "proof_kind": "Contract",
+    "time": 464,
+    "props": 98,
+    "func": {
+      "name": "f64::<impl f64>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f64.rs"
+    },
+    "hash": "314515385656781583813965168795635526295"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f64_to_int_unchecked_i64",
+    "proof_kind": "Contract",
+    "time": 959,
+    "props": 98,
+    "func": {
+      "name": "f64::<impl f64>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f64.rs"
+    },
+    "hash": "126933675030374543685348529653904024256"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f64_to_int_unchecked_i8",
+    "proof_kind": "Contract",
+    "time": 421,
+    "props": 98,
+    "func": {
+      "name": "f64::<impl f64>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f64.rs"
+    },
+    "hash": "599889927711440839911976939221282326186"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f64_to_int_unchecked_isize",
+    "proof_kind": "Contract",
+    "time": 1256,
+    "props": 98,
+    "func": {
+      "name": "f64::<impl f64>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f64.rs"
+    },
+    "hash": "362100267949691693212466128228102310202"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f64_to_int_unchecked_u128",
+    "proof_kind": "Contract",
+    "time": 1054,
+    "props": 98,
+    "func": {
+      "name": "f64::<impl f64>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f64.rs"
+    },
+    "hash": "1546079222671411843410956385752439020277"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f64_to_int_unchecked_u16",
+    "proof_kind": "Contract",
+    "time": 370,
+    "props": 98,
+    "func": {
+      "name": "f64::<impl f64>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f64.rs"
+    },
+    "hash": "1739881702251052696813448086132088030586"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f64_to_int_unchecked_u32",
+    "proof_kind": "Contract",
+    "time": 398,
+    "props": 98,
+    "func": {
+      "name": "f64::<impl f64>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f64.rs"
+    },
+    "hash": "1817657765217485112813403871148660548506"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f64_to_int_unchecked_u64",
+    "proof_kind": "Contract",
+    "time": 931,
+    "props": 98,
+    "func": {
+      "name": "f64::<impl f64>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f64.rs"
+    },
+    "hash": "169138886384312021168911635519338472009"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f64_to_int_unchecked_u8",
+    "proof_kind": "Contract",
+    "time": 567,
+    "props": 98,
+    "func": {
+      "name": "f64::<impl f64>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f64.rs"
+    },
+    "hash": "1529562097643120279616848874626582460043"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_f64_to_int_unchecked_usize",
+    "proof_kind": "Contract",
+    "time": 626,
+    "props": 98,
+    "func": {
+      "name": "f64::<impl f64>::to_int_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/num/f64.rs"
+    },
+    "hash": "1779119285230618061212661219815447421477"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_unchecked_mul_i16",
+    "proof_kind": "Contract",
+    "time": 1044,
+    "props": 70,
+    "func": {
+      "name": "num::<impl i16>::unchecked_mul",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "394532939478418478916929417067686435132"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_unchecked_mul_i8",
+    "proof_kind": "Contract",
+    "time": 98,
+    "props": 70,
+    "func": {
+      "name": "num::<impl i8>::unchecked_mul",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "155779998773494159017535838675985569710"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_unchecked_mul_u16",
+    "proof_kind": "Contract",
+    "time": 275,
+    "props": 70,
+    "func": {
+      "name": "num::<impl u16>::unchecked_mul",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "78731670313116286151827922116789886935"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::checked_unchecked_mul_u8",
+    "proof_kind": "Contract",
+    "time": 97,
+    "props": 70,
+    "func": {
+      "name": "num::<impl u8>::unchecked_mul",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "96785518940880748525665988111521276073"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::unchecked_mul_i128_edge_neg",
+    "proof_kind": "Contract",
+    "time": 1346,
+    "props": 78,
+    "func": {
+      "name": "num::<impl i128>::unchecked_mul",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "11691248656022026412771095562110880307"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::unchecked_mul_i128_edge_pos",
+    "proof_kind": "Contract",
+    "time": 1272,
+    "props": 78,
+    "func": {
+      "name": "num::<impl i128>::unchecked_mul",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "1562732452976755141314267065289172593781"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::unchecked_mul_i128_large_neg",
+    "proof_kind": "Contract",
+    "time": 1308,
+    "props": 72,
+    "func": {
+      "name": "num::<impl i128>::unchecked_mul",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "151811596005114258286235338875066403759"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::unchecked_mul_i128_large_pos",
+    "proof_kind": "Contract",
+    "time": 1022,
+    "props": 72,
+    "func": {
+      "name": "num::<impl i128>::unchecked_mul",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "48448077097804289246961619767304343334"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::unchecked_mul_i128_small",
+    "proof_kind": "Contract",
+    "time": 1219,
+    "props": 70,
+    "func": {
+      "name": "num::<impl i128>::unchecked_mul",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "1472657380108097693312263486766629119478"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::unchecked_mul_i32_edge_neg",
+    "proof_kind": "Contract",
+    "time": 171,
+    "props": 78,
+    "func": {
+      "name": "num::<impl i32>::unchecked_mul",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "1783303853578495024816890051516318793733"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::unchecked_mul_i32_edge_pos",
+    "proof_kind": "Contract",
+    "time": 171,
+    "props": 78,
+    "func": {
+      "name": "num::<impl i32>::unchecked_mul",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "887017473031449169513562171580410387994"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::unchecked_mul_i32_large_neg",
+    "proof_kind": "Contract",
+    "time": 174,
+    "props": 72,
+    "func": {
+      "name": "num::<impl i32>::unchecked_mul",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "97991032055253140047611882022346468037"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::unchecked_mul_i32_large_pos",
+    "proof_kind": "Contract",
+    "time": 170,
+    "props": 72,
+    "func": {
+      "name": "num::<impl i32>::unchecked_mul",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "170948904297659386642437811589223255133"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::unchecked_mul_i32_small",
+    "proof_kind": "Contract",
+    "time": 162,
+    "props": 70,
+    "func": {
+      "name": "num::<impl i32>::unchecked_mul",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "963276135075515256512024520692647358222"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::unchecked_mul_i64_edge_neg",
+    "proof_kind": "Contract",
+    "time": 413,
+    "props": 78,
+    "func": {
+      "name": "num::<impl i64>::unchecked_mul",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "1289437938513835547314249659288071566761"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::unchecked_mul_i64_edge_pos",
+    "proof_kind": "Contract",
+    "time": 401,
+    "props": 78,
+    "func": {
+      "name": "num::<impl i64>::unchecked_mul",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "880416764904913246510984828455219313100"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::unchecked_mul_i64_large_neg",
+    "proof_kind": "Contract",
+    "time": 278,
+    "props": 72,
+    "func": {
+      "name": "num::<impl i64>::unchecked_mul",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "124911798797652549616381334351420869801"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::unchecked_mul_i64_large_pos",
+    "proof_kind": "Contract",
+    "time": 358,
+    "props": 72,
+    "func": {
+      "name": "num::<impl i64>::unchecked_mul",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "10629857942230742343561049027310214829"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::unchecked_mul_i64_small",
+    "proof_kind": "Contract",
+    "time": 250,
+    "props": 70,
+    "func": {
+      "name": "num::<impl i64>::unchecked_mul",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "98894911630386999987678921568242765917"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::unchecked_mul_isize_edge_neg",
+    "proof_kind": "Contract",
+    "time": 259,
+    "props": 78,
+    "func": {
+      "name": "num::<impl isize>::unchecked_mul",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "69399638887780688215677490698197019239"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::unchecked_mul_isize_edge_pos",
+    "proof_kind": "Contract",
+    "time": 394,
+    "props": 78,
+    "func": {
+      "name": "num::<impl isize>::unchecked_mul",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "1399663939312662696018237142269507860082"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::unchecked_mul_isize_large_neg",
+    "proof_kind": "Contract",
+    "time": 409,
+    "props": 72,
+    "func": {
+      "name": "num::<impl isize>::unchecked_mul",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "182075731895491090323243746481736904094"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::unchecked_mul_isize_large_pos",
+    "proof_kind": "Contract",
+    "time": 365,
+    "props": 72,
+    "func": {
+      "name": "num::<impl isize>::unchecked_mul",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "159689154063863323758888042724289159036"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::unchecked_mul_isize_small",
+    "proof_kind": "Contract",
+    "time": 378,
+    "props": 70,
+    "func": {
+      "name": "num::<impl isize>::unchecked_mul",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "42886881918372861289994089683388286721"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::unchecked_mul_u128_edge",
+    "proof_kind": "Contract",
+    "time": 406,
+    "props": 74,
+    "func": {
+      "name": "num::<impl u128>::unchecked_mul",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "1455470387751940386710366154538167560754"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::unchecked_mul_u128_large",
+    "proof_kind": "Contract",
+    "time": 580,
+    "props": 72,
+    "func": {
+      "name": "num::<impl u128>::unchecked_mul",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "572796053995915471815731912385527335286"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::unchecked_mul_u128_small",
+    "proof_kind": "Contract",
+    "time": 379,
+    "props": 70,
+    "func": {
+      "name": "num::<impl u128>::unchecked_mul",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "49319279422708869661827796579141625084"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::unchecked_mul_u32_edge",
+    "proof_kind": "Contract",
+    "time": 127,
+    "props": 74,
+    "func": {
+      "name": "num::<impl u32>::unchecked_mul",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "77063752417042071029510052580070065540"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::unchecked_mul_u32_large",
+    "proof_kind": "Contract",
+    "time": 128,
+    "props": 72,
+    "func": {
+      "name": "num::<impl u32>::unchecked_mul",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "69231384940619096772014520654113615345"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::unchecked_mul_u32_small",
+    "proof_kind": "Contract",
+    "time": 114,
+    "props": 70,
+    "func": {
+      "name": "num::<impl u32>::unchecked_mul",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "1303309228562658516415421699951843005740"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::unchecked_mul_u64_edge",
+    "proof_kind": "Contract",
+    "time": 229,
+    "props": 74,
+    "func": {
+      "name": "num::<impl u64>::unchecked_mul",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "37008311987314715058976123870493241274"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::unchecked_mul_u64_large",
+    "proof_kind": "Contract",
+    "time": 222,
+    "props": 72,
+    "func": {
+      "name": "num::<impl u64>::unchecked_mul",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "1597753207511927803117687101014502048120"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::unchecked_mul_u64_small",
+    "proof_kind": "Contract",
+    "time": 142,
+    "props": 70,
+    "func": {
+      "name": "num::<impl u64>::unchecked_mul",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "43422204365124942049092961752009278584"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::unchecked_mul_usize_edge",
+    "proof_kind": "Contract",
+    "time": 221,
+    "props": 74,
+    "func": {
+      "name": "num::<impl usize>::unchecked_mul",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "88734089572843325428673804818318457147"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::unchecked_mul_usize_large",
+    "proof_kind": "Contract",
+    "time": 225,
+    "props": 72,
+    "func": {
+      "name": "num::<impl usize>::unchecked_mul",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "1497128063025503657715597274379393034954"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::unchecked_mul_usize_small",
+    "proof_kind": "Contract",
+    "time": 139,
+    "props": 70,
+    "func": {
+      "name": "num::<impl usize>::unchecked_mul",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "1625264038506870974474994724006373729"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::widening_mul_u16_large",
+    "proof_kind": "Standard",
+    "time": 623,
+    "props": 64,
+    "func": {
+      "name": "num::widening",
+      "file": "core/src/num/mod.rs"
+    },
+    "hash": "634441705921187483212241327447945697898"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::widening_mul_u16_mid_edge",
+    "proof_kind": "Standard",
+    "time": 517,
+    "props": 74,
+    "func": {
+      "name": "num::widening",
+      "file": "core/src/num/mod.rs"
+    },
+    "hash": "130985297688742361415534191964885387547"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::widening_mul_u16_small",
+    "proof_kind": "Standard",
+    "time": 385,
+    "props": 62,
+    "func": {
+      "name": "num::widening",
+      "file": "core/src/num/mod.rs"
+    },
+    "hash": "102787690681418795183665677391352679150"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::widening_mul_u32_large",
+    "proof_kind": "Standard",
+    "time": 479,
+    "props": 64,
+    "func": {
+      "name": "num::widening",
+      "file": "core/src/num/mod.rs"
+    },
+    "hash": "1089330259719610239712169030113211734019"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::widening_mul_u32_mid_edge",
+    "proof_kind": "Standard",
+    "time": 913,
+    "props": 74,
+    "func": {
+      "name": "num::widening",
+      "file": "core/src/num/mod.rs"
+    },
+    "hash": "97989403901020749651969623166183990358"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::widening_mul_u32_small",
+    "proof_kind": "Standard",
+    "time": 408,
+    "props": 62,
+    "func": {
+      "name": "num::widening",
+      "file": "core/src/num/mod.rs"
+    },
+    "hash": "12501694073497177528891933474254128109"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::widening_mul_u64_large",
+    "proof_kind": "Standard",
+    "time": 818,
+    "props": 64,
+    "func": {
+      "name": "num::widening",
+      "file": "core/src/num/mod.rs"
+    },
+    "hash": "103841319443202419273766484145944743019"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::widening_mul_u64_mid_edge",
+    "proof_kind": "Standard",
+    "time": 2813,
+    "props": 74,
+    "func": {
+      "name": "num::widening",
+      "file": "core/src/num/mod.rs"
+    },
+    "hash": "478860078992403287316161588174773535411"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::widening_mul_u64_small",
+    "proof_kind": "Standard",
+    "time": 658,
+    "props": 62,
+    "func": {
+      "name": "num::widening",
+      "file": "core/src/num/mod.rs"
+    },
+    "hash": "35461801904179262604123823708019058861"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/mod.rs",
+    "harness": "num::verify::widening_mul_u8",
+    "proof_kind": "Standard",
+    "time": 2146,
+    "props": 62,
+    "func": {
+      "name": "num::widening",
+      "file": "core/src/num/mod.rs"
+    },
+    "hash": "451195310040735236412557599678385385249"
+  },
+  {
+    "crate": "core",
     "file": "core/src/num/nonzero.rs",
     "harness": "num::nonzero::verify::check_mul_i128_edge_neg",
     "proof_kind": "Contract",
@@ -8740,1416 +10182,6 @@
       "file": "core/src/num/nonzero.rs"
     },
     "hash": "1359857497575611685415768555439126717951"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::carrying_mul_u16_full_range",
-    "proof_kind": "Standard",
-    "time": 775,
-    "props": 61,
-    "func": {
-      "name": "num::carrying",
-      "file": "core/src/num/mod.rs"
-    },
-    "hash": "10416188905249321513567191598843229918"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::carrying_mul_u32_large",
-    "proof_kind": "Standard",
-    "time": 802,
-    "props": 64,
-    "func": {
-      "name": "num::carrying",
-      "file": "core/src/num/mod.rs"
-    },
-    "hash": "128100582475068482165775826364412677050"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::carrying_mul_u32_mid_edge",
-    "proof_kind": "Standard",
-    "time": 1531,
-    "props": 79,
-    "func": {
-      "name": "num::carrying",
-      "file": "core/src/num/mod.rs"
-    },
-    "hash": "18286651282131203604110216609430139936"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::carrying_mul_u32_small",
-    "proof_kind": "Standard",
-    "time": 637,
-    "props": 61,
-    "func": {
-      "name": "num::carrying",
-      "file": "core/src/num/mod.rs"
-    },
-    "hash": "127914293167728660897205044395003375319"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::carrying_mul_u64_large",
-    "proof_kind": "Standard",
-    "time": 1668,
-    "props": 64,
-    "func": {
-      "name": "num::carrying",
-      "file": "core/src/num/mod.rs"
-    },
-    "hash": "1469381277171678376413144862662602573327"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::carrying_mul_u64_mid_edge",
-    "proof_kind": "Standard",
-    "time": 3773,
-    "props": 79,
-    "func": {
-      "name": "num::carrying",
-      "file": "core/src/num/mod.rs"
-    },
-    "hash": "114404462413512566782788667573066201512"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::carrying_mul_u64_small",
-    "proof_kind": "Standard",
-    "time": 761,
-    "props": 61,
-    "func": {
-      "name": "num::carrying",
-      "file": "core/src/num/mod.rs"
-    },
-    "hash": "847882787247026000618365580354593063553"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::carrying_mul_u8_full_range",
-    "proof_kind": "Standard",
-    "time": 620,
-    "props": 61,
-    "func": {
-      "name": "num::carrying",
-      "file": "core/src/num/mod.rs"
-    },
-    "hash": "1054661828704601312217137468840312477533"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f128_to_int_unchecked_i128",
-    "proof_kind": "Contract",
-    "time": 1436,
-    "props": 99,
-    "func": {
-      "name": "f128::<impl f128>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f128.rs"
-    },
-    "hash": "82067521220746008176056788954105894464"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f128_to_int_unchecked_i16",
-    "proof_kind": "Contract",
-    "time": 390,
-    "props": 99,
-    "func": {
-      "name": "f128::<impl f128>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f128.rs"
-    },
-    "hash": "980837880862738977017383929102610532117"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f128_to_int_unchecked_i32",
-    "proof_kind": "Contract",
-    "time": 925,
-    "props": 99,
-    "func": {
-      "name": "f128::<impl f128>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f128.rs"
-    },
-    "hash": "1309308289393012704716798949576273029030"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f128_to_int_unchecked_i64",
-    "proof_kind": "Contract",
-    "time": 1434,
-    "props": 99,
-    "func": {
-      "name": "f128::<impl f128>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f128.rs"
-    },
-    "hash": "431996156176605395013985929606711119713"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f128_to_int_unchecked_i8",
-    "proof_kind": "Contract",
-    "time": 457,
-    "props": 99,
-    "func": {
-      "name": "f128::<impl f128>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f128.rs"
-    },
-    "hash": "200838736372821242010759565079372333534"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f128_to_int_unchecked_isize",
-    "proof_kind": "Contract",
-    "time": 1214,
-    "props": 99,
-    "func": {
-      "name": "f128::<impl f128>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f128.rs"
-    },
-    "hash": "47663976349574741229144771844862245580"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f128_to_int_unchecked_u128",
-    "proof_kind": "Contract",
-    "time": 2109,
-    "props": 99,
-    "func": {
-      "name": "f128::<impl f128>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f128.rs"
-    },
-    "hash": "1652073267640112758115463078678880933315"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f128_to_int_unchecked_u16",
-    "proof_kind": "Contract",
-    "time": 380,
-    "props": 99,
-    "func": {
-      "name": "f128::<impl f128>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f128.rs"
-    },
-    "hash": "23616075857831469322912345649429877766"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f128_to_int_unchecked_u32",
-    "proof_kind": "Contract",
-    "time": 745,
-    "props": 99,
-    "func": {
-      "name": "f128::<impl f128>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f128.rs"
-    },
-    "hash": "65769384061334128907986117788727216157"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f128_to_int_unchecked_u64",
-    "proof_kind": "Contract",
-    "time": 900,
-    "props": 99,
-    "func": {
-      "name": "f128::<impl f128>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f128.rs"
-    },
-    "hash": "134378056649124183112664079971803474479"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f128_to_int_unchecked_u8",
-    "proof_kind": "Contract",
-    "time": 579,
-    "props": 99,
-    "func": {
-      "name": "f128::<impl f128>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f128.rs"
-    },
-    "hash": "1394445432169357395216931432431175320665"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f128_to_int_unchecked_usize",
-    "proof_kind": "Contract",
-    "time": 779,
-    "props": 99,
-    "func": {
-      "name": "f128::<impl f128>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f128.rs"
-    },
-    "hash": "1208995128340954408915030868151634809570"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f16_to_int_unchecked_i128",
-    "proof_kind": "Contract",
-    "time": 648,
-    "props": 99,
-    "func": {
-      "name": "f16::<impl f16>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f16.rs"
-    },
-    "hash": "179776433603943851313616701659323941917"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f16_to_int_unchecked_i16",
-    "proof_kind": "Contract",
-    "time": 435,
-    "props": 99,
-    "func": {
-      "name": "f16::<impl f16>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f16.rs"
-    },
-    "hash": "1198807684919882324315603033654605843282"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f16_to_int_unchecked_i32",
-    "proof_kind": "Contract",
-    "time": 588,
-    "props": 99,
-    "func": {
-      "name": "f16::<impl f16>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f16.rs"
-    },
-    "hash": "16213727586108973044155997031850422175"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f16_to_int_unchecked_i64",
-    "proof_kind": "Contract",
-    "time": 682,
-    "props": 99,
-    "func": {
-      "name": "f16::<impl f16>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f16.rs"
-    },
-    "hash": "63911459863472630666950112163850151463"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f16_to_int_unchecked_i8",
-    "proof_kind": "Contract",
-    "time": 385,
-    "props": 99,
-    "func": {
-      "name": "f16::<impl f16>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f16.rs"
-    },
-    "hash": "129473443790721372586787817817175804702"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f16_to_int_unchecked_isize",
-    "proof_kind": "Contract",
-    "time": 655,
-    "props": 99,
-    "func": {
-      "name": "f16::<impl f16>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f16.rs"
-    },
-    "hash": "79256736312283339454159336580271481042"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f16_to_int_unchecked_u128",
-    "proof_kind": "Contract",
-    "time": 391,
-    "props": 99,
-    "func": {
-      "name": "f16::<impl f16>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f16.rs"
-    },
-    "hash": "24240364982146621262026419064000771328"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f16_to_int_unchecked_u16",
-    "proof_kind": "Contract",
-    "time": 348,
-    "props": 99,
-    "func": {
-      "name": "f16::<impl f16>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f16.rs"
-    },
-    "hash": "67028812806974200510410769702225394548"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f16_to_int_unchecked_u32",
-    "proof_kind": "Contract",
-    "time": 403,
-    "props": 99,
-    "func": {
-      "name": "f16::<impl f16>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f16.rs"
-    },
-    "hash": "293855020364253330913400051814580976213"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f16_to_int_unchecked_u64",
-    "proof_kind": "Contract",
-    "time": 404,
-    "props": 99,
-    "func": {
-      "name": "f16::<impl f16>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f16.rs"
-    },
-    "hash": "38185076757768222848835327299257799868"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f16_to_int_unchecked_u8",
-    "proof_kind": "Contract",
-    "time": 399,
-    "props": 99,
-    "func": {
-      "name": "f16::<impl f16>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f16.rs"
-    },
-    "hash": "1793129072984737703717048132723657713283"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f16_to_int_unchecked_usize",
-    "proof_kind": "Contract",
-    "time": 601,
-    "props": 99,
-    "func": {
-      "name": "f16::<impl f16>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f16.rs"
-    },
-    "hash": "1139674424966342294617622322954347023832"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f32_to_int_unchecked_i128",
-    "proof_kind": "Contract",
-    "time": 906,
-    "props": 98,
-    "func": {
-      "name": "f32::<impl f32>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f32.rs"
-    },
-    "hash": "1534459940216075201913042427853015447103"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f32_to_int_unchecked_i16",
-    "proof_kind": "Contract",
-    "time": 451,
-    "props": 98,
-    "func": {
-      "name": "f32::<impl f32>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f32.rs"
-    },
-    "hash": "180118218034761781788558813055534570823"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f32_to_int_unchecked_i32",
-    "proof_kind": "Contract",
-    "time": 729,
-    "props": 98,
-    "func": {
-      "name": "f32::<impl f32>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f32.rs"
-    },
-    "hash": "919226830507159421616094746553852831867"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f32_to_int_unchecked_i64",
-    "proof_kind": "Contract",
-    "time": 734,
-    "props": 98,
-    "func": {
-      "name": "f32::<impl f32>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f32.rs"
-    },
-    "hash": "2137972788632178314513597788626906413"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f32_to_int_unchecked_i8",
-    "proof_kind": "Contract",
-    "time": 607,
-    "props": 98,
-    "func": {
-      "name": "f32::<impl f32>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f32.rs"
-    },
-    "hash": "1411186208637770387815962692480637851973"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f32_to_int_unchecked_isize",
-    "proof_kind": "Contract",
-    "time": 1055,
-    "props": 98,
-    "func": {
-      "name": "f32::<impl f32>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f32.rs"
-    },
-    "hash": "156861189068884614271405462770204467053"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f32_to_int_unchecked_u128",
-    "proof_kind": "Contract",
-    "time": 774,
-    "props": 98,
-    "func": {
-      "name": "f32::<impl f32>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f32.rs"
-    },
-    "hash": "339981141618035793411509210835784095989"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f32_to_int_unchecked_u16",
-    "proof_kind": "Contract",
-    "time": 366,
-    "props": 98,
-    "func": {
-      "name": "f32::<impl f32>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f32.rs"
-    },
-    "hash": "154385111922234161465121594697830343736"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f32_to_int_unchecked_u32",
-    "proof_kind": "Contract",
-    "time": 552,
-    "props": 98,
-    "func": {
-      "name": "f32::<impl f32>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f32.rs"
-    },
-    "hash": "778992331221335935018259236719850653255"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f32_to_int_unchecked_u64",
-    "proof_kind": "Contract",
-    "time": 707,
-    "props": 98,
-    "func": {
-      "name": "f32::<impl f32>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f32.rs"
-    },
-    "hash": "5143623557081029318399595248081727048"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f32_to_int_unchecked_u8",
-    "proof_kind": "Contract",
-    "time": 368,
-    "props": 98,
-    "func": {
-      "name": "f32::<impl f32>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f32.rs"
-    },
-    "hash": "1391951520198688967911836002317116453831"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f32_to_int_unchecked_usize",
-    "proof_kind": "Contract",
-    "time": 423,
-    "props": 98,
-    "func": {
-      "name": "f32::<impl f32>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f32.rs"
-    },
-    "hash": "1314505269910960829813422110464221376988"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f64_to_int_unchecked_i128",
-    "proof_kind": "Contract",
-    "time": 1773,
-    "props": 98,
-    "func": {
-      "name": "f64::<impl f64>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f64.rs"
-    },
-    "hash": "1461542335841895289314315949705512735632"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f64_to_int_unchecked_i16",
-    "proof_kind": "Contract",
-    "time": 619,
-    "props": 98,
-    "func": {
-      "name": "f64::<impl f64>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f64.rs"
-    },
-    "hash": "117541078982600569389476541840860801127"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f64_to_int_unchecked_i32",
-    "proof_kind": "Contract",
-    "time": 464,
-    "props": 98,
-    "func": {
-      "name": "f64::<impl f64>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f64.rs"
-    },
-    "hash": "314515385656781583813965168795635526295"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f64_to_int_unchecked_i64",
-    "proof_kind": "Contract",
-    "time": 959,
-    "props": 98,
-    "func": {
-      "name": "f64::<impl f64>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f64.rs"
-    },
-    "hash": "126933675030374543685348529653904024256"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f64_to_int_unchecked_i8",
-    "proof_kind": "Contract",
-    "time": 421,
-    "props": 98,
-    "func": {
-      "name": "f64::<impl f64>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f64.rs"
-    },
-    "hash": "599889927711440839911976939221282326186"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f64_to_int_unchecked_isize",
-    "proof_kind": "Contract",
-    "time": 1256,
-    "props": 98,
-    "func": {
-      "name": "f64::<impl f64>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f64.rs"
-    },
-    "hash": "362100267949691693212466128228102310202"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f64_to_int_unchecked_u128",
-    "proof_kind": "Contract",
-    "time": 1054,
-    "props": 98,
-    "func": {
-      "name": "f64::<impl f64>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f64.rs"
-    },
-    "hash": "1546079222671411843410956385752439020277"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f64_to_int_unchecked_u16",
-    "proof_kind": "Contract",
-    "time": 370,
-    "props": 98,
-    "func": {
-      "name": "f64::<impl f64>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f64.rs"
-    },
-    "hash": "1739881702251052696813448086132088030586"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f64_to_int_unchecked_u32",
-    "proof_kind": "Contract",
-    "time": 398,
-    "props": 98,
-    "func": {
-      "name": "f64::<impl f64>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f64.rs"
-    },
-    "hash": "1817657765217485112813403871148660548506"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f64_to_int_unchecked_u64",
-    "proof_kind": "Contract",
-    "time": 931,
-    "props": 98,
-    "func": {
-      "name": "f64::<impl f64>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f64.rs"
-    },
-    "hash": "169138886384312021168911635519338472009"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f64_to_int_unchecked_u8",
-    "proof_kind": "Contract",
-    "time": 567,
-    "props": 98,
-    "func": {
-      "name": "f64::<impl f64>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f64.rs"
-    },
-    "hash": "1529562097643120279616848874626582460043"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_f64_to_int_unchecked_usize",
-    "proof_kind": "Contract",
-    "time": 626,
-    "props": 98,
-    "func": {
-      "name": "f64::<impl f64>::to_int_unchecked",
-      "safe": "unsafe",
-      "file": "core/src/num/f64.rs"
-    },
-    "hash": "1779119285230618061212661219815447421477"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_unchecked_mul_i16",
-    "proof_kind": "Contract",
-    "time": 1044,
-    "props": 70,
-    "func": {
-      "name": "num::<impl i16>::unchecked_mul",
-      "safe": "unsafe",
-      "file": "core/src/num/int_macros.rs"
-    },
-    "hash": "394532939478418478916929417067686435132"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_unchecked_mul_i8",
-    "proof_kind": "Contract",
-    "time": 98,
-    "props": 70,
-    "func": {
-      "name": "num::<impl i8>::unchecked_mul",
-      "safe": "unsafe",
-      "file": "core/src/num/int_macros.rs"
-    },
-    "hash": "155779998773494159017535838675985569710"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_unchecked_mul_u16",
-    "proof_kind": "Contract",
-    "time": 275,
-    "props": 70,
-    "func": {
-      "name": "num::<impl u16>::unchecked_mul",
-      "safe": "unsafe",
-      "file": "core/src/num/uint_macros.rs"
-    },
-    "hash": "78731670313116286151827922116789886935"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::checked_unchecked_mul_u8",
-    "proof_kind": "Contract",
-    "time": 97,
-    "props": 70,
-    "func": {
-      "name": "num::<impl u8>::unchecked_mul",
-      "safe": "unsafe",
-      "file": "core/src/num/uint_macros.rs"
-    },
-    "hash": "96785518940880748525665988111521276073"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::unchecked_mul_i128_edge_neg",
-    "proof_kind": "Contract",
-    "time": 1346,
-    "props": 78,
-    "func": {
-      "name": "num::<impl i128>::unchecked_mul",
-      "safe": "unsafe",
-      "file": "core/src/num/int_macros.rs"
-    },
-    "hash": "11691248656022026412771095562110880307"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::unchecked_mul_i128_edge_pos",
-    "proof_kind": "Contract",
-    "time": 1272,
-    "props": 78,
-    "func": {
-      "name": "num::<impl i128>::unchecked_mul",
-      "safe": "unsafe",
-      "file": "core/src/num/int_macros.rs"
-    },
-    "hash": "1562732452976755141314267065289172593781"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::unchecked_mul_i128_large_neg",
-    "proof_kind": "Contract",
-    "time": 1308,
-    "props": 72,
-    "func": {
-      "name": "num::<impl i128>::unchecked_mul",
-      "safe": "unsafe",
-      "file": "core/src/num/int_macros.rs"
-    },
-    "hash": "151811596005114258286235338875066403759"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::unchecked_mul_i128_large_pos",
-    "proof_kind": "Contract",
-    "time": 1022,
-    "props": 72,
-    "func": {
-      "name": "num::<impl i128>::unchecked_mul",
-      "safe": "unsafe",
-      "file": "core/src/num/int_macros.rs"
-    },
-    "hash": "48448077097804289246961619767304343334"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::unchecked_mul_i128_small",
-    "proof_kind": "Contract",
-    "time": 1219,
-    "props": 70,
-    "func": {
-      "name": "num::<impl i128>::unchecked_mul",
-      "safe": "unsafe",
-      "file": "core/src/num/int_macros.rs"
-    },
-    "hash": "1472657380108097693312263486766629119478"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::unchecked_mul_i32_edge_neg",
-    "proof_kind": "Contract",
-    "time": 171,
-    "props": 78,
-    "func": {
-      "name": "num::<impl i32>::unchecked_mul",
-      "safe": "unsafe",
-      "file": "core/src/num/int_macros.rs"
-    },
-    "hash": "1783303853578495024816890051516318793733"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::unchecked_mul_i32_edge_pos",
-    "proof_kind": "Contract",
-    "time": 171,
-    "props": 78,
-    "func": {
-      "name": "num::<impl i32>::unchecked_mul",
-      "safe": "unsafe",
-      "file": "core/src/num/int_macros.rs"
-    },
-    "hash": "887017473031449169513562171580410387994"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::unchecked_mul_i32_large_neg",
-    "proof_kind": "Contract",
-    "time": 174,
-    "props": 72,
-    "func": {
-      "name": "num::<impl i32>::unchecked_mul",
-      "safe": "unsafe",
-      "file": "core/src/num/int_macros.rs"
-    },
-    "hash": "97991032055253140047611882022346468037"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::unchecked_mul_i32_large_pos",
-    "proof_kind": "Contract",
-    "time": 170,
-    "props": 72,
-    "func": {
-      "name": "num::<impl i32>::unchecked_mul",
-      "safe": "unsafe",
-      "file": "core/src/num/int_macros.rs"
-    },
-    "hash": "170948904297659386642437811589223255133"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::unchecked_mul_i32_small",
-    "proof_kind": "Contract",
-    "time": 162,
-    "props": 70,
-    "func": {
-      "name": "num::<impl i32>::unchecked_mul",
-      "safe": "unsafe",
-      "file": "core/src/num/int_macros.rs"
-    },
-    "hash": "963276135075515256512024520692647358222"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::unchecked_mul_i64_edge_neg",
-    "proof_kind": "Contract",
-    "time": 413,
-    "props": 78,
-    "func": {
-      "name": "num::<impl i64>::unchecked_mul",
-      "safe": "unsafe",
-      "file": "core/src/num/int_macros.rs"
-    },
-    "hash": "1289437938513835547314249659288071566761"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::unchecked_mul_i64_edge_pos",
-    "proof_kind": "Contract",
-    "time": 401,
-    "props": 78,
-    "func": {
-      "name": "num::<impl i64>::unchecked_mul",
-      "safe": "unsafe",
-      "file": "core/src/num/int_macros.rs"
-    },
-    "hash": "880416764904913246510984828455219313100"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::unchecked_mul_i64_large_neg",
-    "proof_kind": "Contract",
-    "time": 278,
-    "props": 72,
-    "func": {
-      "name": "num::<impl i64>::unchecked_mul",
-      "safe": "unsafe",
-      "file": "core/src/num/int_macros.rs"
-    },
-    "hash": "124911798797652549616381334351420869801"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::unchecked_mul_i64_large_pos",
-    "proof_kind": "Contract",
-    "time": 358,
-    "props": 72,
-    "func": {
-      "name": "num::<impl i64>::unchecked_mul",
-      "safe": "unsafe",
-      "file": "core/src/num/int_macros.rs"
-    },
-    "hash": "10629857942230742343561049027310214829"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::unchecked_mul_i64_small",
-    "proof_kind": "Contract",
-    "time": 250,
-    "props": 70,
-    "func": {
-      "name": "num::<impl i64>::unchecked_mul",
-      "safe": "unsafe",
-      "file": "core/src/num/int_macros.rs"
-    },
-    "hash": "98894911630386999987678921568242765917"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::unchecked_mul_isize_edge_neg",
-    "proof_kind": "Contract",
-    "time": 259,
-    "props": 78,
-    "func": {
-      "name": "num::<impl isize>::unchecked_mul",
-      "safe": "unsafe",
-      "file": "core/src/num/int_macros.rs"
-    },
-    "hash": "69399638887780688215677490698197019239"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::unchecked_mul_isize_edge_pos",
-    "proof_kind": "Contract",
-    "time": 394,
-    "props": 78,
-    "func": {
-      "name": "num::<impl isize>::unchecked_mul",
-      "safe": "unsafe",
-      "file": "core/src/num/int_macros.rs"
-    },
-    "hash": "1399663939312662696018237142269507860082"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::unchecked_mul_isize_large_neg",
-    "proof_kind": "Contract",
-    "time": 409,
-    "props": 72,
-    "func": {
-      "name": "num::<impl isize>::unchecked_mul",
-      "safe": "unsafe",
-      "file": "core/src/num/int_macros.rs"
-    },
-    "hash": "182075731895491090323243746481736904094"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::unchecked_mul_isize_large_pos",
-    "proof_kind": "Contract",
-    "time": 365,
-    "props": 72,
-    "func": {
-      "name": "num::<impl isize>::unchecked_mul",
-      "safe": "unsafe",
-      "file": "core/src/num/int_macros.rs"
-    },
-    "hash": "159689154063863323758888042724289159036"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::unchecked_mul_isize_small",
-    "proof_kind": "Contract",
-    "time": 378,
-    "props": 70,
-    "func": {
-      "name": "num::<impl isize>::unchecked_mul",
-      "safe": "unsafe",
-      "file": "core/src/num/int_macros.rs"
-    },
-    "hash": "42886881918372861289994089683388286721"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::unchecked_mul_u128_edge",
-    "proof_kind": "Contract",
-    "time": 406,
-    "props": 74,
-    "func": {
-      "name": "num::<impl u128>::unchecked_mul",
-      "safe": "unsafe",
-      "file": "core/src/num/uint_macros.rs"
-    },
-    "hash": "1455470387751940386710366154538167560754"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::unchecked_mul_u128_large",
-    "proof_kind": "Contract",
-    "time": 580,
-    "props": 72,
-    "func": {
-      "name": "num::<impl u128>::unchecked_mul",
-      "safe": "unsafe",
-      "file": "core/src/num/uint_macros.rs"
-    },
-    "hash": "572796053995915471815731912385527335286"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::unchecked_mul_u128_small",
-    "proof_kind": "Contract",
-    "time": 379,
-    "props": 70,
-    "func": {
-      "name": "num::<impl u128>::unchecked_mul",
-      "safe": "unsafe",
-      "file": "core/src/num/uint_macros.rs"
-    },
-    "hash": "49319279422708869661827796579141625084"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::unchecked_mul_u32_edge",
-    "proof_kind": "Contract",
-    "time": 127,
-    "props": 74,
-    "func": {
-      "name": "num::<impl u32>::unchecked_mul",
-      "safe": "unsafe",
-      "file": "core/src/num/uint_macros.rs"
-    },
-    "hash": "77063752417042071029510052580070065540"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::unchecked_mul_u32_large",
-    "proof_kind": "Contract",
-    "time": 128,
-    "props": 72,
-    "func": {
-      "name": "num::<impl u32>::unchecked_mul",
-      "safe": "unsafe",
-      "file": "core/src/num/uint_macros.rs"
-    },
-    "hash": "69231384940619096772014520654113615345"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::unchecked_mul_u32_small",
-    "proof_kind": "Contract",
-    "time": 114,
-    "props": 70,
-    "func": {
-      "name": "num::<impl u32>::unchecked_mul",
-      "safe": "unsafe",
-      "file": "core/src/num/uint_macros.rs"
-    },
-    "hash": "1303309228562658516415421699951843005740"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::unchecked_mul_u64_edge",
-    "proof_kind": "Contract",
-    "time": 229,
-    "props": 74,
-    "func": {
-      "name": "num::<impl u64>::unchecked_mul",
-      "safe": "unsafe",
-      "file": "core/src/num/uint_macros.rs"
-    },
-    "hash": "37008311987314715058976123870493241274"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::unchecked_mul_u64_large",
-    "proof_kind": "Contract",
-    "time": 222,
-    "props": 72,
-    "func": {
-      "name": "num::<impl u64>::unchecked_mul",
-      "safe": "unsafe",
-      "file": "core/src/num/uint_macros.rs"
-    },
-    "hash": "1597753207511927803117687101014502048120"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::unchecked_mul_u64_small",
-    "proof_kind": "Contract",
-    "time": 142,
-    "props": 70,
-    "func": {
-      "name": "num::<impl u64>::unchecked_mul",
-      "safe": "unsafe",
-      "file": "core/src/num/uint_macros.rs"
-    },
-    "hash": "43422204365124942049092961752009278584"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::unchecked_mul_usize_edge",
-    "proof_kind": "Contract",
-    "time": 221,
-    "props": 74,
-    "func": {
-      "name": "num::<impl usize>::unchecked_mul",
-      "safe": "unsafe",
-      "file": "core/src/num/uint_macros.rs"
-    },
-    "hash": "88734089572843325428673804818318457147"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::unchecked_mul_usize_large",
-    "proof_kind": "Contract",
-    "time": 225,
-    "props": 72,
-    "func": {
-      "name": "num::<impl usize>::unchecked_mul",
-      "safe": "unsafe",
-      "file": "core/src/num/uint_macros.rs"
-    },
-    "hash": "1497128063025503657715597274379393034954"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::unchecked_mul_usize_small",
-    "proof_kind": "Contract",
-    "time": 139,
-    "props": 70,
-    "func": {
-      "name": "num::<impl usize>::unchecked_mul",
-      "safe": "unsafe",
-      "file": "core/src/num/uint_macros.rs"
-    },
-    "hash": "1625264038506870974474994724006373729"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::widening_mul_u16_large",
-    "proof_kind": "Standard",
-    "time": 623,
-    "props": 64,
-    "func": {
-      "name": "num::widening",
-      "file": "core/src/num/mod.rs"
-    },
-    "hash": "634441705921187483212241327447945697898"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::widening_mul_u16_mid_edge",
-    "proof_kind": "Standard",
-    "time": 517,
-    "props": 74,
-    "func": {
-      "name": "num::widening",
-      "file": "core/src/num/mod.rs"
-    },
-    "hash": "130985297688742361415534191964885387547"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::widening_mul_u16_small",
-    "proof_kind": "Standard",
-    "time": 385,
-    "props": 62,
-    "func": {
-      "name": "num::widening",
-      "file": "core/src/num/mod.rs"
-    },
-    "hash": "102787690681418795183665677391352679150"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::widening_mul_u32_large",
-    "proof_kind": "Standard",
-    "time": 479,
-    "props": 64,
-    "func": {
-      "name": "num::widening",
-      "file": "core/src/num/mod.rs"
-    },
-    "hash": "1089330259719610239712169030113211734019"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::widening_mul_u32_mid_edge",
-    "proof_kind": "Standard",
-    "time": 913,
-    "props": 74,
-    "func": {
-      "name": "num::widening",
-      "file": "core/src/num/mod.rs"
-    },
-    "hash": "97989403901020749651969623166183990358"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::widening_mul_u32_small",
-    "proof_kind": "Standard",
-    "time": 408,
-    "props": 62,
-    "func": {
-      "name": "num::widening",
-      "file": "core/src/num/mod.rs"
-    },
-    "hash": "12501694073497177528891933474254128109"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::widening_mul_u64_large",
-    "proof_kind": "Standard",
-    "time": 818,
-    "props": 64,
-    "func": {
-      "name": "num::widening",
-      "file": "core/src/num/mod.rs"
-    },
-    "hash": "103841319443202419273766484145944743019"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::widening_mul_u64_mid_edge",
-    "proof_kind": "Standard",
-    "time": 2813,
-    "props": 74,
-    "func": {
-      "name": "num::widening",
-      "file": "core/src/num/mod.rs"
-    },
-    "hash": "478860078992403287316161588174773535411"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::widening_mul_u64_small",
-    "proof_kind": "Standard",
-    "time": 658,
-    "props": 62,
-    "func": {
-      "name": "num::widening",
-      "file": "core/src/num/mod.rs"
-    },
-    "hash": "35461801904179262604123823708019058861"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/mod.rs",
-    "harness": "num::verify::widening_mul_u8",
-    "proof_kind": "Standard",
-    "time": 2146,
-    "props": 62,
-    "func": {
-      "name": "num::widening",
-      "file": "core/src/num/mod.rs"
-    },
-    "hash": "451195310040735236412557599678385385249"
   },
   {
     "crate": "core",
@@ -12066,6 +12098,132 @@
       "file": "core/src/ptr/const_ptr.rs"
     },
     "hash": "50444709984479204601672623590300434130"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/ptr/mod.rs",
+    "harness": "ptr::verify::check_align_offset_4096",
+    "proof_kind": "Contract",
+    "time": 1387,
+    "props": 266,
+    "func": {
+      "name": "ptr::align_offset",
+      "safe": "unsafe",
+      "file": "core/src/ptr/mod.rs"
+    },
+    "hash": "383613053409067015612274553762504687485"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/ptr/mod.rs",
+    "harness": "ptr::verify::check_align_offset_5",
+    "proof_kind": "Contract",
+    "time": 71607,
+    "props": 266,
+    "func": {
+      "name": "ptr::align_offset",
+      "safe": "unsafe",
+      "file": "core/src/ptr/mod.rs"
+    },
+    "hash": "1700721354779146424210689866882870552720"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/ptr/mod.rs",
+    "harness": "ptr::verify::check_align_offset_u128",
+    "proof_kind": "Contract",
+    "time": 1986,
+    "props": 266,
+    "func": {
+      "name": "ptr::align_offset",
+      "safe": "unsafe",
+      "file": "core/src/ptr/mod.rs"
+    },
+    "hash": "117594353243120083791810496498164979889"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/ptr/mod.rs",
+    "harness": "ptr::verify::check_align_offset_u16",
+    "proof_kind": "Contract",
+    "time": 1768,
+    "props": 266,
+    "func": {
+      "name": "ptr::align_offset",
+      "safe": "unsafe",
+      "file": "core/src/ptr/mod.rs"
+    },
+    "hash": "30660048912829446994203680406187030345"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/ptr/mod.rs",
+    "harness": "ptr::verify::check_align_offset_u32",
+    "proof_kind": "Contract",
+    "time": 1438,
+    "props": 266,
+    "func": {
+      "name": "ptr::align_offset",
+      "safe": "unsafe",
+      "file": "core/src/ptr/mod.rs"
+    },
+    "hash": "2133760567505711650373573646887174548"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/ptr/mod.rs",
+    "harness": "ptr::verify::check_align_offset_u64",
+    "proof_kind": "Contract",
+    "time": 1163,
+    "props": 266,
+    "func": {
+      "name": "ptr::align_offset",
+      "safe": "unsafe",
+      "file": "core/src/ptr/mod.rs"
+    },
+    "hash": "1032533006566059592414569570388850955868"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/ptr/mod.rs",
+    "harness": "ptr::verify::check_align_offset_u8",
+    "proof_kind": "Contract",
+    "time": 666,
+    "props": 266,
+    "func": {
+      "name": "ptr::align_offset",
+      "safe": "unsafe",
+      "file": "core/src/ptr/mod.rs"
+    },
+    "hash": "14859654378665699384454262906807114200"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/ptr/mod.rs",
+    "harness": "ptr::verify::check_align_offset_zst",
+    "proof_kind": "Contract",
+    "time": 152,
+    "props": 266,
+    "func": {
+      "name": "ptr::align_offset",
+      "safe": "unsafe",
+      "file": "core/src/ptr/mod.rs"
+    },
+    "hash": "697062652768283787410100467608420934398"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/ptr/mod.rs",
+    "harness": "ptr::verify::check_read_u128",
+    "proof_kind": "Contract",
+    "time": 415,
+    "props": 118,
+    "func": {
+      "name": "ptr::read_volatile",
+      "safe": "unsafe",
+      "file": "core/src/ptr/mod.rs"
+    },
+    "hash": "1200812290518248111615534523864790366536"
   },
   {
     "crate": "core",
@@ -15324,132 +15482,6 @@
   },
   {
     "crate": "core",
-    "file": "core/src/ptr/mod.rs",
-    "harness": "ptr::verify::check_align_offset_4096",
-    "proof_kind": "Contract",
-    "time": 1387,
-    "props": 266,
-    "func": {
-      "name": "ptr::align_offset",
-      "safe": "unsafe",
-      "file": "core/src/ptr/mod.rs"
-    },
-    "hash": "383613053409067015612274553762504687485"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/ptr/mod.rs",
-    "harness": "ptr::verify::check_align_offset_5",
-    "proof_kind": "Contract",
-    "time": 71607,
-    "props": 266,
-    "func": {
-      "name": "ptr::align_offset",
-      "safe": "unsafe",
-      "file": "core/src/ptr/mod.rs"
-    },
-    "hash": "1700721354779146424210689866882870552720"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/ptr/mod.rs",
-    "harness": "ptr::verify::check_align_offset_u128",
-    "proof_kind": "Contract",
-    "time": 1986,
-    "props": 266,
-    "func": {
-      "name": "ptr::align_offset",
-      "safe": "unsafe",
-      "file": "core/src/ptr/mod.rs"
-    },
-    "hash": "117594353243120083791810496498164979889"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/ptr/mod.rs",
-    "harness": "ptr::verify::check_align_offset_u16",
-    "proof_kind": "Contract",
-    "time": 1768,
-    "props": 266,
-    "func": {
-      "name": "ptr::align_offset",
-      "safe": "unsafe",
-      "file": "core/src/ptr/mod.rs"
-    },
-    "hash": "30660048912829446994203680406187030345"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/ptr/mod.rs",
-    "harness": "ptr::verify::check_align_offset_u32",
-    "proof_kind": "Contract",
-    "time": 1438,
-    "props": 266,
-    "func": {
-      "name": "ptr::align_offset",
-      "safe": "unsafe",
-      "file": "core/src/ptr/mod.rs"
-    },
-    "hash": "2133760567505711650373573646887174548"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/ptr/mod.rs",
-    "harness": "ptr::verify::check_align_offset_u64",
-    "proof_kind": "Contract",
-    "time": 1163,
-    "props": 266,
-    "func": {
-      "name": "ptr::align_offset",
-      "safe": "unsafe",
-      "file": "core/src/ptr/mod.rs"
-    },
-    "hash": "1032533006566059592414569570388850955868"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/ptr/mod.rs",
-    "harness": "ptr::verify::check_align_offset_u8",
-    "proof_kind": "Contract",
-    "time": 666,
-    "props": 266,
-    "func": {
-      "name": "ptr::align_offset",
-      "safe": "unsafe",
-      "file": "core/src/ptr/mod.rs"
-    },
-    "hash": "14859654378665699384454262906807114200"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/ptr/mod.rs",
-    "harness": "ptr::verify::check_align_offset_zst",
-    "proof_kind": "Contract",
-    "time": 152,
-    "props": 266,
-    "func": {
-      "name": "ptr::align_offset",
-      "safe": "unsafe",
-      "file": "core/src/ptr/mod.rs"
-    },
-    "hash": "697062652768283787410100467608420934398"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/ptr/mod.rs",
-    "harness": "ptr::verify::check_read_u128",
-    "proof_kind": "Contract",
-    "time": 415,
-    "props": 118,
-    "func": {
-      "name": "ptr::read_volatile",
-      "safe": "unsafe",
-      "file": "core/src/ptr/mod.rs"
-    },
-    "hash": "1200812290518248111615534523864790366536"
-  },
-  {
-    "crate": "core",
     "file": "core/src/slice/iter.rs",
     "harness": "slice::iter::verify::verify_char::check_advance_back_by",
     "proof_kind": "Standard",
@@ -18189,25 +18221,6 @@
     "hash": "136356665003324165406111368290989974926"
   },
   {
-    "harness": "str::pattern::verify::check_small_slice_eq",
-    "time": 157705,
-    "props": 424,
-    "func": {
-      "name": "str::pattern::small_slice_eq",
-      "safe": "unsafe",
-      "file": "core/src/str/pattern.rs"
-    }
-  },
-  {
-    "harness": "str::pattern::verify::check_small_slice_eq_empty",
-    "time": 1342,
-    "props": 441,
-    "func": {
-      "name": "str::pattern::small_slice_eq_empty",
-      "file": "core/src/str/pattern.rs"
-    }
-  },
-  {
     "crate": "core",
     "file": "core/src/str/validations.rs",
     "harness": "str::validations::verify::check_run_utf8_validation",
@@ -18554,18 +18567,5 @@
       "file": "core/src/time.rs"
     },
     "hash": "1578078187171151041816065954208109803329"
-  },
-  {
-    "crate": "alloc",
-    "file": "alloc/src/vec/mod.rs",
-    "harness": "vec::verify::verify_swap_remove",
-    "proof_kind": "Standard",
-    "time": 1817,
-    "props": 392,
-    "func": {
-      "name": "vec::swap_remove",
-      "file": "alloc/src/vec/mod.rs"
-    },
-    "hash": "1384786371727675388810031041165217142170"
   }
 ]

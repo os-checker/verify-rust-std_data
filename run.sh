@@ -53,6 +53,7 @@ merge_results() {
         add | { crate, file, harness, proof_kind, time, props, func, hash }
       )
     | walk(if type == "object" then with_entries(select(.value != null)) else . end)
+    | sort_by(.crate, .file, .harness, .proof_kind, .time)
   ' results-core.json merge_diff-proofs-only.json >merge_results-core.json
 }
 
