@@ -1,0 +1,10 @@
+{
+  "file": "core/src/num/mod.rs",
+  "name": "core::num::<impl usize>::repeat_u8",
+  "hash": "151550337324188286142955091755571946655",
+  "hash_direct": "1056691769575476469616191369586531163902",
+  "src": "pub(crate) const fn repeat_u8(x: u8) -> usize {\n        usize::from_ne_bytes([x; size_of::<usize>()])\n    }",
+  "callees": [
+    "134032854538035142353975430312246411444"
+  ]
+}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/f16.rs",
-  "name": "f16::<impl f16>::is_infinite",
-  "hash": "1832056242981580624615967653935827811355",
-  "hash_direct": "69241465501231072781928899124544769830",
-  "src": "pub const fn is_infinite(self) -> bool {\n        (self == f16::INFINITY) | (self == f16::NEG_INFINITY)\n    }"
-}

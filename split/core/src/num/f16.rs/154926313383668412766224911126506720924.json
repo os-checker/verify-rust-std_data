@@ -1,0 +1,11 @@
+{
+  "file": "core/src/num/f16.rs",
+  "name": "f16::<impl f16>::is_normal",
+  "hash": "154926313383668412766224911126506720924",
+  "hash_direct": "211179075787754923117155337687177612046",
+  "src": "pub const fn is_normal(self) -> bool {\n        matches!(self.classify(), FpCategory::Normal)\n    }",
+  "callees": [
+    "821624783380660323912636252934479695499",
+    "331178422282659479317337493575173626152"
+  ]
+}

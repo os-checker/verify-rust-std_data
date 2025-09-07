@@ -1,0 +1,7 @@
+{
+  "file": "core/src/error.rs",
+  "name": "<cell::BorrowError as error::Error>::description",
+  "hash": "38352637762149476755689190272342585925",
+  "hash_direct": "1454343653094433557111950552778247812295",
+  "src": "fn description(&self) -> &str {\n        \"already mutably borrowed\"\n    }"
+}

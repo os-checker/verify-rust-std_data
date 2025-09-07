@@ -1,0 +1,7 @@
+{
+  "file": "src/lib.rs",
+  "name": "add",
+  "hash": "418330365204530005214576489116939572100",
+  "hash_direct": "1145338257636398359411259952020818688645",
+  "src": "pub fn add(left: u64, right: u64) -> u64 {\n    left + right\n}"
+}

@@ -1,0 +1,8 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "core::ptr::drop_in_place::<{closure@<core::char::DecodeUtf16<core::iter::Cloned<core::slice::Iter<'_, u16>>> as core::iter::Iterator>::size_hint::{closure#0}}>",
+  "hash": "180854266570654101902487315098997002465",
+  "hash_direct": "140625232815579436244497898363757934586",
+  "inst_kind": "\"Shim\"",
+  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
+}

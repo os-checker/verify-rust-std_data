@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "core::iter::Iterator::for_each::call::<u8, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/alloc/src/vec/mod.rs:3824:35: 3824:49}>",
+  "hash": "409316844271306399611252290399166689908",
+  "hash_direct": "78462482872217442364247637870110546237",
+  "src": "fn call<T>(mut f: impl FnMut(T)) -> impl FnMut((), T) {\n            move |(), item| f(item)\n        }"
+}

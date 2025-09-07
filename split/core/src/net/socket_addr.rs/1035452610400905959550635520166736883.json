@@ -1,7 +1,0 @@
-{
-  "file": "core/src/net/socket_addr.rs",
-  "name": "net::socket_addr::SocketAddr::is_ipv6",
-  "hash": "1035452610400905959550635520166736883",
-  "hash_direct": "1745445777619346402514221003729001266205",
-  "src": "pub const fn is_ipv6(&self) -> bool {\n        matches!(*self, SocketAddr::V6(_))\n    }"
-}

@@ -1,0 +1,13 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/barrier/mod.rs",
+  "name": "<core_arch::arm_shared::barrier::not_mclass::NSH as core_arch::arm_shared::sealed::Dmb>::__dmb",
+  "hash": "556546611977488174712616699465452552841",
+  "hash_direct": "160833470843239436343751845881268716461",
+  "src": "unsafe fn __dmb(&self) {\n                super::dmb(super::arg::$A)\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "dmb_dsb!(NSH)",
+      "defsite": "macro_rules! dmb_dsb {\n    ($A:ident) => {\n        #[unstable(feature = \"stdarch_arm_barrier\", issue = \"117219\")]\n        impl super::super::sealed::Dmb for $A {\n            #[inline(always)]\n            unsafe fn __dmb(&self) {\n                super::dmb(super::arg::$A)\n            }\n        }\n\n        #[unstable(feature = \"stdarch_arm_barrier\", issue = \"117219\")]\n        impl super::super::sealed::Dsb for $A {\n            #[inline(always)]\n            unsafe fn __dsb(&self) {\n                super::dsb(super::arg::$A)\n            }\n        }\n    };\n}"
+    }
+  ]
+}

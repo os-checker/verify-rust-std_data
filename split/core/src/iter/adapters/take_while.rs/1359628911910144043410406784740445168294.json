@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/adapters/take_while.rs",
+  "name": "<core::iter::TakeWhile<I, P> as core::iter::Iterator>::try_fold::check::<'_, &u8, usize, core::ops::try_trait::NeverShortCircuit<usize>, {closure@<core::slice::EscapeAscii<'_> as core::fmt::Display>::fmt::{closure#0}}, {closure@core::ops::try_trait::NeverShortCircuit<usize>::wrap_mut_2<usize, &u8, {closure@<core::iter::TakeWhile<core::slice::Iter<'_, u8>, {closure@<core::slice::EscapeAscii<'_> as core::fmt::Display>::fmt::{closure#0}}> as core::iter::Iterator>::count::{closure#0}}>::{closure#0}}>",
+  "hash": "1359628911910144043410406784740445168294",
+  "hash_direct": "793879851898581806217962411589329235591",
+  "src": "fn check<'a, T, Acc, R: Try<Output = Acc>>(\n            flag: &'a mut bool,\n            p: &'a mut impl FnMut(&T) -> bool,\n            mut fold: impl FnMut(Acc, T) -> R + 'a,\n        ) -> impl FnMut(Acc, T) -> ControlFlow<R, Acc> + 'a {\n            move |acc, x| {\n                if p(&x) {\n                    ControlFlow::from_try(fold(acc, x))\n                } else {\n                    *flag = true;\n                    ControlFlow::Break(try { acc })\n                }\n            }\n        }"
+}

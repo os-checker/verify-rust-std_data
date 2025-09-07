@@ -1,0 +1,20 @@
+{
+  "file": "core/src/intrinsics/mir.rs",
+  "name": "intrinsics::mir::UnwindTerminate",
+  "hash": "1007748932934090353117462947671117947538",
+  "hash_direct": "91204657553121941385138831357250657973",
+  "src": "pub fn $($sig)* { panic!() }",
+  "macro_backtrace": [
+    {
+      "callsite": "define!(\n    \"mir_unwind_terminate\",\n    /// An unwind action that terminates the execution.\n    ///\n    /// `UnwindTerminate` can also be used as a terminator.\n    fn UnwindTerminate(reason: UnwindTerminateReason) -> UnwindActionArg\n)",
+      "defsite": "macro_rules! define {\n    ($name:literal, $( #[ $meta:meta ] )* fn $($sig:tt)*) => {\n        #[rustc_diagnostic_item = $name]\n        #[inline]\n        $( #[ $meta ] )*\n        pub fn $($sig)* { panic!() }\n    }\n}"
+    }
+  ],
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "243931809744896974812513529918607549579",
+    "1752989996936949203916036071159051010960"
+  ]
+}

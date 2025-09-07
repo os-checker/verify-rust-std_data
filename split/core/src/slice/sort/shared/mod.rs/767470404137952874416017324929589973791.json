@@ -1,0 +1,27 @@
+{
+  "file": "core/src/slice/sort/shared/mod.rs",
+  "name": "slice::sort::shared::find_existing_run::<f32, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/slice/mod.rs:3158:41: 3158:47}>",
+  "hash": "767470404137952874416017324929589973791",
+  "hash_direct": "77477925545847355113352004379167997234",
+  "src": "pub(crate) fn find_existing_run<T, F: FnMut(&T, &T) -> bool>(\n    v: &[T],\n    is_less: &mut F,\n) -> (usize, bool) {\n    let len = v.len();\n    if len < 2 {\n        return (len, false);\n    }\n\n    // SAFETY: We checked that len >= 2, so 0 and 1 are valid indices.\n    // This also means that run_len < len implies run_len and run_len - 1\n    // are valid indices as well.\n    unsafe {\n        let mut run_len = 2;\n        let strictly_descending = is_less(v.get_unchecked(1), v.get_unchecked(0));\n        if strictly_descending {\n            while run_len < len && is_less(v.get_unchecked(run_len), v.get_unchecked(run_len - 1)) {\n                run_len += 1;\n            }\n        } else {\n            while run_len < len && !is_less(v.get_unchecked(run_len), v.get_unchecked(run_len - 1))\n            {\n                run_len += 1;\n            }\n        }\n        (run_len, strictly_descending)\n    }\n}",
+  "callees": [
+    "25315992229481465352451865580694346951",
+    "842267059997019422815333829425931124000",
+    "258820287469578611817448591488600041899",
+    "17421822894816687532325615181214565887",
+    "23815256893174302637797703719499456373",
+    "1280257502160233765816408910554470634604",
+    "1157832635988226544312579101964623411278",
+    "1239687241192450573815900328634536806436",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "478753423337745817613297159272845606672",
+    "139419141205912213618126516670873406383",
+    "89235811051157623257754452263128847602",
+    "181416651631777218321176719587467755489",
+    "1450369160844341565513831355908996529458",
+    "124656679884072299719740859888952081738",
+    "154911443990380340341563367924870465980",
+    "739520556846959085018120036998133255835"
+  ]
+}

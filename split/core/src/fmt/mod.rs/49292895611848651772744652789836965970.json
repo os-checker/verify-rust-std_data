@@ -1,0 +1,7 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "fmt::flags::SIGN_AWARE_ZERO_PAD_FLAG",
+  "hash": "49292895611848651772744652789836965970",
+  "hash_direct": "393696869349640072613985561194073032823",
+  "src": "pub(super) const SIGN_AWARE_ZERO_PAD_FLAG: u32 = 1 << 24;"
+}

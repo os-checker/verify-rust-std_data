@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/adapters/map.rs",
+  "name": "core::iter::adapters::map::map_fold::<&&str, usize, usize, {closure@core::fmt::Arguments<'_>::estimated_capacity::{closure#0}}, {closure@<usize as core::iter::Sum>::sum<core::iter::Map<core::slice::Iter<'_, &str>, {closure@core::fmt::Arguments<'_>::estimated_capacity::{closure#0}}>>::{closure#0}}>",
+  "hash": "992935740149262460910551522544723125750",
+  "hash_direct": "1466610234409188769418153533810843433768",
+  "src": "fn map_fold<T, B, Acc>(\n    mut f: impl FnMut(T) -> B,\n    mut g: impl FnMut(Acc, B) -> Acc,\n) -> impl FnMut(Acc, T) -> Acc {\n    move |acc, elt| g(acc, f(elt))\n}"
+}

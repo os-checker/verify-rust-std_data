@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/f32.rs",
-  "name": "f32::<impl f32>::NEG_TINY_BITS",
-  "hash": "101013169627184398857577680075526937732",
-  "hash_direct": "7271069692275219184147752695037443684",
-  "src": "const NEG_TINY_BITS: u32 = Self::TINY_BITS | Self::SIGN_MASK;"
-}

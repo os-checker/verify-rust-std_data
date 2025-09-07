@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "ptr::non_null::NonNull::<bool>::add",
+  "hash": "52220194523428839835523148033857452608",
+  "hash_direct": "811899876706196122311015378783662074144",
+  "src": "pub const unsafe fn add(self, count: usize) -> Self\n    where\n        T: Sized,\n    {\n        // SAFETY: the caller must uphold the safety contract for `offset`.\n        // Additionally safety contract of `offset` guarantees that the resulting pointer is\n        // pointing to an allocation, there can't be an allocation at null, thus it's safe to\n        // construct `NonNull`.\n        unsafe { NonNull { pointer: intrinsics::offset(self.as_ptr(), count) } }\n    }",
+  "callees": [
+    "215842744644594298211359218338646104265"
+  ]
+}

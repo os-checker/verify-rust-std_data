@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "ptr::non_null::NonNull::<(char, u8)>::offset",
+  "hash": "163495454126198687108006090946207494756",
+  "hash_direct": "1411853803347017064012920993199742694028",
+  "src": "pub const unsafe fn offset(self, count: isize) -> Self\n    where\n        T: Sized,\n    {\n        // SAFETY: the caller must uphold the safety contract for `offset`.\n        // Additionally safety contract of `offset` guarantees that the resulting pointer is\n        // pointing to an allocation, there can't be an allocation at null, thus it's safe to\n        // construct `NonNull`.\n        unsafe { NonNull { pointer: intrinsics::offset(self.as_ptr(), count) } }\n    }",
+  "callees": [
+    "416840175099677302012350366025939820227"
+  ]
+}

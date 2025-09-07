@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/adapters/map.rs",
+  "name": "iter::adapters::map::Map::<slice::iter::Iter<'_, &str>, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/fmt/mod.rs:638:59: 638:62}>::new",
+  "hash": "855556410617860801013180162414999481301",
+  "hash_direct": "724226230203018868415263912114960478928",
+  "src": "pub(in crate::iter) fn new(iter: I, f: F) -> Map<I, F> {\n        Map { iter, f }\n    }"
+}

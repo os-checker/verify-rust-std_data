@@ -1,0 +1,10 @@
+{
+  "file": "core/src/convert/mod.rs",
+  "name": "<usize as convert::TryInto<isize>>::try_into",
+  "hash": "1284325997074996249012033295508511685693",
+  "hash_direct": "1767861676839285688311026299791680835320",
+  "src": "fn try_into(self) -> Result<U, U::Error> {\n        U::try_from(self)\n    }",
+  "callees": [
+    "362347083875055263112839943619216221392"
+  ]
+}

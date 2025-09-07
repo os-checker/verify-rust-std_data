@@ -1,0 +1,11 @@
+{
+  "file": "core/src/result.rs",
+  "name": "core::result::Result::<string::String, core::char::DecodeUtf16Error>::map_err::<string::FromUtf16Error, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/alloc/src/string.rs:872:26: 872:29}>",
+  "hash": "100235425272287629153704671364467410991",
+  "hash_direct": "1200044320566616768414704026365715435979",
+  "src": "pub const fn map_err<F, O>(self, op: O) -> Result<T, F>\n    where\n        O: [const] FnOnce(E) -> F + [const] Destruct,\n    {\n        match self {\n            Ok(t) => Ok(t),\n            Err(e) => Err(op(e)),\n        }\n    }",
+  "callees": [
+    "1377613335208170651011017265669382644653",
+    "159866994508331147357086558847146759400"
+  ]
+}

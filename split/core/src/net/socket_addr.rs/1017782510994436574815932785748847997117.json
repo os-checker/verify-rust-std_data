@@ -1,0 +1,7 @@
+{
+  "file": "core/src/net/socket_addr.rs",
+  "name": "net::socket_addr::SocketAddrV6::set_ip",
+  "hash": "1017782510994436574815932785748847997117",
+  "hash_direct": "172743705498684248979574716402951546360",
+  "src": "pub const fn set_ip(&mut self, new_ip: Ipv6Addr) {\n        self.ip = new_ip;\n    }"
+}

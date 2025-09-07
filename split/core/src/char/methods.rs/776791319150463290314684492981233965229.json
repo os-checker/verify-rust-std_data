@@ -1,0 +1,7 @@
+{
+  "file": "core/src/char/methods.rs",
+  "name": "char::methods::<impl char>::is_ascii_digit",
+  "hash": "776791319150463290314684492981233965229",
+  "hash_direct": "1572639210755461237813705720456821246800",
+  "src": "pub const fn is_ascii_digit(&self) -> bool {\n        matches!(*self, '0'..='9')\n    }"
+}

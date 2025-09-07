@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ops/range.rs",
+  "name": "ops::range::RangeInclusive::<usize>::into_slice_range",
+  "hash": "146790947205902300248608006721818154078",
+  "hash_direct": "164720555950906535317079434955096481634",
+  "src": "pub(crate) const fn into_slice_range(self) -> Range<usize> {\n        // If we're not exhausted, we want to simply slice `start..end + 1`.\n        // If we are exhausted, then slicing with `end + 1..end + 1` gives us an\n        // empty range that is still subject to bounds-checks for that endpoint.\n        let exclusive_end = self.end + 1;\n        let start = if self.exhausted { exclusive_end } else { self.start };\n        start..exclusive_end\n    }"
+}

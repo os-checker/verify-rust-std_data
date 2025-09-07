@@ -1,0 +1,10 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "<fmt::FormattingOptions as default::Default>::default",
+  "hash": "658660712720961258213951507188837886297",
+  "hash_direct": "149035442855330627106640571825087359221",
+  "src": "fn default() -> Self {\n        // The `#[derive(Default)]` implementation would set `fill` to `\\0` instead of space.\n        Self::new()\n    }",
+  "callees": [
+    "4960461046229976118108876182482238045"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "file": "core/src/alloc/mod.rs",
+  "name": "<alloc::AllocError as fmt::Display>::fmt",
+  "hash": "9594896515237174221961778967847816708",
+  "hash_direct": "452248158943325402816632586665181375207",
+  "src": "fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {\n        f.write_str(\"memory allocation failed\")\n    }",
+  "callees": [
+    "243839084150888952911908111539685994713"
+  ]
+}

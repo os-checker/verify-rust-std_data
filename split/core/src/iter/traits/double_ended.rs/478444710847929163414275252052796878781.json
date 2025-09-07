@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/traits/double_ended.rs",
+  "name": "iter::traits::double_ended::DoubleEndedIterator::rfind::check::<&str, &mut str::IsNotEmpty>",
+  "hash": "478444710847929163414275252052796878781",
+  "hash_direct": "3313984445424530922399882762932507717",
+  "src": "fn check<T>(mut predicate: impl FnMut(&T) -> bool) -> impl FnMut((), T) -> ControlFlow<T> {\n            move |(), x| {\n                if predicate(&x) { ControlFlow::Break(x) } else { ControlFlow::Continue(()) }\n            }\n        }"
+}

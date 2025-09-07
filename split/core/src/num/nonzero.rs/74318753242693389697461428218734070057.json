@@ -1,0 +1,12 @@
+{
+  "file": "core/src/num/nonzero.rs",
+  "name": "num::nonzero::NonZero::<u64>::from_mut",
+  "hash": "74318753242693389697461428218734070057",
+  "hash_direct": "18734021167667203833764553043190859820",
+  "src": "pub fn from_mut(n: &mut T) -> Option<&mut Self> {\n        // SAFETY: Memory layout optimization guarantees that `Option<NonZero<T>>` has\n        //         the same layout and size as `T`, with `0` representing `None`.\n        let opt_n = unsafe { &mut *(ptr::from_mut(n).cast::<Option<Self>>()) };\n\n        opt_n.as_mut()\n    }",
+  "callees": [
+    "8108042082834919971811951097020343717",
+    "8170942216328188709413174302126060556",
+    "34773513303972582017262724785801998356"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vceqq_s32",
+  "hash": "47690275894862076755750176016528146553",
+  "hash_direct": "35167908063468662827996342696855406129",
+  "src": "pub fn vceqq_s32(a: int32x4_t, b: int32x4_t) -> uint32x4_t {\n    unsafe { simd_eq(a, b) }\n}"
+}

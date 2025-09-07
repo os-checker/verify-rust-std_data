@@ -1,0 +1,26 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/simd.rs",
+  "name": "<core_arch::simd::f64x8 as cmp::PartialEq>::eq",
+  "hash": "70196109881743265758644776213498241167",
+  "hash_direct": "1550543593988891963813295710907116941468",
+  "src": "fn eq(&self, other: &Self) -> bool {\n                self.as_array() == other.as_array()\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "simd_ty!(\n    f64x8[f64;8]:\n    x0,\n    x1,\n    x2,\n    x3,\n    x4,\n    x5,\n    x6,\n    x7\n)",
+      "defsite": "macro_rules! simd_ty {\n    ($id:ident [$elem_type:ty ; $len:literal]: $($param_name:ident),*) => {\n        #[repr(simd)]\n        #[derive(Copy, Clone)]\n        pub(crate) struct $id([$elem_type; $len]);\n\n        #[allow(clippy::use_self)]\n        impl $id {\n            /// A value of this type where all elements are zeroed out.\n            pub(crate) const ZERO: Self = unsafe { crate::mem::zeroed() };\n\n            #[inline(always)]\n            pub(crate) const fn new($($param_name: $elem_type),*) -> Self {\n                $id([$($param_name),*])\n            }\n            #[inline(always)]\n            pub(crate) const fn from_array(elements: [$elem_type; $len]) -> Self {\n                $id(elements)\n            }\n            // FIXME: Workaround rust@60637\n            #[inline(always)]\n            pub(crate) fn splat(value: $elem_type) -> Self {\n                #[derive(Copy, Clone)]\n                #[repr(simd)]\n                struct JustOne([$elem_type; 1]);\n                let one = JustOne([value]);\n                // SAFETY: 0 is always in-bounds because we're shuffling\n                // a simd type with exactly one element.\n                unsafe { simd_shuffle!(one, one, [0; $len]) }\n            }\n\n            /// Extract the element at position `index`.\n            /// `index` is not a constant so this is not efficient!\n            /// Use for testing only.\n            // FIXME: Workaround rust@60637\n            #[inline(always)]\n            pub(crate) fn extract(&self, index: usize) -> $elem_type {\n                self.as_array()[index]\n            }\n\n            #[inline]\n            pub(crate) fn as_array(&self) -> &[$elem_type; $len] {\n                let simd_ptr: *const Self = self;\n                let array_ptr: *const [$elem_type; $len] = simd_ptr.cast();\n                // SAFETY: We can always read the prefix of a simd type as an array.\n                // There might be more padding afterwards for some widths, but\n                // that's not a problem for reading less than that.\n                unsafe { &*array_ptr }\n            }\n        }\n\n        impl core::cmp::PartialEq for $id {\n            #[inline]\n            fn eq(&self, other: &Self) -> bool {\n                self.as_array() == other.as_array()\n            }\n        }\n\n        impl core::fmt::Debug for $id {\n            #[inline]\n            fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {\n                debug_simd_finish(f, stringify!($id), self.as_array())\n            }\n        }\n    }\n}"
+    }
+  ],
+  "callees": [
+    "60999201119233692508078384048359354289",
+    "1495576683052117976016977005776682604767",
+    "16299031275999020116552118126053106354",
+    "4874072653925229191475090593117003989",
+    "375074612462415615618291837297780401750",
+    "17839973167024825035303796143882736645",
+    "1459659267318208146812316817029608887978",
+    "110253639892266152526013629967195348914",
+    "97462563857181055111306410329925874629",
+    "1284485025711820296717355449039091834261",
+    "555336164472996233716573501186992515954"
+  ]
+}

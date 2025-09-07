@@ -1,0 +1,13 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "<fmt::Alignment as cmp::PartialEq>::eq",
+  "hash": "138791160527873869081784178737256895373",
+  "hash_direct": "75745030912050856324236425236641464319",
+  "src": "PartialEq",
+  "macro_backtrace": [
+    {
+      "callsite": "PartialEq",
+      "defsite": "pub macro PartialEq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

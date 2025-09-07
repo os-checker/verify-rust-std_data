@@ -1,0 +1,12 @@
+{
+  "file": "core/src/intrinsics/fallback.rs",
+  "name": "core::intrinsics::fallback::wide_mul_u128",
+  "hash": "865650104295848903112749528189008460635",
+  "hash_direct": "1243712574304572035518283287955004180286",
+  "src": "const fn wide_mul_u128(a: u128, b: u128) -> (u128, u128) {\n    #[inline]\n    const fn to_low_high(x: u128) -> [u128; 2] {\n        const MASK: u128 = u64::MAX as _;\n        [x & MASK, x >> 64]\n    }\n    #[inline]\n    const fn from_low_high(x: [u128; 2]) -> u128 {\n        x[0] | (x[1] << 64)\n    }\n    #[inline]\n    const fn scalar_mul(low_high: [u128; 2], k: u128) -> [u128; 3] {\n        let [x, c] = to_low_high(k * low_high[0]);\n        let [y, z] = to_low_high(k * low_high[1] + c);\n        [x, y, z]\n    }\n    let a = to_low_high(a);\n    let b = to_low_high(b);\n    let low = scalar_mul(a, b[0]);\n    let high = scalar_mul(a, b[1]);\n    let r0 = low[0];\n    let [r1, c] = to_low_high(low[1] + high[0]);\n    let [r2, c] = to_low_high(low[2] + high[1] + c);\n    let r3 = high[2] + c;\n    (from_low_high([r0, r1]), from_low_high([r2, r3]))\n}",
+  "callees": [
+    "56234286929832465845177810217708365466",
+    "1680344847910503610811390711953062113319",
+    "920980127064672019717947646353794366525"
+  ]
+}

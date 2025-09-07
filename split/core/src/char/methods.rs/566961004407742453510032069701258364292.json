@@ -1,0 +1,7 @@
+{
+  "file": "core/src/char/methods.rs",
+  "name": "char::methods::len_utf16",
+  "hash": "566961004407742453510032069701258364292",
+  "hash_direct": "511079767354993669717414019826836952084",
+  "src": "const fn len_utf16(code: u32) -> usize {\n    if (code & 0xFFFF) == code { 1 } else { 2 }\n}"
+}

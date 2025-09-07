@@ -1,7 +1,0 @@
-{
-  "file": "core/src/ptr/mut_ptr.rs",
-  "name": "ptr::mut_ptr::<impl *mut task::wake::Context<'_>>::cast::<task::wake::Context<'_>>",
-  "hash": "67966436687921390017248041474544072979",
-  "hash_direct": "110981381513679695811838721227952202467",
-  "src": "pub const fn cast<U>(self) -> *mut U {\n        self as _\n    }"
-}

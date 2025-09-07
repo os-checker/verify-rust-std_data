@@ -1,0 +1,13 @@
+{
+  "file": "core/src/str/mod.rs",
+  "name": "<str::CharEscapeDebugContinue as clone::Clone>::clone",
+  "hash": "1542207383255327621116904855085895476103",
+  "hash_direct": "57448324822254372571472278938860998016",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

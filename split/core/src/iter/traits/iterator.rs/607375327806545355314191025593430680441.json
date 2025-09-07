@@ -1,0 +1,10 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<slice::iter::IterMut<'_, u8> as iter::traits::iterator::Iterator>::rev",
+  "hash": "607375327806545355314191025593430680441",
+  "hash_direct": "779278920032122515916575970829945780135",
+  "src": "fn rev(self) -> Rev<Self>\n    where\n        Self: Sized + DoubleEndedIterator,\n    {\n        Rev::new(self)\n    }",
+  "callees": [
+    "1389451637506649122511387379039196216619"
+  ]
+}

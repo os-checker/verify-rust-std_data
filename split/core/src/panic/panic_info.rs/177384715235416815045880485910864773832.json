@@ -1,7 +1,0 @@
-{
-  "file": "core/src/panic/panic_info.rs",
-  "name": "panic::panic_info::PanicInfo::<'_>::message",
-  "hash": "177384715235416815045880485910864773832",
-  "hash_direct": "1120242268597900843617360579041068925149",
-  "src": "pub fn message(&self) -> PanicMessage<'_> {\n        PanicMessage { message: self.message }\n    }"
-}

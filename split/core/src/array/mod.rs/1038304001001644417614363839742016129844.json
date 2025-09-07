@@ -1,0 +1,7 @@
+{
+  "file": "core/src/array/mod.rs",
+  "name": "array::<impl [u8; 4]>::as_slice",
+  "hash": "1038304001001644417614363839742016129844",
+  "hash_direct": "821819541553562288817037661814889197188",
+  "src": "pub const fn as_slice(&self) -> &[T] {\n        self\n    }"
+}

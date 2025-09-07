@@ -1,0 +1,7 @@
+{
+  "file": "core/src/any.rs",
+  "name": "core::any::TypeId::of::<core::str::Utf8Error>",
+  "hash": "708541994984947041710766893060467097036",
+  "hash_direct": "735370023774764010717282381333177816188",
+  "src": "pub const fn of<T: ?Sized + 'static>() -> TypeId {\n        const { intrinsics::type_id::<T>() }\n    }"
+}

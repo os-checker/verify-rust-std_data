@@ -1,0 +1,13 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/mod.rs",
+  "name": "<core_arch::arm_shared::neon::int32x2x3_t as clone::Clone>::clone",
+  "hash": "1088517645473625335317761254512952759833",
+  "hash_direct": "126971770206719051298003139716353224009",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

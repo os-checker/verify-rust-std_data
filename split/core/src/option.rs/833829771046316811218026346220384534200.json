@@ -1,0 +1,10 @@
+{
+  "file": "core/src/option.rs",
+  "name": "option::Option::<char::EscapeDebug>::take",
+  "hash": "833829771046316811218026346220384534200",
+  "hash_direct": "178375707759511809759198059572957608554",
+  "src": "pub const fn take(&mut self) -> Option<T> {\n        // FIXME(const-hack) replace `mem::replace` by `mem::take` when the latter is const ready\n        mem::replace(self, None)\n    }",
+  "callees": [
+    "300652783215287787118122424895675090929"
+  ]
+}

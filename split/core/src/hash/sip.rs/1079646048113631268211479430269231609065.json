@@ -1,0 +1,13 @@
+{
+  "file": "core/src/hash/sip.rs",
+  "name": "<hash::sip::Sip24Rounds as clone::Clone>::clone",
+  "hash": "1079646048113631268211479430269231609065",
+  "hash_direct": "238378221331372948612698373813235044213",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/result.rs",
+  "name": "core::result::Result::<&str, core::str::Utf8Error>::is_ok",
+  "hash": "114529974283242216822363069022603468937",
+  "hash_direct": "67930242149783255245540265985921175542",
+  "src": "pub const fn is_ok(&self) -> bool {\n        matches!(*self, Ok(_))\n    }"
+}

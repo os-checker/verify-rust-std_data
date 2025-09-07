@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/f32.rs",
-  "name": "f32::<impl f32>::to_radians::RADS_PER_DEG",
-  "hash": "34659673092761397378352297437281489349",
-  "hash_direct": "108299570884430166516097863280254894938",
-  "src": "const RADS_PER_DEG: f32 = consts::PI / 180.0;"
-}

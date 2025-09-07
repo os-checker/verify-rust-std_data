@@ -1,0 +1,11 @@
+{
+  "file": "core/src/option.rs",
+  "name": "core::option::Option::<char>::map::<[char; 3], {closure@core::unicode::conversions::to_lower::{closure#1}::{closure#0}}>",
+  "hash": "177248341010927352613289351422021897496",
+  "hash_direct": "825924117091758127115485866603434034625",
+  "src": "pub const fn map<U, F>(self, f: F) -> Option<U>\n    where\n        F: [const] FnOnce(T) -> U + [const] Destruct,\n    {\n        match self {\n            Some(x) => Some(f(x)),\n            None => None,\n        }\n    }",
+  "callees": [
+    "799470288427874534213289815607598798777",
+    "161833910038515032837136419479894096134"
+  ]
+}

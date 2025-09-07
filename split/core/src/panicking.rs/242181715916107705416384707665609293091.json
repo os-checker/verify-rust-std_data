@@ -1,0 +1,15 @@
+{
+  "file": "core/src/panicking.rs",
+  "name": "panicking::panic_cannot_unwind",
+  "hash": "242181715916107705416384707665609293091",
+  "hash_direct": "98496746152311433767719875990673173181",
+  "src": "fn panic_cannot_unwind() -> ! {\n    // Keep the text in sync with `UnwindTerminateReason::as_str` in `rustc_middle`.\n    panic_nounwind(\"panic in a function that cannot unwind\")\n}",
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "17421822894816687532325615181214565887",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "760723331888050409213108094994821248586",
+    "478753423337745817613297159272845606672"
+  ]
+}

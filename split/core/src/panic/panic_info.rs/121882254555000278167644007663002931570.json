@@ -1,7 +1,0 @@
-{
-  "file": "core/src/panic/panic_info.rs",
-  "name": "panic::panic_info::PanicInfo::<'_>::location",
-  "hash": "121882254555000278167644007663002931570",
-  "hash_direct": "64080026437176923433558065325622183503",
-  "src": "pub fn location(&self) -> Option<&Location<'_>> {\n        // NOTE: If this is changed to sometimes return None,\n        // deal with that case in std::panicking::default_hook and core::panicking::panic_fmt.\n        Some(&self.location)\n    }"
-}

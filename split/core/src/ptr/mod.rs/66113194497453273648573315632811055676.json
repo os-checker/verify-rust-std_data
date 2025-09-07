@@ -1,0 +1,8 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "core::ptr::drop_in_place::<{closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/alloc/src/string.rs:797:26: 797:29}>",
+  "hash": "66113194497453273648573315632811055676",
+  "hash_direct": "685823748628405067316363977387274065054",
+  "inst_kind": "\"Shim\"",
+  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
+}

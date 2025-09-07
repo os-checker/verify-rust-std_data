@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vrsqrteq_f32",
-  "hash": "46718591549942670439740865167186793272",
-  "hash_direct": "156836360027502106319624077235446515959",
-  "src": "pub fn vrsqrteq_f32(a: float32x4_t) -> float32x4_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(target_arch = \"arm\", link_name = \"llvm.arm.neon.vrsqrte.v4f32\")]\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.frsqrte.v4f32\"\n        )]\n        fn _vrsqrteq_f32(a: float32x4_t) -> float32x4_t;\n    }\n    unsafe { _vrsqrteq_f32(a) }\n}"
-}

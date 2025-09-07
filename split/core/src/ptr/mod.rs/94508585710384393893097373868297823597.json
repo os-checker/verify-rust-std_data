@@ -1,8 +1,0 @@
-{
-  "file": "core/src/ptr/mod.rs",
-  "name": "ptr::drop_in_place::<&num::flt2dec::decoder::Decoded>",
-  "hash": "94508585710384393893097373868297823597",
-  "hash_direct": "141797715499253625095934895369954629054",
-  "inst_kind": "\"Shim\"",
-  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
-}

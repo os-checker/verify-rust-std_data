@@ -1,0 +1,12 @@
+{
+  "file": "core/src/option.rs",
+  "name": "option::Option::<&u8>::map::<char, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/net/parser.rs:68:32: 68:36}>",
+  "hash": "533978393061650897214741362182416016139",
+  "hash_direct": "134711203826229077117583992345364786465",
+  "src": "pub const fn map<U, F>(self, f: F) -> Option<U>\n    where\n        F: [const] FnOnce(T) -> U + [const] Destruct,\n    {\n        match self {\n            Some(x) => Some(f(x)),\n            None => None,\n        }\n    }",
+  "callees": [
+    "511962504776047044912646038885098500692",
+    "1496059028021580695016992067514637295596",
+    "1817215089507823436616338053904223106794"
+  ]
+}

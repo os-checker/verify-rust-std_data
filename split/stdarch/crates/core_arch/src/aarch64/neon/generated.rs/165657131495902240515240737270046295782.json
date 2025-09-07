@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vld2q_dup_u64",
+  "hash": "165657131495902240515240737270046295782",
+  "hash_direct": "1517091921208688444013075935120954749286",
+  "src": "pub unsafe fn vld2q_dup_u64(a: *const u64) -> uint64x2x2_t {\n    transmute(vld2q_dup_s64(transmute(a)))\n}",
+  "callees": [
+    "62131963353412672079332788754803853773"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vbslq_p16",
+  "hash": "61000919796835455307774064015878545359",
+  "hash_direct": "685788805529183098612778220248699074174",
+  "src": "pub fn vbslq_p16(a: uint16x8_t, b: poly16x8_t, c: poly16x8_t) -> poly16x8_t {\n    let not = int16x8_t::splat(-1);\n    unsafe {\n        transmute(simd_or(\n            simd_and(a, transmute(b)),\n            simd_and(simd_xor(a, transmute(not)), transmute(c)),\n        ))\n    }\n}",
+  "callees": [
+    "70681637525790678232819362189660235068"
+  ]
+}

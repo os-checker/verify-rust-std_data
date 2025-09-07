@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/boxed/thin.rs",
+  "name": "boxed::thin::WithHeader::<H>::new_unsize_zst::max",
+  "hash": "1214283294772387410513656322816772160048",
+  "hash_direct": "145313947331340156769086239271585268180",
+  "src": "const fn max(a: usize, b: usize) -> usize {\n            if a > b { a } else { b }\n        }"
+}

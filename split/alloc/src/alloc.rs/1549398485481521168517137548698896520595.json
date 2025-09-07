@@ -1,0 +1,12 @@
+{
+  "file": "alloc/src/alloc.rs",
+  "name": "alloc::alloc_zeroed",
+  "hash": "1549398485481521168517137548698896520595",
+  "hash_direct": "150685023893776130915396279059667581581",
+  "src": "pub unsafe fn alloc_zeroed(layout: Layout) -> *mut u8 {\n    unsafe {\n        // Make sure we don't accidentally allow omitting the allocator shim in\n        // stable code until it is actually stabilized.\n        __rust_no_alloc_shim_is_unstable_v2();\n\n        __rust_alloc_zeroed(layout.size(), layout.align())\n    }\n}",
+  "callees": [
+    "12355321507198182179923507819259328874",
+    "1099899350342654162615874749245636043676",
+    "41567241620038406215851091758143153711"
+  ]
+}

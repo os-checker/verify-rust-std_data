@@ -1,0 +1,20 @@
+{
+  "file": "core/src/internal_macros.rs",
+  "name": "<u64 as ops::bit::BitAnd<&u64>>::bitand",
+  "hash": "6346087602326594397414578242643250420",
+  "hash_direct": "10856069032840616367538928245224394895",
+  "src": "fn $method(self, other: &$u) -> <$t as $imp<$u>>::Output {\n                $imp::$method(self, *other)\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "forward_ref_binop! { impl BitAnd, bitand for $t, $t,\n        #[stable(feature = \"rust1\", since = \"1.0.0\")]\n        #[rustc_const_unstable(feature = \"const_ops\", issue = \"143802\")] }",
+      "defsite": "macro_rules! forward_ref_binop {\n    (impl $imp:ident, $method:ident for $t:ty, $u:ty, $(#[$attr:meta])+) => {\n        $(#[$attr])+\n        impl const $imp<$u> for &$t {\n            type Output = <$t as $imp<$u>>::Output;\n\n            #[inline]\n            #[track_caller]\n            fn $method(self, other: $u) -> <$t as $imp<$u>>::Output {\n                $imp::$method(*self, other)\n            }\n        }\n\n        $(#[$attr])+\n        impl const $imp<&$u> for $t {\n            type Output = <$t as $imp<$u>>::Output;\n\n            #[inline]\n            #[track_caller]\n            fn $method(self, other: &$u) -> <$t as $imp<$u>>::Output {\n                $imp::$method(self, *other)\n            }\n        }\n\n        $(#[$attr])+\n        impl const $imp<&$u> for &$t {\n            type Output = <$t as $imp<$u>>::Output;\n\n            #[inline]\n            #[track_caller]\n            fn $method(self, other: &$u) -> <$t as $imp<$u>>::Output {\n                $imp::$method(*self, *other)\n            }\n        }\n    }\n}"
+    },
+    {
+      "callsite": "bitand_impl! { bool usize u8 u16 u32 u64 u128 isize i8 i16 i32 i64 i128 }",
+      "defsite": "macro_rules! bitand_impl {\n    ($($t:ty)*) => ($(\n        #[stable(feature = \"rust1\", since = \"1.0.0\")]\n        #[rustc_const_unstable(feature = \"const_ops\", issue = \"143802\")]\n        impl const BitAnd for $t {\n            type Output = $t;\n\n            #[inline]\n            fn bitand(self, rhs: $t) -> $t { self & rhs }\n        }\n\n        forward_ref_binop! { impl BitAnd, bitand for $t, $t,\n        #[stable(feature = \"rust1\", since = \"1.0.0\")]\n        #[rustc_const_unstable(feature = \"const_ops\", issue = \"143802\")] }\n    )*)\n}"
+    }
+  ],
+  "callees": [
+    "1808562075960099839614038510097164394688"
+  ]
+}

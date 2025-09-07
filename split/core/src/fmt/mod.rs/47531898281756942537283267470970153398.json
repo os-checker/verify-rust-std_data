@@ -1,7 +1,0 @@
-{
-  "file": "core/src/fmt/mod.rs",
-  "name": "fmt::flags::PRECISION_FLAG",
-  "hash": "47531898281756942537283267470970153398",
-  "hash_direct": "95252721316889684409375192522853753909",
-  "src": "pub(super) const PRECISION_FLAG: u32 = 1 << 28;"
-}

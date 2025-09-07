@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/adapters/filter.rs",
+  "name": "core::iter::Filter::<core::slice::Iter<'_, u8>, {closure@core::str::count::char_count_general_case::{closure#0}}>::new",
+  "hash": "166218815611410939995580178073009504662",
+  "hash_direct": "1681930370261006121117856863481144580057",
+  "src": "pub(in crate::iter) fn new(iter: I, predicate: P) -> Filter<I, P> {\n        Filter { iter, predicate }\n    }"
+}

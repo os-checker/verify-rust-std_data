@@ -1,0 +1,19 @@
+{
+  "file": "core/src/str/pattern.rs",
+  "name": "<str::pattern::MultiCharEqSearcher<'_, &[char]> as clone::Clone>::clone",
+  "hash": "934795396988647780011828625866773200068",
+  "hash_direct": "70328226860654790277740278339521898643",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ],
+  "callees": [
+    "35627746763384123111342387314761634770",
+    "1127448244019747137816948501807508054133",
+    "1693168866218668197215000934965764485951",
+    "415636605586044597014511502347166535165"
+  ]
+}

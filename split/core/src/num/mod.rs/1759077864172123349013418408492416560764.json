@@ -1,0 +1,36 @@
+{
+  "file": "core/src/num/mod.rs",
+  "name": "num::verify::unchecked_mul_i64_edge_pos",
+  "hash": "1759077864172123349013418408492416560764",
+  "hash_direct": "8890158047884550568140859255657961246",
+  "proof_kind": "\"Contract\"",
+  "attrs": [
+    "#[kanitool::proof_for_contract = \"i64 :: unchecked_mul\"]\n"
+  ],
+  "src": "pub fn $harness_name() {\n                    let num1: $type = kani::any::<$type>();\n                    let num2: $type = kani::any::<$type>();\n\n                    kani::assume(num1 >= $min && num1 <= $max);\n                    kani::assume(num2 >= $min && num2 <= $max);\n\n                    // Ensure that multiplication does not overflow\n                    kani::assume(!num1.overflowing_mul(num2).1);\n\n                    unsafe {\n                        num1.$method(num2);\n                    }\n                }",
+  "macro_backtrace": [
+    {
+      "callsite": "generate_unchecked_mul_intervals!(\n        i64,\n        unchecked_mul,\n        unchecked_mul_i64_small,\n        -10i64,\n        10i64,\n        unchecked_mul_i64_large_pos,\n        i64::MAX - 1000i64,\n        i64::MAX,\n        unchecked_mul_i64_large_neg,\n        i64::MIN,\n        i64::MIN + 1000i64,\n        unchecked_mul_i64_edge_pos,\n        i64::MAX / 2,\n        i64::MAX,\n        unchecked_mul_i64_edge_neg,\n        i64::MIN,\n        i64::MIN / 2\n    )",
+      "defsite": "macro_rules! generate_unchecked_mul_intervals {\n        ($type:ty, $method:ident, $($harness_name:ident, $min:expr, $max:expr),+) => {\n            $(\n                #[kani::proof_for_contract($type::$method)]\n                pub fn $harness_name() {\n                    let num1: $type = kani::any::<$type>();\n                    let num2: $type = kani::any::<$type>();\n\n                    kani::assume(num1 >= $min && num1 <= $max);\n                    kani::assume(num2 >= $min && num2 <= $max);\n\n                    // Ensure that multiplication does not overflow\n                    kani::assume(!num1.overflowing_mul(num2).1);\n\n                    unsafe {\n                        num1.$method(num2);\n                    }\n                }\n            )+\n        }\n    }"
+    }
+  ],
+  "callees": [
+    "146908235034638159208859868167946843838",
+    "35050014685987376637211669421649221857",
+    "455266664225907363718433531888791329661",
+    "809857513675347729512830832735828419618",
+    "139704976908753389291209564980972955015",
+    "7526082995824335814466973137466280467",
+    "630599663716183336214125635728089623874",
+    "258820287469578611817448591488600041899",
+    "17421822894816687532325615181214565887",
+    "23815256893174302637797703719499456373",
+    "56747827454301127204091083070222775737",
+    "107179627443143306065869415306322536946",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "478753423337745817613297159272845606672",
+    "7597273261150882663304400157845609778",
+    "739520556846959085018120036998133255835"
+  ]
+}

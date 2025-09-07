@@ -1,0 +1,26 @@
+{
+  "file": "core/src/intrinsics/mod.rs",
+  "name": "intrinsics::verify::should_succeed_u128_to_i128",
+  "hash": "1461260413641825203614548543702007763750",
+  "hash_direct": "1698540474018324735115566565174430500993",
+  "proof_kind": "\"Standard\"",
+  "attrs": [
+    "#[kanitool::stub_verified = \"transmute_unchecked_wrapper\"]\n",
+    "#[kanitool::proof]\n"
+  ],
+  "src": "fn $harness() {\n                let src: $src = kani::any();\n                let dst: $dst = unsafe { transmute_unchecked_wrapper(src) };\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "should_succeed_no_validity_reqs!(should_succeed_u128_to_i128, u128, i128)",
+      "defsite": "macro_rules! should_succeed_no_validity_reqs {\n        ($harness:ident, $src:ty, $dst:ty) => {\n            #[kani::proof]\n            #[kani::stub_verified(transmute_unchecked_wrapper)]\n            fn $harness() {\n                let src: $src = kani::any();\n                let dst: $dst = unsafe { transmute_unchecked_wrapper(src) };\n            }\n        };\n    }"
+    }
+  ],
+  "callees": [
+    "10881692741086924054939752946121276089",
+    "1560508215569658459217992416008307059233",
+    "1181176447433360643710524604875175168805",
+    "56629061495133648541932577274744419848",
+    "565391940194052820910706318123251165594",
+    "166981031261325530045520140872981244971"
+  ]
+}

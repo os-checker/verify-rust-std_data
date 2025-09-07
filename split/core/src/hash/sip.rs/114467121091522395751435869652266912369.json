@@ -1,0 +1,13 @@
+{
+  "file": "core/src/hash/sip.rs",
+  "name": "<hash::sip::State as clone::Clone>::clone",
+  "hash": "114467121091522395751435869652266912369",
+  "hash_direct": "1670221958508927559517784760721955091944",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

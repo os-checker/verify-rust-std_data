@@ -1,0 +1,13 @@
+{
+  "file": "core/src/clone.rs",
+  "name": "clone::impls::<impl clone::Clone for isize>::clone",
+  "hash": "40841349884173141842442651584006866032",
+  "hash_direct": "71335313915101436638928065737744327770",
+  "src": "fn clone(&self) -> Self {\n                        *self\n                    }",
+  "macro_backtrace": [
+    {
+      "callsite": "impl_clone! {\n        usize u8 u16 u32 u64 u128\n        isize i8 i16 i32 i64 i128\n        f16 f32 f64 f128\n        bool char\n    }",
+      "defsite": "macro_rules! impl_clone {\n        ($($t:ty)*) => {\n            $(\n                #[stable(feature = \"rust1\", since = \"1.0.0\")]\n                impl Clone for $t {\n                    #[inline(always)]\n                    fn clone(&self) -> Self {\n                        *self\n                    }\n                }\n            )*\n        }\n    }"
+    }
+  ]
+}

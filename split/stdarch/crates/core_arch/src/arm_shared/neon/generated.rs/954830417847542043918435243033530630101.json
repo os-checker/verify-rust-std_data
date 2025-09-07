@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vmovn_u32",
+  "hash": "954830417847542043918435243033530630101",
+  "hash_direct": "17156583573796749993389395000437037499",
+  "src": "pub fn vmovn_u32(a: uint32x4_t) -> uint16x4_t {\n    unsafe { simd_cast(a) }\n}"
+}

@@ -1,0 +1,10 @@
+{
+  "file": "core/src/unicode/unicode_data.rs",
+  "name": "unicode::unicode_data::conversions::to_upper::{closure#0}",
+  "hash": "33667460830519287629307600380803967807",
+  "hash_direct": "31527169816409146146155966986409839340",
+  "src": "|&(key, _)| key.cmp(&c)",
+  "callees": [
+    "139527066517240058298709637544916107716"
+  ]
+}

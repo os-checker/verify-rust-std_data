@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/adapters/rev.rs",
+  "name": "iter::adapters::rev::Rev::<slice::iter::Iter<'_, u8>>::new",
+  "hash": "97044075406486263767712184798033718447",
+  "hash_direct": "181119547567590387651602718236198739489",
+  "src": "pub(in crate::iter) fn new(iter: T) -> Rev<T> {\n        Rev { iter }\n    }"
+}

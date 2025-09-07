@@ -1,0 +1,13 @@
+{
+  "file": "core/src/cmp.rs",
+  "name": "<cmp::Ordering as cmp::PartialEq>::eq",
+  "hash": "25315992229481465352451865580694346951",
+  "hash_direct": "19863390627785137889916517977623423078",
+  "src": "PartialEq",
+  "macro_backtrace": [
+    {
+      "callsite": "PartialEq",
+      "defsite": "pub macro PartialEq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

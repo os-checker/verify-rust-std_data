@@ -1,0 +1,19 @@
+{
+  "file": "core/src/iter/adapters/map.rs",
+  "name": "<iter::adapters::map::Map<str::iter::SplitInclusive<'_, char>, str::LinesMap> as clone::Clone>::clone",
+  "hash": "1441125087384001800017152854889757705043",
+  "hash_direct": "568512353970804145313490990956653806289",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ],
+  "callees": [
+    "2441168363420471047966476553372630604",
+    "1170433668301484248112785557850404732735",
+    "1001019627481923202716785672502496702184",
+    "315630434331767906312982525253326286758"
+  ]
+}

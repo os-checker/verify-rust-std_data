@@ -1,0 +1,7 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "core::fmt::Arguments::<'_>::as_str",
+  "hash": "89708104139049276107722877760682942014",
+  "hash_direct": "29831127857886611767080005415972401281",
+  "src": "pub const fn as_str(&self) -> Option<&'static str> {\n        match (self.pieces, self.args) {\n            ([], []) => Some(\"\"),\n            ([s], []) => Some(s),\n            _ => None,\n        }\n    }"
+}

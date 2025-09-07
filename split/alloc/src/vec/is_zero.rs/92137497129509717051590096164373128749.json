@@ -1,0 +1,13 @@
+{
+  "file": "alloc/src/vec/is_zero.rs",
+  "name": "<core::option::Option<core::option::Option<core::option::Option<bool>>> as vec::is_zero::IsZero>::is_zero",
+  "hash": "92137497129509717051590096164373128749",
+  "hash_direct": "64691512069527730344670884150225651440",
+  "src": "fn is_zero(&self) -> bool {\n                // SAFETY: This is *not* a stable layout guarantee, but\n                // inside `core` we're allowed to rely on the current rustc\n                // behavior that options of bools will be one byte with\n                // no padding, so long as they're nested less than 254 deep.\n                let raw: u8 = unsafe { core::mem::transmute(*self) };\n                raw == 0\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "impl_is_zero_option_of_bool! {\n    Option<bool>,\n    Option<Option<bool>>,\n    Option<Option<Option<bool>>>,\n    // Could go further, but not worth the metadata overhead.\n}",
+      "defsite": "macro_rules! impl_is_zero_option_of_bool {\n    ($($t:ty),+ $(,)?) => {$(\n        unsafe impl IsZero for $t {\n            #[inline]\n            fn is_zero(&self) -> bool {\n                // SAFETY: This is *not* a stable layout guarantee, but\n                // inside `core` we're allowed to rely on the current rustc\n                // behavior that options of bools will be one byte with\n                // no padding, so long as they're nested less than 254 deep.\n                let raw: u8 = unsafe { core::mem::transmute(*self) };\n                raw == 0\n            }\n        }\n    )+};\n}"
+    }
+  ]
+}

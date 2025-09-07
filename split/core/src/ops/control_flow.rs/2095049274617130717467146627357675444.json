@@ -1,7 +1,0 @@
-{
-  "file": "core/src/ops/control_flow.rs",
-  "name": "<ops::control_flow::ControlFlow<ops::try_trait::NeverShortCircuitResidual, char> as ops::try_trait::Try>::branch",
-  "hash": "2095049274617130717467146627357675444",
-  "hash_direct": "116259846031627133902283638298716312940",
-  "src": "fn branch(self) -> ControlFlow<Self::Residual, Self::Output> {\n        match self {\n            ControlFlow::Continue(c) => ControlFlow::Continue(c),\n            ControlFlow::Break(b) => ControlFlow::Break(ControlFlow::Break(b)),\n        }\n    }"
-}

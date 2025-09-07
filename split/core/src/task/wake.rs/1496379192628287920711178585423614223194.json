@@ -1,7 +1,0 @@
-{
-  "file": "core/src/task/wake.rs",
-  "name": "task::wake::Waker::vtable",
-  "hash": "1496379192628287920711178585423614223194",
-  "hash_direct": "1774203597076777395916202524654549217329",
-  "src": "pub fn vtable(&self) -> &'static RawWakerVTable {\n        self.waker.vtable\n    }"
-}

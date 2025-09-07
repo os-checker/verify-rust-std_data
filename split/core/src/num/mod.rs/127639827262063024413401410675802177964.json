@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/mod.rs",
+  "name": "num::<impl u8>::is_ascii_hexdigit",
+  "hash": "127639827262063024413401410675802177964",
+  "hash_direct": "1257882153927290914812825849406708503810",
+  "src": "pub const fn is_ascii_hexdigit(&self) -> bool {\n        matches!(*self, b'0'..=b'9') | matches!(*self, b'A'..=b'F') | matches!(*self, b'a'..=b'f')\n    }"
+}

@@ -1,0 +1,20 @@
+{
+  "file": "core/src/num/int_sqrt.rs",
+  "name": "num::int_sqrt::i8",
+  "hash": "5135967430199160468920261282515254851",
+  "hash_direct": "302190162393227640216626863826587424961",
+  "src": "pub(super) const unsafe fn $SignedT(n: $SignedT) -> $SignedT {\n            debug_assert!(n >= 0, \"Negative input inside `isqrt`.\");\n            $UnsignedT(n as $UnsignedT) as $SignedT\n        }",
+  "macro_backtrace": [
+    {
+      "callsite": "signed_fn!(i8, u8)",
+      "defsite": "macro_rules! signed_fn {\n    ($SignedT:ident, $UnsignedT:ident) => {\n        /// Returns the [integer square root](\n        /// https://en.wikipedia.org/wiki/Integer_square_root) of any\n        /// **nonnegative**\n        #[doc = concat!(\"[`\", stringify!($SignedT), \"`](prim@\", stringify!($SignedT), \")\")]\n        /// input.\n        ///\n        /// # Safety\n        ///\n        /// This results in undefined behavior when the input is negative.\n        #[must_use = \"this returns the result of the operation, \\\n                      without modifying the original\"]\n        #[inline]\n        pub(super) const unsafe fn $SignedT(n: $SignedT) -> $SignedT {\n            debug_assert!(n >= 0, \"Negative input inside `isqrt`.\");\n            $UnsignedT(n as $UnsignedT) as $SignedT\n        }\n    };\n}"
+    }
+  ],
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "60960868849511503248088905502240646288",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "1752989996936949203916036071159051010960"
+  ]
+}

@@ -57,6 +57,10 @@ merge_results() {
   ' results-core.json merge_diff-proofs-only.json >merge_results-core.json
 }
 
+split() {
+
+}
+
 declare -A cmds=(
   [all]=all
   [merge_diff]=merge_diff

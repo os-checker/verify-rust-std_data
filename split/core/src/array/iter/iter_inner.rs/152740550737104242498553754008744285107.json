@@ -1,0 +1,10 @@
+{
+  "file": "core/src/array/iter/iter_inner.rs",
+  "name": "array::iter::iter_inner::PolymorphicIter::<[mem::maybe_uninit::MaybeUninit<char>; 3]>::empty",
+  "hash": "152740550737104242498553754008744285107",
+  "hash_direct": "1222628126518826842616464756922197057568",
+  "src": "pub(super) const fn empty() -> Self {\n        Self { alive: IndexRange::zero_to(0), data: [const { MaybeUninit::uninit() }; N] }\n    }",
+  "callees": [
+    "97912592448095803783191936410021855138"
+  ]
+}

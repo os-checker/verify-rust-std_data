@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/f16.rs",
-  "name": "f16::<impl f16>::is_nan",
-  "hash": "325778596882228985815328037091464060945",
-  "hash_direct": "147717361610055149514557555796765843191",
-  "src": "pub const fn is_nan(self) -> bool {\n        self != self\n    }"
-}

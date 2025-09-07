@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/dec2flt/mod.rs",
+  "name": "num::dec2flt::pfe_invalid",
+  "hash": "1727044216435048357413768906990211119788",
+  "hash_direct": "1553714693717733150115419501920052839448",
+  "src": "pub fn pfe_invalid() -> ParseFloatError {\n    ParseFloatError { kind: FloatErrorKind::Invalid }\n}"
+}

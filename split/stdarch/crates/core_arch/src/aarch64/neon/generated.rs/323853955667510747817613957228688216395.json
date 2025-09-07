@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
-  "name": "core_arch::aarch64::neon::generated::vmovn_high_u64",
-  "hash": "323853955667510747817613957228688216395",
-  "hash_direct": "1634450257514066722012747573808683797346",
-  "src": "pub fn vmovn_high_u64(a: uint32x2_t, b: uint64x2_t) -> uint32x4_t {\n    unsafe {\n        let c: uint32x2_t = simd_cast(b);\n        simd_shuffle!(a, c, [0, 1, 2, 3])\n    }\n}"
-}

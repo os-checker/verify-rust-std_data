@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vabs_s8",
-  "hash": "112437499817050277191189315576660042100",
-  "hash_direct": "182369634809542569645970642521746822184",
-  "src": "pub fn vabs_s8(a: int8x8_t) -> int8x8_t {\n    unsafe {\n        let neg: int8x8_t = simd_neg(a);\n        let mask: int8x8_t = simd_ge(a, neg);\n        simd_select(mask, a, neg)\n    }\n}"
-}

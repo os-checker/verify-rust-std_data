@@ -1,7 +1,0 @@
-{
-  "file": "core/src/ffi/c_str.rs",
-  "name": "<ffi::c_str::CStr as convert::AsRef<ffi::c_str::CStr>>::as_ref",
-  "hash": "140258783226693642827641694426446322549",
-  "hash_direct": "121611969138385813192998896329861709221",
-  "src": "fn as_ref(&self) -> &CStr {\n        self\n    }"
-}

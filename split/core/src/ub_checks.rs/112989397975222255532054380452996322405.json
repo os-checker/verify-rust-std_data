@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ub_checks.rs",
+  "name": "core::ub_checks::check_language_ub",
+  "hash": "112989397975222255532054380452996322405",
+  "hash_direct": "1770790740986811367111649694470111449737",
+  "src": "pub(crate) const fn check_language_ub() -> bool {\n    // Only used for UB checks so we may const_eval_select.\n    intrinsics::ub_checks()\n        && const_eval_select!(\n            @capture { } -> bool:\n            if const {\n                // Always disable UB checks.\n                false\n            } else {\n                // Disable UB checks in Miri.\n                !cfg!(miri)\n            }\n        )\n}",
+  "callees": [
+    "1824545319189397521315695847785602896178"
+  ]
+}

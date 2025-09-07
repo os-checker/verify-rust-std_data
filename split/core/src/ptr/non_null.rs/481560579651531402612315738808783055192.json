@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "core::ptr::NonNull::<vec::Vec<u8>>::as_mut::<'_>",
+  "hash": "481560579651531402612315738808783055192",
+  "hash_direct": "1780751023964470503313375578559652177740",
+  "src": "pub const unsafe fn as_mut<'a>(&mut self) -> &'a mut T {\n        // SAFETY: the caller must guarantee that `self` meets all the\n        // requirements for a mutable reference.\n        unsafe { &mut *self.as_ptr() }\n    }",
+  "callees": [
+    "28365086640543528706340429670893583977"
+  ]
+}

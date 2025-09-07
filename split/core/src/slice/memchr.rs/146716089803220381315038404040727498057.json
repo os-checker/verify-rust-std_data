@@ -1,0 +1,7 @@
+{
+  "file": "core/src/slice/memchr.rs",
+  "name": "core::slice::memchr::memchr_naive",
+  "hash": "146716089803220381315038404040727498057",
+  "hash_direct": "152436595424306175168804876377869747247",
+  "src": "const fn memchr_naive(x: u8, text: &[u8]) -> Option<usize> {\n    let mut i = 0;\n\n    // FIXME(const-hack): Replace with `text.iter().pos(|c| *c == x)`.\n    while i < text.len() {\n        if text[i] == x {\n            return Some(i);\n        }\n\n        i += 1;\n    }\n\n    None\n}"
+}

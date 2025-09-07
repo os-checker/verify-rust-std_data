@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/collections/linked_list.rs",
+  "name": "collections::linked_list::assert_covariance",
+  "hash": "139024699871569484909137643028803113908",
+  "hash_direct": "1987721529592177684823713920075986983",
+  "src": "fn assert_covariance() {\n    fn a<'a>(x: LinkedList<&'static str>) -> LinkedList<&'a str> {\n        x\n    }\n    fn b<'i, 'a>(x: Iter<'i, &'static str>) -> Iter<'i, &'a str> {\n        x\n    }\n    fn c<'a>(x: IntoIter<&'static str>) -> IntoIter<&'a str> {\n        x\n    }\n}"
+}

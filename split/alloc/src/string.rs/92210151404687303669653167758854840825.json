@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/string.rs",
+  "name": "string::String::as_mut_vec",
+  "hash": "92210151404687303669653167758854840825",
+  "hash_direct": "152886230908075531013137394498026917297",
+  "src": "pub const unsafe fn as_mut_vec(&mut self) -> &mut Vec<u8> {\n        &mut self.vec\n    }"
+}

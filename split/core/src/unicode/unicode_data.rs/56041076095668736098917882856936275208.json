@@ -1,0 +1,10 @@
+{
+  "file": "core/src/unicode/unicode_data.rs",
+  "name": "unicode::unicode_data::skip_search::<34, 751>::{closure#1}",
+  "hash": "56041076095668736098917882856936275208",
+  "hash_direct": "49873363018541309193636411249341725015",
+  "src": "|prev| short_offset_runs[prev].prefix_sum()",
+  "callees": [
+    "921093343429125213217757377270116064946"
+  ]
+}

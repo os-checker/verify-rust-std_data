@@ -1,0 +1,10 @@
+{
+  "file": "core/src/str/validations.rs",
+  "name": "str::validations::run_utf8_validation::USIZE_BYTES",
+  "hash": "18209088413805158665974759537446400936",
+  "hash_direct": "1524897377081215909312611298239697688973",
+  "src": "const USIZE_BYTES: usize = size_of::<usize>();",
+  "callees": [
+    "1749362715435459353511933873995340031229"
+  ]
+}

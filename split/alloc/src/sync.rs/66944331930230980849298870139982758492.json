@@ -1,0 +1,14 @@
+{
+  "file": "alloc/src/sync.rs",
+  "name": "sync::Arc::<[u8]>::allocate_for_layout::<{closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/alloc/src/sync.rs:2035:17: 2035:25}, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/alloc/src/sync.rs:2036:17: 2036:22}>::{closure#0}",
+  "hash": "66944331930230980849298870139982758492",
+  "hash_direct": "1075928414490572645216699030336730123939",
+  "src": "|_| handle_alloc_error(layout)",
+  "callees": [
+    "593523720810475000712660203952371323969",
+    "140493508095315886339161612115402293715",
+    "12355321507198182179923507819259328874",
+    "1099899350342654162615874749245636043676",
+    "41567241620038406215851091758143153711"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "file": "core/src/escape.rs",
+  "name": "<escape::EscapeIterInner<4, escape::AlwaysEscaped> as clone::Clone>::clone",
+  "hash": "44343459085768320574961692114605482622",
+  "hash_direct": "159716854633780825347619058223020107701",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ],
+  "callees": [
+    "91101706103594327621932468101859858531",
+    "1259146807212876444491720604650938744",
+    "331329989971815304010931235162508077994",
+    "81141510033249624417024404029845713163"
+  ]
+}

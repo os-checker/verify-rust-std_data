@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vmaxv_u16",
+  "hash": "80965784663371634206563929869264418806",
+  "hash_direct": "1081313031442617788917008147798332018978",
+  "src": "pub fn vmaxv_u16(a: uint16x4_t) -> u16 {\n    unsafe { simd_reduce_max(a) }\n}"
+}

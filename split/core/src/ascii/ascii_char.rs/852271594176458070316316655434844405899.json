@@ -1,0 +1,11 @@
+{
+  "file": "core/src/ascii/ascii_char.rs",
+  "name": "ascii::ascii_char::AsciiChar::is_octdigit",
+  "hash": "852271594176458070316316655434844405899",
+  "hash_direct": "1087869718741047549313959135172901204587",
+  "src": "pub const fn is_octdigit(self) -> bool {\n        self.to_u8().is_ascii_octdigit()\n    }",
+  "callees": [
+    "211389067699639933614636457746408448112",
+    "67513390696532489506923807546048943469"
+  ]
+}

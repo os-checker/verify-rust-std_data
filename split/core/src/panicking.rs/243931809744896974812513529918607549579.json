@@ -1,0 +1,13 @@
+{
+  "file": "core/src/panicking.rs",
+  "name": "panicking::panic",
+  "hash": "243931809744896974812513529918607549579",
+  "hash_direct": "80613608207185420215538819866331214704",
+  "src": "pub const fn panic(expr: &'static str) -> ! {\n    // Use Arguments::new_const instead of format_args!(\"{expr}\") to potentially\n    // reduce size overhead. The format_args! macro uses str's Display trait to\n    // write expr, which calls Formatter::pad, which must accommodate string\n    // truncation and padding (even though none is used here). Using\n    // Arguments::new_const may allow the compiler to omit Formatter::pad from the\n    // output binary, saving up to a few kilobytes.\n    // However, this optimization only works for `'static` strings: `new_const` also makes this\n    // message return `Some` from `Arguments::as_str`, which means it can become part of the panic\n    // payload without any allocation or copying. Shorter-lived strings would become invalid as\n    // stack frames get popped during unwinding, and couldn't be directly referenced from the\n    // payload.\n    panic_fmt(fmt::Arguments::new_const(&[expr]));\n}",
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "1752989996936949203916036071159051010960"
+  ]
+}

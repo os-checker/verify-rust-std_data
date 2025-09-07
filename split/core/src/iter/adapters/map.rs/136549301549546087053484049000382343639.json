@@ -1,7 +1,0 @@
-{
-  "file": "core/src/iter/adapters/map.rs",
-  "name": "iter::adapters::map::Map::<str::lossy::Utf8Chunks<'_>, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/bstr/mod.rs:161:18: 161:25}>::new",
-  "hash": "136549301549546087053484049000382343639",
-  "hash_direct": "174955590064323722088352933288503813457",
-  "src": "pub(in crate::iter) fn new(iter: I, f: F) -> Map<I, F> {\n        Map { iter, f }\n    }"
-}

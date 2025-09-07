@@ -1,0 +1,12 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "core::ptr::drop_in_place::<<collections::vec_deque::VecDeque<T, A> as core::ops::Drop>::drop::Dropper<'_, u32>>",
+  "hash": "18274122779634348986323321741357722995",
+  "hash_direct": "1099747003485529853912809495499017900960",
+  "inst_kind": "\"Shim\"",
+  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)",
+  "callees": [
+    "102265250720469485210194447872242759633",
+    "107648193987504958246437631987290871776"
+  ]
+}

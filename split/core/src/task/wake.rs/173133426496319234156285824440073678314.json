@@ -1,0 +1,7 @@
+{
+  "file": "core/src/task/wake.rs",
+  "name": "task::wake::Waker::new",
+  "hash": "173133426496319234156285824440073678314",
+  "hash_direct": "85971060407005184857783467647505895189",
+  "src": "pub const unsafe fn new(data: *const (), vtable: &'static RawWakerVTable) -> Self {\n        Waker { waker: RawWaker { data, vtable } }\n    }"
+}

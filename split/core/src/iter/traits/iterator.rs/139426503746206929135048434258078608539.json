@@ -1,0 +1,10 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<core::slice::Iter<'_, u8> as core::iter::Iterator>::take_while::<{closure@<core::slice::EscapeAscii<'_> as core::fmt::Display>::fmt::{closure#0}}>",
+  "hash": "139426503746206929135048434258078608539",
+  "hash_direct": "192894962382477706910779698456569308526",
+  "src": "fn take_while<P>(self, predicate: P) -> TakeWhile<Self, P>\n    where\n        Self: Sized,\n        P: FnMut(&Self::Item) -> bool,\n    {\n        TakeWhile::new(self, predicate)\n    }",
+  "callees": [
+    "530446085913962050715607663286764666110"
+  ]
+}

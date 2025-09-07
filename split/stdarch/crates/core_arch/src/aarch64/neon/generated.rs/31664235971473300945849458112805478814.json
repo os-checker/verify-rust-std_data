@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
-  "name": "core_arch::aarch64::neon::generated::vcge_u64",
-  "hash": "31664235971473300945849458112805478814",
-  "hash_direct": "31544809917286110237592697850079765550",
-  "src": "pub fn vcge_u64(a: uint64x1_t, b: uint64x1_t) -> uint64x1_t {\n    unsafe { simd_ge(a, b) }\n}"
-}

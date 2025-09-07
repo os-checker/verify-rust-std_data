@@ -1,0 +1,12 @@
+{
+  "file": "core/src/str/pattern.rs",
+  "name": "<fn(char) -> bool {char::methods::<impl char>::is_whitespace} as str::pattern::MultiCharEq>::matches",
+  "hash": "1019497285927765887110841813117860007522",
+  "hash_direct": "1168267552589631556371409129097909792",
+  "src": "fn matches(&mut self, c: char) -> bool {\n        (*self)(c)\n    }",
+  "callees": [
+    "79760301754771638958349888420647128122",
+    "14796971644901686491932719069497151525",
+    "89347776969484683885451283756595935835"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "file": "core/src/ptr/mut_ptr.rs",
+  "name": "ptr::mut_ptr::<impl *mut i32>::wrapping_byte_offset",
+  "hash": "164142763800687054814458452989256103874",
+  "hash_direct": "65136686523921119622912316311940534190",
+  "src": "pub const fn wrapping_byte_offset(self, count: isize) -> Self {\n        self.cast::<u8>().wrapping_offset(count).with_metadata_of(self)\n    }",
+  "callees": [
+    "40642165106552594208289295355660198084",
+    "1775502821080152362517912409228600780762",
+    "162412065019695347719126621602314800720",
+    "25870263527159595123614989065746225326",
+    "833553174169562286714471950209380562777"
+  ]
+}

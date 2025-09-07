@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "ptr::non_null::NonNull::<[mem::maybe_uninit::MaybeUninit<i32>]>::cast::<mem::maybe_uninit::MaybeUninit<mem::maybe_uninit::MaybeUninit<i32>>>",
+  "hash": "4618166087522319714797538554385492091",
+  "hash_direct": "1384751757141112147812258709822232426353",
+  "src": "pub const fn cast<U>(self) -> NonNull<U> {\n        // SAFETY: `self` is a `NonNull` pointer which is necessarily non-null\n        unsafe { NonNull { pointer: self.as_ptr() as *mut U } }\n    }",
+  "callees": [
+    "204900656628390787610420351472553398537"
+  ]
+}

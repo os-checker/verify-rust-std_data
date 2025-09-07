@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/f64.rs",
-  "name": "f64::<impl f64>::to_bits",
-  "hash": "85253214614932633916524759824229868238",
-  "hash_direct": "68898543388392339538098031344838355812",
-  "src": "pub const fn to_bits(self) -> u64 {\n        // SAFETY: `u64` is a plain old datatype so we can always transmute to it.\n        unsafe { mem::transmute(self) }\n    }"
-}

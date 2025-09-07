@@ -1,0 +1,7 @@
+{
+  "file": "core/src/hash/sip.rs",
+  "name": "hash::sip::Hasher::<hash::sip::Sip24Rounds>::reset",
+  "hash": "659388272266942183714475900347202182295",
+  "hash_direct": "1645509095454915382116583420572806162156",
+  "src": "const fn reset(&mut self) {\n        self.length = 0;\n        self.state.v0 = self.k0 ^ 0x736f6d6570736575;\n        self.state.v1 = self.k1 ^ 0x646f72616e646f6d;\n        self.state.v2 = self.k0 ^ 0x6c7967656e657261;\n        self.state.v3 = self.k1 ^ 0x7465646279746573;\n        self.ntail = 0;\n    }"
+}

@@ -1,0 +1,13 @@
+{
+  "file": "core/src/ascii/ascii_char.rs",
+  "name": "<ascii::ascii_char::AsciiChar as cmp::PartialEq>::eq",
+  "hash": "81344484586276681666638199233416620893",
+  "hash_direct": "1217208974436327089311937734509337367979",
+  "src": "PartialEq",
+  "macro_backtrace": [
+    {
+      "callsite": "PartialEq",
+      "defsite": "pub macro PartialEq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

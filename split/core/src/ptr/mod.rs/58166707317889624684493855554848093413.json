@@ -1,8 +1,0 @@
-{
-  "file": "core/src/ptr/mod.rs",
-  "name": "ptr::drop_in_place::<net::parser::AddrParseError>",
-  "hash": "58166707317889624684493855554848093413",
-  "hash_direct": "64911252670720590718648030074987887401",
-  "inst_kind": "\"Shim\"",
-  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
-}

@@ -1,0 +1,11 @@
+{
+  "file": "core/src/sync/atomic.rs",
+  "name": "sync::atomic::AtomicBool::fetch_xor",
+  "hash": "58451948492497898931880582248136801712",
+  "hash_direct": "80308724787442757038751856486965882876",
+  "src": "pub fn fetch_xor(&self, val: bool, order: Ordering) -> bool {\n        // SAFETY: data races are prevented by atomic intrinsics.\n        unsafe { atomic_xor(self.v.get(), val as u8, order) != 0 }\n    }",
+  "callees": [
+    "163154036748054064804947938080591443326",
+    "17742179607541277545332297688417876232"
+  ]
+}

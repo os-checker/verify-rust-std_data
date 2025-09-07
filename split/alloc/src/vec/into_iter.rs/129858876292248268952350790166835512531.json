@@ -1,0 +1,16 @@
+{
+  "file": "alloc/src/vec/into_iter.rs",
+  "name": "<vec::into_iter::IntoIter<T, A> as core::iter::Iterator>::__iterator_get_unchecked::{closure#0}::REENTRY",
+  "hash": "129858876292248268952350790166835512531",
+  "hash_direct": "1441172897606822413412860974951528281348",
+  "attrs": [
+    "#[kanitool::recursion_tracker]\n"
+  ],
+  "src": "#[cfg_attr(kani, kani::modifies(self))]",
+  "macro_backtrace": [
+    {
+      "callsite": "#[cfg_attr(kani, kani::modifies(self))]",
+      "defsite": "pub fn modifies(attr: TokenStream, item: TokenStream) -> TokenStream"
+    }
+  ]
+}

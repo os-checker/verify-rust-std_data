@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vminnmh_f16",
+  "hash": "463787232024420490910982132916905169412",
+  "hash_direct": "746653694742754576011598013128971562724",
+  "src": "pub fn vminnmh_f16(a: f16, b: f16) -> f16 {\n    f16::min(a, b)\n}",
+  "callees": [
+    "118589128990215951012823730733088797622"
+  ]
+}

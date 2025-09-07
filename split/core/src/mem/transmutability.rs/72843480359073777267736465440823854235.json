@@ -1,7 +1,0 @@
-{
-  "file": "core/src/mem/transmutability.rs",
-  "name": "mem::transmutability::Assume::VALIDITY",
-  "hash": "72843480359073777267736465440823854235",
-  "hash_direct": "1251666352985999319016222438365474644698",
-  "src": "pub const VALIDITY: Self = Self { validity: true, ..Self::NOTHING };"
-}

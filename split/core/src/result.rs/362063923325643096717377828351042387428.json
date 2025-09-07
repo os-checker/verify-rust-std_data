@@ -1,0 +1,10 @@
+{
+  "file": "core/src/result.rs",
+  "name": "result::Result::<u16, num::error::TryFromIntError>::ok",
+  "hash": "362063923325643096717377828351042387428",
+  "hash_direct": "1161151872182615217517407546365623473020",
+  "src": "pub const fn ok(self) -> Option<T>\n    where\n        T: [const] Destruct,\n        E: [const] Destruct,\n    {\n        match self {\n            Ok(x) => Some(x),\n            Err(_) => None,\n        }\n    }",
+  "callees": [
+    "135710756291504804587550868687823101358"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/unique.rs",
+  "name": "core::ptr::Unique::<[u8]>::as_ptr",
+  "hash": "1818437259198669383816210510547482012245",
+  "hash_direct": "231282858662873985817545546849773618482",
+  "src": "pub const fn as_ptr(self) -> *mut T {\n        self.pointer.as_ptr()\n    }",
+  "callees": [
+    "86050674789736003825945519059478190170"
+  ]
+}

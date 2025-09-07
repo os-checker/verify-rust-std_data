@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/dec2flt/float.rs",
-  "name": "<f16 as num::dec2flt::float::RawFloat>::pow10_fast_path::TABLE",
-  "hash": "375676080966099574813105229555294085981",
-  "hash_direct": "121007862717796431742832027166315256847",
-  "src": "const TABLE: [f16; 8] = [1e0, 1e1, 1e2, 1e3, 1e4, 0.0, 0.0, 0.];"
-}

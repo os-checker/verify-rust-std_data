@@ -1,0 +1,11 @@
+{
+  "file": "core/src/slice/ascii.rs",
+  "name": "slice::ascii::is_ascii_simple",
+  "hash": "781231686659779181411439904165139827836",
+  "hash_direct": "1239058724262912929214169356899125778964",
+  "src": "pub const fn is_ascii_simple(mut bytes: &[u8]) -> bool {\n    while let [rest @ .., last] = bytes {\n        if !last.is_ascii() {\n            break;\n        }\n        bytes = rest;\n    }\n    bytes.is_empty()\n}",
+  "callees": [
+    "758800371710587469314073968176229651883",
+    "497499364745128359314402117207900903418"
+  ]
+}

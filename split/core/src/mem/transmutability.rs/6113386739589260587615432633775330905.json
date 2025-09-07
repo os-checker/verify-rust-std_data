@@ -1,0 +1,13 @@
+{
+  "file": "core/src/mem/transmutability.rs",
+  "name": "<mem::transmutability::Assume as clone::Clone>::clone",
+  "hash": "6113386739589260587615432633775330905",
+  "hash_direct": "890134386217720001117943288305129513329",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

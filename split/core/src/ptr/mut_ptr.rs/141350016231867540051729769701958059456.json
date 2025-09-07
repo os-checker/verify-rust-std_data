@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/mut_ptr.rs",
+  "name": "ptr::mut_ptr::<impl *mut i128>::wrapping_add",
+  "hash": "141350016231867540051729769701958059456",
+  "hash_direct": "89012707346086494732008587694962272325",
+  "src": "pub const fn wrapping_add(self, count: usize) -> Self\n    where\n        T: Sized,\n    {\n        self.wrapping_offset(count as isize)\n    }",
+  "callees": [
+    "638277286648771091814795559499484052649"
+  ]
+}

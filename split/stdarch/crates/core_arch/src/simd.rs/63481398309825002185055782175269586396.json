@@ -1,0 +1,48 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/simd.rs",
+  "name": "core_arch::simd::u8x64::ZERO",
+  "hash": "63481398309825002185055782175269586396",
+  "hash_direct": "45438229006958048254399210847054666426",
+  "src": "pub(crate) const ZERO: Self = unsafe { crate::mem::zeroed() };",
+  "macro_backtrace": [
+    {
+      "callsite": "simd_ty!(\n    u8x64[u8;64]:\n    x0,\n    x1,\n    x2,\n    x3,\n    x4,\n    x5,\n    x6,\n    x7,\n    x8,\n    x9,\n    x10,\n    x11,\n    x12,\n    x13,\n    x14,\n    x15,\n    x16,\n    x17,\n    x18,\n    x19,\n    x20,\n    x21,\n    x22,\n    x23,\n    x24,\n    x25,\n    x26,\n    x27,\n    x28,\n    x29,\n    x30,\n    x31,\n    x32,\n    x33,\n    x34,\n    x35,\n    x36,\n    x37,\n    x38,\n    x39,\n    x40,\n    x41,\n    x42,\n    x43,\n    x44,\n    x45,\n    x46,\n    x47,\n    x48,\n    x49,\n    x50,\n    x51,\n    x52,\n    x53,\n    x54,\n    x55,\n    x56,\n    x57,\n    x58,\n    x59,\n    x60,\n    x61,\n    x62,\n    x63\n)",
+      "defsite": "macro_rules! simd_ty {\n    ($id:ident [$elem_type:ty ; $len:literal]: $($param_name:ident),*) => {\n        #[repr(simd)]\n        #[derive(Copy, Clone)]\n        pub(crate) struct $id([$elem_type; $len]);\n\n        #[allow(clippy::use_self)]\n        impl $id {\n            /// A value of this type where all elements are zeroed out.\n            pub(crate) const ZERO: Self = unsafe { crate::mem::zeroed() };\n\n            #[inline(always)]\n            pub(crate) const fn new($($param_name: $elem_type),*) -> Self {\n                $id([$($param_name),*])\n            }\n            #[inline(always)]\n            pub(crate) const fn from_array(elements: [$elem_type; $len]) -> Self {\n                $id(elements)\n            }\n            // FIXME: Workaround rust@60637\n            #[inline(always)]\n            pub(crate) fn splat(value: $elem_type) -> Self {\n                #[derive(Copy, Clone)]\n                #[repr(simd)]\n                struct JustOne([$elem_type; 1]);\n                let one = JustOne([value]);\n                // SAFETY: 0 is always in-bounds because we're shuffling\n                // a simd type with exactly one element.\n                unsafe { simd_shuffle!(one, one, [0; $len]) }\n            }\n\n            /// Extract the element at position `index`.\n            /// `index` is not a constant so this is not efficient!\n            /// Use for testing only.\n            // FIXME: Workaround rust@60637\n            #[inline(always)]\n            pub(crate) fn extract(&self, index: usize) -> $elem_type {\n                self.as_array()[index]\n            }\n\n            #[inline]\n            pub(crate) fn as_array(&self) -> &[$elem_type; $len] {\n                let simd_ptr: *const Self = self;\n                let array_ptr: *const [$elem_type; $len] = simd_ptr.cast();\n                // SAFETY: We can always read the prefix of a simd type as an array.\n                // There might be more padding afterwards for some widths, but\n                // that's not a problem for reading less than that.\n                unsafe { &*array_ptr }\n            }\n        }\n\n        impl core::cmp::PartialEq for $id {\n            #[inline]\n            fn eq(&self, other: &Self) -> bool {\n                self.as_array() == other.as_array()\n            }\n        }\n\n        impl core::fmt::Debug for $id {\n            #[inline]\n            fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {\n                debug_simd_finish(f, stringify!($id), self.as_array())\n            }\n        }\n    }\n}"
+    }
+  ],
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "17421822894816687532325615181214565887",
+    "27480086118489678191003877857780025576",
+    "23815256893174302637797703719499456373",
+    "47704708250653028710044748737554169683",
+    "1734800511936094930717892354862842426737",
+    "1775156720019666721318164959739781400236",
+    "141465195880399230233583472444897698190",
+    "99056167611164083234683308915667279810",
+    "1111820759004590257612867284489704161635",
+    "112229548337897658001723841518039571156",
+    "37868078735602925891573318122962819320",
+    "1578703703635175719018067387082881800385",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "1752989996936949203916036071159051010960",
+    "478753423337745817613297159272845606672",
+    "3658730781980743391697756456907208995",
+    "176386771705132260856587306647620489942",
+    "625849434625814717716494369484959093162",
+    "1566168013061370513711054548557151263674",
+    "68646917718151623069015457091237880184",
+    "51618437989309525695569007262619106750",
+    "187482952606822645712460029589708661523",
+    "126818845945534382313624863669169238336",
+    "1099147835009171140516065501271812729473",
+    "1380348927528557862310964049891336080279",
+    "1274884567980828342416444268868440275355",
+    "76610361547970390014041401956375253519",
+    "737934360685819788610930032679169701055",
+    "739520556846959085018120036998133255835",
+    "5533079644241704014802052529604371844",
+    "101520258712339119345830936586852421312"
+  ]
+}

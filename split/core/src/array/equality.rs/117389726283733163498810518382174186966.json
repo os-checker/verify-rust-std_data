@@ -1,0 +1,10 @@
+{
+  "file": "core/src/array/equality.rs",
+  "name": "array::equality::<impl cmp::PartialEq for [u64; 2]>::eq",
+  "hash": "117389726283733163498810518382174186966",
+  "hash_direct": "45608149812891260913397018664957706460",
+  "src": "fn eq(&self, other: &[U; N]) -> bool {\n        SpecArrayEq::spec_eq(self, other)\n    }",
+  "callees": [
+    "30367106870277057307022845699649966726"
+  ]
+}

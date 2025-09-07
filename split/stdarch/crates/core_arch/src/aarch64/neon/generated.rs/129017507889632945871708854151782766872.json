@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vcvt_high_f32_f64",
+  "hash": "129017507889632945871708854151782766872",
+  "hash_direct": "161979126858563427045059024713015704597",
+  "src": "pub fn vcvt_high_f32_f64(a: float32x2_t, b: float64x2_t) -> float32x4_t {\n    unsafe { simd_shuffle!(a, simd_cast(b), [0, 1, 2, 3]) }\n}"
+}

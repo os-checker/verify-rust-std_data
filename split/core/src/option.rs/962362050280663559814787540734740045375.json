@@ -1,7 +1,0 @@
-{
-  "file": "core/src/option.rs",
-  "name": "option::Option::<&dyn error::Error>::is_some",
-  "hash": "962362050280663559814787540734740045375",
-  "hash_direct": "1628567144728142714611202870814073931395",
-  "src": "pub const fn is_some(&self) -> bool {\n        matches!(*self, Some(_))\n    }"
-}

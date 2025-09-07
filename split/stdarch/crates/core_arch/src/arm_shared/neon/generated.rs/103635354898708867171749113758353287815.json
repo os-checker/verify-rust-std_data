@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vmul_u8",
-  "hash": "103635354898708867171749113758353287815",
-  "hash_direct": "7317622753374112107129325261414946488",
-  "src": "pub fn vmul_u8(a: uint8x8_t, b: uint8x8_t) -> uint8x8_t {\n    unsafe { simd_mul(a, b) }\n}"
-}

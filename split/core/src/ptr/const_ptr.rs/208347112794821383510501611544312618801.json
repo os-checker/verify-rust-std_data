@@ -1,0 +1,13 @@
+{
+  "file": "core/src/ptr/const_ptr.rs",
+  "name": "ptr::const_ptr::<impl cmp::Ord for *const ()>::cmp",
+  "hash": "208347112794821383510501611544312618801",
+  "hash_direct": "1237892929469697767812455445305148193956",
+  "src": "fn cmp(&self, other: &*const T) -> Ordering {\n        if self < other {\n            Less\n        } else if self == other {\n            Equal\n        } else {\n            Greater\n        }\n    }",
+  "callees": [
+    "26635820180901666614890097518501784191",
+    "83361874910859877428127107510603522509",
+    "1451208121872394760214718749420521326685",
+    "1697857619843334628910497864351228093876"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "file": "core/src/unicode/unicode_data.rs",
+  "name": "unicode::unicode_data::case_ignorable::SHORT_OFFSET_RUNS",
+  "hash": "24095712685854126628015411760030468747",
+  "hash_direct": "948837302212171268416863947796331157679",
+  "src": "static SHORT_OFFSET_RUNS: [ShortOffsetRunHeader; 37] = [\n        ShortOffsetRunHeader::new(0, 688), ShortOffsetRunHeader::new(21, 4957),\n        ShortOffsetRunHeader::new(273, 5906), ShortOffsetRunHeader::new(275, 8125),\n        ShortOffsetRunHeader::new(385, 11388), ShortOffsetRunHeader::new(419, 12293),\n        ShortOffsetRunHeader::new(431, 40981), ShortOffsetRunHeader::new(443, 42232),\n        ShortOffsetRunHeader::new(445, 42508), ShortOffsetRunHeader::new(447, 64286),\n        ShortOffsetRunHeader::new(543, 65024), ShortOffsetRunHeader::new(547, 66045),\n        ShortOffsetRunHeader::new(577, 67456), ShortOffsetRunHeader::new(583, 68097),\n        ShortOffsetRunHeader::new(589, 68900), ShortOffsetRunHeader::new(601, 69291),\n        ShortOffsetRunHeader::new(609, 71727), ShortOffsetRunHeader::new(733, 71995),\n        ShortOffsetRunHeader::new(737, 72752), ShortOffsetRunHeader::new(765, 73459),\n        ShortOffsetRunHeader::new(795, 78896), ShortOffsetRunHeader::new(807, 90398),\n        ShortOffsetRunHeader::new(811, 92912), ShortOffsetRunHeader::new(815, 93504),\n        ShortOffsetRunHeader::new(821, 94031), ShortOffsetRunHeader::new(825, 110576),\n        ShortOffsetRunHeader::new(833, 113821), ShortOffsetRunHeader::new(839, 118528),\n        ShortOffsetRunHeader::new(843, 119143), ShortOffsetRunHeader::new(847, 121344),\n        ShortOffsetRunHeader::new(857, 122880), ShortOffsetRunHeader::new(869, 123566),\n        ShortOffsetRunHeader::new(885, 124139), ShortOffsetRunHeader::new(889, 125136),\n        ShortOffsetRunHeader::new(893, 127995), ShortOffsetRunHeader::new(897, 917505),\n        ShortOffsetRunHeader::new(899, 2032112),\n    ];",
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "243931809744896974812513529918607549579",
+    "1752989996936949203916036071159051010960",
+    "573025224078501084417397699761968621329"
+  ]
+}

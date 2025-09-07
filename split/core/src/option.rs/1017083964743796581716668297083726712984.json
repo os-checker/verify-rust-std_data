@@ -1,7 +1,0 @@
-{
-  "file": "core/src/option.rs",
-  "name": "<option::Option<f32> as ops::try_trait::FromResidual<option::Option<convert::Infallible>>>::from_residual",
-  "hash": "1017083964743796581716668297083726712984",
-  "hash_direct": "233870606332892000414387205182597464725",
-  "src": "fn from_residual(residual: Option<convert::Infallible>) -> Self {\n        match residual {\n            None => None,\n        }\n    }"
-}

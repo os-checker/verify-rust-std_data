@@ -1,0 +1,17 @@
+{
+  "file": "core/src/net/ip_addr.rs",
+  "name": "<net::ip_addr::Ipv4Addr as cmp::PartialEq>::eq",
+  "hash": "335926086649163344211724987064729739868",
+  "hash_direct": "148703554340189452882894123406768625266",
+  "src": "PartialEq",
+  "macro_backtrace": [
+    {
+      "callsite": "PartialEq",
+      "defsite": "pub macro PartialEq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ],
+  "callees": [
+    "61140922446207570227649207394556483052",
+    "28213722940318250878316440860847880301"
+  ]
+}

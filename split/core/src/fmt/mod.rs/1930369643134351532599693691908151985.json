@@ -1,0 +1,13 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "<fmt::Alignment as clone::Clone>::clone",
+  "hash": "1930369643134351532599693691908151985",
+  "hash_direct": "779362803383567274615601976743793192960",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

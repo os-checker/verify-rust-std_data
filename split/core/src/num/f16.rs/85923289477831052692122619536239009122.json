@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/f16.rs",
-  "name": "f16::<impl f16>::to_bits",
-  "hash": "85923289477831052692122619536239009122",
-  "hash_direct": "62536761925593403181941958253132880795",
-  "src": "pub const fn to_bits(self) -> u16 {\n        // SAFETY: `u16` is a plain old datatype so we can always transmute to it.\n        unsafe { mem::transmute(self) }\n    }"
-}

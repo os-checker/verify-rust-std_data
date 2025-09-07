@@ -1,0 +1,10 @@
+{
+  "file": "core/src/mem/transmutability.rs",
+  "name": "<mem::transmutability::Assume as ops::arith::Sub>::sub",
+  "hash": "635741436447222796014484736395444526961",
+  "hash_direct": "1272320370940329639410426688999460166556",
+  "src": "fn sub(self, other_assumptions: Assume) -> Assume {\n        self.but_not(other_assumptions)\n    }",
+  "callees": [
+    "1696062762999842893816101781539844044659"
+  ]
+}

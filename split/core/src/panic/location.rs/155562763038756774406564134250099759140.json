@@ -1,0 +1,10 @@
+{
+  "file": "core/src/panic/location.rs",
+  "name": "<panic::location::Location<'_> as cmp::Ord>::cmp::{closure#0}",
+  "hash": "155562763038756774406564134250099759140",
+  "hash_direct": "1481626095090441204916925407653510277018",
+  "src": "|| self.line.cmp(&other.line)",
+  "callees": [
+    "131804240691040385559237509421631119204"
+  ]
+}

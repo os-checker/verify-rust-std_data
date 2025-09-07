@@ -1,0 +1,12 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "ptr::non_null::NonNull::<ptr::non_null::verify::non_null_check_drop_in_place::Droppable>::drop_in_place",
+  "hash": "143180569735169190587006120965499054449",
+  "hash_direct": "162217609605922568817378251079330093896",
+  "src": "pub unsafe fn drop_in_place(self) {\n        // SAFETY: the caller must uphold the safety contract for `drop_in_place`.\n        unsafe { ptr::drop_in_place(self.as_ptr()) }\n    }",
+  "callees": [
+    "92925812588189911971807815592155070456",
+    "27749331284307847912374479770917710724",
+    "18313329228169854353915221978427794009"
+  ]
+}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/ptr/mod.rs",
-  "name": "ptr::from_mut::<u64>",
-  "hash": "1353239193648662715512263418143285130362",
-  "hash_direct": "1785734707172862319612514222588111954737",
-  "src": "pub const fn from_mut<T: PointeeSized>(r: &mut T) -> *mut T {\n    r\n}"
-}

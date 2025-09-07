@@ -1,0 +1,13 @@
+{
+  "file": "alloc/src/string.rs",
+  "name": "<string::String as core::cmp::Eq>::assert_receiver_is_total_eq",
+  "hash": "409538090973060047115576244729604042617",
+  "hash_direct": "55066221577255353283924359710991297055",
+  "src": "Eq",
+  "macro_backtrace": [
+    {
+      "callsite": "Eq",
+      "defsite": "pub macro Eq"
+    }
+  ]
+}

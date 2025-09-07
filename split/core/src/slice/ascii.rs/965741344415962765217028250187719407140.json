@@ -1,0 +1,13 @@
+{
+  "file": "core/src/slice/ascii.rs",
+  "name": "<core::slice::ascii::EscapeByte as core::clone::Clone>::clone",
+  "hash": "965741344415962765217028250187719407140",
+  "hash_direct": "129378321700944902786713428753903320315",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/traits/collect.rs",
+  "name": "<core::slice::Iter<'_, u8> as core::iter::IntoIterator>::into_iter",
+  "hash": "6941414602310436529829382377454718815",
+  "hash_direct": "1826417644553488495313891428560419369473",
+  "src": "fn into_iter(self) -> I {\n        self\n    }"
+}

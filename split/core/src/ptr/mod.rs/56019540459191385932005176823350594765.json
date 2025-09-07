@@ -1,8 +1,0 @@
-{
-  "file": "core/src/ptr/mod.rs",
-  "name": "ptr::drop_in_place::<mem::maybe_uninit::MaybeUninit<*mut f64>>",
-  "hash": "56019540459191385932005176823350594765",
-  "hash_direct": "524581037753041853712472645255508379011",
-  "inst_kind": "\"Shim\"",
-  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
-}

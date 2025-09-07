@@ -1,0 +1,16 @@
+{
+  "file": "core/src/alloc/mod.rs",
+  "name": "<alloc::AllocError as fmt::Debug>::fmt",
+  "hash": "1039057861455913211417309944443755325261",
+  "hash_direct": "4123866890014840461824946245900396527",
+  "src": "Debug",
+  "macro_backtrace": [
+    {
+      "callsite": "Debug",
+      "defsite": "pub macro Debug($item:item) {\n        /* compiler built-in */\n    }"
+    }
+  ],
+  "callees": [
+    "243839084150888952911908111539685994713"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "<core::ptr::NonNull<u8> as core::convert::From<core::ptr::Unique<u8>>>::from",
+  "hash": "60935954792971328376900345179432816371",
+  "hash_direct": "1441392672183765851413679345502171844187",
+  "src": "fn from(unique: Unique<T>) -> Self {\n        unique.as_non_null_ptr()\n    }",
+  "callees": [
+    "1482905829916877089011245213746887628087"
+  ]
+}

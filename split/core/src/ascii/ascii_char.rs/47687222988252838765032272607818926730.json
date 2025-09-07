@@ -1,0 +1,11 @@
+{
+  "file": "core/src/ascii/ascii_char.rs",
+  "name": "ascii::ascii_char::AsciiChar::is_digit",
+  "hash": "47687222988252838765032272607818926730",
+  "hash_direct": "1717729853961250926712180644446197364360",
+  "src": "pub const fn is_digit(self) -> bool {\n        self.to_u8().is_ascii_digit()\n    }",
+  "callees": [
+    "211389067699639933614636457746408448112",
+    "89633452296352964709599256705517159051"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/str/error.rs",
+  "name": "core::str::Utf8Error::valid_up_to",
+  "hash": "373523564929652398516860509841583719901",
+  "hash_direct": "167106524100112968113019714656227841346",
+  "src": "pub const fn valid_up_to(&self) -> usize {\n        self.valid_up_to\n    }"
+}

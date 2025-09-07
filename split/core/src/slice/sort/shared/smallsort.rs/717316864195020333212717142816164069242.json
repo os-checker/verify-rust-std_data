@@ -1,0 +1,13 @@
+{
+  "file": "core/src/slice/sort/shared/smallsort.rs",
+  "name": "slice::sort::shared::smallsort::panic_on_ord_violation",
+  "hash": "717316864195020333212717142816164069242",
+  "hash_direct": "26476784450122100285412956321206109961",
+  "src": "fn panic_on_ord_violation() -> ! {\n    // This is indicative of a logic bug in the user-provided comparison function or Ord\n    // implementation. They are expected to implement a total order as explained in the Ord\n    // documentation.\n    //\n    // By panicking we inform the user, that they have a logic bug in their program. If a strict\n    // weak ordering is not given, the concept of comparison based sorting cannot yield a sorted\n    // result. E.g.: a < b < c < a\n    //\n    // The Ord documentation requires users to implement a total order. Arguably that's\n    // unnecessarily strict in the context of sorting. Issues only arise if the weaker requirement\n    // of a strict weak ordering is violated.\n    //\n    // The panic message talks about a total order because that's what the Ord documentation talks\n    // about and requires, so as to not confuse users.\n    panic!(\"user-provided comparison function does not correctly implement a total order\");\n}",
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "1752989996936949203916036071159051010960"
+  ]
+}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/ptr/const_ptr.rs",
-  "name": "ptr::const_ptr::<impl *const [u8]>::as_ptr",
-  "hash": "138498210655847367337117318085891081738",
-  "hash_direct": "12376775807974047563021385085400401609",
-  "src": "pub const fn as_ptr(self) -> *const T {\n        self as *const T\n    }"
-}

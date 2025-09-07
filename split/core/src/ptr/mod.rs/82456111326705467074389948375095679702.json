@@ -1,0 +1,8 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "core::ptr::drop_in_place::<{closure@<core::str::CharIndices<'_> as core::iter::DoubleEndedIterator>::next_back::{closure#0}}>",
+  "hash": "82456111326705467074389948375095679702",
+  "hash_direct": "48791758832499148117801932695653067698",
+  "inst_kind": "\"Shim\"",
+  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
+}

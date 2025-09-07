@@ -1,0 +1,14 @@
+{
+  "file": "alloc/src/collections/vec_deque/mod.rs",
+  "name": "collections::vec_deque::wrap_index",
+  "hash": "173042205768032610075203172605839594717",
+  "hash_direct": "1077551792576474646314256239564204769040",
+  "src": "fn wrap_index(logical_index: usize, capacity: usize) -> usize {\n    debug_assert!(\n        (logical_index == 0 && capacity == 0)\n            || logical_index < capacity\n            || (logical_index - capacity) < capacity\n    );\n    if logical_index >= capacity { logical_index - capacity } else { logical_index }\n}",
+  "callees": [
+    "12281449246394340237926324936375242532",
+    "986792852990965178117440249555081278778",
+    "90818112465881722349174357944217011292",
+    "170281423934441608902372914597711355436",
+    "146612017564224181584303574960223420416"
+  ]
+}

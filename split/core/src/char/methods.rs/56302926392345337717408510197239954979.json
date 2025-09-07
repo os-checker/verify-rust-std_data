@@ -1,7 +1,0 @@
-{
-  "file": "core/src/char/methods.rs",
-  "name": "char::methods::len_utf8",
-  "hash": "56302926392345337717408510197239954979",
-  "hash_direct": "3448637510548801573569053416191879964",
-  "src": "const fn len_utf8(code: u32) -> usize {\n    match code {\n        ..MAX_ONE_B => 1,\n        ..MAX_TWO_B => 2,\n        ..MAX_THREE_B => 3,\n        _ => 4,\n    }\n}"
-}

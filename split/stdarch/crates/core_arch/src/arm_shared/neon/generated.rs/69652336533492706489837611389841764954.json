@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vld1q_p8_x3",
+  "hash": "69652336533492706489837611389841764954",
+  "hash_direct": "1060543581816236337656144807834531058",
+  "src": "pub unsafe fn vld1q_p8_x3(a: *const p8) -> poly8x16x3_t {\n    transmute(vld1q_s8_x3(transmute(a)))\n}",
+  "callees": [
+    "777633588790041470516717854751390791137"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vmlal_n_s32",
+  "hash": "27390960076771566437977675676561023796",
+  "hash_direct": "446931023995318788814784741230999766116",
+  "src": "pub fn vmlal_n_s32(a: int64x2_t, b: int32x2_t, c: i32) -> int64x2_t {\n    vmlal_s32(a, b, vdup_n_s32(c))\n}",
+  "callees": [
+    "64941544020589987458118710774635299095",
+    "1239230575310650569517541696535753786078",
+    "1015697667410051792212254908777904053254",
+    "69974168088348755793415638350206435443"
+  ]
+}

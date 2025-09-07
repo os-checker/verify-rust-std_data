@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<str::iter::Split<'_, str::IsWhitespace> as iter::traits::iterator::Iterator>::size_hint",
+  "hash": "129508042790843769607811836869796036030",
+  "hash_direct": "180507527544864053721157473805374154462",
+  "src": "fn size_hint(&self) -> (usize, Option<usize>) {\n        (0, None)\n    }"
+}

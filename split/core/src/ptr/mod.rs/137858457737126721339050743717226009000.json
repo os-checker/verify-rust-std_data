@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "ptr::without_provenance::<fmt::rt::Argument<'_>>",
+  "hash": "137858457737126721339050743717226009000",
+  "hash_direct": "1798251634110176541514079695211385275016",
+  "src": "pub const fn without_provenance<T>(addr: usize) -> *const T {\n    without_provenance_mut(addr)\n}",
+  "callees": [
+    "133190003003759925793667076679125824144"
+  ]
+}

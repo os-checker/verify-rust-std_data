@@ -1,0 +1,13 @@
+{
+  "file": "core/src/cell.rs",
+  "name": "cell::BorrowRefMut::<'_>::new",
+  "hash": "26804602359776193861030797062949761013",
+  "hash_direct": "122422681728050887182219333646148024844",
+  "src": "const fn new(borrow: &'b Cell<BorrowCounter>) -> Option<BorrowRefMut<'b>> {\n        // NOTE: Unlike BorrowRefMut::clone, new is called to create the initial\n        // mutable reference, and so there must currently be no existing\n        // references. Thus, while clone increments the mutable refcount, here\n        // we explicitly only allow going from UNUSED to UNUSED - 1.\n        match borrow.get() {\n            UNUSED => {\n                borrow.replace(UNUSED - 1);\n                Some(BorrowRefMut { borrow })\n            }\n            _ => None,\n        }\n    }",
+  "callees": [
+    "181459135049542270967525728160549041358",
+    "908585031933029103712912917433857192842",
+    "26323195953183351819190758839605041253",
+    "1049223600512463258718312473263728080689"
+  ]
+}

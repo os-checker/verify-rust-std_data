@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/string.rs",
+  "name": "string::String::from_utf8_lossy::REPLACEMENT",
+  "hash": "181691136155914277214266105104724578029",
+  "hash_direct": "30414940155596983029735032944932476698",
+  "src": "const REPLACEMENT: &str = \"\\u{FFFD}\";"
+}

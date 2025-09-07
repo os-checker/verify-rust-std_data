@@ -1,0 +1,20 @@
+{
+  "file": "core/src/ub_checks.rs",
+  "name": "vec::Vec::<T, A>::set_len::precondition_check",
+  "hash": "171096833768613821705454793662301421888",
+  "hash_direct": "36665385494524738915349028658287650400",
+  "src": "const fn precondition_check($($name:$ty),*) {\n                if !$e {\n                    let msg = concat!(\"unsafe precondition(s) violated: \", $message,\n                        \"\\n\\nThis indicates a bug in the program. \\\n                        This Undefined Behavior check is optional, and cannot be relied on for safety.\");\n                    ::core::panicking::panic_nounwind_fmt(::core::fmt::Arguments::new_const(&[msg]), false);\n                }\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "ub_checks::assert_unsafe_precondition!(\n            check_library_ub,\n            \"Vec::set_len requires that new_len <= capacity()\",\n            (new_len: usize = new_len, capacity: usize = self.capacity()) => new_len <= capacity\n        )",
+      "defsite": "macro_rules! assert_unsafe_precondition"
+    }
+  ],
+  "callees": [
+    "12281449246394340237926324936375242532",
+    "181267529910573756716102767087485333561",
+    "986792852990965178117440249555081278778",
+    "90818112465881722349174357944217011292",
+    "63085389524472853348886374617170044294"
+  ]
+}

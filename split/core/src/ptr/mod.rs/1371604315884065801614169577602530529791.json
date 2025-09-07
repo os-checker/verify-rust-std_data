@@ -1,8 +1,0 @@
-{
-  "file": "core/src/ptr/mod.rs",
-  "name": "ptr::drop_in_place::<&core_arch::arm_shared::neon::int32x4_t>",
-  "hash": "1371604315884065801614169577602530529791",
-  "hash_direct": "133285119159236276563034214472099066167",
-  "inst_kind": "\"Shim\"",
-  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
-}

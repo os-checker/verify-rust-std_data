@@ -1,0 +1,28 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/lib.rs",
+  "name": "kani::any::<ptr::alignment::AlignmentEnum>",
+  "hash": "122454338997309037021025875844569567933",
+  "hash_direct": "171028277448155029878952242124097613424",
+  "attrs": [
+    "#[kanitool::fn_marker = \"AnyModel\"]\n"
+  ],
+  "src": "pub fn any<T: Arbitrary>() -> T {\n            T::any()\n        }",
+  "macro_backtrace": [
+    {
+      "callsite": "kani_core::kani_intrinsics!()",
+      "defsite": "macro_rules! kani_intrinsics"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ],
+  "callees": [
+    "28791198012686662548792962938594084249",
+    "135929855001212425903524067534552737362",
+    "1640570854584499983913922181933773581422",
+    "179669095727392675457001382090810284652",
+    "12842158263471368155984318495457181408",
+    "96113031247368217588778749053489209967"
+  ]
+}

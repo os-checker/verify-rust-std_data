@@ -1,0 +1,10 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<core::str::Chars<'_> as core::iter::Iterator>::skip_while::<{closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/alloc/src/str.rs:422:35: 422:39}>",
+  "hash": "29689993779638590716729395329082526112",
+  "hash_direct": "87581525704147590988980208944695133311",
+  "src": "fn skip_while<P>(self, predicate: P) -> SkipWhile<Self, P>\n    where\n        Self: Sized,\n        P: FnMut(&Self::Item) -> bool,\n    {\n        SkipWhile::new(self, predicate)\n    }",
+  "callees": [
+    "177608999135479993745496740854394649634"
+  ]
+}

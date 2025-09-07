@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vsm3partw2q_u32",
+  "hash": "870127466268170092317420504343038135508",
+  "hash_direct": "1374573766255307680016538037857679215974",
+  "src": "pub fn vsm3partw2q_u32(a: uint32x4_t, b: uint32x4_t, c: uint32x4_t) -> uint32x4_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.crypto.sm3partw2\"\n        )]\n        fn _vsm3partw2q_u32(a: uint32x4_t, b: uint32x4_t, c: uint32x4_t) -> uint32x4_t;\n    }\n    unsafe { _vsm3partw2q_u32(a, b, c) }\n}"
+}

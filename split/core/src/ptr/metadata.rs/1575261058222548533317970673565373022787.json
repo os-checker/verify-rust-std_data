@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/metadata.rs",
+  "name": "core::ptr::metadata::<sync::ArcInner<[u8]>>",
+  "hash": "1575261058222548533317970673565373022787",
+  "hash_direct": "1252051651937693589110175729282108121734",
+  "src": "pub const fn metadata<T: PointeeSized>(ptr: *const T) -> <T as Pointee>::Metadata {\n    ptr_metadata(ptr)\n}"
+}

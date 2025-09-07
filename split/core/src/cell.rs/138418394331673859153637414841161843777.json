@@ -1,0 +1,10 @@
+{
+  "file": "core/src/cell.rs",
+  "name": "core::cell::Cell::<usize>::new",
+  "hash": "138418394331673859153637414841161843777",
+  "hash_direct": "364239990153836305817230229797069503286",
+  "src": "pub const fn new(value: T) -> Cell<T> {\n        Cell { value: UnsafeCell::new(value) }\n    }",
+  "callees": [
+    "1421758921509639765113891545982940459302"
+  ]
+}

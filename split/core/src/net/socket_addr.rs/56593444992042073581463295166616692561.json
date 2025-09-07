@@ -1,0 +1,7 @@
+{
+  "file": "core/src/net/socket_addr.rs",
+  "name": "net::socket_addr::SocketAddrV6::set_scope_id",
+  "hash": "56593444992042073581463295166616692561",
+  "hash_direct": "85748979447818908841930897404530579447",
+  "src": "pub const fn set_scope_id(&mut self, new_scope_id: u32) {\n        self.scope_id = new_scope_id;\n    }"
+}

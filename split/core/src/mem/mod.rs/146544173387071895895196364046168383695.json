@@ -1,7 +1,0 @@
-{
-  "file": "core/src/mem/mod.rs",
-  "name": "mem::align_of::<mem::maybe_uninit::MaybeUninit<f32>>",
-  "hash": "146544173387071895895196364046168383695",
-  "hash_direct": "357967671223009311713358989502038201963",
-  "src": "pub const fn align_of<T>() -> usize {\n    intrinsics::align_of::<T>()\n}"
-}

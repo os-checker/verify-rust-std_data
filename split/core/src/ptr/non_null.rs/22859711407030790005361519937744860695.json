@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "<core::ptr::NonNull<vec::Vec<u8>> as core::convert::From<&mut vec::Vec<u8>>>::from",
+  "hash": "22859711407030790005361519937744860695",
+  "hash_direct": "1274300056265454632011856960243973606419",
+  "src": "fn from(r: &mut T) -> Self {\n        NonNull::from_mut(r)\n    }",
+  "callees": [
+    "309205889223679383511676100475495392193"
+  ]
+}

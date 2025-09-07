@@ -1,0 +1,7 @@
+{
+  "file": "core/src/mem/transmutability.rs",
+  "name": "mem::transmutability::Assume::LIFETIMES",
+  "hash": "113487264786073369491185658269261469323",
+  "hash_direct": "351919497647049200611024774979806045076",
+  "src": "pub const LIFETIMES: Self = Self { lifetimes: true, ..Self::NOTHING };"
+}

@@ -1,0 +1,14 @@
+{
+  "file": "core/src/num/flt2dec/strategy/grisu.rs",
+  "name": "num::flt2dec::strategy::grisu::max_pow10_no_more_than",
+  "hash": "955476229197528600214265971075818548582",
+  "hash_direct": "106283797363367294073376126655282762172",
+  "src": "pub fn max_pow10_no_more_than(x: u32) -> (u8, u32) {\n    debug_assert!(x > 0);\n\n    const X9: u32 = 10_0000_0000;\n    const X8: u32 = 1_0000_0000;\n    const X7: u32 = 1000_0000;\n    const X6: u32 = 100_0000;\n    const X5: u32 = 10_0000;\n    const X4: u32 = 1_0000;\n    const X3: u32 = 1000;\n    const X2: u32 = 100;\n    const X1: u32 = 10;\n\n    if x < X4 {\n        if x < X2 {\n            if x < X1 { (0, 1) } else { (1, X1) }\n        } else {\n            if x < X3 { (2, X2) } else { (3, X3) }\n        }\n    } else {\n        if x < X6 {\n            if x < X5 { (4, X4) } else { (5, X5) }\n        } else if x < X8 {\n            if x < X7 { (6, X6) } else { (7, X7) }\n        } else {\n            if x < X9 { (8, X8) } else { (9, X9) }\n        }\n    }\n}",
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "243931809744896974812513529918607549579",
+    "1752989996936949203916036071159051010960"
+  ]
+}

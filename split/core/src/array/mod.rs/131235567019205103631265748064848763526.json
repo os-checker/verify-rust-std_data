@@ -1,7 +1,0 @@
-{
-  "file": "core/src/array/mod.rs",
-  "name": "<array::TryFromSliceError as convert::From<convert::Infallible>>::from",
-  "hash": "131235567019205103631265748064848763526",
-  "hash_direct": "38881092028199809526243685241136800444",
-  "src": "fn from(x: Infallible) -> TryFromSliceError {\n        match x {}\n    }"
-}

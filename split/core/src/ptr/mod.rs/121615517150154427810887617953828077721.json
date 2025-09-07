@@ -1,0 +1,8 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "ptr::drop_in_place::<str::iter::Split<'_, str::IsWhitespace>>",
+  "hash": "121615517150154427810887617953828077721",
+  "hash_direct": "395016524398450346510819957086032147040",
+  "inst_kind": "\"Shim\"",
+  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
+}

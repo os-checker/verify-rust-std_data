@@ -1,0 +1,11 @@
+{
+  "file": "core/src/num/mod.rs",
+  "name": "core::num::<impl u8>::make_ascii_uppercase",
+  "hash": "1462569894370280114814041317057575658264",
+  "hash_direct": "96830998977951914513044534588616668614",
+  "src": "pub const fn make_ascii_uppercase(&mut self) {\n        *self = self.to_ascii_uppercase();\n    }",
+  "callees": [
+    "109376214995813975802462677917621523130",
+    "142030071048730627193255824061240401553"
+  ]
+}

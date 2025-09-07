@@ -1,7 +1,0 @@
-{
-  "file": "core/src/sync/atomic.rs",
-  "name": "sync::atomic::atomic_sub::<u64>",
-  "hash": "1608292571180229575212848039415264342547",
-  "hash_direct": "1588651522869747859612234555010275691271",
-  "src": "unsafe fn atomic_sub<T: Copy>(dst: *mut T, val: T, order: Ordering) -> T {\n    // SAFETY: the caller must uphold the safety contract for `atomic_sub`.\n    unsafe {\n        match order {\n            Relaxed => intrinsics::atomic_xsub::<T, { AO::Relaxed }>(dst, val),\n            Acquire => intrinsics::atomic_xsub::<T, { AO::Acquire }>(dst, val),\n            Release => intrinsics::atomic_xsub::<T, { AO::Release }>(dst, val),\n            AcqRel => intrinsics::atomic_xsub::<T, { AO::AcqRel }>(dst, val),\n            SeqCst => intrinsics::atomic_xsub::<T, { AO::SeqCst }>(dst, val),\n        }\n    }\n}"
-}

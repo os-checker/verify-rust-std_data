@@ -1,0 +1,7 @@
+{
+  "file": "core/src/task/wake.rs",
+  "name": "task::wake::ContextBuilder::<'_>::from",
+  "hash": "171275885232817907459701059636455207321",
+  "hash_direct": "1343177809753998506518110449357110606283",
+  "src": "pub const fn from(cx: &'a mut Context<'_>) -> Self {\n        let ext = match &mut cx.ext.0 {\n            ExtData::Some(ext) => ExtData::Some(*ext),\n            ExtData::None(()) => ExtData::None(()),\n        };\n        Self {\n            waker: cx.waker,\n            local_waker: cx.local_waker,\n            ext,\n            _marker: PhantomData,\n            _marker2: PhantomData,\n        }\n    }"
+}

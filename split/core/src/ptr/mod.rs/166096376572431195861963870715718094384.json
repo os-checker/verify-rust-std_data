@@ -1,8 +1,0 @@
-{
-  "file": "core/src/ptr/mod.rs",
-  "name": "ptr::drop_in_place::<fn(cmp::Ordering) -> ops::control_flow::ControlFlow<cmp::Ordering, cmp::Ordering> {ops::control_flow::ControlFlow::<cmp::Ordering, cmp::Ordering>::Break}>",
-  "hash": "166096376572431195861963870715718094384",
-  "hash_direct": "136589153525721636515716381164844160995",
-  "inst_kind": "\"Shim\"",
-  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
-}

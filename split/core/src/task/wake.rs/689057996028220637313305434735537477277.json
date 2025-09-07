@@ -1,7 +1,0 @@
-{
-  "file": "core/src/task/wake.rs",
-  "name": "task::wake::RawWakerVTable::new",
-  "hash": "689057996028220637313305434735537477277",
-  "hash_direct": "32982455036629151549452494662218632201",
-  "src": "pub const fn new(\n        clone: unsafe fn(*const ()) -> RawWaker,\n        wake: unsafe fn(*const ()),\n        wake_by_ref: unsafe fn(*const ()),\n        drop: unsafe fn(*const ()),\n    ) -> Self {\n        Self { clone, wake, wake_by_ref, drop }\n    }"
-}

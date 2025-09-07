@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/mut_ptr.rs",
+  "name": "ptr::mut_ptr::<impl *mut [u8]>::as_mut_ptr",
+  "hash": "155384788618151316376619977641869674216",
+  "hash_direct": "7031000772284342417310501483847310046",
+  "src": "pub const fn as_mut_ptr(self) -> *mut T {\n        self as *mut T\n    }"
+}

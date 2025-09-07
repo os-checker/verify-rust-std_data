@@ -1,0 +1,7 @@
+{
+  "file": "core/src/str/pattern.rs",
+  "name": "core::str::pattern::TwoWaySearcher::byteset_contains",
+  "hash": "1204110943740971163315322114289093829849",
+  "hash_direct": "1647618384399773807117527255113328228554",
+  "src": "fn byteset_contains(&self, byte: u8) -> bool {\n        (self.byteset >> ((byte & 0x3f) as usize)) & 1 != 0\n    }"
+}

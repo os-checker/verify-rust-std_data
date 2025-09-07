@@ -1,0 +1,10 @@
+{
+  "file": "core/src/sync/atomic.rs",
+  "name": "sync::atomic::AtomicBool::into_inner",
+  "hash": "15779969696117419224261908141634397317",
+  "hash_direct": "145867875352243599198483980776089065337",
+  "src": "pub const fn into_inner(self) -> bool {\n        self.v.into_inner() != 0\n    }",
+  "callees": [
+    "1790148028686420405615383546557736969864"
+  ]
+}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/f128.rs",
-  "name": "f128::<impl f128>::powi",
-  "hash": "383817028587030431818132727732382516310",
-  "hash_direct": "37503350752590321116161947506953357368",
-  "src": "pub fn powi(self, n: i32) -> f128 {\n        // SAFETY: intrinsic with no preconditions\n        unsafe { intrinsics::powif128(self, n) }\n    }"
-}

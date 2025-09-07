@@ -1,0 +1,36 @@
+{
+  "file": "core/src/num/int_sqrt.rs",
+  "name": "num::int_sqrt::i32",
+  "hash": "1061825554720280806915503998960380221692",
+  "hash_direct": "16779527377364888435628970575421611367",
+  "src": "pub(super) const unsafe fn $SignedT(n: $SignedT) -> $SignedT {\n            debug_assert!(n >= 0, \"Negative input inside `isqrt`.\");\n            $UnsignedT(n as $UnsignedT) as $SignedT\n        }",
+  "macro_backtrace": [
+    {
+      "callsite": "signed_fn!(i32, u32)",
+      "defsite": "macro_rules! signed_fn {\n    ($SignedT:ident, $UnsignedT:ident) => {\n        /// Returns the [integer square root](\n        /// https://en.wikipedia.org/wiki/Integer_square_root) of any\n        /// **nonnegative**\n        #[doc = concat!(\"[`\", stringify!($SignedT), \"`](prim@\", stringify!($SignedT), \")\")]\n        /// input.\n        ///\n        /// # Safety\n        ///\n        /// This results in undefined behavior when the input is negative.\n        #[must_use = \"this returns the result of the operation, \\\n                      without modifying the original\"]\n        #[inline]\n        pub(super) const unsafe fn $SignedT(n: $SignedT) -> $SignedT {\n            debug_assert!(n >= 0, \"Negative input inside `isqrt`.\");\n            $UnsignedT(n as $UnsignedT) as $SignedT\n        }\n    };\n}"
+    }
+  ],
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "6962362284417680556415378392413733050",
+    "17421822894816687532325615181214565887",
+    "23815256893174302637797703719499456373",
+    "990368330621951665112618070167350350801",
+    "37575315270159499442676200483244321373",
+    "6751449959499938934680151242898131659",
+    "7667317671574548320861470170750647575",
+    "60960868849511503248088905502240646288",
+    "741899288318449396017074031769594997194",
+    "34592207622385251312187007769926517319",
+    "86613059222628044604851290578546921182",
+    "1175847126974603369815060496403232677423",
+    "27092927556514254576572567752250999125",
+    "450711679320065867912004079253027697688",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "1752989996936949203916036071159051010960",
+    "478753423337745817613297159272845606672",
+    "36990817497430174858508344623774643994",
+    "739520556846959085018120036998133255835"
+  ]
+}

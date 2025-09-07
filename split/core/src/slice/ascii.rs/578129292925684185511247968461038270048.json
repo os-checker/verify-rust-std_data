@@ -1,0 +1,12 @@
+{
+  "file": "core/src/slice/ascii.rs",
+  "name": "slice::ascii::<impl [u8]>::eq_ignore_ascii_case",
+  "hash": "578129292925684185511247968461038270048",
+  "hash_direct": "1771295013358738684410467100384095761376",
+  "src": "pub const fn eq_ignore_ascii_case(&self, other: &[u8]) -> bool {\n        if self.len() != other.len() {\n            return false;\n        }\n\n        // FIXME(const-hack): This implementation can be reverted when\n        // `core::iter::zip` is allowed in const. The original implementation:\n        //  self.len() == other.len() && iter::zip(self, other).all(|(a, b)| a.eq_ignore_ascii_case(b))\n        let mut a = self;\n        let mut b = other;\n\n        while let ([first_a, rest_a @ ..], [first_b, rest_b @ ..]) = (a, b) {\n            if first_a.eq_ignore_ascii_case(&first_b) {\n                a = rest_a;\n                b = rest_b;\n            } else {\n                return false;\n            }\n        }\n\n        true\n    }",
+  "callees": [
+    "988028711998370698513075918543258556788",
+    "69417484249274791359857467967200926715",
+    "1766778296466189972714376152058119054158"
+  ]
+}

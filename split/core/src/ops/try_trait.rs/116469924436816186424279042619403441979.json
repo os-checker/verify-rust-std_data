@@ -1,0 +1,15 @@
+{
+  "file": "core/src/ops/try_trait.rs",
+  "name": "ops::try_trait::NeverShortCircuit::<[u8; 2]>::wrap_mut_1::<(), {closure@/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/arbitrary.rs:28:44: 28:47}>::{closure#0}",
+  "hash": "116469924436816186424279042619403441979",
+  "hash_direct": "516119370357679723811953533027919294499",
+  "src": "move |a| NeverShortCircuit(f(a))",
+  "callees": [
+    "126578453933653053593968757693486136614",
+    "964764037968655061318807542728464660",
+    "737553730636740445312202791553877492198",
+    "40903834016185002466732340045834770953",
+    "798611142986522115710967211480423298128",
+    "20674601331961013966783147672628180"
+  ]
+}

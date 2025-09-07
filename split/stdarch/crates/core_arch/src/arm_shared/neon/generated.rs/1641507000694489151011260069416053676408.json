@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vmlaq_u32",
-  "hash": "1641507000694489151011260069416053676408",
-  "hash_direct": "961013562658580738811592884928498969036",
-  "src": "pub fn vmlaq_u32(a: uint32x4_t, b: uint32x4_t, c: uint32x4_t) -> uint32x4_t {\n    unsafe { simd_add(a, simd_mul(b, c)) }\n}"
-}

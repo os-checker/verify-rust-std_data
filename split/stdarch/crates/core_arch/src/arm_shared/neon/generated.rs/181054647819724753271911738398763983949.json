@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vshl_u16",
-  "hash": "181054647819724753271911738398763983949",
-  "hash_direct": "128998463369196209883012674142560365931",
-  "src": "pub fn vshl_u16(a: uint16x4_t, b: int16x4_t) -> uint16x4_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(target_arch = \"arm\", link_name = \"llvm.arm.neon.vshiftu.v4i16\")]\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.ushl.v4i16\"\n        )]\n        fn _vshl_u16(a: uint16x4_t, b: int16x4_t) -> uint16x4_t;\n    }\n    unsafe { _vshl_u16(a, b) }\n}"
-}

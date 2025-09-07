@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ops/try_trait.rs",
+  "name": "core::ops::try_trait::NeverShortCircuit::<usize>::wrap_mut_2::<usize, &u8, {closure@<core::iter::TakeWhile<core::slice::Iter<'_, u8>, {closure@<core::slice::EscapeAscii<'_> as core::fmt::Display>::fmt::{closure#0}}> as core::iter::Iterator>::count::{closure#0}}>",
+  "hash": "1393763507630446590814104992273312863226",
+  "hash_direct": "179596198281249557692037270035855358814",
+  "src": "pub(crate) fn wrap_mut_2<A, B>(mut f: impl FnMut(A, B) -> T) -> impl FnMut(A, B) -> Self {\n        move |a, b| NeverShortCircuit(f(a, b))\n    }"
+}

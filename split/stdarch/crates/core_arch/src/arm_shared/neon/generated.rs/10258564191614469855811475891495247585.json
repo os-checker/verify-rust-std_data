@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vbsl_s64",
+  "hash": "10258564191614469855811475891495247585",
+  "hash_direct": "1184037248971931733518269753351418342273",
+  "src": "pub fn vbsl_s64(a: uint64x1_t, b: int64x1_t, c: int64x1_t) -> int64x1_t {\n    let not = int64x1_t::splat(-1);\n    unsafe {\n        transmute(simd_or(\n            simd_and(a, transmute(b)),\n            simd_and(simd_xor(a, transmute(not)), transmute(c)),\n        ))\n    }\n}",
+  "callees": [
+    "767435415931516490210949068753904359424"
+  ]
+}

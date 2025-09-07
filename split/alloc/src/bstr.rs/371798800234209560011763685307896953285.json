@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/bstr.rs",
+  "name": "bstr::<impl core::convert::From<bstr::ByteString> for vec::Vec<u8>>::from",
+  "hash": "371798800234209560011763685307896953285",
+  "hash_direct": "4403746483187962231630620585426319742",
+  "src": "fn from(s: ByteString) -> Self {\n        s.0\n    }"
+}

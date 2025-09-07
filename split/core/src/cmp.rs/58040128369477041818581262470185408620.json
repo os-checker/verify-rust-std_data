@@ -1,0 +1,16 @@
+{
+  "file": "core/src/cmp.rs",
+  "name": "<cmp::Ordering as cmp::PartialOrd>::partial_cmp",
+  "hash": "58040128369477041818581262470185408620",
+  "hash_direct": "1147588816176348374918030188668769777584",
+  "src": "PartialOrd",
+  "macro_backtrace": [
+    {
+      "callsite": "PartialOrd",
+      "defsite": "pub macro PartialOrd($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ],
+  "callees": [
+    "689348305308456613610193932127614414004"
+  ]
+}

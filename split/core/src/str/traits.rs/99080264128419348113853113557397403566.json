@@ -1,0 +1,7 @@
+{
+  "file": "core/src/str/traits.rs",
+  "name": "str::traits::<impl slice::index::SliceIndex<str> for ops::range::RangeFull>::get_unchecked",
+  "hash": "99080264128419348113853113557397403566",
+  "hash_direct": "904247662915427131813795076653207974749",
+  "src": "unsafe fn get_unchecked(self, slice: *const str) -> *const Self::Output {\n        slice\n    }"
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vrndi_f32",
+  "hash": "1055505852358784396715353726320805136077",
+  "hash_direct": "585131936646798640910658879790914101170",
+  "src": "pub fn vrndi_f32(a: float32x2_t) -> float32x2_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.nearbyint.v2f32\"\n        )]\n        fn _vrndi_f32(a: float32x2_t) -> float32x2_t;\n    }\n    unsafe { _vrndi_f32(a) }\n}"
+}

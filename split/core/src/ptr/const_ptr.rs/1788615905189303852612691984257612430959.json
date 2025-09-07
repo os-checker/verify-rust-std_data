@@ -1,7 +1,0 @@
-{
-  "file": "core/src/ptr/const_ptr.rs",
-  "name": "ptr::const_ptr::<impl *const bool>::cast::<()>",
-  "hash": "1788615905189303852612691984257612430959",
-  "hash_direct": "602293862948491757414387873055319766112",
-  "src": "pub const fn cast<U>(self) -> *const U {\n        self as _\n    }"
-}

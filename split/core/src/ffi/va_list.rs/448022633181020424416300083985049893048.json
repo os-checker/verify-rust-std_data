@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ffi/va_list.rs",
+  "name": "<ffi::va_list::VaList<'_, '_> as ops::deref::DerefMut>::deref_mut",
+  "hash": "448022633181020424416300083985049893048",
+  "hash_direct": "182706718084871677568847727468237861306",
+  "src": "fn deref_mut(&mut self) -> &mut VaListImpl<'f> {\n        &mut self.inner\n    }"
+}

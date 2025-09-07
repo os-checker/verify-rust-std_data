@@ -1,0 +1,13 @@
+{
+  "file": "core/src/num/mod.rs",
+  "name": "<num::FpCategory as cmp::Eq>::assert_receiver_is_total_eq",
+  "hash": "35517804858554754765753608331752288609",
+  "hash_direct": "34808200285712029178323428368641152151",
+  "src": "Eq",
+  "macro_backtrace": [
+    {
+      "callsite": "Eq",
+      "defsite": "pub macro Eq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

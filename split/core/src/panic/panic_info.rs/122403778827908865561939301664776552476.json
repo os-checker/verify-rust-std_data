@@ -1,0 +1,7 @@
+{
+  "file": "core/src/panic/panic_info.rs",
+  "name": "panic::panic_info::PanicInfo::<'_>::can_unwind",
+  "hash": "122403778827908865561939301664776552476",
+  "hash_direct": "1799270413119909436413382748476542513201",
+  "src": "pub fn can_unwind(&self) -> bool {\n        self.can_unwind\n    }"
+}

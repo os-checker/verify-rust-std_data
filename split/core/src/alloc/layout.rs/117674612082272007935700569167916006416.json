@@ -1,0 +1,16 @@
+{
+  "file": "core/src/alloc/layout.rs",
+  "name": "<alloc::layout::LayoutError as fmt::Debug>::fmt",
+  "hash": "117674612082272007935700569167916006416",
+  "hash_direct": "613620848083177703814221211415901932714",
+  "src": "Debug",
+  "macro_backtrace": [
+    {
+      "callsite": "Debug",
+      "defsite": "pub macro Debug($item:item) {\n        /* compiler built-in */\n    }"
+    }
+  ],
+  "callees": [
+    "243839084150888952911908111539685994713"
+  ]
+}

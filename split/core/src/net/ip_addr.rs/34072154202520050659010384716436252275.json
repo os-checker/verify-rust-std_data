@@ -1,0 +1,7 @@
+{
+  "file": "core/src/net/ip_addr.rs",
+  "name": "net::ip_addr::IpAddr::is_ipv4",
+  "hash": "34072154202520050659010384716436252275",
+  "hash_direct": "1069630456475765098716560898800154230068",
+  "src": "pub const fn is_ipv4(&self) -> bool {\n        matches!(self, IpAddr::V4(_))\n    }"
+}

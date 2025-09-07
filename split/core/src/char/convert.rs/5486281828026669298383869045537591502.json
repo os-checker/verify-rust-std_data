@@ -1,0 +1,7 @@
+{
+  "file": "core/src/char/convert.rs",
+  "name": "char::convert::<impl convert::From<char> for u128>::from",
+  "hash": "5486281828026669298383869045537591502",
+  "hash_direct": "260799001375041732413633185535142759421",
+  "src": "fn from(c: char) -> Self {\n        // The char is casted to the value of the code point, then zero-extended to 128 bit.\n        // See [https://doc.rust-lang.org/reference/expressions/operator-expr.html#semantics]\n        c as u128\n    }"
+}

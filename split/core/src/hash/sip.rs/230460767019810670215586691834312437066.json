@@ -1,0 +1,11 @@
+{
+  "file": "core/src/hash/sip.rs",
+  "name": "<hash::sip::Hasher<hash::sip::Sip24Rounds> as default::Default>::default",
+  "hash": "230460767019810670215586691834312437066",
+  "hash_direct": "134851733366655831129798715344732688069",
+  "src": "fn default() -> Hasher<S> {\n        Hasher::new_with_keys(0, 0)\n    }",
+  "callees": [
+    "36377279908415912665289949548975600073",
+    "659388272266942183714475900347202182295"
+  ]
+}

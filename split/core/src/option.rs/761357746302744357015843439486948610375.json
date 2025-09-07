@@ -1,0 +1,13 @@
+{
+  "file": "core/src/option.rs",
+  "name": "option::Option::<cmp::Ordering>::is_some_and::<fn(cmp::Ordering) -> bool {cmp::Ordering::is_ge}>",
+  "hash": "761357746302744357015843439486948610375",
+  "hash_direct": "117189077956973193439241811264968724701",
+  "src": "pub const fn is_some_and(self, f: impl [const] FnOnce(T) -> bool + [const] Destruct) -> bool {\n        match self {\n            None => false,\n            Some(x) => f(x),\n        }\n    }",
+  "callees": [
+    "1599087357710868766316850218022372470465",
+    "77015241674195912492077004693443111248",
+    "114373907360500914182459005567327642045",
+    "214516282329371282514551354368920362045"
+  ]
+}

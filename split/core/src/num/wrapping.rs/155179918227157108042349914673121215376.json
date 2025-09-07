@@ -1,0 +1,18 @@
+{
+  "file": "core/src/num/wrapping.rs",
+  "name": "num::wrapping::Wrapping::<usize>::next_power_of_two",
+  "hash": "155179918227157108042349914673121215376",
+  "hash_direct": "1156205367893355572416280205100477790752",
+  "src": "pub fn next_power_of_two(self) -> Self {\n                Wrapping(self.0.wrapping_next_power_of_two())\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "wrapping_int_impl_unsigned! { usize u8 u16 u32 u64 u128 }",
+      "defsite": "macro_rules! wrapping_int_impl_unsigned {\n    ($($t:ty)*) => ($(\n        impl Wrapping<$t> {\n            /// Returns the number of leading zeros in the binary representation of `self`.\n            ///\n            /// # Examples\n            ///\n            /// Basic usage:\n            ///\n            /// ```\n            /// #![feature(wrapping_int_impl)]\n            /// use std::num::Wrapping;\n            ///\n            #[doc = concat!(\"let n = Wrapping(\", stringify!($t), \"::MAX) >> 2;\")]\n            ///\n            /// assert_eq!(n.leading_zeros(), 2);\n            /// ```\n            #[inline]\n            #[must_use = \"this returns the result of the operation, \\\n                          without modifying the original\"]\n            #[unstable(feature = \"wrapping_int_impl\", issue = \"32463\")]\n            pub const fn leading_zeros(self) -> u32 {\n                self.0.leading_zeros()\n            }\n\n            /// Returns `true` if and only if `self == 2^k` for some `k`.\n            ///\n            /// # Examples\n            ///\n            /// Basic usage:\n            ///\n            /// ```\n            /// #![feature(wrapping_int_impl)]\n            /// use std::num::Wrapping;\n            ///\n            #[doc = concat!(\"assert!(Wrapping(16\", stringify!($t), \").is_power_of_two());\")]\n            #[doc = concat!(\"assert!(!Wrapping(10\", stringify!($t), \").is_power_of_two());\")]\n            /// ```\n            #[must_use]\n            #[inline]\n            #[unstable(feature = \"wrapping_int_impl\", issue = \"32463\")]\n            pub fn is_power_of_two(self) -> bool {\n                self.0.is_power_of_two()\n            }\n\n            /// Returns the smallest power of two greater than or equal to `self`.\n            ///\n            /// When return value overflows (i.e., `self > (1 << (N-1))` for type\n            /// `uN`), overflows to `2^N = 0`.\n            ///\n            /// # Examples\n            ///\n            /// Basic usage:\n            ///\n            /// ```\n            /// #![feature(wrapping_next_power_of_two)]\n            /// use std::num::Wrapping;\n            ///\n            #[doc = concat!(\"assert_eq!(Wrapping(2\", stringify!($t), \").next_power_of_two(), Wrapping(2));\")]\n            #[doc = concat!(\"assert_eq!(Wrapping(3\", stringify!($t), \").next_power_of_two(), Wrapping(4));\")]\n            #[doc = concat!(\"assert_eq!(Wrapping(200_u8).next_power_of_two(), Wrapping(0));\")]\n            /// ```\n            #[inline]\n            #[must_use = \"this returns the result of the operation, \\\n                          without modifying the original\"]\n            #[unstable(feature = \"wrapping_next_power_of_two\", issue = \"32463\",\n                       reason = \"needs decision on wrapping behavior\")]\n            pub fn next_power_of_two(self) -> Self {\n                Wrapping(self.0.wrapping_next_power_of_two())\n            }\n        }\n    )*)\n}"
+    }
+  ],
+  "callees": [
+    "45566009677756466287104668603370329937",
+    "34879117884290460776842531453279835025",
+    "1048954784141525337113048094877463731068"
+  ]
+}

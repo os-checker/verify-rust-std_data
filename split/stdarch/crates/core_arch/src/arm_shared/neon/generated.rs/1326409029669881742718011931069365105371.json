@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vqneg_s16",
-  "hash": "1326409029669881742718011931069365105371",
-  "hash_direct": "24615005113780468635780803097648603991",
-  "src": "pub fn vqneg_s16(a: int16x4_t) -> int16x4_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.sqneg.v4i16\"\n        )]\n        #[cfg_attr(target_arch = \"arm\", link_name = \"llvm.arm.neon.vqneg.v4i16\")]\n        fn _vqneg_s16(a: int16x4_t) -> int16x4_t;\n    }\n    unsafe { _vqneg_s16(a) }\n}"
-}

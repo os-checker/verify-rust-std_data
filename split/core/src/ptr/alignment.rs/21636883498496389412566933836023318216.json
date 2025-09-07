@@ -1,7 +1,0 @@
-{
-  "file": "core/src/ptr/alignment.rs",
-  "name": "<ptr::alignment::Alignment as default::Default>::default",
-  "hash": "21636883498496389412566933836023318216",
-  "hash_direct": "1201904418901909981914677545284659934294",
-  "src": "fn default() -> Alignment {\n        Alignment::MIN\n    }"
-}

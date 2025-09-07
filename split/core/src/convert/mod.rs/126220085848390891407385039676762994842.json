@@ -1,0 +1,7 @@
+{
+  "file": "core/src/convert/mod.rs",
+  "name": "<convert::Infallible as clone::Clone>::clone",
+  "hash": "126220085848390891407385039676762994842",
+  "hash_direct": "1393790025400622134615434408307966729855",
+  "src": "fn clone(&self) -> Infallible {\n        match *self {}\n    }"
+}

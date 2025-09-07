@@ -1,0 +1,24 @@
+{
+  "file": "core/src/internal_macros.rs",
+  "name": "<i32 as ops::bit::Shl<&u64>>::shl",
+  "hash": "144415611816639112674741934634549697159",
+  "hash_direct": "822401796323653529911115505900344768462",
+  "src": "fn $method(self, other: &$u) -> <$t as $imp<$u>>::Output {\n                $imp::$method(self, *other)\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "forward_ref_binop! { impl Shl, shl for $t, $f,\n        #[stable(feature = \"rust1\", since = \"1.0.0\")]\n        #[rustc_const_unstable(feature = \"const_ops\", issue = \"143802\")] }",
+      "defsite": "macro_rules! forward_ref_binop {\n    (impl $imp:ident, $method:ident for $t:ty, $u:ty, $(#[$attr:meta])+) => {\n        $(#[$attr])+\n        impl const $imp<$u> for &$t {\n            type Output = <$t as $imp<$u>>::Output;\n\n            #[inline]\n            #[track_caller]\n            fn $method(self, other: $u) -> <$t as $imp<$u>>::Output {\n                $imp::$method(*self, other)\n            }\n        }\n\n        $(#[$attr])+\n        impl const $imp<&$u> for $t {\n            type Output = <$t as $imp<$u>>::Output;\n\n            #[inline]\n            #[track_caller]\n            fn $method(self, other: &$u) -> <$t as $imp<$u>>::Output {\n                $imp::$method(self, *other)\n            }\n        }\n\n        $(#[$attr])+\n        impl const $imp<&$u> for &$t {\n            type Output = <$t as $imp<$u>>::Output;\n\n            #[inline]\n            #[track_caller]\n            fn $method(self, other: &$u) -> <$t as $imp<$u>>::Output {\n                $imp::$method(*self, *other)\n            }\n        }\n    }\n}"
+    },
+    {
+      "callsite": "shl_impl! { $t, u64 }",
+      "defsite": "macro_rules! shl_impl {\n    ($t:ty, $f:ty) => {\n        #[stable(feature = \"rust1\", since = \"1.0.0\")]\n        #[rustc_const_unstable(feature = \"const_ops\", issue = \"143802\")]\n        impl const Shl<$f> for $t {\n            type Output = $t;\n\n            #[inline]\n            #[rustc_inherit_overflow_checks]\n            fn shl(self, other: $f) -> $t {\n                self << other\n            }\n        }\n\n        forward_ref_binop! { impl Shl, shl for $t, $f,\n        #[stable(feature = \"rust1\", since = \"1.0.0\")]\n        #[rustc_const_unstable(feature = \"const_ops\", issue = \"143802\")] }\n    };\n}"
+    },
+    {
+      "callsite": "shl_impl_all! { u8 u16 u32 u64 u128 usize i8 i16 i32 i64 i128 isize }",
+      "defsite": "macro_rules! shl_impl_all {\n    ($($t:ty)*) => ($(\n        shl_impl! { $t, u8 }\n        shl_impl! { $t, u16 }\n        shl_impl! { $t, u32 }\n        shl_impl! { $t, u64 }\n        shl_impl! { $t, u128 }\n        shl_impl! { $t, usize }\n\n        shl_impl! { $t, i8 }\n        shl_impl! { $t, i16 }\n        shl_impl! { $t, i32 }\n        shl_impl! { $t, i64 }\n        shl_impl! { $t, i128 }\n        shl_impl! { $t, isize }\n    )*)\n}"
+    }
+  ],
+  "callees": [
+    "49102357936995576999148573322335668801"
+  ]
+}

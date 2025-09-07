@@ -1,0 +1,13 @@
+{
+  "file": "core/src/num/error.rs",
+  "name": "<num::error::TryFromIntError as clone::Clone>::clone",
+  "hash": "916036849199497178314263223508599207575",
+  "hash_direct": "106222146378063766406668138234658948906",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

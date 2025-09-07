@@ -1,0 +1,7 @@
+{
+  "file": "core/src/slice/index.rs",
+  "name": "slice::index::into_range_unchecked",
+  "hash": "10029674899459793172135362115653879702",
+  "hash_direct": "168509104800500058371979912796669117562",
+  "src": "pub(crate) fn into_range_unchecked(\n    len: usize,\n    (start, end): (ops::Bound<usize>, ops::Bound<usize>),\n) -> ops::Range<usize> {\n    use ops::Bound;\n    let start = match start {\n        Bound::Included(i) => i,\n        Bound::Excluded(i) => i + 1,\n        Bound::Unbounded => 0,\n    };\n    let end = match end {\n        Bound::Included(i) => i + 1,\n        Bound::Excluded(i) => i,\n        Bound::Unbounded => len,\n    };\n    start..end\n}"
+}

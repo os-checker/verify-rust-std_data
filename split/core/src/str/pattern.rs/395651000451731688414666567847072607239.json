@@ -1,0 +1,16 @@
+{
+  "file": "core/src/str/pattern.rs",
+  "name": "<str::pattern::CharSliceSearcher<'_, '_> as str::pattern::Searcher<'_>>::haystack",
+  "hash": "395651000451731688414666567847072607239",
+  "hash_direct": "1232732064808187737017228227461560355822",
+  "src": "fn haystack(&self) -> &'a str {\n            self.0.haystack()\n        }",
+  "macro_backtrace": [
+    {
+      "callsite": "searcher_methods!(forward)",
+      "defsite": "macro_rules! searcher_methods {\n    (forward) => {\n        #[inline]\n        fn haystack(&self) -> &'a str {\n            self.0.haystack()\n        }\n        #[inline]\n        fn next(&mut self) -> SearchStep {\n            self.0.next()\n        }\n        #[inline]\n        fn next_match(&mut self) -> Option<(usize, usize)> {\n            self.0.next_match()\n        }\n        #[inline]\n        fn next_reject(&mut self) -> Option<(usize, usize)> {\n            self.0.next_reject()\n        }\n    };\n    (reverse) => {\n        #[inline]\n        fn next_back(&mut self) -> SearchStep {\n            self.0.next_back()\n        }\n        #[inline]\n        fn next_match_back(&mut self) -> Option<(usize, usize)> {\n            self.0.next_match_back()\n        }\n        #[inline]\n        fn next_reject_back(&mut self) -> Option<(usize, usize)> {\n            self.0.next_reject_back()\n        }\n    };\n}"
+    }
+  ],
+  "callees": [
+    "109848960943768607514059731300140525233"
+  ]
+}

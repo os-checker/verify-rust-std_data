@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vsubq_s8",
-  "hash": "415427759652112800910416504672549822546",
-  "hash_direct": "1263409511866242932815753642487116351800",
-  "src": "pub fn vsubq_s8(a: int8x16_t, b: int8x16_t) -> int8x16_t {\n    unsafe { simd_sub(a, b) }\n}"
-}

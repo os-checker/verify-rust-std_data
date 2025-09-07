@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vusmmlaq_s32",
+  "hash": "165110318279644901189356751090590143207",
+  "hash_direct": "98360240524632044117406267391082867415",
+  "src": "pub fn vusmmlaq_s32(a: int32x4_t, b: uint8x16_t, c: int8x16_t) -> int32x4_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.usmmla.v4i32.v16i8\"\n        )]\n        #[cfg_attr(target_arch = \"arm\", link_name = \"llvm.arm.neon.usmmla.v4i32.v16i8\")]\n        fn _vusmmlaq_s32(a: int32x4_t, b: uint8x16_t, c: int8x16_t) -> int32x4_t;\n    }\n    unsafe { _vusmmlaq_s32(a, b, c) }\n}"
+}

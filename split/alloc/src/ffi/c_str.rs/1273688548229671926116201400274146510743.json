@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/ffi/c_str.rs",
+  "name": "<ffi::c_str::IntoStringError as core::error::Error>::description",
+  "hash": "1273688548229671926116201400274146510743",
+  "hash_direct": "1309513229641877464311382602921425402833",
+  "src": "fn description(&self) -> &str {\n        \"C string contained non-utf8 bytes\"\n    }"
+}

@@ -1,8 +1,0 @@
-{
-  "file": "core/src/ptr/mod.rs",
-  "name": "ptr::drop_in_place::<num::error::ParseIntError>",
-  "hash": "23263425687593823605436039540654199623",
-  "hash_direct": "8418151908685734122006059605268245490",
-  "inst_kind": "\"Shim\"",
-  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
-}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/mem/mod.rs",
-  "name": "mem::align_of_val::<[i32]>",
-  "hash": "82460612979348282531115958185778759213",
-  "hash_direct": "101405648059464347892208418146414399763",
-  "src": "pub const fn align_of_val<T: ?Sized>(val: &T) -> usize {\n    // SAFETY: val is a reference, so it's a valid raw pointer\n    unsafe { intrinsics::align_of_val(val) }\n}"
-}

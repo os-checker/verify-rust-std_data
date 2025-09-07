@@ -1,0 +1,16 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "<core::fmt::Error as core::fmt::Debug>::fmt",
+  "hash": "65017424354034355283335093817680549628",
+  "hash_direct": "164877233788008207085676329019371041164",
+  "src": "Debug",
+  "macro_backtrace": [
+    {
+      "callsite": "Debug",
+      "defsite": "pub macro Debug($item:item) {\n        /* compiler built-in */\n    }"
+    }
+  ],
+  "callees": [
+    "1571969697186667512510572825248226870481"
+  ]
+}

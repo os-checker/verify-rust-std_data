@@ -1,0 +1,7 @@
+{
+  "file": "core/src/net/socket_addr.rs",
+  "name": "net::socket_addr::SocketAddrV4::port",
+  "hash": "1661274048381503306651132033638689155",
+  "hash_direct": "135684836011462471167030271476280459168",
+  "src": "pub const fn port(&self) -> u16 {\n        self.port\n    }"
+}

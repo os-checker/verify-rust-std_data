@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
-  "name": "core_arch::aarch64::neon::generated::vsubl_high_u32",
-  "hash": "371064741595736383111049920219885411493",
-  "hash_direct": "95653759259743505258058624945419408628",
-  "src": "pub fn vsubl_high_u32(a: uint32x4_t, b: uint32x4_t) -> uint64x2_t {\n    unsafe {\n        let c: uint32x2_t = simd_shuffle!(a, a, [2, 3]);\n        let d: uint64x2_t = simd_cast(c);\n        let e: uint32x2_t = simd_shuffle!(b, b, [2, 3]);\n        let f: uint64x2_t = simd_cast(e);\n        simd_sub(d, f)\n    }\n}"
-}

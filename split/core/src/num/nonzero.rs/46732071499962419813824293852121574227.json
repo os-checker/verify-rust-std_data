@@ -1,0 +1,11 @@
+{
+  "file": "core/src/num/nonzero.rs",
+  "name": "<num::nonzero::NonZero<u32> as cmp::PartialOrd>::lt",
+  "hash": "46732071499962419813824293852121574227",
+  "hash_direct": "94915954574160713297367266381103100501",
+  "src": "fn lt(&self, other: &Self) -> bool {\n        self.get() < other.get()\n    }",
+  "callees": [
+    "153871104070145767316778160342330240743",
+    "127479067396745407510631415782656719"
+  ]
+}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/fmt/mod.rs",
-  "name": "fmt::FormattingOptions::get_width",
-  "hash": "181831848611102157229741539624360873752",
-  "hash_direct": "113518342413531421262805123809392568166",
-  "src": "pub const fn get_width(&self) -> Option<u16> {\n        if self.flags & flags::WIDTH_FLAG != 0 { Some(self.width) } else { None }\n    }"
-}

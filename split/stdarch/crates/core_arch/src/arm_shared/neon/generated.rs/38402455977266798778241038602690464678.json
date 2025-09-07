@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vreinterpretq_u16_u8",
+  "hash": "38402455977266798778241038602690464678",
+  "hash_direct": "1406587891622584405613263479779820471950",
+  "src": "pub fn vreinterpretq_u16_u8(a: uint8x16_t) -> uint16x8_t {\n    unsafe { transmute(a) }\n}"
+}

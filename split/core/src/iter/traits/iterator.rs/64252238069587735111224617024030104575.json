@@ -1,0 +1,10 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<str::iter::Chars<'_> as iter::traits::iterator::Iterator>::map::<char::EscapeDefault, str::CharEscapeDefault>",
+  "hash": "64252238069587735111224617024030104575",
+  "hash_direct": "23721809355670751959553086997822877111",
+  "src": "fn map<B, F>(self, f: F) -> Map<Self, F>\n    where\n        Self: Sized,\n        F: FnMut(Self::Item) -> B,\n    {\n        Map::new(self, f)\n    }",
+  "callees": [
+    "440066989101268510218051331890042094146"
+  ]
+}

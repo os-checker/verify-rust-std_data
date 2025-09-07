@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/dec2flt/parse.rs",
+  "name": "num::dec2flt::parse::parse_8digits::MASK",
+  "hash": "29158058729689029078631073785826127798",
+  "hash_direct": "146025124263511560537272363486596636522",
+  "src": "const MASK: u64 = 0x0000_00FF_0000_00FF;"
+}

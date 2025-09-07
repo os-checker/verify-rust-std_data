@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vuqadds_s32",
+  "hash": "155021521586640168832449017616522409255",
+  "hash_direct": "147907167586361817961953798180121779580",
+  "src": "pub fn vuqadds_s32(a: i32, b: u32) -> i32 {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.suqadd.i32\"\n        )]\n        fn _vuqadds_s32(a: i32, b: u32) -> i32;\n    }\n    unsafe { _vuqadds_s32(a, b) }\n}"
+}

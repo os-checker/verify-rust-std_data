@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vrbit_s8",
+  "hash": "147716516039861398854234631965983564710",
+  "hash_direct": "879960964691398638515026014794678430458",
+  "src": "pub fn vrbit_s8(a: int8x8_t) -> int8x8_t {\n    unsafe { simd_bitreverse(a) }\n}"
+}

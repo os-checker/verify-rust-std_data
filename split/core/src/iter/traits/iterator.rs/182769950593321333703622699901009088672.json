@@ -1,0 +1,10 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<iter::adapters::map::Map<str::iter::Chars<'_>, str::CharEscapeDefault> as iter::traits::iterator::Iterator>::fuse",
+  "hash": "182769950593321333703622699901009088672",
+  "hash_direct": "1408988474588102775415832535671091797873",
+  "src": "fn fuse(self) -> Fuse<Self>\n    where\n        Self: Sized,\n    {\n        Fuse::new(self)\n    }",
+  "callees": [
+    "16512304890666145256945618788131155585"
+  ]
+}

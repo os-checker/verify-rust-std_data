@@ -1,7 +1,0 @@
-{
-  "file": "core/src/mem/manually_drop.rs",
-  "name": "mem::manually_drop::ManuallyDrop::<slice::sort::shared::smallsort::CopyOnDrop<f64>>::new",
-  "hash": "50432314781727925463182032334198254090",
-  "hash_direct": "30598743711468847056876271676410629742",
-  "src": "pub const fn new(value: T) -> ManuallyDrop<T> {\n        ManuallyDrop { value }\n    }"
-}

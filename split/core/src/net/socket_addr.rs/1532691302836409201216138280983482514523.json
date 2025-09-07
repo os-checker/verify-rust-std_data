@@ -1,0 +1,7 @@
+{
+  "file": "core/src/net/socket_addr.rs",
+  "name": "<net::socket_addr::SocketAddrV6 as fmt::Display>::fmt::LONGEST_IPV6_SOCKET_ADDR",
+  "hash": "1532691302836409201216138280983482514523",
+  "hash_direct": "483457568107904739911418425551717504875",
+  "src": "const LONGEST_IPV6_SOCKET_ADDR: &str =\n                \"[ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff%4294967295]:65535\";"
+}

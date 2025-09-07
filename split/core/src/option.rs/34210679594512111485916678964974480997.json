@@ -1,0 +1,10 @@
+{
+  "file": "core/src/option.rs",
+  "name": "core::option::Option::<&u16>::cloned",
+  "hash": "34210679594512111485916678964974480997",
+  "hash_direct": "144623586153827909471121406909370870432",
+  "src": "pub fn cloned(self) -> Option<T>\n    where\n        T: Clone,\n    {\n        match self {\n            Some(t) => Some(t.clone()),\n            None => None,\n        }\n    }",
+  "callees": [
+    "28485763676394485985065853745300782169"
+  ]
+}

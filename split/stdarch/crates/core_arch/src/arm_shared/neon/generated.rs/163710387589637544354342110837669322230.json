@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vmla_s16",
-  "hash": "163710387589637544354342110837669322230",
-  "hash_direct": "20037748432631581184547666804406013528",
-  "src": "pub fn vmla_s16(a: int16x4_t, b: int16x4_t, c: int16x4_t) -> int16x4_t {\n    unsafe { simd_add(a, simd_mul(b, c)) }\n}"
-}

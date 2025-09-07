@@ -1,0 +1,17 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/lib.rs",
+  "name": "kani::kani_intrinsic::<u64>",
+  "hash": "149406203697599390761498802948984239894",
+  "hash_direct": "7410581576483892422073698218235643197",
+  "src": "fn kani_intrinsic<T>() -> T {\n            #[allow(clippy::empty_loop)]\n            loop {}\n        }",
+  "macro_backtrace": [
+    {
+      "callsite": "kani_core::kani_intrinsics!()",
+      "defsite": "macro_rules! kani_intrinsics"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ]
+}

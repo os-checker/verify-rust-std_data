@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
-  "name": "core_arch::aarch64::neon::generated::vrndph_f16",
-  "hash": "60427206647635700398661440178741259643",
-  "hash_direct": "87925229622563872582496365466766287315",
-  "src": "pub fn vrndph_f16(a: f16) -> f16 {\n    unsafe { ceilf16(a) }\n}"
-}

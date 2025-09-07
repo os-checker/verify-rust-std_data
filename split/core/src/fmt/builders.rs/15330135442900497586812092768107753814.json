@@ -1,0 +1,15 @@
+{
+  "file": "core/src/fmt/builders.rs",
+  "name": "core::fmt::DebugStruct::<'_, '_>::finish",
+  "hash": "15330135442900497586812092768107753814",
+  "hash_direct": "620066194780390063916059035442080710691",
+  "src": "pub fn finish(&mut self) -> fmt::Result {\n        if self.has_fields {\n            self.result = self.result.and_then(|_| {\n                if self.is_pretty() { self.fmt.write_str(\"}\") } else { self.fmt.write_str(\" }\") }\n            });\n        }\n        self.result\n    }",
+  "callees": [
+    "27115942777941331317285292583673689684",
+    "81446715708300991554169728933850152568",
+    "33079549740955926448092455435525766202",
+    "1571969697186667512510572825248226870481",
+    "173815218127306092468286153806422688022",
+    "44958117642227937617037127401983181369"
+  ]
+}

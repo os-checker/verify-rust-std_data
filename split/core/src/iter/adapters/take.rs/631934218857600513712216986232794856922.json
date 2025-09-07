@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/adapters/take.rs",
+  "name": "iter::adapters::take::Take::<iter::adapters::enumerate::Enumerate<slice::iter::Iter<'_, u8>>>::new",
+  "hash": "631934218857600513712216986232794856922",
+  "hash_direct": "401663409290989091212477339543020063460",
+  "src": "pub(in crate::iter) fn new(iter: I, n: usize) -> Take<I> {\n        Take { iter, n }\n    }"
+}

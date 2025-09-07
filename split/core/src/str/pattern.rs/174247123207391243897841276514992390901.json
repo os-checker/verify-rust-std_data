@@ -1,0 +1,13 @@
+{
+  "file": "core/src/str/pattern.rs",
+  "name": "<str::pattern::TwoWaySearcher as clone::Clone>::clone",
+  "hash": "174247123207391243897841276514992390901",
+  "hash_direct": "85818573215684922915298335842623926130",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

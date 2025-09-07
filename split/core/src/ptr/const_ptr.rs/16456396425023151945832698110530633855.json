@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/const_ptr.rs",
+  "name": "core::ptr::const_ptr::<impl *const usize>::addr",
+  "hash": "16456396425023151945832698110530633855",
+  "hash_direct": "787558591460394422715829151624357829608",
+  "src": "pub fn addr(self) -> usize {\n        // A pointer-to-integer transmute currently has exactly the right semantics: it returns the\n        // address without exposing the provenance. Note that this is *not* a stable guarantee about\n        // transmute semantics, it relies on sysroot crates having special status.\n        // SAFETY: Pointer-to-integer transmutes are valid (if you are okay with losing the\n        // provenance).\n        unsafe { mem::transmute(self.cast::<()>()) }\n    }",
+  "callees": [
+    "372191053885424303516575121587358574657"
+  ]
+}

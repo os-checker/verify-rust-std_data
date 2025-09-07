@@ -1,0 +1,18 @@
+{
+  "file": "core/src/fmt/rt.rs",
+  "name": "core::fmt::rt::Argument::<'_>::fmt",
+  "hash": "41170807463746850551037921664673907002",
+  "hash_direct": "327588760540078038215812462768341987889",
+  "src": "pub(super) unsafe fn fmt(&self, f: &mut Formatter<'_>) -> Result {\n        match self.ty {\n            // SAFETY:\n            // Because of the invariant that if `formatter` had the type\n            // `fn(&T, _) -> _` then `value` has type `&'b T` where `'b` is\n            // the lifetime of the `ArgumentType`, and because references\n            // and `NonNull` are ABI-compatible, this is completely equivalent\n            // to calling the original function passed to `new` with the\n            // original reference, which is sound.\n            ArgumentType::Placeholder { formatter, value, .. } => unsafe { formatter(value, f) },\n            // SAFETY: the caller promised this.\n            ArgumentType::Count(_) => unsafe { unreachable_unchecked() },\n        }\n    }",
+  "callees": [
+    "12281449246394340237926324936375242532",
+    "1552988011012146591114896816323571303973",
+    "181267529910573756716102767087485333561",
+    "1824545319189397521315695847785602896178",
+    "986792852990965178117440249555081278778",
+    "90818112465881722349174357944217011292",
+    "63085389524472853348886374617170044294",
+    "1349879990858633985615465432111373267034",
+    "112989397975222255532054380452996322405"
+  ]
+}

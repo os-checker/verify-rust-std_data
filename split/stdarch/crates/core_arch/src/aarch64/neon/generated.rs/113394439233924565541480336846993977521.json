@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
-  "name": "core_arch::aarch64::neon::generated::vpaddd_s64",
-  "hash": "113394439233924565541480336846993977521",
-  "hash_direct": "802500186932164978606155725865995378",
-  "src": "pub fn vpaddd_s64(a: int64x2_t) -> i64 {\n    unsafe { simd_reduce_add_unordered(a) }\n}"
-}

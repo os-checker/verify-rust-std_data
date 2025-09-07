@@ -1,0 +1,11 @@
+{
+  "file": "core/src/ascii/ascii_char.rs",
+  "name": "ascii::ascii_char::AsciiChar::is_lowercase",
+  "hash": "479597666294039129017994040791777849054",
+  "hash_direct": "143082932029433228324705042009420333425",
+  "src": "pub const fn is_lowercase(self) -> bool {\n        self.to_u8().is_ascii_lowercase()\n    }",
+  "callees": [
+    "211389067699639933614636457746408448112",
+    "1808592158708615847911831363091156489391"
+  ]
+}

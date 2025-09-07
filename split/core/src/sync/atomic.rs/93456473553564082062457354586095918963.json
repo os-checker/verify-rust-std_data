@@ -1,0 +1,7 @@
+{
+  "file": "core/src/sync/atomic.rs",
+  "name": "sync::atomic::atomic_swap::<i8>",
+  "hash": "93456473553564082062457354586095918963",
+  "hash_direct": "1147144054968538509017992687539179216529",
+  "src": "unsafe fn atomic_swap<T: Copy>(dst: *mut T, val: T, order: Ordering) -> T {\n    // SAFETY: the caller must uphold the safety contract for `atomic_swap`.\n    unsafe {\n        match order {\n            Relaxed => intrinsics::atomic_xchg::<T, { AO::Relaxed }>(dst, val),\n            Acquire => intrinsics::atomic_xchg::<T, { AO::Acquire }>(dst, val),\n            Release => intrinsics::atomic_xchg::<T, { AO::Release }>(dst, val),\n            AcqRel => intrinsics::atomic_xchg::<T, { AO::AcqRel }>(dst, val),\n            SeqCst => intrinsics::atomic_xchg::<T, { AO::SeqCst }>(dst, val),\n        }\n    }\n}"
+}

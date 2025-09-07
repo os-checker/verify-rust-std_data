@@ -1,0 +1,13 @@
+{
+  "file": "core/src/net/ip_addr.rs",
+  "name": "<net::ip_addr::Ipv6MulticastScope as cmp::Eq>::assert_receiver_is_total_eq",
+  "hash": "35809579958767686439726390059935628492",
+  "hash_direct": "17163962398764119944874378310344559227",
+  "src": "Eq",
+  "macro_backtrace": [
+    {
+      "callsite": "Eq",
+      "defsite": "pub macro Eq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

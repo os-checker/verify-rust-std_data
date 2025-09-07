@@ -1,0 +1,10 @@
+{
+  "file": "core/src/net/ip_addr.rs",
+  "name": "net::ip_addr::Ipv4Addr::is_link_local",
+  "hash": "213253987694335189314156504989406609016",
+  "hash_direct": "1473650360978249097915386702347499208371",
+  "src": "pub const fn is_link_local(&self) -> bool {\n        matches!(self.octets(), [169, 254, ..])\n    }",
+  "callees": [
+    "594101468346705865516588037143272085631"
+  ]
+}

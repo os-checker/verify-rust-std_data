@@ -1,0 +1,12 @@
+{
+  "file": "core/src/task/wake.rs",
+  "name": "task::wake::Context::<'_>::ext",
+  "hash": "328536295678806910510953523793426092483",
+  "hash_direct": "96216329930249670798723849138549787652",
+  "src": "pub const fn ext(&mut self) -> &mut dyn Any {\n        // FIXME: this field makes Context extra-weird about unwind safety\n        // can we justify AssertUnwindSafe if we stabilize this? do we care?\n        match &mut self.ext.0 {\n            ExtData::Some(data) => *data,\n            ExtData::None(unit) => unit,\n        }\n    }",
+  "callees": [
+    "111210238973114716475163161773198605750",
+    "28402059640878018185307279180280148278",
+    "176877303383285931028846703543755112601"
+  ]
+}

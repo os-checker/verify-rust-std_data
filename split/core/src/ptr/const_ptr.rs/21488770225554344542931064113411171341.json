@@ -1,0 +1,17 @@
+{
+  "file": "core/src/ptr/const_ptr.rs",
+  "name": "ptr::const_ptr::verify::check_const_offset_slice_tuple_4::{constant#0}",
+  "hash": "21488770225554344542931064113411171341",
+  "hash_direct": "134886824045182872522483119621348453183",
+  "src": "ARRAY_SIZE",
+  "macro_backtrace": [
+    {
+      "callsite": "generate_single_slice_harness!($ty, $offset_fn_name, offset, isize)",
+      "defsite": "macro_rules! generate_single_slice_harness {\n        ($ty:ty, $proof_name:ident, $fn_name:ident, $count_ty:ty) => {\n            #[kani::proof_for_contract(<*const $ty>::$fn_name)]\n            fn $proof_name() {\n                let arr: [$ty; ARRAY_SIZE] = kani::Arbitrary::any_array();\n                let test_ptr: *const $ty = arr.as_ptr();\n                let offset: usize = kani::any();\n                kani::assume(offset <= ARRAY_SIZE * mem::size_of::<$ty>());\n                let ptr_with_offset: *const $ty = test_ptr.wrapping_byte_add(offset);\n\n                let count: $count_ty = kani::any();\n                unsafe {\n                    ptr_with_offset.$fn_name(count);\n                }\n            }\n        };\n    }"
+    },
+    {
+      "callsite": "generate_slice_harnesses!(\n        (i8, u16, i32, u64, isize),\n        check_const_add_slice_tuple_4,\n        check_const_sub_slice_tuple_4,\n        check_const_offset_slice_tuple_4\n    )",
+      "defsite": "macro_rules! generate_slice_harnesses {\n        ($ty:ty, $add_fn_name:ident, $sub_fn_name:ident, $offset_fn_name:ident) => {\n            generate_single_slice_harness!($ty, $add_fn_name, add, usize);\n            generate_single_slice_harness!($ty, $sub_fn_name, sub, usize);\n            generate_single_slice_harness!($ty, $offset_fn_name, offset, isize);\n        };\n    }"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/slice/ascii.rs",
+  "name": "slice::ascii::is_ascii::runtime::contains_nonascii",
+  "hash": "159833986241638017215846691414292743759",
+  "hash_direct": "1674533710166844912710778166113624236956",
+  "src": "const fn contains_nonascii(v: usize) -> bool {\n                const NONASCII_MASK: usize = usize::repeat_u8(0x80);\n                (NONASCII_MASK & v) != 0\n            }"
+}

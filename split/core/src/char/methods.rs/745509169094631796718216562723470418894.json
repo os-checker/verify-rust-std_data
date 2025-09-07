@@ -1,0 +1,11 @@
+{
+  "file": "core/src/char/methods.rs",
+  "name": "core::char::methods::<impl char>::decode_utf16::<core::iter::Cloned<core::slice::Iter<'_, u16>>>",
+  "hash": "745509169094631796718216562723470418894",
+  "hash_direct": "710616338420724455813208398608213731796",
+  "src": "pub fn decode_utf16<I: IntoIterator<Item = u16>>(iter: I) -> DecodeUtf16<I::IntoIter> {\n        super::decode::decode_utf16(iter)\n    }",
+  "callees": [
+    "930549159082569842914206108024016414035",
+    "617089032412773850212267153217270841650"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "file": "alloc/src/collections/btree/map.rs",
+  "name": "<collections::btree::map::UnorderedKeyError as core::fmt::Debug>::fmt",
+  "hash": "1336045732696924093613176354807684456378",
+  "hash_direct": "127870964129563761184377889190840453558",
+  "src": "Debug",
+  "macro_backtrace": [
+    {
+      "callsite": "Debug",
+      "defsite": "pub macro Debug"
+    }
+  ],
+  "callees": [
+    "1571969697186667512510572825248226870481"
+  ]
+}

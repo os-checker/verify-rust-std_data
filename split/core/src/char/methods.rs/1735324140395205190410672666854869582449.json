@@ -1,0 +1,7 @@
+{
+  "file": "core/src/char/methods.rs",
+  "name": "char::methods::<impl char>::is_ascii_hexdigit",
+  "hash": "1735324140395205190410672666854869582449",
+  "hash_direct": "1244511879575319435514450125377848980886",
+  "src": "pub const fn is_ascii_hexdigit(&self) -> bool {\n        matches!(*self, '0'..='9') | matches!(*self, 'A'..='F') | matches!(*self, 'a'..='f')\n    }"
+}

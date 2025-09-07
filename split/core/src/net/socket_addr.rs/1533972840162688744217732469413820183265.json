@@ -1,0 +1,11 @@
+{
+  "file": "core/src/net/socket_addr.rs",
+  "name": "net::socket_addr::SocketAddr::set_port",
+  "hash": "1533972840162688744217732469413820183265",
+  "hash_direct": "907327918037410350012168701097367713058",
+  "src": "pub const fn set_port(&mut self, new_port: u16) {\n        match *self {\n            SocketAddr::V4(ref mut a) => a.set_port(new_port),\n            SocketAddr::V6(ref mut a) => a.set_port(new_port),\n        }\n    }",
+  "callees": [
+    "119592868352706283101965858666230448128",
+    "158701287728992250414215863642183640212"
+  ]
+}

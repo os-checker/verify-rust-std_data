@@ -1,0 +1,25 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/arbitrary/pointer.rs",
+  "name": "<kani::arbitrary_ptr::AllocationStatus as cmp::Eq>::assert_receiver_is_total_eq",
+  "hash": "33870833574442378053547644155006920733",
+  "hash_direct": "524272039103942013415320722234737622534",
+  "src": "Eq",
+  "macro_backtrace": [
+    {
+      "callsite": "Eq",
+      "defsite": "pub macro Eq($item:item) {\n    /* compiler built-in */\n}"
+    },
+    {
+      "callsite": "kani_core::ptr_generator!()",
+      "defsite": "macro_rules! ptr_generator"
+    },
+    {
+      "callsite": "kani_core::generate_arbitrary!()",
+      "defsite": "macro_rules! generate_arbitrary"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ]
+}

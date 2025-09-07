@@ -1,0 +1,13 @@
+{
+  "file": "core/src/num/diy_float.rs",
+  "name": "<num::diy_float::Fp as clone::Clone>::clone",
+  "hash": "11123308985278480483617437397512463001",
+  "hash_direct": "11349098015070908161071283948306470271",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

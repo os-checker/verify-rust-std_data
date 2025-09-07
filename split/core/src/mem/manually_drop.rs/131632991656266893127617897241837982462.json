@@ -1,0 +1,7 @@
+{
+  "file": "core/src/mem/manually_drop.rs",
+  "name": "<core::mem::ManuallyDrop<sync::Arc<[u8; 0]>> as core::ops::Deref>::deref",
+  "hash": "131632991656266893127617897241837982462",
+  "hash_direct": "100456087829993587999813376827127200930",
+  "src": "fn deref(&self) -> &T {\n        &self.value\n    }"
+}

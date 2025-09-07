@@ -1,0 +1,11 @@
+{
+  "file": "core/src/sync/atomic.rs",
+  "name": "sync::atomic::AtomicBool::swap",
+  "hash": "1186837886665340036310854247971353381586",
+  "hash_direct": "94995081880466477739662257729381797392",
+  "src": "pub fn swap(&self, val: bool, order: Ordering) -> bool {\n        if EMULATE_ATOMIC_BOOL {\n            if val { self.fetch_or(true, order) } else { self.fetch_and(false, order) }\n        } else {\n            // SAFETY: data races are prevented by atomic intrinsics.\n            unsafe { atomic_swap(self.v.get(), val as u8, order) != 0 }\n        }\n    }",
+  "callees": [
+    "163154036748054064804947938080591443326",
+    "1621896035195046084713955429361162938199"
+  ]
+}

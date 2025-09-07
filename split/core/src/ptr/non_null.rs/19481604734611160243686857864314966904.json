@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "<core::ptr::NonNull<sync::SliceArcInnerForStatic> as core::convert::From<&sync::SliceArcInnerForStatic>>::from",
+  "hash": "19481604734611160243686857864314966904",
+  "hash_direct": "23843188147133777957845543623005580082",
+  "src": "fn from(r: &T) -> Self {\n        NonNull::from_ref(r)\n    }",
+  "callees": [
+    "1529639173953231685911935321040257507100"
+  ]
+}

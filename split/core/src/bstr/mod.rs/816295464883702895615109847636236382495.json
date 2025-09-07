@@ -1,7 +1,0 @@
-{
-  "file": "core/src/bstr/mod.rs",
-  "name": "<bstr::ByteStr as ops::deref::DerefMut>::deref_mut",
-  "hash": "816295464883702895615109847636236382495",
-  "hash_direct": "123864441325195145734050215891705855927",
-  "src": "fn deref_mut(&mut self) -> &mut [u8] {\n        &mut self.0\n    }"
-}

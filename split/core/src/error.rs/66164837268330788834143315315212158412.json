@@ -1,0 +1,10 @@
+{
+  "file": "core/src/error.rs",
+  "name": "<core::str::Utf8Error as core::error::Error>::cause",
+  "hash": "66164837268330788834143315315212158412",
+  "hash_direct": "1641149341161143109912163923091912299127",
+  "src": "fn cause(&self) -> Option<&dyn Error> {\n        self.source()\n    }",
+  "callees": [
+    "108333156795499032117219025228545807561"
+  ]
+}

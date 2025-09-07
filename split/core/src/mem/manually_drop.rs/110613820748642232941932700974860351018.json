@@ -1,7 +1,0 @@
-{
-  "file": "core/src/mem/manually_drop.rs",
-  "name": "mem::manually_drop::ManuallyDrop::<slice::sort::unstable::quicksort::GapGuardRaw<f64>>::new",
-  "hash": "110613820748642232941932700974860351018",
-  "hash_direct": "10344942054994439015842632465991315577",
-  "src": "pub const fn new(value: T) -> ManuallyDrop<T> {\n        ManuallyDrop { value }\n    }"
-}

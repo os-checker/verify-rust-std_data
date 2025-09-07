@@ -1,0 +1,13 @@
+{
+  "file": "core/src/num/int_sqrt.rs",
+  "name": "num::int_sqrt::panic_for_negative_argument",
+  "hash": "447633221541583627413452389044665805897",
+  "hash_direct": "1715539975268390306914395443417577779318",
+  "src": "pub(super) const fn panic_for_negative_argument() -> ! {\n    panic!(\"argument of integer square root cannot be negative\")\n}",
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "1752989996936949203916036071159051010960"
+  ]
+}

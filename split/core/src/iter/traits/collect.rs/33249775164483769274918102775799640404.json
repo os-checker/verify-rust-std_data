@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/traits/collect.rs",
+  "name": "<core::str::SplitInclusive<'_, char> as core::iter::IntoIterator>::into_iter",
+  "hash": "33249775164483769274918102775799640404",
+  "hash_direct": "142964394593451250108344446684918014330",
+  "src": "fn into_iter(self) -> I {\n        self\n    }"
+}

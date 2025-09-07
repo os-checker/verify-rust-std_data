@@ -1,0 +1,22 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/mem.rs",
+  "name": "kani::mem::assert_is_initialized::<i64>",
+  "hash": "79310430113629192524224343736364710925",
+  "hash_direct": "1297535642254415829214736808727101840031",
+  "src": "fn assert_is_initialized<T: PointeeSized>(ptr: *const T) -> bool {\n            super::internal::check(\n                is_initialized(ptr),\n                \"Undefined Behavior: Reading from an uninitialized pointer\",\n            );\n            true\n        }",
+  "macro_backtrace": [
+    {
+      "callsite": "kani_core::kani_mem!(core)",
+      "defsite": "macro_rules! kani_mem"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ],
+  "callees": [
+    "938248124271107744012249479729763505168",
+    "1295499066349112484912490938496969975321",
+    "104413887331377049526446669323307520574"
+  ]
+}

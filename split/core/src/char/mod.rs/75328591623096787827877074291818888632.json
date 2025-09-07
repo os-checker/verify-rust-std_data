@@ -1,0 +1,12 @@
+{
+  "file": "core/src/char/mod.rs",
+  "name": "<char::EscapeDebug as iter::traits::iterator::Iterator>::size_hint",
+  "hash": "75328591623096787827877074291818888632",
+  "hash_direct": "1204089326990779934214660110294524290942",
+  "src": "fn size_hint(&self) -> (usize, Option<usize>) {\n        let n = self.len();\n        (n, Some(n))\n    }",
+  "callees": [
+    "141232631085634144581455427783437903111",
+    "119539198841178170095714608677850051781",
+    "1054359425812398629415438404882291537966"
+  ]
+}

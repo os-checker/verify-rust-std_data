@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/string.rs",
+  "name": "string::FromUtf8Error::utf8_error",
+  "hash": "126503142500844456466149055313936370630",
+  "hash_direct": "312525486360553904511832098880764937557",
+  "src": "pub fn utf8_error(&self) -> Utf8Error {\n        self.error\n    }"
+}

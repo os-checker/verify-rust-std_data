@@ -1,0 +1,7 @@
+{
+  "file": "core/src/mem/mod.rs",
+  "name": "core::mem::size_of::<sync::ArcInner<()>>",
+  "hash": "885821912638570428915114244659821338485",
+  "hash_direct": "1219076708145639406215390380731327950382",
+  "src": "pub const fn size_of<T>() -> usize {\n    intrinsics::size_of::<T>()\n}"
+}

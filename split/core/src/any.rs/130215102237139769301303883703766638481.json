@@ -1,7 +1,0 @@
-{
-  "file": "core/src/any.rs",
-  "name": "any::type_name::<hash::sip::Sip13Rounds>",
-  "hash": "130215102237139769301303883703766638481",
-  "hash_direct": "117570448232380436178692250503267460296",
-  "src": "pub const fn type_name<T: ?Sized>() -> &'static str {\n    const { intrinsics::type_name::<T>() }\n}"
-}

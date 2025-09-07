@@ -1,0 +1,11 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "ptr::non_null::NonNull::<intrinsics::verify::u8_struct>::as_ref::<'_>",
+  "hash": "101055057527485714594322786045720449780",
+  "hash_direct": "97806345931760258649138997164286780160",
+  "src": "pub const unsafe fn as_ref<'a>(&self) -> &'a T {\n        // SAFETY: the caller must guarantee that `self` meets all the\n        // requirements for a reference.\n        // `cast_const` avoids a mutable raw pointer deref.\n        unsafe { &*self.as_ptr().cast_const() }\n    }",
+  "callees": [
+    "98902708835143015522714075238137241841",
+    "156407003365315347231335480583974460614"
+  ]
+}

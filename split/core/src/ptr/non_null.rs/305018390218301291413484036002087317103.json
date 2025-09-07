@@ -1,0 +1,12 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "ptr::non_null::NonNull::<i32>::as_uninit_mut::<'_>",
+  "hash": "305018390218301291413484036002087317103",
+  "hash_direct": "427666848087996578810844578503916726900",
+  "src": "pub const unsafe fn as_uninit_mut<'a>(self) -> &'a mut MaybeUninit<T> {\n        // SAFETY: the caller must guarantee that `self` meets all the\n        // requirements for a reference.\n        unsafe { &mut *self.cast().as_ptr() }\n    }",
+  "callees": [
+    "1248523668675078374717473437136873169174",
+    "49714507074675417621913343711055201351",
+    "1300648811923997385213477221361604928022"
+  ]
+}

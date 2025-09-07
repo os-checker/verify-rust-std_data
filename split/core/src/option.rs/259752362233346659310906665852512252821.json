@@ -1,0 +1,11 @@
+{
+  "file": "core/src/option.rs",
+  "name": "core::option::Option::<usize>::is_none_or::<{closure@<core::char::DecodeUtf16<core::iter::Map<core::iter::Copied<core::slice::Iter<'_, [u8; 2]>>, fn([u8; core::::num::{impl#7}::from_le_bytes::{constant#0}]) -> u16 {core::num::<impl u16>::from_le_bytes}>> as core::iter::Iterator>::collect<core::result::Result<string::String, core::char::DecodeUtf16Error>>::{closure#0}}>",
+  "hash": "259752362233346659310906665852512252821",
+  "hash_direct": "36925398001364797829314527340276128356",
+  "src": "pub const fn is_none_or(self, f: impl [const] FnOnce(T) -> bool + [const] Destruct) -> bool {\n        match self {\n            None => true,\n            Some(x) => f(x),\n        }\n    }",
+  "callees": [
+    "89016682403814304885042605390488931217",
+    "92390802123175152296109318230781725837"
+  ]
+}

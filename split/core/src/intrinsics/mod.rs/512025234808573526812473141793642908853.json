@@ -1,0 +1,11 @@
+{
+  "file": "core/src/intrinsics/mod.rs",
+  "name": "intrinsics::select_unpredictable::<&mut mem::maybe_uninit::MaybeUninit<*mut f32>>",
+  "hash": "512025234808573526812473141793642908853",
+  "hash_direct": "61747823423502689711410459890887839762",
+  "inst_kind": "\"Intrinsic\"",
+  "src": "pub fn select_unpredictable<T>(b: bool, true_val: T, false_val: T) -> T {\n    if b { true_val } else { false_val }\n}",
+  "callees": [
+    "742648293927293403116298046442872262035"
+  ]
+}

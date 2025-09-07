@@ -1,7 +1,0 @@
-{
-  "file": "core/src/mem/maybe_uninit.rs",
-  "name": "mem::maybe_uninit::MaybeUninit::<[u8; 10]>::uninit",
-  "hash": "654552535836374243816411837531690882595",
-  "hash_direct": "1085327800609878559711089527665106755090",
-  "src": "pub const fn uninit() -> MaybeUninit<T> {\n        MaybeUninit { uninit: () }\n    }"
-}

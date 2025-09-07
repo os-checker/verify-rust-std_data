@@ -1,7 +1,0 @@
-{
-  "file": "core/src/fmt/mod.rs",
-  "name": "fmt::flags::ALIGN_BITS",
-  "hash": "1649748878410010733915883863196664800362",
-  "hash_direct": "1188539371785530934614318873498494315466",
-  "src": "pub(super) const ALIGN_BITS: u32 = 0b11 << 29;"
-}

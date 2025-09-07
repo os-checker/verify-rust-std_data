@@ -1,0 +1,8 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "core::ptr::drop_in_place::<{closure@core::iter::adapters::map::map_fold<&&str, usize, usize, {closure@core::fmt::Arguments<'_>::estimated_capacity::{closure#0}}, {closure@<usize as core::iter::Sum>::sum<core::iter::Map<core::slice::Iter<'_, &str>, {closure@core::fmt::Arguments<'_>::estimated_capacity::{closure#0}}>>::{closure#0}}>::{closure#0}}>",
+  "hash": "108203541775623350812674778394528978645",
+  "hash_direct": "164106880216017164539544354843699992389",
+  "inst_kind": "\"Shim\"",
+  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f16.rs",
+  "name": "f16::<impl f16>::trunc",
+  "hash": "161445155628503363538073693770598233224",
+  "hash_direct": "62477402706294362396962398035162693460",
+  "src": "pub const fn trunc(self) -> f16 {\n        // SAFETY: intrinsic with no preconditions\n        unsafe { intrinsics::truncf16(self) }\n    }"
+}

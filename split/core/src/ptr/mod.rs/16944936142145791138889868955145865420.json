@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "ptr::slice_from_raw_parts::<mem::maybe_uninit::MaybeUninit<mem::maybe_uninit::MaybeUninit<i32>>>",
+  "hash": "16944936142145791138889868955145865420",
+  "hash_direct": "797085349266062302212761675387640027176",
+  "src": "pub const fn slice_from_raw_parts<T>(data: *const T, len: usize) -> *const [T] {\n    from_raw_parts(data, len)\n}",
+  "callees": [
+    "160695430623700687133077408383252958982"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/barrier/common.rs",
+  "name": "<core_arch::arm_shared::barrier::common::SY as core_arch::arm_shared::sealed::Isb>::__isb",
+  "hash": "13846925087180981303035990539932075806",
+  "hash_direct": "210450789616499983718330374547698747254",
+  "src": "unsafe fn __isb(&self) {\n        super::isb(super::arg::SY)\n    }"
+}

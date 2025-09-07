@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/f32.rs",
-  "name": "f32::math::round_ties_even",
-  "hash": "101994095648579636516075309233367102488",
-  "hash_direct": "139842467767984185601301203534100140939",
-  "src": "pub const fn round_ties_even(x: f32) -> f32 {\n        intrinsics::round_ties_even_f32(x)\n    }"
-}

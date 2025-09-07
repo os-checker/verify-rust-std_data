@@ -1,0 +1,10 @@
+{
+  "file": "alloc/src/sync.rs",
+  "name": "sync::Arc::<[u8]>::as_ptr",
+  "hash": "1730046991728277312013188927205923085964",
+  "hash_direct": "166985325627500685907102124657986400829",
+  "src": "pub fn as_ptr(this: &Self) -> *const T {\n        let ptr: *mut ArcInner<T> = NonNull::as_ptr(this.ptr);\n\n        // SAFETY: This cannot go through Deref::deref or RcInnerPtr::inner because\n        // this is required to retain raw/mut provenance such that e.g. `get_mut` can\n        // write through the pointer after the Rc is recovered through `from_raw`.\n        unsafe { &raw mut (*ptr).data }\n    }",
+  "callees": [
+    "167379799656752334985411857645263857046"
+  ]
+}

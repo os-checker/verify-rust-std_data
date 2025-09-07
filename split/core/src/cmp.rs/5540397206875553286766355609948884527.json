@@ -1,0 +1,10 @@
+{
+  "file": "core/src/cmp.rs",
+  "name": "cmp::Ordering::is_ne",
+  "hash": "5540397206875553286766355609948884527",
+  "hash_direct": "13493820271360650677999955546120456330",
+  "src": "pub const fn is_ne(self) -> bool {\n        self.as_raw() != 0\n    }",
+  "callees": [
+    "1599087357710868766316850218022372470465"
+  ]
+}

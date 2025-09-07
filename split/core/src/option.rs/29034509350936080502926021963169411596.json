@@ -1,0 +1,10 @@
+{
+  "file": "core/src/option.rs",
+  "name": "core::option::Option::<core::fmt::Alignment>::unwrap_or",
+  "hash": "29034509350936080502926021963169411596",
+  "hash_direct": "1022275325459217745910850898750425849671",
+  "src": "pub const fn unwrap_or(self, default: T) -> T\n    where\n        T: [const] Destruct,\n    {\n        match self {\n            Some(x) => x,\n            None => default,\n        }\n    }",
+  "callees": [
+    "40565821135538727633031342089339166917"
+  ]
+}

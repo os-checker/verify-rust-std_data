@@ -1,0 +1,36 @@
+{
+  "file": "core/src/num/nonzero.rs",
+  "name": "num::nonzero::verify::nonzero_check_from_mut_unchecked_u32",
+  "hash": "38445675184968450014948800187666127813",
+  "hash_direct": "107913375982189778572183882334392424525",
+  "proof_kind": "\"Contract\"",
+  "attrs": [
+    "#[kanitool::proof_for_contract = \"NonZero :: < u32 > :: from_mut_unchecked\"]\n"
+  ],
+  "src": "pub fn $harness_name() {\n                let mut x: $t = kani::any();\n                unsafe {\n                    <$nonzero_type>::from_mut_unchecked(&mut x);\n                }\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "nonzero_check_from_mut_unchecked!(\n        u32,\n        core::num::NonZeroU32,\n        nonzero_check_from_mut_unchecked_u32\n    )",
+      "defsite": "macro_rules! nonzero_check_from_mut_unchecked {\n        ($t:ty, $nonzero_type:ty, $harness_name:ident) => {\n            #[kani::proof_for_contract(NonZero::<$t>::from_mut_unchecked)]\n            pub fn $harness_name() {\n                let mut x: $t = kani::any();\n                unsafe {\n                    <$nonzero_type>::from_mut_unchecked(&mut x);\n                }\n            }\n        };\n    }"
+    }
+  ],
+  "callees": [
+    "155147252462344397972186713557771794079",
+    "67856573892425641751006143352028813823",
+    "10057127580410476606272092343920277620",
+    "178053629462286824685283611690204389326",
+    "7526082995824335814466973137466280467",
+    "1245364030286753365515911599133870323814",
+    "258820287469578611817448591488600041899",
+    "17421822894816687532325615181214565887",
+    "29009279705384077942426216429118389983",
+    "548357138926121634010647105935080536112",
+    "147500946437399878807241549432424752688",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "478753423337745817613297159272845606672",
+    "139088339234155978549059757460117048105",
+    "1136376213052609998115268437413705962874",
+    "947925086076299054212540105876296384566"
+  ]
+}

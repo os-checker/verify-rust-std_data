@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vld3q_u32",
+  "hash": "1170233708665189121211904807864667107129",
+  "hash_direct": "120523284076743046824573283602847035030",
+  "src": "pub unsafe fn vld3q_u32(a: *const u32) -> uint32x4x3_t {\n    transmute(vld3q_s32(transmute(a)))\n}",
+  "callees": [
+    "752775344314783795414093246264014027552"
+  ]
+}

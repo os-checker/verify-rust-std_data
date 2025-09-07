@@ -1,0 +1,7 @@
+{
+  "file": "core/src/str/converts.rs",
+  "name": "str::converts::from_utf8_unchecked",
+  "hash": "1153959874226978119913857890632071810994",
+  "hash_direct": "30959450228739801927227940923364798705",
+  "src": "pub const unsafe fn from_utf8_unchecked(v: &[u8]) -> &str {\n    // SAFETY: the caller must guarantee that the bytes `v` are valid UTF-8.\n    // Also relies on `&str` and `&[u8]` having the same layout.\n    unsafe { mem::transmute(v) }\n}"
+}

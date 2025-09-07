@@ -1,0 +1,7 @@
+{
+  "file": "core/src/str/validations.rs",
+  "name": "core::str::utf8_char_width",
+  "hash": "4951833658330039795044234471525440054",
+  "hash_direct": "143924473937306780756342312982016395193",
+  "src": "pub const fn utf8_char_width(b: u8) -> usize {\n    UTF8_CHAR_WIDTH[b as usize] as usize\n}"
+}

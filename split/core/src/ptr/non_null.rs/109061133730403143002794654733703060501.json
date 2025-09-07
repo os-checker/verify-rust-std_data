@@ -1,0 +1,11 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "ptr::non_null::NonNull::<[u8]>::as_non_null_ptr",
+  "hash": "109061133730403143002794654733703060501",
+  "hash_direct": "4791286533791214833136431276476375017",
+  "src": "pub const fn as_non_null_ptr(self) -> NonNull<T> {\n        self.cast()\n    }",
+  "callees": [
+    "613513255856977139911489735802844904928",
+    "322749754952635112812467217236515710998"
+  ]
+}

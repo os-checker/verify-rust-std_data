@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vrecpxd_f64",
+  "hash": "177752162144274235541520410099398503721",
+  "hash_direct": "95327703151092291146290294957099490648",
+  "src": "pub fn vrecpxd_f64(a: f64) -> f64 {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.frecpx.f64\"\n        )]\n        fn _vrecpxd_f64(a: f64) -> f64;\n    }\n    unsafe { _vrecpxd_f64(a) }\n}"
+}

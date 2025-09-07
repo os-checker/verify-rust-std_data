@@ -1,0 +1,10 @@
+{
+  "file": "core/src/fmt/builders.rs",
+  "name": "core::fmt::builders::debug_struct_new",
+  "hash": "113085828328718596877516446854539760338",
+  "hash_direct": "1758187632764051310715277042106371929587",
+  "src": "pub(super) fn debug_struct_new<'a, 'b>(\n    fmt: &'a mut fmt::Formatter<'b>,\n    name: &str,\n) -> DebugStruct<'a, 'b> {\n    let result = fmt.write_str(name);\n    DebugStruct { fmt, result, has_fields: false }\n}",
+  "callees": [
+    "1571969697186667512510572825248226870481"
+  ]
+}

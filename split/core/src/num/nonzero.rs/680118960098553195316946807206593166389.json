@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/nonzero.rs",
-  "name": "num::nonzero::NonZero::<i64>::get",
-  "hash": "680118960098553195316946807206593166389",
-  "hash_direct": "1773674360196005767816647929410218249588",
-  "src": "pub const fn get(self) -> T {\n        // Rustc can set range metadata only if it loads `self` from\n        // memory somewhere. If the value of `self` was from by-value argument\n        // of some not-inlined function, LLVM don't have range metadata\n        // to understand that the value cannot be zero.\n        //\n        // Using the transmute `assume`s the range at runtime.\n        //\n        // Even once LLVM supports `!range` metadata for function arguments\n        // (see <https://github.com/llvm/llvm-project/issues/76628>), this can't\n        // be `.0` because MCP#807 bans field-projecting into `scalar_valid_range`\n        // types, and it arguably wouldn't want to be anyway because if this is\n        // MIR-inlined, there's no opportunity to put that argument metadata anywhere.\n        //\n        // The good answer here will eventually be pattern types, which will hopefully\n        // allow it to go back to `.0`, maybe with a cast of some sort.\n        //\n        // SAFETY: `ZeroablePrimitive` guarantees that the size and bit validity\n        // of `.0` is such that this transmute is sound.\n        unsafe { intrinsics::transmute_unchecked(self) }\n    }"
-}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/array/iter.rs",
-  "name": "array::iter::IntoIter::<char, 3>::unsize_mut",
-  "hash": "3948461731655908288644158783762252298",
-  "hash_direct": "165340982377779941121846244977346394175",
-  "src": "fn unsize_mut(&mut self) -> &mut InnerUnsized<T> {\n        &mut self.inner\n    }"
-}

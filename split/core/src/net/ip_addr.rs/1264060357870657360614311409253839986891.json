@@ -1,0 +1,13 @@
+{
+  "file": "core/src/net/ip_addr.rs",
+  "name": "<net::ip_addr::IpAddr as clone::Clone>::clone",
+  "hash": "1264060357870657360614311409253839986891",
+  "hash_direct": "87296078238140376224782451050517219387",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "file": "core/src/str/pattern.rs",
+  "name": "<str::pattern::SearchStep as cmp::PartialEq>::eq",
+  "hash": "945101538962586226417160114872795629174",
+  "hash_direct": "16499863430925335886105639003216875391",
+  "src": "PartialEq",
+  "macro_backtrace": [
+    {
+      "callsite": "PartialEq",
+      "defsite": "pub macro PartialEq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ],
+  "callees": [
+    "17597513893589941249651382090838396771",
+    "1320467760788560224514230630305072675871"
+  ]
+}

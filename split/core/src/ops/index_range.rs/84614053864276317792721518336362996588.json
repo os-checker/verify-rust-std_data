@@ -1,0 +1,12 @@
+{
+  "file": "core/src/ops/index_range.rs",
+  "name": "ops::index_range::IndexRange::take_prefix",
+  "hash": "84614053864276317792721518336362996588",
+  "hash_direct": "1781966767234402275011319033351479320255",
+  "src": "pub(crate) fn take_prefix(&mut self, n: usize) -> Self {\n        let mid = if n <= self.len() {\n            // SAFETY: We just checked that this will be between start and end,\n            // and thus the addition cannot overflow.\n            // Using the intrinsic avoids a superfluous UB check.\n            unsafe { crate::intrinsics::unchecked_add(self.start, n) }\n        } else {\n            self.end\n        };\n        let prefix = Self { start: self.start, end: mid };\n        self.start = mid;\n        prefix\n    }",
+  "callees": [
+    "1232630557319299762117464203181083790137",
+    "880099753416866301016817688796490528363",
+    "975615807404907599012293873143289411403"
+  ]
+}

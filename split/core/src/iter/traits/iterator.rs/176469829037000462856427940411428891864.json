@@ -1,0 +1,10 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<core::slice::Iter<'_, u8> as core::iter::Iterator>::filter::<{closure@core::str::count::char_count_general_case::{closure#0}}>",
+  "hash": "176469829037000462856427940411428891864",
+  "hash_direct": "1169485456021247854410109691465623668316",
+  "src": "fn filter<P>(self, predicate: P) -> Filter<Self, P>\n    where\n        Self: Sized,\n        P: FnMut(&Self::Item) -> bool,\n    {\n        Filter::new(self, predicate)\n    }",
+  "callees": [
+    "166218815611410939995580178073009504662"
+  ]
+}

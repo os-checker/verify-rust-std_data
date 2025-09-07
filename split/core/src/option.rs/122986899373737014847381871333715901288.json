@@ -1,0 +1,12 @@
+{
+  "file": "core/src/option.rs",
+  "name": "option::Option::<net::ip_addr::Ipv6Addr>::map::<net::ip_addr::IpAddr, fn(net::ip_addr::Ipv6Addr) -> net::ip_addr::IpAddr {net::ip_addr::IpAddr::V6}>",
+  "hash": "122986899373737014847381871333715901288",
+  "hash_direct": "151829083312747128726185276922801096942",
+  "src": "pub const fn map<U, F>(self, f: F) -> Option<U>\n    where\n        F: [const] FnOnce(T) -> U + [const] Destruct,\n    {\n        match self {\n            Some(x) => Some(f(x)),\n            None => None,\n        }\n    }",
+  "callees": [
+    "74269505137468535177362629682980833191",
+    "1122031722703581408610131606473173495352",
+    "27496536871808184834786490667593170267"
+  ]
+}

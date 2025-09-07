@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vcgtzq_s16",
+  "hash": "31734615658659828812121736062087582914",
+  "hash_direct": "1489881585780942417015754752379463427189",
+  "src": "pub fn vcgtzq_s16(a: int16x8_t) -> uint16x8_t {\n    let b: i16x8 = i16x8::new(0, 0, 0, 0, 0, 0, 0, 0);\n    unsafe { simd_gt(a, transmute(b)) }\n}",
+  "callees": [
+    "178331252813110166185713917162474368452"
+  ]
+}

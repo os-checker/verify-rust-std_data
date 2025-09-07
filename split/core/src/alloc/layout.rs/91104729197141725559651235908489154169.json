@@ -1,0 +1,17 @@
+{
+  "file": "core/src/alloc/layout.rs",
+  "name": "<core::alloc::Layout as core::cmp::PartialEq>::eq",
+  "hash": "91104729197141725559651235908489154169",
+  "hash_direct": "1481535765266460595311240802876943132684",
+  "src": "PartialEq",
+  "macro_backtrace": [
+    {
+      "callsite": "PartialEq",
+      "defsite": "pub macro PartialEq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ],
+  "callees": [
+    "920256265510984293516512877452072667134",
+    "1363715618734940982018215679907812783795"
+  ]
+}

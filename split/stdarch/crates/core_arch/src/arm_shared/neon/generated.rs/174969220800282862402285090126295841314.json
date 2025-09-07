@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vabdl_u8",
+  "hash": "174969220800282862402285090126295841314",
+  "hash_direct": "665393180009663914217305540751298490615",
+  "src": "pub fn vabdl_u8(a: uint8x8_t, b: uint8x8_t) -> uint16x8_t {\n    unsafe { simd_cast(vabd_u8(a, b)) }\n}",
+  "callees": [
+    "282191043128413727817719527775753525068"
+  ]
+}

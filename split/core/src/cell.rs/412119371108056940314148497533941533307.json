@@ -1,7 +1,0 @@
-{
-  "file": "core/src/cell.rs",
-  "name": "cell::UnsafeCell::<usize>::get_mut",
-  "hash": "412119371108056940314148497533941533307",
-  "hash_direct": "172363315504685151758428805785777409899",
-  "src": "pub const fn get_mut(&mut self) -> &mut T {\n        &mut self.value\n    }"
-}

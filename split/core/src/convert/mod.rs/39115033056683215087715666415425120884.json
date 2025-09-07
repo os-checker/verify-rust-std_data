@@ -1,0 +1,10 @@
+{
+  "file": "core/src/convert/mod.rs",
+  "name": "<collections::TryReserveErrorKind as core::convert::Into<collections::TryReserveError>>::into",
+  "hash": "39115033056683215087715666415425120884",
+  "hash_direct": "1015580312042667084014365851191000979486",
+  "src": "fn into(self) -> U {\n        U::from(self)\n    }",
+  "callees": [
+    "1806196275982253069117281718696114376262"
+  ]
+}

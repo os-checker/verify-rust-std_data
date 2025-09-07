@@ -1,0 +1,20 @@
+{
+  "file": "core/src/internal_macros.rs",
+  "name": "<i16 as ops::bit::BitOrAssign<&i16>>::bitor_assign",
+  "hash": "132006727085639250233256713332343642322",
+  "hash_direct": "1545531986918189975317481499881804285496",
+  "src": "fn $method(&mut self, other: &$u) {\n                $imp::$method(self, *other);\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "forward_ref_op_assign! { impl BitOrAssign, bitor_assign for $t, $t,\n        #[stable(feature = \"op_assign_builtins_by_ref\", since = \"1.22.0\")]\n        #[rustc_const_unstable(feature = \"const_ops\", issue = \"143802\")] }",
+      "defsite": "macro_rules! forward_ref_op_assign {\n    (impl $imp:ident, $method:ident for $t:ty, $u:ty, $(#[$attr:meta])+) => {\n        $(#[$attr])+\n        impl const $imp<&$u> for $t {\n            #[inline]\n            #[track_caller]\n            fn $method(&mut self, other: &$u) {\n                $imp::$method(self, *other);\n            }\n        }\n    }\n}"
+    },
+    {
+      "callsite": "bitor_assign_impl! { bool usize u8 u16 u32 u64 u128 isize i8 i16 i32 i64 i128 }",
+      "defsite": "macro_rules! bitor_assign_impl {\n    ($($t:ty)+) => ($(\n        #[stable(feature = \"op_assign_traits\", since = \"1.8.0\")]\n        #[rustc_const_unstable(feature = \"const_ops\", issue = \"143802\")]\n        impl const BitOrAssign for $t {\n            #[inline]\n            fn bitor_assign(&mut self, other: $t) { *self |= other }\n        }\n\n        forward_ref_op_assign! { impl BitOrAssign, bitor_assign for $t, $t,\n        #[stable(feature = \"op_assign_builtins_by_ref\", since = \"1.22.0\")]\n        #[rustc_const_unstable(feature = \"const_ops\", issue = \"143802\")] }\n    )+)\n}"
+    }
+  ],
+  "callees": [
+    "1194048836123447585914152821111891812803"
+  ]
+}

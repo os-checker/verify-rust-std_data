@@ -1,0 +1,11 @@
+{
+  "file": "core/src/num/dec2flt/common.rs",
+  "name": "num::dec2flt::common::is_8digits",
+  "hash": "81155273415641639718543226166319775065",
+  "hash_direct": "374967425629045166611303990366447548162",
+  "src": "pub(crate) fn is_8digits(v: u64) -> bool {\n    let a = v.wrapping_add(0x4646_4646_4646_4646);\n    let b = v.wrapping_sub(0x3030_3030_3030_3030);\n    (a | b) & 0x8080_8080_8080_8080 == 0\n}",
+  "callees": [
+    "87170636661664677068004457186813404325",
+    "606629420329787124913066645132953498907"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "file": "alloc/src/collections/btree/set_val.rs",
+  "name": "<collections::btree::set_val::SetValZST as core::cmp::PartialOrd>::partial_cmp",
+  "hash": "96307004548983503186372644330605262617",
+  "hash_direct": "175344562600361949111120511187376792202",
+  "src": "PartialOrd",
+  "macro_backtrace": [
+    {
+      "callsite": "PartialOrd",
+      "defsite": "pub macro PartialOrd"
+    }
+  ]
+}

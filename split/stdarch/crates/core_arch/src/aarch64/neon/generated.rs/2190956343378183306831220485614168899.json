@@ -1,0 +1,12 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vcgeh_f16",
+  "hash": "2190956343378183306831220485614168899",
+  "hash_direct": "91007665822770793398874554115564077965",
+  "src": "pub fn vcgeh_f16(a: f16, b: f16) -> u16 {\n    unsafe { simd_extract!(vcge_f16(vdup_n_f16(a), vdup_n_f16(b)), 0) }\n}",
+  "callees": [
+    "1474148351683405957314171242512862988301",
+    "387819937783107881412204763390036355174",
+    "170194402061146878175814615804956874944"
+  ]
+}

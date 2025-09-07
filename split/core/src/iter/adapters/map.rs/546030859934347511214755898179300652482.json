@@ -1,7 +1,0 @@
-{
-  "file": "core/src/iter/adapters/map.rs",
-  "name": "iter::adapters::map::Map::<array::iter::IntoIter<bool, 32>, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/str/iter.rs:73:58: 73:61}>::new",
-  "hash": "546030859934347511214755898179300652482",
-  "hash_direct": "1262290238837921028216760855413678065224",
-  "src": "pub(in crate::iter) fn new(iter: I, f: F) -> Map<I, F> {\n        Map { iter, f }\n    }"
-}

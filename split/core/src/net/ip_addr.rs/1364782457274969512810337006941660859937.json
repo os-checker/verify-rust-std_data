@@ -1,0 +1,7 @@
+{
+  "file": "core/src/net/ip_addr.rs",
+  "name": "<net::ip_addr::IpAddr as convert::From<net::ip_addr::Ipv4Addr>>::from",
+  "hash": "1364782457274969512810337006941660859937",
+  "hash_direct": "154670513016196155287677222678036778949",
+  "src": "fn from(ipv4: Ipv4Addr) -> IpAddr {\n        IpAddr::V4(ipv4)\n    }"
+}

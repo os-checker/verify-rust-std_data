@@ -1,0 +1,12 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vmull_n_s32",
+  "hash": "272467551737738173115911538747712911813",
+  "hash_direct": "130070543256591983739274802240000034794",
+  "src": "pub fn vmull_n_s32(a: int32x2_t, b: i32) -> int64x2_t {\n    vmull_s32(a, vdup_n_s32(b))\n}",
+  "callees": [
+    "64941544020589987458118710774635299095",
+    "1015697667410051792212254908777904053254",
+    "69974168088348755793415638350206435443"
+  ]
+}

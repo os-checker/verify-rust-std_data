@@ -1,0 +1,13 @@
+{
+  "file": "core/src/intrinsics/mod.rs",
+  "name": "intrinsics::minimumf16",
+  "hash": "1526820967428337727416708302353840979734",
+  "hash_direct": "737022708704152816217624843055673464969",
+  "inst_kind": "\"Intrinsic\"",
+  "src": "pub const fn minimumf16(x: f16, y: f16) -> f16 {\n    if x < y {\n        x\n    } else if y < x {\n        y\n    } else if x == y {\n        if x.is_sign_negative() && y.is_sign_positive() { x } else { y }\n    } else {\n        // At least one input is NaN. Use `+` to perform NaN propagation and quieting.\n        x + y\n    }\n}",
+  "callees": [
+    "41314493314170273698848119374772252082",
+    "86698344806947611722293919790928706286",
+    "331178422282659479317337493575173626152"
+  ]
+}

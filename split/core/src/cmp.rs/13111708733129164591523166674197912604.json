@@ -1,0 +1,10 @@
+{
+  "file": "core/src/cmp.rs",
+  "name": "cmp::impls::<impl cmp::PartialOrd for &u32>::lt",
+  "hash": "13111708733129164591523166674197912604",
+  "hash_direct": "135916481638471767310221490390292675859",
+  "src": "fn lt(&self, other: &&B) -> bool {\n            PartialOrd::lt(*self, *other)\n        }",
+  "callees": [
+    "153871104070145767316778160342330240743"
+  ]
+}

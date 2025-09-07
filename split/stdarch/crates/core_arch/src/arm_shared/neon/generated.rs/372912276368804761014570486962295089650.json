@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vcombine_s32",
-  "hash": "372912276368804761014570486962295089650",
-  "hash_direct": "1411534179766325077613352311534007327272",
-  "src": "pub fn vcombine_s32(a: int32x2_t, b: int32x2_t) -> int32x4_t {\n    unsafe { simd_shuffle!(a, b, [0, 1, 2, 3]) }\n}"
-}

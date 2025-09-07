@@ -1,0 +1,11 @@
+{
+  "file": "core/src/num/f16.rs",
+  "name": "f16::<impl f16>::abs",
+  "hash": "73925086737508027584524650242921435444",
+  "hash_direct": "15798021509248806714061881346544077651",
+  "src": "pub const fn abs(self) -> Self {\n        // FIXME(f16_f128): replace with `intrinsics::fabsf16` when available\n        Self::from_bits(self.to_bits() & !(1 << 15))\n    }",
+  "callees": [
+    "80331169847412004098471689422468576411",
+    "331178422282659479317337493575173626152"
+  ]
+}

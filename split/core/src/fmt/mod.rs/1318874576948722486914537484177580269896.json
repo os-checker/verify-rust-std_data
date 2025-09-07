@@ -1,0 +1,7 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "fmt::flags::ALWAYS_SET",
+  "hash": "1318874576948722486914537484177580269896",
+  "hash_direct": "666591962348622746414687691920836374742",
+  "src": "pub(super) const ALWAYS_SET: u32 = 1 << 31;"
+}

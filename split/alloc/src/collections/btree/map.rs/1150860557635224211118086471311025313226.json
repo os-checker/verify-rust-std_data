@@ -1,0 +1,13 @@
+{
+  "file": "alloc/src/collections/btree/map.rs",
+  "name": "<collections::btree::map::UnorderedKeyError as core::clone::Clone>::clone",
+  "hash": "1150860557635224211118086471311025313226",
+  "hash_direct": "38474255966434859836154916922636020546",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "file": "core/src/iter/traits/double_ended.rs",
+  "name": "iter::traits::double_ended::DoubleEndedIterator::rfind::check::<&[u8], &mut str::BytesIsNotEmpty>::{closure#0}",
+  "hash": "13355170095670012600749050693011758186",
+  "hash_direct": "1391188776850634833618238920368422462366",
+  "src": "move |(), x| {\n                if predicate(&x) { ControlFlow::Break(x) } else { ControlFlow::Continue(()) }\n            }",
+  "callees": [
+    "1102831241619372522813490741452532505910",
+    "10419508648879065078328434863759131037",
+    "1747987462146090001016726025512332668317",
+    "939987132954987124616354466496995450921",
+    "497499364745128359314402117207900903418"
+  ]
+}

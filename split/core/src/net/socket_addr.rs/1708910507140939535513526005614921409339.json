@@ -1,0 +1,7 @@
+{
+  "file": "core/src/net/socket_addr.rs",
+  "name": "net::socket_addr::SocketAddr::is_ipv4",
+  "hash": "1708910507140939535513526005614921409339",
+  "hash_direct": "173452816765410116210777338143114927661",
+  "src": "pub const fn is_ipv4(&self) -> bool {\n        matches!(*self, SocketAddr::V4(_))\n    }"
+}

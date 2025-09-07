@@ -1,0 +1,23 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/lib.rs",
+  "name": "kani::any_raw::<u8>",
+  "hash": "223423045988591996014060300689406774665",
+  "hash_direct": "790666386731674994011990725027651533537",
+  "attrs": [
+    "#[kanitool::fn_marker = \"AnyRawHook\"]\n"
+  ],
+  "src": "fn any_raw<T: Copy>() -> T {\n            kani_intrinsic()\n        }",
+  "macro_backtrace": [
+    {
+      "callsite": "kani_core::kani_intrinsics!()",
+      "defsite": "macro_rules! kani_intrinsics"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ],
+  "callees": [
+    "134563002825040056909315119755976987940"
+  ]
+}

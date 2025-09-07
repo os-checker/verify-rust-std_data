@@ -1,7 +1,0 @@
-{
-  "file": "core/src/ops/bit.rs",
-  "name": "<! as ops::bit::Not>::not",
-  "hash": "7950619231347947229266828376904572650",
-  "hash_direct": "130583955322235086206997387470059695649",
-  "src": "fn not(self) -> ! {\n        match self {}\n    }"
-}

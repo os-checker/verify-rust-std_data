@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vuzp_p8",
+  "hash": "927434466487605995212520879418852969325",
+  "hash_direct": "93821596179569092499638052476047299601",
+  "src": "pub fn vuzp_p8(a: poly8x8_t, b: poly8x8_t) -> poly8x8x2_t {\n    unsafe {\n        let a0: poly8x8_t = simd_shuffle!(a, b, [0, 2, 4, 6, 8, 10, 12, 14]);\n        let b0: poly8x8_t = simd_shuffle!(a, b, [1, 3, 5, 7, 9, 11, 13, 15]);\n        transmute((a0, b0))\n    }\n}"
+}

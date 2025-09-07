@@ -1,0 +1,10 @@
+{
+  "file": "core/src/bstr/mod.rs",
+  "name": "bstr::ByteStr",
+  "hash": "94136444133154847896527231476083083841",
+  "hash_direct": "64706221925063382754986188983136521328",
+  "attrs": [
+    "#[attr = Repr {reprs: [ReprTransparent]}]\n"
+  ],
+  "src": "pub struct ByteStr"
+}

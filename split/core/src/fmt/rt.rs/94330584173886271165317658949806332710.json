@@ -1,0 +1,7 @@
+{
+  "file": "core/src/fmt/rt.rs",
+  "name": "core::fmt::rt::Argument::<'_>::as_u16",
+  "hash": "94330584173886271165317658949806332710",
+  "hash_direct": "174909938557819110113776555892157731442",
+  "src": "pub(super) const fn as_u16(&self) -> Option<u16> {\n        match self.ty {\n            ArgumentType::Count(count) => Some(count),\n            ArgumentType::Placeholder { .. } => None,\n        }\n    }"
+}

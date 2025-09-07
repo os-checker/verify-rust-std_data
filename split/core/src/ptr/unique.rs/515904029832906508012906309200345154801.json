@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/unique.rs",
+  "name": "core::ptr::Unique::<i32>::as_non_null_ptr",
+  "hash": "515904029832906508012906309200345154801",
+  "hash_direct": "31991692359259103488067436195064334598",
+  "src": "pub const fn as_non_null_ptr(self) -> NonNull<T> {\n        self.pointer\n    }"
+}

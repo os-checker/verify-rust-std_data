@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/bstr.rs",
+  "name": "<bstr::ByteString as core::ops::Deref>::deref",
+  "hash": "166561843452213041015926189435830494268",
+  "hash_direct": "12968951451512196081621181120505555210",
+  "src": "fn deref(&self) -> &Self::Target {\n        &self.0\n    }"
+}

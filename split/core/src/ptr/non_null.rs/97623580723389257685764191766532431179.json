@@ -1,0 +1,12 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "ptr::non_null::NonNull::<i32>::as_uninit_ref::<'_>",
+  "hash": "97623580723389257685764191766532431179",
+  "hash_direct": "153872101425805442878470824869708029434",
+  "src": "pub const unsafe fn as_uninit_ref<'a>(self) -> &'a MaybeUninit<T> {\n        // SAFETY: the caller must guarantee that `self` meets all the\n        // requirements for a reference.\n        unsafe { &*self.cast().as_ptr() }\n    }",
+  "callees": [
+    "1248523668675078374717473437136873169174",
+    "49714507074675417621913343711055201351",
+    "1300648811923997385213477221361604928022"
+  ]
+}

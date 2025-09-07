@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
-  "name": "core_arch::aarch64::neon::generated::vcaddq_rot270_f64",
-  "hash": "525331873981786358811391890359251964267",
-  "hash_direct": "136682335721539876002203893191628119394",
-  "src": "pub fn vcaddq_rot270_f64(a: float64x2_t, b: float64x2_t) -> float64x2_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.vcadd.rot270.v2f64\"\n        )]\n        fn _vcaddq_rot270_f64(a: float64x2_t, b: float64x2_t) -> float64x2_t;\n    }\n    unsafe { _vcaddq_rot270_f64(a, b) }\n}"
-}

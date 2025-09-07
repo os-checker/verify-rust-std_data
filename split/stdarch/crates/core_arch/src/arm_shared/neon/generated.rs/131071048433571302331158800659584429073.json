@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vaba_u8",
+  "hash": "131071048433571302331158800659584429073",
+  "hash_direct": "1484887478654274437415318625873437598544",
+  "src": "pub fn vaba_u8(a: uint8x8_t, b: uint8x8_t, c: uint8x8_t) -> uint8x8_t {\n    unsafe { simd_add(a, vabd_u8(b, c)) }\n}",
+  "callees": [
+    "282191043128413727817719527775753525068"
+  ]
+}

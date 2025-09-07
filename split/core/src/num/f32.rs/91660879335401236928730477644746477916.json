@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f32.rs",
+  "name": "f32::<impl f32>::copysign",
+  "hash": "91660879335401236928730477644746477916",
+  "hash_direct": "1180681631087653704617840994378042102778",
+  "src": "pub const fn copysign(self, sign: f32) -> f32 {\n        // SAFETY: this is actually a safe intrinsic\n        unsafe { intrinsics::copysignf32(self, sign) }\n    }"
+}

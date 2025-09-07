@@ -1,0 +1,11 @@
+{
+  "file": "core/src/array/mod.rs",
+  "name": "array::<impl ops::index::Index<ops::range::RangeFull> for [intrinsics::verify::u8_struct; 2]>::index",
+  "hash": "37951064947636099943617403908299206215",
+  "hash_direct": "512113068754945973012893691925407182245",
+  "src": "fn index(&self, index: I) -> &Self::Output {\n        Index::index(self as &[T], index)\n    }",
+  "callees": [
+    "48112906418175292143881407383950432674",
+    "15827960888705912523206187847230734024"
+  ]
+}

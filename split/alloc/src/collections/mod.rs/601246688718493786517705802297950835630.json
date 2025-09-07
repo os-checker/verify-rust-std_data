@@ -1,0 +1,13 @@
+{
+  "file": "alloc/src/collections/mod.rs",
+  "name": "<collections::TryReserveError as core::cmp::Eq>::assert_receiver_is_total_eq",
+  "hash": "601246688718493786517705802297950835630",
+  "hash_direct": "522797449022731691716965510853171927378",
+  "src": "Eq",
+  "macro_backtrace": [
+    {
+      "callsite": "Eq",
+      "defsite": "pub macro Eq"
+    }
+  ]
+}

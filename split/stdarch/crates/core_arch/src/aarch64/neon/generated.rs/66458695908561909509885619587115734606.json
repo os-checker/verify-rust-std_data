@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vabal_high_u8",
+  "hash": "66458695908561909509885619587115734606",
+  "hash_direct": "172877396341545945642690467124381006913",
+  "src": "pub fn vabal_high_u8(a: uint16x8_t, b: uint8x16_t, c: uint8x16_t) -> uint16x8_t {\n    unsafe {\n        let d: uint8x8_t = simd_shuffle!(b, b, [8, 9, 10, 11, 12, 13, 14, 15]);\n        let e: uint8x8_t = simd_shuffle!(c, c, [8, 9, 10, 11, 12, 13, 14, 15]);\n        let f: uint8x8_t = vabd_u8(d, e);\n        simd_add(a, simd_cast(f))\n    }\n}",
+  "callees": [
+    "282191043128413727817719527775753525068"
+  ]
+}

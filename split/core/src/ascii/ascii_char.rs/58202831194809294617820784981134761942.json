@@ -1,0 +1,11 @@
+{
+  "file": "core/src/ascii/ascii_char.rs",
+  "name": "ascii::ascii_char::AsciiChar::is_punctuation",
+  "hash": "58202831194809294617820784981134761942",
+  "hash_direct": "116316221261678861463454560209100661150",
+  "src": "pub const fn is_punctuation(self) -> bool {\n        self.to_u8().is_ascii_punctuation()\n    }",
+  "callees": [
+    "211389067699639933614636457746408448112",
+    "62863102658561508765692073348166081495"
+  ]
+}

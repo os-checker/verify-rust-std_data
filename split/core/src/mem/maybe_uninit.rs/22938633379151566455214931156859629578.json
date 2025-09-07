@@ -1,7 +1,0 @@
-{
-  "file": "core/src/mem/maybe_uninit.rs",
-  "name": "<[mem::maybe_uninit::MaybeUninit<char>]>::assume_init_ref",
-  "hash": "22938633379151566455214931156859629578",
-  "hash_direct": "84658842403509200425539475831229729639",
-  "src": "pub const unsafe fn assume_init_ref(&self) -> &[T] {\n        // SAFETY: casting `slice` to a `*const [T]` is safe since the caller guarantees that\n        // `slice` is initialized, and `MaybeUninit` is guaranteed to have the same layout as `T`.\n        // The pointer obtained is valid since it refers to memory owned by `slice` which is a\n        // reference and thus guaranteed to be valid for reads.\n        unsafe { &*(self as *const Self as *const [T]) }\n    }"
-}

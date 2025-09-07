@@ -1,0 +1,18 @@
+{
+  "file": "core/src/iter/adapters/take_while.rs",
+  "name": "<core::iter::TakeWhile<I, P> as core::iter::Iterator>::try_fold::check::<'_, &u8, usize, core::ops::try_trait::NeverShortCircuit<usize>, {closure@<core::slice::EscapeAscii<'_> as core::fmt::Display>::fmt::{closure#0}}, {closure@core::ops::try_trait::NeverShortCircuit<usize>::wrap_mut_2<usize, &u8, {closure@<core::iter::TakeWhile<core::slice::Iter<'_, u8>, {closure@<core::slice::EscapeAscii<'_> as core::fmt::Display>::fmt::{closure#0}}> as core::iter::Iterator>::count::{closure#0}}>::{closure#0}}>::{closure#0}",
+  "hash": "1171289715691102377113308016881308182991",
+  "hash_direct": "193443066279282658915405783173819425511",
+  "src": "move |acc, x| {\n                if p(&x) {\n                    ControlFlow::from_try(fold(acc, x))\n                } else {\n                    *flag = true;\n                    ControlFlow::Break(try { acc })\n                }\n            }",
+  "callees": [
+    "4624680146933447685315508208087380447",
+    "206416940098713373710406809815723706101",
+    "170708008206974315912237474060989130492",
+    "124573727687754354303639178688703946894",
+    "50473529602911884987749622524980088147",
+    "67310489312575051035576184652342398890",
+    "1161957769894127133012856511664916235439",
+    "124905427857320923366951103549833814228",
+    "1763966138543089079710634620354786190618"
+  ]
+}

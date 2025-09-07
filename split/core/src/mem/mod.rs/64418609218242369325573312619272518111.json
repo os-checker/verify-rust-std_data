@@ -1,0 +1,7 @@
+{
+  "file": "core/src/mem/mod.rs",
+  "name": "core::mem::align_of::<boxed::Box<[u8]>>",
+  "hash": "64418609218242369325573312619272518111",
+  "hash_direct": "82167424097088307534189733231646170214",
+  "src": "pub const fn align_of<T>() -> usize {\n    intrinsics::align_of::<T>()\n}"
+}

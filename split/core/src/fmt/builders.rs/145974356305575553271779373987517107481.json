@@ -1,0 +1,12 @@
+{
+  "file": "core/src/fmt/builders.rs",
+  "name": "<core::fmt::builders::PadAdapter<'_, '_> as core::fmt::Write>::write_char",
+  "hash": "145974356305575553271779373987517107481",
+  "hash_direct": "91775781309338805372139770082258072565",
+  "src": "fn write_char(&mut self, c: char) -> fmt::Result {\n        if self.state.on_newline {\n            self.buf.write_str(\"    \")?;\n        }\n        self.state.on_newline = c == '\\n';\n        self.buf.write_char(c)\n    }",
+  "callees": [
+    "271581865380915142716623206153391998575",
+    "74117228064460308068477844042643886972",
+    "253493680033796300410226743660802047383"
+  ]
+}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/f64.rs",
-  "name": "f64::math::powi",
-  "hash": "46185075348152595665377413454280363444",
-  "hash_direct": "175373519311734464083738113266607818355",
-  "src": "pub fn powi(x: f64, n: i32) -> f64 {\n        // SAFETY: intrinsic with no preconditions\n        unsafe { intrinsics::powif64(x, n) }\n    }"
-}

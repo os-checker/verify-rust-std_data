@@ -1,0 +1,11 @@
+{
+  "file": "core/src/slice/raw.rs",
+  "name": "core::slice::from_ref::<core::ascii::Char>",
+  "hash": "1227410386340307306617025010062578104283",
+  "hash_direct": "735334588668466809116244288302101707340",
+  "src": "pub const fn from_ref<T>(s: &T) -> &[T] {\n    array::from_ref(s)\n}",
+  "callees": [
+    "78619265198420776833531287428212529707",
+    "102007744722280595149422989551139056047"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/cmp.rs",
+  "name": "cmp::impls::<impl cmp::PartialEq for ()>::ne",
+  "hash": "1429062094026820723310786334394082734490",
+  "hash_direct": "91779619937997419977133323213874109988",
+  "src": "fn ne(&self, _other: &()) -> bool {\n            false\n        }"
+}

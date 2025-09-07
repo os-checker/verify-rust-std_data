@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vclezq_f32",
+  "hash": "23677218846763969403843997777289911878",
+  "hash_direct": "79622572054796246627265409547976256765",
+  "src": "pub fn vclezq_f32(a: float32x4_t) -> uint32x4_t {\n    let b: f32x4 = f32x4::new(0.0, 0.0, 0.0, 0.0);\n    unsafe { simd_le(a, transmute(b)) }\n}",
+  "callees": [
+    "128468073739507376484082355917583888803"
+  ]
+}

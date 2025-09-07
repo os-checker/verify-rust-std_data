@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vsub_u16",
+  "hash": "655985462879997905913731320245904286246",
+  "hash_direct": "32278143428659431502077408108636438673",
+  "src": "pub fn vsub_u16(a: uint16x4_t, b: uint16x4_t) -> uint16x4_t {\n    unsafe { simd_sub(a, b) }\n}"
+}

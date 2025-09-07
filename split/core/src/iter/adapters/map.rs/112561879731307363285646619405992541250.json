@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/adapters/map.rs",
+  "name": "core::iter::adapters::map::map_fold::<core::result::Result<char, core::char::DecodeUtf16Error>, char, (), {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/alloc/src/string.rs:763:18: 763:21}, {closure@core::iter::Iterator::for_each::call<char, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/alloc/src/string.rs:2407:27: 2407:35}>::{closure#0}}>",
+  "hash": "112561879731307363285646619405992541250",
+  "hash_direct": "139137033034959477079666910732099739614",
+  "src": "fn map_fold<T, B, Acc>(\n    mut f: impl FnMut(T) -> B,\n    mut g: impl FnMut(Acc, B) -> Acc,\n) -> impl FnMut(Acc, T) -> Acc {\n    move |acc, elt| g(acc, f(elt))\n}"
+}

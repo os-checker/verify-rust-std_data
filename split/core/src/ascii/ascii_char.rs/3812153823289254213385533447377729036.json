@@ -1,0 +1,13 @@
+{
+  "file": "core/src/ascii/ascii_char.rs",
+  "name": "ascii::ascii_char::AsciiChar::to_uppercase",
+  "hash": "3812153823289254213385533447377729036",
+  "hash_direct": "80378161452799563996161181008924229812",
+  "src": "pub const fn to_uppercase(self) -> Self {\n        let uppercase_byte = self.to_u8().to_ascii_uppercase();\n        // SAFETY: Toggling the 6th bit won't convert ASCII to non-ASCII.\n        unsafe { Self::from_u8_unchecked(uppercase_byte) }\n    }",
+  "callees": [
+    "15551977551413036531158252289522839939",
+    "211389067699639933614636457746408448112",
+    "1808592158708615847911831363091156489391",
+    "125240937021480279979048134700113690516"
+  ]
+}

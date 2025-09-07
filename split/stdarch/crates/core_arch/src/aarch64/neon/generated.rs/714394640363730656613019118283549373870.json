@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
-  "name": "core_arch::aarch64::neon::generated::vqtbx1q",
-  "hash": "714394640363730656613019118283549373870",
-  "hash_direct": "1169999217226142235610112408054541333011",
-  "src": "fn vqtbx1q(a: int8x16_t, b: int8x16_t, c: uint8x16_t) -> int8x16_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.tbx1.v16i8\"\n        )]\n        fn _vqtbx1q(a: int8x16_t, b: int8x16_t, c: uint8x16_t) -> int8x16_t;\n    }\n    unsafe { _vqtbx1q(a, b, c) }\n}"
-}

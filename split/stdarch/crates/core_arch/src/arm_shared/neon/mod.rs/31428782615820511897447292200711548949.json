@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/mod.rs",
+  "name": "core_arch::arm_shared::neon::uint8x16x3_t",
+  "hash": "31428782615820511897447292200711548949",
+  "hash_direct": "142205700913417364962461382241783472433",
+  "attrs": [
+    "#[attr = Repr {reprs: [ReprC]}]\n"
+  ],
+  "src": "pub struct uint8x16x3_t"
+}

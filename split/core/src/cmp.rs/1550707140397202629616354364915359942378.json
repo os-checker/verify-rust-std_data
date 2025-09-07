@@ -1,0 +1,10 @@
+{
+  "file": "core/src/cmp.rs",
+  "name": "<*const () as cmp::PartialEq>::ne",
+  "hash": "1550707140397202629616354364915359942378",
+  "hash_direct": "1472777945478035160116901793656663586416",
+  "src": "fn ne(&self, other: &Rhs) -> bool {\n        !self.eq(other)\n    }",
+  "callees": [
+    "1451208121872394760214718749420521326685"
+  ]
+}

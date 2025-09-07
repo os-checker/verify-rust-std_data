@@ -1,0 +1,11 @@
+{
+  "file": "core/src/ascii.rs",
+  "name": "<ascii::EscapeDefault as iter::traits::exact_size::ExactSizeIterator>::len",
+  "hash": "175948810212962951865664538562775981051",
+  "hash_direct": "2355254326471207654451398225068882357",
+  "src": "fn len(&self) -> usize {\n        self.0.len()\n    }",
+  "callees": [
+    "119539198841178170095714608677850051781",
+    "974372577780349938310606371856678076291"
+  ]
+}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
-  "name": "core_arch::aarch64::neon::generated::vmovn_high_s16",
-  "hash": "119113786825740957752449754990633937135",
-  "hash_direct": "1625412671233846595312532954241230695413",
-  "src": "pub fn vmovn_high_s16(a: int8x8_t, b: int16x8_t) -> int8x16_t {\n    unsafe {\n        let c: int8x8_t = simd_cast(b);\n        simd_shuffle!(a, c, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15])\n    }\n}"
-}

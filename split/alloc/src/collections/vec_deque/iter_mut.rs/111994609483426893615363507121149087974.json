@@ -1,0 +1,16 @@
+{
+  "file": "alloc/src/collections/vec_deque/iter_mut.rs",
+  "name": "<collections::vec_deque::iter_mut::IterMut<'a, T> as core::iter::Iterator>::__iterator_get_unchecked::kani_contract_mode",
+  "hash": "111994609483426893615363507121149087974",
+  "hash_direct": "70884360896554154691004768694278381724",
+  "attrs": [
+    "#[kanitool::fn_marker = \"kani_contract_mode\"]\n"
+  ],
+  "src": "#[cfg_attr(kani, kani::modifies(self))]",
+  "macro_backtrace": [
+    {
+      "callsite": "#[cfg_attr(kani, kani::modifies(self))]",
+      "defsite": "pub fn modifies(attr: TokenStream, item: TokenStream) -> TokenStream"
+    }
+  ]
+}

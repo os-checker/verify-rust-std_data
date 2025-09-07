@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f64.rs",
+  "name": "f64::math::abs_sub",
+  "hash": "1573678775023933523510183021361825689101",
+  "hash_direct": "1266147681874376782611968944763977050078",
+  "src": "pub fn abs_sub(x: f64, other: f64) -> f64 {\n        libm::fdim(x, other)\n    }"
+}

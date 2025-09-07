@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "core::ptr::NonNull::<[(u8, u8)]>::cast::<(u8, u8)>",
+  "hash": "2355366202737852489367228546032658173",
+  "hash_direct": "63716967591201266146214519702109974296",
+  "src": "pub const fn cast<U>(self) -> NonNull<U> {\n        // SAFETY: `self` is a `NonNull` pointer which is necessarily non-null\n        unsafe { NonNull { pointer: self.as_ptr() as *mut U } }\n    }",
+  "callees": [
+    "104266393394553752058523727289216649518"
+  ]
+}

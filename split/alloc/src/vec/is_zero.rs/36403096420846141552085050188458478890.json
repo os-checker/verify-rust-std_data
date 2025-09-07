@@ -1,0 +1,16 @@
+{
+  "file": "alloc/src/vec/is_zero.rs",
+  "name": "<i8 as vec::is_zero::IsZero>::is_zero",
+  "hash": "36403096420846141552085050188458478890",
+  "hash_direct": "142316078762229596116394614084431402971",
+  "src": "fn is_zero(&self) -> bool {\n                $is_zero(*self)\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "impl_is_zero!(i8, |x| x == 0)",
+      "defsite": "macro_rules! impl_is_zero {\n    ($t:ty, $is_zero:expr) => {\n        unsafe impl IsZero for $t {\n            #[inline]\n            fn is_zero(&self) -> bool {\n                $is_zero(*self)\n            }\n        }\n    };\n}"
+    }
+  ],
+  "callees": [
+    "195528494619732607911841724569211421725"
+  ]
+}

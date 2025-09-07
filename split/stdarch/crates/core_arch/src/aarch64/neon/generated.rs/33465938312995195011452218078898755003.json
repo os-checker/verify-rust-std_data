@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vqtbl3",
+  "hash": "33465938312995195011452218078898755003",
+  "hash_direct": "17731879138613760990182144285740938358",
+  "src": "fn vqtbl3(a: int8x16_t, b: int8x16_t, c: int8x16_t, d: uint8x8_t) -> int8x8_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.tbl3.v8i8\"\n        )]\n        fn _vqtbl3(a: int8x16_t, b: int8x16_t, c: int8x16_t, d: uint8x8_t) -> int8x8_t;\n    }\n    unsafe { _vqtbl3(a, b, c, d) }\n}"
+}

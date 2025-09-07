@@ -1,0 +1,8 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "ptr::drop_in_place::<ops::control_flow::ControlFlow<&str>>",
+  "hash": "165256389461896645226885567664008247771",
+  "hash_direct": "1684295950646180127916630758883562406037",
+  "inst_kind": "\"Shim\"",
+  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
+}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vmls_f32",
-  "hash": "63345950833922959436855796490790785817",
-  "hash_direct": "92193887612658651371602898562819189121",
-  "src": "pub fn vmls_f32(a: float32x2_t, b: float32x2_t, c: float32x2_t) -> float32x2_t {\n    unsafe { simd_sub(a, simd_mul(b, c)) }\n}"
-}

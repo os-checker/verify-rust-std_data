@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vqrdmlshq_s16",
+  "hash": "728668629511377666110827983935549756986",
+  "hash_direct": "457380710636915089012892992532608873715",
+  "src": "pub fn vqrdmlshq_s16(a: int16x8_t, b: int16x8_t, c: int16x8_t) -> int16x8_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.sqrdmlsh.v8i16\"\n        )]\n        fn _vqrdmlshq_s16(a: int16x8_t, b: int16x8_t, c: int16x8_t) -> int16x8_t;\n    }\n    unsafe { _vqrdmlshq_s16(a, b, c) }\n}"
+}

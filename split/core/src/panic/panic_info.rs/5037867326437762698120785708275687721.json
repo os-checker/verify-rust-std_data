@@ -1,0 +1,10 @@
+{
+  "file": "core/src/panic/panic_info.rs",
+  "name": "panic::panic_info::PanicMessage::<'_>::as_str",
+  "hash": "5037867326437762698120785708275687721",
+  "hash_direct": "123975139018165335075158086633850029618",
+  "src": "pub const fn as_str(&self) -> Option<&'static str> {\n        self.message.as_str()\n    }",
+  "callees": [
+    "150203716713484807054381945197290135428"
+  ]
+}

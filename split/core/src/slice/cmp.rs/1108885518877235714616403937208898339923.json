@@ -1,0 +1,14 @@
+{
+  "file": "core/src/slice/cmp.rs",
+  "name": "core::slice::cmp::<impl core::cmp::PartialOrd for [u8]>::partial_cmp",
+  "hash": "1108885518877235714616403937208898339923",
+  "hash_direct": "45936710413423394886821094135237715211",
+  "src": "fn partial_cmp(&self, other: &[T]) -> Option<Ordering> {\n        SlicePartialOrd::partial_compare(self, other)\n    }",
+  "callees": [
+    "11030459515027875743995102251653642710",
+    "98787151277058950785691468869134326755",
+    "1108271454116107534114787241652171707322",
+    "125107507946182014089957851721308717107",
+    "47672539441842164771342608976601968881"
+  ]
+}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vsubq_f32",
-  "hash": "137838939015459104163374983539298126829",
-  "hash_direct": "212431762626397979414487049960080324676",
-  "src": "pub fn vsubq_f32(a: float32x4_t, b: float32x4_t) -> float32x4_t {\n    unsafe { simd_sub(a, b) }\n}"
-}

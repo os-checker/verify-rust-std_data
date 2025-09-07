@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/const_ptr.rs",
+  "name": "ptr::const_ptr::<impl *const intrinsics::verify::u8_struct>::cast::<()>",
+  "hash": "176772792477823263198577280375766391240",
+  "hash_direct": "1080110327017617170711122311435801601395",
+  "src": "pub const fn cast<U>(self) -> *const U {\n        self as _\n    }"
+}

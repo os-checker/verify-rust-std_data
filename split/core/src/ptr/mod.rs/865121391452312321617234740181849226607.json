@@ -1,0 +1,8 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "ptr::drop_in_place::<iter::adapters::flatten::FlattenCompat<iter::adapters::map::Map<str::iter::Chars<'_>, str::CharEscapeDefault>, char::EscapeDefault>>",
+  "hash": "865121391452312321617234740181849226607",
+  "hash_direct": "130907579075551948245337525128201265117",
+  "inst_kind": "\"Shim\"",
+  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
+}

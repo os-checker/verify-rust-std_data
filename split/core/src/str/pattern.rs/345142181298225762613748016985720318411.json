@@ -1,0 +1,7 @@
+{
+  "file": "core/src/str/pattern.rs",
+  "name": "<core::str::pattern::CharSearcher<'_> as core::str::pattern::Searcher<'_>>::haystack",
+  "hash": "345142181298225762613748016985720318411",
+  "hash_direct": "811344685299788586910336301382938020731",
+  "src": "fn haystack(&self) -> &'a str {\n        self.haystack\n    }"
+}

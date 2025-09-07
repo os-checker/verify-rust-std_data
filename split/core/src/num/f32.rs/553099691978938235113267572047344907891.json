@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/f32.rs",
-  "name": "f32::<impl f32>::from_bits",
-  "hash": "553099691978938235113267572047344907891",
-  "hash_direct": "144499474871349198012168468772654281960",
-  "src": "pub const fn from_bits(v: u32) -> Self {\n        // It turns out the safety issues with sNaN were overblown! Hooray!\n        // SAFETY: `u32` is a plain old datatype so we can always transmute from it.\n        unsafe { mem::transmute(v) }\n    }"
-}

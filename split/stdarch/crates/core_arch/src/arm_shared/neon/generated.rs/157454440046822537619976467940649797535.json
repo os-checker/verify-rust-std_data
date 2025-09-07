@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vmovl_u8",
-  "hash": "157454440046822537619976467940649797535",
-  "hash_direct": "755316932621071667718430532134309659415",
-  "src": "pub fn vmovl_u8(a: uint8x8_t) -> uint16x8_t {\n    unsafe { simd_cast(a) }\n}"
-}

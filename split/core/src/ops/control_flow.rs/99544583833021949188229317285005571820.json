@@ -1,7 +1,0 @@
-{
-  "file": "core/src/ops/control_flow.rs",
-  "name": "<ops::control_flow::ControlFlow<&[u8]> as ops::try_trait::Try>::branch",
-  "hash": "99544583833021949188229317285005571820",
-  "hash_direct": "1717313786045063552516631678381530674401",
-  "src": "fn branch(self) -> ControlFlow<Self::Residual, Self::Output> {\n        match self {\n            ControlFlow::Continue(c) => ControlFlow::Continue(c),\n            ControlFlow::Break(b) => ControlFlow::Break(ControlFlow::Break(b)),\n        }\n    }"
-}

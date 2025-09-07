@@ -1,0 +1,10 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<core::slice::Iter<'_, u16> as core::iter::Iterator>::cloned::<'_, u16>",
+  "hash": "96932736869070711485714986744595388561",
+  "hash_direct": "35966880314499787318279025388265221142",
+  "src": "fn cloned<'a, T>(self) -> Cloned<Self>\n    where\n        T: Clone + 'a,\n        Self: Sized + Iterator<Item = &'a T>,\n    {\n        Cloned::new(self)\n    }",
+  "callees": [
+    "109081395283131467431651130653286819524"
+  ]
+}

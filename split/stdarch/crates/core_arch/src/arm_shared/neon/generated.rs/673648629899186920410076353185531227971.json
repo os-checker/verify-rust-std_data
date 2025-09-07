@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vaddq_p128",
+  "hash": "673648629899186920410076353185531227971",
+  "hash_direct": "1791895137013283980611290598813692423248",
+  "src": "pub fn vaddq_p128(a: p128, b: p128) -> p128 {\n    a ^ b\n}"
+}

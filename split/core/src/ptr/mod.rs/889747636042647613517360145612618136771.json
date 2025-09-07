@@ -1,0 +1,11 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "ptr::null_mut::<i128>",
+  "hash": "889747636042647613517360145612618136771",
+  "hash_direct": "116053372517150760936362274932762659440",
+  "src": "pub const fn null_mut<T: PointeeSized + Thin>() -> *mut T {\n    from_raw_parts_mut(without_provenance_mut::<()>(0), ())\n}",
+  "callees": [
+    "11936137592932553624777577260328500762",
+    "5149988702892797298383433462430069015"
+  ]
+}

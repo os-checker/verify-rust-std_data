@@ -1,0 +1,7 @@
+{
+  "file": "core/src/slice/sort/stable/drift.rs",
+  "name": "slice::sort::stable::drift::DriftsortRun::new_sorted",
+  "hash": "76436199708318685525846013368064223359",
+  "hash_direct": "1359664919419786278010016671459579630377",
+  "src": "fn new_sorted(length: usize) -> Self {\n        Self((length << 1) | 1)\n    }"
+}

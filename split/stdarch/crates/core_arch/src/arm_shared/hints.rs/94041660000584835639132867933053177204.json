@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/hints.rs",
+  "name": "core_arch::arm_shared::hints::HINT_WFI",
+  "hash": "94041660000584835639132867933053177204",
+  "hash_direct": "718697034081813729617167760037437599917",
+  "src": "const HINT_WFI: i32 = 3;"
+}

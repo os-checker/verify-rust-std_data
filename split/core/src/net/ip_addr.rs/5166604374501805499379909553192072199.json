@@ -1,0 +1,16 @@
+{
+  "file": "core/src/net/ip_addr.rs",
+  "name": "<<net::ip_addr::Ipv6Addr as fmt::Display>::fmt::Span as default::Default>::default",
+  "hash": "5166604374501805499379909553192072199",
+  "hash_direct": "1576056469704045910515045467260283496272",
+  "src": "Default",
+  "macro_backtrace": [
+    {
+      "callsite": "Default",
+      "defsite": "pub macro Default($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ],
+  "callees": [
+    "526522679742031129215701282242820325587"
+  ]
+}

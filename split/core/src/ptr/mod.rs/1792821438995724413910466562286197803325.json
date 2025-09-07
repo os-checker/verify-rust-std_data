@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "ptr::slice_from_raw_parts_mut::<u64>",
+  "hash": "1792821438995724413910466562286197803325",
+  "hash_direct": "95398274969285286734711351182810050759",
+  "src": "pub const fn slice_from_raw_parts_mut<T>(data: *mut T, len: usize) -> *mut [T] {\n    from_raw_parts_mut(data, len)\n}",
+  "callees": [
+    "888830239597289289217982654906752590772"
+  ]
+}

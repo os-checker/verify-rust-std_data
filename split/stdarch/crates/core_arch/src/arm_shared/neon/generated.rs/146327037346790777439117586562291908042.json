@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vrshlq_s8",
+  "hash": "146327037346790777439117586562291908042",
+  "hash_direct": "37268938404509201182978827193644403444",
+  "src": "pub fn vrshlq_s8(a: int8x16_t, b: int8x16_t) -> int8x16_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(target_arch = \"arm\", link_name = \"llvm.arm.neon.vrshifts.v16i8\")]\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.srshl.v16i8\"\n        )]\n        fn _vrshlq_s8(a: int8x16_t, b: int8x16_t) -> int8x16_t;\n    }\n    unsafe { _vrshlq_s8(a, b) }\n}"
+}

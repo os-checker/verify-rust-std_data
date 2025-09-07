@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vqtbl4_s8",
+  "hash": "128409028686117940058795911971072302446",
+  "hash_direct": "30611161562710908934587522316038559461",
+  "src": "pub fn vqtbl4_s8(a: int8x16x4_t, b: uint8x8_t) -> int8x8_t {\n    vqtbl4(a.0, a.1, a.2, a.3, b)\n}",
+  "callees": [
+    "26468378696418851325672504686547002097"
+  ]
+}

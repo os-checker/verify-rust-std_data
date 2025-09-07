@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "ptr::without_provenance::<(u32, i16, f32)>",
+  "hash": "795610351861222391516358063950746435330",
+  "hash_direct": "1388586124397289892445309766714611001",
+  "src": "pub const fn without_provenance<T>(addr: usize) -> *const T {\n    without_provenance_mut(addr)\n}",
+  "callees": [
+    "110725042661495447906407527209757293242"
+  ]
+}

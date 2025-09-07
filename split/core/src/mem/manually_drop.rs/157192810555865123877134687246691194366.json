@@ -1,0 +1,7 @@
+{
+  "file": "core/src/mem/manually_drop.rs",
+  "name": "<core::mem::ManuallyDrop<vec::Vec<u8>> as core::ops::DerefMut>::deref_mut",
+  "hash": "157192810555865123877134687246691194366",
+  "hash_direct": "1448916066541375712311294768684773827207",
+  "src": "fn deref_mut(&mut self) -> &mut T {\n        &mut self.value\n    }"
+}

@@ -1,0 +1,16 @@
+{
+  "file": "alloc/src/collections/vec_deque/iter.rs",
+  "name": "<collections::vec_deque::iter::Iter<'a, T> as core::iter::Iterator>::__iterator_get_unchecked::kani_contract_mode",
+  "hash": "22160471966614665316679468969027446123",
+  "hash_direct": "1547107360364391805413611759438972534832",
+  "attrs": [
+    "#[kanitool::fn_marker = \"kani_contract_mode\"]\n"
+  ],
+  "src": "#[cfg_attr(kani, kani::modifies(self))]",
+  "macro_backtrace": [
+    {
+      "callsite": "#[cfg_attr(kani, kani::modifies(self))]",
+      "defsite": "pub fn modifies(attr: TokenStream, item: TokenStream) -> TokenStream"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ops/range.rs",
+  "name": "<core::ops::Range<usize> as core::ops::RangeBounds<usize>>::end_bound",
+  "hash": "146409718664825089676353320200082272443",
+  "hash_direct": "67725861799884281979203921016349432298",
+  "src": "fn end_bound(&self) -> Bound<&T> {\n        Excluded(&self.end)\n    }"
+}

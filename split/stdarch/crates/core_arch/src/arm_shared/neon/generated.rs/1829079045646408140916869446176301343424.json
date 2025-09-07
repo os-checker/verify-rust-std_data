@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vld3_p64",
+  "hash": "1829079045646408140916869446176301343424",
+  "hash_direct": "349311552643215761817931268498829469541",
+  "src": "pub unsafe fn vld3_p64(a: *const p64) -> poly64x1x3_t {\n    transmute(vld3_s64(transmute(a)))\n}",
+  "callees": [
+    "93142146808047550277909014645375725987"
+  ]
+}

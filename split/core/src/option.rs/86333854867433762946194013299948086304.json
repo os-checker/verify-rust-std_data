@@ -1,0 +1,7 @@
+{
+  "file": "core/src/option.rs",
+  "name": "<core::option::Option<char> as core::ops::FromResidual<core::option::Option<core::convert::Infallible>>>::from_residual",
+  "hash": "86333854867433762946194013299948086304",
+  "hash_direct": "11054254085468313252736176165673222477",
+  "src": "fn from_residual(residual: Option<convert::Infallible>) -> Self {\n        match residual {\n            None => None,\n        }\n    }"
+}

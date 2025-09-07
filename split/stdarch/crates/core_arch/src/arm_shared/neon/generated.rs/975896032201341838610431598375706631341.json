@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vand_u64",
+  "hash": "975896032201341838610431598375706631341",
+  "hash_direct": "1422590013181728226115794823480367630247",
+  "src": "pub fn vand_u64(a: uint64x1_t, b: uint64x1_t) -> uint64x1_t {\n    unsafe { simd_and(a, b) }\n}"
+}

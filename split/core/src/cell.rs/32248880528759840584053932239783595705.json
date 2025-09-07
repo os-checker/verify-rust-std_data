@@ -1,7 +1,0 @@
-{
-  "file": "core/src/cell.rs",
-  "name": "cell::is_reading",
-  "hash": "32248880528759840584053932239783595705",
-  "hash_direct": "36472724827257117099297215591121838935",
-  "src": "const fn is_reading(x: BorrowCounter) -> bool {\n    x > UNUSED\n}"
-}

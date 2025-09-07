@@ -1,0 +1,7 @@
+{
+  "file": "core/src/mem/mod.rs",
+  "name": "mem::size_of::<mem::verify::CannotDrop<char>>",
+  "hash": "22902251378168407629720880676923219753",
+  "hash_direct": "7251446700131137019432562816578139262",
+  "src": "pub const fn size_of<T>() -> usize {\n    intrinsics::size_of::<T>()\n}"
+}

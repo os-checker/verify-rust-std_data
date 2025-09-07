@@ -1,0 +1,7 @@
+{
+  "file": "core/src/any.rs",
+  "name": "core::any::TypeId::of::<boxed::convert::<impl core::convert::From<string::String> for boxed::Box<(dyn core::error::Error + core::marker::Send + core::marker::Sync + 'a)>>::from::StringError>",
+  "hash": "888087554848715421013160318144955270807",
+  "hash_direct": "36826590895969695152959938129826408082",
+  "src": "pub const fn of<T: ?Sized + 'static>() -> TypeId {\n        const { intrinsics::type_id::<T>() }\n    }"
+}

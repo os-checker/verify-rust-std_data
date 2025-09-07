@@ -1,7 +1,0 @@
-{
-  "file": "core/src/option.rs",
-  "name": "option::Option::<net::ip_addr::Ipv4Addr>::is_some",
-  "hash": "15581128868957399648277295239642154308",
-  "hash_direct": "937528124782217932310121531018360279868",
-  "src": "pub const fn is_some(&self) -> bool {\n        matches!(*self, Some(_))\n    }"
-}

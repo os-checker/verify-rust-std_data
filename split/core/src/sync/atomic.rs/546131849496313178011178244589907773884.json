@@ -1,0 +1,12 @@
+{
+  "file": "core/src/sync/atomic.rs",
+  "name": "sync::atomic::AtomicBool::fetch_not",
+  "hash": "546131849496313178011178244589907773884",
+  "hash_direct": "806929901840873764210804449232475943069",
+  "src": "pub fn fetch_not(&self, order: Ordering) -> bool {\n        self.fetch_xor(true, order)\n    }",
+  "callees": [
+    "163154036748054064804947938080591443326",
+    "58451948492497898931880582248136801712",
+    "17742179607541277545332297688417876232"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "file": "core/src/option.rs",
+  "name": "core::option::Option::<usize>::and_then::<usize, {closure@<core::char::DecodeUtf16<core::iter::Map<core::iter::Copied<core::slice::Iter<'_, [u8; 2]>>, fn([u8; core::::num::{impl#7}::from_le_bytes::{constant#0}]) -> u16 {core::num::<impl u16>::from_le_bytes}>> as core::iter::Iterator>::size_hint::{closure#0}}>",
+  "hash": "1806791799854859715812616382117092630860",
+  "hash_direct": "162970538231811670094423257728745591132",
+  "src": "pub const fn and_then<U, F>(self, f: F) -> Option<U>\n    where\n        F: [const] FnOnce(T) -> Option<U> + [const] Destruct,\n    {\n        match self {\n            Some(x) => f(x),\n            None => None,\n        }\n    }",
+  "callees": [
+    "1409818791154466704612867106911261757513",
+    "99835071136844477394667148890151411684",
+    "73694171442177138896992135977130617471",
+    "60640990905534157415573489096491372167",
+    "48057160372141403285748093406035979284"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "file": "core/src/net/ip_addr.rs",
+  "name": "net::ip_addr::IpAddr::as_octets",
+  "hash": "1495495502822479886359201545694468405",
+  "hash_direct": "4824577701669451774290745322478500437",
+  "src": "pub const fn as_octets(&self) -> &[u8] {\n        match self {\n            IpAddr::V4(ip) => ip.as_octets().as_slice(),\n            IpAddr::V6(ip) => ip.as_octets().as_slice(),\n        }\n    }",
+  "callees": [
+    "146669840126901206616519284521937587235",
+    "1038304001001644417614363839742016129844",
+    "101223278979454058814661964633516097013",
+    "1382459460223033583013039461048493254282"
+  ]
+}

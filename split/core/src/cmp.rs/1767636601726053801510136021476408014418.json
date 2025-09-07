@@ -1,0 +1,10 @@
+{
+  "file": "core/src/cmp.rs",
+  "name": "cmp::Ordering::is_eq",
+  "hash": "1767636601726053801510136021476408014418",
+  "hash_direct": "123847246634352250395232184084696327271",
+  "src": "pub const fn is_eq(self) -> bool {\n        // All the `is_*` methods are implemented as comparisons against zero\n        // to follow how clang's libcxx implements their equivalents in\n        // <https://github.com/llvm/llvm-project/blob/60486292b79885b7800b082754153202bef5b1f0/libcxx/include/__compare/is_eq.h#L23-L28>\n\n        self.as_raw() == 0\n    }",
+  "callees": [
+    "1599087357710868766316850218022372470465"
+  ]
+}

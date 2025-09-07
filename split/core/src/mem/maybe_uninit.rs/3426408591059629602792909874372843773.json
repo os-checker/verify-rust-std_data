@@ -1,0 +1,7 @@
+{
+  "file": "core/src/mem/maybe_uninit.rs",
+  "name": "core::mem::MaybeUninit::<usize>::as_mut_ptr",
+  "hash": "3426408591059629602792909874372843773",
+  "hash_direct": "143089188159352146353911594850106659919",
+  "src": "pub const fn as_mut_ptr(&mut self) -> *mut T {\n        // `MaybeUninit` and `ManuallyDrop` are both `repr(transparent)` so we can cast the pointer.\n        self as *mut _ as *mut T\n    }"
+}

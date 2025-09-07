@@ -1,0 +1,10 @@
+{
+  "file": "core/src/cell.rs",
+  "name": "cell::Cell::<isize>::get",
+  "hash": "181459135049542270967525728160549041358",
+  "hash_direct": "62262955399229395566007535810687170034",
+  "src": "pub const fn get(&self) -> T {\n        // SAFETY: This can cause data races if called from a separate thread,\n        // but `Cell` is `!Sync` so this won't happen.\n        unsafe { *self.value.get() }\n    }",
+  "callees": [
+    "26323195953183351819190758839605041253"
+  ]
+}

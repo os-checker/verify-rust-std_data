@@ -1,0 +1,11 @@
+{
+  "file": "core/src/array/mod.rs",
+  "name": "array::<impl ops::index::Index<ops::range::RangeFull> for [u8; 2]>::index",
+  "hash": "156309768665920941653391349113709693952",
+  "hash_direct": "424322064048998304410950680623626445171",
+  "src": "fn index(&self, index: I) -> &Self::Output {\n        Index::index(self as &[T], index)\n    }",
+  "callees": [
+    "1651753401677281722313447763458672335160",
+    "910215929279850608310217878469243036782"
+  ]
+}

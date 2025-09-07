@@ -1,0 +1,8 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "ptr::drop_in_place::<fn(net::ip_addr::Ipv6Addr) -> net::ip_addr::IpAddr {net::ip_addr::IpAddr::V6}>",
+  "hash": "27496536871808184834786490667593170267",
+  "hash_direct": "121025280759309103714296644658549705871",
+  "inst_kind": "\"Shim\"",
+  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
+}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/dec2flt/slow.rs",
-  "name": "num::dec2flt::slow::parse_long_mantissa::<f16>::{closure#0}",
-  "hash": "25066433517134487581508346525222335228",
-  "hash_direct": "656151308905184158414809953354068681422",
-  "src": "|n| {\n        if n < NUM_POWERS { POWERS[n] as usize } else { MAX_SHIFT }\n    }"
-}

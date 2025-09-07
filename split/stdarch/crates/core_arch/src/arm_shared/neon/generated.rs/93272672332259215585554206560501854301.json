@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vmax_f16",
+  "hash": "93272672332259215585554206560501854301",
+  "hash_direct": "105696181967610108193916250862024415697",
+  "src": "pub fn vmax_f16(a: float16x4_t, b: float16x4_t) -> float16x4_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(target_arch = \"arm\", link_name = \"llvm.arm.neon.vmaxs.v4f16\")]\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.fmax.v4f16\"\n        )]\n        fn _vmax_f16(a: float16x4_t, b: float16x4_t) -> float16x4_t;\n    }\n    unsafe { _vmax_f16(a, b) }\n}"
+}

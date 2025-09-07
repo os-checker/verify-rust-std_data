@@ -1,0 +1,21 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/lib.rs",
+  "name": "kani::any_raw_array::<u8, 1000>",
+  "hash": "18213844825933355921878498080763130853",
+  "hash_direct": "762671626346802238414695402049260119537",
+  "src": "unsafe fn any_raw_array<T: Copy, const N: usize>() -> [T; N] {\n            any_raw::<[T; N]>()\n        }",
+  "macro_backtrace": [
+    {
+      "callsite": "kani_core::kani_intrinsics!()",
+      "defsite": "macro_rules! kani_intrinsics"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ],
+  "callees": [
+    "103434074175627293695406460382526219214",
+    "1323146257813502495415348321098687913364"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/slice/iter.rs",
+  "name": "<core::slice::Iter<'_, u8> as core::clone::Clone>::clone",
+  "hash": "113494568376785499059610829557911420851",
+  "hash_direct": "10194891677627877585685086971197965040",
+  "src": "fn clone(&self) -> Self {\n        Iter { ptr: self.ptr, end_or_len: self.end_or_len, _marker: self._marker }\n    }"
+}

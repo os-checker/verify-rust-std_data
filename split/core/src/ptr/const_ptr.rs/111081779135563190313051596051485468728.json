@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/const_ptr.rs",
+  "name": "ptr::const_ptr::<impl *const task::wake::Context<'_>>::cast::<()>",
+  "hash": "111081779135563190313051596051485468728",
+  "hash_direct": "75769338176933977413751370084740086199",
+  "src": "pub const fn cast<U>(self) -> *const U {\n        self as _\n    }"
+}

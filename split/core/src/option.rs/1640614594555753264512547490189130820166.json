@@ -1,0 +1,10 @@
+{
+  "file": "core/src/option.rs",
+  "name": "option::Option::<net::ip_addr::Ipv4Addr>::is_none",
+  "hash": "1640614594555753264512547490189130820166",
+  "hash_direct": "999818935755706826817181657195435876498",
+  "src": "pub const fn is_none(&self) -> bool {\n        !self.is_some()\n    }",
+  "callees": [
+    "1228861356962981362017558334874027428207"
+  ]
+}

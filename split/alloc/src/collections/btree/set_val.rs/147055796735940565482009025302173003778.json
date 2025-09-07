@@ -1,0 +1,13 @@
+{
+  "file": "alloc/src/collections/btree/set_val.rs",
+  "name": "<collections::btree::set_val::SetValZST as core::cmp::Eq>::assert_receiver_is_total_eq",
+  "hash": "147055796735940565482009025302173003778",
+  "hash_direct": "2041529055717595087794526693032841143",
+  "src": "Eq",
+  "macro_backtrace": [
+    {
+      "callsite": "Eq",
+      "defsite": "pub macro Eq"
+    }
+  ]
+}

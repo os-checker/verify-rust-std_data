@@ -1,7 +1,0 @@
-{
-  "file": "core/src/ascii/ascii_char.rs",
-  "name": "ascii::ascii_char::AsciiChar::to_u8",
-  "hash": "69096650655933370018490819206330130737",
-  "hash_direct": "50920757884651437645431478852975073",
-  "src": "pub const fn to_u8(self) -> u8 {\n        self as u8\n    }"
-}

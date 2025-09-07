@@ -1,0 +1,11 @@
+{
+  "file": "core/src/ascii/ascii_char.rs",
+  "name": "ascii::ascii_char::AsciiChar::is_hexdigit",
+  "hash": "755968284434454300011982005433871110650",
+  "hash_direct": "114776811258737347102190292051919762304",
+  "src": "pub const fn is_hexdigit(self) -> bool {\n        self.to_u8().is_ascii_hexdigit()\n    }",
+  "callees": [
+    "211389067699639933614636457746408448112",
+    "127639827262063024413401410675802177964"
+  ]
+}

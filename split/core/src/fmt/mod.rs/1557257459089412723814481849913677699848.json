@@ -1,7 +1,0 @@
-{
-  "file": "core/src/fmt/mod.rs",
-  "name": "fmt::Formatter::<'_>::write_str",
-  "hash": "1557257459089412723814481849913677699848",
-  "hash_direct": "103996996451817600317762280383978659940",
-  "src": "pub fn write_str(&mut self, data: &str) -> Result {\n        self.buf.write_str(data)\n    }"
-}

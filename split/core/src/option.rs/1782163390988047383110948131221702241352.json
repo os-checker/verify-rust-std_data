@@ -1,0 +1,11 @@
+{
+  "file": "core/src/option.rs",
+  "name": "core::option::Option::<usize>::is_none_or::<{closure@<core::iter::Map<core::char::DecodeUtf16<core::iter::Map<core::iter::Copied<core::slice::Iter<'_, [u8; 2]>>, fn([u8; core::::num::{impl#7}::from_le_bytes::{constant#0}]) -> u16 {core::num::<impl u16>::from_le_bytes}>>, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/alloc/src/string.rs:835:26: 835:29}> as core::iter::Iterator>::collect<string::String>::{closure#0}}>",
+  "hash": "1782163390988047383110948131221702241352",
+  "hash_direct": "135857746077751922325394432764408962457",
+  "src": "pub const fn is_none_or(self, f: impl [const] FnOnce(T) -> bool + [const] Destruct) -> bool {\n        match self {\n            None => true,\n            Some(x) => f(x),\n        }\n    }",
+  "callees": [
+    "48852609575130628213782418149199422154",
+    "1574031245876013532016365463904838394201"
+  ]
+}

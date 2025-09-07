@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f32.rs",
+  "name": "f32::<impl f32>::recip",
+  "hash": "9562761177431460092250536071346692966",
+  "hash_direct": "140046539380447606912393160653468593825",
+  "src": "pub const fn recip(self) -> f32 {\n        1.0 / self\n    }"
+}

@@ -1,0 +1,17 @@
+{
+  "file": "alloc/src/vec/is_zero.rs",
+  "name": "<core::option::Option<core::num::NonZero<i32>> as vec::is_zero::IsZero>::is_zero",
+  "hash": "49591647048648773565875025356167778818",
+  "hash_direct": "71136547144801322647747577710078148452",
+  "src": "fn is_zero(&self) -> bool {\n                self.is_none()\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "impl_is_zero_option_of_nonzero_int!(u8, u16, u32, u64, u128, usize, i8, i16, i32, i64, i128, isize)",
+      "defsite": "macro_rules! impl_is_zero_option_of_nonzero_int {\n    ($($t:ty),+ $(,)?) => {$(\n        unsafe impl IsZero for Option<NonZero<$t>> {\n            #[inline]\n            fn is_zero(&self) -> bool {\n                self.is_none()\n            }\n        }\n    )+};\n}"
+    }
+  ],
+  "callees": [
+    "1012301327474720480114990849432412145858",
+    "255920821946336486015285038336431893484"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vzipq_s32",
+  "hash": "532120170261403995017523563709526435270",
+  "hash_direct": "593124419365818497817964899737413684102",
+  "src": "pub fn vzipq_s32(a: int32x4_t, b: int32x4_t) -> int32x4x2_t {\n    unsafe {\n        let a0: int32x4_t = simd_shuffle!(a, b, [0, 4, 1, 5]);\n        let b0: int32x4_t = simd_shuffle!(a, b, [2, 6, 3, 7]);\n        transmute((a0, b0))\n    }\n}"
+}

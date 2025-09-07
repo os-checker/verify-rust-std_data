@@ -1,7 +1,0 @@
-{
-  "file": "core/src/slice/rotate.rs",
-  "name": "slice::rotate::const_min",
-  "hash": "109762422826292596208835821473067171312",
-  "hash_direct": "1400892066568686139813079330430887194734",
-  "src": "const fn const_min(left: usize, right: usize) -> usize {\n    if right < left { right } else { left }\n}"
-}

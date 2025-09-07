@@ -1,0 +1,7 @@
+{
+  "file": "core/src/bstr/mod.rs",
+  "name": "<bstr::ByteStr as ops::deref::Deref>::deref",
+  "hash": "101319228368328878952503548032782179129",
+  "hash_direct": "78125395538936546833611891849897703364",
+  "src": "fn deref(&self) -> &[u8] {\n        &self.0\n    }"
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<core::iter::Map<core::char::DecodeUtf16<core::iter::Cloned<core::slice::Iter<'_, u16>>>, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/alloc/src/string.rs:763:18: 763:21}> as core::iter::Iterator>::collect::<string::String>::{closure#0}",
+  "hash": "59195974582678752971366722447173955857",
+  "hash_direct": "7154236916239289238187573975147631114",
+  "src": "|high| high >= hint.0"
+}

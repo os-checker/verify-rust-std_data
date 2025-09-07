@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/adapters/take_while.rs",
+  "name": "core::iter::TakeWhile::<core::slice::Iter<'_, u8>, {closure@<core::slice::EscapeAscii<'_> as core::fmt::Display>::fmt::{closure#0}}>::new",
+  "hash": "530446085913962050715607663286764666110",
+  "hash_direct": "128015977966643719124507754698080569354",
+  "src": "pub(in crate::iter) fn new(iter: I, predicate: P) -> TakeWhile<I, P> {\n        TakeWhile { iter, flag: false, predicate }\n    }"
+}

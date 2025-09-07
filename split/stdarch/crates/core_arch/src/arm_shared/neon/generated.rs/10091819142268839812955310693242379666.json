@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vabal_u16",
+  "hash": "10091819142268839812955310693242379666",
+  "hash_direct": "44932956788668659789327527102485554390",
+  "src": "pub fn vabal_u16(a: uint32x4_t, b: uint16x4_t, c: uint16x4_t) -> uint32x4_t {\n    let d: uint16x4_t = vabd_u16(b, c);\n    unsafe { simd_add(a, simd_cast(d)) }\n}",
+  "callees": [
+    "1019676351335500968113459272340922868550"
+  ]
+}

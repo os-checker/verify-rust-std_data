@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f16.rs",
+  "name": "f16::<impl f16>::max",
+  "hash": "152711517664294811573978637764540359704",
+  "hash_direct": "16269570168332704006004710618822878736",
+  "src": "pub const fn max(self, other: f16) -> f16 {\n        intrinsics::maxnumf16(self, other)\n    }"
+}

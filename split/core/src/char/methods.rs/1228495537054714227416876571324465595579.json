@@ -1,7 +1,0 @@
-{
-  "file": "core/src/char/methods.rs",
-  "name": "char::methods::<impl char>::is_ascii_lowercase",
-  "hash": "1228495537054714227416876571324465595579",
-  "hash_direct": "152465710394684751313455477545571968683",
-  "src": "pub const fn is_ascii_lowercase(&self) -> bool {\n        matches!(*self, 'a'..='z')\n    }"
-}

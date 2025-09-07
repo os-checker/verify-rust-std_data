@@ -1,7 +1,0 @@
-{
-  "file": "core/src/net/socket_addr.rs",
-  "name": "net::socket_addr::SocketAddrV6::set_flowinfo",
-  "hash": "1498130051479737662516297259380940806499",
-  "hash_direct": "34914378011061267084902530559043093373",
-  "src": "pub const fn set_flowinfo(&mut self, new_flowinfo: u32) {\n        self.flowinfo = new_flowinfo;\n    }"
-}

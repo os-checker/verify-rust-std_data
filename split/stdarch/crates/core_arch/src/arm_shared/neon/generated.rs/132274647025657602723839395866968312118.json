@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vld1q_u16_x2",
+  "hash": "132274647025657602723839395866968312118",
+  "hash_direct": "51635641901619469164031990671139318661",
+  "src": "pub unsafe fn vld1q_u16_x2(a: *const u16) -> uint16x8x2_t {\n    transmute(vld1q_s16_x2(transmute(a)))\n}",
+  "callees": [
+    "49436337375772454055433338644009255665"
+  ]
+}

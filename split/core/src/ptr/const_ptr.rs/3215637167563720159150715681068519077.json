@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/const_ptr.rs",
+  "name": "ptr::const_ptr::<impl *const f16>::cast::<core_arch::arm_shared::neon::float16x8_t>",
+  "hash": "3215637167563720159150715681068519077",
+  "hash_direct": "8469017278467107470448063460828342456",
+  "src": "pub const fn cast<U>(self) -> *const U {\n        self as _\n    }"
+}

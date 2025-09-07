@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vpaddq_u64",
+  "hash": "1459966071881798510611985722357527620027",
+  "hash_direct": "174355685324369947328095851003039798606",
+  "src": "pub fn vpaddq_u64(a: uint64x2_t, b: uint64x2_t) -> uint64x2_t {\n    unsafe { transmute(vpaddq_s64(transmute(a), transmute(b))) }\n}",
+  "callees": [
+    "410922925350808802912734947588859839595"
+  ]
+}

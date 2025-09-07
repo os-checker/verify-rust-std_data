@@ -1,0 +1,7 @@
+{
+  "file": "core/src/intrinsics/mod.rs",
+  "name": "intrinsics::const_deallocate",
+  "hash": "1716839607280736659111087943435754666502",
+  "hash_direct": "1141231184220981566016515380394818904180",
+  "src": "pub const unsafe fn const_deallocate(_ptr: *mut u8, _size: usize, _align: usize) {\n    // Runtime NOP\n}"
+}

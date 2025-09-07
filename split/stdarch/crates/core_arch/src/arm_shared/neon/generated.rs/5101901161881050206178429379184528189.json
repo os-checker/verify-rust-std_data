@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vsubhn_s16",
+  "hash": "5101901161881050206178429379184528189",
+  "hash_direct": "63538925264475960475811090189573296835",
+  "src": "pub fn vsubhn_s16(a: int16x8_t, b: int16x8_t) -> int8x8_t {\n    let c: i16x8 = i16x8::new(8, 8, 8, 8, 8, 8, 8, 8);\n    unsafe { simd_cast(simd_shr(simd_sub(a, b), transmute(c))) }\n}",
+  "callees": [
+    "178331252813110166185713917162474368452"
+  ]
+}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/nonzero.rs",
-  "name": "num::nonzero::NonZero::<u16>::new",
-  "hash": "49609232254555517704451217902640884931",
-  "hash_direct": "1720881653184120817314239180017421261531",
-  "src": "pub const fn new(n: T) -> Option<Self> {\n        // SAFETY: Memory layout optimization guarantees that `Option<NonZero<T>>` has\n        //         the same layout and size as `T`, with `0` representing `None`.\n        unsafe { intrinsics::transmute_unchecked(n) }\n    }"
-}

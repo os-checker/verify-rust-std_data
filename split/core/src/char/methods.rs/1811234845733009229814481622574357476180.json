@@ -1,7 +1,0 @@
-{
-  "file": "core/src/char/methods.rs",
-  "name": "char::methods::<impl char>::UNICODE_VERSION",
-  "hash": "1811234845733009229814481622574357476180",
-  "hash_direct": "441537350503189687812680220839413810661",
-  "src": "pub const UNICODE_VERSION: (u8, u8, u8) = crate::unicode::UNICODE_VERSION;"
-}

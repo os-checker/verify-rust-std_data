@@ -1,0 +1,36 @@
+{
+  "file": "core/src/num/nonzero.rs",
+  "name": "num::nonzero::verify::nonzero_check_from_mut_unchecked_isize",
+  "hash": "70045512948989007511882379779217046989",
+  "hash_direct": "67121605676428705315720967219768864980",
+  "proof_kind": "\"Contract\"",
+  "attrs": [
+    "#[kanitool::proof_for_contract = \"NonZero :: < isize > :: from_mut_unchecked\"]\n"
+  ],
+  "src": "pub fn $harness_name() {\n                let mut x: $t = kani::any();\n                unsafe {\n                    <$nonzero_type>::from_mut_unchecked(&mut x);\n                }\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "nonzero_check_from_mut_unchecked!(\n        isize,\n        core::num::NonZeroIsize,\n        nonzero_check_from_mut_unchecked_isize\n    )",
+      "defsite": "macro_rules! nonzero_check_from_mut_unchecked {\n        ($t:ty, $nonzero_type:ty, $harness_name:ident) => {\n            #[kani::proof_for_contract(NonZero::<$t>::from_mut_unchecked)]\n            pub fn $harness_name() {\n                let mut x: $t = kani::any();\n                unsafe {\n                    <$nonzero_type>::from_mut_unchecked(&mut x);\n                }\n            }\n        };\n    }"
+    }
+  ],
+  "callees": [
+    "657233684967198358216702776602192178354",
+    "33771070424635483588856444226591787667",
+    "553011341845714869315790910594223124816",
+    "358620174323338396611603643182787424802",
+    "7526082995824335814466973137466280467",
+    "94914104760281050619309015460405350950",
+    "258820287469578611817448591488600041899",
+    "17421822894816687532325615181214565887",
+    "4528261778328326191815036021346989172",
+    "171133084419849328463835735457755866160",
+    "1543398408749976878316084532201856102415",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "478753423337745817613297159272845606672",
+    "155153474486390080563625681618511924687",
+    "1708732276122796246611406153483958539116",
+    "947925086076299054212540105876296384566"
+  ]
+}

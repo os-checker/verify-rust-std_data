@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vcmla_f16",
+  "hash": "236508173763177623616974381202045078817",
+  "hash_direct": "11584104596111208775634080637908499626",
+  "src": "pub fn vcmla_f16(a: float16x4_t, b: float16x4_t, c: float16x4_t) -> float16x4_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.vcmla.rot0.v4f16\"\n        )]\n        fn _vcmla_f16(a: float16x4_t, b: float16x4_t, c: float16x4_t) -> float16x4_t;\n    }\n    unsafe { _vcmla_f16(a, b, c) }\n}"
+}

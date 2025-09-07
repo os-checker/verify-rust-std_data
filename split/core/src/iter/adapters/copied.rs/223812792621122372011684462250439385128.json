@@ -1,0 +1,14 @@
+{
+  "file": "core/src/iter/adapters/copied.rs",
+  "name": "<iter::adapters::copied::Copied<slice::iter::Iter<'_, u8>> as iter::traits::exact_size::ExactSizeIterator>::is_empty",
+  "hash": "223812792621122372011684462250439385128",
+  "hash_direct": "942281986392124041817445880447318008979",
+  "src": "fn is_empty(&self) -> bool {\n        self.it.is_empty()\n    }",
+  "callees": [
+    "187482952606822645712460029589708661523",
+    "126818845945534382313624863669169238336",
+    "115305965424151250157684815253829770404",
+    "53569486981529370344752868158650318763",
+    "40475467465485356803055194649459745290"
+  ]
+}

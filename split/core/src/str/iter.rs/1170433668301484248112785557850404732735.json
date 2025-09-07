@@ -1,0 +1,16 @@
+{
+  "file": "core/src/str/iter.rs",
+  "name": "<str::iter::SplitInternal<'_, char> as clone::Clone>::clone",
+  "hash": "1170433668301484248112785557850404732735",
+  "hash_direct": "136016537168059191327987043206269731665",
+  "src": "fn clone(&self) -> Self {\n                let $s = self;\n                $e\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "derive_pattern_clone! {\n    clone SplitInternal\n    with |s| SplitInternal { matcher: s.matcher.clone(), ..*s }\n}",
+      "defsite": "macro_rules! derive_pattern_clone {\n    (clone $t:ident with |$s:ident| $e:expr) => {\n        impl<'a, P> Clone for $t<'a, P>\n        where\n            P: Pattern<Searcher<'a>: Clone>,\n        {\n            fn clone(&self) -> Self {\n                let $s = self;\n                $e\n            }\n        }\n    };\n}"
+    }
+  ],
+  "callees": [
+    "315630434331767906312982525253326286758"
+  ]
+}

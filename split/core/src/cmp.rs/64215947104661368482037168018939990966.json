@@ -1,0 +1,11 @@
+{
+  "file": "core/src/cmp.rs",
+  "name": "<isize as cmp::Ord>::min",
+  "hash": "64215947104661368482037168018939990966",
+  "hash_direct": "108347936734002464387896679434498170500",
+  "src": "fn min(self, other: Self) -> Self\n    where\n        Self: Sized,\n    {\n        if other < self { other } else { self }\n    }",
+  "callees": [
+    "177500186369641598656848646804160604843",
+    "117014696476680834917588000132400021701"
+  ]
+}

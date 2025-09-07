@@ -1,0 +1,10 @@
+{
+  "file": "core/src/net/ip_addr.rs",
+  "name": "net::ip_addr::Ipv4Addr::to_ipv6_compatible",
+  "hash": "1137454815818594248212153291962011273751",
+  "hash_direct": "10842695528439071438691733670501119318",
+  "src": "pub const fn to_ipv6_compatible(&self) -> Ipv6Addr {\n        let [a, b, c, d] = self.octets();\n        Ipv6Addr { octets: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, a, b, c, d] }\n    }",
+  "callees": [
+    "594101468346705865516588037143272085631"
+  ]
+}

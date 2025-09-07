@@ -1,0 +1,7 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "fmt::FormattingOptions::get_precision",
+  "hash": "172140117843934269071100695499597161982",
+  "hash_direct": "1753766479052876023113890241018687454287",
+  "src": "pub const fn get_precision(&self) -> Option<u16> {\n        if self.flags & flags::PRECISION_FLAG != 0 { Some(self.precision) } else { None }\n    }"
+}

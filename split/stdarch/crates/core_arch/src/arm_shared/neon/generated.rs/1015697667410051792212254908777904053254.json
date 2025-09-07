@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vmull_s32",
+  "hash": "1015697667410051792212254908777904053254",
+  "hash_direct": "675937848350441942713824138516185798959",
+  "src": "pub fn vmull_s32(a: int32x2_t, b: int32x2_t) -> int64x2_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.smull.v2i64\"\n        )]\n        #[cfg_attr(target_arch = \"arm\", link_name = \"llvm.arm.neon.vmulls.v2i64\")]\n        fn _vmull_s32(a: int32x2_t, b: int32x2_t) -> int64x2_t;\n    }\n    unsafe { _vmull_s32(a, b) }\n}"
+}

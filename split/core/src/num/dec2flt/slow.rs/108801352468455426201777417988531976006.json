@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/dec2flt/slow.rs",
+  "name": "num::dec2flt::slow::parse_long_mantissa::POWERS",
+  "hash": "108801352468455426201777417988531976006",
+  "hash_direct": "382416608998797771610335434521454768070",
+  "src": "const POWERS: [u8; 19] =\n        [0, 3, 6, 9, 13, 16, 19, 23, 26, 29, 33, 36, 39, 43, 46, 49, 53, 56, 59];"
+}

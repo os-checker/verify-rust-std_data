@@ -1,0 +1,13 @@
+{
+  "file": "core/src/net/ip_addr.rs",
+  "name": "<net::ip_addr::Ipv6MulticastScope as cmp::PartialEq>::eq",
+  "hash": "183878618757968736835492036060161220830",
+  "hash_direct": "1029583627369727188116533547876252033250",
+  "src": "PartialEq",
+  "macro_backtrace": [
+    {
+      "callsite": "PartialEq",
+      "defsite": "pub macro PartialEq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

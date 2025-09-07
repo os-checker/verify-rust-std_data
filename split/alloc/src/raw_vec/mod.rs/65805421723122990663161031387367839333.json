@@ -1,0 +1,10 @@
+{
+  "file": "alloc/src/raw_vec/mod.rs",
+  "name": "raw_vec::ZERO_CAP",
+  "hash": "65805421723122990663161031387367839333",
+  "hash_direct": "67350908191200669591130763724117930633",
+  "src": "const ZERO_CAP: Cap = unsafe { Cap::new_unchecked(0) };",
+  "callees": [
+    "116120406547640733017584320872607374165"
+  ]
+}

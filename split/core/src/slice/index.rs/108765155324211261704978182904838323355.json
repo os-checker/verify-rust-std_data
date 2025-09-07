@@ -1,0 +1,11 @@
+{
+  "file": "core/src/slice/index.rs",
+  "name": "<ops::range::Range<usize> as slice::index::SliceIndex<[u8]>>::get_mut",
+  "hash": "108765155324211261704978182904838323355",
+  "hash_direct": "62041821055593532936254519791588800051",
+  "src": "fn get_mut(self, slice: &mut [T]) -> Option<&mut [T]> {\n        if let Some(new_len) = usize::checked_sub(self.end, self.start)\n            && self.end <= slice.len()\n        {\n            // SAFETY: `self` is checked to be valid and in bounds above.\n            unsafe { Some(&mut *get_offset_len_mut_noubcheck(slice, self.start, new_len)) }\n        } else {\n            None\n        }\n    }",
+  "callees": [
+    "36263650381921031236374006938891928812",
+    "25047678897068037619032084817793238854"
+  ]
+}

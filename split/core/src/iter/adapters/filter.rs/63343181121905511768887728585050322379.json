@@ -1,7 +1,0 @@
-{
-  "file": "core/src/iter/adapters/filter.rs",
-  "name": "iter::adapters::filter::Filter::<slice::iter::Iter<'_, u8>, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/str/count.rs:136:21: 136:29}>::new",
-  "hash": "63343181121905511768887728585050322379",
-  "hash_direct": "1813154983039797281012433805250492640126",
-  "src": "pub(in crate::iter) fn new(iter: I, predicate: P) -> Filter<I, P> {\n        Filter { iter, predicate }\n    }"
-}

@@ -1,0 +1,15 @@
+{
+  "file": "core/src/option.rs",
+  "name": "option::Option::<&ascii::EscapeDefault>::map_or::<(usize, option::Option<usize>), for<'a> fn(&'a ascii::EscapeDefault) -> (usize, option::Option<usize>) {<ascii::EscapeDefault as iter::traits::iterator::Iterator>::size_hint}>",
+  "hash": "28091098844089929357541601129582722961",
+  "hash_direct": "1629257567721629487111750371586641828361",
+  "src": "pub const fn map_or<U, F>(self, default: U, f: F) -> U\n    where\n        F: [const] FnOnce(T) -> U + [const] Destruct,\n        U: [const] Destruct,\n    {\n        match self {\n            Some(t) => f(t),\n            None => default,\n        }\n    }",
+  "callees": [
+    "713158921368867215913697166763151774877",
+    "119539198841178170095714608677850051781",
+    "974372577780349938310606371856678076291",
+    "142984366010334309368557797310168805026",
+    "66631883600104442883671173806470690647",
+    "1821417094175913611857455485828062904"
+  ]
+}

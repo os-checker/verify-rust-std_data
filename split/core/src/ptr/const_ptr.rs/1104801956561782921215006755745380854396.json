@@ -1,7 +1,0 @@
-{
-  "file": "core/src/ptr/const_ptr.rs",
-  "name": "ptr::const_ptr::<impl *const i32>::cast::<u8>",
-  "hash": "1104801956561782921215006755745380854396",
-  "hash_direct": "90697310543918904627656908161314549239",
-  "src": "pub const fn cast<U>(self) -> *const U {\n        self as _\n    }"
-}

@@ -1,0 +1,10 @@
+{
+  "file": "core/src/net/ip_addr.rs",
+  "name": "net::ip_addr::Ipv4Addr::is_multicast",
+  "hash": "907088996340716512213527345379247401613",
+  "hash_direct": "66472595038844383146692734538608066329",
+  "src": "pub const fn is_multicast(&self) -> bool {\n        self.octets()[0] >= 224 && self.octets()[0] <= 239\n    }",
+  "callees": [
+    "594101468346705865516588037143272085631"
+  ]
+}

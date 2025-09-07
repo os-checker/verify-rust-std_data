@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/f16.rs",
-  "name": "f16::<impl f16>::EXP_MASK",
-  "hash": "1600507798057427645718218866074658025329",
-  "hash_direct": "75008689821924181394784254608223862589",
-  "src": "pub(crate) const EXP_MASK: u16 = 0x7c00;"
-}

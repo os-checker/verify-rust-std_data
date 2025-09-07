@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/ffi/c_str.rs",
+  "name": "ffi::c_str::NulError::nul_position",
+  "hash": "10118584373129676124928735949742995879",
+  "hash_direct": "126014953900805465544966791860809232158",
+  "src": "pub fn nul_position(&self) -> usize {\n        self.0\n    }"
+}

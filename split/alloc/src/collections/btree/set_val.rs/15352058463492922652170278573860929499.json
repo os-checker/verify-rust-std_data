@@ -1,0 +1,13 @@
+{
+  "file": "alloc/src/collections/btree/set_val.rs",
+  "name": "<collections::btree::set_val::SetValZST as core::clone::Clone>::clone",
+  "hash": "15352058463492922652170278573860929499",
+  "hash_direct": "112419161852343847618058987328159221906",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone"
+    }
+  ]
+}

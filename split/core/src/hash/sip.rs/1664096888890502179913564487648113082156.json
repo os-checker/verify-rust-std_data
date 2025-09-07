@@ -1,0 +1,13 @@
+{
+  "file": "core/src/hash/sip.rs",
+  "name": "<hash::sip::Hasher<hash::sip::Sip13Rounds> as hash::Hasher>::finish",
+  "hash": "1664096888890502179913564487648113082156",
+  "hash_direct": "1513162134391317788417702590826209463700",
+  "src": "fn finish(&self) -> u64 {\n        let mut state = self.state;\n\n        let b: u64 = ((self.length as u64 & 0xff) << 56) | self.tail;\n\n        state.v3 ^= b;\n        S::c_rounds(&mut state);\n        state.v0 ^= b;\n\n        state.v2 ^= 0xff;\n        S::d_rounds(&mut state);\n\n        state.v0 ^ state.v1 ^ state.v2 ^ state.v3\n    }",
+  "callees": [
+    "1408849998106221437312010081050212752208",
+    "1577912354554179303811572792880245515661",
+    "53851555420899302082148520003293977402",
+    "87170636661664677068004457186813404325"
+  ]
+}

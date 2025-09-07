@@ -1,0 +1,7 @@
+{
+  "file": "core/src/bstr/mod.rs",
+  "name": "bstr::ByteStr::as_bytes",
+  "hash": "63517001485807668946963868364618806680",
+  "hash_direct": "104974212409491891988887157015877784077",
+  "src": "pub fn as_bytes(&self) -> &[u8] {\n        &self.0\n    }"
+}

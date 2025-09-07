@@ -1,8 +1,0 @@
-{
-  "file": "core/src/ptr/mod.rs",
-  "name": "ptr::drop_in_place::<str::lossy::Debug<'_>>",
-  "hash": "3773190174119293518743354451954376496",
-  "hash_direct": "253106713627756477114161785035028973059",
-  "inst_kind": "\"Shim\"",
-  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
-}

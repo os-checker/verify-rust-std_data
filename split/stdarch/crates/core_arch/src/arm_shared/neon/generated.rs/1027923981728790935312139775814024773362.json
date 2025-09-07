@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vld3_f32",
-  "hash": "1027923981728790935312139775814024773362",
-  "hash_direct": "138818705662855549792995597476102722923",
-  "src": "pub unsafe fn vld3_f32(a: *const f32) -> float32x2x3_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.ld3.v2f32.p0\"\n        )]\n        fn _vld3_f32(ptr: *const float32x2_t) -> float32x2x3_t;\n    }\n    _vld3_f32(a as _)\n}"
-}

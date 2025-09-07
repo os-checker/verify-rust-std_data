@@ -1,0 +1,10 @@
+{
+  "file": "core/src/option.rs",
+  "name": "core::option::Option::<u16>::take",
+  "hash": "59381380145263198599196460478579534630",
+  "hash_direct": "94678381805205500957771639919168857342",
+  "src": "pub const fn take(&mut self) -> Option<T> {\n        // FIXME(const-hack) replace `mem::replace` by `mem::take` when the latter is const ready\n        mem::replace(self, None)\n    }",
+  "callees": [
+    "155954784201796491474491810208151633466"
+  ]
+}

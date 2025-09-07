@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/const_ptr.rs",
+  "name": "ptr::const_ptr::<impl *const task::wake::Context<'_>>::expose_provenance",
+  "hash": "19358776827359137639210950763115736100",
+  "hash_direct": "23314121666265474215535545980325994893",
+  "src": "pub fn expose_provenance(self) -> usize {\n        self.cast::<()>() as usize\n    }",
+  "callees": [
+    "111081779135563190313051596051485468728"
+  ]
+}

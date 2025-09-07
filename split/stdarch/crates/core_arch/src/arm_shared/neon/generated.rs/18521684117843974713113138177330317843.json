@@ -1,0 +1,11 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vmulq_n_s32",
+  "hash": "18521684117843974713113138177330317843",
+  "hash_direct": "17411817574963129706318199017130698064",
+  "src": "pub fn vmulq_n_s32(a: int32x4_t, b: i32) -> int32x4_t {\n    unsafe { simd_mul(a, vdupq_n_s32(b)) }\n}",
+  "callees": [
+    "1016264294484690053017086841990338818891",
+    "138777255977800502345155023873349908460"
+  ]
+}

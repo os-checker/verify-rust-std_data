@@ -1,0 +1,7 @@
+{
+  "file": "core/src/io/borrowed_buf.rs",
+  "name": "io::borrowed_buf::BorrowedBuf::<'_>::unfilled",
+  "hash": "593277923249439296715231252637199548312",
+  "hash_direct": "223135772505233798618050984975480138612",
+  "src": "pub fn unfilled<'this>(&'this mut self) -> BorrowedCursor<'this> {\n        BorrowedCursor {\n            // SAFETY: we never assign into `BorrowedCursor::buf`, so treating its\n            // lifetime covariantly is safe.\n            buf: unsafe {\n                mem::transmute::<&'this mut BorrowedBuf<'data>, &'this mut BorrowedBuf<'this>>(self)\n            },\n        }\n    }"
+}

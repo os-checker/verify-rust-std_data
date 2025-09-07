@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/adapters/map.rs",
+  "name": "core::iter::Map::<core::str::Utf8Chunks<'_>, {closure@<core::bstr::ByteStr as core::fmt::Display>::fmt::{closure#0}}>::new",
+  "hash": "1020454228050152141217372626523014194536",
+  "hash_direct": "1580249948978508649412487241539890062089",
+  "src": "pub(in crate::iter) fn new(iter: I, f: F) -> Map<I, F> {\n        Map { iter, f }\n    }"
+}

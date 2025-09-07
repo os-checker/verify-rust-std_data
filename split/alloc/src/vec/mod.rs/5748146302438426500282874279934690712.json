@@ -1,0 +1,20 @@
+{
+  "file": "alloc/src/vec/mod.rs",
+  "name": "<vec::Vec<u8> as core::ops::Drop>::drop",
+  "hash": "5748146302438426500282874279934690712",
+  "hash_direct": "549600469374924497114977664925397155867",
+  "src": "fn drop(&mut self) {\n        unsafe {\n            // use drop for [T]\n            // use a raw slice to refer to the elements of the vector as weakest necessary type;\n            // could avoid questions of validity in certain cases\n            ptr::drop_in_place(ptr::slice_from_raw_parts_mut(self.as_mut_ptr(), self.len))\n        }\n        // RawVec handles deallocation\n    }",
+  "callees": [
+    "90550506073072508079683710598133024545",
+    "74918953193090028864687354296516779254",
+    "98314984002883387434164956346329117805",
+    "84241016865684247829461060909253808174",
+    "1564307727506637093914401847968137384026",
+    "62397834040325720748013844045765185",
+    "71918472924532911689935626826717918785",
+    "181717373102152254895109628399379607332",
+    "1451197840112163405012358816355909731614",
+    "1482905829916877089011245213746887628087",
+    "25317084132739389914014022964198366772"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ascii/ascii_char.rs",
+  "name": "ascii::ascii_char::AsciiChar::from_u8",
+  "hash": "1263943423012824645318408613777809385475",
+  "hash_direct": "36648252151852210168347397284091319352",
+  "src": "pub const fn from_u8(b: u8) -> Option<Self> {\n        if b <= 127 {\n            // SAFETY: Just checked that `b` is in-range\n            Some(unsafe { Self::from_u8_unchecked(b) })\n        } else {\n            None\n        }\n    }",
+  "callees": [
+    "15551977551413036531158252289522839939"
+  ]
+}

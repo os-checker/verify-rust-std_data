@@ -1,0 +1,7 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "fmt::Formatter::<'a>::write_formatted_parts::ZEROES",
+  "hash": "621992021433765602315923652256781941348",
+  "hash_direct": "116352131320440856431804700806233412463",
+  "src": "const ZEROES: &str = // 64 zeroes\n                        \"0000000000000000000000000000000000000000000000000000000000000000\";"
+}

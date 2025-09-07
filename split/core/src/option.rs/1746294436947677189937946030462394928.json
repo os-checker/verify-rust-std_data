@@ -1,0 +1,11 @@
+{
+  "file": "core/src/option.rs",
+  "name": "option::Option::<char>::and_then::<(), {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/net/parser.rs:83:36: 83:39}>",
+  "hash": "1746294436947677189937946030462394928",
+  "hash_direct": "58629793539246088516393951644552461108",
+  "src": "pub const fn and_then<U, F>(self, f: F) -> Option<U>\n    where\n        F: [const] FnOnce(T) -> Option<U> + [const] Destruct,\n    {\n        match self {\n            Some(x) => f(x),\n            None => None,\n        }\n    }",
+  "callees": [
+    "110726971597223997024686319373567305334",
+    "1286862196194913854212159893884499789894"
+  ]
+}

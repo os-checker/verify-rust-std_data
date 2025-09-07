@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vclsq_u16",
+  "hash": "94650337868232638266070617313805741005",
+  "hash_direct": "395806830084535077717289114996835046769",
+  "src": "pub fn vclsq_u16(a: uint16x8_t) -> int16x8_t {\n    unsafe { vclsq_s16(transmute(a)) }\n}",
+  "callees": [
+    "2358283529130610516886276592161097066"
+  ]
+}

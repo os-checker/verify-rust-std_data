@@ -1,0 +1,10 @@
+{
+  "file": "core/src/option.rs",
+  "name": "<option::Item<char::EscapeDebug> as iter::traits::exact_size::ExactSizeIterator>::len",
+  "hash": "13034654745545134522760268294272540782",
+  "hash_direct": "163169183026440946515808666167480133991",
+  "src": "fn len(&self) -> usize {\n        self.opt.len()\n    }",
+  "callees": [
+    "106290951634049928979107449778510088264"
+  ]
+}

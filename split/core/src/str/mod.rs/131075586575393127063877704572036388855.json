@@ -1,0 +1,16 @@
+{
+  "file": "core/src/str/mod.rs",
+  "name": "str::<impl str>::split_ascii_whitespace",
+  "hash": "131075586575393127063877704572036388855",
+  "hash_direct": "25925624994887201074857185054875430573",
+  "src": "pub fn split_ascii_whitespace(&self) -> SplitAsciiWhitespace<'_> {\n        let inner =\n            self.as_bytes().split(IsAsciiWhitespace).filter(BytesIsNotEmpty).map(UnsafeBytesToStr);\n        SplitAsciiWhitespace { inner }\n    }",
+  "callees": [
+    "50737745564239866305884494395481617365",
+    "1619414174058401936114339402651229699775",
+    "53054579558193182667424473915143913078",
+    "13129992197533381549772940595326614622",
+    "1620715675676160482912715389483334865609",
+    "757338661614852928414324045999897978803",
+    "137147026445318887422604340055542353314"
+  ]
+}

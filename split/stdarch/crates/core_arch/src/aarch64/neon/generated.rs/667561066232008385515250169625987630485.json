@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vcgtq_f64",
+  "hash": "667561066232008385515250169625987630485",
+  "hash_direct": "1598052318063842788111074101532566047899",
+  "src": "pub fn vcgtq_f64(a: float64x2_t, b: float64x2_t) -> uint64x2_t {\n    unsafe { simd_gt(a, b) }\n}"
+}

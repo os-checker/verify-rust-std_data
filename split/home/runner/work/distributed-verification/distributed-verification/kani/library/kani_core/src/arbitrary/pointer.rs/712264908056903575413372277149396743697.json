@@ -1,0 +1,24 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/arbitrary/pointer.rs",
+  "name": "kani::arbitrary_ptr::PointerGenerator::<160>::any_alloc_status::<u32>::{closure#1}",
+  "hash": "712264908056903575413372277149396743697",
+  "hash_direct": "510900753966218365917064510482578024891",
+  "src": "|b: &usize| *b < core::mem::size_of::<T>()",
+  "macro_backtrace": [
+    {
+      "callsite": "kani_core::ptr_generator!()",
+      "defsite": "macro_rules! ptr_generator"
+    },
+    {
+      "callsite": "kani_core::generate_arbitrary!()",
+      "defsite": "macro_rules! generate_arbitrary"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ],
+  "callees": [
+    "99603598099498707762068107842012164044"
+  ]
+}

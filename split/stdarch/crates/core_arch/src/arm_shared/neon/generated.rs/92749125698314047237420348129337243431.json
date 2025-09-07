@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vld1q_dup_f32",
+  "hash": "92749125698314047237420348129337243431",
+  "hash_direct": "217588385914112079211906837184152054562",
+  "src": "pub unsafe fn vld1q_dup_f32(ptr: *const f32) -> float32x4_t {\n    transmute(f32x4::splat(*ptr))\n}",
+  "callees": [
+    "1179941982088870779710029592123573452281"
+  ]
+}

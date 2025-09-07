@@ -1,0 +1,7 @@
+{
+  "file": "core/src/net/ip_addr.rs",
+  "name": "<net::ip_addr::Ipv4Addr as ops::bit::Not>::not",
+  "hash": "115979366230571205841273096360743512900",
+  "hash_direct": "1533475253786982148213171921690899073044",
+  "src": "fn not(mut self) -> Ipv4Addr {\n        let mut idx = 0;\n        while idx < 4 {\n            self.octets[idx] = !self.octets[idx];\n            idx += 1;\n        }\n        self\n    }"
+}

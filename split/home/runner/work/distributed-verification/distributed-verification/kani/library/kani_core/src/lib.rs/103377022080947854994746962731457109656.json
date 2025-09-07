@@ -1,0 +1,20 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/lib.rs",
+  "name": "kani::cover",
+  "hash": "103377022080947854994746962731457109656",
+  "hash_direct": "11132372717347646134968148163818207213",
+  "attrs": [
+    "#[kanitool::fn_marker = \"CoverHook\"]\n"
+  ],
+  "src": "pub const fn cover(_cond: bool, _msg: &'static str) {}",
+  "macro_backtrace": [
+    {
+      "callsite": "kani_core::kani_intrinsics!()",
+      "defsite": "macro_rules! kani_intrinsics"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ]
+}

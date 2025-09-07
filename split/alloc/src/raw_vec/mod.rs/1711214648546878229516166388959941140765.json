@@ -1,0 +1,10 @@
+{
+  "file": "alloc/src/raw_vec/mod.rs",
+  "name": "raw_vec::new_cap::<u8>",
+  "hash": "1711214648546878229516166388959941140765",
+  "hash_direct": "1274027444495925759412218525140270481614",
+  "src": "unsafe fn new_cap<T>(cap: usize) -> Cap {\n    if T::IS_ZST { ZERO_CAP } else { unsafe { Cap::new_unchecked(cap) } }\n}",
+  "callees": [
+    "116120406547640733017584320872607374165"
+  ]
+}

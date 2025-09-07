@@ -1,0 +1,7 @@
+{
+  "file": "core/src/intrinsics/mod.rs",
+  "name": "intrinsics::verify::should_succeed_i8_to_bool::{closure#0}",
+  "hash": "9900420550496008415280059235125361647",
+  "hash_direct": "13765234944778636342513466735292518134",
+  "src": "|x| *x as u8 <= 1"
+}

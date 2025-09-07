@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vcvtah_s16_f16",
+  "hash": "694133252452510583712998142451907722709",
+  "hash_direct": "107179430850056722174511585558365697857",
+  "src": "pub fn vcvtah_s16_f16(a: f16) -> i16 {\n    vcvtah_s32_f16(a) as i16\n}",
+  "callees": [
+    "517726990816426557115969429204650471704"
+  ]
+}

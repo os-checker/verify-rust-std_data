@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ops/index_range.rs",
+  "name": "ops::index_range::IndexRange::zero_to",
+  "hash": "97912592448095803783191936410021855138",
+  "hash_direct": "178635605438943027107953514617604017456",
+  "src": "pub(crate) const fn zero_to(end: usize) -> Self {\n        IndexRange { start: 0, end }\n    }"
+}

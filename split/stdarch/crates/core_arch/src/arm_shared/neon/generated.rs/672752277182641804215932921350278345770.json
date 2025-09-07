@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vpmax_s32",
-  "hash": "672752277182641804215932921350278345770",
-  "hash_direct": "337821713941826404417462848471684105314",
-  "src": "pub fn vpmax_s32(a: int32x2_t, b: int32x2_t) -> int32x2_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.smaxp.v2i32\"\n        )]\n        #[cfg_attr(target_arch = \"arm\", link_name = \"llvm.arm.neon.vpmaxs.v2i32\")]\n        fn _vpmax_s32(a: int32x2_t, b: int32x2_t) -> int32x2_t;\n    }\n    unsafe { _vpmax_s32(a, b) }\n}"
-}

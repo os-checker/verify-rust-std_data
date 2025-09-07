@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "ptr::non_null::NonNull::<dyn ptr::non_null::verify::SampleTrait>::cast::<()>",
+  "hash": "1063942825835430085371960351939095467",
+  "hash_direct": "165877523431443756556901297134570036642",
+  "src": "pub const fn cast<U>(self) -> NonNull<U> {\n        // SAFETY: `self` is a `NonNull` pointer which is necessarily non-null\n        unsafe { NonNull { pointer: self.as_ptr() as *mut U } }\n    }",
+  "callees": [
+    "1421586360994945200613621895681246859380"
+  ]
+}

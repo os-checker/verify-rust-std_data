@@ -1,0 +1,7 @@
+{
+  "file": "core/src/array/equality.rs",
+  "name": "<i16 as array::equality::SpecArrayEq<i16, 2>>::spec_eq",
+  "hash": "1196216507268326934613558473576905110142",
+  "hash_direct": "869731238476049270911079896885413384350",
+  "src": "fn spec_eq(a: &[T; N], b: &[U; N]) -> bool {\n        // SAFETY: Arrays are compared element-wise, and don't add any padding\n        // between elements, so when the elements are `BytewiseEq`, we can\n        // compare the entire array at once.\n        unsafe { crate::intrinsics::raw_eq(a, crate::mem::transmute(b)) }\n    }"
+}

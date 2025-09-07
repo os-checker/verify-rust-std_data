@@ -1,0 +1,11 @@
+{
+  "file": "core/src/sync/atomic.rs",
+  "name": "<sync::atomic::AtomicBool as default::Default>::default",
+  "hash": "77194354903380178842099972487523234876",
+  "hash_direct": "128250672463580827488200583246010915030",
+  "src": "fn default() -> Self {\n        Self::new(false)\n    }",
+  "callees": [
+    "352564018354059629112702651348753878264",
+    "33523035405396149479057659157941778464"
+  ]
+}

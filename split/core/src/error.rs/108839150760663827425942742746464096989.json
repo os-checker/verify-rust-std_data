@@ -1,0 +1,10 @@
+{
+  "file": "core/src/error.rs",
+  "name": "<boxed::convert::<impl core::convert::From<string::String> for boxed::Box<(dyn core::error::Error + core::marker::Send + core::marker::Sync + 'a)>>::from::StringError as core::error::Error>::type_id",
+  "hash": "108839150760663827425942742746464096989",
+  "hash_direct": "14722629985649101012159200580971570420",
+  "src": "fn type_id(&self, _: private::Internal) -> TypeId\n    where\n        Self: 'static,\n    {\n        TypeId::of::<Self>()\n    }",
+  "callees": [
+    "888087554848715421013160318144955270807"
+  ]
+}

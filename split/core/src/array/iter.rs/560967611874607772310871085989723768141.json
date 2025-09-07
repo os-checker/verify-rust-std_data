@@ -1,0 +1,13 @@
+{
+  "file": "core/src/array/iter.rs",
+  "name": "<array::iter::IntoIter<char, 3> as iter::traits::iterator::Iterator>::size_hint",
+  "hash": "560967611874607772310871085989723768141",
+  "hash_direct": "859179477891918105610248851311440399232",
+  "src": "fn size_hint(&self) -> (usize, Option<usize>) {\n        self.unsize().size_hint()\n    }",
+  "callees": [
+    "160015999347892744175447182102286336315",
+    "32856721389587393765410372249245060288",
+    "600398260818235753915238264022397061362",
+    "975615807404907599012293873143289411403"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "file": "core/src/ops/index_range.rs",
+  "name": "ops::index_range::IndexRange::next_back_unchecked::{closure#0}::REENTRY",
+  "hash": "115262765648786946509634814718293710388",
+  "hash_direct": "614351882147394971616477595296195351361",
+  "attrs": [
+    "#[kanitool::recursion_tracker]\n"
+  ],
+  "src": "#[cfg_attr(kani, kani::modifies(self))]",
+  "macro_backtrace": [
+    {
+      "callsite": "#[cfg_attr(kani, kani::modifies(self))]",
+      "defsite": "pub fn modifies(attr: TokenStream, item: TokenStream) -> TokenStream"
+    }
+  ]
+}

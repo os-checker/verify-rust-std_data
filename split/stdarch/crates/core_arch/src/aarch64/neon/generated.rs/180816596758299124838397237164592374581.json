@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
-  "name": "core_arch::aarch64::neon::generated::vzip1_u8",
-  "hash": "180816596758299124838397237164592374581",
-  "hash_direct": "629296261214064287716430654601163202012",
-  "src": "pub fn vzip1_u8(a: uint8x8_t, b: uint8x8_t) -> uint8x8_t {\n    unsafe { simd_shuffle!(a, b, [0, 8, 1, 9, 2, 10, 3, 11]) }\n}"
-}

@@ -1,0 +1,11 @@
+{
+  "file": "core/src/iter/adapters/flatten.rs",
+  "name": "iter::adapters::flatten::FlattenCompat::<iter::adapters::map::Map<str::iter::Chars<'_>, str::CharEscapeUnicode>, char::EscapeUnicode>::new",
+  "hash": "1484880921424587263010001546494793789907",
+  "hash_direct": "339668481783947635211527299095316441680",
+  "src": "fn new(iter: I) -> FlattenCompat<I, U> {\n        FlattenCompat { iter: iter.fuse(), frontiter: None, backiter: None }\n    }",
+  "callees": [
+    "120055028693809498297991237983472485782",
+    "296123834422660629511577594909104600219"
+  ]
+}

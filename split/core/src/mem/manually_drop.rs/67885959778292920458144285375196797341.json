@@ -1,0 +1,7 @@
+{
+  "file": "core/src/mem/manually_drop.rs",
+  "name": "<core::mem::ManuallyDrop<boxed::Box<str>> as core::ops::Deref>::deref",
+  "hash": "67885959778292920458144285375196797341",
+  "hash_direct": "1559634790928568934812115701884395373946",
+  "src": "fn deref(&self) -> &T {\n        &self.value\n    }"
+}

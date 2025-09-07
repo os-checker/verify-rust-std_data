@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/dec2flt/table.rs",
-  "name": "num::dec2flt::table::N_POWERS_OF_FIVE",
-  "hash": "78826077819878465918668779747520499217",
-  "hash_direct": "275719297589930413411748555035271505708",
-  "src": "pub(super) const N_POWERS_OF_FIVE: usize =\n    (LARGEST_POWER_OF_FIVE - SMALLEST_POWER_OF_FIVE + 1) as usize;"
-}

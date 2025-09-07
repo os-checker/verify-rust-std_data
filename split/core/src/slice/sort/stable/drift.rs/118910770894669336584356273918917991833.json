@@ -1,0 +1,7 @@
+{
+  "file": "core/src/slice/sort/stable/drift.rs",
+  "name": "slice::sort::stable::drift::DriftsortRun::len",
+  "hash": "118910770894669336584356273918917991833",
+  "hash_direct": "35833233364905950982550292372569505069",
+  "src": "fn len(self) -> usize {\n        self.0 >> 1\n    }"
+}

@@ -1,0 +1,10 @@
+{
+  "file": "core/src/cmp.rs",
+  "name": "cmp::impls::<impl cmp::PartialOrd for &u32>::le",
+  "hash": "101028881738991100326600871830208692356",
+  "hash_direct": "6499724933611451829376205877544329898",
+  "src": "fn le(&self, other: &&B) -> bool {\n            PartialOrd::le(*self, *other)\n        }",
+  "callees": [
+    "73823948922687090493490572363404488201"
+  ]
+}

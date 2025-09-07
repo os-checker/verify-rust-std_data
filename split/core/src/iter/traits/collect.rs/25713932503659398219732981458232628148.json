@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/traits/collect.rs",
+  "name": "<core::iter::Enumerate<core::slice::Iter<'_, core::fmt::rt::Argument<'_>>> as core::iter::IntoIterator>::into_iter",
+  "hash": "25713932503659398219732981458232628148",
+  "hash_direct": "120001705440708815611957225982499540214",
+  "src": "fn into_iter(self) -> I {\n        self\n    }"
+}

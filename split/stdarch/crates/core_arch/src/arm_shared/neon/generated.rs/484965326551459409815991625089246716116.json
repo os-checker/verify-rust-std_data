@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vaddw_s8",
-  "hash": "484965326551459409815991625089246716116",
-  "hash_direct": "410210985128135707812001329561708900073",
-  "src": "pub fn vaddw_s8(a: int16x8_t, b: int8x8_t) -> int16x8_t {\n    unsafe {\n        let b: int16x8_t = simd_cast(b);\n        simd_add(a, b)\n    }\n}"
-}

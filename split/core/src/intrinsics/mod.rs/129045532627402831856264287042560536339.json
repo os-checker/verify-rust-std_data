@@ -1,0 +1,7 @@
+{
+  "file": "core/src/intrinsics/mod.rs",
+  "name": "intrinsics::const_make_global",
+  "hash": "129045532627402831856264287042560536339",
+  "hash_direct": "142351876525200950994592207504410839790",
+  "src": "pub const unsafe fn const_make_global(ptr: *mut u8) -> *const u8 {\n    // const eval overrides this function; at runtime, it is a NOP.\n    ptr\n}"
+}

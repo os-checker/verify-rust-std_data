@@ -1,0 +1,14 @@
+{
+  "file": "core/src/slice/index.rs",
+  "name": "<ops::range::RangeInclusive<usize> as slice::index::SliceIndex<[u8]>>::get_mut",
+  "hash": "2042809908158696713855859648387505544",
+  "hash_direct": "341307760567753757715140902651954412754",
+  "src": "fn get_mut(self, slice: &mut [T]) -> Option<&mut [T]> {\n        if *self.end() == usize::MAX { None } else { self.into_slice_range().get_mut(slice) }\n    }",
+  "callees": [
+    "36263650381921031236374006938891928812",
+    "7046932878042447149117030751365395178",
+    "146790947205902300248608006721818154078",
+    "108765155324211261704978182904838323355",
+    "25047678897068037619032084817793238854"
+  ]
+}

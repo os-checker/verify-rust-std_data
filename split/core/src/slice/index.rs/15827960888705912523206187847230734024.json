@@ -1,0 +1,10 @@
+{
+  "file": "core/src/slice/index.rs",
+  "name": "slice::index::<impl ops::index::Index<ops::range::RangeFull> for [intrinsics::verify::u8_struct]>::index",
+  "hash": "15827960888705912523206187847230734024",
+  "hash_direct": "759101470165645505810173279105744241886",
+  "src": "fn index(&self, index: I) -> &I::Output {\n        index.index(self)\n    }",
+  "callees": [
+    "48112906418175292143881407383950432674"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/vec/mod.rs",
+  "name": "vec::verify::verify_swap_remove::{closure#1}",
+  "hash": "127546015887733833829691349863978072862",
+  "hash_direct": "51200848523404255985378095295372259895",
+  "src": "|&x: &usize| x < original_len - 1"
+}

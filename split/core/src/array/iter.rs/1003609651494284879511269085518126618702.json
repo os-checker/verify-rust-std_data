@@ -1,0 +1,11 @@
+{
+  "file": "core/src/array/iter.rs",
+  "name": "<array::iter::IntoIter<char, 3> as iter::traits::exact_size::ExactSizeIterator>::len",
+  "hash": "1003609651494284879511269085518126618702",
+  "hash_direct": "996898683553248572416772128375691636334",
+  "src": "fn len(&self) -> usize {\n        self.inner.len()\n    }",
+  "callees": [
+    "747234038101549700711091780759010802194",
+    "975615807404907599012293873143289411403"
+  ]
+}

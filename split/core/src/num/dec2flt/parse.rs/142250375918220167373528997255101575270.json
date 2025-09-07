@@ -1,0 +1,11 @@
+{
+  "file": "core/src/num/dec2flt/parse.rs",
+  "name": "num::dec2flt::parse::parse_8digits",
+  "hash": "142250375918220167373528997255101575270",
+  "hash_direct": "725541799856285551317230045668595479090",
+  "src": "fn parse_8digits(mut v: u64) -> u64 {\n    const MASK: u64 = 0x0000_00FF_0000_00FF;\n    const MUL1: u64 = 0x000F_4240_0000_0064;\n    const MUL2: u64 = 0x0000_2710_0000_0001;\n    v -= 0x3030_3030_3030_3030;\n    v = (v * 10) + (v >> 8); // will not overflow, fits in 63 bits\n    let v1 = (v & MASK).wrapping_mul(MUL1);\n    let v2 = ((v >> 16) & MASK).wrapping_mul(MUL2);\n    ((v1.wrapping_add(v2) >> 32) as u32) as u64\n}",
+  "callees": [
+    "87170636661664677068004457186813404325",
+    "397719984256995366213973233668163909125"
+  ]
+}

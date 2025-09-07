@@ -1,0 +1,7 @@
+{
+  "file": "core/src/net/ip_addr.rs",
+  "name": "<net::ip_addr::Ipv4Addr as fmt::Display>::fmt::LONGEST_IPV4_ADDR",
+  "hash": "1719317316681662321714145662155440426415",
+  "hash_direct": "1835639131798280455613092686421660917665",
+  "src": "const LONGEST_IPV4_ADDR: &str = \"255.255.255.255\";"
+}

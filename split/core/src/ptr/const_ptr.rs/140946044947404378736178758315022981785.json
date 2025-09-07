@@ -1,7 +1,0 @@
-{
-  "file": "core/src/ptr/const_ptr.rs",
-  "name": "ptr::const_ptr::<impl cmp::PartialEq for *const ()>::eq",
-  "hash": "140946044947404378736178758315022981785",
-  "hash_direct": "1365175684296083006217965552348301436273",
-  "src": "fn eq(&self, other: &*const T) -> bool {\n        *self == *other\n    }"
-}

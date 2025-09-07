@@ -1,0 +1,16 @@
+{
+  "file": "core/src/str/error.rs",
+  "name": "<str::error::ParseBoolError as fmt::Debug>::fmt",
+  "hash": "105064979721075820055291050266077231405",
+  "hash_direct": "1736941976688137491914158002169364908824",
+  "src": "Debug",
+  "macro_backtrace": [
+    {
+      "callsite": "Debug",
+      "defsite": "pub macro Debug($item:item) {\n        /* compiler built-in */\n    }"
+    }
+  ],
+  "callees": [
+    "243839084150888952911908111539685994713"
+  ]
+}

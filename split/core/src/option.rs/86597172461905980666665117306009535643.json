@@ -1,0 +1,10 @@
+{
+  "file": "core/src/option.rs",
+  "name": "option::Option::<num::nonzero::NonZero<i128>>::ok_or::<num::error::ParseIntError>",
+  "hash": "86597172461905980666665117306009535643",
+  "hash_direct": "1257547134660190650812517078734738756702",
+  "src": "pub const fn ok_or<E: [const] Destruct>(self, err: E) -> Result<T, E> {\n        match self {\n            Some(v) => Ok(v),\n            None => Err(err),\n        }\n    }",
+  "callees": [
+    "130901246165120824748367805826666659537"
+  ]
+}

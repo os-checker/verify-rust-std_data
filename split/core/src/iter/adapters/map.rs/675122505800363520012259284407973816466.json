@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/adapters/map.rs",
+  "name": "core::iter::Map::<core::slice::Iter<'_, &str>, {closure@core::fmt::Arguments<'_>::estimated_capacity::{closure#0}}>::new",
+  "hash": "675122505800363520012259284407973816466",
+  "hash_direct": "7064679801983680268759755880864463673",
+  "src": "pub(in crate::iter) fn new(iter: I, f: F) -> Map<I, F> {\n        Map { iter, f }\n    }"
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/adapters/take_while.rs",
+  "name": "iter::adapters::take_while::TakeWhile::<slice::iter::Iter<'_, u8>, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/slice/ascii.rs:301:50: 301:55}>::new",
+  "hash": "1534623948648406003410888081873219019105",
+  "hash_direct": "18401861823506233911405134656517608728",
+  "src": "pub(in crate::iter) fn new(iter: I, predicate: P) -> TakeWhile<I, P> {\n        TakeWhile { iter, flag: false, predicate }\n    }"
+}

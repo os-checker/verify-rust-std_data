@@ -1,0 +1,11 @@
+{
+  "file": "core/src/net/socket_addr.rs",
+  "name": "<net::socket_addr::SocketAddrV4 as fmt::Display>::fmt::{constant#0}",
+  "hash": "1034320014900990898416917365022462866118",
+  "hash_direct": "18775252147739201841610922318877606151",
+  "src": "{ LONGEST_IPV4_SOCKET_ADDR.len() }",
+  "callees": [
+    "137147026445318887422604340055542353314",
+    "852298530973108873212161851321200820382"
+  ]
+}

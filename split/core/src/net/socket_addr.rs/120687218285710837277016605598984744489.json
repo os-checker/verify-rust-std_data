@@ -1,0 +1,7 @@
+{
+  "file": "core/src/net/socket_addr.rs",
+  "name": "net::socket_addr::SocketAddrV4::set_ip",
+  "hash": "120687218285710837277016605598984744489",
+  "hash_direct": "1586676128142096971816360629574749330758",
+  "src": "pub const fn set_ip(&mut self, new_ip: Ipv4Addr) {\n        self.ip = new_ip;\n    }"
+}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/mem/maybe_uninit.rs",
-  "name": "mem::maybe_uninit::MaybeUninit::<(i32, f64, bool)>::array_assume_init::<5>",
-  "hash": "903946236398176082217398655658973144873",
-  "hash_direct": "548657258034182297811632586276748193323",
-  "src": "pub const unsafe fn array_assume_init<const N: usize>(array: [Self; N]) -> [T; N] {\n        // SAFETY:\n        // * The caller guarantees that all elements of the array are initialized\n        // * `MaybeUninit<T>` and T are guaranteed to have the same layout\n        // * `MaybeUninit` does not drop, so there are no double-frees\n        // And thus the conversion is safe\n        unsafe {\n            intrinsics::assert_inhabited::<[T; N]>();\n            intrinsics::transmute_unchecked(array)\n        }\n    }"
-}

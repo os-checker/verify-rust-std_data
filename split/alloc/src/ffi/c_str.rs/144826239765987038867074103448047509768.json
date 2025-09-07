@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/ffi/c_str.rs",
+  "name": "ffi::c_str::IntoStringError::into_cstring",
+  "hash": "144826239765987038867074103448047509768",
+  "hash_direct": "9823740390809483538259646200236154833",
+  "src": "pub fn into_cstring(self) -> CString {\n        self.inner\n    }"
+}

@@ -1,0 +1,13 @@
+{
+  "file": "core/src/alloc/mod.rs",
+  "name": "<alloc::AllocError as clone::Clone>::clone",
+  "hash": "1029666806849078043410114883872574058051",
+  "hash_direct": "121219106366995588252088822251320871930",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

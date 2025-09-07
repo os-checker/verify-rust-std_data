@@ -1,0 +1,16 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "ptr::non_null::NonNull::<T>::copy_from::kani_contract_mode",
+  "hash": "507198948908353757513227939039787288299",
+  "hash_direct": "26611954092623094527563796790787421848",
+  "attrs": [
+    "#[kanitool::fn_marker = \"kani_contract_mode\"]\n"
+  ],
+  "src": "kani::modifies(NonNull::slice_from_raw_parts(self, count).as_ptr())",
+  "macro_backtrace": [
+    {
+      "callsite": "kani::modifies(NonNull::slice_from_raw_parts(self, count).as_ptr())",
+      "defsite": "pub fn modifies(attr: TokenStream, item: TokenStream) -> TokenStream"
+    }
+  ]
+}

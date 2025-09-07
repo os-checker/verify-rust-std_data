@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vfmlalq_high_f16",
+  "hash": "973003365691777232012789436777246345994",
+  "hash_direct": "748854027414354026315408505754500378482",
+  "src": "pub fn vfmlalq_high_f16(r: float32x4_t, a: float16x8_t, b: float16x8_t) -> float32x4_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.fmlal2.v4f32.v8f16\"\n        )]\n        fn _vfmlalq_high_f16(r: float32x4_t, a: float16x8_t, b: float16x8_t) -> float32x4_t;\n    }\n    unsafe { _vfmlalq_high_f16(r, a, b) }\n}"
+}

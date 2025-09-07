@@ -1,0 +1,16 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "ptr::non_null::NonNull::<T>::replace::kani_force_fn_once::<i32, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/ptr/non_null.rs:1347:22: 1347:51}>",
+  "hash": "1761830643301577772712244638151577111754",
+  "hash_direct": "101816259645403546618017700129962938566",
+  "attrs": [
+    "#[kanitool::fn_marker = \"kani_force_fn_once\"]\n"
+  ],
+  "src": "kani::modifies(self.as_ptr())",
+  "macro_backtrace": [
+    {
+      "callsite": "kani::modifies(self.as_ptr())",
+      "defsite": "pub fn modifies(attr: TokenStream, item: TokenStream) -> TokenStream"
+    }
+  ]
+}

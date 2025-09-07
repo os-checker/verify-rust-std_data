@@ -1,0 +1,12 @@
+{
+  "file": "alloc/src/alloc.rs",
+  "name": "alloc::alloc",
+  "hash": "1376541346679052968213576567834425860228",
+  "hash_direct": "7742399287363744149095468191529854694",
+  "src": "pub unsafe fn alloc(layout: Layout) -> *mut u8 {\n    unsafe {\n        // Make sure we don't accidentally allow omitting the allocator shim in\n        // stable code until it is actually stabilized.\n        __rust_no_alloc_shim_is_unstable_v2();\n\n        __rust_alloc(layout.size(), layout.align())\n    }\n}",
+  "callees": [
+    "12355321507198182179923507819259328874",
+    "1099899350342654162615874749245636043676",
+    "41567241620038406215851091758143153711"
+  ]
+}

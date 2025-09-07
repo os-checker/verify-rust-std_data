@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vsubl_s32",
+  "hash": "93381143681095936097443794526470726147",
+  "hash_direct": "475237403540827784111959816720613783398",
+  "src": "pub fn vsubl_s32(a: int32x2_t, b: int32x2_t) -> int64x2_t {\n    unsafe {\n        let c: int64x2_t = simd_cast(a);\n        let d: int64x2_t = simd_cast(b);\n        simd_sub(c, d)\n    }\n}"
+}

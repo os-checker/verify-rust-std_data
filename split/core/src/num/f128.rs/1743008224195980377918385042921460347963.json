@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f128.rs",
+  "name": "f128::<impl f128>::algebraic_mul",
+  "hash": "1743008224195980377918385042921460347963",
+  "hash_direct": "226620415231670096415261736323326188107",
+  "src": "pub const fn algebraic_mul(self, rhs: f128) -> f128 {\n        intrinsics::fmul_algebraic(self, rhs)\n    }"
+}

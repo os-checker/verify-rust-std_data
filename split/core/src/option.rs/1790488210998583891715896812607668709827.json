@@ -1,0 +1,13 @@
+{
+  "file": "core/src/option.rs",
+  "name": "option::Option::<iter::adapters::map::Map<slice::iter::Iter<'_, u8>, slice::ascii::EscapeByte>>::map::<slice::iter::Iter<'_, u8>, fn(iter::adapters::map::Map<slice::iter::Iter<'_, u8>, slice::ascii::EscapeByte>) -> slice::iter::Iter<'_, u8> {iter::adapters::map::Map::<slice::iter::Iter<'_, u8>, slice::ascii::EscapeByte>::into_inner}>",
+  "hash": "1790488210998583891715896812607668709827",
+  "hash_direct": "98758722188090880312832898195052759320",
+  "src": "pub const fn map<U, F>(self, f: F) -> Option<U>\n    where\n        F: [const] FnOnce(T) -> U + [const] Destruct,\n    {\n        match self {\n            Some(x) => Some(f(x)),\n            None => None,\n        }\n    }",
+  "callees": [
+    "1116911413346382852214170228308336582431",
+    "114120447049337472979690274931981116841",
+    "1083367282478149755416615095462637421966",
+    "159284183347205119811078318988933119498"
+  ]
+}

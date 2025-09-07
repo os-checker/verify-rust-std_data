@@ -1,0 +1,19 @@
+{
+  "file": "core/src/slice/index.rs",
+  "name": "<ops::range::RangeTo<usize> as slice::index::SliceIndex<[mem::maybe_uninit::MaybeUninit<intrinsics::verify::u8_struct>]>>::get_unchecked_mut",
+  "hash": "1790385976705434098917192690558636145922",
+  "hash_direct": "14965175828609639195824428676703298498",
+  "src": "unsafe fn get_unchecked_mut(self, slice: *mut [T]) -> *mut [T] {\n        // SAFETY: the caller has to uphold the safety contract for `get_unchecked_mut`.\n        unsafe { (0..self.end).get_unchecked_mut(slice) }\n    }",
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "17421822894816687532325615181214565887",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "478753423337745817613297159272845606672",
+    "117839043595602071092302075474421838080",
+    "815489690503789224214704027539756055588",
+    "84532076108880187964956392448527465598",
+    "49836348863379043565142781412039366248",
+    "84580457401506839910573102725714505987"
+  ]
+}

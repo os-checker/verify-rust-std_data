@@ -1,7 +1,0 @@
-{
-  "file": "core/src/ptr/non_null.rs",
-  "name": "<ptr::non_null::verify::SampleStruct as ptr::non_null::verify::SampleTrait>::get_value",
-  "hash": "591699405320758359141447911141790709",
-  "hash_direct": "169113172857323898153709333806401417658",
-  "src": "fn get_value(&self) -> i32 {\n            self.value\n        }"
-}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/traits/collect.rs",
+  "name": "<core::str::Utf8Chunks<'_> as core::iter::IntoIterator>::into_iter",
+  "hash": "1736937733030445098914854486514422611610",
+  "hash_direct": "175599242208783086908361191399565484217",
+  "src": "fn into_iter(self) -> I {\n        self\n    }"
+}

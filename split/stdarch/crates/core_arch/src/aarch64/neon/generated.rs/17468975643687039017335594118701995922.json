@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
-  "name": "core_arch::aarch64::neon::generated::vminnmv_f16",
-  "hash": "17468975643687039017335594118701995922",
-  "hash_direct": "557169870855282296617254218788853823753",
-  "src": "pub fn vminnmv_f16(a: float16x4_t) -> f16 {\n    unsafe { simd_reduce_min(a) }\n}"
-}

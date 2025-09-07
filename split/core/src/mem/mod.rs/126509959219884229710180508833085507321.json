@@ -1,0 +1,7 @@
+{
+  "file": "core/src/mem/mod.rs",
+  "name": "mem::size_of::<ptr::alignment::Alignment>",
+  "hash": "126509959219884229710180508833085507321",
+  "hash_direct": "1742806210513345541415238642061415756273",
+  "src": "pub const fn size_of<T>() -> usize {\n    intrinsics::size_of::<T>()\n}"
+}

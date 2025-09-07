@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vcalt_f16",
+  "hash": "1191611281899446681113962815662332600180",
+  "hash_direct": "135031130482844358964723247105507323404",
+  "src": "pub fn vcalt_f16(a: float16x4_t, b: float16x4_t) -> uint16x4_t {\n    vcagt_f16(b, a)\n}",
+  "callees": [
+    "334327691697980417115743229877063505366"
+  ]
+}

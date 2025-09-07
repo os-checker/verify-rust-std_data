@@ -1,0 +1,16 @@
+{
+  "file": "core/src/num/dec2flt/lemire.rs",
+  "name": "num::dec2flt::lemire::compute_product_approx",
+  "hash": "8528349699866341554252821359689409088",
+  "hash_direct": "1499474999716672644910151519784271077731",
+  "src": "fn compute_product_approx(q: i64, w: u64, precision: usize) -> (u64, u64) {\n    debug_assert!(q >= SMALLEST_POWER_OF_FIVE as i64);\n    debug_assert!(q <= LARGEST_POWER_OF_FIVE as i64);\n    debug_assert!(precision <= 64);\n\n    let mask = if precision < 64 {\n        0xFFFF_FFFF_FFFF_FFFF_u64 >> precision\n    } else {\n        0xFFFF_FFFF_FFFF_FFFF_u64\n    };\n\n    // 5^q < 2^64, then the multiplication always provides an exact value.\n    // That means whenever we need to round ties to even, we always have\n    // an exact value.\n    let index = (q - SMALLEST_POWER_OF_FIVE as i64) as usize;\n    let (lo5, hi5) = POWER_OF_FIVE_128[index];\n    // Only need one multiplication as long as there is 1 zero but\n    // in the explicit mantissa bits, +1 for the hidden bit, +1 to\n    // determine the rounding direction, +1 for if the computed\n    // product has a leading zero.\n    let (mut first_lo, mut first_hi) = full_multiplication(w, lo5);\n    if first_hi & mask == mask {\n        // Need to do a second multiplication to get better precision\n        // for the lower product. This will always be exact\n        // where q is < 55, since 5^55 < 2^128. If this wraps,\n        // then we need to round up the hi product.\n        let (_, second_hi) = full_multiplication(w, hi5);\n        first_lo = first_lo.wrapping_add(second_hi);\n        if second_hi > first_lo {\n            first_hi += 1;\n        }\n    }\n    (first_lo, first_hi)\n}",
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "629145951687599873418257489910998052999",
+    "87170636661664677068004457186813404325",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "243931809744896974812513529918607549579",
+    "1752989996936949203916036071159051010960"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "file": "core/src/ptr/const_ptr.rs",
+  "name": "ptr::const_ptr::<impl *const i64>::offset_from_unsigned",
+  "hash": "14560721898568267631990576878055796531",
+  "hash_direct": "174495321839671880742754685345517119423",
+  "src": "pub const unsafe fn offset_from_unsigned(self, origin: *const T) -> usize\n    where\n        T: Sized,\n    {\n        #[rustc_allow_const_fn_unstable(const_eval_select)]\n        const fn runtime_ptr_ge(this: *const (), origin: *const ()) -> bool {\n            const_eval_select!(\n                @capture { this: *const (), origin: *const () } -> bool:\n                if const {\n                    true\n                } else {\n                    this >= origin\n                }\n            )\n        }\n\n        ub_checks::assert_unsafe_precondition!(\n            check_language_ub,\n            \"ptr::offset_from_unsigned requires `self >= origin`\",\n            (\n                this: *const () = self as *const (),\n                origin: *const () = origin as *const (),\n            ) => runtime_ptr_ge(this, origin)\n        );\n\n        let pointee_size = size_of::<T>();\n        assert!(0 < pointee_size && pointee_size <= isize::MAX as usize);\n        // SAFETY: the caller must uphold the safety contract for `ptr_offset_from_unsigned`.\n        unsafe { intrinsics::ptr_offset_from_unsigned(self, origin) }\n    }",
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "17421822894816687532325615181214565887",
+    "1529875730411415803517587657844377161231",
+    "23815256893174302637797703719499456373",
+    "7294383037529148129694068087461345583",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "243931809744896974812513529918607549579",
+    "1752989996936949203916036071159051010960",
+    "478753423337745817613297159272845606672",
+    "1214574077763705187516383491048990527345",
+    "92658835324565758495130762072978604201",
+    "739520556846959085018120036998133255835"
+  ]
+}

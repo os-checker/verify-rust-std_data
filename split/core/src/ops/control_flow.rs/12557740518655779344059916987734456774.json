@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ops/control_flow.rs",
+  "name": "core::ops::ControlFlow::<char>::break_value",
+  "hash": "12557740518655779344059916987734456774",
+  "hash_direct": "131785747072034844871044230912041178255",
+  "src": "pub fn break_value(self) -> Option<B> {\n        match self {\n            ControlFlow::Continue(..) => None,\n            ControlFlow::Break(x) => Some(x),\n        }\n    }",
+  "callees": [
+    "46512117452826264263678779057101065629"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "file": "core/src/cmp.rs",
+  "name": "cmp::impls::<impl cmp::PartialEq for &task::wake::RawWakerVTable>::eq",
+  "hash": "159590538649268109822978506730489650496",
+  "hash_direct": "1347777706215415486711720350341259481894",
+  "src": "fn eq(&self, other: &&B) -> bool {\n            PartialEq::eq(*self, *other)\n        }",
+  "callees": [
+    "1060438353234954749515738681850377628449"
+  ]
+}

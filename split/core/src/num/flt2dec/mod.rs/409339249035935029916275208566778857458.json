@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/flt2dec/mod.rs",
-  "name": "num::flt2dec::estimate_max_buf_len",
-  "hash": "409339249035935029916275208566778857458",
-  "hash_direct": "177605450020085003398041477080179576316",
-  "src": "fn estimate_max_buf_len(exp: i16) -> usize {\n    21 + ((if exp < 0 { -12 } else { 5 } * exp as i32) as usize >> 4)\n}"
-}

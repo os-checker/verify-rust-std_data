@@ -1,7 +1,0 @@
-{
-  "file": "core/src/str/validations.rs",
-  "name": "str::validations::utf8_first_byte",
-  "hash": "1793199026846464691616255721034512928348",
-  "hash_direct": "96336069115983300553304922238884115760",
-  "src": "const fn utf8_first_byte(byte: u8, width: u32) -> u32 {\n    (byte & (0x7F >> width)) as u32\n}"
-}

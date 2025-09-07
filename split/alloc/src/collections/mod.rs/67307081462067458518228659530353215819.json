@@ -1,0 +1,17 @@
+{
+  "file": "alloc/src/collections/mod.rs",
+  "name": "<collections::TryReserveError as core::clone::Clone>::clone",
+  "hash": "67307081462067458518228659530353215819",
+  "hash_direct": "140774585060749887133573629318494773826",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone"
+    }
+  ],
+  "callees": [
+    "1029563312923393900611914925131263606627",
+    "1034976420972693995867219351672413528"
+  ]
+}

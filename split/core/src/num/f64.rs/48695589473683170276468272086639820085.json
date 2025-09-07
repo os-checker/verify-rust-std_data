@@ -1,0 +1,10 @@
+{
+  "file": "core/src/num/f64.rs",
+  "name": "f64::math::rem_euclid",
+  "hash": "48695589473683170276468272086639820085",
+  "hash_direct": "707406499059047895416727434412877913344",
+  "src": "pub fn rem_euclid(x: f64, rhs: f64) -> f64 {\n        let r = x % rhs;\n        if r < 0.0 { r + rhs.abs() } else { r }\n    }",
+  "callees": [
+    "75082519682538823603969732638410705888"
+  ]
+}

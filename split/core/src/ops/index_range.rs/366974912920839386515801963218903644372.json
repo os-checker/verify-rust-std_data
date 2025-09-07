@@ -1,0 +1,13 @@
+{
+  "file": "core/src/ops/index_range.rs",
+  "name": "<ops::index_range::IndexRange as clone::Clone>::clone",
+  "hash": "366974912920839386515801963218903644372",
+  "hash_direct": "973600512992115540315631251510619159475",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

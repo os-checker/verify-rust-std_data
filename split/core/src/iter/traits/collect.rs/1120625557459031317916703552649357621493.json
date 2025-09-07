@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/traits/collect.rs",
+  "name": "<() as iter::traits::collect::Extend<()>>::extend_one",
+  "hash": "1120625557459031317916703552649357621493",
+  "hash_direct": "323914473918853243310258411857545049935",
+  "src": "fn extend_one(&mut self, _item: ()) {}"
+}

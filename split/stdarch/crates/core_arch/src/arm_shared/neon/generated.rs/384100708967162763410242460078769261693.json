@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vcntq_s8",
-  "hash": "384100708967162763410242460078769261693",
-  "hash_direct": "2714065295503416911443871931821149257",
-  "src": "pub fn vcntq_s8(a: int8x16_t) -> int8x16_t {\n    unsafe { simd_ctpop(a) }\n}"
-}

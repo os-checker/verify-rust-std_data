@@ -1,7 +1,0 @@
-{
-  "file": "core/src/iter/traits/iterator.rs",
-  "name": "iter::traits::iterator::Iterator::find::check::<&str, &mut str::IsNotEmpty>",
-  "hash": "1708068831879882733717464940014799154069",
-  "hash_direct": "59362524517896201284146023287847972913",
-  "src": "fn check<T>(mut predicate: impl FnMut(&T) -> bool) -> impl FnMut((), T) -> ControlFlow<T> {\n            move |(), x| {\n                if predicate(&x) { ControlFlow::Break(x) } else { ControlFlow::Continue(()) }\n            }\n        }"
-}

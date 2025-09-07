@@ -1,7 +1,0 @@
-{
-  "file": "core/src/mem/transmutability.rs",
-  "name": "mem::transmutability::Assume::NOTHING",
-  "hash": "644622400405128578512724142341226880393",
-  "hash_direct": "49510860630045256254462966263071298987",
-  "src": "pub const NOTHING: Self =\n        Self { alignment: false, lifetimes: false, safety: false, validity: false };"
-}

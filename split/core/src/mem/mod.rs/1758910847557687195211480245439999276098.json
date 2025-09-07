@@ -1,0 +1,10 @@
+{
+  "file": "core/src/mem/mod.rs",
+  "name": "core::mem::forget::<alloc::Global>",
+  "hash": "1758910847557687195211480245439999276098",
+  "hash_direct": "890774368518281160811390385547622570992",
+  "src": "pub const fn forget<T>(t: T) {\n    let _ = ManuallyDrop::new(t);\n}",
+  "callees": [
+    "50338285521061645215724356781021034201"
+  ]
+}

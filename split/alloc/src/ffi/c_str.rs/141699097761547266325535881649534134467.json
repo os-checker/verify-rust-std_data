@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/ffi/c_str.rs",
+  "name": "ffi::c_str::FromVecWithNulError::into_bytes",
+  "hash": "141699097761547266325535881649534134467",
+  "hash_direct": "178648317779091766593657268830194489131",
+  "src": "pub fn into_bytes(self) -> Vec<u8> {\n        self.bytes\n    }"
+}

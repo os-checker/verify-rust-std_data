@@ -1,0 +1,14 @@
+{
+  "file": "core/src/panicking.rs",
+  "name": "core::panicking::panic_nounwind",
+  "hash": "1357412281760869556115161719233556173642",
+  "hash_direct": "43481408449989445259639978887661183730",
+  "src": "pub const fn panic_nounwind(expr: &'static str) -> ! {\n    panic_nounwind_fmt(fmt::Arguments::new_const(&[expr]), /* force_no_backtrace */ false);\n}",
+  "callees": [
+    "12281449246394340237926324936375242532",
+    "181267529910573756716102767087485333561",
+    "986792852990965178117440249555081278778",
+    "90818112465881722349174357944217011292",
+    "63085389524472853348886374617170044294"
+  ]
+}

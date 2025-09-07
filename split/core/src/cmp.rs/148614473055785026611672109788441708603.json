@@ -1,0 +1,7 @@
+{
+  "file": "core/src/cmp.rs",
+  "name": "core::cmp::impls::<impl core::cmp::PartialEq for ()>::eq",
+  "hash": "148614473055785026611672109788441708603",
+  "hash_direct": "167414141292854415742888123004401432533",
+  "src": "fn eq(&self, _other: &()) -> bool {\n            true\n        }"
+}

@@ -1,0 +1,11 @@
+{
+  "file": "core/src/slice/sort/shared/smallsort.rs",
+  "name": "<f32 as slice::sort::shared::smallsort::UnstableSmallSortFreezeTypeImpl>::small_sort_threshold",
+  "hash": "181338996659360834305072794452802357305",
+  "hash_direct": "27797581341258982033256620339619349399",
+  "src": "fn small_sort_threshold() -> usize {\n        if has_efficient_in_place_swap::<T>()\n            && (size_of::<T>() * SMALL_SORT_NETWORK_SCRATCH_LEN) <= MAX_STACK_ARRAY_SIZE\n        {\n            SMALL_SORT_NETWORK_THRESHOLD\n        } else if (size_of::<T>() * SMALL_SORT_GENERAL_SCRATCH_LEN) <= MAX_STACK_ARRAY_SIZE {\n            SMALL_SORT_GENERAL_THRESHOLD\n        } else {\n            SMALL_SORT_FALLBACK_THRESHOLD\n        }\n    }",
+  "callees": [
+    "31244240180128544175272526361568808560",
+    "179492639372335439117660783880964410871"
+  ]
+}

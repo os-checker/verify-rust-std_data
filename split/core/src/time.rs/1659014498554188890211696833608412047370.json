@@ -1,0 +1,7 @@
+{
+  "file": "core/src/time.rs",
+  "name": "time::Duration::as_secs",
+  "hash": "1659014498554188890211696833608412047370",
+  "hash_direct": "1597387327185699672514925449783970964874",
+  "src": "pub const fn as_secs(&self) -> u64 {\n        self.secs\n    }"
+}

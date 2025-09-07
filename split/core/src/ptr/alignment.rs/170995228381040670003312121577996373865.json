@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/alignment.rs",
+  "name": "ptr::alignment::Alignment::max",
+  "hash": "170995228381040670003312121577996373865",
+  "hash_direct": "89302202887648504849074328967011371118",
+  "src": "pub(crate) const fn max(a: Self, b: Self) -> Self {\n        if a.as_usize() > b.as_usize() { a } else { b }\n    }",
+  "callees": [
+    "112152844438854238887994758767167519478"
+  ]
+}

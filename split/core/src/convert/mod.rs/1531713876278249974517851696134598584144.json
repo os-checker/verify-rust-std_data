@@ -1,0 +1,7 @@
+{
+  "file": "core/src/convert/mod.rs",
+  "name": "<convert::Infallible as cmp::PartialEq>::eq",
+  "hash": "1531713876278249974517851696134598584144",
+  "hash_direct": "287893436123688790910609286306128763192",
+  "src": "fn eq(&self, _: &Infallible) -> bool {\n        match *self {}\n    }"
+}

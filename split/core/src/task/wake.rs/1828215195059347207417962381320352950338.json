@@ -1,0 +1,7 @@
+{
+  "file": "core/src/task/wake.rs",
+  "name": "task::wake::LocalWaker::data",
+  "hash": "1828215195059347207417962381320352950338",
+  "hash_direct": "170581277801073366835776032484509084752",
+  "src": "pub fn data(&self) -> *const () {\n        self.waker.data\n    }"
+}

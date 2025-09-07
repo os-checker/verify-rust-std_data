@@ -1,0 +1,16 @@
+{
+  "file": "alloc/src/collections/btree/set_val.rs",
+  "name": "<collections::btree::set_val::SetValZST as core::fmt::Debug>::fmt",
+  "hash": "143957762765787228211360656259638025436",
+  "hash_direct": "12854243637656581649002406277104168054",
+  "src": "Debug",
+  "macro_backtrace": [
+    {
+      "callsite": "Debug",
+      "defsite": "pub macro Debug"
+    }
+  ],
+  "callees": [
+    "1571969697186667512510572825248226870481"
+  ]
+}

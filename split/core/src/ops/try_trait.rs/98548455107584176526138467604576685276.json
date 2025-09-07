@@ -1,0 +1,12 @@
+{
+  "file": "core/src/ops/try_trait.rs",
+  "name": "ops::try_trait::NeverShortCircuit::<u8>::wrap_mut_2::<u8, bool, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/iter/adapters/map.rs:92:5: 92:20}>::{closure#0}",
+  "hash": "98548455107584176526138467604576685276",
+  "hash_direct": "129003074111597864091450893951576417849",
+  "src": "move |a, b| NeverShortCircuit(f(a, b))",
+  "callees": [
+    "123282905749082481871021511695537222033",
+    "95615634588530129754325239223227478335",
+    "789169877560704355517210231802019779543"
+  ]
+}

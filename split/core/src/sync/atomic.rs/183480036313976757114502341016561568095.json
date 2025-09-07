@@ -1,0 +1,11 @@
+{
+  "file": "core/src/sync/atomic.rs",
+  "name": "<sync::atomic::AtomicBool as convert::From<bool>>::from",
+  "hash": "183480036313976757114502341016561568095",
+  "hash_direct": "148380653942314245035189612917270139736",
+  "src": "fn from(b: bool) -> Self {\n        Self::new(b)\n    }",
+  "callees": [
+    "352564018354059629112702651348753878264",
+    "33523035405396149479057659157941778464"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "file": "core/src/ub_checks.rs",
+  "name": "<f64 as ub_checks::Invariant>::is_safe",
+  "hash": "1806276576190033820011008268836508626484",
+  "hash_direct": "10531870343111719344699173596660382871",
+  "src": "fn is_safe(&self) -> bool {\n                true\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "trivial_invariant!(f64)",
+      "defsite": "macro_rules! trivial_invariant {\n    ( $type: ty ) => {\n        impl Invariant for $type {\n            #[inline(always)]\n            fn is_safe(&self) -> bool {\n                true\n            }\n        }\n    };\n}"
+    }
+  ]
+}

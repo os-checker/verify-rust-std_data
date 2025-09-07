@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f16.rs",
+  "name": "f16::<impl f16>::ceil",
+  "hash": "1082734517466005126418251485421086386161",
+  "hash_direct": "151949030094860086254341332336334596666",
+  "src": "pub const fn ceil(self) -> f16 {\n        // SAFETY: intrinsic with no preconditions\n        unsafe { intrinsics::ceilf16(self) }\n    }"
+}

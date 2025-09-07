@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
-  "name": "core_arch::aarch64::neon::generated::vmaxvq_u32",
-  "hash": "36209967070197022595089522736549599932",
-  "hash_direct": "179034695938167401032431186046093100809",
-  "src": "pub fn vmaxvq_u32(a: uint32x4_t) -> u32 {\n    unsafe { simd_reduce_max(a) }\n}"
-}

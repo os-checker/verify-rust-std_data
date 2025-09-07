@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/ffi/c_str.rs",
+  "name": "ffi::c_str::IntoStringError::utf8_error",
+  "hash": "4369284785660200611752043970441902537",
+  "hash_direct": "298607440067433226111900856274276141288",
+  "src": "pub fn utf8_error(&self) -> Utf8Error {\n        self.error\n    }"
+}

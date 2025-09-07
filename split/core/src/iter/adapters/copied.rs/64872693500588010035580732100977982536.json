@@ -1,7 +1,0 @@
-{
-  "file": "core/src/iter/adapters/copied.rs",
-  "name": "iter::adapters::copied::Copied::<slice::iter::Iter<'_, *const ()>>::new",
-  "hash": "64872693500588010035580732100977982536",
-  "hash_direct": "115371926249631255011095710410160107608",
-  "src": "pub(in crate::iter) fn new(it: I) -> Copied<I> {\n        Copied { it }\n    }"
-}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/char/methods.rs",
-  "name": "char::methods::<impl char>::is_ascii_alphabetic",
-  "hash": "1795435089814042338915565227006031313262",
-  "hash_direct": "62190048339304894804476180015533427774",
-  "src": "pub const fn is_ascii_alphabetic(&self) -> bool {\n        matches!(*self, 'A'..='Z' | 'a'..='z')\n    }"
-}

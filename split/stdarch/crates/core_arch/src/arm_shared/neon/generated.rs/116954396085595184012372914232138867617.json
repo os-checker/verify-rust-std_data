@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vceq_p8",
+  "hash": "116954396085595184012372914232138867617",
+  "hash_direct": "1553228590693130740513969711048432458836",
+  "src": "pub fn vceq_p8(a: poly8x8_t, b: poly8x8_t) -> uint8x8_t {\n    unsafe { simd_eq(a, b) }\n}"
+}

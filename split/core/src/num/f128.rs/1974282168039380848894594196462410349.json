@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f128.rs",
+  "name": "f128::<impl f128>::to_bits",
+  "hash": "1974282168039380848894594196462410349",
+  "hash_direct": "127419440263338619402923388773299843581",
+  "src": "pub const fn to_bits(self) -> u128 {\n        // SAFETY: `u128` is a plain old datatype so we can always transmute to it.\n        unsafe { mem::transmute(self) }\n    }"
+}

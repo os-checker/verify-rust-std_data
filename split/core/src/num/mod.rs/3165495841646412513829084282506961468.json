@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/mod.rs",
+  "name": "core::num::<impl u8>::is_ascii_uppercase",
+  "hash": "3165495841646412513829084282506961468",
+  "hash_direct": "508363697640835778011438713047189497515",
+  "src": "pub const fn is_ascii_uppercase(&self) -> bool {\n        matches!(*self, b'A'..=b'Z')\n    }"
+}

@@ -1,0 +1,11 @@
+{
+  "file": "core/src/num/f32.rs",
+  "name": "f32::<impl f32>::signum",
+  "hash": "753087530211395207011740606835076684171",
+  "hash_direct": "141433053418421590825700086052234835437",
+  "src": "pub const fn signum(self) -> f32 {\n        if self.is_nan() { Self::NAN } else { 1.0_f32.copysign(self) }\n    }",
+  "callees": [
+    "91660879335401236928730477644746477916",
+    "110174298608622596992026438568283617550"
+  ]
+}

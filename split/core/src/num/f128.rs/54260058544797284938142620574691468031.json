@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f128.rs",
+  "name": "f128::<impl f128>::trunc",
+  "hash": "54260058544797284938142620574691468031",
+  "hash_direct": "245287540562585742914008542173161702281",
+  "src": "pub const fn trunc(self) -> f128 {\n        // SAFETY: intrinsic with no preconditions\n        unsafe { intrinsics::truncf128(self) }\n    }"
+}

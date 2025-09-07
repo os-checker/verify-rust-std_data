@@ -1,7 +1,0 @@
-{
-  "file": "core/src/ptr/metadata.rs",
-  "name": "ptr::metadata::from_raw_parts::<[(usize, usize)], (usize, usize)>",
-  "hash": "103598198717068336314145271648289840138",
-  "hash_direct": "103379707080855831325118711600573372968",
-  "src": "pub const fn from_raw_parts<T: PointeeSized>(\n    data_pointer: *const impl Thin,\n    metadata: <T as Pointee>::Metadata,\n) -> *const T {\n    aggregate_raw_ptr(data_pointer, metadata)\n}"
-}

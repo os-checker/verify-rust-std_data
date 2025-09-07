@@ -1,7 +1,0 @@
-{
-  "file": "core/src/option.rs",
-  "name": "<option::Option<net::ip_addr::Ipv4Addr> as ops::try_trait::FromResidual<option::Option<convert::Infallible>>>::from_residual",
-  "hash": "119399683343980652415664884925840317763",
-  "hash_direct": "1075525928629184149815458844786484350325",
-  "src": "fn from_residual(residual: Option<convert::Infallible>) -> Self {\n        match residual {\n            None => None,\n        }\n    }"
-}

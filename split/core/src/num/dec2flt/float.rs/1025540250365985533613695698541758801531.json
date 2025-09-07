@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/dec2flt/float.rs",
+  "name": "<f64 as num::dec2flt::float::RawFloat>::SIG_TOTAL_BITS",
+  "hash": "1025540250365985533613695698541758801531",
+  "hash_direct": "1689169441768740626217151803240274099755",
+  "src": "const SIG_TOTAL_BITS: u32 = Self::MANTISSA_DIGITS;"
+}

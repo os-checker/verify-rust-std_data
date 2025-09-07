@@ -1,0 +1,15 @@
+{
+  "file": "core/src/slice/sort/unstable/quicksort.rs",
+  "name": "slice::sort::unstable::quicksort::quicksort::<f32, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/slice/mod.rs:3158:41: 3158:47}>::{closure#0}",
+  "hash": "149450016945975833939861482711151968848",
+  "hash_direct": "737450252056325966011393346725865857956",
+  "src": "|a, b| !is_less(b, a)",
+  "callees": [
+    "25315992229481465352451865580694346951",
+    "842267059997019422815333829425931124000",
+    "1280257502160233765816408910554470634604",
+    "1157832635988226544312579101964623411278",
+    "1239687241192450573815900328634536806436",
+    "124656679884072299719740859888952081738"
+  ]
+}

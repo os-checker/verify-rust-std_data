@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/flt2dec/strategy/grisu.rs",
+  "name": "num::flt2dec::strategy::grisu::format_exact_opt::POW10_UP_TO_9",
+  "hash": "73117656141535193807048665799516107615",
+  "hash_direct": "56722845175558959008554786252040066973",
+  "src": "const POW10_UP_TO_9: [u32; 10] =\n        [1, 10, 100, 1000, 10_000, 100_000, 1_000_000, 10_000_000, 100_000_000, 1_000_000_000];"
+}

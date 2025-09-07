@@ -1,0 +1,28 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/lib.rs",
+  "name": "kani::any::<intrinsics::verify::u64_mod::generated_struct>",
+  "hash": "567001688455839982115585120097039930244",
+  "hash_direct": "645189605691716584710238772073564197169",
+  "attrs": [
+    "#[kanitool::fn_marker = \"AnyModel\"]\n"
+  ],
+  "src": "pub fn any<T: Arbitrary>() -> T {\n            T::any()\n        }",
+  "macro_backtrace": [
+    {
+      "callsite": "kani_core::kani_intrinsics!()",
+      "defsite": "macro_rules! kani_intrinsics"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ],
+  "callees": [
+    "173456776752791686561409570653074085",
+    "1795800258758546744112665996393728061596",
+    "54742968945796623344611399041438109385",
+    "1208955528702686560712085551422443389193",
+    "149406203697599390761498802948984239894",
+    "16332849243914740112213906796512288793"
+  ]
+}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vrev16q_s8",
-  "hash": "957549114615606892214987845566361432777",
-  "hash_direct": "34764625081528528105951289071066032807",
-  "src": "pub fn vrev16q_s8(a: int8x16_t) -> int8x16_t {\n    unsafe { simd_shuffle!(a, a, [1, 0, 3, 2, 5, 4, 7, 6, 9, 8, 11, 10, 13, 12, 15, 14]) }\n}"
-}

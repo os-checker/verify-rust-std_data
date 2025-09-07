@@ -1,8 +1,0 @@
-{
-  "file": "core/src/ptr/mod.rs",
-  "name": "ptr::drop_in_place::<iter::adapters::rev::Rev<iter::adapters::cloned::Cloned<slice::iter::Iter<'_, u8>>>>",
-  "hash": "1135507539448464671811818883556785333666",
-  "hash_direct": "27177034563881822572215059846753712632",
-  "inst_kind": "\"Shim\"",
-  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
-}

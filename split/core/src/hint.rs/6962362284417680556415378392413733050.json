@@ -1,0 +1,17 @@
+{
+  "file": "core/src/hint.rs",
+  "name": "hint::assert_unchecked",
+  "hash": "6962362284417680556415378392413733050",
+  "hash_direct": "6020158913191038507953263236270706327",
+  "src": "pub const unsafe fn assert_unchecked(cond: bool) {\n    // SAFETY: The caller promised `cond` is true.\n    unsafe {\n        ub_checks::assert_unsafe_precondition!(\n            check_language_ub,\n            \"hint::assert_unchecked must never be called when the condition is false\",\n            (cond: bool = cond) => cond,\n        );\n        crate::intrinsics::assume(cond);\n    }\n}",
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "17421822894816687532325615181214565887",
+    "23815256893174302637797703719499456373",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "478753423337745817613297159272845606672",
+    "36990817497430174858508344623774643994",
+    "739520556846959085018120036998133255835"
+  ]
+}

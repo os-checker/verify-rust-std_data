@@ -1,0 +1,10 @@
+{
+  "file": "core/src/str/mod.rs",
+  "name": "str::<impl convert::AsRef<[u8]> for str>::as_ref",
+  "hash": "167528441318846152556749162711274662174",
+  "hash_direct": "12700681776008567759487591096974369747",
+  "src": "fn as_ref(&self) -> &[u8] {\n        self.as_bytes()\n    }",
+  "callees": [
+    "137147026445318887422604340055542353314"
+  ]
+}

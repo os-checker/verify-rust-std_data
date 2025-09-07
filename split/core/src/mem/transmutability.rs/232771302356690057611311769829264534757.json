@@ -1,0 +1,10 @@
+{
+  "file": "core/src/mem/transmutability.rs",
+  "name": "<mem::transmutability::Assume as ops::arith::Add>::add",
+  "hash": "232771302356690057611311769829264534757",
+  "hash_direct": "890117246268234725517158027007596779872",
+  "src": "fn add(self, other_assumptions: Assume) -> Assume {\n        self.and(other_assumptions)\n    }",
+  "callees": [
+    "1084455007279128514714263400197774751518"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/alignment.rs",
+  "name": "ptr::alignment::Alignment::as_usize",
+  "hash": "112152844438854238887994758767167519478",
+  "hash_direct": "149715011682193019012629226525799515426",
+  "src": "pub const fn as_usize(self) -> usize {\n        self.0 as usize\n    }"
+}

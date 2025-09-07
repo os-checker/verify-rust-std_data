@@ -1,7 +1,0 @@
-{
-  "file": "core/src/slice/mod.rs",
-  "name": "<usize as slice::GetDisjointMutIndex>::is_overlapping",
-  "hash": "90537981296589237982329854918274423464",
-  "hash_direct": "1076945268501543994456416447366342709",
-  "src": "fn is_overlapping(&self, other: &Self) -> bool {\n        *self == *other\n    }"
-}

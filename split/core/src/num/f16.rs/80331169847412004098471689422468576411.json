@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f16.rs",
+  "name": "f16::<impl f16>::from_bits",
+  "hash": "80331169847412004098471689422468576411",
+  "hash_direct": "11859260244953327072304926862167944709",
+  "src": "pub const fn from_bits(v: u16) -> Self {\n        // It turns out the safety issues with sNaN were overblown! Hooray!\n        // SAFETY: `u16` is a plain old datatype so we can always transmute from it.\n        unsafe { mem::transmute(v) }\n    }"
+}

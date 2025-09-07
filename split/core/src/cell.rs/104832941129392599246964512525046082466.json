@@ -1,0 +1,15 @@
+{
+  "file": "core/src/cell.rs",
+  "name": "cell::BorrowRef::<'_>::new",
+  "hash": "104832941129392599246964512525046082466",
+  "hash_direct": "70969217323911603068098661037311554052",
+  "src": "const fn new(borrow: &'b Cell<BorrowCounter>) -> Option<BorrowRef<'b>> {\n        let b = borrow.get().wrapping_add(1);\n        if !is_reading(b) {\n            // Incrementing borrow can result in a non-reading value (<= 0) in these cases:\n            // 1. It was < 0, i.e. there are writing borrows, so we can't allow a read borrow\n            //    due to Rust's reference aliasing rules\n            // 2. It was isize::MAX (the max amount of reading borrows) and it overflowed\n            //    into isize::MIN (the max amount of writing borrows) so we can't allow\n            //    an additional read borrow because isize can't represent so many read borrows\n            //    (this can only happen if you mem::forget more than a small constant amount of\n            //    `Ref`s, which is not good practice)\n            None\n        } else {\n            // Incrementing borrow can result in a reading value (> 0) in these cases:\n            // 1. It was = 0, i.e. it wasn't borrowed, and we are taking the first read borrow\n            // 2. It was > 0 and < isize::MAX, i.e. there were read borrows, and isize\n            //    is large enough to represent having one more read borrow\n            borrow.replace(b);\n            Some(BorrowRef { borrow })\n        }\n    }",
+  "callees": [
+    "181459135049542270967525728160549041358",
+    "908585031933029103712912917433857192842",
+    "26323195953183351819190758839605041253",
+    "958841610888801412131177007951313161",
+    "1049223600512463258718312473263728080689",
+    "21173995163059336492894402386398685098"
+  ]
+}

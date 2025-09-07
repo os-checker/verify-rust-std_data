@@ -1,0 +1,12 @@
+{
+  "file": "core/src/result.rs",
+  "name": "result::Result::<(), fmt::Error>::and_then::<(), {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/fmt/builders.rs:673:56: 673:59}>",
+  "hash": "115664781402062169687503524836882909879",
+  "hash_direct": "131505286515147364256543141299053440490",
+  "src": "pub const fn and_then<U, F>(self, op: F) -> Result<U, E>\n    where\n        F: [const] FnOnce(T) -> Result<U, E> + [const] Destruct,\n    {\n        match self {\n            Ok(t) => op(t),\n            Err(e) => Err(e),\n        }\n    }",
+  "callees": [
+    "295374310752033314813661474546299297135",
+    "243839084150888952911908111539685994713",
+    "13856811480734076079521073238638313343"
+  ]
+}

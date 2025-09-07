@@ -1,0 +1,10 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<core::iter::TakeWhile<core::slice::Iter<'_, u8>, {closure@<core::slice::EscapeAscii<'_> as core::fmt::Display>::fmt::{closure#0}}> as core::iter::Iterator>::count::{closure#0}",
+  "hash": "4624680146933447685315508208087380447",
+  "hash_direct": "12101617686476279202190639945236212564",
+  "src": "|count, _| count + 1",
+  "callees": [
+    "1161957769894127133012856511664916235439"
+  ]
+}

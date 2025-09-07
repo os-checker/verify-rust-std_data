@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vorr_s32",
+  "hash": "115071206042985813591538416885366987468",
+  "hash_direct": "781788813842532984917784053856258228859",
+  "src": "pub fn vorr_s32(a: int32x2_t, b: int32x2_t) -> int32x2_t {\n    unsafe { simd_or(a, b) }\n}"
+}

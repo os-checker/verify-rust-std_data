@@ -1,0 +1,13 @@
+{
+  "file": "core/src/panic/location.rs",
+  "name": "<panic::location::Location<'_> as clone::Clone>::clone",
+  "hash": "1510091951700192646210576615065935470739",
+  "hash_direct": "11441293304723223351731922645564235132",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

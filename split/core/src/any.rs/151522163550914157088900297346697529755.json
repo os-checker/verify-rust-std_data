@@ -1,7 +1,0 @@
-{
-  "file": "core/src/any.rs",
-  "name": "any::type_name::<*mut ()>",
-  "hash": "151522163550914157088900297346697529755",
-  "hash_direct": "873434212536791740216540145784470320258",
-  "src": "pub const fn type_name<T: ?Sized>() -> &'static str {\n    const { intrinsics::type_name::<T>() }\n}"
-}

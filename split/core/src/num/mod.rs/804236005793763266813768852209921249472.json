@@ -1,0 +1,36 @@
+{
+  "file": "core/src/num/mod.rs",
+  "name": "num::verify::unchecked_mul_u32_small",
+  "hash": "804236005793763266813768852209921249472",
+  "hash_direct": "163896815559928228543870896308904234995",
+  "proof_kind": "\"Contract\"",
+  "attrs": [
+    "#[kanitool::proof_for_contract = \"u32 :: unchecked_mul\"]\n"
+  ],
+  "src": "pub fn $harness_name() {\n                    let num1: $type = kani::any::<$type>();\n                    let num2: $type = kani::any::<$type>();\n\n                    kani::assume(num1 >= $min && num1 <= $max);\n                    kani::assume(num2 >= $min && num2 <= $max);\n\n                    // Ensure that multiplication does not overflow\n                    kani::assume(!num1.overflowing_mul(num2).1);\n\n                    unsafe {\n                        num1.$method(num2);\n                    }\n                }",
+  "macro_backtrace": [
+    {
+      "callsite": "generate_unchecked_mul_intervals!(\n        u32,\n        unchecked_mul,\n        unchecked_mul_u32_small,\n        0u32,\n        10u32,\n        unchecked_mul_u32_large,\n        u32::MAX - 1000u32,\n        u32::MAX,\n        unchecked_mul_u32_edge,\n        u32::MAX / 2,\n        u32::MAX\n    )",
+      "defsite": "macro_rules! generate_unchecked_mul_intervals {\n        ($type:ty, $method:ident, $($harness_name:ident, $min:expr, $max:expr),+) => {\n            $(\n                #[kani::proof_for_contract($type::$method)]\n                pub fn $harness_name() {\n                    let num1: $type = kani::any::<$type>();\n                    let num2: $type = kani::any::<$type>();\n\n                    kani::assume(num1 >= $min && num1 <= $max);\n                    kani::assume(num2 >= $min && num2 <= $max);\n\n                    // Ensure that multiplication does not overflow\n                    kani::assume(!num1.overflowing_mul(num2).1);\n\n                    unsafe {\n                        num1.$method(num2);\n                    }\n                }\n            )+\n        }\n    }"
+    }
+  ],
+  "callees": [
+    "155147252462344397972186713557771794079",
+    "67856573892425641751006143352028813823",
+    "10057127580410476606272092343920277620",
+    "178053629462286824685283611690204389326",
+    "139704976908753389291209564980972955015",
+    "7526082995824335814466973137466280467",
+    "1245364030286753365515911599133870323814",
+    "258820287469578611817448591488600041899",
+    "17421822894816687532325615181214565887",
+    "23815256893174302637797703719499456373",
+    "450711679320065867912004079253027697688",
+    "153179968409432170012878895525884618097",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "478753423337745817613297159272845606672",
+    "111270530970055299202169724166776031531",
+    "739520556846959085018120036998133255835"
+  ]
+}

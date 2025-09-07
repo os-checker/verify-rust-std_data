@@ -1,0 +1,7 @@
+{
+  "file": "core/src/io/borrowed_buf.rs",
+  "name": "<io::borrowed_buf::BorrowedBuf<'_> as convert::From<&mut [mem::maybe_uninit::MaybeUninit<u8>]>>::from",
+  "hash": "1189469051277178005410324568391190436375",
+  "hash_direct": "11539659268721448984145810615825629630",
+  "src": "fn from(buf: &'data mut [MaybeUninit<u8>]) -> BorrowedBuf<'data> {\n        BorrowedBuf { buf, filled: 0, init: 0 }\n    }"
+}

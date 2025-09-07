@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vtst_u64",
+  "hash": "99233913206945189772338576497409426045",
+  "hash_direct": "72675667839345962045143311040327425169",
+  "src": "pub fn vtst_u64(a: uint64x1_t, b: uint64x1_t) -> uint64x1_t {\n    unsafe {\n        let c: uint64x1_t = simd_and(a, b);\n        let d: u64x1 = u64x1::new(0);\n        simd_ne(c, transmute(d))\n    }\n}",
+  "callees": [
+    "104196621766310105052318946087671180328"
+  ]
+}

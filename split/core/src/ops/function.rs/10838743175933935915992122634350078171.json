@@ -1,0 +1,12 @@
+{
+  "file": "core/src/ops/function.rs",
+  "name": "ops::function::impls::<impl ops::function::FnOnce<(&[u8],)> for &mut str::UnsafeBytesToStr>::call_once",
+  "hash": "10838743175933935915992122634350078171",
+  "hash_direct": "283137430347309522745481690939663711",
+  "src": "extern \"rust-call\" fn call_once(self, args: A) -> F::Output {\n            (*self).call_mut(args)\n        }",
+  "callees": [
+    "227459616629241409713985789118629912568",
+    "1075755998635146994811521470928143421415",
+    "1153959874226978119913857890632071810994"
+  ]
+}

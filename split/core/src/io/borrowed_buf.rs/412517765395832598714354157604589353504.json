@@ -1,0 +1,10 @@
+{
+  "file": "core/src/io/borrowed_buf.rs",
+  "name": "io::borrowed_buf::BorrowedCursor::<'_>::capacity",
+  "hash": "412517765395832598714354157604589353504",
+  "hash_direct": "1567193340865869602115437422516125548510",
+  "src": "pub fn capacity(&self) -> usize {\n        self.buf.capacity() - self.buf.filled\n    }",
+  "callees": [
+    "88417836060611104111880908175248904248"
+  ]
+}

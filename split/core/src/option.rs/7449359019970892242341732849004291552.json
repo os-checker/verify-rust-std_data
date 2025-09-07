@@ -1,0 +1,7 @@
+{
+  "file": "core/src/option.rs",
+  "name": "<core::option::Option<core::num::NonZero<usize>> as core::ops::Try>::from_output",
+  "hash": "7449359019970892242341732849004291552",
+  "hash_direct": "60587962249716668046212839966998946448",
+  "src": "fn from_output(output: Self::Output) -> Self {\n        Some(output)\n    }"
+}

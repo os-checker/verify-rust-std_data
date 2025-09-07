@@ -1,0 +1,7 @@
+{
+  "file": "core/src/slice/sort/select.rs",
+  "name": "slice::sort::select::INSERTION_SORT_THRESHOLD",
+  "hash": "1215713656703848143012930229538513715530",
+  "hash_direct": "68531209710133237977201927199637728439",
+  "src": "const INSERTION_SORT_THRESHOLD: usize = 16;"
+}

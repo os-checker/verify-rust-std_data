@@ -1,7 +1,0 @@
-{
-  "file": "core/src/intrinsics/fallback.rs",
-  "name": "intrinsics::fallback::wide_mul_u128::to_low_high",
-  "hash": "169564152499839983839646051342040887309",
-  "hash_direct": "1604483150552785485213502321777598732233",
-  "src": "const fn to_low_high(x: u128) -> [u128; 2] {\n        const MASK: u128 = u64::MAX as _;\n        [x & MASK, x >> 64]\n    }"
-}

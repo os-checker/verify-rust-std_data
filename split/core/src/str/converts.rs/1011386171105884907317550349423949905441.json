@@ -1,0 +1,10 @@
+{
+  "file": "core/src/str/converts.rs",
+  "name": "str::converts::from_raw_parts_mut::<'_>",
+  "hash": "1011386171105884907317550349423949905441",
+  "hash_direct": "13010374155412201906443311635636548977",
+  "src": "pub const unsafe fn from_raw_parts_mut<'a>(ptr: *mut u8, len: usize) -> &'a mut str {\n    // SAFETY: the caller must uphold the safety contract for `from_raw_parts_mut`.\n    unsafe { &mut *ptr::from_raw_parts_mut(ptr, len) }\n}",
+  "callees": [
+    "1799999248577488089417476790530556054033"
+  ]
+}

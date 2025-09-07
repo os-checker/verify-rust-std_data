@@ -1,0 +1,20 @@
+{
+  "file": "core/src/internal_macros.rs",
+  "name": "<&f128 as ops::arith::Neg>::neg",
+  "hash": "394423065267816652718054361730852442460",
+  "hash_direct": "747510874054918768911618646011571420129",
+  "src": "fn $method(self) -> <$t as $imp>::Output {\n                $imp::$method(*self)\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "forward_ref_unop! { impl Neg, neg for $t,\n        #[stable(feature = \"rust1\", since = \"1.0.0\")]\n        #[rustc_const_unstable(feature = \"const_ops\", issue = \"143802\")] }",
+      "defsite": "macro_rules! forward_ref_unop {\n    (impl $imp:ident, $method:ident for $t:ty, $(#[$attr:meta])+) => {\n        $(#[$attr])+\n        impl const $imp for &$t {\n            type Output = <$t as $imp>::Output;\n\n            #[inline]\n            fn $method(self) -> <$t as $imp>::Output {\n                $imp::$method(*self)\n            }\n        }\n    }\n}"
+    },
+    {
+      "callsite": "neg_impl! { isize i8 i16 i32 i64 i128 f16 f32 f64 f128 }",
+      "defsite": "macro_rules! neg_impl {\n    ($($t:ty)*) => ($(\n        #[stable(feature = \"rust1\", since = \"1.0.0\")]\n        #[rustc_const_unstable(feature = \"const_ops\", issue = \"143802\")]\n        impl const Neg for $t {\n            type Output = $t;\n\n            #[inline]\n            #[rustc_inherit_overflow_checks]\n            fn neg(self) -> $t { -self }\n        }\n\n        forward_ref_unop! { impl Neg, neg for $t,\n        #[stable(feature = \"rust1\", since = \"1.0.0\")]\n        #[rustc_const_unstable(feature = \"const_ops\", issue = \"143802\")] }\n    )*)\n}"
+    }
+  ],
+  "callees": [
+    "17379614829186422606212493198166322187"
+  ]
+}

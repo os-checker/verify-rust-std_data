@@ -1,0 +1,16 @@
+{
+  "file": "core/src/char/mod.rs",
+  "name": "<char::CaseMappingIter as iter::traits::iterator::Iterator>::__iterator_get_unchecked::kani_contract_mode",
+  "hash": "1190103595858719074015798602325817434085",
+  "hash_direct": "149624250646269337753829052081897692227",
+  "attrs": [
+    "#[kanitool::fn_marker = \"kani_contract_mode\"]\n"
+  ],
+  "src": "#[cfg_attr(kani, kani::modifies(self))]",
+  "macro_backtrace": [
+    {
+      "callsite": "#[cfg_attr(kani, kani::modifies(self))]",
+      "defsite": "pub fn modifies(attr: TokenStream, item: TokenStream) -> TokenStream"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "file": "core/src/internal_macros.rs",
+  "name": "<&i16 as ops::bit::BitOr<i16>>::bitor",
+  "hash": "95647175070617431222837554787324468514",
+  "hash_direct": "105506513687985613959648030196769887702",
+  "src": "fn $method(self, other: $u) -> <$t as $imp<$u>>::Output {\n                $imp::$method(*self, other)\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "forward_ref_binop! { impl BitOr, bitor for $t, $t,\n        #[stable(feature = \"rust1\", since = \"1.0.0\")]\n        #[rustc_const_unstable(feature = \"const_ops\", issue = \"143802\")] }",
+      "defsite": "macro_rules! forward_ref_binop {\n    (impl $imp:ident, $method:ident for $t:ty, $u:ty, $(#[$attr:meta])+) => {\n        $(#[$attr])+\n        impl const $imp<$u> for &$t {\n            type Output = <$t as $imp<$u>>::Output;\n\n            #[inline]\n            #[track_caller]\n            fn $method(self, other: $u) -> <$t as $imp<$u>>::Output {\n                $imp::$method(*self, other)\n            }\n        }\n\n        $(#[$attr])+\n        impl const $imp<&$u> for $t {\n            type Output = <$t as $imp<$u>>::Output;\n\n            #[inline]\n            #[track_caller]\n            fn $method(self, other: &$u) -> <$t as $imp<$u>>::Output {\n                $imp::$method(self, *other)\n            }\n        }\n\n        $(#[$attr])+\n        impl const $imp<&$u> for &$t {\n            type Output = <$t as $imp<$u>>::Output;\n\n            #[inline]\n            #[track_caller]\n            fn $method(self, other: &$u) -> <$t as $imp<$u>>::Output {\n                $imp::$method(*self, *other)\n            }\n        }\n    }\n}"
+    },
+    {
+      "callsite": "bitor_impl! { bool usize u8 u16 u32 u64 u128 isize i8 i16 i32 i64 i128 }",
+      "defsite": "macro_rules! bitor_impl {\n    ($($t:ty)*) => ($(\n        #[stable(feature = \"rust1\", since = \"1.0.0\")]\n        #[rustc_const_unstable(feature = \"const_ops\", issue = \"143802\")]\n        impl const BitOr for $t {\n            type Output = $t;\n\n            #[inline]\n            fn bitor(self, rhs: $t) -> $t { self | rhs }\n        }\n\n        forward_ref_binop! { impl BitOr, bitor for $t, $t,\n        #[stable(feature = \"rust1\", since = \"1.0.0\")]\n        #[rustc_const_unstable(feature = \"const_ops\", issue = \"143802\")] }\n    )*)\n}"
+    }
+  ],
+  "callees": [
+    "958410034813325860813708132645304900385"
+  ]
+}

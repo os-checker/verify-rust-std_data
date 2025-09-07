@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/string.rs",
+  "name": "string::FromUtf8Error::into_bytes",
+  "hash": "86233035484497635055678634049948928861",
+  "hash_direct": "7999873435788851435245731349368702585",
+  "src": "pub fn into_bytes(self) -> Vec<u8> {\n        self.bytes\n    }"
+}

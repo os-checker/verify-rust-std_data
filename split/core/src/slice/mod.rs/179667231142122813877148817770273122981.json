@@ -1,0 +1,7 @@
+{
+  "file": "core/src/slice/mod.rs",
+  "name": "slice::<impl [mem::maybe_uninit::MaybeUninit<(u8, u8)>]>::is_empty",
+  "hash": "179667231142122813877148817770273122981",
+  "hash_direct": "96254430117274926301173340665024238969",
+  "src": "pub const fn is_empty(&self) -> bool {\n        self.len() == 0\n    }"
+}

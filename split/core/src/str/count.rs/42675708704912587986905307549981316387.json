@@ -1,0 +1,10 @@
+{
+  "file": "core/src/str/count.rs",
+  "name": "str::count::char_count_general_case::{closure#0}",
+  "hash": "42675708704912587986905307549981316387",
+  "hash_direct": "142363020282440920424891222869835952446",
+  "src": "|&&byte| !super::validations::utf8_is_cont_byte(byte)",
+  "callees": [
+    "947833919457653120214810965083035955432"
+  ]
+}

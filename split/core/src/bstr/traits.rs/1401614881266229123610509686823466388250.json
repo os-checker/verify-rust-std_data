@@ -1,7 +1,0 @@
-{
-  "file": "core/src/bstr/traits.rs",
-  "name": "bstr::traits::<impl slice::index::SliceIndex<bstr::ByteStr> for ops::range::RangeFull>::index_mut",
-  "hash": "1401614881266229123610509686823466388250",
-  "hash_direct": "644280127900599452510932060431272481778",
-  "src": "fn index_mut(self, slice: &mut ByteStr) -> &mut Self::Output {\n        slice\n    }"
-}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
-  "name": "core_arch::aarch64::neon::generated::vcvta_s64_f64",
-  "hash": "96674063743773157119660868166013154393",
-  "hash_direct": "149503187908397987873765846416761963209",
-  "src": "pub fn vcvta_s64_f64(a: float64x1_t) -> int64x1_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.fcvtas.v1i64.v1f64\"\n        )]\n        fn _vcvta_s64_f64(a: float64x1_t) -> int64x1_t;\n    }\n    unsafe { _vcvta_s64_f64(a) }\n}"
-}

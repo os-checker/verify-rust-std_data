@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/traits/collect.rs",
+  "name": "<vec::into_iter::IntoIter<u8> as core::iter::IntoIterator>::into_iter",
+  "hash": "131060884197952360419792747096741712287",
+  "hash_direct": "160237335974057835909063580779684714031",
+  "src": "fn into_iter(self) -> I {\n        self\n    }"
+}

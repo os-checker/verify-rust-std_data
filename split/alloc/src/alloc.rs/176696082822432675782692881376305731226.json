@@ -1,0 +1,13 @@
+{
+  "file": "alloc/src/alloc.rs",
+  "name": "<alloc::Global as core::default::Default>::default",
+  "hash": "176696082822432675782692881376305731226",
+  "hash_direct": "1056826953937799923512137859419470886993",
+  "src": "Default",
+  "macro_backtrace": [
+    {
+      "callsite": "Default",
+      "defsite": "pub macro Default"
+    }
+  ]
+}

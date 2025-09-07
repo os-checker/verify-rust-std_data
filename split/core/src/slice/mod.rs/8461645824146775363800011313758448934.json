@@ -1,0 +1,20 @@
+{
+  "file": "core/src/slice/mod.rs",
+  "name": "slice::<impl [mem::maybe_uninit::MaybeUninit<char>]>::get_unchecked::<usize>",
+  "hash": "8461645824146775363800011313758448934",
+  "hash_direct": "35199029935070157807719878333218521819",
+  "src": "pub const unsafe fn get_unchecked<I>(&self, index: I) -> &I::Output\n    where\n        I: [const] SliceIndex<Self>,\n    {\n        // SAFETY: the caller must uphold most of the safety requirements for `get_unchecked`;\n        // the slice is dereferenceable because `self` is a safe reference.\n        // The returned pointer is safe because impls of `SliceIndex` have to guarantee that it is.\n        unsafe { &*index.get_unchecked(self) }\n    }",
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "17421822894816687532325615181214565887",
+    "23815256893174302637797703719499456373",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "478753423337745817613297159272845606672",
+    "132356016862926281278936911290964574083",
+    "17885338024940159556008007307872397104",
+    "3950425949359765709895334576670322983",
+    "154911443990380340341563367924870465980",
+    "739520556846959085018120036998133255835"
+  ]
+}

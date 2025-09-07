@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/f128.rs",
-  "name": "f128::<impl f128>::is_infinite",
-  "hash": "104744709495731004249216078155535500550",
-  "hash_direct": "1445270001819673420613680829559320959018",
-  "src": "pub const fn is_infinite(self) -> bool {\n        (self == f128::INFINITY) | (self == f128::NEG_INFINITY)\n    }"
-}

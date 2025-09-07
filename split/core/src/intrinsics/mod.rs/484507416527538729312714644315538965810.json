@@ -1,0 +1,21 @@
+{
+  "file": "core/src/intrinsics/mod.rs",
+  "name": "intrinsics::verify::transmute_zero_size",
+  "hash": "484507416527538729312714644315538965810",
+  "hash_direct": "549452201449381299015102668724647447950",
+  "proof_kind": "\"Contract\"",
+  "attrs": [
+    "#[kanitool::proof_for_contract = \"transmute_unchecked_wrapper\"]\n"
+  ],
+  "src": "fn transmute_zero_size() {\n        let empty_arr: [u8; 0] = [];\n        let unit_val: () = unsafe { transmute_unchecked_wrapper(empty_arr) };\n        assert!(unit_val == ());\n    }",
+  "callees": [
+    "7526082995824335814466973137466280467",
+    "4705100405533686565995074127689304415",
+    "258820287469578611817448591488600041899",
+    "88120822251838801123899887322669163019",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "243931809744896974812513529918607549579",
+    "1752989996936949203916036071159051010960"
+  ]
+}

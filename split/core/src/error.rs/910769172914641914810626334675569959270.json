@@ -1,0 +1,7 @@
+{
+  "file": "core/src/error.rs",
+  "name": "<boxed::convert::<impl core::convert::From<string::String> for boxed::Box<(dyn core::error::Error + core::marker::Send + core::marker::Sync + 'a)>>::from::StringError as core::error::Error>::source",
+  "hash": "910769172914641914810626334675569959270",
+  "hash_direct": "11683797026312700237125358869058274466",
+  "src": "fn source(&self) -> Option<&(dyn Error + 'static)> {\n        None\n    }"
+}

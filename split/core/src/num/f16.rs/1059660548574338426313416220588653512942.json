@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f16.rs",
+  "name": "f16::<impl f16>::algebraic_add",
+  "hash": "1059660548574338426313416220588653512942",
+  "hash_direct": "53779387938186733419611862137214149105",
+  "src": "pub const fn algebraic_add(self, rhs: f16) -> f16 {\n        intrinsics::fadd_algebraic(self, rhs)\n    }"
+}

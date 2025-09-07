@@ -1,0 +1,11 @@
+{
+  "file": "core/src/result.rs",
+  "name": "result::Result::<u16, num::error::TryFromIntError>::unwrap_or",
+  "hash": "1021979606722141271813093258744932299759",
+  "hash_direct": "429539478100507417014265570236760774938",
+  "src": "pub const fn unwrap_or(self, default: T) -> T\n    where\n        T: [const] Destruct,\n        E: [const] Destruct,\n    {\n        match self {\n            Ok(t) => t,\n            Err(_) => default,\n        }\n    }",
+  "callees": [
+    "135710756291504804587550868687823101358",
+    "150567892505730402506580299695654398474"
+  ]
+}

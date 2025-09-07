@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vorrq_u32",
+  "hash": "285268101887127078012386571776848043222",
+  "hash_direct": "977645168106067158118185834717972129876",
+  "src": "pub fn vorrq_u32(a: uint32x4_t, b: uint32x4_t) -> uint32x4_t {\n    unsafe { simd_or(a, b) }\n}"
+}

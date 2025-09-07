@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f128.rs",
+  "name": "f128::<impl f128>::round_ties_even",
+  "hash": "1773072776909027464110196152472753402342",
+  "hash_direct": "422033065421687564417927429726228119593",
+  "src": "pub const fn round_ties_even(self) -> f128 {\n        intrinsics::round_ties_even_f128(self)\n    }"
+}

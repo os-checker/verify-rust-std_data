@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/f32.rs",
-  "name": "f32::<impl f32>::SIGN_MASK",
-  "hash": "168865105862870565593240364389261262853",
-  "hash_direct": "1183608737352136509212823392819625355001",
-  "src": "pub(crate) const SIGN_MASK: u32 = 0x8000_0000;"
-}

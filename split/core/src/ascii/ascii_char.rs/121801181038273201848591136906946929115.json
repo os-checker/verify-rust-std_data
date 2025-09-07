@@ -1,0 +1,11 @@
+{
+  "file": "core/src/ascii/ascii_char.rs",
+  "name": "ascii::ascii_char::AsciiChar::is_graphic",
+  "hash": "121801181038273201848591136906946929115",
+  "hash_direct": "1495826481058551241511655242346333174325",
+  "src": "pub const fn is_graphic(self) -> bool {\n        self.to_u8().is_ascii_graphic()\n    }",
+  "callees": [
+    "211389067699639933614636457746408448112",
+    "141615893453559366675599442700992029800"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "ptr::drop_in_place::<option::Option<net::socket_addr::SocketAddr>>",
+  "hash": "336846673939040776712790968892357354864",
+  "hash_direct": "1273488227324620147214111917827311435437",
+  "inst_kind": "\"Shim\"",
+  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
+}

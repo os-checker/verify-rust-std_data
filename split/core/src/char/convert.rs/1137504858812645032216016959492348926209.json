@@ -1,0 +1,10 @@
+{
+  "file": "core/src/char/convert.rs",
+  "name": "char::convert::char_try_from_u32",
+  "hash": "1137504858812645032216016959492348926209",
+  "hash_direct": "1734611309424410912017037933592936759112",
+  "src": "const fn char_try_from_u32(i: u32) -> Result<char, CharTryFromError> {\n    // This is an optimized version of the check\n    // (i > MAX as u32) || (i >= 0xD800 && i <= 0xDFFF),\n    // which can also be written as\n    // i >= 0x110000 || (i >= 0xD800 && i < 0xE000).\n    //\n    // The XOR with 0xD800 permutes the ranges such that 0xD800..0xE000 is\n    // mapped to 0x0000..0x0800, while keeping all the high bits outside 0xFFFF the same.\n    // In particular, numbers >= 0x110000 stay in this range.\n    //\n    // Subtracting 0x800 causes 0x0000..0x0800 to wrap, meaning that a single\n    // unsigned comparison against 0x110000 - 0x800 will detect both the wrapped\n    // surrogate range as well as the numbers originally larger than 0x110000.\n    //\n    if (i ^ 0xD800).wrapping_sub(0x800) >= 0x110000 - 0x800 {\n        Err(CharTryFromError(()))\n    } else {\n        // SAFETY: checked that it's a legal unicode value\n        Ok(unsafe { transmute(i) })\n    }\n}",
+  "callees": [
+    "20170180267557332822120616943783807769"
+  ]
+}

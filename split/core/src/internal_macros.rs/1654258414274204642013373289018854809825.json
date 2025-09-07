@@ -1,0 +1,20 @@
+{
+  "file": "core/src/internal_macros.rs",
+  "name": "<i64 as ops::arith::RemAssign<&i64>>::rem_assign",
+  "hash": "1654258414274204642013373289018854809825",
+  "hash_direct": "1602682481980076587211934859558839744465",
+  "src": "fn $method(&mut self, other: &$u) {\n                $imp::$method(self, *other);\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "forward_ref_op_assign! { impl RemAssign, rem_assign for $t, $t,\n        #[stable(feature = \"op_assign_builtins_by_ref\", since = \"1.22.0\")]\n        #[rustc_const_unstable(feature = \"const_ops\", issue = \"143802\")] }",
+      "defsite": "macro_rules! forward_ref_op_assign {\n    (impl $imp:ident, $method:ident for $t:ty, $u:ty, $(#[$attr:meta])+) => {\n        $(#[$attr])+\n        impl const $imp<&$u> for $t {\n            #[inline]\n            #[track_caller]\n            fn $method(&mut self, other: &$u) {\n                $imp::$method(self, *other);\n            }\n        }\n    }\n}"
+    },
+    {
+      "callsite": "rem_assign_impl! { usize u8 u16 u32 u64 u128 isize i8 i16 i32 i64 i128 f16 f32 f64 f128 }",
+      "defsite": "macro_rules! rem_assign_impl {\n    ($($t:ty)+) => ($(\n        #[stable(feature = \"op_assign_traits\", since = \"1.8.0\")]\n        #[rustc_const_unstable(feature = \"const_ops\", issue = \"143802\")]\n        impl const RemAssign for $t {\n            #[inline]\n            #[track_caller]\n            fn rem_assign(&mut self, other: $t) { *self %= other }\n        }\n\n        forward_ref_op_assign! { impl RemAssign, rem_assign for $t, $t,\n        #[stable(feature = \"op_assign_builtins_by_ref\", since = \"1.22.0\")]\n        #[rustc_const_unstable(feature = \"const_ops\", issue = \"143802\")] }\n    )+)\n}"
+    }
+  ],
+  "callees": [
+    "2005829136022826129192926948709026179"
+  ]
+}

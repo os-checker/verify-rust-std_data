@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f64.rs",
+  "name": "f64::<impl f64>::copysign",
+  "hash": "67963974527742159972610443212593302814",
+  "hash_direct": "315516755859652467113994365038690041087",
+  "src": "pub const fn copysign(self, sign: f64) -> f64 {\n        // SAFETY: this is actually a safe intrinsic\n        unsafe { intrinsics::copysignf64(self, sign) }\n    }"
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/hints.rs",
+  "name": "core_arch::arm_shared::hints::__wfi",
+  "hash": "17001343583414703731381859117184769735",
+  "hash_direct": "299857194327095042518065117861786331705",
+  "src": "pub unsafe fn __wfi() {\n    hint(HINT_WFI);\n}"
+}

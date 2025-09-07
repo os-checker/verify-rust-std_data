@@ -1,0 +1,17 @@
+{
+  "file": "core/src/ffi/c_str.rs",
+  "name": "<ffi::c_str::Bytes<'_> as clone::Clone>::clone",
+  "hash": "115619679076844725792456551066013005994",
+  "hash_direct": "141497244133035919608943261686803117682",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ],
+  "callees": [
+    "1081141352268553516515980020869667000368",
+    "101125768111956605424841435773639442475"
+  ]
+}

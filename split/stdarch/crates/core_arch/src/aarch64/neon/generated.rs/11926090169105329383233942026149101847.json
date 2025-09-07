@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vcltd_u64",
+  "hash": "11926090169105329383233942026149101847",
+  "hash_direct": "1565908478566134831918376378711248485312",
+  "src": "pub fn vcltd_u64(a: u64, b: u64) -> u64 {\n    unsafe { transmute(vclt_u64(transmute(a), transmute(b))) }\n}",
+  "callees": [
+    "252801826320898506313751194189619946568"
+  ]
+}

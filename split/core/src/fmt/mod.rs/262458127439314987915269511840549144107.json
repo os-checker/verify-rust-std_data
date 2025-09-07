@@ -1,0 +1,17 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "<&net::parser::AddrKind as fmt::Debug>::fmt",
+  "hash": "262458127439314987915269511840549144107",
+  "hash_direct": "1351661319623289028015185371643321810297",
+  "src": "fn fmt(&self, f: &mut Formatter<'_>) -> Result { $tr::fmt(&**self, f) }",
+  "macro_backtrace": [
+    {
+      "callsite": "fmt_refs! { Debug, Display, Octal, Binary, LowerHex, UpperHex, LowerExp, UpperExp }",
+      "defsite": "macro_rules! fmt_refs {\n    ($($tr:ident),*) => {\n        $(\n        #[stable(feature = \"rust1\", since = \"1.0.0\")]\n        impl<T: PointeeSized + $tr> $tr for &T {\n            fn fmt(&self, f: &mut Formatter<'_>) -> Result { $tr::fmt(&**self, f) }\n        }\n        #[stable(feature = \"rust1\", since = \"1.0.0\")]\n        impl<T: PointeeSized + $tr> $tr for &mut T {\n            fn fmt(&self, f: &mut Formatter<'_>) -> Result { $tr::fmt(&**self, f) }\n        }\n        )*\n    }\n}"
+    }
+  ],
+  "callees": [
+    "243839084150888952911908111539685994713",
+    "47805686734997212012498862568208178961"
+  ]
+}

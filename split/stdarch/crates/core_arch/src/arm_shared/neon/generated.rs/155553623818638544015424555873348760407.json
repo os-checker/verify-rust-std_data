@@ -1,0 +1,11 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vmov_n_f32",
+  "hash": "155553623818638544015424555873348760407",
+  "hash_direct": "1210160209192921660814974872737356827821",
+  "src": "pub fn vmov_n_f32(value: f32) -> float32x2_t {\n    vdup_n_f32(value)\n}",
+  "callees": [
+    "1494823793289990701912240646309415021674",
+    "1522140830567438236214872204350591521234"
+  ]
+}

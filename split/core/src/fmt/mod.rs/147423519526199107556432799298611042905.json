@@ -1,0 +1,7 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "core::fmt::PostPadding::new",
+  "hash": "147423519526199107556432799298611042905",
+  "hash_direct": "120523131793837259219097824501090008961",
+  "src": "fn new(fill: char, padding: u16) -> PostPadding {\n        PostPadding { fill, padding }\n    }"
+}

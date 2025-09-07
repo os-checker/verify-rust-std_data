@@ -1,0 +1,7 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "fmt::flags::DEBUG_LOWER_HEX_FLAG",
+  "hash": "36622107926588493939389118451618408174",
+  "hash_direct": "1651686796440158895315328180335207429930",
+  "src": "pub(super) const DEBUG_LOWER_HEX_FLAG: u32 = 1 << 25;"
+}

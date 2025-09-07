@@ -1,0 +1,12 @@
+{
+  "file": "core/src/ops/function.rs",
+  "name": "<fn(cmp::Ordering) -> bool {cmp::Ordering::is_lt} as ops::function::FnOnce<(cmp::Ordering,)>>::call_once",
+  "hash": "1062993428968791328110255760227541037018",
+  "hash_direct": "1663056814940086481615595304005618269564",
+  "inst_kind": "\"Shim\"",
+  "src": "extern \"rust-call\" fn call_once(self, args: Args) -> Self::Output;",
+  "callees": [
+    "1599087357710868766316850218022372470465",
+    "1135064969461757410215295834489737485864"
+  ]
+}

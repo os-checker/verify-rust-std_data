@@ -1,0 +1,16 @@
+{
+  "file": "core/src/intrinsics/mod.rs",
+  "name": "core::intrinsics::carrying_mul_add::<u128, u128>",
+  "hash": "237214894484340491810317590408953069357",
+  "hash_direct": "128032945201658140713573700462186721580",
+  "inst_kind": "\"Intrinsic\"",
+  "src": "pub const fn carrying_mul_add<T: [const] fallback::CarryingMulAdd<Unsigned = U>, U>(\n    multiplier: T,\n    multiplicand: T,\n    addend: T,\n    carry: T,\n) -> (U, T) {\n    multiplier.carrying_mul_add(multiplicand, addend, carry)\n}",
+  "callees": [
+    "515486415817055195118014195310921268556",
+    "865650104295848903112749528189008460635",
+    "56234286929832465845177810217708365466",
+    "1680344847910503610811390711953062113319",
+    "920980127064672019717947646353794366525",
+    "833383471550491847117525988933795166554"
+  ]
+}

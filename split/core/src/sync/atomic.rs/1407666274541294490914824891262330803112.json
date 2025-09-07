@@ -1,0 +1,7 @@
+{
+  "file": "core/src/sync/atomic.rs",
+  "name": "sync::atomic::atomic_nand::<i32, i32>",
+  "hash": "1407666274541294490914824891262330803112",
+  "hash_direct": "1403527335040068797712794583421540862943",
+  "src": "unsafe fn atomic_nand<T: Copy, U: Copy>(dst: *mut T, val: U, order: Ordering) -> T {\n    // SAFETY: the caller must uphold the safety contract for `atomic_nand`\n    unsafe {\n        match order {\n            Relaxed => intrinsics::atomic_nand::<T, U, { AO::Relaxed }>(dst, val),\n            Acquire => intrinsics::atomic_nand::<T, U, { AO::Acquire }>(dst, val),\n            Release => intrinsics::atomic_nand::<T, U, { AO::Release }>(dst, val),\n            AcqRel => intrinsics::atomic_nand::<T, U, { AO::AcqRel }>(dst, val),\n            SeqCst => intrinsics::atomic_nand::<T, U, { AO::SeqCst }>(dst, val),\n        }\n    }\n}"
+}

@@ -1,0 +1,16 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "<fmt::DebugAsHex as fmt::Debug>::fmt",
+  "hash": "1192739562911088077613659231593961300896",
+  "hash_direct": "161089298578555265456079141217104651493",
+  "src": "Debug",
+  "macro_backtrace": [
+    {
+      "callsite": "Debug",
+      "defsite": "pub macro Debug($item:item) {\n        /* compiler built-in */\n    }"
+    }
+  ],
+  "callees": [
+    "243839084150888952911908111539685994713"
+  ]
+}

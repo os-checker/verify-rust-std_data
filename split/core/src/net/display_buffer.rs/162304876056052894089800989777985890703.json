@@ -1,0 +1,10 @@
+{
+  "file": "core/src/net/display_buffer.rs",
+  "name": "net::display_buffer::DisplayBuffer::<58>::new",
+  "hash": "162304876056052894089800989777985890703",
+  "hash_direct": "57224283544702883535728873858960008751",
+  "src": "pub(super) const fn new() -> Self {\n        Self { buf: [MaybeUninit::uninit(); SIZE], len: 0 }\n    }",
+  "callees": [
+    "132979495079251483717565906717834352219"
+  ]
+}

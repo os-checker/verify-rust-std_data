@@ -1,0 +1,16 @@
+{
+  "file": "core/src/num/error.rs",
+  "name": "<num::error::IntErrorKind as fmt::Debug>::fmt",
+  "hash": "5533812330805844277867192713140828144",
+  "hash_direct": "15710988702681554810570616727613137267",
+  "src": "Debug",
+  "macro_backtrace": [
+    {
+      "callsite": "Debug",
+      "defsite": "pub macro Debug($item:item) {\n        /* compiler built-in */\n    }"
+    }
+  ],
+  "callees": [
+    "243839084150888952911908111539685994713"
+  ]
+}

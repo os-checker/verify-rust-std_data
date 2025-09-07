@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vst3q_u8",
+  "hash": "1457892109281711297914916794888243428781",
+  "hash_direct": "1653791653704840175516518717958839353039",
+  "src": "pub unsafe fn vst3q_u8(a: *mut u8, b: uint8x16x3_t) {\n    vst3q_s8(transmute(a), transmute(b))\n}",
+  "callees": [
+    "96432262610783917896214507206143523672"
+  ]
+}

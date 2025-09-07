@@ -1,0 +1,7 @@
+{
+  "file": "core/src/bstr/traits.rs",
+  "name": "bstr::traits::<impl slice::index::SliceIndex<bstr::ByteStr> for ops::range::RangeFull>::index",
+  "hash": "375941900763604577715789837736490014",
+  "hash_direct": "1692136067812368747611704757607398809475",
+  "src": "fn index(self, slice: &ByteStr) -> &Self::Output {\n        slice\n    }"
+}

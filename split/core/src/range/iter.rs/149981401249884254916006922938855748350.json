@@ -1,0 +1,13 @@
+{
+  "file": "core/src/range/iter.rs",
+  "name": "<range::iter::IterRange<u32> as iter::adapters::zip::TrustedRandomAccessNoCoerce>::MAY_HAVE_SIDE_EFFECT",
+  "hash": "149981401249884254916006922938855748350",
+  "hash_direct": "135052575889866447572675755833638393825",
+  "src": "const MAY_HAVE_SIDE_EFFECT: bool = false;",
+  "macro_backtrace": [
+    {
+      "callsite": "unsafe_range_trusted_random_access_impl! {\n    u32 i32\n    u64 i64\n}",
+      "defsite": "macro_rules! unsafe_range_trusted_random_access_impl {\n    ($($t:ty)*) => ($(\n        #[doc(hidden)]\n        #[unstable(feature = \"trusted_random_access\", issue = \"none\")]\n        unsafe impl TrustedRandomAccess for IterRange<$t> {}\n\n        #[doc(hidden)]\n        #[unstable(feature = \"trusted_random_access\", issue = \"none\")]\n        unsafe impl TrustedRandomAccessNoCoerce for IterRange<$t> {\n            const MAY_HAVE_SIDE_EFFECT: bool = false;\n        }\n    )*)\n}"
+    }
+  ]
+}

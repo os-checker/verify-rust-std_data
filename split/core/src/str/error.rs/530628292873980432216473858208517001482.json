@@ -1,7 +1,0 @@
-{
-  "file": "core/src/str/error.rs",
-  "name": "str::error::Utf8Error::error_len",
-  "hash": "530628292873980432216473858208517001482",
-  "hash_direct": "121916581138158723849649019407300702837",
-  "src": "pub const fn error_len(&self) -> Option<usize> {\n        // FIXME(const-hack): This should become `map` again, once it's `const`\n        match self.error_len {\n            Some(len) => Some(len as usize),\n            None => None,\n        }\n    }"
-}

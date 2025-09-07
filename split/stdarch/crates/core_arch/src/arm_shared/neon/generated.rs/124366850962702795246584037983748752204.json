@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vqrshlq_u32",
+  "hash": "124366850962702795246584037983748752204",
+  "hash_direct": "43009490197220039048283182138169693131",
+  "src": "pub fn vqrshlq_u32(a: uint32x4_t, b: int32x4_t) -> uint32x4_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(target_arch = \"arm\", link_name = \"llvm.arm.neon.vqrshiftu.v4i32\")]\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.uqrshl.v4i32\"\n        )]\n        fn _vqrshlq_u32(a: uint32x4_t, b: int32x4_t) -> uint32x4_t;\n    }\n    unsafe { _vqrshlq_u32(a, b) }\n}"
+}

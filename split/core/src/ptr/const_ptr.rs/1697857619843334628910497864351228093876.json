@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/const_ptr.rs",
+  "name": "ptr::const_ptr::<impl cmp::PartialOrd for *const ()>::lt",
+  "hash": "1697857619843334628910497864351228093876",
+  "hash_direct": "15766512566574391062328097139900126293",
+  "src": "fn lt(&self, other: &*const T) -> bool {\n        *self < *other\n    }"
+}

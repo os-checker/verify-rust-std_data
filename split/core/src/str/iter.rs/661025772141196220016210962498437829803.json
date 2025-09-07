@@ -1,0 +1,12 @@
+{
+  "file": "core/src/str/iter.rs",
+  "name": "<str::iter::LinesAny<'_> as iter::traits::iterator::Iterator>::size_hint",
+  "hash": "661025772141196220016210962498437829803",
+  "hash_direct": "357958452258081022911455236195950004254",
+  "src": "fn size_hint(&self) -> (usize, Option<usize>) {\n        self.0.size_hint()\n    }",
+  "callees": [
+    "810284716023886784510376445386622101048",
+    "138270947453886641825087402224539179887",
+    "243156998502284196312161309152281313795"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "file": "core/src/ptr/unique.rs",
+  "name": "ptr::unique::Unique::<u32>::as_ref",
+  "hash": "1221777368664347009112074287877254735118",
+  "hash_direct": "7007977029185296932184329630866830250",
+  "src": "pub const unsafe fn as_ref(&self) -> &T {\n        // SAFETY: the caller must guarantee that `self` meets all the\n        // requirements for a reference.\n        unsafe { self.pointer.as_ref() }\n    }",
+  "callees": [
+    "1137478830075394179710321564206986343125",
+    "33331637534491476913440505814675408305",
+    "1512091111473861295010674915588079355189"
+  ]
+}

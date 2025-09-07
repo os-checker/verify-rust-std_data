@@ -1,0 +1,11 @@
+{
+  "file": "core/src/num/nonzero.rs",
+  "name": "<num::nonzero::NonZero<u128> as cmp::PartialOrd>::le",
+  "hash": "114656623767684587741460064825539245499",
+  "hash_direct": "123593565342568494338927357824017945275",
+  "src": "fn le(&self, other: &Self) -> bool {\n        self.get() <= other.get()\n    }",
+  "callees": [
+    "43973918452349306445740347792719101674",
+    "8413912721582228778835144920444015828"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/mem.rs",
+  "name": "kani::mem::has_valid_value::<[i8; 2]>",
+  "hash": "657056899800590947413742282859636126891",
+  "hash_direct": "24241372365970741236387658666491034002",
+  "attrs": [
+    "#[kanitool::fn_marker = \"ValidValueIntrinsic\"]\n"
+  ],
+  "src": "unsafe fn has_valid_value<T: PointeeSized>(_ptr: *const T) -> bool {\n            kani_intrinsic()\n        }",
+  "macro_backtrace": [
+    {
+      "callsite": "kani_core::kani_mem!(core)",
+      "defsite": "macro_rules! kani_mem"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ],
+  "callees": [
+    "1295499066349112484912490938496969975321"
+  ]
+}

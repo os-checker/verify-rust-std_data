@@ -1,0 +1,26 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/arbitrary.rs",
+  "name": "<f16 as kani::Arbitrary>::any",
+  "hash": "1410962344252834817513869155962306602035",
+  "hash_direct": "2005244013712942052065564181017674915",
+  "src": "fn any() -> Self {\n                        // This size_of call does not use generic_const_exprs feature. It's inside a macro, and Self isn't generic.\n                        unsafe { crate::kani::any_raw_internal::<Self>() }\n                    }",
+  "macro_backtrace": [
+    {
+      "callsite": "trivial_arbitrary!(f16)",
+      "defsite": "macro_rules! trivial_arbitrary {\n            ( $type: ty ) => {\n                impl Arbitrary for $type {\n                    #[inline(always)]\n                    fn any() -> Self {\n                        // This size_of call does not use generic_const_exprs feature. It's inside a macro, and Self isn't generic.\n                        unsafe { crate::kani::any_raw_internal::<Self>() }\n                    }\n                    fn any_array<const MAX_ARRAY_LENGTH: usize>() -> [Self; MAX_ARRAY_LENGTH] {\n                        unsafe { crate::kani::any_raw_array::<Self, MAX_ARRAY_LENGTH>() }\n                    }\n                }\n            };\n        }"
+    },
+    {
+      "callsite": "kani_core::generate_arbitrary!()",
+      "defsite": "macro_rules! generate_arbitrary"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ],
+  "callees": [
+    "1048559675954773779011845554866543828863",
+    "206152261641421214511003197441356940589",
+    "1518096356183673556916201792801215069551"
+  ]
+}

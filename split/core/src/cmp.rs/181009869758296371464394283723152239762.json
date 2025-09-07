@@ -1,7 +1,0 @@
-{
-  "file": "core/src/cmp.rs",
-  "name": "cmp::Ordering::as_raw",
-  "hash": "181009869758296371464394283723152239762",
-  "hash_direct": "657940262093620496115056268385207244741",
-  "src": "const fn as_raw(self) -> i8 {\n        // FIXME(const-hack): just use `PartialOrd` against `Equal` once that's const\n        crate::intrinsics::discriminant_value(&self)\n    }"
-}

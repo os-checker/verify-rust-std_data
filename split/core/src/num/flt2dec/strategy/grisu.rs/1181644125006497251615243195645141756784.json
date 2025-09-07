@@ -1,0 +1,14 @@
+{
+  "file": "core/src/num/flt2dec/strategy/grisu.rs",
+  "name": "num::flt2dec::strategy::grisu::cached_power",
+  "hash": "1181644125006497251615243195645141756784",
+  "hash_direct": "1521613393306476899912422589018695571834",
+  "src": "pub fn cached_power(alpha: i16, gamma: i16) -> (i16, Fp) {\n    let offset = CACHED_POW10_FIRST_E as i32;\n    let range = (CACHED_POW10.len() as i32) - 1;\n    let domain = (CACHED_POW10_LAST_E - CACHED_POW10_FIRST_E) as i32;\n    let idx = ((gamma as i32) - offset) * range / domain;\n    let (f, e, k) = CACHED_POW10[idx as usize];\n    debug_assert!(alpha <= e && e <= gamma);\n    (k, Fp { f, e })\n}",
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "243931809744896974812513529918607549579",
+    "1752989996936949203916036071159051010960"
+  ]
+}

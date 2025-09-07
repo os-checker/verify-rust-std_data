@@ -1,0 +1,10 @@
+{
+  "file": "core/src/error.rs",
+  "name": "<boxed::convert::<impl core::convert::From<string::String> for boxed::Box<(dyn core::error::Error + core::marker::Send + core::marker::Sync + 'a)>>::from::StringError as core::error::Error>::cause",
+  "hash": "6054472100990972531927393479968599479",
+  "hash_direct": "2250363124801153153179357674229465252",
+  "src": "fn cause(&self) -> Option<&dyn Error> {\n        self.source()\n    }",
+  "callees": [
+    "910769172914641914810626334675569959270"
+  ]
+}

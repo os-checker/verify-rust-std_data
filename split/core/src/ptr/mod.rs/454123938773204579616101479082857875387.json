@@ -1,8 +1,0 @@
-{
-  "file": "core/src/ptr/mod.rs",
-  "name": "ptr::drop_in_place::<iter::adapters::take_while::TakeWhile<slice::iter::Iter<'_, u8>, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/slice/ascii.rs:301:50: 301:55}>>",
-  "hash": "454123938773204579616101479082857875387",
-  "hash_direct": "44985521902700036859394691516830036575",
-  "inst_kind": "\"Shim\"",
-  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
-}

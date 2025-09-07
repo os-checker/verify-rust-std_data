@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vget_high_s8",
-  "hash": "4215836133750978289345658332573155802",
-  "hash_direct": "105499977218243735917586647572054401020",
-  "src": "pub fn vget_high_s8(a: int8x16_t) -> int8x8_t {\n    unsafe { simd_shuffle!(a, a, [8, 9, 10, 11, 12, 13, 14, 15]) }\n}"
-}

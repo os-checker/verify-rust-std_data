@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/adapters/chain.rs",
+  "name": "iter::adapters::chain::Chain::<iter::adapters::flatten::Flatten<option::IntoIter<char::EscapeDebug>>, iter::adapters::flatten::FlatMap<str::iter::Chars<'_>, char::EscapeDebug, str::CharEscapeDebugContinue>>::new",
+  "hash": "591525518650923793915224995820263759063",
+  "hash_direct": "125019076580538395717928913886276066395",
+  "src": "pub(in super::super) fn new(a: A, b: B) -> Chain<A, B> {\n        Chain { a: Some(a), b: Some(b) }\n    }"
+}

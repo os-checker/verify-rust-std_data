@@ -1,0 +1,11 @@
+{
+  "file": "alloc/src/raw_vec/mod.rs",
+  "name": "raw_vec::finish_grow::<alloc::Global>::{closure#0}",
+  "hash": "31238570698348597655751965574388053905",
+  "hash_direct": "12495811709110125379580456714118556485",
+  "src": "|_| AllocError { layout: new_layout, non_exhaustive: () }.into()",
+  "callees": [
+    "1806196275982253069117281718696114376262",
+    "39115033056683215087715666415425120884"
+  ]
+}

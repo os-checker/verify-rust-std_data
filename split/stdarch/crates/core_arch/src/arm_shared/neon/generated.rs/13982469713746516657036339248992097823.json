@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vrecpe_u32",
+  "hash": "13982469713746516657036339248992097823",
+  "hash_direct": "73744333922220050219518232446829955758",
+  "src": "pub fn vrecpe_u32(a: uint32x2_t) -> uint32x2_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(target_arch = \"arm\", link_name = \"llvm.arm.neon.vrecpe.v2i32\")]\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.urecpe.v2i32\"\n        )]\n        fn _vrecpe_u32(a: uint32x2_t) -> uint32x2_t;\n    }\n    unsafe { _vrecpe_u32(a) }\n}"
+}

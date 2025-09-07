@@ -1,0 +1,13 @@
+{
+  "file": "core/src/num/flt2dec/mod.rs",
+  "name": "<num::flt2dec::Sign as cmp::Eq>::assert_receiver_is_total_eq",
+  "hash": "60285171457992118441354160639911148336",
+  "hash_direct": "94239622878258629396760676210150835571",
+  "src": "Eq",
+  "macro_backtrace": [
+    {
+      "callsite": "Eq",
+      "defsite": "pub macro Eq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

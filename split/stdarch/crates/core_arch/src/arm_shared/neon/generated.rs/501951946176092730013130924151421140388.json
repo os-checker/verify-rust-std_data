@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vld3_dup_s64",
+  "hash": "501951946176092730013130924151421140388",
+  "hash_direct": "7224899198389709142965905151062279662",
+  "src": "pub unsafe fn vld3_dup_s64(a: *const i64) -> int64x1x3_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.ld3r.v1i64.p0\"\n        )]\n        fn _vld3_dup_s64(ptr: *const i64) -> int64x1x3_t;\n    }\n    _vld3_dup_s64(a as _)\n}"
+}

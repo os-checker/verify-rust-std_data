@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/metadata.rs",
+  "name": "ptr::metadata::metadata::<task::wake::RawWakerVTable>",
+  "hash": "1600310593274451591417115708371767792792",
+  "hash_direct": "1375913738169059161113241558304782767630",
+  "src": "pub const fn metadata<T: PointeeSized>(ptr: *const T) -> <T as Pointee>::Metadata {\n    ptr_metadata(ptr)\n}"
+}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/ascii/ascii_char.rs",
-  "name": "ascii::ascii_char::AsciiChar::to_char",
-  "hash": "1691152665580368143613246611251988920077",
-  "hash_direct": "123285108475077113273930759101755387512",
-  "src": "pub const fn to_char(self) -> char {\n        self as u8 as char\n    }"
-}

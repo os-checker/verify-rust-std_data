@@ -1,0 +1,59 @@
+{
+  "file": "core/src/iter/mod.rs",
+  "name": "<iter::adapters::take_while::TakeWhile<slice::iter::Iter<'_, u8>, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/slice/ascii.rs:301:50: 301:55}> as iter::traits::iterator::Iterator>::fold::<usize, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/iter/traits/iterator.rs:232:13: 232:23}>",
+  "hash": "176796621810975051015306390259108043954",
+  "hash_direct": "1053721184193663438110194408042380422390",
+  "src": "fn $fold<AAA, FFF>(mut self, init: AAA, fold: FFF) -> AAA\n        where\n            FFF: FnMut(AAA, Self::Item) -> AAA,\n        {\n            use crate::ops::NeverShortCircuit;\n\n            self.$try_fold(init, NeverShortCircuit::wrap_mut_2(fold)).0\n        }",
+  "macro_backtrace": [
+    {
+      "callsite": "impl_fold_via_try_fold! { @internal fold -> try_fold }",
+      "defsite": "macro_rules! impl_fold_via_try_fold {\n    (fold -> try_fold) => {\n        impl_fold_via_try_fold! { @internal fold -> try_fold }\n    };\n    (rfold -> try_rfold) => {\n        impl_fold_via_try_fold! { @internal rfold -> try_rfold }\n    };\n    (spec_fold -> spec_try_fold) => {\n        impl_fold_via_try_fold! { @internal spec_fold -> spec_try_fold }\n    };\n    (spec_rfold -> spec_try_rfold) => {\n        impl_fold_via_try_fold! { @internal spec_rfold -> spec_try_rfold }\n    };\n    (@internal $fold:ident -> $try_fold:ident) => {\n        #[inline]\n        fn $fold<AAA, FFF>(mut self, init: AAA, fold: FFF) -> AAA\n        where\n            FFF: FnMut(AAA, Self::Item) -> AAA,\n        {\n            use crate::ops::NeverShortCircuit;\n\n            self.$try_fold(init, NeverShortCircuit::wrap_mut_2(fold)).0\n        }\n    };\n}"
+    },
+    {
+      "callsite": "impl_fold_via_try_fold! { fold -> try_fold }",
+      "defsite": "macro_rules! impl_fold_via_try_fold {\n    (fold -> try_fold) => {\n        impl_fold_via_try_fold! { @internal fold -> try_fold }\n    };\n    (rfold -> try_rfold) => {\n        impl_fold_via_try_fold! { @internal rfold -> try_rfold }\n    };\n    (spec_fold -> spec_try_fold) => {\n        impl_fold_via_try_fold! { @internal spec_fold -> spec_try_fold }\n    };\n    (spec_rfold -> spec_try_rfold) => {\n        impl_fold_via_try_fold! { @internal spec_rfold -> spec_try_rfold }\n    };\n    (@internal $fold:ident -> $try_fold:ident) => {\n        #[inline]\n        fn $fold<AAA, FFF>(mut self, init: AAA, fold: FFF) -> AAA\n        where\n            FFF: FnMut(AAA, Self::Item) -> AAA,\n        {\n            use crate::ops::NeverShortCircuit;\n\n            self.$try_fold(init, NeverShortCircuit::wrap_mut_2(fold)).0\n        }\n    };\n}"
+    }
+  ],
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "17421822894816687532325615181214565887",
+    "23815256893174302637797703719499456373",
+    "192320122097020926110741641336237035440",
+    "73476341263304739865524723381159454666",
+    "15222535473590645662448514490649263759",
+    "850916170799784766014361160141828895680",
+    "131793031764131930538422663224584349137",
+    "1204668293620499224013336883119093261459",
+    "171593739300022194915526452191835401234",
+    "158061591733274542515760726194648803215",
+    "69902376175688397258602623035066808646",
+    "388173521231105032313797604962162152567",
+    "660450856857639540115496564124318787738",
+    "158561908028273082212686185234069496826",
+    "24523638698127423644960449980189530983",
+    "14323650203200877113914221917540958029",
+    "162303132337390038831428326785257079002",
+    "69585263980119577656026211865620541908",
+    "21180418933624670705539187561093798016",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "478753423337745817613297159272845606672",
+    "187482952606822645712460029589708661523",
+    "126818845945534382313624863669169238336",
+    "156761099224162496521554063647246510953",
+    "99992202745536390513941490135774676032",
+    "196438333520623630417488568982803531961",
+    "437042703267792806014298364096370039621",
+    "139997011880036619526085207717010799176",
+    "671334365265236941113753063318744059957",
+    "115305965424151250157684815253829770404",
+    "103695068283875105018623992302427237269",
+    "53569486981529370344752868158650318763",
+    "33020214437710035965402411197660679021",
+    "137658875440085407875625922148255450571",
+    "1227194532305185117716552313218085751352",
+    "756154173690443859818404881616867249436",
+    "621698472431332816417792581602959129152",
+    "739520556846959085018120036998133255835"
+  ]
+}

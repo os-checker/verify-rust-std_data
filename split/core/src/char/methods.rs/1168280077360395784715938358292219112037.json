@@ -1,7 +1,0 @@
-{
-  "file": "core/src/char/methods.rs",
-  "name": "char::methods::<impl char>::is_ascii_punctuation",
-  "hash": "1168280077360395784715938358292219112037",
-  "hash_direct": "559061753253346047811839843561969025323",
-  "src": "pub const fn is_ascii_punctuation(&self) -> bool {\n        matches!(*self, '!'..='/')\n            | matches!(*self, ':'..='@')\n            | matches!(*self, '['..='`')\n            | matches!(*self, '{'..='~')\n    }"
-}

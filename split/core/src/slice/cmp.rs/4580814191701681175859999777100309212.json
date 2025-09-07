@@ -1,0 +1,11 @@
+{
+  "file": "core/src/slice/cmp.rs",
+  "name": "<[*const ()] as slice::cmp::SlicePartialEq<*const ()>>::equal",
+  "hash": "4580814191701681175859999777100309212",
+  "hash_direct": "79278789732115166805882660182482093945",
+  "src": "default fn equal(&self, other: &[B]) -> bool {\n        if self.len() != other.len() {\n            return false;\n        }\n\n        // Implemented as explicit indexing rather\n        // than zipped iterators for performance reasons.\n        // See PR https://github.com/rust-lang/rust/pull/116846\n        // FIXME(const_hack): make this a `for idx in 0..self.len()` loop.\n        let mut idx = 0;\n        while idx < self.len() {\n            // bound checks are optimized away\n            if self[idx] != other[idx] {\n                return false;\n            }\n            idx += 1;\n        }\n\n        true\n    }",
+  "callees": [
+    "1550707140397202629616354364915359942378",
+    "1451208121872394760214718749420521326685"
+  ]
+}

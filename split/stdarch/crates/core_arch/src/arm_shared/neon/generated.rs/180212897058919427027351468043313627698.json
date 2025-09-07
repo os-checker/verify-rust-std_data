@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vtst_u8",
+  "hash": "180212897058919427027351468043313627698",
+  "hash_direct": "128438759492400876945512867225041340049",
+  "src": "pub fn vtst_u8(a: uint8x8_t, b: uint8x8_t) -> uint8x8_t {\n    unsafe {\n        let c: uint8x8_t = simd_and(a, b);\n        let d: u8x8 = u8x8::new(0, 0, 0, 0, 0, 0, 0, 0);\n        simd_ne(c, transmute(d))\n    }\n}",
+  "callees": [
+    "59690993282929059707936296462356386575"
+  ]
+}

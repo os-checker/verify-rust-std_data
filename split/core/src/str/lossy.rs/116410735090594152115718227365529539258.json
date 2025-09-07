@@ -1,0 +1,7 @@
+{
+  "file": "core/src/str/lossy.rs",
+  "name": "str::lossy::Utf8Chunks::<'_>::debug",
+  "hash": "116410735090594152115718227365529539258",
+  "hash_direct": "613151091778786542317440492190509658550",
+  "src": "pub fn debug(&self) -> Debug<'_> {\n        Debug(self.source)\n    }"
+}

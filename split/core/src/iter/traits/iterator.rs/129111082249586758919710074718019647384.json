@@ -1,0 +1,10 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<core::slice::Iter<'_, u8> as core::iter::Iterator>::map::<usize, {closure@<core::iter::Filter<I, P> as core::iter::Iterator>::count::to_usize<&u8, {closure@core::str::count::char_count_general_case::{closure#0}}>::{closure#0}}>",
+  "hash": "129111082249586758919710074718019647384",
+  "hash_direct": "39153290369121458759605623913508692329",
+  "src": "fn map<B, F>(self, f: F) -> Map<Self, F>\n    where\n        Self: Sized,\n        F: FnMut(Self::Item) -> B,\n    {\n        Map::new(self, f)\n    }",
+  "callees": [
+    "36474222372541034209414042900904704500"
+  ]
+}

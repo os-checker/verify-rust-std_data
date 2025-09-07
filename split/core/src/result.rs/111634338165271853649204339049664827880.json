@@ -1,0 +1,10 @@
+{
+  "file": "core/src/result.rs",
+  "name": "<core::result::Result<*mut rc::RcInner<[u8]>, core::alloc::AllocError> as core::ops::FromResidual<core::result::Result<core::convert::Infallible, core::alloc::AllocError>>>::from_residual",
+  "hash": "111634338165271853649204339049664827880",
+  "hash_direct": "695237162585019845011236190791659640523",
+  "src": "fn from_residual(residual: Result<convert::Infallible, E>) -> Self {\n        match residual {\n            Err(e) => Err(From::from(e)),\n        }\n    }",
+  "callees": [
+    "83960345459681432894037021100786495452"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f32.rs",
+  "name": "f32::math::powi",
+  "hash": "46627752418478057373695395924105075743",
+  "hash_direct": "913725486828815483917215367188559579946",
+  "src": "pub fn powi(x: f32, n: i32) -> f32 {\n        // SAFETY: intrinsic with no preconditions\n        unsafe { intrinsics::powif32(x, n) }\n    }"
+}

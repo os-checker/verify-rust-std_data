@@ -1,0 +1,12 @@
+{
+  "file": "core/src/str/iter.rs",
+  "name": "<str::iter::SplitAsciiWhitespace<'_> as iter::traits::iterator::Iterator>::size_hint",
+  "hash": "155763989052603197278081183997888950681",
+  "hash_direct": "62505747527933635754131919933612996420",
+  "src": "fn size_hint(&self) -> (usize, Option<usize>) {\n        self.inner.size_hint()\n    }",
+  "callees": [
+    "850283145387083345113043396470917027037",
+    "35534018054087135957295325654917474781",
+    "1083880839545475416413279424941791095656"
+  ]
+}

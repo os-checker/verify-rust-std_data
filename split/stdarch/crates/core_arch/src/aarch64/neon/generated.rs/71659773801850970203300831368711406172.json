@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vabd_f64",
+  "hash": "71659773801850970203300831368711406172",
+  "hash_direct": "120018258264769457799424875527835063622",
+  "src": "pub fn vabd_f64(a: float64x1_t, b: float64x1_t) -> float64x1_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.fabd.v1f64\"\n        )]\n        fn _vabd_f64(a: float64x1_t, b: float64x1_t) -> float64x1_t;\n    }\n    unsafe { _vabd_f64(a, b) }\n}"
+}

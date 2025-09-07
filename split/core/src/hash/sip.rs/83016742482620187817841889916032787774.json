@@ -1,0 +1,16 @@
+{
+  "file": "core/src/hash/sip.rs",
+  "name": "<hash::sip::Sip24Rounds as fmt::Debug>::fmt",
+  "hash": "83016742482620187817841889916032787774",
+  "hash_direct": "1805432667552540541517209047555417122763",
+  "src": "Debug",
+  "macro_backtrace": [
+    {
+      "callsite": "Debug",
+      "defsite": "pub macro Debug($item:item) {\n        /* compiler built-in */\n    }"
+    }
+  ],
+  "callees": [
+    "243839084150888952911908111539685994713"
+  ]
+}

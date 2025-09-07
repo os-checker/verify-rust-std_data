@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ops/control_flow.rs",
+  "name": "<ops::control_flow::ControlFlow<ops::control_flow::ControlFlow<(), cmp::Ordering>> as ops::try_trait::Try>::branch",
+  "hash": "774674397518621262913059827592991666396",
+  "hash_direct": "621553893356174473116296643423191488",
+  "src": "fn branch(self) -> ControlFlow<Self::Residual, Self::Output> {\n        match self {\n            ControlFlow::Continue(c) => ControlFlow::Continue(c),\n            ControlFlow::Break(b) => ControlFlow::Break(ControlFlow::Break(b)),\n        }\n    }"
+}

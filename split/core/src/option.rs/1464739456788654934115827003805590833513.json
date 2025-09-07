@@ -1,0 +1,7 @@
+{
+  "file": "core/src/option.rs",
+  "name": "<option::Option<char::EscapeDebug> as iter::traits::collect::IntoIterator>::into_iter",
+  "hash": "1464739456788654934115827003805590833513",
+  "hash_direct": "147746792031435232294855211844611148092",
+  "src": "fn into_iter(self) -> IntoIter<T> {\n        IntoIter { inner: Item { opt: self } }\n    }"
+}

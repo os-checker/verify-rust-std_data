@@ -1,7 +1,0 @@
-{
-  "file": "core/src/mem/mod.rs",
-  "name": "mem::size_of::<core_arch::arm_shared::neon::int8x16_t>",
-  "hash": "53396876982436730209637861142466827451",
-  "hash_direct": "963186133657880843516252824182683704926",
-  "src": "pub const fn size_of<T>() -> usize {\n    intrinsics::size_of::<T>()\n}"
-}

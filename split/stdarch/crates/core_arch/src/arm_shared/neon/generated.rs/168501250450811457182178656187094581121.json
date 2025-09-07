@@ -1,0 +1,11 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vmovq_n_u64",
+  "hash": "168501250450811457182178656187094581121",
+  "hash_direct": "772024792402395873818390099827746909461",
+  "src": "pub fn vmovq_n_u64(value: u64) -> uint64x2_t {\n    vdupq_n_u64(value)\n}",
+  "callees": [
+    "27667674422047018759681636221638928144",
+    "57984615732008793801375717201114340689"
+  ]
+}

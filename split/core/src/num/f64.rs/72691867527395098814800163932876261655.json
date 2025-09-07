@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/f64.rs",
-  "name": "f64::math::sqrt",
-  "hash": "72691867527395098814800163932876261655",
-  "hash_direct": "171112413956503489471440808359848115752",
-  "src": "pub fn sqrt(x: f64) -> f64 {\n        // SAFETY: intrinsic with no preconditions\n        unsafe { intrinsics::sqrtf64(x) }\n    }"
-}

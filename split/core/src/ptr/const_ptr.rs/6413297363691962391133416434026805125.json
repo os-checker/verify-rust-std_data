@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/const_ptr.rs",
+  "name": "ptr::const_ptr::<impl *const [unicode::unicode_data::ShortOffsetRunHeader]>::len",
+  "hash": "6413297363691962391133416434026805125",
+  "hash_direct": "144543931547704375535111314649513607940",
+  "src": "pub const fn len(self) -> usize {\n        metadata(self)\n    }",
+  "callees": [
+    "106633419293027594483292114003604846516"
+  ]
+}

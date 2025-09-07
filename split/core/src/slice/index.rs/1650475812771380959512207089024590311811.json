@@ -1,0 +1,14 @@
+{
+  "file": "core/src/slice/index.rs",
+  "name": "<ops::range::RangeInclusive<usize> as slice::index::SliceIndex<[u8]>>::get",
+  "hash": "1650475812771380959512207089024590311811",
+  "hash_direct": "17886685181916189824248347116234002676",
+  "src": "fn get(self, slice: &[T]) -> Option<&[T]> {\n        if *self.end() == usize::MAX { None } else { self.into_slice_range().get(slice) }\n    }",
+  "callees": [
+    "36263650381921031236374006938891928812",
+    "7046932878042447149117030751365395178",
+    "146790947205902300248608006721818154078",
+    "875287568511336482318416051223074532749",
+    "1574076206413902276617103312132801420117"
+  ]
+}

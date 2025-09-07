@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vcnt_p8",
+  "hash": "318324567219878616517945297912297465131",
+  "hash_direct": "133620260949964072316054313923432249787",
+  "src": "pub fn vcnt_p8(a: poly8x8_t) -> poly8x8_t {\n    unsafe { transmute(vcnt_s8(transmute(a))) }\n}",
+  "callees": [
+    "855103572468727255614153645413831821743"
+  ]
+}

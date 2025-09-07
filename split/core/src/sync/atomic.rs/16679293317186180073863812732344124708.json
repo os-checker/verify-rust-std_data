@@ -1,0 +1,7 @@
+{
+  "file": "core/src/sync/atomic.rs",
+  "name": "sync::atomic::AtomicBool::get_mut_slice",
+  "hash": "16679293317186180073863812732344124708",
+  "hash_direct": "530472456449313697513566617400933057805",
+  "src": "pub fn get_mut_slice(this: &mut [Self]) -> &mut [bool] {\n        // SAFETY: the mutable reference guarantees unique ownership.\n        unsafe { &mut *(this as *mut [Self] as *mut [bool]) }\n    }"
+}

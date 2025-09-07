@@ -1,0 +1,7 @@
+{
+  "file": "core/src/io/borrowed_buf.rs",
+  "name": "io::borrowed_buf::BorrowedBuf::<'_>::clear",
+  "hash": "1071297231016274929015491464955019694295",
+  "hash_direct": "312569794153016215195055914794004068",
+  "src": "pub fn clear(&mut self) -> &mut Self {\n        self.filled = 0;\n        self\n    }"
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::veor3q_s8",
+  "hash": "127560244860132602256375441957838491044",
+  "hash_direct": "310206946465023445116235183605070135932",
+  "src": "pub fn veor3q_s8(a: int8x16_t, b: int8x16_t, c: int8x16_t) -> int8x16_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.crypto.eor3s.v16i8\"\n        )]\n        fn _veor3q_s8(a: int8x16_t, b: int8x16_t, c: int8x16_t) -> int8x16_t;\n    }\n    unsafe { _veor3q_s8(a, b, c) }\n}"
+}

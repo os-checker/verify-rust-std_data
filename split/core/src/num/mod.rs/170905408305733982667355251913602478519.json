@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/mod.rs",
+  "name": "num::<impl u8>::is_utf8_char_boundary",
+  "hash": "170905408305733982667355251913602478519",
+  "hash_direct": "1628816544492436777715810429126340611839",
+  "src": "pub(crate) const fn is_utf8_char_boundary(self) -> bool {\n        // This is bit magic equivalent to: b < 128 || b >= 192\n        (self as i8) >= -0x40\n    }"
+}

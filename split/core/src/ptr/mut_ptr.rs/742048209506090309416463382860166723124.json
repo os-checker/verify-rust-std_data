@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/mut_ptr.rs",
+  "name": "ptr::mut_ptr::<impl *mut char>::cast::<()>",
+  "hash": "742048209506090309416463382860166723124",
+  "hash_direct": "417888962975632025513069025607350068805",
+  "src": "pub const fn cast<U>(self) -> *mut U {\n        self as _\n    }"
+}

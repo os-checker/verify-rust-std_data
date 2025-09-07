@@ -1,0 +1,14 @@
+{
+  "file": "core/src/result.rs",
+  "name": "core::result::Result::<(), core::fmt::Error>::and_then::<(), {closure@core::fmt::DebugStruct<'_, '_>::finish::{closure#0}}>",
+  "hash": "44958117642227937617037127401983181369",
+  "hash_direct": "731876202134338238913484774226164075478",
+  "src": "pub const fn and_then<U, F>(self, op: F) -> Result<U, E>\n    where\n        F: [const] FnOnce(T) -> Result<U, E> + [const] Destruct,\n    {\n        match self {\n            Ok(t) => op(t),\n            Err(e) => Err(e),\n        }\n    }",
+  "callees": [
+    "27115942777941331317285292583673689684",
+    "81446715708300991554169728933850152568",
+    "33079549740955926448092455435525766202",
+    "1571969697186667512510572825248226870481",
+    "173815218127306092468286153806422688022"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "src/probe/proc_macro_span.rs",
+  "name": "_",
+  "hash": "968351082297444019713980968542978912060",
+  "hash_direct": "96950236883999671098867448246858847768",
+  "src": "const _: Option<&str> = option_env!(\"RUSTC_BOOTSTRAP\");"
+}

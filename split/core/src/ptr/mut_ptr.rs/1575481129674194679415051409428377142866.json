@@ -1,0 +1,16 @@
+{
+  "file": "core/src/ptr/mut_ptr.rs",
+  "name": "ptr::mut_ptr::<impl *mut ()>::offset_from",
+  "hash": "1575481129674194679415051409428377142866",
+  "hash_direct": "6321613189399191052571355655721924331",
+  "src": "pub const unsafe fn offset_from(self, origin: *const T) -> isize\n    where\n        T: Sized,\n    {\n        // SAFETY: the caller must uphold the safety contract for `offset_from`.\n        unsafe { (self as *const T).offset_from(origin) }\n    }",
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "274291830502248510811445962002553983266",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "243931809744896974812513529918607549579",
+    "1752989996936949203916036071159051010960",
+    "1476883853054864637513679373600173080019"
+  ]
+}

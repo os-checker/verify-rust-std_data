@@ -1,0 +1,15 @@
+{
+  "file": "core/src/num/dec2flt/common.rs",
+  "name": "<[u8] as num::dec2flt::common::ByteSlice>::parse_digits::<{closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/num/dec2flt/parse.rs:42:24: 42:31}>",
+  "hash": "16829672477431155957764925712193508222",
+  "hash_direct": "1266988225189721307014708811038895899751",
+  "src": "fn parse_digits(&self, mut func: impl FnMut(u8)) -> &Self {\n        let mut s = self;\n\n        while let Some((c, rest)) = s.split_first() {\n            let c = c.wrapping_sub(b'0');\n            if c < 10 {\n                func(c);\n                s = rest;\n            } else {\n                break;\n            }\n        }\n\n        s\n    }",
+  "callees": [
+    "136084625551339858638531556898770380387",
+    "87170636661664677068004457186813404325",
+    "397719984256995366213973233668163909125",
+    "160648969046233484485993117338072969939",
+    "75412250229756722398785238122262020119",
+    "78204921097721474912957416123615891283"
+  ]
+}

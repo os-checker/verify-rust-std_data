@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/str.rs",
+  "name": "str::replace_ascii::{closure#0}",
+  "hash": "13006671868649879165920642626120321820",
+  "hash_direct": "1166021068936634188611510648783097022500",
+  "src": "|b| if *b == from { to } else { *b }"
+}

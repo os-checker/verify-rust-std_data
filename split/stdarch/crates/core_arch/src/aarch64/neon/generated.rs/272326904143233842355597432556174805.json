@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
-  "name": "core_arch::aarch64::neon::generated::vqsubs_u32",
-  "hash": "272326904143233842355597432556174805",
-  "hash_direct": "872642778144085129110353979372089319629",
-  "src": "pub fn vqsubs_u32(a: u32, b: u32) -> u32 {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.uqsub.i32\"\n        )]\n        fn _vqsubs_u32(a: u32, b: u32) -> u32;\n    }\n    unsafe { _vqsubs_u32(a, b) }\n}"
-}

@@ -1,0 +1,10 @@
+{
+  "file": "core/src/option.rs",
+  "name": "<option::Option<&dyn error::Error> as clone::Clone>::clone",
+  "hash": "24133000437012385732206667658242100365",
+  "hash_direct": "11963494522409391612618197370644404940",
+  "src": "fn clone(&self) -> Self {\n        match self {\n            Some(x) => Some(x.clone()),\n            None => None,\n        }\n    }",
+  "callees": [
+    "1771841606772899800011640991484883807403"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "<fmt::Error as cmp::Eq>::assert_receiver_is_total_eq",
+  "hash": "106517918667363707052261391735220907356",
+  "hash_direct": "169726413363748353387295466415859085869",
+  "src": "Eq",
+  "macro_backtrace": [
+    {
+      "callsite": "Eq",
+      "defsite": "pub macro Eq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

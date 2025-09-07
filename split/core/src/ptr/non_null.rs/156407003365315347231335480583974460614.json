@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "ptr::non_null::NonNull::<intrinsics::verify::u8_struct>::as_ptr",
+  "hash": "156407003365315347231335480583974460614",
+  "hash_direct": "81271337679957438909253019099779800625",
+  "src": "pub const fn as_ptr(self) -> *mut T {\n        // This is a transmute for the same reasons as `NonZero::get`.\n\n        // SAFETY: `NonNull` is `transparent` over a `*const T`, and `*const T`\n        // and `*mut T` have the same layout, so transitively we can transmute\n        // our `NonNull` to a `*mut T` directly.\n        unsafe { mem::transmute::<Self, *mut T>(self) }\n    }"
+}

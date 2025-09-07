@@ -1,0 +1,20 @@
+{
+  "file": "core/src/intrinsics/mir.rs",
+  "name": "intrinsics::mir::Return",
+  "hash": "1170599627963948291011266800954281277174",
+  "hash_direct": "373805668124823360316742996885924700633",
+  "src": "pub fn $($sig)* { panic!() }",
+  "macro_backtrace": [
+    {
+      "callsite": "define!(\"mir_return\", fn Return() -> BasicBlock)",
+      "defsite": "macro_rules! define {\n    ($name:literal, $( #[ $meta:meta ] )* fn $($sig:tt)*) => {\n        #[rustc_diagnostic_item = $name]\n        #[inline]\n        $( #[ $meta ] )*\n        pub fn $($sig)* { panic!() }\n    }\n}"
+    }
+  ],
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "243931809744896974812513529918607549579",
+    "1752989996936949203916036071159051010960"
+  ]
+}

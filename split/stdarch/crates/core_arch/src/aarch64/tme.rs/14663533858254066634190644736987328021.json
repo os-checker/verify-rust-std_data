@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/tme.rs",
+  "name": "core_arch::aarch64::tme::__ttest",
+  "hash": "14663533858254066634190644736987328021",
+  "hash_direct": "61208572076415911897038386152839511708",
+  "src": "pub unsafe fn __ttest() -> u64 {\n    aarch64_ttest()\n}"
+}

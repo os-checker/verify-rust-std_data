@@ -1,0 +1,11 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vmulq_n_f16",
+  "hash": "13552660705473601969148470091176722112",
+  "hash_direct": "1375273275656322644211614165195846536914",
+  "src": "pub fn vmulq_n_f16(a: float16x8_t, b: f16) -> float16x8_t {\n    unsafe { simd_mul(a, vdupq_n_f16(b)) }\n}",
+  "callees": [
+    "12706514479515277850697069738998001840",
+    "52629194538698596618519146775442162919"
+  ]
+}

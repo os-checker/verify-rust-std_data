@@ -1,0 +1,7 @@
+{
+  "file": "core/src/convert/mod.rs",
+  "name": "<convert::Infallible as error::Error>::description",
+  "hash": "165493618254658025888809269415387591293",
+  "hash_direct": "10687620728992510074380973450657565944",
+  "src": "fn description(&self) -> &str {\n        match *self {}\n    }"
+}

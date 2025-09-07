@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/const_ptr.rs",
+  "name": "ptr::const_ptr::<impl *const core_arch::simd::i8x4>::cast::<[i8; 4]>",
+  "hash": "23946948956245853045895448369225879338",
+  "hash_direct": "100885229842823781916020662711238688811",
+  "src": "pub const fn cast<U>(self) -> *const U {\n        self as _\n    }"
+}

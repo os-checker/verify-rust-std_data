@@ -1,7 +1,0 @@
-{
-  "file": "core/src/slice/sort/shared/smallsort.rs",
-  "name": "slice::sort::shared::smallsort::SMALL_SORT_NETWORK_SCRATCH_LEN",
-  "hash": "1001059073988471385513266755106039499102",
-  "hash_direct": "130726918344654182364909222185039932137",
-  "src": "const SMALL_SORT_NETWORK_SCRATCH_LEN: usize = SMALL_SORT_NETWORK_THRESHOLD;"
-}

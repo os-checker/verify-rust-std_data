@@ -1,0 +1,32 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/arbitrary/pointer.rs",
+  "name": "<kani::arbitrary_ptr::AllocationStatus as kani::Arbitrary>::any",
+  "hash": "79814521157062014985693017672222855954",
+  "hash_direct": "996705194788148716213276780704917836523",
+  "src": "kani::Arbitrary",
+  "macro_backtrace": [
+    {
+      "callsite": "kani::Arbitrary",
+      "defsite": "#[proc_macro_error]"
+    },
+    {
+      "callsite": "kani_core::ptr_generator!()",
+      "defsite": "macro_rules! ptr_generator"
+    },
+    {
+      "callsite": "kani_core::generate_arbitrary!()",
+      "defsite": "macro_rules! generate_arbitrary"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ],
+  "callees": [
+    "28791198012686662548792962938594084249",
+    "135929855001212425903524067534552737362",
+    "1640570854584499983913922181933773581422",
+    "179669095727392675457001382090810284652",
+    "12842158263471368155984318495457181408"
+  ]
+}

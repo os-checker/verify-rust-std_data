@@ -1,7 +1,0 @@
-{
-  "file": "core/src/cell.rs",
-  "name": "cell::UnsafeCell::<u16>::get",
-  "hash": "1349044184378204747715014981127881545117",
-  "hash_direct": "370625722725601107013088908825024259584",
-  "src": "pub const fn get(&self) -> *mut T {\n        // We can just cast the pointer from `UnsafeCell<T>` to `T` because of\n        // #[repr(transparent)]. This exploits std's special status, there is\n        // no guarantee for user code that this will work in future versions of the compiler!\n        self as *const UnsafeCell<T> as *const T as *mut T\n    }"
-}

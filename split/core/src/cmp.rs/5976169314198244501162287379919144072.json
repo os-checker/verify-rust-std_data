@@ -1,0 +1,13 @@
+{
+  "file": "core/src/cmp.rs",
+  "name": "cmp::impls::<impl cmp::PartialOrd for f128>::partial_cmp",
+  "hash": "5976169314198244501162287379919144072",
+  "hash_direct": "580682196547950936512589937176841045228",
+  "src": "fn partial_cmp(&self, other: &Self) -> Option<Ordering> {\n                    match (*self <= *other, *self >= *other) {\n                        (false, false) => None,\n                        (false, true) => Some(Greater),\n                        (true, false) => Some(Less),\n                        (true, true) => Some(Equal),\n                    }\n                }",
+  "macro_backtrace": [
+    {
+      "callsite": "partial_ord_impl! { f16 f32 f64 f128 }",
+      "defsite": "macro_rules! partial_ord_impl {\n        ($($t:ty)*) => ($(\n            #[stable(feature = \"rust1\", since = \"1.0.0\")]\n            impl PartialOrd for $t {\n                #[inline]\n                fn partial_cmp(&self, other: &Self) -> Option<Ordering> {\n                    match (*self <= *other, *self >= *other) {\n                        (false, false) => None,\n                        (false, true) => Some(Greater),\n                        (true, false) => Some(Less),\n                        (true, true) => Some(Equal),\n                    }\n                }\n\n                partial_ord_methods_primitive_impl!();\n            }\n        )*)\n    }"
+    }
+  ]
+}

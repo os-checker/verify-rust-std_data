@@ -1,0 +1,13 @@
+{
+  "file": "core/src/sync/atomic.rs",
+  "name": "sync::atomic::fence",
+  "hash": "1142800993023095142010879166427662838664",
+  "hash_direct": "149191949588253942657259274184247656326",
+  "src": "pub fn fence(order: Ordering) {\n    // SAFETY: using an atomic fence is safe.\n    unsafe {\n        match order {\n            Acquire => intrinsics::atomic_fence::<{ AO::Acquire }>(),\n            Release => intrinsics::atomic_fence::<{ AO::Release }>(),\n            AcqRel => intrinsics::atomic_fence::<{ AO::AcqRel }>(),\n            SeqCst => intrinsics::atomic_fence::<{ AO::SeqCst }>(),\n            Relaxed => panic!(\"there is no such thing as a relaxed fence\"),\n        }\n    }\n}",
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "1752989996936949203916036071159051010960"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "file": "core/src/marker.rs",
+  "name": "<marker::PhantomPinned as default::Default>::default",
+  "hash": "1600509304913695688217697405739095284668",
+  "hash_direct": "867750280100093452516240712568703851",
+  "src": "Default",
+  "macro_backtrace": [
+    {
+      "callsite": "Default",
+      "defsite": "pub macro Default($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

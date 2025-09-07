@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/collections/btree/node.rs",
+  "name": "collections::btree::node::MIN_LEN_AFTER_SPLIT",
+  "hash": "635484859745646819913390811433420954632",
+  "hash_direct": "104701781173917227687090699769423320175",
+  "src": "pub(super) const MIN_LEN_AFTER_SPLIT: usize = B - 1;"
+}

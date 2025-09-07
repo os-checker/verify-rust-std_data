@@ -1,0 +1,11 @@
+{
+  "file": "core/src/num/f32.rs",
+  "name": "f32::<impl f32>::total_cmp",
+  "hash": "1157832635988226544312579101964623411278",
+  "hash_direct": "1351627855610819438348973875948730412",
+  "src": "pub fn total_cmp(&self, other: &Self) -> crate::cmp::Ordering {\n        let mut left = self.to_bits() as i32;\n        let mut right = other.to_bits() as i32;\n\n        // In case of negatives, flip all the bits except the sign\n        // to achieve a similar layout as two's complement integers\n        //\n        // Why does this work? IEEE 754 floats consist of three fields:\n        // Sign bit, exponent and mantissa. The set of exponent and mantissa\n        // fields as a whole have the property that their bitwise order is\n        // equal to the numeric magnitude where the magnitude is defined.\n        // The magnitude is not normally defined on NaN values, but\n        // IEEE 754 totalOrder defines the NaN values also to follow the\n        // bitwise order. This leads to order explained in the doc comment.\n        // However, the representation of magnitude is the same for negative\n        // and positive numbers – only the sign bit is different.\n        // To easily compare the floats as signed integers, we need to\n        // flip the exponent and mantissa bits in case of negative numbers.\n        // We effectively convert the numbers to \"two's complement\" form.\n        //\n        // To do the flipping, we construct a mask and XOR against it.\n        // We branchlessly calculate an \"all-ones except for the sign bit\"\n        // mask from negative-signed values: right shifting sign-extends\n        // the integer, so we \"fill\" the mask with sign bits, and then\n        // convert to unsigned to push one more zero bit.\n        // On positive values, the mask is all zeros, so it's a no-op.\n        left ^= (((left >> 31) as u32) >> 1) as i32;\n        right ^= (((right >> 31) as u32) >> 1) as i32;\n\n        left.cmp(&right)\n    }",
+  "callees": [
+    "842267059997019422815333829425931124000",
+    "1280257502160233765816408910554470634604"
+  ]
+}

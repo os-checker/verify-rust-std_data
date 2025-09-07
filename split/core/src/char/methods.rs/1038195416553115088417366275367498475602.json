@@ -1,0 +1,10 @@
+{
+  "file": "core/src/char/methods.rs",
+  "name": "char::methods::verify::check_as_ascii_ascii_char::{closure#0}",
+  "hash": "1038195416553115088417366275367498475602",
+  "hash_direct": "1343542422909194732210857775110636488307",
+  "src": "|c: &char| c.is_ascii()",
+  "callees": [
+    "121872163624966698483225952656434249831"
+  ]
+}

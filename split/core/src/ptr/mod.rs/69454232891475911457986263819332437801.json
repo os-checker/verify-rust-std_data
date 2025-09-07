@@ -1,8 +1,0 @@
-{
-  "file": "core/src/ptr/mod.rs",
-  "name": "ptr::drop_in_place::<for<'a> fn(&'a mut iter::adapters::flatten::Flatten<option::IntoIter<char::EscapeDebug>>) -> option::Option<<iter::adapters::flatten::Flatten<option::IntoIter<char::EscapeDebug>> as iter::traits::iterator::Iterator>::Item> {<iter::adapters::flatten::Flatten<option::IntoIter<char::EscapeDebug>> as iter::traits::iterator::Iterator>::next}>",
-  "hash": "69454232891475911457986263819332437801",
-  "hash_direct": "83771872199716658736336516245971121195",
-  "inst_kind": "\"Shim\"",
-  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
-}

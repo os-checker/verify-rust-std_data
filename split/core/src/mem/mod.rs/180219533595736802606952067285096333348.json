@@ -1,0 +1,7 @@
+{
+  "file": "core/src/mem/mod.rs",
+  "name": "mem::size_of::<core_simd::vector::Simd<u32, 16>>",
+  "hash": "180219533595736802606952067285096333348",
+  "hash_direct": "687376056821868032417390732805637837173",
+  "src": "pub const fn size_of<T>() -> usize {\n    intrinsics::size_of::<T>()\n}"
+}

@@ -1,0 +1,8 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "ptr::drop_in_place::<&mut ffi::va_list::VaListImpl<'_>>",
+  "hash": "1115754574353798435418026511399814043510",
+  "hash_direct": "18048768110217461057333410096768026502",
+  "inst_kind": "\"Shim\"",
+  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
+}

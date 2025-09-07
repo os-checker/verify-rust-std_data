@@ -1,0 +1,11 @@
+{
+  "file": "core/src/intrinsics/mod.rs",
+  "name": "intrinsics::disjoint_bitor::<usize>",
+  "hash": "99787285922047279249929110595932064894",
+  "hash_direct": "1004964052787620173714474246146932010369",
+  "inst_kind": "\"Intrinsic\"",
+  "src": "pub const unsafe fn disjoint_bitor<T: [const] fallback::DisjointBitOr>(a: T, b: T) -> T {\n    // SAFETY: same preconditions as this function.\n    unsafe { fallback::DisjointBitOr::disjoint_bitor(a, b) }\n}",
+  "callees": [
+    "130330123525716393101034958525209554520"
+  ]
+}

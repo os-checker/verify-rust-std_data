@@ -1,0 +1,7 @@
+{
+  "file": "core/src/mem/mod.rs",
+  "name": "core::mem::align_of_val_raw::<sync::ArcInner<[u8]>>",
+  "hash": "56389645439599508316937138010037846195",
+  "hash_direct": "11965277468527296740502400477722266571",
+  "src": "pub const unsafe fn align_of_val_raw<T: ?Sized>(val: *const T) -> usize {\n    // SAFETY: the caller must provide a valid raw pointer\n    unsafe { intrinsics::align_of_val(val) }\n}"
+}

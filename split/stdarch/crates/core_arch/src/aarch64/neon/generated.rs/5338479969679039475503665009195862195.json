@@ -1,0 +1,11 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vrsubhn_high_u64",
+  "hash": "5338479969679039475503665009195862195",
+  "hash_direct": "162653200926080007287202150530579314529",
+  "src": "pub fn vrsubhn_high_u64(a: uint32x2_t, b: uint64x2_t, c: uint64x2_t) -> uint32x4_t {\n    let x: uint32x2_t = vrsubhn_u64(b, c);\n    unsafe { simd_shuffle!(a, x, [0, 1, 2, 3]) }\n}",
+  "callees": [
+    "10487710392968070752465013938189798908",
+    "178591567174925899892209697496445027832"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/bstr.rs",
+  "name": "bstr::<impl core::convert::From<&core::bstr::ByteStr> for borrow::Cow<'_, core::bstr::ByteStr>>::from",
+  "hash": "151893068393212019344724558794221111064",
+  "hash_direct": "1651094890038962857212742632063621888898",
+  "src": "fn from(s: &'a ByteStr) -> Self {\n        Cow::Borrowed(s)\n    }"
+}

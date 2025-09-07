@@ -1,0 +1,7 @@
+{
+  "file": "core/src/option.rs",
+  "name": "<option::Option<&mut option::IntoIter<char::EscapeDebug>> as ops::try_trait::Try>::branch",
+  "hash": "380455968238996041611350407792493256223",
+  "hash_direct": "1672962989528422981014089902524460625295",
+  "src": "fn branch(self) -> ControlFlow<Self::Residual, Self::Output> {\n        match self {\n            Some(v) => ControlFlow::Continue(v),\n            None => ControlFlow::Break(None),\n        }\n    }"
+}

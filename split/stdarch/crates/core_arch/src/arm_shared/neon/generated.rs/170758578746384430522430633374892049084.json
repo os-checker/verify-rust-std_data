@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vandq_s64",
-  "hash": "170758578746384430522430633374892049084",
-  "hash_direct": "180403793431324740997450234797740260692",
-  "src": "pub fn vandq_s64(a: int64x2_t, b: int64x2_t) -> int64x2_t {\n    unsafe { simd_and(a, b) }\n}"
-}

@@ -1,0 +1,10 @@
+{
+  "file": "core/src/error.rs",
+  "name": "<core::str::Utf8Error as core::error::Error>::type_id",
+  "hash": "96327871190494075144655111466704875864",
+  "hash_direct": "113351967535276306384929133025647019772",
+  "src": "fn type_id(&self, _: private::Internal) -> TypeId\n    where\n        Self: 'static,\n    {\n        TypeId::of::<Self>()\n    }",
+  "callees": [
+    "708541994984947041710766893060467097036"
+  ]
+}

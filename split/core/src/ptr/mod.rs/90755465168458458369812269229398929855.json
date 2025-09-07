@@ -1,0 +1,8 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "core::ptr::drop_in_place::<&mut fn([u8; core::::num::{impl#7}::from_be_bytes::{constant#0}]) -> u16 {core::num::<impl u16>::from_be_bytes}>",
+  "hash": "90755465168458458369812269229398929855",
+  "hash_direct": "892838137376263042717194119534694254633",
+  "inst_kind": "\"Shim\"",
+  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
+}

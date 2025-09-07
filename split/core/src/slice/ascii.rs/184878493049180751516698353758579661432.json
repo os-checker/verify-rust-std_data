@@ -1,0 +1,12 @@
+{
+  "file": "core/src/slice/ascii.rs",
+  "name": "slice::ascii::<impl [u8]>::trim_ascii",
+  "hash": "184878493049180751516698353758579661432",
+  "hash_direct": "593436900185953501310731684236774790108",
+  "src": "pub const fn trim_ascii(&self) -> &[u8] {\n        self.trim_ascii_start().trim_ascii_end()\n    }",
+  "callees": [
+    "840557237266216613515959608352403941460",
+    "53426938606862588461810370896426652974",
+    "83096713552761345024158148794134706910"
+  ]
+}

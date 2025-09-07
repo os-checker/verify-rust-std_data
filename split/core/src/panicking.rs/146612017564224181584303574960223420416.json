@@ -1,0 +1,11 @@
+{
+  "file": "core/src/panicking.rs",
+  "name": "core::panicking::panic_fmt",
+  "hash": "146612017564224181584303574960223420416",
+  "hash_direct": "1384721887942476245516466296722053310789",
+  "src": "pub const fn panic_fmt(fmt: fmt::Arguments<'_>) -> ! {\n    if cfg!(feature = \"panic_immediate_abort\") {\n        super::intrinsics::abort()\n    }\n\n    // NOTE This function never crosses the FFI boundary; it's a Rust-to-Rust call\n    // that gets resolved to the `#[panic_handler]` function.\n    unsafe extern \"Rust\" {\n        #[lang = \"panic_impl\"]\n        fn panic_impl(pi: &PanicInfo<'_>) -> !;\n    }\n\n    let pi = PanicInfo::new(\n        &fmt,\n        Location::caller(),\n        /* can_unwind */ true,\n        /* force_no_backtrace */ false,\n    );\n\n    // SAFETY: `panic_impl` is defined in safe Rust code and thus is safe to call.\n    unsafe { panic_impl(&pi) }\n}",
+  "callees": [
+    "986792852990965178117440249555081278778",
+    "90818112465881722349174357944217011292"
+  ]
+}

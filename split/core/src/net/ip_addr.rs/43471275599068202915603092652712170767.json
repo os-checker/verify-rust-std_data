@@ -1,0 +1,13 @@
+{
+  "file": "core/src/net/ip_addr.rs",
+  "name": "<<net::ip_addr::Ipv6Addr as fmt::Display>::fmt::Span as clone::Clone>::clone",
+  "hash": "43471275599068202915603092652712170767",
+  "hash_direct": "1588005856284157189510453554619150219480",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

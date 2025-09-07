@@ -1,0 +1,10 @@
+{
+  "file": "core/src/option.rs",
+  "name": "option::Option::<net::socket_addr::SocketAddrV4>::ok_or::<net::parser::AddrParseError>",
+  "hash": "55199275158597192087737623773680068938",
+  "hash_direct": "330368198868867427413521004733236619216",
+  "src": "pub const fn ok_or<E: [const] Destruct>(self, err: E) -> Result<T, E> {\n        match self {\n            Some(v) => Ok(v),\n            None => Err(err),\n        }\n    }",
+  "callees": [
+    "711892015918750836216327826534074164651"
+  ]
+}

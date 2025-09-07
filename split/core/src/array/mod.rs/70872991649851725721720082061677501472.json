@@ -1,0 +1,11 @@
+{
+  "file": "core/src/array/mod.rs",
+  "name": "array::<impl ops::index::IndexMut<ops::range::RangeFull> for [u32; 40]>::index_mut",
+  "hash": "70872991649851725721720082061677501472",
+  "hash_direct": "146189163821386987995712769899633488321",
+  "src": "fn index_mut(&mut self, index: I) -> &mut Self::Output {\n        IndexMut::index_mut(self as &mut [T], index)\n    }",
+  "callees": [
+    "102158074081008205498407343669368368587",
+    "51807250877859821869923753435696206660"
+  ]
+}

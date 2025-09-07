@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/ffi/c_str.rs",
+  "name": "ffi::c_str::CString::as_bytes_with_nul",
+  "hash": "1079483209216430923818305699490167075154",
+  "hash_direct": "92741337920380278023254420387982387776",
+  "src": "pub fn as_bytes_with_nul(&self) -> &[u8] {\n        &self.inner\n    }"
+}

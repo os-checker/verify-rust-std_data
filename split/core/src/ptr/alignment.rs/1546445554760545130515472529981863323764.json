@@ -1,0 +1,12 @@
+{
+  "file": "core/src/ptr/alignment.rs",
+  "name": "<ptr::alignment::Alignment as cmp::Ord>::cmp",
+  "hash": "1546445554760545130515472529981863323764",
+  "hash_direct": "6506476053680817191916842844687751590",
+  "src": "fn cmp(&self, other: &Self) -> cmp::Ordering {\n        self.as_nonzero().get().cmp(&other.as_nonzero().get())\n    }",
+  "callees": [
+    "951858419091851333614102360024241858063",
+    "34410515695185066949979771014252260096",
+    "201181288689639124415825169679319142024"
+  ]
+}

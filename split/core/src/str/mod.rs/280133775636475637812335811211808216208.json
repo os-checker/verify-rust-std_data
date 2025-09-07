@@ -1,0 +1,7 @@
+{
+  "file": "core/src/str/mod.rs",
+  "name": "core::str::<impl str>::as_bytes",
+  "hash": "280133775636475637812335811211808216208",
+  "hash_direct": "93591712910360128393422744224294273310",
+  "src": "pub const fn as_bytes(&self) -> &[u8] {\n        // SAFETY: const sound because we transmute two types with the same layout\n        unsafe { mem::transmute(self) }\n    }"
+}

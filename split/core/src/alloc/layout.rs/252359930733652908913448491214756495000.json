@@ -1,0 +1,13 @@
+{
+  "file": "core/src/alloc/layout.rs",
+  "name": "<alloc::layout::LayoutError as clone::Clone>::clone",
+  "hash": "252359930733652908913448491214756495000",
+  "hash_direct": "1535127241278070967615062338700634971029",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

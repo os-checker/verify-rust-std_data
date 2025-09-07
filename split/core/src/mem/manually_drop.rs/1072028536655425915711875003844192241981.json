@@ -1,0 +1,7 @@
+{
+  "file": "core/src/mem/manually_drop.rs",
+  "name": "mem::manually_drop::ManuallyDrop::<&dyn fmt::Debug>::new",
+  "hash": "1072028536655425915711875003844192241981",
+  "hash_direct": "863432175861703919994826443204405816",
+  "src": "pub const fn new(value: T) -> ManuallyDrop<T> {\n        ManuallyDrop { value }\n    }"
+}

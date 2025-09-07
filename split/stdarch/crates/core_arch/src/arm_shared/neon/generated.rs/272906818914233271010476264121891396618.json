@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vmull_u8",
+  "hash": "272906818914233271010476264121891396618",
+  "hash_direct": "10554449877182815760480313787531731291",
+  "src": "pub fn vmull_u8(a: uint8x8_t, b: uint8x8_t) -> uint16x8_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.umull.v8i16\"\n        )]\n        #[cfg_attr(target_arch = \"arm\", link_name = \"llvm.arm.neon.vmullu.v8i16\")]\n        fn _vmull_u8(a: uint8x8_t, b: uint8x8_t) -> uint16x8_t;\n    }\n    unsafe { _vmull_u8(a, b) }\n}"
+}

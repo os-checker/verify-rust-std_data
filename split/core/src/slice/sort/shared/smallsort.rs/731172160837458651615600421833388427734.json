@@ -1,0 +1,7 @@
+{
+  "file": "core/src/slice/sort/shared/smallsort.rs",
+  "name": "slice::sort::shared::smallsort::SMALL_SORT_FALLBACK_THRESHOLD",
+  "hash": "731172160837458651615600421833388427734",
+  "hash_direct": "89045311452081004174617796039406213084",
+  "src": "const SMALL_SORT_FALLBACK_THRESHOLD: usize = 16;"
+}

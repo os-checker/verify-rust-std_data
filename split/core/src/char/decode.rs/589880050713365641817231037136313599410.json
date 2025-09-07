@@ -1,0 +1,12 @@
+{
+  "file": "core/src/char/decode.rs",
+  "name": "<core::char::DecodeUtf16<core::iter::Map<core::iter::Copied<core::slice::Iter<'_, [u8; 2]>>, fn([u8; core::::num::{impl#7}::from_be_bytes::{constant#0}]) -> u16 {core::num::<impl u16>::from_be_bytes}>> as core::iter::Iterator>::size_hint::{closure#0}",
+  "hash": "589880050713365641817231037136313599410",
+  "hash_direct": "91684009523456261757907998607383610303",
+  "src": "|h| h.checked_add(high_buf)",
+  "callees": [
+    "99835071136844477394667148890151411684",
+    "73694171442177138896992135977130617471",
+    "60640990905534157415573489096491372167"
+  ]
+}

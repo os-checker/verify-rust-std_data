@@ -1,0 +1,8 @@
+{
+  "file": "core/src/marker.rs",
+  "name": "<unsafe fn(*const ()) as marker::FnPtr>::addr",
+  "hash": "148638515249297305955022347993853082728",
+  "hash_direct": "36911958991768113517418992772212356256",
+  "inst_kind": "\"Shim\"",
+  "src": "fn addr(self) -> *const ();"
+}

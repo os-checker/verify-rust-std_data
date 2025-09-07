@@ -1,0 +1,35 @@
+{
+  "file": "core/src/num/nonzero.rs",
+  "name": "num::nonzero::verify::nonzero_check_new_unchecked_for_i8",
+  "hash": "15579414236798561794998135810148132280",
+  "hash_direct": "1001763676780912154415315626150028683374",
+  "proof_kind": "\"Contract\"",
+  "attrs": [
+    "#[kanitool::proof_for_contract = \"NonZero :: new_unchecked\"]\n"
+  ],
+  "src": "pub fn $nonzero_check_new_unchecked_for() {\n                let x: $t = kani::any(); // Generates a symbolic value of the provided type\n\n                unsafe {\n                    <$nonzero_type>::new_unchecked(x); // Calls NonZero::new_unchecked for the specified NonZero type\n                }\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "nonzero_check!(i8, core::num::NonZeroI8, nonzero_check_new_unchecked_for_i8)",
+      "defsite": "macro_rules! nonzero_check {\n        ($t:ty, $nonzero_type:ty, $nonzero_check_new_unchecked_for:ident) => {\n            #[kani::proof_for_contract(NonZero::new_unchecked)]\n            pub fn $nonzero_check_new_unchecked_for() {\n                let x: $t = kani::any(); // Generates a symbolic value of the provided type\n\n                unsafe {\n                    <$nonzero_type>::new_unchecked(x); // Calls NonZero::new_unchecked for the specified NonZero type\n                }\n            }\n        };\n    }"
+    }
+  ],
+  "callees": [
+    "49618956978873163995324086899806194018",
+    "587614036368004806912260160478559155026",
+    "1265364704673487667316330420117594786451",
+    "125277921322113449508798707465544651276",
+    "7526082995824335814466973137466280467",
+    "31406905208446239141563463070273293022",
+    "258820287469578611817448591488600041899",
+    "17421822894816687532325615181214565887",
+    "23815256893174302637797703719499456373",
+    "65087903618051294264133097032672551694",
+    "11348349726245922259481448904410483024",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "478753423337745817613297159272845606672",
+    "887235042902537721816254572592014930578",
+    "739520556846959085018120036998133255835"
+  ]
+}

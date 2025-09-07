@@ -1,0 +1,13 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vmull_high_n_u16",
+  "hash": "157572301565547067092963604565720448307",
+  "hash_direct": "937557769403845863212062260203516987535",
+  "src": "pub fn vmull_high_n_u16(a: uint16x8_t, b: u16) -> uint32x4_t {\n    vmull_high_u16(a, vdupq_n_u16(b))\n}",
+  "callees": [
+    "2353396967171730905337640785283238460",
+    "105402638288164903495301801653755887472",
+    "132459035371285826177240521044030300119",
+    "1344109527499610048417268608907577887990"
+  ]
+}

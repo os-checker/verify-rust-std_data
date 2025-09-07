@@ -1,0 +1,16 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "ptr::non_null::NonNull::<T>::write_unaligned::{closure#0}::REENTRY",
+  "hash": "100399133636435213448544460168936824778",
+  "hash_direct": "257135978201999461017923071226697281900",
+  "attrs": [
+    "#[kanitool::recursion_tracker]\n"
+  ],
+  "src": "kani::modifies(self.as_ptr())",
+  "macro_backtrace": [
+    {
+      "callsite": "kani::modifies(self.as_ptr())",
+      "defsite": "pub fn modifies(attr: TokenStream, item: TokenStream) -> TokenStream"
+    }
+  ]
+}

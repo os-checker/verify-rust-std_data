@@ -1,0 +1,10 @@
+{
+  "file": "core/src/num/f128.rs",
+  "name": "f128::<impl f128>::div_euclid",
+  "hash": "1719105811906915258215891585661751001995",
+  "hash_direct": "78764999377778400624156943382907114892",
+  "src": "pub fn div_euclid(self, rhs: f128) -> f128 {\n        let q = (self / rhs).trunc();\n        if self % rhs < 0.0 {\n            return if rhs > 0.0 { q - 1.0 } else { q + 1.0 };\n        }\n        q\n    }",
+  "callees": [
+    "54260058544797284938142620574691468031"
+  ]
+}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
-  "name": "core_arch::aarch64::neon::generated::vsqrtq_f32",
-  "hash": "85434001633722393203306962796057419324",
-  "hash_direct": "135502647602226725385071743408722619041",
-  "src": "pub fn vsqrtq_f32(a: float32x4_t) -> float32x4_t {\n    unsafe { simd_fsqrt(a) }\n}"
-}

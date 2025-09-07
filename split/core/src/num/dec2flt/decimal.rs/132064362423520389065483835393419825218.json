@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/dec2flt/decimal.rs",
+  "name": "num::dec2flt::decimal::Decimal::can_use_fast_path::<f16>",
+  "hash": "132064362423520389065483835393419825218",
+  "hash_direct": "180564963630071226228170900396744926696",
+  "src": "fn can_use_fast_path<F: RawFloat>(&self) -> bool {\n        F::MIN_EXPONENT_FAST_PATH <= self.exponent\n            && self.exponent <= F::MAX_EXPONENT_DISGUISED_FAST_PATH\n            && self.mantissa <= F::MAX_MANTISSA_FAST_PATH\n            && !self.many_digits\n    }"
+}

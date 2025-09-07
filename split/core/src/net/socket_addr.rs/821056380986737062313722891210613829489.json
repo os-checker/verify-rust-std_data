@@ -1,0 +1,11 @@
+{
+  "file": "core/src/net/socket_addr.rs",
+  "name": "net::socket_addr::SocketAddr::port",
+  "hash": "821056380986737062313722891210613829489",
+  "hash_direct": "1757778210872214054816986993895159678613",
+  "src": "pub const fn port(&self) -> u16 {\n        match *self {\n            SocketAddr::V4(ref a) => a.port(),\n            SocketAddr::V6(ref a) => a.port(),\n        }\n    }",
+  "callees": [
+    "1661274048381503306651132033638689155",
+    "518917683179470932317479461022108880549"
+  ]
+}

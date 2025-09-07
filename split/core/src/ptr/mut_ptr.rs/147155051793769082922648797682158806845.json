@@ -1,0 +1,17 @@
+{
+  "file": "core/src/ptr/mut_ptr.rs",
+  "name": "ptr::mut_ptr::verify::check_mut_add_usize::BUF_SIZE",
+  "hash": "147155051793769082922648797682158806845",
+  "hash_direct": "98414863985182681746959009625963445220",
+  "src": "const BUF_SIZE: usize = 200;",
+  "macro_backtrace": [
+    {
+      "callsite": "generate_single_arithmetic_harness!($ty, $add_fn_name, add, usize)",
+      "defsite": "macro_rules! generate_single_arithmetic_harness {\n        ($ty:ty, $proof_name:ident, $fn_name:ident, $count_ty:ty) => {\n            #[kani::proof_for_contract(<*mut $ty>::$fn_name)]\n            pub fn $proof_name() {\n                // 200 bytes are large enough to cover all pointee types used for testing\n                const BUF_SIZE: usize = 200;\n                let mut generator = kani::PointerGenerator::<BUF_SIZE>::new();\n                let test_ptr: *mut $ty = generator.any_in_bounds().ptr;\n                let count: $count_ty = kani::any();\n                unsafe {\n                    test_ptr.$fn_name(count);\n                }\n            }\n        };\n    }"
+    },
+    {
+      "callsite": "generate_arithmetic_harnesses!(\n        usize,\n        check_mut_add_usize,\n        check_mut_sub_usize,\n        check_mut_offset_usize\n    )",
+      "defsite": "macro_rules! generate_arithmetic_harnesses {\n        ($ty:ty, $add_fn_name:ident, $sub_fn_name:ident, $offset_fn_name:ident) => {\n            generate_single_arithmetic_harness!($ty, $add_fn_name, add, usize);\n            generate_single_arithmetic_harness!($ty, $sub_fn_name, sub, usize);\n            generate_single_arithmetic_harness!($ty, $offset_fn_name, offset, isize);\n        };\n    }"
+    }
+  ]
+}

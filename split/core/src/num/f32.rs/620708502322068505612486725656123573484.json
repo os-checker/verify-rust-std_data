@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/f32.rs",
-  "name": "f32::<impl f32>::algebraic_sub",
-  "hash": "620708502322068505612486725656123573484",
-  "hash_direct": "32267699498118042002083323216526166367",
-  "src": "pub const fn algebraic_sub(self, rhs: f32) -> f32 {\n        intrinsics::fsub_algebraic(self, rhs)\n    }"
-}

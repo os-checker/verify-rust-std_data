@@ -1,0 +1,7 @@
+{
+  "file": "core/src/clone.rs",
+  "name": "clone::impls::<impl clone::Clone for &[char]>::clone",
+  "hash": "35627746763384123111342387314761634770",
+  "hash_direct": "169838642542705174946828938857711782023",
+  "src": "fn clone(&self) -> Self {\n            self\n        }"
+}

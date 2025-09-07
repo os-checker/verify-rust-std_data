@@ -1,7 +1,0 @@
-{
-  "file": "core/src/iter/traits/iterator.rs",
-  "name": "iter::traits::iterator::Iterator::try_for_each::call::<char, result::Result<(), fmt::Error>, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/str/iter.rs:1581:43: 1581:46}>",
-  "hash": "581532619169605330014455947060873817655",
-  "hash_direct": "654627395233723295312903427126059278581",
-  "src": "fn call<T, R>(mut f: impl FnMut(T) -> R) -> impl FnMut((), T) -> R {\n            move |(), x| f(x)\n        }"
-}

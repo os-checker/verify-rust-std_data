@@ -1,0 +1,23 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/arbitrary.rs",
+  "name": "<[u8; 4294967295] as kani::Arbitrary>::any",
+  "hash": "102722132363223748523739834092442412577",
+  "hash_direct": "83958752183306754517600139569335811455",
+  "src": "fn any() -> Self {\n                T::any_array::<N>()\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "kani_core::generate_arbitrary!()",
+      "defsite": "macro_rules! generate_arbitrary"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ],
+  "callees": [
+    "984733753587529731616736722890115160648",
+    "24907859669790187859488169965895480565",
+    "963714825869191896912557085109596256826",
+    "678411900282284267215673576270863635699"
+  ]
+}

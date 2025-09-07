@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/f128.rs",
-  "name": "f128::<impl f128>::recip",
-  "hash": "148197070704641754412899721690768565843",
-  "hash_direct": "91180128881814148571883405957215531481",
-  "src": "pub const fn recip(self) -> Self {\n        1.0 / self\n    }"
-}

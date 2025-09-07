@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vceqzq_f16",
+  "hash": "363236628861084331316685263821417229425",
+  "hash_direct": "110965684859512910825282629200589050684",
+  "src": "pub fn vceqzq_f16(a: float16x8_t) -> uint16x8_t {\n    let b: f16x8 = f16x8::new(0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);\n    unsafe { simd_eq(a, transmute(b)) }\n}",
+  "callees": [
+    "150981640423328116009991103154182455857"
+  ]
+}

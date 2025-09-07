@@ -1,0 +1,7 @@
+{
+  "file": "core/src/slice/mod.rs",
+  "name": "slice::<impl [u8]>::is_empty",
+  "hash": "497499364745128359314402117207900903418",
+  "hash_direct": "120403921572507016568464003016177465221",
+  "src": "pub const fn is_empty(&self) -> bool {\n        self.len() == 0\n    }"
+}

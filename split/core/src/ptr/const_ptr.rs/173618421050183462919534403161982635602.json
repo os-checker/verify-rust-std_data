@@ -1,0 +1,11 @@
+{
+  "file": "core/src/ptr/const_ptr.rs",
+  "name": "ptr::const_ptr::<impl *const u8>::with_metadata_of::<i32>",
+  "hash": "173618421050183462919534403161982635602",
+  "hash_direct": "638696697688739925577253516527137836",
+  "src": "pub const fn with_metadata_of<U>(self, meta: *const U) -> *const U\n    where\n        U: PointeeSized,\n    {\n        from_raw_parts::<U>(self as *const (), metadata(meta))\n    }",
+  "callees": [
+    "86562828536990097975684672580461106849",
+    "1775502821080152362517912409228600780762"
+  ]
+}

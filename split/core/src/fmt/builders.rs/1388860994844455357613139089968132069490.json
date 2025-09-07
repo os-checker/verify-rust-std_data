@@ -1,0 +1,10 @@
+{
+  "file": "core/src/fmt/builders.rs",
+  "name": "fmt::builders::DebugInner::<'_, '_>::is_pretty",
+  "hash": "1388860994844455357613139089968132069490",
+  "hash_direct": "125704589479784161526657484248306926033",
+  "src": "fn is_pretty(&self) -> bool {\n        self.fmt.alternate()\n    }",
+  "callees": [
+    "36380162371624727521206603407905192105"
+  ]
+}

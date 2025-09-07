@@ -1,0 +1,7 @@
+{
+  "file": "core/src/mem/mod.rs",
+  "name": "mem::size_of_val::<dyn fmt::Debug>",
+  "hash": "1519831330230275198315025325292484364739",
+  "hash_direct": "28680086091629825716018207141248733940",
+  "src": "pub const fn size_of_val<T: ?Sized>(val: &T) -> usize {\n    // SAFETY: `val` is a reference, so it's a valid raw pointer\n    unsafe { intrinsics::size_of_val(val) }\n}"
+}

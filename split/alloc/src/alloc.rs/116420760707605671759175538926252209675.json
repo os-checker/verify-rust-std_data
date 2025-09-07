@@ -1,0 +1,16 @@
+{
+  "file": "alloc/src/alloc.rs",
+  "name": "<alloc::Global as core::fmt::Debug>::fmt",
+  "hash": "116420760707605671759175538926252209675",
+  "hash_direct": "3261901721139769571348507739509592288",
+  "src": "Debug",
+  "macro_backtrace": [
+    {
+      "callsite": "Debug",
+      "defsite": "pub macro Debug"
+    }
+  ],
+  "callees": [
+    "1571969697186667512510572825248226870481"
+  ]
+}

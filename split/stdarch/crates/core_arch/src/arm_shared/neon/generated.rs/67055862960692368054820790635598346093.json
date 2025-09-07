@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vcreate_p64",
+  "hash": "67055862960692368054820790635598346093",
+  "hash_direct": "50958442746021431789226302128216334760",
+  "src": "pub fn vcreate_p64(a: u64) -> poly64x1_t {\n    unsafe { transmute(a) }\n}"
+}

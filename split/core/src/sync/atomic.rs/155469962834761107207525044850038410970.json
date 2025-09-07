@@ -1,0 +1,15 @@
+{
+  "file": "core/src/sync/atomic.rs",
+  "name": "sync::atomic::AtomicBool::load",
+  "hash": "155469962834761107207525044850038410970",
+  "hash_direct": "1633205438273680687910496753807018483175",
+  "src": "pub fn load(&self, order: Ordering) -> bool {\n        // SAFETY: any data races are prevented by atomic intrinsics and the raw\n        // pointer passed in is valid because we got it from a reference.\n        unsafe { atomic_load(self.v.get(), order) != 0 }\n    }",
+  "callees": [
+    "163154036748054064804947938080591443326",
+    "258820287469578611817448591488600041899",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "1752989996936949203916036071159051010960",
+    "141172444463644053566050298619960983804"
+  ]
+}

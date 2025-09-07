@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::veorq_u32",
-  "hash": "133177014512640365137076542956201963314",
-  "hash_direct": "854193087484142778010352548635540945109",
-  "src": "pub fn veorq_u32(a: uint32x4_t, b: uint32x4_t) -> uint32x4_t {\n    unsafe { simd_xor(a, b) }\n}"
-}

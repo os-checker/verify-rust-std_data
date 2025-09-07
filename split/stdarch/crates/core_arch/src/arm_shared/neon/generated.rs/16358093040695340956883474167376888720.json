@@ -1,0 +1,11 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vld1q_dup_p64",
+  "hash": "16358093040695340956883474167376888720",
+  "hash_direct": "1203819203062102558712353571627590976831",
+  "src": "pub unsafe fn vld1q_dup_p64(ptr: *const p64) -> poly64x2_t {\n    let x = vld1q_lane_p64::<0>(ptr, transmute(u64x2::splat(0)));\n    simd_shuffle!(x, x, [0, 0])\n}",
+  "callees": [
+    "5748533633338510217335396977597052166",
+    "908158410088224949614878575616329612345"
+  ]
+}

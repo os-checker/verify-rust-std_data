@@ -1,0 +1,11 @@
+{
+  "file": "core/src/sync/atomic.rs",
+  "name": "sync::atomic::ATOMIC_BOOL_INIT",
+  "hash": "801527135428978776715029003747218137371",
+  "hash_direct": "1302659345585590846211743071644497429979",
+  "src": "pub const ATOMIC_BOOL_INIT: AtomicBool = AtomicBool::new(false);",
+  "callees": [
+    "352564018354059629112702651348753878264",
+    "33523035405396149479057659157941778464"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "file": "core/src/str/mod.rs",
+  "name": "core::str::<impl str>::len",
+  "hash": "1508773653512704694540919786852289740",
+  "hash_direct": "1070182298874918671813869232839618926534",
+  "src": "pub const fn len(&self) -> usize {\n        self.as_bytes().len()\n    }",
+  "callees": [
+    "280133775636475637812335811211808216208"
+  ]
+}

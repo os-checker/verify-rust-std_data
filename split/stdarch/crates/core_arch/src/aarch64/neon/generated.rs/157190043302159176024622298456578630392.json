@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
-  "name": "core_arch::aarch64::neon::generated::vcagtq_f64",
-  "hash": "157190043302159176024622298456578630392",
-  "hash_direct": "1266109227679889084014155374972760630271",
-  "src": "pub fn vcagtq_f64(a: float64x2_t, b: float64x2_t) -> uint64x2_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.facgt.v2i64.v2f64\"\n        )]\n        fn _vcagtq_f64(a: float64x2_t, b: float64x2_t) -> uint64x2_t;\n    }\n    unsafe { _vcagtq_f64(a, b) }\n}"
-}

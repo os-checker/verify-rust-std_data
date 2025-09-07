@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/raw_vec/mod.rs",
+  "name": "raw_vec::min_non_zero_cap",
+  "hash": "65055801994553461588615672273314638017",
+  "hash_direct": "108879343981875096694425768267120629420",
+  "src": "const fn min_non_zero_cap(size: usize) -> usize {\n    if size == 1 {\n        8\n    } else if size <= 1024 {\n        4\n    } else {\n        1\n    }\n}"
+}

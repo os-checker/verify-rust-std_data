@@ -1,0 +1,10 @@
+{
+  "file": "core/src/net/ip_addr.rs",
+  "name": "<&net::ip_addr::Ipv4Addr as ops::bit::Not>::not",
+  "hash": "1076770814037108337516709103481467091829",
+  "hash_direct": "141542613765209043979657944325343704165",
+  "src": "fn not(self) -> Ipv4Addr {\n        !*self\n    }",
+  "callees": [
+    "115979366230571205841273096360743512900"
+  ]
+}

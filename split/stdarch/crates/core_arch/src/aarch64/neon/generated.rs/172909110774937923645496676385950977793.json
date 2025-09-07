@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
-  "name": "core_arch::aarch64::neon::generated::vpminq_s8",
-  "hash": "172909110774937923645496676385950977793",
-  "hash_direct": "567025609518050107597278609170947378",
-  "src": "pub fn vpminq_s8(a: int8x16_t, b: int8x16_t) -> int8x16_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.sminp.v16i8\"\n        )]\n        fn _vpminq_s8(a: int8x16_t, b: int8x16_t) -> int8x16_t;\n    }\n    unsafe { _vpminq_s8(a, b) }\n}"
-}

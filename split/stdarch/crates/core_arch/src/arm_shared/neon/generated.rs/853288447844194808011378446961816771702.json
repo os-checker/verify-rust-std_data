@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vadd_s8",
-  "hash": "853288447844194808011378446961816771702",
-  "hash_direct": "592255883229632322611785950356551712567",
-  "src": "pub fn vadd_s8(a: int8x8_t, b: int8x8_t) -> int8x8_t {\n    unsafe { simd_add(a, b) }\n}"
-}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "<! as fmt::Display>::fmt",
+  "hash": "1220162035074395776711027363546970962235",
+  "hash_direct": "145338600885389027031256708423453914931",
+  "src": "fn fmt(&self, _: &mut Formatter<'_>) -> Result {\n        *self\n    }"
+}

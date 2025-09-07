@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f32.rs",
+  "name": "f32::<impl f32>::max",
+  "hash": "112128120424148035529215705998019957629",
+  "hash_direct": "96406865516009191695510498107200510074",
+  "src": "pub const fn max(self, other: f32) -> f32 {\n        intrinsics::maxnumf32(self, other)\n    }"
+}

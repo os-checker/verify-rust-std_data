@@ -1,7 +1,0 @@
-{
-  "file": "core/src/iter/adapters/cloned.rs",
-  "name": "iter::adapters::cloned::clone_try_fold::<u8, (), ops::control_flow::ControlFlow<ops::control_flow::ControlFlow<cmp::Ordering, cmp::Ordering>>, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/iter/traits/iterator.rs:2489:13: 2489:25}>",
-  "hash": "1678749578085457667515869433053614203484",
-  "hash_direct": "125351754951852626291081811518214503368",
-  "src": "fn clone_try_fold<T: Clone, Acc, R>(mut f: impl FnMut(Acc, T) -> R) -> impl FnMut(Acc, &T) -> R {\n    move |acc, elt| f(acc, elt.clone())\n}"
-}

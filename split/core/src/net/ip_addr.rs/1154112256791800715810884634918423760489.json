@@ -1,0 +1,10 @@
+{
+  "file": "core/src/net/ip_addr.rs",
+  "name": "net::ip_addr::Ipv4Addr::is_benchmarking",
+  "hash": "1154112256791800715810884634918423760489",
+  "hash_direct": "175239100340811357022707432258259687731",
+  "src": "pub const fn is_benchmarking(&self) -> bool {\n        self.octets()[0] == 198 && (self.octets()[1] & 0xfe) == 18\n    }",
+  "callees": [
+    "594101468346705865516588037143272085631"
+  ]
+}

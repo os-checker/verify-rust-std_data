@@ -1,0 +1,13 @@
+{
+  "file": "core/src/slice/index.rs",
+  "name": "<ops::index_range::IndexRange as slice::index::SliceIndex<[u8]>>::get",
+  "hash": "21398497154778648995623469841215099659",
+  "hash_direct": "1152881001652909567217196104442261170803",
+  "src": "fn get(self, slice: &[T]) -> Option<&[T]> {\n        if self.end() <= slice.len() {\n            // SAFETY: `self` is checked to be valid and in bounds above.\n            unsafe { Some(&*get_offset_len_noubcheck(slice, self.start(), self.len())) }\n        } else {\n            None\n        }\n    }",
+  "callees": [
+    "884246074448727927914595282961940941192",
+    "975615807404907599012293873143289411403",
+    "27547235193633795771352944920978011050",
+    "1574076206413902276617103312132801420117"
+  ]
+}

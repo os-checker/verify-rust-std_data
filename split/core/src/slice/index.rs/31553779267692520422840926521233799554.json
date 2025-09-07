@@ -1,0 +1,21 @@
+{
+  "file": "core/src/slice/index.rs",
+  "name": "<ops::index_range::IndexRange as slice::index::SliceIndex<[u8]>>::get_unchecked",
+  "hash": "31553779267692520422840926521233799554",
+  "hash_direct": "96898198065116399173741219760035882501",
+  "src": "unsafe fn get_unchecked(self, slice: *const [T]) -> *const [T] {\n        assert_unsafe_precondition!(\n            check_library_ub,\n            \"slice::get_unchecked requires that the index is within the slice\",\n            (end: usize = self.end(), len: usize = slice.len()) => end <= len\n        );\n        // SAFETY: the caller guarantees that `slice` is not dangling, so it\n        // cannot be longer than `isize::MAX`. They also guarantee that\n        // `self` is in bounds of `slice` so `self` cannot overflow an `isize`,\n        // so the call to `add` is safe.\n        unsafe { get_offset_len_noubcheck(slice, self.start(), self.len()) }\n    }",
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "17421822894816687532325615181214565887",
+    "884246074448727927914595282961940941192",
+    "975615807404907599012293873143289411403",
+    "27547235193633795771352944920978011050",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "478753423337745817613297159272845606672",
+    "157452307909752828034879955455996353017",
+    "100566549119408744214400768677206684395",
+    "1574076206413902276617103312132801420117",
+    "527301041467884922111309565656307235599"
+  ]
+}

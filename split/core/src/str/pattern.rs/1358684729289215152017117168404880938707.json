@@ -1,0 +1,18 @@
+{
+  "file": "core/src/str/pattern.rs",
+  "name": "<str::pattern::StrSearcher<'_, '_> as clone::Clone>::clone",
+  "hash": "1358684729289215152017117168404880938707",
+  "hash_direct": "138081297448864922386526595813948549261",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ],
+  "callees": [
+    "846787316198935758617725690966544171763",
+    "228562707203156515418360423522431696086",
+    "174247123207391243897841276514992390901"
+  ]
+}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/ptr/const_ptr.rs",
-  "name": "ptr::const_ptr::<impl *const mem::manually_drop::ManuallyDrop<ffi::va_list::VaListImpl<'_>>>::cast::<ffi::va_list::VaListImpl<'_>>",
-  "hash": "22738196310994750252189596198050324503",
-  "hash_direct": "282194026461266532411388167647911103339",
-  "src": "pub const fn cast<U>(self) -> *const U {\n        self as _\n    }"
-}

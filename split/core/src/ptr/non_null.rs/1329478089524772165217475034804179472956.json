@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "<ptr::non_null::NonNull<dyn ptr::non_null::verify::SampleTrait> as convert::From<&dyn ptr::non_null::verify::SampleTrait>>::from",
+  "hash": "1329478089524772165217475034804179472956",
+  "hash_direct": "64439785099778767814536555607204226416",
+  "src": "fn from(r: &T) -> Self {\n        NonNull::from_ref(r)\n    }",
+  "callees": [
+    "102966827817722653174716233815803961603"
+  ]
+}

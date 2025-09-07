@@ -1,0 +1,10 @@
+{
+  "file": "core/src/array/mod.rs",
+  "name": "core::array::from_ref::<core::ascii::Char>",
+  "hash": "78619265198420776833531287428212529707",
+  "hash_direct": "30305442159184518689643739130257214647",
+  "src": "pub const fn from_ref<T>(s: &T) -> &[T; 1] {\n    // SAFETY: Converting `&T` to `&[T; 1]` is sound.\n    unsafe { &*(s as *const T).cast::<[T; 1]>() }\n}",
+  "callees": [
+    "102007744722280595149422989551139056047"
+  ]
+}

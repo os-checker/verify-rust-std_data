@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/f16.rs",
-  "name": "f16::<impl f16>::algebraic_rem",
-  "hash": "710112091116430960010312787319791672604",
-  "hash_direct": "110435044106220242411416443794418229539",
-  "src": "pub const fn algebraic_rem(self, rhs: f16) -> f16 {\n        intrinsics::frem_algebraic(self, rhs)\n    }"
-}

@@ -1,0 +1,13 @@
+{
+  "file": "core/src/char/convert.rs",
+  "name": "<char::convert::CharTryFromError as clone::Clone>::clone",
+  "hash": "135415912958453448667931995784336552872",
+  "hash_direct": "1291016125015829311803088079015378113",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
-  "name": "core_arch::aarch64::neon::generated::vmlsq_f64",
-  "hash": "1545848180789205779614984559267085652488",
-  "hash_direct": "56621057163971836607949552586773404570",
-  "src": "pub fn vmlsq_f64(a: float64x2_t, b: float64x2_t, c: float64x2_t) -> float64x2_t {\n    unsafe { simd_sub(a, simd_mul(b, c)) }\n}"
-}

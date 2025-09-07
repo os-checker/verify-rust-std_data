@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/mut_ptr.rs",
+  "name": "ptr::mut_ptr::<impl *mut ((), bool, u8, u16, i32, f64, i128, usize)>::wrapping_offset",
+  "hash": "1710230988780094649714598325620509969215",
+  "hash_direct": "17224809263346905422576091254165152400",
+  "src": "pub const fn wrapping_offset(self, count: isize) -> *mut T\n    where\n        T: Sized,\n    {\n        // SAFETY: the `arith_offset` intrinsic has no prerequisites to be called.\n        unsafe { intrinsics::arith_offset(self, count) as *mut T }\n    }"
+}

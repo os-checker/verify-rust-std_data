@@ -1,0 +1,12 @@
+{
+  "file": "core/src/str/mod.rs",
+  "name": "core::str::<impl str>::is_char_boundary",
+  "hash": "1042478822114704134914961447854293936109",
+  "hash_direct": "1007766959081368152213911938100877972355",
+  "src": "pub const fn is_char_boundary(&self, index: usize) -> bool {\n        // 0 is always ok.\n        // Test for 0 explicitly so that it can optimize out the check\n        // easily and skip reading string data for that case.\n        // Note that optimizing `self.get(..index)` relies on this.\n        if index == 0 {\n            return true;\n        }\n\n        if index >= self.len() {\n            // For `true` we have two options:\n            //\n            // - index == self.len()\n            //   Empty strings are valid, so return true\n            // - index > self.len()\n            //   In this case return false\n            //\n            // The check is placed exactly here, because it improves generated\n            // code on higher opt-levels. See PR #84751 for more details.\n            index == self.len()\n        } else {\n            self.as_bytes()[index].is_utf8_char_boundary()\n        }\n    }",
+  "callees": [
+    "161954493998599136964966663843628921778",
+    "280133775636475637812335811211808216208",
+    "1508773653512704694540919786852289740"
+  ]
+}

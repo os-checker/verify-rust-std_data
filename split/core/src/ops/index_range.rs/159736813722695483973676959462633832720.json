@@ -1,0 +1,12 @@
+{
+  "file": "core/src/ops/index_range.rs",
+  "name": "ops::index_range::IndexRange::take_suffix",
+  "hash": "159736813722695483973676959462633832720",
+  "hash_direct": "508139267806029370312113519250479769690",
+  "src": "pub(crate) fn take_suffix(&mut self, n: usize) -> Self {\n        let mid = if n <= self.len() {\n            // SAFETY: We just checked that this will be between start and end,\n            // and thus the subtraction cannot overflow.\n            // Using the intrinsic avoids a superfluous UB check.\n            unsafe { crate::intrinsics::unchecked_sub(self.end, n) }\n        } else {\n            self.start\n        };\n        let suffix = Self { start: mid, end: self.end };\n        self.end = mid;\n        suffix\n    }",
+  "callees": [
+    "1232630557319299762117464203181083790137",
+    "880099753416866301016817688796490528363",
+    "975615807404907599012293873143289411403"
+  ]
+}

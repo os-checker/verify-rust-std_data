@@ -1,0 +1,15 @@
+{
+  "file": "core/src/sync/atomic.rs",
+  "name": "sync::atomic::AtomicBool::store",
+  "hash": "1333151912453279659910677642624636164672",
+  "hash_direct": "69578972535113625058248842591626520468",
+  "src": "pub fn store(&self, val: bool, order: Ordering) {\n        // SAFETY: any data races are prevented by atomic intrinsics and the raw\n        // pointer passed in is valid because we got it from a reference.\n        unsafe {\n            atomic_store(self.v.get(), val as u8, order);\n        }\n    }",
+  "callees": [
+    "163154036748054064804947938080591443326",
+    "258820287469578611817448591488600041899",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "1752989996936949203916036071159051010960",
+    "194324283603422458513454313913015173750"
+  ]
+}

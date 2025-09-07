@@ -1,0 +1,13 @@
+{
+  "file": "core/src/num/dec2flt/decimal.rs",
+  "name": "<num::dec2flt::decimal::Decimal as cmp::Eq>::assert_receiver_is_total_eq",
+  "hash": "1450693652236591138131492669646915817",
+  "hash_direct": "1239444568107285977712019790861579051810",
+  "src": "Eq",
+  "macro_backtrace": [
+    {
+      "callsite": "Eq",
+      "defsite": "pub macro Eq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

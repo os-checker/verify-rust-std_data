@@ -1,0 +1,10 @@
+{
+  "file": "alloc/src/vec/into_iter.rs",
+  "name": "vec::into_iter::IntoIter::<u8>::forget_remaining_elements",
+  "hash": "167612940736654628364233494185940121674",
+  "hash_direct": "114191792917735561096323200911408982276",
+  "src": "pub(crate) fn forget_remaining_elements(&mut self) {\n        // For the ZST case, it is crucial that we mutate `end` here, not `ptr`.\n        // `ptr` must stay aligned, while `end` may be unaligned.\n        self.end = self.ptr.as_ptr();\n    }",
+  "callees": [
+    "181717373102152254895109628399379607332"
+  ]
+}

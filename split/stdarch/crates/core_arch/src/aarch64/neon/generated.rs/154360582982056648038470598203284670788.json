@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
-  "name": "core_arch::aarch64::neon::generated::vqnegq_s64",
-  "hash": "154360582982056648038470598203284670788",
-  "hash_direct": "37827099186731848181514282212834565000",
-  "src": "pub fn vqnegq_s64(a: int64x2_t) -> int64x2_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.sqneg.v2i64\"\n        )]\n        fn _vqnegq_s64(a: int64x2_t) -> int64x2_t;\n    }\n    unsafe { _vqnegq_s64(a) }\n}"
-}

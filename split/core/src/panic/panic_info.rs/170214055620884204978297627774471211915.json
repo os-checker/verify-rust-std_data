@@ -1,0 +1,7 @@
+{
+  "file": "core/src/panic/panic_info.rs",
+  "name": "panic::panic_info::PanicInfo::<'_>::force_no_backtrace",
+  "hash": "170214055620884204978297627774471211915",
+  "hash_direct": "1061409270928027086314779748656374071408",
+  "src": "pub fn force_no_backtrace(&self) -> bool {\n        self.force_no_backtrace\n    }"
+}

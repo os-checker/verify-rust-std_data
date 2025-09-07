@@ -1,0 +1,11 @@
+{
+  "file": "core/src/num/nonzero.rs",
+  "name": "<num::nonzero::NonZero<i64> as cmp::PartialOrd>::gt",
+  "hash": "740813776097466699217478745164116382741",
+  "hash_direct": "916748170447341675116290009193086297500",
+  "src": "fn gt(&self, other: &Self) -> bool {\n        self.get() > other.get()\n    }",
+  "callees": [
+    "515369855418007512414387965608362668851",
+    "639913184821088481813231898079805332633"
+  ]
+}

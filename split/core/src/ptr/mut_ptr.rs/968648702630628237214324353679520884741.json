@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/mut_ptr.rs",
+  "name": "ptr::mut_ptr::<impl *mut f16>::cast::<core_arch::arm_shared::neon::float16x8_t>",
+  "hash": "968648702630628237214324353679520884741",
+  "hash_direct": "1806957863636044511513804457120055844553",
+  "src": "pub const fn cast<U>(self) -> *mut U {\n        self as _\n    }"
+}

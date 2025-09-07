@@ -1,0 +1,10 @@
+{
+  "file": "core/src/num/f64.rs",
+  "name": "f64::<impl f64>::midpoint",
+  "hash": "44916348346235519728247615375472188892",
+  "hash_direct": "120155241695149690325361928229335360828",
+  "src": "pub const fn midpoint(self, other: f64) -> f64 {\n        const LO: f64 = f64::MIN_POSITIVE * 2.;\n        const HI: f64 = f64::MAX / 2.;\n\n        let (a, b) = (self, other);\n        let abs_a = a.abs();\n        let abs_b = b.abs();\n\n        if abs_a <= HI && abs_b <= HI {\n            // Overflow is impossible\n            (a + b) / 2.\n        } else if abs_a < LO {\n            // Not safe to halve `a` (would underflow)\n            a + (b / 2.)\n        } else if abs_b < LO {\n            // Not safe to halve `b` (would underflow)\n            (a / 2.) + b\n        } else {\n            // Safe to halve `a` and `b`\n            (a / 2.) + (b / 2.)\n        }\n    }",
+  "callees": [
+    "75082519682538823603969732638410705888"
+  ]
+}

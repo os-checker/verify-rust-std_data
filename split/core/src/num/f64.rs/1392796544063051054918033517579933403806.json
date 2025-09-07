@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/f64.rs",
-  "name": "f64::<impl f64>::max",
-  "hash": "1392796544063051054918033517579933403806",
-  "hash_direct": "123335350895555803072588087767846018789",
-  "src": "pub const fn max(self, other: f64) -> f64 {\n        intrinsics::maxnumf64(self, other)\n    }"
-}

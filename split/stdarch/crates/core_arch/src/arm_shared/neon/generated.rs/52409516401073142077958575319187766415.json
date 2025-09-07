@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vhaddq_s16",
-  "hash": "52409516401073142077958575319187766415",
-  "hash_direct": "154954539889901571031889472995870574748",
-  "src": "pub fn vhaddq_s16(a: int16x8_t, b: int16x8_t) -> int16x8_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.shadd.v8i16\"\n        )]\n        #[cfg_attr(target_arch = \"arm\", link_name = \"llvm.arm.neon.vhadds.v8i16\")]\n        fn _vhaddq_s16(a: int16x8_t, b: int16x8_t) -> int16x8_t;\n    }\n    unsafe { _vhaddq_s16(a, b) }\n}"
-}

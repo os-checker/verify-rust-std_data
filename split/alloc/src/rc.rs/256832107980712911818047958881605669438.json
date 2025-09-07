@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/rc.rs",
+  "name": "rc::Rc::<core::bstr::ByteStr>::from_inner_in",
+  "hash": "256832107980712911818047958881605669438",
+  "hash_direct": "684440537942004079312122572222161330921",
+  "src": "unsafe fn from_inner_in(ptr: NonNull<RcInner<T>>, alloc: A) -> Self {\n        Self { ptr, phantom: PhantomData, alloc }\n    }"
+}

@@ -1,0 +1,10 @@
+{
+  "file": "core/src/num/f128.rs",
+  "name": "f128::<impl f128>::classify",
+  "hash": "329598873808563524728391998075018970",
+  "hash_direct": "318288479854513479008025519718210482",
+  "src": "pub const fn classify(self) -> FpCategory {\n        let bits = self.to_bits();\n        match (bits & Self::MAN_MASK, bits & Self::EXP_MASK) {\n            (0, Self::EXP_MASK) => FpCategory::Infinite,\n            (_, Self::EXP_MASK) => FpCategory::Nan,\n            (0, 0) => FpCategory::Zero,\n            (_, 0) => FpCategory::Subnormal,\n            _ => FpCategory::Normal,\n        }\n    }",
+  "callees": [
+    "1974282168039380848894594196462410349"
+  ]
+}

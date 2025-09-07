@@ -1,0 +1,13 @@
+{
+  "file": "core/src/iter/adapters/map.rs",
+  "name": "core::iter::adapters::map::map_fold::<&&str, usize, usize, {closure@core::fmt::Arguments<'_>::estimated_capacity::{closure#0}}, {closure@<usize as core::iter::Sum>::sum<core::iter::Map<core::slice::Iter<'_, &str>, {closure@core::fmt::Arguments<'_>::estimated_capacity::{closure#0}}>>::{closure#0}}>::{closure#0}",
+  "hash": "71577729608259758934620112863904281714",
+  "hash_direct": "6492658348048050171984695597877319823",
+  "src": "move |acc, elt| g(acc, f(elt))",
+  "callees": [
+    "67346831302206127672772486614674656505",
+    "1727523272440419069416062698507021507560",
+    "280133775636475637812335811211808216208",
+    "1508773653512704694540919786852289740"
+  ]
+}

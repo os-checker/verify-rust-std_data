@@ -1,7 +1,0 @@
-{
-  "file": "core/src/marker.rs",
-  "name": "<marker::PhantomData<&[u8]> as clone::Clone>::clone",
-  "hash": "1472651429846380317711892087531665362424",
-  "hash_direct": "926849523793381623511115338435542880985",
-  "src": "fn clone(&self) -> Self {\n        Self\n    }"
-}

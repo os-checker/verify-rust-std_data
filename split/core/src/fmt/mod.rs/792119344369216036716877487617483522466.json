@@ -1,0 +1,11 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "fmt::Formatter::<'_>::debug_struct",
+  "hash": "792119344369216036716877487617483522466",
+  "hash_direct": "776014998186617466617661679553199525849",
+  "src": "pub fn debug_struct<'b>(&'b mut self, name: &str) -> DebugStruct<'b, 'a> {\n        builders::debug_struct_new(self, name)\n    }",
+  "callees": [
+    "6438160558783264858757823010485051153",
+    "243839084150888952911908111539685994713"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "ptr::non_null::NonNull::<T>::write::{closure#0}::REENTRY",
+  "hash": "163335320847475032271291022267570630439",
+  "hash_direct": "31689654260003018048345063566218101840",
+  "attrs": [
+    "#[kanitool::recursion_tracker]\n"
+  ],
+  "src": "kani::modifies(self.as_ptr())",
+  "macro_backtrace": [
+    {
+      "callsite": "kani::modifies(self.as_ptr())",
+      "defsite": "pub fn modifies(attr: TokenStream, item: TokenStream) -> TokenStream"
+    }
+  ]
+}

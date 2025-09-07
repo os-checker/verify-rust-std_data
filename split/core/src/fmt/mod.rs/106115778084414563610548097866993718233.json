@@ -1,0 +1,12 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "core::fmt::Arguments::<'_>::as_statically_known_str",
+  "hash": "106115778084414563610548097866993718233",
+  "hash_direct": "1706351416602259315114836511492435340573",
+  "src": "pub fn as_statically_known_str(&self) -> Option<&'static str> {\n        let s = self.as_str();\n        if core::intrinsics::is_val_statically_known(s.is_some()) { s } else { None }\n    }",
+  "callees": [
+    "89708104139049276107722877760682942014",
+    "1544805016259946259310346371026885702865",
+    "70904457295506314433567931051593952893"
+  ]
+}

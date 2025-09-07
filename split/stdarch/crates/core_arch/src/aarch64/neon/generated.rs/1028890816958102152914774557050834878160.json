@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vfmsh_f16",
+  "hash": "1028890816958102152914774557050834878160",
+  "hash_direct": "1047403688830417204813241531099627414320",
+  "src": "pub fn vfmsh_f16(a: f16, b: f16, c: f16) -> f16 {\n    vfmah_f16(a, -b, c)\n}",
+  "callees": [
+    "142567477654294249969602525411308800771"
+  ]
+}

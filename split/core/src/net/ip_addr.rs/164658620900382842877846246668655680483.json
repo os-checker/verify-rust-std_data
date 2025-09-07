@@ -1,0 +1,10 @@
+{
+  "file": "core/src/net/ip_addr.rs",
+  "name": "net::ip_addr::Ipv4Addr::BROADCAST",
+  "hash": "164658620900382842877846246668655680483",
+  "hash_direct": "947432119756243610416327340940462850832",
+  "src": "pub const BROADCAST: Self = Ipv4Addr::new(255, 255, 255, 255);",
+  "callees": [
+    "6502083445142584246779010121987916385"
+  ]
+}

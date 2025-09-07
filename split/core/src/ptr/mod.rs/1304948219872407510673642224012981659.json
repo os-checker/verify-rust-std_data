@@ -1,0 +1,8 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "ptr::drop_in_place::<slice::iter::Iter<'_, i16>>",
+  "hash": "1304948219872407510673642224012981659",
+  "hash_direct": "1583093992948618819314495690752695560094",
+  "inst_kind": "\"Shim\"",
+  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
+}

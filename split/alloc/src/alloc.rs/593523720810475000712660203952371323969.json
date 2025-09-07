@@ -1,0 +1,13 @@
+{
+  "file": "alloc/src/alloc.rs",
+  "name": "alloc::handle_alloc_error",
+  "hash": "593523720810475000712660203952371323969",
+  "hash_direct": "304812810481595690415304362396652150797",
+  "src": "pub const fn handle_alloc_error(layout: Layout) -> ! {\n    const fn ct_error(_: Layout) -> ! {\n        panic!(\"allocation failed\");\n    }\n\n    #[inline]\n    fn rt_error(layout: Layout) -> ! {\n        unsafe {\n            __rust_alloc_error_handler(layout.size(), layout.align());\n        }\n    }\n\n    #[cfg(not(feature = \"panic_immediate_abort\"))]\n    {\n        core::intrinsics::const_eval_select((layout,), ct_error, rt_error)\n    }\n\n    #[cfg(feature = \"panic_immediate_abort\")]\n    ct_error(layout)\n}",
+  "callees": [
+    "140493508095315886339161612115402293715",
+    "12355321507198182179923507819259328874",
+    "1099899350342654162615874749245636043676",
+    "41567241620038406215851091758143153711"
+  ]
+}

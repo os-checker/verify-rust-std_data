@@ -1,0 +1,25 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/mem.rs",
+  "name": "kani::mem::cbmc::same_allocation",
+  "hash": "67202008249250073035419006078308699005",
+  "hash_direct": "144969656698595632172015462741184456248",
+  "src": "pub fn same_allocation(addr1: *const (), addr2: *const ()) -> bool {\n                let obj1 = crate::kani::mem::pointer_object(addr1);\n                (obj1 == crate::kani::mem::pointer_object(addr2)) && {\n                    if !unsafe { is_allocated(addr1, 0) || is_allocated(addr2, 0) } {\n                        crate::kani::unsupported(\n                            \"Kani does not support reasoning about pointer to unallocated memory\",\n                        );\n                    }\n                    unsafe { is_allocated(addr1, 0) && is_allocated(addr2, 0) }\n                }\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "kani_core::kani_mem!(core)",
+      "defsite": "macro_rules! kani_mem"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ],
+  "callees": [
+    "80989463918046823203044749903697808714",
+    "1295499066349112484912490938496969975321",
+    "108393381985250317406898676759665844160",
+    "177504877725561479516307868202288769850",
+    "247863734272995071816029882222598095082",
+    "896888444305093759317012834705524625919"
+  ]
+}

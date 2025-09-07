@@ -1,0 +1,17 @@
+{
+  "file": "core/src/slice/mod.rs",
+  "name": "slice::verify::align_to_mut_from_bool::align_to_mut_unit::{constant#0}",
+  "hash": "485303674212530659515528637547699039386",
+  "hash_direct": "2896590814032482960517330082077147950",
+  "src": "ARR_SIZE",
+  "macro_backtrace": [
+    {
+      "callsite": "proof_of_contract_for_align_to_mut!(align_to_mut_unit, $src_type, ())",
+      "defsite": "macro_rules! proof_of_contract_for_align_to_mut {\n        ($harness:ident, $src:ty, $dst:ty) => {\n            #[kani::proof_for_contract(<[$src]>::align_to_mut)]\n            fn $harness() {\n                const ARR_SIZE: usize = 100;\n                let mut src_arr: [$src; ARR_SIZE] = kani::any();\n                let src_slice = kani::slice::any_slice_of_array_mut(&mut src_arr);\n                let dst_slice = unsafe { src_slice.align_to_mut::<$dst>() };\n            }\n        };\n    }"
+    },
+    {
+      "callsite": "gen_align_to_mut_harnesses!(align_to_mut_from_bool, bool)",
+      "defsite": "macro_rules! gen_align_to_mut_harnesses {\n        ($mod_name:ident, $src_type:ty) => {\n            mod $mod_name {\n                use super::*;\n\n                proof_of_contract_for_align_to_mut!(align_to_mut_u8, $src_type, u8);\n                proof_of_contract_for_align_to_mut!(align_to_mut_u16, $src_type, u16);\n                proof_of_contract_for_align_to_mut!(align_to_mut_u32, $src_type, u32);\n                proof_of_contract_for_align_to_mut!(align_to_mut_u64, $src_type, u64);\n                proof_of_contract_for_align_to_mut!(align_to_mut_u128, $src_type, u128);\n                proof_of_contract_for_align_to_mut!(align_to_mut_bool, $src_type, bool);\n                proof_of_contract_for_align_to_mut!(align_to_mut_char, $src_type, char);\n                proof_of_contract_for_align_to_mut!(align_to_mut_unit, $src_type, ());\n            }\n        };\n    }"
+    }
+  ]
+}

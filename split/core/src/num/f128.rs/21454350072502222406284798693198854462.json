@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/f128.rs",
-  "name": "f128::<impl f128>::mul_add",
-  "hash": "21454350072502222406284798693198854462",
-  "hash_direct": "1550292200959449922614241905058719696161",
-  "src": "pub fn mul_add(self, a: f128, b: f128) -> f128 {\n        // SAFETY: intrinsic with no preconditions\n        unsafe { intrinsics::fmaf128(self, a, b) }\n    }"
-}

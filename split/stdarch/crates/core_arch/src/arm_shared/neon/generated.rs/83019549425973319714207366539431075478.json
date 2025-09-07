@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vcageq_f32",
-  "hash": "83019549425973319714207366539431075478",
-  "hash_direct": "41654572309738076862813561785637515269",
-  "src": "pub fn vcageq_f32(a: float32x4_t, b: float32x4_t) -> uint32x4_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(target_arch = \"arm\", link_name = \"llvm.arm.neon.vacge.v4i32.v4f32\")]\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.facge.v4i32.v4f32\"\n        )]\n        fn _vcageq_f32(a: float32x4_t, b: float32x4_t) -> uint32x4_t;\n    }\n    unsafe { _vcageq_f32(a, b) }\n}"
-}

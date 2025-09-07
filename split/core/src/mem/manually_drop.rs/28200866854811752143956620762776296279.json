@@ -1,0 +1,7 @@
+{
+  "file": "core/src/mem/manually_drop.rs",
+  "name": "core::mem::ManuallyDrop::<vec::into_iter::IntoIter<u8>>::new",
+  "hash": "28200866854811752143956620762776296279",
+  "hash_direct": "86966582989920203763627542525070221046",
+  "src": "pub const fn new(value: T) -> ManuallyDrop<T> {\n        ManuallyDrop { value }\n    }"
+}

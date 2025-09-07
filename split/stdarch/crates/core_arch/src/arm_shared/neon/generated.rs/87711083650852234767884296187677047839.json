@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vmlaq_s8",
+  "hash": "87711083650852234767884296187677047839",
+  "hash_direct": "1056042119657819488816841775641014370740",
+  "src": "pub fn vmlaq_s8(a: int8x16_t, b: int8x16_t, c: int8x16_t) -> int8x16_t {\n    unsafe { simd_add(a, simd_mul(b, c)) }\n}"
+}

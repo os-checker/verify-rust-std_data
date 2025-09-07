@@ -1,0 +1,8 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "ptr::drop_in_place::<for<'a> fn(&'a [u8]) -> &'a bstr::ByteStr {bstr::ByteStr::from_bytes}>",
+  "hash": "1616191069419900474815028734521190477888",
+  "hash_direct": "91031725582229017567229403268822153579",
+  "inst_kind": "\"Shim\"",
+  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
+}

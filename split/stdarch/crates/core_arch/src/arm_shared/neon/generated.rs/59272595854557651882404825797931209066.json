@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vmul_p8",
-  "hash": "59272595854557651882404825797931209066",
-  "hash_direct": "114472725506836141751090502002567139788",
-  "src": "pub fn vmul_p8(a: poly8x8_t, b: poly8x8_t) -> poly8x8_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(target_arch = \"arm\", link_name = \"llvm.arm.neon.vmulp.v8i8\")]\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.pmul.v8i8\"\n        )]\n        fn _vmul_p8(a: poly8x8_t, b: poly8x8_t) -> poly8x8_t;\n    }\n    unsafe { _vmul_p8(a, b) }\n}"
-}

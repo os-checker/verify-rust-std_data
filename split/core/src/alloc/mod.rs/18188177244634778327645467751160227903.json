@@ -1,0 +1,7 @@
+{
+  "file": "core/src/alloc/mod.rs",
+  "name": "<alloc::Global as core::alloc::Allocator>::by_ref",
+  "hash": "18188177244634778327645467751160227903",
+  "hash_direct": "1818664095966386630810317606761103729417",
+  "src": "fn by_ref(&self) -> &Self\n    where\n        Self: Sized,\n    {\n        self\n    }"
+}

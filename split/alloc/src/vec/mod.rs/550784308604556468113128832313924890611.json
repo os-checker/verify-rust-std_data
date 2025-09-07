@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/vec/mod.rs",
+  "name": "vec::Vec::<i32>::len",
+  "hash": "550784308604556468113128832313924890611",
+  "hash_direct": "114980400266552527439218604175067110569",
+  "src": "pub const fn len(&self) -> usize {\n        let len = self.len;\n\n        // SAFETY: The maximum capacity of `Vec<T>` is `isize::MAX` bytes, so the maximum value can\n        // be returned is `usize::checked_div(size_of::<T>()).unwrap_or(usize::MAX)`, which\n        // matches the definition of `T::MAX_SLICE_LEN`.\n        unsafe { intrinsics::assume(len <= T::MAX_SLICE_LEN) };\n\n        len\n    }"
+}

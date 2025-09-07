@@ -1,7 +1,0 @@
-{
-  "file": "core/src/sync/atomic.rs",
-  "name": "sync::atomic::atomic_and::<u16>",
-  "hash": "44827230918749859414352137884083381614",
-  "hash_direct": "1766445395226185205714597749837632761910",
-  "src": "unsafe fn atomic_and<T: Copy>(dst: *mut T, val: T, order: Ordering) -> T {\n    // SAFETY: the caller must uphold the safety contract for `atomic_and`\n    unsafe {\n        match order {\n            Relaxed => intrinsics::atomic_and::<T, { AO::Relaxed }>(dst, val),\n            Acquire => intrinsics::atomic_and::<T, { AO::Acquire }>(dst, val),\n            Release => intrinsics::atomic_and::<T, { AO::Release }>(dst, val),\n            AcqRel => intrinsics::atomic_and::<T, { AO::AcqRel }>(dst, val),\n            SeqCst => intrinsics::atomic_and::<T, { AO::SeqCst }>(dst, val),\n        }\n    }\n}"
-}

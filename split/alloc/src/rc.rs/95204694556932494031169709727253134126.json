@@ -1,0 +1,14 @@
+{
+  "file": "alloc/src/rc.rs",
+  "name": "rc::Rc::<[u8]>::allocate_for_layout::<{closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/alloc/src/rc.rs:2109:17: 2109:25}, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/alloc/src/rc.rs:2110:17: 2110:22}>::{closure#0}",
+  "hash": "95204694556932494031169709727253134126",
+  "hash_direct": "121008130857081510627472036792371298820",
+  "src": "|_| handle_alloc_error(layout)",
+  "callees": [
+    "593523720810475000712660203952371323969",
+    "140493508095315886339161612115402293715",
+    "12355321507198182179923507819259328874",
+    "1099899350342654162615874749245636043676",
+    "41567241620038406215851091758143153711"
+  ]
+}

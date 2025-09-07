@@ -1,0 +1,20 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/lib.rs",
+  "name": "kani::assert",
+  "hash": "96381225063020746367072217221403980848",
+  "hash_direct": "424675871090691550017756442132733620448",
+  "attrs": [
+    "#[kanitool::fn_marker = \"AssertHook\"]\n"
+  ],
+  "src": "pub const fn assert(cond: bool, msg: &'static str) {\n            let _ = cond;\n            let _ = msg;\n        }",
+  "macro_backtrace": [
+    {
+      "callsite": "kani_core::kani_intrinsics!()",
+      "defsite": "macro_rules! kani_intrinsics"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ]
+}

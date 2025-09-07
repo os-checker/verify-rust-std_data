@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vrsqrts_f16",
-  "hash": "92404441190369145911022113460472614241",
-  "hash_direct": "1689538126330453097910949347139784343633",
-  "src": "pub fn vrsqrts_f16(a: float16x4_t, b: float16x4_t) -> float16x4_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(target_arch = \"arm\", link_name = \"llvm.arm.neon.vrsqrts.v4f16\")]\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.frsqrts.v4f16\"\n        )]\n        fn _vrsqrts_f16(a: float16x4_t, b: float16x4_t) -> float16x4_t;\n    }\n    unsafe { _vrsqrts_f16(a, b) }\n}"
-}

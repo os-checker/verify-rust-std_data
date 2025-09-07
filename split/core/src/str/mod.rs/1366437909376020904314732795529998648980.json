@@ -1,0 +1,14 @@
+{
+  "file": "core/src/str/mod.rs",
+  "name": "str::<impl str>::make_ascii_lowercase",
+  "hash": "1366437909376020904314732795529998648980",
+  "hash_direct": "160499628140501805024646404479830348449",
+  "src": "pub const fn make_ascii_lowercase(&mut self) {\n        // SAFETY: changing ASCII letters only does not invalidate UTF-8.\n        let me = unsafe { self.as_bytes_mut() };\n        me.make_ascii_lowercase()\n    }",
+  "callees": [
+    "69417484249274791359857467967200926715",
+    "115014031790079929662428883345860873260",
+    "1766778296466189972714376152058119054158",
+    "30628789991776822694171354202924613394",
+    "34565540814495624602605185235074095894"
+  ]
+}

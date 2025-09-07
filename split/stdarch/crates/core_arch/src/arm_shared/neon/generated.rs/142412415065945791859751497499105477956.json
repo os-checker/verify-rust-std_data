@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vmaxnmq_f32",
-  "hash": "142412415065945791859751497499105477956",
-  "hash_direct": "16016562401729367176422805685327001517",
-  "src": "pub fn vmaxnmq_f32(a: float32x4_t, b: float32x4_t) -> float32x4_t {\n    unsafe { simd_fmax(a, b) }\n}"
-}

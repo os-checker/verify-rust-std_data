@@ -1,0 +1,13 @@
+{
+  "file": "core/src/num/error.rs",
+  "name": "<num::error::IntErrorKind as cmp::Eq>::assert_receiver_is_total_eq",
+  "hash": "1419445016049295524118374810393943854299",
+  "hash_direct": "778018557468110774214822296807769917982",
+  "src": "Eq",
+  "macro_backtrace": [
+    {
+      "callsite": "Eq",
+      "defsite": "pub macro Eq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vld1q_s16_x3",
+  "hash": "12830466084163794300853997511338626586",
+  "hash_direct": "12158459574267894546704620121577502097",
+  "src": "pub unsafe fn vld1q_s16_x3(a: *const i16) -> int16x8x3_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.ld1x3.v8i16.p0\"\n        )]\n        #[cfg_attr(target_arch = \"arm\", link_name = \"llvm.arm.neon.vld1x3.v8i16.p0\")]\n        fn _vld1q_s16_x3(a: *const i16) -> int16x8x3_t;\n    }\n    _vld1q_s16_x3(a)\n}"
+}

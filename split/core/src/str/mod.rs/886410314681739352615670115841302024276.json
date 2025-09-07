@@ -1,0 +1,18 @@
+{
+  "file": "core/src/str/mod.rs",
+  "name": "core::str::<impl str>::floor_char_boundary",
+  "hash": "886410314681739352615670115841302024276",
+  "hash_direct": "3811573166909607551530387550402600706",
+  "src": "pub const fn floor_char_boundary(&self, index: usize) -> usize {\n        if index >= self.len() {\n            self.len()\n        } else {\n            let mut i = index;\n            while i > 0 {\n                if self.as_bytes()[i].is_utf8_char_boundary() {\n                    break;\n                }\n                i -= 1;\n            }\n\n            //  The character boundary will be within four bytes of the index\n            debug_assert!(i >= index.saturating_sub(3));\n\n            i\n        }\n    }",
+  "callees": [
+    "12281449246394340237926324936375242532",
+    "161954493998599136964966663843628921778",
+    "1600161201577772962411848280391541955360",
+    "986792852990965178117440249555081278778",
+    "90818112465881722349174357944217011292",
+    "170281423934441608902372914597711355436",
+    "146612017564224181584303574960223420416",
+    "280133775636475637812335811211808216208",
+    "1508773653512704694540919786852289740"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "file": "core/src/iter/adapters/fuse.rs",
+  "name": "<iter::adapters::fuse::Fuse<iter::adapters::map::Map<str::iter::Chars<'_>, str::CharEscapeUnicode>> as clone::Clone>::clone",
+  "hash": "629899164938571788016988456014427283312",
+  "hash_direct": "70366912221453313747423797491757694847",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ],
+  "callees": [
+    "623554193812299089410503717753761725327",
+    "196850234523006961410129611719334316952",
+    "1127448244019747137816948501807508054133",
+    "415636605586044597014511502347166535165",
+    "921511568084263858117305124753064771755"
+  ]
+}

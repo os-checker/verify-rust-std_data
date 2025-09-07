@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vrbit_p8",
+  "hash": "1351743364409661004312979793146537195946",
+  "hash_direct": "1000252309914107189412855011363571797027",
+  "src": "pub fn vrbit_p8(a: poly8x8_t) -> poly8x8_t {\n    unsafe { transmute(vrbit_s8(transmute(a))) }\n}",
+  "callees": [
+    "147716516039861398854234631965983564710"
+  ]
+}

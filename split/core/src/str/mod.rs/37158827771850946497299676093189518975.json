@@ -1,0 +1,13 @@
+{
+  "file": "core/src/str/mod.rs",
+  "name": "<str::IsNotEmpty as clone::Clone>::clone",
+  "hash": "37158827771850946497299676093189518975",
+  "hash_direct": "336624629331759240714850866906736652337",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

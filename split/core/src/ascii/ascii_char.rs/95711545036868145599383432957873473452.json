@@ -1,0 +1,13 @@
+{
+  "file": "core/src/ascii/ascii_char.rs",
+  "name": "ascii::ascii_char::AsciiChar::to_lowercase",
+  "hash": "95711545036868145599383432957873473452",
+  "hash_direct": "151433832187321953069635447807441743222",
+  "src": "pub const fn to_lowercase(self) -> Self {\n        let lowercase_byte = self.to_u8().to_ascii_lowercase();\n        // SAFETY: Setting the 6th bit won't convert ASCII to non-ASCII.\n        unsafe { Self::from_u8_unchecked(lowercase_byte) }\n    }",
+  "callees": [
+    "15551977551413036531158252289522839939",
+    "211389067699639933614636457746408448112",
+    "69417484249274791359857467967200926715",
+    "1766778296466189972714376152058119054158"
+  ]
+}

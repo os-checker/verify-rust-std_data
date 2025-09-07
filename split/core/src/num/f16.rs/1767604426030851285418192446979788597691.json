@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f16.rs",
+  "name": "f16::<impl f16>::cbrt",
+  "hash": "1767604426030851285418192446979788597691",
+  "hash_direct": "177535273720924245710378009219588826431",
+  "src": "pub fn cbrt(self) -> f16 {\n        libm::cbrtf(self as f32) as f16\n    }"
+}

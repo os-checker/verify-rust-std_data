@@ -1,0 +1,16 @@
+{
+  "file": "core/src/panicking.rs",
+  "name": "<panicking::AssertKind as fmt::Debug>::fmt",
+  "hash": "1162539197450497123517315328611030803369",
+  "hash_direct": "764035119557083033611299861105372032558",
+  "src": "Debug",
+  "macro_backtrace": [
+    {
+      "callsite": "Debug",
+      "defsite": "pub macro Debug($item:item) {\n        /* compiler built-in */\n    }"
+    }
+  ],
+  "callees": [
+    "243839084150888952911908111539685994713"
+  ]
+}

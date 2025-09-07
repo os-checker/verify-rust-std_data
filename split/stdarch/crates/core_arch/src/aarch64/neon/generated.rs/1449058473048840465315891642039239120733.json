@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vcvtd_f64_s64",
+  "hash": "1449058473048840465315891642039239120733",
+  "hash_direct": "196126631930163197516895556271875390581",
+  "src": "pub fn vcvtd_f64_s64(a: i64) -> f64 {\n    a as f64\n}"
+}

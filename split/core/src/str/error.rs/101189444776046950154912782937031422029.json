@@ -1,0 +1,13 @@
+{
+  "file": "core/src/str/error.rs",
+  "name": "<str::error::Utf8Error as clone::Clone>::clone",
+  "hash": "101189444776046950154912782937031422029",
+  "hash_direct": "156294320611685360291157940617030615658",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

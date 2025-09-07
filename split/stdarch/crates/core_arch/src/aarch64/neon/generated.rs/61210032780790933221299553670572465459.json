@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
-  "name": "core_arch::aarch64::neon::generated::vdivh_f16",
-  "hash": "61210032780790933221299553670572465459",
-  "hash_direct": "84457907703091760248395590347559227741",
-  "src": "pub fn vdivh_f16(a: f16, b: f16) -> f16 {\n    a / b\n}"
-}

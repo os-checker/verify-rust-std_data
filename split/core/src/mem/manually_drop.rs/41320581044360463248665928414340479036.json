@@ -1,7 +1,0 @@
-{
-  "file": "core/src/mem/manually_drop.rs",
-  "name": "mem::manually_drop::ManuallyDrop::<intrinsics::verify::u8_struct>::new",
-  "hash": "41320581044360463248665928414340479036",
-  "hash_direct": "949724269226427560712979651081846760343",
-  "src": "pub const fn new(value: T) -> ManuallyDrop<T> {\n        ManuallyDrop { value }\n    }"
-}

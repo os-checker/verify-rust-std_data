@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vtrn_p16",
-  "hash": "333560166357311232715323948464735188673",
-  "hash_direct": "1173116951616917194212993808340347669168",
-  "src": "pub fn vtrn_p16(a: poly16x4_t, b: poly16x4_t) -> poly16x4x2_t {\n    unsafe {\n        let a1: poly16x4_t = simd_shuffle!(a, b, [0, 4, 2, 6]);\n        let b1: poly16x4_t = simd_shuffle!(a, b, [1, 5, 3, 7]);\n        transmute((a1, b1))\n    }\n}"
-}

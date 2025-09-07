@@ -1,0 +1,7 @@
+{
+  "file": "core/src/cmp.rs",
+  "name": "cmp::impls::<impl cmp::Ord for ()>::cmp",
+  "hash": "326266878733747875510010226591721936591",
+  "hash_direct": "12568503117182898116448056491175145883",
+  "src": "fn cmp(&self, _other: &()) -> Ordering {\n            Equal\n        }"
+}

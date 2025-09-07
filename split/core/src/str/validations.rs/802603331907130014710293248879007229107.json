@@ -1,7 +1,0 @@
-{
-  "file": "core/src/str/validations.rs",
-  "name": "str::validations::utf8_acc_cont_byte",
-  "hash": "802603331907130014710293248879007229107",
-  "hash_direct": "55657844730306062895232680496741342284",
-  "src": "const fn utf8_acc_cont_byte(ch: u32, byte: u8) -> u32 {\n    (ch << 6) | (byte & CONT_MASK) as u32\n}"
-}

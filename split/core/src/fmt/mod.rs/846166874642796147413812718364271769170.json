@@ -1,0 +1,7 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "fmt::FormattingOptions::get_alternate",
+  "hash": "846166874642796147413812718364271769170",
+  "hash_direct": "144250159783877391377658031876650177832",
+  "src": "pub const fn get_alternate(&self) -> bool {\n        self.flags & flags::ALTERNATE_FLAG != 0\n    }"
+}

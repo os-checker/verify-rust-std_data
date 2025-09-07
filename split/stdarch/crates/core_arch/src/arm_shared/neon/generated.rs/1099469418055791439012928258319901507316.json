@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vabdl_u32",
+  "hash": "1099469418055791439012928258319901507316",
+  "hash_direct": "65576056678184105182526978808427979884",
+  "src": "pub fn vabdl_u32(a: uint32x2_t, b: uint32x2_t) -> uint64x2_t {\n    unsafe { simd_cast(vabd_u32(a, b)) }\n}",
+  "callees": [
+    "12968051211827734194907846196317261921"
+  ]
+}

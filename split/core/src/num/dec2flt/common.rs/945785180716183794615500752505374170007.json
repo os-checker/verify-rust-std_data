@@ -1,0 +1,17 @@
+{
+  "file": "core/src/num/dec2flt/common.rs",
+  "name": "<num::dec2flt::common::BiasedFp as default::Default>::default",
+  "hash": "945785180716183794615500752505374170007",
+  "hash_direct": "876186229523329043513202120158727610807",
+  "src": "Default",
+  "macro_backtrace": [
+    {
+      "callsite": "Default",
+      "defsite": "pub macro Default($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ],
+  "callees": [
+    "1002172265968274352711498511734125215469",
+    "67903923256944088678414142369330925193"
+  ]
+}

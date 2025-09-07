@@ -1,0 +1,12 @@
+{
+  "file": "core/src/char/mod.rs",
+  "name": "<char::CaseMappingIter as iter::traits::exact_size::ExactSizeIterator>::len",
+  "hash": "65938875803396913552242942886366437729",
+  "hash_direct": "173692848288447000135502709225786521612",
+  "src": "fn len(&self) -> usize {\n        self.0.len()\n    }",
+  "callees": [
+    "1003609651494284879511269085518126618702",
+    "747234038101549700711091780759010802194",
+    "975615807404907599012293873143289411403"
+  ]
+}

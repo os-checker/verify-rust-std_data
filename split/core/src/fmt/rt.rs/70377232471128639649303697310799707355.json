@@ -1,0 +1,13 @@
+{
+  "file": "core/src/fmt/rt.rs",
+  "name": "fmt::rt::Argument::<'_>::from_usize",
+  "hash": "70377232471128639649303697310799707355",
+  "hash_direct": "167968539770552209408563147122101204797",
+  "src": "pub const fn from_usize(x: &usize) -> Argument<'_> {\n        if *x > u16::MAX as usize {\n            panic!(\"Formatting argument out of range\");\n        }\n        Argument { ty: ArgumentType::Count(*x as u16) }\n    }",
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "1752989996936949203916036071159051010960"
+  ]
+}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
-  "name": "core_arch::aarch64::neon::generated::vsqadd_u64",
-  "hash": "446040412118501459415155465632733818671",
-  "hash_direct": "100669466351938417710400473174410446565",
-  "src": "pub fn vsqadd_u64(a: uint64x1_t, b: int64x1_t) -> uint64x1_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.usqadd.v1i64\"\n        )]\n        fn _vsqadd_u64(a: uint64x1_t, b: int64x1_t) -> uint64x1_t;\n    }\n    unsafe { _vsqadd_u64(a, b) }\n}"
-}

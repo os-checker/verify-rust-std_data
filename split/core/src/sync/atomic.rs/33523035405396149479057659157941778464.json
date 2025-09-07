@@ -1,0 +1,10 @@
+{
+  "file": "core/src/sync/atomic.rs",
+  "name": "sync::atomic::AtomicBool::new",
+  "hash": "33523035405396149479057659157941778464",
+  "hash_direct": "1649782460376599862813842207760337546018",
+  "src": "pub const fn new(v: bool) -> AtomicBool {\n        AtomicBool { v: UnsafeCell::new(v as u8) }\n    }",
+  "callees": [
+    "352564018354059629112702651348753878264"
+  ]
+}

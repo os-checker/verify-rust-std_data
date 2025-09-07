@@ -1,0 +1,10 @@
+{
+  "file": "core/src/num/f128.rs",
+  "name": "f128::<impl f128>::is_sign_negative",
+  "hash": "783290788233458409213943446188194581582",
+  "hash_direct": "152332699189603515163296049799069640220",
+  "src": "pub const fn is_sign_negative(self) -> bool {\n        // IEEE754 says: isSignMinus(x) is true if and only if x has negative sign. isSignMinus\n        // applies to zeros and NaNs as well.\n        // SAFETY: This is just transmuting to get the sign bit, it's fine.\n        (self.to_bits() & (1 << 127)) != 0\n    }",
+  "callees": [
+    "1974282168039380848894594196462410349"
+  ]
+}

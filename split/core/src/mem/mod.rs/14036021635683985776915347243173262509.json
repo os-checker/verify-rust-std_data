@@ -1,7 +1,0 @@
-{
-  "file": "core/src/mem/mod.rs",
-  "name": "mem::align_of::<mem::verify::CannotDrop<char>>",
-  "hash": "14036021635683985776915347243173262509",
-  "hash_direct": "173235842861361004813912776030356234959",
-  "src": "pub const fn align_of<T>() -> usize {\n    intrinsics::align_of::<T>()\n}"
-}

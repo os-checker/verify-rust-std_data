@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vnegq_s64",
+  "hash": "1274619730240974198714994314112240718488",
+  "hash_direct": "10334582379252482830363049949358869401",
+  "src": "pub fn vnegq_s64(a: int64x2_t) -> int64x2_t {\n    unsafe { simd_neg(a) }\n}"
+}

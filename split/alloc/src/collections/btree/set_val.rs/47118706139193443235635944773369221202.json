@@ -1,0 +1,13 @@
+{
+  "file": "alloc/src/collections/btree/set_val.rs",
+  "name": "<collections::btree::set_val::SetValZST as core::cmp::PartialEq>::eq",
+  "hash": "47118706139193443235635944773369221202",
+  "hash_direct": "1006769822058816346317849850367919391940",
+  "src": "PartialEq",
+  "macro_backtrace": [
+    {
+      "callsite": "PartialEq",
+      "defsite": "pub macro PartialEq"
+    }
+  ]
+}

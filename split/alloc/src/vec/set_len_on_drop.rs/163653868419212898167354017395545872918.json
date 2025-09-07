@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/vec/set_len_on_drop.rs",
+  "name": "vec::set_len_on_drop::SetLenOnDrop::<'_>::new",
+  "hash": "163653868419212898167354017395545872918",
+  "hash_direct": "525047260002253914914356375697714779716",
+  "src": "pub(super) fn new(len: &'a mut usize) -> Self {\n        SetLenOnDrop { local_len: *len, len }\n    }"
+}

@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/collections/mod.rs",
+  "name": "<collections::TryReserveError as core::convert::From<collections::TryReserveErrorKind>>::from",
+  "hash": "1806196275982253069117281718696114376262",
+  "hash_direct": "92712162027816426221404549661954745817",
+  "src": "fn from(kind: TryReserveErrorKind) -> Self {\n        Self { kind }\n    }"
+}

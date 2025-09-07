@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/traits/collect.rs",
+  "name": "<core::iter::adapters::GenericShunt<'_, core::char::DecodeUtf16<core::iter::Map<core::iter::Copied<core::slice::Iter<'_, [u8; 2]>>, fn([u8; core::::num::{impl#7}::from_be_bytes::{constant#0}]) -> u16 {core::num::<impl u16>::from_be_bytes}>>, core::result::Result<core::convert::Infallible, core::char::DecodeUtf16Error>> as core::iter::IntoIterator>::into_iter",
+  "hash": "162600631970892981179035749255397972729",
+  "hash_direct": "920023829899418348515582641495939551099",
+  "src": "fn into_iter(self) -> I {\n        self\n    }"
+}

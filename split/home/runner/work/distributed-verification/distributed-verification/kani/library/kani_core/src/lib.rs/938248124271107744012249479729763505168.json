@@ -1,0 +1,20 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/lib.rs",
+  "name": "kani::internal::check",
+  "hash": "938248124271107744012249479729763505168",
+  "hash_direct": "46620525458653346105193439146046694772",
+  "attrs": [
+    "#[kanitool::fn_marker = \"CheckHook\"]\n"
+  ],
+  "src": "pub(crate) const fn check(cond: bool, msg: &'static str) {\n                let _ = cond;\n                let _ = msg;\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "kani_core::kani_intrinsics!()",
+      "defsite": "macro_rules! kani_intrinsics"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ]
+}

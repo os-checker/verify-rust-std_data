@@ -1,0 +1,12 @@
+{
+  "file": "core/src/alloc/layout.rs",
+  "name": "alloc::layout::Layout::extend_packed",
+  "hash": "98067059012061316655876652044881984883",
+  "hash_direct": "3470417866212717661626101829977923469",
+  "src": "pub const fn extend_packed(&self, next: Self) -> Result<Self, LayoutError> {\n        // SAFETY: each `size` is at most `isize::MAX == usize::MAX/2`, so the\n        // sum is at most `usize::MAX/2*2 == usize::MAX - 1`, and cannot overflow.\n        let new_size = unsafe { unchecked_add(self.size, next.size) };\n        // The safe constructor enforces that the new size isn't too big for the alignment\n        Layout::from_size_alignment(new_size, self.align)\n    }",
+  "callees": [
+    "608664848234302571713593688644672913516",
+    "113777446734612017643296714849006136962",
+    "112152844438854238887994758767167519478"
+  ]
+}

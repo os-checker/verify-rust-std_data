@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "ptr::non_null::NonNull::<[fmt::rt::Placeholder]>::from_ref",
+  "hash": "13863098581405631524288807864350146405",
+  "hash_direct": "1239368251948524312016034003014120889021",
+  "src": "pub const fn from_ref(r: &T) -> Self {\n        // SAFETY: A reference cannot be null.\n        unsafe { NonNull { pointer: r as *const T } }\n    }"
+}

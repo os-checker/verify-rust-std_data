@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vabdq_u8",
+  "hash": "100253400030441640308913886933448057386",
+  "hash_direct": "850559440212491663415613232644220862784",
+  "src": "pub fn vabdq_u8(a: uint8x16_t, b: uint8x16_t) -> uint8x16_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.uabd.v16i8\"\n        )]\n        #[cfg_attr(target_arch = \"arm\", link_name = \"llvm.arm.neon.vabdu.v16i8\")]\n        fn _vabdq_u8(a: uint8x16_t, b: uint8x16_t) -> uint8x16_t;\n    }\n    unsafe { _vabdq_u8(a, b) }\n}"
+}

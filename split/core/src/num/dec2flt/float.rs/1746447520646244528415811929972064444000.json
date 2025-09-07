@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/dec2flt/float.rs",
-  "name": "<f32 as num::dec2flt::float::RawFloat>::NEG_NAN",
-  "hash": "1746447520646244528415811929972064444000",
-  "hash_direct": "59673268701435410968967494562340818375",
-  "src": "const NEG_NAN: Self = -f32::NAN;"
-}

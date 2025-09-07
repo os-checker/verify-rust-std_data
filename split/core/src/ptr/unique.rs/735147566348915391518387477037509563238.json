@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/unique.rs",
+  "name": "core::ptr::Unique::<u8>::from_non_null",
+  "hash": "735147566348915391518387477037509563238",
+  "hash_direct": "130455113998294334825650219149077576620",
+  "src": "pub const fn from_non_null(pointer: NonNull<T>) -> Self {\n        Unique { pointer, _marker: PhantomData }\n    }"
+}

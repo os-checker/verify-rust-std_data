@@ -1,0 +1,16 @@
+{
+  "file": "core/src/intrinsics/mod.rs",
+  "name": "<intrinsics::AtomicOrdering as fmt::Debug>::fmt",
+  "hash": "104312980429826069975513570094713896146",
+  "hash_direct": "14366189267786329264429491306594130541",
+  "src": "Debug",
+  "macro_backtrace": [
+    {
+      "callsite": "Debug",
+      "defsite": "pub macro Debug($item:item) {\n        /* compiler built-in */\n    }"
+    }
+  ],
+  "callees": [
+    "243839084150888952911908111539685994713"
+  ]
+}

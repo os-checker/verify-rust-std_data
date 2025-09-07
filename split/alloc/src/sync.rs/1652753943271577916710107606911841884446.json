@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/sync.rs",
+  "name": "sync::Arc::<[u8; 0]>::from_inner_in",
+  "hash": "1652753943271577916710107606911841884446",
+  "hash_direct": "7154196987198874521053589279020067881",
+  "src": "unsafe fn from_inner_in(ptr: NonNull<ArcInner<T>>, alloc: A) -> Self {\n        Self { ptr, phantom: PhantomData, alloc }\n    }"
+}

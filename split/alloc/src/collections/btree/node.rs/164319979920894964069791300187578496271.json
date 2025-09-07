@@ -1,0 +1,14 @@
+{
+  "file": "alloc/src/collections/btree/node.rs",
+  "name": "collections::btree::node::splitpoint",
+  "hash": "164319979920894964069791300187578496271",
+  "hash_direct": "12626365247625734377959612988245765868",
+  "src": "fn splitpoint(edge_idx: usize) -> (usize, LeftOrRight<usize>) {\n    debug_assert!(edge_idx <= CAPACITY);\n    // Rust issue #74834 tries to explain these symmetric rules.\n    match edge_idx {\n        0..EDGE_IDX_LEFT_OF_CENTER => (KV_IDX_CENTER - 1, LeftOrRight::Left(edge_idx)),\n        EDGE_IDX_LEFT_OF_CENTER => (KV_IDX_CENTER, LeftOrRight::Left(edge_idx)),\n        EDGE_IDX_RIGHT_OF_CENTER => (KV_IDX_CENTER, LeftOrRight::Right(0)),\n        _ => (KV_IDX_CENTER + 1, LeftOrRight::Right(edge_idx - (KV_IDX_CENTER + 1 + 1))),\n    }\n}",
+  "callees": [
+    "12281449246394340237926324936375242532",
+    "986792852990965178117440249555081278778",
+    "90818112465881722349174357944217011292",
+    "170281423934441608902372914597711355436",
+    "146612017564224181584303574960223420416"
+  ]
+}

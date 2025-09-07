@@ -1,0 +1,16 @@
+{
+  "file": "core/src/cmp.rs",
+  "name": "<cmp::Ordering as fmt::Debug>::fmt",
+  "hash": "1053297025157737449012445706815084804049",
+  "hash_direct": "150516429098759865418558178477700270744",
+  "src": "Debug",
+  "macro_backtrace": [
+    {
+      "callsite": "Debug",
+      "defsite": "pub macro Debug($item:item) {\n        /* compiler built-in */\n    }"
+    }
+  ],
+  "callees": [
+    "243839084150888952911908111539685994713"
+  ]
+}

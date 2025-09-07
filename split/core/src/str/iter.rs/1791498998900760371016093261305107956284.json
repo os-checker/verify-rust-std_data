@@ -1,7 +1,0 @@
-{
-  "file": "core/src/str/iter.rs",
-  "name": "str::iter::CharIndices::<'_>::offset",
-  "hash": "1791498998900760371016093261305107956284",
-  "hash_direct": "134935872766219999497848826912087366775",
-  "src": "pub fn offset(&self) -> usize {\n        self.front_offset\n    }"
-}

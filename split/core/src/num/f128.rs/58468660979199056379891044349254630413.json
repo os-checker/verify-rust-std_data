@@ -1,0 +1,12 @@
+{
+  "file": "core/src/num/f128.rs",
+  "name": "f128::<impl f128>::next_down",
+  "hash": "58468660979199056379891044349254630413",
+  "hash_direct": "57244840416722690928929229980690837413",
+  "src": "pub const fn next_down(self) -> Self {\n        // Some targets violate Rust's assumption of IEEE semantics, e.g. by flushing\n        // denormals to zero. This is in general unsound and unsupported, but here\n        // we do our best to still produce the correct result on such targets.\n        let bits = self.to_bits();\n        if self.is_nan() || bits == Self::NEG_INFINITY.to_bits() {\n            return self;\n        }\n\n        let abs = bits & !Self::SIGN_MASK;\n        let next_bits = if abs == 0 {\n            Self::NEG_TINY_BITS\n        } else if bits == abs {\n            bits - 1\n        } else {\n            bits + 1\n        };\n        Self::from_bits(next_bits)\n    }",
+  "callees": [
+    "1234048470098097220414204578628110841792",
+    "252887400125453305612667949128372271249",
+    "1974282168039380848894594196462410349"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ascii/ascii_char.rs",
+  "name": "<[core::ascii::Char]>::as_str",
+  "hash": "152027764122840912191776067949832841623",
+  "hash_direct": "1714199019963570085417357528599023835907",
+  "src": "pub const fn as_str(&self) -> &str {\n        let ascii_ptr: *const Self = self;\n        let str_ptr = ascii_ptr as *const str;\n        // SAFETY: Each ASCII codepoint in UTF-8 is encoded as one single-byte\n        // code unit having the same value as the ASCII byte.\n        unsafe { &*str_ptr }\n    }"
+}

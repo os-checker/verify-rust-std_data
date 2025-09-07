@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/dec2flt/decimal_seq.rs",
-  "name": "num::dec2flt::decimal_seq::parse_decimal_seq::{closure#2}",
-  "hash": "1111190824305113845214305330051655438559",
-  "hash_direct": "507965946519756645314491178453741962399",
-  "src": "|digit| {\n                if exp_num < 0x10000 {\n                    exp_num = 10 * exp_num + digit as i32;\n                }\n            }"
-}

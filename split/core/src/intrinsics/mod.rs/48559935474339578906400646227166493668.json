@@ -1,0 +1,16 @@
+{
+  "file": "core/src/intrinsics/mod.rs",
+  "name": "intrinsics::typed_swap_nonoverlapping::kani_contract_mode",
+  "hash": "48559935474339578906400646227166493668",
+  "hash_direct": "379140128405665121412970680802347197673",
+  "attrs": [
+    "#[kanitool::fn_marker = \"kani_contract_mode\"]\n"
+  ],
+  "src": "kani::modifies(x)",
+  "macro_backtrace": [
+    {
+      "callsite": "kani::modifies(x)",
+      "defsite": "pub fn modifies(attr: TokenStream, item: TokenStream) -> TokenStream"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ops/index_range.rs",
+  "name": "<ops::index_range::IndexRange as iter::traits::iterator::Iterator>::size_hint",
+  "hash": "1501910614844152319711596790706136212807",
+  "hash_direct": "127558423279941178265661261655499350004",
+  "src": "fn size_hint(&self) -> (usize, Option<usize>) {\n        let len = self.len();\n        (len, Some(len))\n    }",
+  "callees": [
+    "975615807404907599012293873143289411403"
+  ]
+}

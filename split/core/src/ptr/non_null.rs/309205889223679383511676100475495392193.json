@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "core::ptr::NonNull::<vec::Vec<u8>>::from_mut",
+  "hash": "309205889223679383511676100475495392193",
+  "hash_direct": "146902268504964397018868435992093449059",
+  "src": "pub const fn from_mut(r: &mut T) -> Self {\n        // SAFETY: A mutable reference cannot be null.\n        unsafe { NonNull { pointer: r as *mut T } }\n    }"
+}

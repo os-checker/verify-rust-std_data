@@ -1,0 +1,13 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "<fmt::DebugAsHex as cmp::Eq>::assert_receiver_is_total_eq",
+  "hash": "12780908826539783988363338530004955797",
+  "hash_direct": "23582993109712966636092275925560526642",
+  "src": "Eq",
+  "macro_backtrace": [
+    {
+      "callsite": "Eq",
+      "defsite": "pub macro Eq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

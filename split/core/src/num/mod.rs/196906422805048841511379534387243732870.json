@@ -1,0 +1,10 @@
+{
+  "file": "core/src/num/mod.rs",
+  "name": "core::num::<impl u8>::to_ascii_lowercase",
+  "hash": "196906422805048841511379534387243732870",
+  "hash_direct": "50959355530553205981415365649880783517",
+  "src": "pub const fn to_ascii_lowercase(&self) -> u8 {\n        // Set the 6th bit if this is an uppercase letter\n        *self | (self.is_ascii_uppercase() as u8 * ASCII_CASE_MASK)\n    }",
+  "callees": [
+    "3165495841646412513829084282506961468"
+  ]
+}

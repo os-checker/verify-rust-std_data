@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vbslq_s32",
+  "hash": "68956883862304967344019426754648319230",
+  "hash_direct": "56527702664899696098525897022737804876",
+  "src": "pub fn vbslq_s32(a: uint32x4_t, b: int32x4_t, c: int32x4_t) -> int32x4_t {\n    let not = int32x4_t::splat(-1);\n    unsafe {\n        transmute(simd_or(\n            simd_and(a, transmute(b)),\n            simd_and(simd_xor(a, transmute(not)), transmute(c)),\n        ))\n    }\n}",
+  "callees": [
+    "138777255977800502345155023873349908460"
+  ]
+}

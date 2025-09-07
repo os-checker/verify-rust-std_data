@@ -1,0 +1,11 @@
+{
+  "file": "core/src/iter/adapters/map.rs",
+  "name": "<iter::adapters::map::Map<iter::adapters::filter::Filter<slice::iter::Split<'_, u8, str::IsAsciiWhitespace>, str::BytesIsNotEmpty>, str::UnsafeBytesToStr> as iter::traits::iterator::Iterator>::size_hint",
+  "hash": "35534018054087135957295325654917474781",
+  "hash_direct": "512531268539695828417426419116233677777",
+  "src": "fn size_hint(&self) -> (usize, Option<usize>) {\n        self.iter.size_hint()\n    }",
+  "callees": [
+    "850283145387083345113043396470917027037",
+    "1083880839545475416413279424941791095656"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ffi/c_str.rs",
+  "name": "ffi::c_str::CStr::as_ptr",
+  "hash": "180036081814052535942761323230551336187",
+  "hash_direct": "1354528593870545421015187815593145775146",
+  "src": "pub const fn as_ptr(&self) -> *const c_char {\n        self.inner.as_ptr()\n    }",
+  "callees": [
+    "47822370175813177448723454097252028703"
+  ]
+}

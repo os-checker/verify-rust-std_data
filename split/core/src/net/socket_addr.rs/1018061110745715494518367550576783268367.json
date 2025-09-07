@@ -1,0 +1,11 @@
+{
+  "file": "core/src/net/socket_addr.rs",
+  "name": "net::socket_addr::SocketAddr::ip",
+  "hash": "1018061110745715494518367550576783268367",
+  "hash_direct": "74996502251664557347147650365749996631",
+  "src": "pub const fn ip(&self) -> IpAddr {\n        match *self {\n            SocketAddr::V4(ref a) => IpAddr::V4(*a.ip()),\n            SocketAddr::V6(ref a) => IpAddr::V6(*a.ip()),\n        }\n    }",
+  "callees": [
+    "1624000160582606817992326574978127176",
+    "13923939275776602743576250441745041133"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "file": "core/src/time.rs",
+  "name": "time::Duration::SECOND",
+  "hash": "205647278838274536916023657343469926986",
+  "hash_direct": "1279101776313801809716346307126083845419",
+  "src": "pub const SECOND: Duration = Duration::from_secs(1);",
+  "callees": [
+    "1270888124877289178512994789532778292810"
+  ]
+}

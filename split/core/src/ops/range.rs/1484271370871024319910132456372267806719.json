@@ -1,0 +1,16 @@
+{
+  "file": "core/src/ops/range.rs",
+  "name": "<ops::range::Range<usize> as clone::Clone>::clone",
+  "hash": "1484271370871024319910132456372267806719",
+  "hash_direct": "61399396525926230514925270588160141967",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ],
+  "callees": [
+    "147525344997271935276533934923114074305"
+  ]
+}

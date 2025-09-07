@@ -1,0 +1,21 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/mem.rs",
+  "name": "kani::mem::is_ptr_aligned::<u128>",
+  "hash": "9705171915562500957407423915496022084",
+  "hash_direct": "608013217978666108014903874069878002058",
+  "src": "fn is_ptr_aligned<T: MetaSized>(ptr: *const T) -> bool {\n            // Cannot be aligned if pointer alignment cannot be computed.\n            let Some(align) = checked_align_of_raw(ptr) else { return false };\n            if align > 0 && (align & (align - 1)) == 0 {\n                // Mod of power of 2 can be done with an &.\n                ptr as *const () as usize & (align - 1) == 0\n            } else {\n                // Alignment is not a valid value (not a power of two).\n                false\n            }\n        }",
+  "macro_backtrace": [
+    {
+      "callsite": "kani_core::kani_mem!(core)",
+      "defsite": "macro_rules! kani_mem"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ],
+  "callees": [
+    "808690604947597133713899618615583714737",
+    "1033701304276639925217983317880492118017"
+  ]
+}

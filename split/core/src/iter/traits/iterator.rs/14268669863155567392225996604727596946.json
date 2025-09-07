@@ -1,0 +1,12 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<core::str::CharIndices<'_> as core::iter::Iterator::advance_by::SpecAdvanceBy>::spec_advance_by::{closure#0}",
+  "hash": "14268669863155567392225996604727596946",
+  "hash_direct": "1896591995925602110685487257069014039",
+  "src": "|n, _| NonZero::new(n.get() - 1)",
+  "callees": [
+    "1077627557077316994111291229578800109768",
+    "16644132501155057358839560967377423539",
+    "85411758778306792710675626340180885641"
+  ]
+}

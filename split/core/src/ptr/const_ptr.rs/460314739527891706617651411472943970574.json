@@ -1,0 +1,17 @@
+{
+  "file": "core/src/ptr/const_ptr.rs",
+  "name": "ptr::const_ptr::<impl *const u32>::byte_offset_from::<u32>",
+  "hash": "460314739527891706617651411472943970574",
+  "hash_direct": "634979824871595875113533705900844273924",
+  "src": "pub const unsafe fn byte_offset_from<U: ?Sized>(self, origin: *const U) -> isize {\n        // SAFETY: the caller must uphold the safety contract for `offset_from`.\n        unsafe { self.cast::<u8>().offset_from(origin.cast::<u8>()) }\n    }",
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "121097281700569241807917519510076722724",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "243931809744896974812513529918607549579",
+    "1752989996936949203916036071159051010960",
+    "162485176131111453457836484620815607886",
+    "64092050490533150296194988908965955580"
+  ]
+}

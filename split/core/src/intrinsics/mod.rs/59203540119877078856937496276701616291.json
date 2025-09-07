@@ -1,0 +1,13 @@
+{
+  "file": "core/src/intrinsics/mod.rs",
+  "name": "intrinsics::maximumf128",
+  "hash": "59203540119877078856937496276701616291",
+  "hash_direct": "858196739318631819610464940985537746230",
+  "inst_kind": "\"Intrinsic\"",
+  "src": "pub const fn maximumf128(x: f128, y: f128) -> f128 {\n    if x > y {\n        x\n    } else if y > x {\n        y\n    } else if x == y {\n        if x.is_sign_positive() && y.is_sign_negative() { x } else { y }\n    } else {\n        x + y\n    }\n}",
+  "callees": [
+    "783290788233458409213943446188194581582",
+    "260250833418102634914982796035296776119",
+    "1974282168039380848894594196462410349"
+  ]
+}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/slice/cmp.rs",
-  "name": "slice::cmp::as_underlying",
-  "hash": "1719159185141142232715107435196684859429",
-  "hash_direct": "20568327092925906983996526866416705436",
-  "src": "fn as_underlying(x: ControlFlow<bool>) -> u8 {\n    // SAFETY: This will only compile if `bool` and `ControlFlow<bool>` have the same\n    // size (which isn't guaranteed but this is libcore). Because they have the same\n    // size, it's a niched implementation, which in one byte means there can't be\n    // any uninitialized memory. The callers then only check for `0` or `1` from this,\n    // which must necessarily match the `Break` variant, and we're fine no matter\n    // what ends up getting picked as the value representing `Continue(())`.\n    unsafe { crate::mem::transmute(x) }\n}"
-}

@@ -1,0 +1,10 @@
+{
+  "file": "core/src/num/mod.rs",
+  "name": "num::can_not_overflow::<i32>",
+  "hash": "217884146007913007314217450710009775085",
+  "hash_direct": "70676474942403158191132686207587650471",
+  "src": "pub const fn can_not_overflow<T>(radix: u32, is_signed_ty: bool, digits: &[u8]) -> bool {\n    radix <= 16 && digits.len() <= size_of::<T>() * 2 - is_signed_ty as usize\n}",
+  "callees": [
+    "79147560314209947671815415446941048751"
+  ]
+}

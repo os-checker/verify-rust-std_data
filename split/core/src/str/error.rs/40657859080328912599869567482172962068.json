@@ -1,0 +1,7 @@
+{
+  "file": "core/src/str/error.rs",
+  "name": "<core::str::Utf8Error as core::error::Error>::description",
+  "hash": "40657859080328912599869567482172962068",
+  "hash_direct": "284044733543549283612879672357099558809",
+  "src": "fn description(&self) -> &str {\n        \"invalid utf-8: corrupt contents\"\n    }"
+}

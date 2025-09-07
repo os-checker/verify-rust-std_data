@@ -1,0 +1,10 @@
+{
+  "file": "core/src/slice/ascii.rs",
+  "name": "<slice::ascii::EscapeAscii<'_> as fmt::Display>::fmt::{closure#0}",
+  "hash": "137658875440085407875625922148255450571",
+  "hash_direct": "144668580171997359952854015054319806153",
+  "src": "|&&b| !needs_escape(b)",
+  "callees": [
+    "1227194532305185117716552313218085751352"
+  ]
+}

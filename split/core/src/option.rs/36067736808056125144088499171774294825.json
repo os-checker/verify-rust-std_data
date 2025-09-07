@@ -1,7 +1,0 @@
-{
-  "file": "core/src/option.rs",
-  "name": "option::Option::<num::nonzero::NonZero<i128>>::as_mut",
-  "hash": "36067736808056125144088499171774294825",
-  "hash_direct": "67454676405642509599913055949713009130",
-  "src": "pub const fn as_mut(&mut self) -> Option<&mut T> {\n        match *self {\n            Some(ref mut x) => Some(x),\n            None => None,\n        }\n    }"
-}

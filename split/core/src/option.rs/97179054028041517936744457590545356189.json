@@ -1,0 +1,10 @@
+{
+  "file": "core/src/option.rs",
+  "name": "option::Option::<u16>::is_none",
+  "hash": "97179054028041517936744457590545356189",
+  "hash_direct": "61822843422012200687444579959738276867",
+  "src": "pub const fn is_none(&self) -> bool {\n        !self.is_some()\n    }",
+  "callees": [
+    "302426152425675612212977433821647950365"
+  ]
+}

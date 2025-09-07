@@ -1,0 +1,13 @@
+{
+  "file": "core/src/slice/index.rs",
+  "name": "core::slice::index::slice_end_index_overflow_fail",
+  "hash": "952021927469705296818254193415138694958",
+  "hash_direct": "1478080286807208361116613657687375560695",
+  "src": "const fn slice_end_index_overflow_fail() -> ! {\n    panic!(\"attempted to index slice up to maximum usize\");\n}",
+  "callees": [
+    "12281449246394340237926324936375242532",
+    "986792852990965178117440249555081278778",
+    "90818112465881722349174357944217011292",
+    "146612017564224181584303574960223420416"
+  ]
+}

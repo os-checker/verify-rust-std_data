@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/adapters/fuse.rs",
+  "name": "iter::adapters::fuse::Fuse::<option::IntoIter<char::EscapeDebug>>::new",
+  "hash": "127549276639869472781230120115534221639",
+  "hash_direct": "314607175001479898611071025958013233370",
+  "src": "pub(in crate::iter) fn new(iter: I) -> Fuse<I> {\n        Fuse { iter: Some(iter) }\n    }"
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/error.rs",
+  "name": "<(dyn error::Error + 'static)>::sources",
+  "hash": "17616311637408231931344934654577442484",
+  "hash_direct": "166375226947246280679590223132340718915",
+  "src": "pub fn sources(&self) -> Source<'_> {\n        // You may think this method would be better in the `Error` trait, and you'd be right.\n        // Unfortunately that doesn't work, not because of the dyn-incompatibility rules but\n        // because we save a reference to `self` in `Source`s below as a trait object.\n        // If this method was declared in `Error`, then `self` would have the type `&T` where\n        // `T` is some concrete type which implements `Error`. We would need to coerce `self`\n        // to have type `&dyn Error`, but that requires that `Self` has a known size\n        // (i.e., `Self: Sized`). We can't put that bound on `Error` since that would forbid\n        // `Error` trait objects, and we can't put that bound on the method because that means\n        // the method can't be called on trait objects (we'd also need the `'static` bound,\n        // but that isn't allowed because methods with bounds on `Self` other than `Sized` are\n        // dyn-incompatible). Requiring an `Unsize` bound is not backwards compatible.\n\n        Source { current: Some(self) }\n    }"
+}

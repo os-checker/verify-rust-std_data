@@ -1,7 +1,0 @@
-{
-  "file": "core/src/slice/mod.rs",
-  "name": "slice::<impl [fmt::rt::Argument<'_>]>::is_empty",
-  "hash": "158382999748410254006289405466019709925",
-  "hash_direct": "59890729000426319415602762222915542714",
-  "src": "pub const fn is_empty(&self) -> bool {\n        self.len() == 0\n    }"
-}

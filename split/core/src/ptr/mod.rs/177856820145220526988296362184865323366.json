@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "ptr::slice_from_raw_parts_mut::<mem::maybe_uninit::MaybeUninit<u8>>",
+  "hash": "177856820145220526988296362184865323366",
+  "hash_direct": "380262357125600541912673886005100395249",
+  "src": "pub const fn slice_from_raw_parts_mut<T>(data: *mut T, len: usize) -> *mut [T] {\n    from_raw_parts_mut(data, len)\n}",
+  "callees": [
+    "1788790775280843453010009389586724701329"
+  ]
+}

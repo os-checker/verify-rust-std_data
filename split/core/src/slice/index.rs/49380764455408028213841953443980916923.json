@@ -1,7 +1,0 @@
-{
-  "file": "core/src/slice/index.rs",
-  "name": "<ops::range::RangeFull as slice::index::SliceIndex<[i32]>>::index",
-  "hash": "49380764455408028213841953443980916923",
-  "hash_direct": "171837200946519995511217046746154816388",
-  "src": "fn index(self, slice: &[T]) -> &[T] {\n        slice\n    }"
-}

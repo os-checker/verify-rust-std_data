@@ -1,0 +1,10 @@
+{
+  "file": "core/src/iter/adapters/map.rs",
+  "name": "<iter::adapters::map::Map<str::iter::SplitInclusive<'_, char>, str::LinesMap> as iter::traits::iterator::Iterator>::size_hint",
+  "hash": "810284716023886784510376445386622101048",
+  "hash_direct": "100129331656155714467683465475546307281",
+  "src": "fn size_hint(&self) -> (usize, Option<usize>) {\n        self.iter.size_hint()\n    }",
+  "callees": [
+    "138270947453886641825087402224539179887"
+  ]
+}

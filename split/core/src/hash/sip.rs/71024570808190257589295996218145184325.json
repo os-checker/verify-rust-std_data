@@ -1,0 +1,13 @@
+{
+  "file": "core/src/hash/sip.rs",
+  "name": "<hash::sip::Sip13Rounds as default::Default>::default",
+  "hash": "71024570808190257589295996218145184325",
+  "hash_direct": "3570324655956759874861147829969004822",
+  "src": "Default",
+  "macro_backtrace": [
+    {
+      "callsite": "Default",
+      "defsite": "pub macro Default($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

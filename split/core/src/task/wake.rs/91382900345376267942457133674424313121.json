@@ -1,0 +1,7 @@
+{
+  "file": "core/src/task/wake.rs",
+  "name": "<task::wake::Waker as convert::AsRef<task::wake::LocalWaker>>::as_ref",
+  "hash": "91382900345376267942457133674424313121",
+  "hash_direct": "1593661827385043678313472701823439719455",
+  "src": "fn as_ref(&self) -> &LocalWaker {\n        // SAFETY: LocalWaker is just Waker without thread safety\n        unsafe { transmute(self) }\n    }"
+}

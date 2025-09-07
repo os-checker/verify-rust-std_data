@@ -1,0 +1,10 @@
+{
+  "file": "alloc/src/rc.rs",
+  "name": "rc::Rc::<[u8; 0]>::from_inner",
+  "hash": "97943967708659356461084940191057751279",
+  "hash_direct": "1671355798534787827214487100097295823505",
+  "src": "unsafe fn from_inner(ptr: NonNull<RcInner<T>>) -> Self {\n        unsafe { Self::from_inner_in(ptr, Global) }\n    }",
+  "callees": [
+    "1190833271366906158915977614266528942587"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "file": "core/src/slice/iter.rs",
+  "name": "<slice::iter::Split<'_, u8, str::IsAsciiWhitespace> as iter::traits::double_ended::DoubleEndedIterator>::next_back::{closure#0}",
+  "hash": "93845162390955149005927647888219031003",
+  "hash_direct": "1018900873494379579117135990456829651005",
+  "src": "|x| (self.pred)(x)",
+  "callees": [
+    "1260153291403255879717294360443817562967",
+    "50522099574342032286192511063567845144",
+    "840557237266216613515959608352403941460"
+  ]
+}

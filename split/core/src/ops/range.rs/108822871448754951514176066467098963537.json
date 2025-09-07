@@ -1,7 +1,0 @@
-{
-  "file": "core/src/ops/range.rs",
-  "name": "ops::range::RangeInclusive::<usize>::end",
-  "hash": "108822871448754951514176066467098963537",
-  "hash_direct": "1720764839505886958110829676247441434708",
-  "src": "pub const fn end(&self) -> &Idx {\n        &self.end\n    }"
-}

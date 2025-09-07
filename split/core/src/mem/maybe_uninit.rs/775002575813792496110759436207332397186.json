@@ -1,0 +1,13 @@
+{
+  "file": "core/src/mem/maybe_uninit.rs",
+  "name": "mem::maybe_uninit::MaybeUninit::<(char, u8)>::write",
+  "hash": "775002575813792496110759436207332397186",
+  "hash_direct": "14882217300730384839235661392941589890",
+  "src": "pub const fn write(&mut self, val: T) -> &mut T {\n        *self = MaybeUninit::new(val);\n        // SAFETY: We just initialized this value.\n        unsafe { self.assume_init_mut() }\n    }",
+  "callees": [
+    "44552323515093139911120564556479882195",
+    "1282043996634319340914028139765711718743",
+    "126407490166261791185888586614285852700",
+    "98420882292619179139877641443757482329"
+  ]
+}

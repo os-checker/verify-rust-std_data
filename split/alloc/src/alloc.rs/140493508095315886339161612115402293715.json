@@ -1,0 +1,12 @@
+{
+  "file": "alloc/src/alloc.rs",
+  "name": "alloc::handle_alloc_error::rt_error",
+  "hash": "140493508095315886339161612115402293715",
+  "hash_direct": "35546845035947493817544220527736274567",
+  "src": "fn rt_error(layout: Layout) -> ! {\n        unsafe {\n            __rust_alloc_error_handler(layout.size(), layout.align());\n        }\n    }",
+  "callees": [
+    "12355321507198182179923507819259328874",
+    "1099899350342654162615874749245636043676",
+    "41567241620038406215851091758143153711"
+  ]
+}

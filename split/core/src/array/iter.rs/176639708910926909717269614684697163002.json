@@ -1,0 +1,16 @@
+{
+  "file": "core/src/array/iter.rs",
+  "name": "<array::iter::IntoIter<T, N> as iter::traits::iterator::Iterator>::__iterator_get_unchecked::kani_force_fn_once::<char, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/array/iter.rs:289:5: 289:44}>",
+  "hash": "176639708910926909717269614684697163002",
+  "hash_direct": "393283552834237197816698587899522861472",
+  "attrs": [
+    "#[kanitool::fn_marker = \"kani_force_fn_once\"]\n"
+  ],
+  "src": "#[cfg_attr(kani, kani::modifies(self))]",
+  "macro_backtrace": [
+    {
+      "callsite": "#[cfg_attr(kani, kani::modifies(self))]",
+      "defsite": "pub fn modifies(attr: TokenStream, item: TokenStream) -> TokenStream"
+    }
+  ]
+}

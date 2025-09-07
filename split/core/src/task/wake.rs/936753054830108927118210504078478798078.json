@@ -1,0 +1,13 @@
+{
+  "file": "core/src/task/wake.rs",
+  "name": "<task::wake::RawWakerVTable as clone::Clone>::clone",
+  "hash": "936753054830108927118210504078478798078",
+  "hash_direct": "1708196703568297927418205084494698765955",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

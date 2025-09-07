@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/f128.rs",
-  "name": "f128::<impl f128>::round",
-  "hash": "97982541854233308314726949700095671711",
-  "hash_direct": "110901794696151330591321310717757899539",
-  "src": "pub const fn round(self) -> f128 {\n        // SAFETY: intrinsic with no preconditions\n        unsafe { intrinsics::roundf128(self) }\n    }"
-}

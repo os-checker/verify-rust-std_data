@@ -1,0 +1,11 @@
+{
+  "file": "core/src/intrinsics/mod.rs",
+  "name": "intrinsics::verify::supported_status",
+  "hash": "1100372222744605741114100551764421082829",
+  "hash_direct": "55858409874514506876158435279591112950",
+  "src": "fn supported_status(status: AllocationStatus) -> bool {\n        status != AllocationStatus::Dangling && status != AllocationStatus::DeadObject\n    }",
+  "callees": [
+    "738974561866553617010407296021226800139",
+    "121727158520971463021863658010560869083"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/panic/location.rs",
+  "name": "core::panic::Location::<'_>::caller",
+  "hash": "986792852990965178117440249555081278778",
+  "hash_direct": "240380241716050003314811179544894091677",
+  "src": "pub const fn caller() -> &'static Location<'static> {\n        crate::intrinsics::caller_location()\n    }"
+}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/f32.rs",
-  "name": "f32::math::mul_add",
-  "hash": "770877863263875541610342360076212164164",
-  "hash_direct": "115219376920380006395205260152245562789",
-  "src": "pub fn mul_add(x: f32, y: f32, z: f32) -> f32 {\n        // SAFETY: intrinsic with no preconditions\n        unsafe { intrinsics::fmaf32(x, y, z) }\n    }"
-}

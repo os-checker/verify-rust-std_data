@@ -1,0 +1,7 @@
+{
+  "file": "core/src/range.rs",
+  "name": "range::<impl convert::From<range::RangeFrom<usize>> for ops::range::RangeFrom<usize>>::from",
+  "hash": "144966927112166535817847695880798225336",
+  "hash_direct": "84584853321376028056734793847460420295",
+  "src": "fn from(value: RangeFrom<T>) -> Self {\n        Self { start: value.start }\n    }"
+}

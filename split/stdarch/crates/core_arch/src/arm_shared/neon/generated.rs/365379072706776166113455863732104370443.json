@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vmovl_u16",
-  "hash": "365379072706776166113455863732104370443",
-  "hash_direct": "58046808824819082988263985329628258069",
-  "src": "pub fn vmovl_u16(a: uint16x4_t) -> uint32x4_t {\n    unsafe { simd_cast(a) }\n}"
-}

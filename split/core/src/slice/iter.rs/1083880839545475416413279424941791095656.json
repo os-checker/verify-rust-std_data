@@ -1,0 +1,7 @@
+{
+  "file": "core/src/slice/iter.rs",
+  "name": "<slice::iter::Split<'_, u8, str::IsAsciiWhitespace> as iter::traits::iterator::Iterator>::size_hint",
+  "hash": "1083880839545475416413279424941791095656",
+  "hash_direct": "50564124844326072979312323590315636196",
+  "src": "fn size_hint(&self) -> (usize, Option<usize>) {\n        if self.finished {\n            (0, Some(0))\n        } else {\n            // If the predicate doesn't match anything, we yield one slice.\n            // If it matches every element, we yield `len() + 1` empty slices.\n            (1, Some(self.v.len() + 1))\n        }\n    }"
+}

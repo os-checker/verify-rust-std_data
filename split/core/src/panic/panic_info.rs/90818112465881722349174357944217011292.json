@@ -1,0 +1,7 @@
+{
+  "file": "core/src/panic/panic_info.rs",
+  "name": "core::panic::PanicInfo::<'_>::new",
+  "hash": "90818112465881722349174357944217011292",
+  "hash_direct": "14886272927343623598910793938301230235",
+  "src": "pub(crate) fn new(\n        message: &'a fmt::Arguments<'a>,\n        location: &'a Location<'a>,\n        can_unwind: bool,\n        force_no_backtrace: bool,\n    ) -> Self {\n        PanicInfo { location, message, can_unwind, force_no_backtrace }\n    }"
+}

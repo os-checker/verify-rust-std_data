@@ -1,0 +1,7 @@
+{
+  "file": "core/src/net/socket_addr.rs",
+  "name": "net::socket_addr::SocketAddrV4::new",
+  "hash": "346801434708832420411564731853873358189",
+  "hash_direct": "4620845945663152949914175117854060908",
+  "src": "pub const fn new(ip: Ipv4Addr, port: u16) -> SocketAddrV4 {\n        SocketAddrV4 { ip, port }\n    }"
+}

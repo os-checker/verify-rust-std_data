@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f16.rs",
+  "name": "f16::<impl f16>::copysign",
+  "hash": "37680520250890434433114734277362237189",
+  "hash_direct": "7868154901107241743378535942662779800",
+  "src": "pub const fn copysign(self, sign: f16) -> f16 {\n        // SAFETY: this is actually a safe intrinsic\n        unsafe { intrinsics::copysignf16(self, sign) }\n    }"
+}

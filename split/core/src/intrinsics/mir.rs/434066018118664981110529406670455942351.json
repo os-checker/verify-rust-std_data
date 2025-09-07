@@ -1,0 +1,20 @@
+{
+  "file": "core/src/intrinsics/mir.rs",
+  "name": "intrinsics::mir::UnwindResume",
+  "hash": "434066018118664981110529406670455942351",
+  "hash_direct": "11460666100835614403690410477093357083",
+  "src": "pub fn $($sig)* { panic!() }",
+  "macro_backtrace": [
+    {
+      "callsite": "define!(\"mir_unwind_resume\",\n    /// A terminator that resumes the unwinding.\n    fn UnwindResume()\n)",
+      "defsite": "macro_rules! define {\n    ($name:literal, $( #[ $meta:meta ] )* fn $($sig:tt)*) => {\n        #[rustc_diagnostic_item = $name]\n        #[inline]\n        $( #[ $meta ] )*\n        pub fn $($sig)* { panic!() }\n    }\n}"
+    }
+  ],
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "243931809744896974812513529918607549579",
+    "1752989996936949203916036071159051010960"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vcgez_s8",
+  "hash": "815145522656743359510142785089426459705",
+  "hash_direct": "393022716733187974715386150981471948855",
+  "src": "pub fn vcgez_s8(a: int8x8_t) -> uint8x8_t {\n    let b: i8x8 = i8x8::new(0, 0, 0, 0, 0, 0, 0, 0);\n    unsafe { simd_ge(a, transmute(b)) }\n}",
+  "callees": [
+    "143375024165804146884159618090354041973"
+  ]
+}

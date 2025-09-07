@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vreinterpret_p8_f32",
-  "hash": "1686940165624097832117039128641546918468",
-  "hash_direct": "129154385575030922703354843278106391126",
-  "src": "pub fn vreinterpret_p8_f32(a: float32x2_t) -> poly8x8_t {\n    unsafe { transmute(a) }\n}"
-}

@@ -1,0 +1,12 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vqabsb_s8",
+  "hash": "180211219496587211656353856752938303920",
+  "hash_direct": "298045838866765994615548266765069851759",
+  "src": "pub fn vqabsb_s8(a: i8) -> i8 {\n    unsafe { simd_extract!(vqabs_s8(vdup_n_s8(a)), 0) }\n}",
+  "callees": [
+    "330393187347712307715036424877436160318",
+    "113636611285782305739131939507903852875",
+    "335203856091225096313741835442448767652"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "file": "core/src/num/int_log10.rs",
+  "name": "core::num::int_log10::panic_for_nonpositive_argument",
+  "hash": "135402666045927133155591393675055464663",
+  "hash_direct": "468745547222798918710728682343189472055",
+  "src": "pub(super) const fn panic_for_nonpositive_argument() -> ! {\n    panic!(\"argument of integer logarithm must be positive\")\n}",
+  "callees": [
+    "12281449246394340237926324936375242532",
+    "986792852990965178117440249555081278778",
+    "90818112465881722349174357944217011292",
+    "146612017564224181584303574960223420416"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "file": "alloc/src/collections/btree/set_val.rs",
+  "name": "<collections::btree::set_val::SetValZST as core::cmp::Ord>::cmp",
+  "hash": "605984565890044805716043055540444426650",
+  "hash_direct": "1487548226344822558512759048168672683303",
+  "src": "Ord",
+  "macro_backtrace": [
+    {
+      "callsite": "Ord",
+      "defsite": "pub macro Ord"
+    }
+  ]
+}

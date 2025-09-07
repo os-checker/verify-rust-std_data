@@ -1,7 +1,0 @@
-{
-  "file": "core/src/any.rs",
-  "name": "any::TypeId::of::<()>",
-  "hash": "46905909574171733149742383086487880716",
-  "hash_direct": "24357216597574638614891579432089905759",
-  "src": "pub const fn of<T: ?Sized + 'static>() -> TypeId {\n        const { intrinsics::type_id::<T>() }\n    }"
-}

@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/unique.rs",
+  "name": "core::ptr::Unique::<core::mem::ManuallyDrop<[u8]>>::as_ptr",
+  "hash": "1828737514523382654411590618574621397454",
+  "hash_direct": "152153738461256896538547288807692363941",
+  "src": "pub const fn as_ptr(self) -> *mut T {\n        self.pointer.as_ptr()\n    }",
+  "callees": [
+    "181621473705287002817919590327515247421"
+  ]
+}

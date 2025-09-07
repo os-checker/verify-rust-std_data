@@ -1,0 +1,18 @@
+{
+  "file": "core/src/iter/adapters/map.rs",
+  "name": "<iter::adapters::map::Map<str::iter::Chars<'_>, str::CharEscapeDebugContinue> as clone::Clone>::clone",
+  "hash": "71499723085766940012269610368918397720",
+  "hash_direct": "149782375435393889872289573448123998021",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ],
+  "callees": [
+    "1127448244019747137816948501807508054133",
+    "415636605586044597014511502347166535165",
+    "1542207383255327621116904855085895476103"
+  ]
+}

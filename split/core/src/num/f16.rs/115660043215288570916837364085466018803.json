@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/f16.rs",
-  "name": "f16::<impl f16>::recip",
-  "hash": "115660043215288570916837364085466018803",
-  "hash_direct": "146243506240745735777887918500714822849",
-  "src": "pub const fn recip(self) -> Self {\n        1.0 / self\n    }"
-}

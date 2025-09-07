@@ -1,0 +1,11 @@
+{
+  "file": "core/src/result.rs",
+  "name": "core::result::Result::<[char; 3], usize>::unwrap_or",
+  "hash": "39410496296841139951041621939708006483",
+  "hash_direct": "173333917191631448639299234919698610408",
+  "src": "pub const fn unwrap_or(self, default: T) -> T\n    where\n        T: [const] Destruct,\n        E: [const] Destruct,\n    {\n        match self {\n            Ok(t) => t,\n            Err(_) => default,\n        }\n    }",
+  "callees": [
+    "151835257722916579116858429720961193829",
+    "1293014587647894624016297737474143481835"
+  ]
+}

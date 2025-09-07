@@ -1,0 +1,7 @@
+{
+  "file": "core/src/char/methods.rs",
+  "name": "char::methods::EscapeDebugExtArgs::ESCAPE_ALL",
+  "hash": "170229579412860359911004259250957994185",
+  "hash_direct": "92326129372915934218909638144223334477",
+  "src": "pub(crate) const ESCAPE_ALL: Self = Self {\n        escape_grapheme_extended: true,\n        escape_single_quote: true,\n        escape_double_quote: true,\n    };"
+}

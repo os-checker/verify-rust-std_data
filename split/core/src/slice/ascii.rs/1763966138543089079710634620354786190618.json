@@ -1,0 +1,7 @@
+{
+  "file": "core/src/slice/ascii.rs",
+  "name": "<core::slice::EscapeAscii<'a> as core::fmt::Display>::fmt::needs_escape",
+  "hash": "1763966138543089079710634620354786190618",
+  "hash_direct": "181468951906649784416572359535744088524",
+  "src": "fn needs_escape(b: u8) -> bool {\n            b > 0x7E || b < 0x20 || b == b'\\\\' || b == b'\\'' || b == b'\"'\n        }"
+}

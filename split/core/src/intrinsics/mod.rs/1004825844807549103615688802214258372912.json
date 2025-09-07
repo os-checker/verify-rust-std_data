@@ -1,0 +1,20 @@
+{
+  "file": "core/src/intrinsics/mod.rs",
+  "name": "<intrinsics::verify::struct_mod::generated_struct as cmp::PartialEq>::eq",
+  "hash": "1004825844807549103615688802214258372912",
+  "hash_direct": "164497331233927404493341533106821717856",
+  "src": "PartialEq",
+  "macro_backtrace": [
+    {
+      "callsite": "PartialEq",
+      "defsite": "pub macro PartialEq($item:item) {\n    /* compiler built-in */\n}"
+    },
+    {
+      "callsite": "gen_compound_harnesses!(struct_mod, u8_struct)",
+      "defsite": "macro_rules! gen_compound_harnesses {\n        ($mod_name:ident, $base_type:ty) => {\n            mod $mod_name {\n                use super::*;\n\n                #[cfg_attr(kani, derive(kani::Arbitrary))]\n                #[derive(Debug, PartialEq, Clone, Copy)]\n                #[repr(packed)]\n                struct generated_struct {\n                    f1: $base_type,\n                    f2: $base_type,\n                }\n\n                //transmute harnesses\n                transmute_two_ways!(\n                    transmute_2ways_struct_to_arr,\n                    generated_struct,\n                    [$base_type; 2]\n                );\n                transmute_two_ways!(\n                    transmute_2ways_struct_to_tuple,\n                    generated_struct,\n                    ($base_type, $base_type)\n                );\n                transmute_two_ways!(\n                    transmute_2ways_arr_to_struct,\n                    [$base_type; 2],\n                    generated_struct\n                );\n                transmute_two_ways!(\n                    transmute_2ways_arr_to_tuple,\n                    [$base_type; 2],\n                    ($base_type, $base_type)\n                );\n                transmute_two_ways!(\n                    transmute_2ways_tuple_to_struct,\n                    ($base_type, $base_type),\n                    generated_struct\n                );\n                transmute_two_ways!(\n                    transmute_2ways_tuple_to_arr,\n                    ($base_type, $base_type),\n                    [$base_type; 2]\n                );\n                //transmute_unchecked harnesses\n                transmute_unchecked_two_ways!(\n                    transmute_unchecked_2ways_struct_to_arr,\n                    generated_struct,\n                    [$base_type; 2]\n                );\n                transmute_unchecked_two_ways!(\n                    transmute_unchecked_2ways_struct_to_tuple,\n                    generated_struct,\n                    ($base_type, $base_type)\n                );\n                transmute_unchecked_two_ways!(\n                    transmute_unchecked_2ways_arr_to_struct,\n                    [$base_type; 2],\n                    generated_struct\n                );\n                transmute_unchecked_two_ways!(\n                    transmute_unchecked_2ways_arr_to_tuple,\n                    [$base_type; 2],\n                    ($base_type, $base_type)\n                );\n                transmute_unchecked_two_ways!(\n                    transmute_unchecked_2ways_tuple_to_struct,\n                    ($base_type, $base_type),\n                    generated_struct\n                );\n                transmute_unchecked_two_ways!(\n                    transmute_unchecked_2ways_tuple_to_arr,\n                    ($base_type, $base_type),\n                    [$base_type; 2]\n                );\n            }\n        };\n    }"
+    }
+  ],
+  "callees": [
+    "95855262543484333061997486664200818696"
+  ]
+}

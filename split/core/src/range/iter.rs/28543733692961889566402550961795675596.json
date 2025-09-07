@@ -1,0 +1,16 @@
+{
+  "file": "core/src/range/iter.rs",
+  "name": "<range::iter::IterRange<A> as iter::traits::iterator::Iterator>::__iterator_get_unchecked::{closure#0}::REENTRY",
+  "hash": "28543733692961889566402550961795675596",
+  "hash_direct": "103194016482863829916749684523919647966",
+  "attrs": [
+    "#[kanitool::recursion_tracker]\n"
+  ],
+  "src": "#[cfg_attr(kani, kani::modifies(self))]",
+  "macro_backtrace": [
+    {
+      "callsite": "#[cfg_attr(kani, kani::modifies(self))]",
+      "defsite": "pub fn modifies(attr: TokenStream, item: TokenStream) -> TokenStream"
+    }
+  ]
+}

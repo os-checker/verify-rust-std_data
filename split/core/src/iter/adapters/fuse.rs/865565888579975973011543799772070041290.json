@@ -1,0 +1,16 @@
+{
+  "file": "core/src/iter/adapters/fuse.rs",
+  "name": "<iter::adapters::fuse::Fuse<option::IntoIter<char::EscapeDebug>> as iter::adapters::fuse::FuseImpl<option::IntoIter<char::EscapeDebug>>>::next",
+  "hash": "865565888579975973011543799772070041290",
+  "hash_direct": "166152482942135930713907785499822010439",
+  "src": "fn next(&mut self) -> Option<<I as Iterator>::Item> {\n        self.iter.as_mut()?.next()\n    }",
+  "callees": [
+    "300652783215287787118122424895675090929",
+    "15453723374769780352859320631569235268",
+    "159961173032588260372106360215013055795",
+    "380455968238996041611350407792493256223",
+    "1179049963110095644311535387274614064787",
+    "833829771046316811218026346220384534200",
+    "468953206872720032111439251404954357966"
+  ]
+}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/prefetch.rs",
-  "name": "core_arch::aarch64::prefetch::_PREFETCH_LOCALITY1",
-  "hash": "6705453008496965888034991707651113790",
-  "hash_direct": "6620603273755198200456627602082373080",
-  "src": "pub const _PREFETCH_LOCALITY1: i32 = 1;"
-}

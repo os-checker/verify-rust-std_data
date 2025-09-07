@@ -1,0 +1,7 @@
+{
+  "file": "core/src/convert/mod.rs",
+  "name": "<u32 as convert::From<u32>>::from",
+  "hash": "1392407438641980646011338402895728813916",
+  "hash_direct": "26254181676517299514216021091784052736",
+  "src": "fn from(t: T) -> T {\n        t\n    }"
+}

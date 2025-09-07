@@ -1,0 +1,12 @@
+{
+  "file": "core/src/ops/function.rs",
+  "name": "<{closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/task/wake.rs:70:13: 70:16} as ops::function::FnOnce<(*const (),)>>::call_once",
+  "hash": "462805654890293583013730929050837283751",
+  "hash_direct": "1737483214395428838713755097448315027974",
+  "inst_kind": "\"Shim\"",
+  "src": "extern \"rust-call\" fn call_once(self, args: Args) -> Self::Output;",
+  "callees": [
+    "705779905676908766513680178640721942042",
+    "99000956308593324219556848426138921577"
+  ]
+}

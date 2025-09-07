@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/mod.rs",
-  "name": "core_arch::aarch64::neon::vaddq_f64",
-  "hash": "4436368015069686491299616450832444152",
-  "hash_direct": "5938076305146248035691091646875869760",
-  "src": "pub fn vaddq_f64(a: float64x2_t, b: float64x2_t) -> float64x2_t {\n    unsafe { simd_add(a, b) }\n}"
-}

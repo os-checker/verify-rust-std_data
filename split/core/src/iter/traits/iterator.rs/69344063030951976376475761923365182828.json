@@ -1,7 +1,0 @@
-{
-  "file": "core/src/iter/traits/iterator.rs",
-  "name": "iter::traits::iterator::iter_compare::compare::<'_, iter::adapters::rev::Rev<iter::adapters::cloned::Cloned<slice::iter::Iter<'_, u8>>>, u8, cmp::Ordering, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/iter/traits/iterator.rs:3671:13: 3671:24}>",
-  "hash": "69344063030951976376475761923365182828",
-  "hash_direct": "31528639606731162601871469818196306132",
-  "src": "fn compare<'a, B, X, T>(\n        b: &'a mut B,\n        mut f: impl FnMut(X, B::Item) -> ControlFlow<T> + 'a,\n    ) -> impl FnMut(X) -> ControlFlow<ControlFlow<T, Ordering>> + 'a\n    where\n        B: Iterator,\n    {\n        move |x| match b.next() {\n            None => ControlFlow::Break(ControlFlow::Continue(Ordering::Greater)),\n            Some(y) => f(x, y).map_break(ControlFlow::Break),\n        }\n    }"
-}

@@ -1,0 +1,18 @@
+{
+  "file": "core/src/num/nonzero.rs",
+  "name": "num::nonzero::NonZero::<i64>::new_unchecked",
+  "hash": "3758406900067267902770104292894595937",
+  "hash_direct": "49939854511773056963280988610700118378",
+  "src": "pub const unsafe fn new_unchecked(n: T) -> Self {\n        match Self::new(n) {\n            Some(n) => n,\n            None => {\n                // SAFETY: The caller guarantees that `n` is non-zero, so this is unreachable.\n                unsafe {\n                    ub_checks::assert_unsafe_precondition!(\n                        check_language_ub,\n                        \"NonZero::new_unchecked requires the argument to be non-zero\",\n                        () => false,\n                    );\n                    intrinsics::unreachable()\n                }\n            }\n        }\n    }",
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "17421822894816687532325615181214565887",
+    "23815256893174302637797703719499456373",
+    "1147979670399206758315286428992360231052",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "478753423337745817613297159272845606672",
+    "887235042902537721816254572592014930578",
+    "739520556846959085018120036998133255835"
+  ]
+}

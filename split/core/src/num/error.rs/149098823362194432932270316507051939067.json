@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/error.rs",
-  "name": "<num::error::TryFromIntError as convert::From<!>>::from",
-  "hash": "149098823362194432932270316507051939067",
-  "hash_direct": "29543315987085328852891985905342364135",
-  "src": "fn from(never: !) -> TryFromIntError {\n        // Match rather than coerce to make sure that code like\n        // `From<Infallible> for TryFromIntError` above will keep working\n        // when `Infallible` becomes an alias to `!`.\n        match never {}\n    }"
-}

@@ -1,0 +1,11 @@
+{
+  "file": "alloc/src/boxed.rs",
+  "name": "boxed::Box::<[u8]>::into_raw",
+  "hash": "844693490286967669912817404165353000037",
+  "hash_direct": "704178637982521746511235059002281202024",
+  "src": "pub fn into_raw(b: Self) -> *mut T {\n        // Avoid `into_raw_with_allocator` as that interacts poorly with Miri's Stacked Borrows.\n        let mut b = mem::ManuallyDrop::new(b);\n        // We go through the built-in deref for `Box`, which is crucial for Miri to recognize this\n        // operation for it's alias tracking.\n        &raw mut **b\n    }",
+  "callees": [
+    "3509560174520212959348848995408648778",
+    "161208095132611822789333814786646623516"
+  ]
+}

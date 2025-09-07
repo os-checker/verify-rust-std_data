@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f64.rs",
+  "name": "f64::<impl f64>::algebraic_rem",
+  "hash": "1567984623655507089211711396593762706912",
+  "hash_direct": "121216843885430110634985674814209594990",
+  "src": "pub const fn algebraic_rem(self, rhs: f64) -> f64 {\n        intrinsics::frem_algebraic(self, rhs)\n    }"
+}

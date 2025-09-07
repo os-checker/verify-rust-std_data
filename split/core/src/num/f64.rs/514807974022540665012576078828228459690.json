@@ -1,0 +1,11 @@
+{
+  "file": "core/src/num/f64.rs",
+  "name": "f64::<impl f64>::is_subnormal",
+  "hash": "514807974022540665012576078828228459690",
+  "hash_direct": "117120815689696484072194866268726258041",
+  "src": "pub const fn is_subnormal(self) -> bool {\n        matches!(self.classify(), FpCategory::Subnormal)\n    }",
+  "callees": [
+    "532879368499335525210375989760065508477",
+    "1033976944350554769714411313899354111723"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/flt2dec/strategy/dragon.rs",
+  "name": "num::flt2dec::strategy::dragon::POW10",
+  "hash": "163213709982999753045909181871284051158",
+  "hash_direct": "1141648582042718405713645847890171689402",
+  "src": "static POW10: [Digit; 10] =\n    [1, 10, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000, 1000000000];"
+}

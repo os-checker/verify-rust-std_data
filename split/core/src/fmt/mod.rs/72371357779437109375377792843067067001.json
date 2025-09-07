@@ -1,0 +1,7 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "core::fmt::Formatter::<'_>::width",
+  "hash": "72371357779437109375377792843067067001",
+  "hash_direct": "1712199643009224768612660892902741320516",
+  "src": "pub fn width(&self) -> Option<usize> {\n        if self.options.flags & flags::WIDTH_FLAG == 0 {\n            None\n        } else {\n            Some(self.options.width as usize)\n        }\n    }"
+}

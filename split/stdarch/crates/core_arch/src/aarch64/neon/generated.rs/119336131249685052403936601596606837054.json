@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vcale_f64",
+  "hash": "119336131249685052403936601596606837054",
+  "hash_direct": "785153204227162013815318899311156389351",
+  "src": "pub fn vcale_f64(a: float64x1_t, b: float64x1_t) -> uint64x1_t {\n    vcage_f64(b, a)\n}",
+  "callees": [
+    "2392049605894023603298114637388957564"
+  ]
+}

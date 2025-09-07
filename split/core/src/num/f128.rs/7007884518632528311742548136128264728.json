@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f128.rs",
+  "name": "f128::<impl f128>::sqrt",
+  "hash": "7007884518632528311742548136128264728",
+  "hash_direct": "1131723040609977729412592696860741459133",
+  "src": "pub fn sqrt(self) -> f128 {\n        // SAFETY: intrinsic with no preconditions\n        unsafe { intrinsics::sqrtf128(self) }\n    }"
+}

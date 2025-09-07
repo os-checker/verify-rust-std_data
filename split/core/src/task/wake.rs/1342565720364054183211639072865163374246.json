@@ -1,0 +1,7 @@
+{
+  "file": "core/src/task/wake.rs",
+  "name": "task::wake::ContextBuilder::<'_>::from_waker",
+  "hash": "1342565720364054183211639072865163374246",
+  "hash_direct": "1724051471719541846915330641325265852830",
+  "src": "pub const fn from_waker(waker: &'a Waker) -> Self {\n        // SAFETY: LocalWaker is just Waker without thread safety\n        let local_waker = unsafe { transmute(waker) };\n        Self {\n            waker,\n            local_waker,\n            ext: ExtData::None(()),\n            _marker: PhantomData,\n            _marker2: PhantomData,\n        }\n    }"
+}

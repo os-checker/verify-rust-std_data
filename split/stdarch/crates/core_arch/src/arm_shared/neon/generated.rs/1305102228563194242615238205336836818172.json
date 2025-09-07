@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vminnm_f32",
+  "hash": "1305102228563194242615238205336836818172",
+  "hash_direct": "158510962214631565369574001920594913009",
+  "src": "pub fn vminnm_f32(a: float32x2_t, b: float32x2_t) -> float32x2_t {\n    unsafe { simd_fmin(a, b) }\n}"
+}

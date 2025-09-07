@@ -1,0 +1,10 @@
+{
+  "file": "core/src/str/mod.rs",
+  "name": "str::<impl default::Default for &mut str>::default",
+  "hash": "1201451347459645491210659365263903205279",
+  "hash_direct": "154525140720222332625130250387816811781",
+  "src": "fn default() -> Self {\n        // SAFETY: The empty string is valid UTF-8.\n        unsafe { from_utf8_unchecked_mut(&mut []) }\n    }",
+  "callees": [
+    "1290872813666562319511413746722512367019"
+  ]
+}

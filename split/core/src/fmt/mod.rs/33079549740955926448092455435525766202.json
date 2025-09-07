@@ -1,0 +1,7 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "core::fmt::Formatter::<'_>::alternate",
+  "hash": "33079549740955926448092455435525766202",
+  "hash_direct": "129481965199228543625844013159622881161",
+  "src": "pub fn alternate(&self) -> bool {\n        self.options.flags & flags::ALTERNATE_FLAG != 0\n    }"
+}

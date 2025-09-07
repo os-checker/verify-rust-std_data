@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vfma_f32",
+  "hash": "164131112656760181262407779446194851538",
+  "hash_direct": "38238863474734193594250853481558286672",
+  "src": "pub fn vfma_f32(a: float32x2_t, b: float32x2_t, c: float32x2_t) -> float32x2_t {\n    unsafe { simd_fma(b, c, a) }\n}"
+}

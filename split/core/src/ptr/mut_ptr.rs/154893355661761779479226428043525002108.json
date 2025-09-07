@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/mut_ptr.rs",
+  "name": "ptr::mut_ptr::<impl *mut dyn ptr::non_null::verify::SampleTrait>::cast_const",
+  "hash": "154893355661761779479226428043525002108",
+  "hash_direct": "73747341048132972325423572875102154517",
+  "src": "pub const fn cast_const(self) -> *const T {\n        self as _\n    }"
+}

@@ -1,0 +1,26 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/lib.rs",
+  "name": "kani::internal::write_any_str",
+  "hash": "127921256165003124154340644535528137054",
+  "hash_direct": "162409222247675242379598048148582064723",
+  "attrs": [
+    "#[kanitool::fn_marker = \"WriteAnyStrModel\"]\n"
+  ],
+  "src": "pub unsafe fn write_any_str(_s: *mut str) {\n                //TODO: strings introduce new UB\n                //(*s).as_bytes_mut().fill_with(u8::any)\n                //TODO: String validation\n                unimplemented!(\"Kani does not support creating arbitrary `str`\")\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "kani_core::kani_intrinsics!()",
+      "defsite": "macro_rules! kani_intrinsics"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ],
+  "callees": [
+    "947482459614010094317027768094816108548",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "1752989996936949203916036071159051010960"
+  ]
+}

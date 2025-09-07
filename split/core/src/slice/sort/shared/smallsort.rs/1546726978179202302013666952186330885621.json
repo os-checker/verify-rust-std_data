@@ -1,0 +1,12 @@
+{
+  "file": "core/src/slice/sort/shared/smallsort.rs",
+  "name": "<f32 as slice::sort::shared::smallsort::UnstableSmallSortTypeImpl>::small_sort_threshold",
+  "hash": "1546726978179202302013666952186330885621",
+  "hash_direct": "22421610057631629814632256370640727164",
+  "src": "fn small_sort_threshold() -> usize {\n        <T as UnstableSmallSortFreezeTypeImpl>::small_sort_threshold()\n    }",
+  "callees": [
+    "31244240180128544175272526361568808560",
+    "181338996659360834305072794452802357305",
+    "179492639372335439117660783880964410871"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "file": "core/src/slice/index.rs",
+  "name": "<core::ops::Range<usize> as core::slice::SliceIndex<[u8]>>::get",
+  "hash": "1545013140051700402414213876161006532376",
+  "hash_direct": "327326351486378783414900647814115339774",
+  "src": "fn get(self, slice: &[T]) -> Option<&[T]> {\n        // Using checked_sub is a safe way to get `SubUnchecked` in MIR\n        if let Some(new_len) = usize::checked_sub(self.end, self.start)\n            && self.end <= slice.len()\n        {\n            // SAFETY: `self` is checked to be valid and in bounds above.\n            unsafe { Some(&*get_offset_len_noubcheck(slice, self.start, new_len)) }\n        } else {\n            None\n        }\n    }",
+  "callees": [
+    "34519564174861224012422426839487145969",
+    "1065676213061427031516083200481517890575"
+  ]
+}

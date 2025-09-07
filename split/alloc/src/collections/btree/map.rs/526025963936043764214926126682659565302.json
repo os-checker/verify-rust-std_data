@@ -1,0 +1,13 @@
+{
+  "file": "alloc/src/collections/btree/map.rs",
+  "name": "<collections::btree::map::UnorderedKeyError as core::cmp::Eq>::assert_receiver_is_total_eq",
+  "hash": "526025963936043764214926126682659565302",
+  "hash_direct": "636964637109980753614184672666580201113",
+  "src": "Eq",
+  "macro_backtrace": [
+    {
+      "callsite": "Eq",
+      "defsite": "pub macro Eq"
+    }
+  ]
+}

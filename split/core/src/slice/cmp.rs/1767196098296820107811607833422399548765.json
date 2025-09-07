@@ -1,0 +1,12 @@
+{
+  "file": "core/src/slice/cmp.rs",
+  "name": "slice::cmp::<impl cmp::PartialEq for [intrinsics::verify::u8_struct]>::eq",
+  "hash": "1767196098296820107811607833422399548765",
+  "hash_direct": "1746558762759199231415550364265605001318",
+  "src": "fn eq(&self, other: &[U]) -> bool {\n        SlicePartialEq::equal(self, other)\n    }",
+  "callees": [
+    "16999374287556258107975412382868111504",
+    "95855262543484333061997486664200818696",
+    "174283284936324895317181588972800108390"
+  ]
+}

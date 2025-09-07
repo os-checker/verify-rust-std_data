@@ -1,7 +1,0 @@
-{
-  "file": "core/src/option.rs",
-  "name": "option::Option::<&u8>::copied",
-  "hash": "177196453936645384295988815837664010762",
-  "hash_direct": "1468689001431804892414099545027747120594",
-  "src": "pub const fn copied(self) -> Option<T>\n    where\n        T: Copy,\n    {\n        // FIXME(const-hack): this implementation, which sidesteps using `Option::map` since it's not const\n        // ready yet, should be reverted when possible to avoid code repetition\n        match self {\n            Some(&v) => Some(v),\n            None => None,\n        }\n    }"
-}

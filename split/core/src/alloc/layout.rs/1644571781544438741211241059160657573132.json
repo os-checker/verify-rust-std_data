@@ -1,0 +1,10 @@
+{
+  "file": "core/src/alloc/layout.rs",
+  "name": "alloc::layout::Layout::align",
+  "hash": "1644571781544438741211241059160657573132",
+  "hash_direct": "54910434723640184414928991278723207008",
+  "src": "pub const fn align(&self) -> usize {\n        self.align.as_usize()\n    }",
+  "callees": [
+    "112152844438854238887994758767167519478"
+  ]
+}

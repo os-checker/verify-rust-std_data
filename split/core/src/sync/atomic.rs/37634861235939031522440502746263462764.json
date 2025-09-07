@@ -1,0 +1,10 @@
+{
+  "file": "core/src/sync/atomic.rs",
+  "name": "sync::atomic::AtomicBool::get_mut",
+  "hash": "37634861235939031522440502746263462764",
+  "hash_direct": "316906108673429118817033835014487695750",
+  "src": "pub fn get_mut(&mut self) -> &mut bool {\n        // SAFETY: the mutable reference guarantees unique ownership.\n        unsafe { &mut *(self.v.get() as *mut bool) }\n    }",
+  "callees": [
+    "163154036748054064804947938080591443326"
+  ]
+}

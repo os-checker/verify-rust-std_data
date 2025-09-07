@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vsha256h2q_u32",
-  "hash": "579834503286917669110506121036921710394",
-  "hash_direct": "50491979000606236862212437810253736003",
-  "src": "pub fn vsha256h2q_u32(hash_abcd: uint32x4_t, hash_efgh: uint32x4_t, wk: uint32x4_t) -> uint32x4_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.crypto.sha256h2\"\n        )]\n        #[cfg_attr(target_arch = \"arm\", link_name = \"llvm.arm.neon.sha256h2\")]\n        fn _vsha256h2q_u32(\n            hash_abcd: uint32x4_t,\n            hash_efgh: uint32x4_t,\n            wk: uint32x4_t,\n        ) -> uint32x4_t;\n    }\n    unsafe { _vsha256h2q_u32(hash_abcd, hash_efgh, wk) }\n}"
-}

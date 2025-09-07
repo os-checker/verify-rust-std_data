@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "ptr::non_null::verify::non_null_byte_offset_from_proof::SIZE",
+  "hash": "107633375753620321089186727473488704634",
+  "hash_direct": "1484390322155211653615449171746707646367",
+  "src": "const SIZE: usize = mem::size_of::<i32>() * 1000;",
+  "callees": [
+    "79147560314209947671815415446941048751"
+  ]
+}

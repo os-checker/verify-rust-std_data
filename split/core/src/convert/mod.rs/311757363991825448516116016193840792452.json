@@ -1,0 +1,7 @@
+{
+  "file": "core/src/convert/mod.rs",
+  "name": "<[u8] as core::convert::AsRef<[u8]>>::as_ref",
+  "hash": "311757363991825448516116016193840792452",
+  "hash_direct": "19794190475521574151395803426906390151",
+  "src": "fn as_ref(&self) -> &[T] {\n        self\n    }"
+}

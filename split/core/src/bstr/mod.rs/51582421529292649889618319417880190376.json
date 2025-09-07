@@ -1,0 +1,7 @@
+{
+  "file": "core/src/bstr/mod.rs",
+  "name": "bstr::ByteStr::as_bytes_mut",
+  "hash": "51582421529292649889618319417880190376",
+  "hash_direct": "39771212158401069637448566719654811858",
+  "src": "pub fn as_bytes_mut(&mut self) -> &mut [u8] {\n        &mut self.0\n    }"
+}

@@ -1,0 +1,19 @@
+{
+  "file": "core/src/slice/index.rs",
+  "name": "<usize as slice::index::SliceIndex<[[char; 3]]>>::get_unchecked",
+  "hash": "104207198280886274588268922678390771570",
+  "hash_direct": "596932585015932309814464751651659920032",
+  "src": "unsafe fn get_unchecked(self, slice: *const [T]) -> *const T {\n        assert_unsafe_precondition!(\n            check_language_ub,\n            \"slice::get_unchecked requires that the index is within the slice\",\n            (this: usize = self, len: usize = slice.len()) => this < len\n        );\n        // SAFETY: the caller guarantees that `slice` is not dangling, so it\n        // cannot be longer than `isize::MAX`. They also guarantee that\n        // `self` is in bounds of `slice` so `self` cannot overflow an `isize`,\n        // so the call to `add` is safe.\n        unsafe {\n            // Use intrinsics::assume instead of hint::assert_unchecked so that we don't check the\n            // precondition of this function twice.\n            crate::intrinsics::assume(self < slice.len());\n            slice_get_unchecked(slice, self)\n        }\n    }",
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "17421822894816687532325615181214565887",
+    "23815256893174302637797703719499456373",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "478753423337745817613297159272845606672",
+    "734734881254352573217041882367860724592",
+    "125274196896960734865005085300509317011",
+    "154911443990380340341563367924870465980",
+    "739520556846959085018120036998133255835"
+  ]
+}

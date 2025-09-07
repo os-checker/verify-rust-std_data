@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/sync.rs",
+  "name": "sync::MAX_REFCOUNT",
+  "hash": "117331222994160713988776017531613319126",
+  "hash_direct": "452044999853225159215803053084447074932",
+  "src": "const MAX_REFCOUNT: usize = (isize::MAX) as usize;"
+}

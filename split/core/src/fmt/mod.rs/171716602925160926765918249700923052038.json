@@ -1,7 +1,0 @@
-{
-  "file": "core/src/fmt/mod.rs",
-  "name": "fmt::flags::SIGN_MINUS_FLAG",
-  "hash": "171716602925160926765918249700923052038",
-  "hash_direct": "786660342529693643349869489123550401",
-  "src": "pub(super) const SIGN_MINUS_FLAG: u32 = 1 << 22;"
-}

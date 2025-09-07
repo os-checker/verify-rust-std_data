@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vaddvq_u32",
+  "hash": "156958150102002807752073783364662662683",
+  "hash_direct": "106230992515701916905787673073946848617",
+  "src": "pub fn vaddvq_u32(a: uint32x4_t) -> u32 {\n    unsafe { simd_reduce_add_unordered(a) }\n}"
+}

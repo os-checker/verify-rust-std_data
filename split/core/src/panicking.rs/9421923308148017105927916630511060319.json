@@ -1,0 +1,14 @@
+{
+  "file": "core/src/panicking.rs",
+  "name": "panicking::panic_nounwind_nobacktrace",
+  "hash": "9421923308148017105927916630511060319",
+  "hash_direct": "175307323438935348757044359570659232742",
+  "src": "pub fn panic_nounwind_nobacktrace(expr: &'static str) -> ! {\n    panic_nounwind_fmt(fmt::Arguments::new_const(&[expr]), /* force_no_backtrace */ true);\n}",
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "17421822894816687532325615181214565887",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "478753423337745817613297159272845606672"
+  ]
+}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/fmt/rt.rs",
-  "name": "fmt::rt::<impl fmt::Arguments<'_>>::new_v1::<3, 3>",
-  "hash": "128628521680464556275047697473333251596",
-  "hash_direct": "223709479237595141813984624127191999227",
-  "src": "pub fn new_v1<const P: usize, const A: usize>(\n        pieces: &'a [&'static str; P],\n        args: &'a [rt::Argument<'a>; A],\n    ) -> Arguments<'a> {\n        const { assert!(P >= A && P <= A + 1, \"invalid args\") }\n        Arguments { pieces, fmt: None, args }\n    }"
-}

@@ -1,0 +1,12 @@
+{
+  "file": "core/src/slice/mod.rs",
+  "name": "slice::<impl [i32]>::get::<ops::range::Range<usize>>",
+  "hash": "77623159332758754475695547105541607859",
+  "hash_direct": "140638972438459539957150387048427238933",
+  "src": "pub const fn get<I>(&self, index: I) -> Option<&I::Output>\n    where\n        I: [const] SliceIndex<Self>,\n    {\n        index.get(self)\n    }",
+  "callees": [
+    "36263650381921031236374006938891928812",
+    "1440400147260890642217220284010588137154",
+    "121060820610680035284559507951674585741"
+  ]
+}

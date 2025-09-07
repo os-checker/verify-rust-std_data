@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vand_s16",
-  "hash": "176246177600372619922604819358242619110",
-  "hash_direct": "1762834935877932485417062404185929795594",
-  "src": "pub fn vand_s16(a: int16x4_t, b: int16x4_t) -> int16x4_t {\n    unsafe { simd_and(a, b) }\n}"
-}

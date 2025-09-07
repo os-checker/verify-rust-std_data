@@ -1,0 +1,7 @@
+{
+  "file": "core/src/intrinsics/mod.rs",
+  "name": "intrinsics::ub_checks",
+  "hash": "757546346109244535514310268435567268562",
+  "hash_direct": "95212503735931658435128820891060854845",
+  "src": "pub const fn ub_checks() -> bool {\n    cfg!(ub_checks)\n}"
+}

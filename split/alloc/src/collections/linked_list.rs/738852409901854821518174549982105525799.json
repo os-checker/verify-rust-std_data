@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/collections/linked_list.rs",
+  "name": "collections::linked_list::assert_covariance::b::<'_>",
+  "hash": "738852409901854821518174549982105525799",
+  "hash_direct": "181867970783253711312072542640578690474",
+  "src": "fn b<'i, 'a>(x: Iter<'i, &'static str>) -> Iter<'i, &'a str> {\n        x\n    }"
+}

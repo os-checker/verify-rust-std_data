@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vcombine_u64",
+  "hash": "472955044184400480718405655551407952188",
+  "hash_direct": "63933161955101949413097454889433004065",
+  "src": "pub fn vcombine_u64(a: uint64x1_t, b: uint64x1_t) -> uint64x2_t {\n    unsafe { simd_shuffle!(a, b, [0, 1]) }\n}"
+}

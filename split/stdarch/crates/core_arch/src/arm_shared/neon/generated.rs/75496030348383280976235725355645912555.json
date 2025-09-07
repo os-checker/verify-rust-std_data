@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vandq_u8",
+  "hash": "75496030348383280976235725355645912555",
+  "hash_direct": "643134474038792141115003968648393964994",
+  "src": "pub fn vandq_u8(a: uint8x16_t, b: uint8x16_t) -> uint8x16_t {\n    unsafe { simd_and(a, b) }\n}"
+}

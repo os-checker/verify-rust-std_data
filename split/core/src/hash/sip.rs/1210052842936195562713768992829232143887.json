@@ -1,0 +1,10 @@
+{
+  "file": "core/src/hash/sip.rs",
+  "name": "hash::sip::Hasher::<hash::sip::Sip13Rounds>::new_with_keys",
+  "hash": "1210052842936195562713768992829232143887",
+  "hash_direct": "1788263755642576339317608912278355707654",
+  "src": "const fn new_with_keys(key0: u64, key1: u64) -> Hasher<S> {\n        let mut state = Hasher {\n            k0: key0,\n            k1: key1,\n            length: 0,\n            state: State { v0: 0, v1: 0, v2: 0, v3: 0 },\n            tail: 0,\n            ntail: 0,\n            _marker: PhantomData,\n        };\n        state.reset();\n        state\n    }",
+  "callees": [
+    "2488920774309348569371253280638981956"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/niche_types.rs",
+  "name": "<num::niche_types::Nanoseconds as default::Default>::default",
+  "hash": "7491658729142438251950090353170692194",
+  "hash_direct": "79494598170440706853453245189227450339",
+  "src": "fn default() -> Self {\n        Self::ZERO\n    }"
+}

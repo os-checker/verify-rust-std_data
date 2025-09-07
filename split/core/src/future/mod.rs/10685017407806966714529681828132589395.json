@@ -1,0 +1,11 @@
+{
+  "file": "core/src/future/mod.rs",
+  "name": "future::get_context::<'_, '_>",
+  "hash": "10685017407806966714529681828132589395",
+  "hash_direct": "1565102225928143708517754047099473892938",
+  "src": "pub unsafe fn get_context<'a, 'b>(cx: ResumeTy) -> &'a mut Context<'b> {\n    // SAFETY: the caller must guarantee that `cx.0` is a valid pointer\n    // that fulfills all the requirements for a mutable reference.\n    unsafe { &mut *cx.0.as_ptr().cast() }\n}",
+  "callees": [
+    "35681151452522280304552796180791868313",
+    "203130906305122981328739155487105224"
+  ]
+}

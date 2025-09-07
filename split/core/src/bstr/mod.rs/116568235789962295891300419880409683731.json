@@ -1,0 +1,7 @@
+{
+  "file": "core/src/bstr/mod.rs",
+  "name": "<bstr::ByteStr as convert::AsMut<[u8]>>::as_mut",
+  "hash": "116568235789962295891300419880409683731",
+  "hash_direct": "60516035453499979095611757392037782514",
+  "src": "fn as_mut(&mut self) -> &mut [u8] {\n        &mut self.0\n    }"
+}

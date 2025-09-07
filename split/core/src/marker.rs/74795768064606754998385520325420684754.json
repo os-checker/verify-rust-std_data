@@ -1,7 +1,0 @@
-{
-  "file": "core/src/marker.rs",
-  "name": "<marker::PhantomData<escape::MaybeEscaped> as clone::Clone>::clone",
-  "hash": "74795768064606754998385520325420684754",
-  "hash_direct": "9808884568901077647581827308887777607",
-  "src": "fn clone(&self) -> Self {\n        Self\n    }"
-}

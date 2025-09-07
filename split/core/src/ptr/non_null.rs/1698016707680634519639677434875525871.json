@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "ptr::non_null::NonNull::<u16>::as_mut::<'_>",
+  "hash": "1698016707680634519639677434875525871",
+  "hash_direct": "1472028940225283987414220563685840597910",
+  "src": "pub const unsafe fn as_mut<'a>(&mut self) -> &'a mut T {\n        // SAFETY: the caller must guarantee that `self` meets all the\n        // requirements for a mutable reference.\n        unsafe { &mut *self.as_ptr() }\n    }",
+  "callees": [
+    "7315038583701776471218090447676319539"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/adapters/filter.rs",
+  "name": "<iter::adapters::filter::Filter<I, P> as iter::traits::iterator::Iterator>::count::to_usize::<&u8, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/str/count.rs:136:21: 136:29}>",
+  "hash": "838579135528120850312965158638687856356",
+  "hash_direct": "209153636886718759614839393299976932292",
+  "src": "fn to_usize<T>(mut predicate: impl FnMut(&T) -> bool) -> impl FnMut(T) -> usize {\n            move |x| predicate(&x) as usize\n        }"
+}

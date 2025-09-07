@@ -1,7 +1,0 @@
-{
-  "file": "core/src/array/iter/iter_inner.rs",
-  "name": "array::iter::iter_inner::PolymorphicIter::<[mem::maybe_uninit::MaybeUninit<char>; 3]>::new_unchecked",
-  "hash": "497364426437440373811980427999191424982",
-  "hash_direct": "29706064320720008684254598267993298086",
-  "src": "pub(super) const unsafe fn new_unchecked(alive: IndexRange, data: [MaybeUninit<T>; N]) -> Self {\n        Self { alive, data }\n    }"
-}

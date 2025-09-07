@@ -1,0 +1,13 @@
+{
+  "file": "core/src/ops/arith.rs",
+  "name": "<i8 as ops::arith::Neg>::neg",
+  "hash": "3952901743078497551630941128387146276",
+  "hash_direct": "99976953079996289338682049446600733308",
+  "src": "fn neg(self) -> $t { -self }",
+  "macro_backtrace": [
+    {
+      "callsite": "neg_impl! { isize i8 i16 i32 i64 i128 f16 f32 f64 f128 }",
+      "defsite": "macro_rules! neg_impl {\n    ($($t:ty)*) => ($(\n        #[stable(feature = \"rust1\", since = \"1.0.0\")]\n        #[rustc_const_unstable(feature = \"const_ops\", issue = \"143802\")]\n        impl const Neg for $t {\n            type Output = $t;\n\n            #[inline]\n            #[rustc_inherit_overflow_checks]\n            fn neg(self) -> $t { -self }\n        }\n\n        forward_ref_unop! { impl Neg, neg for $t,\n        #[stable(feature = \"rust1\", since = \"1.0.0\")]\n        #[rustc_const_unstable(feature = \"const_ops\", issue = \"143802\")] }\n    )*)\n}"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "ptr::non_null::NonNull::<[intrinsics::verify::u8_struct]>::cast::<intrinsics::verify::u8_struct>",
+  "hash": "182913886724467300932925944707210148584",
+  "hash_direct": "954338396694297712515189905136483215430",
+  "src": "pub const fn cast<U>(self) -> NonNull<U> {\n        // SAFETY: `self` is a `NonNull` pointer which is necessarily non-null\n        unsafe { NonNull { pointer: self.as_ptr() as *mut U } }\n    }",
+  "callees": [
+    "860346705098282201216841728268233877815"
+  ]
+}

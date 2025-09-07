@@ -1,0 +1,13 @@
+{
+  "file": "core/src/num/mod.rs",
+  "name": "<num::FpCategory as clone::Clone>::clone",
+  "hash": "38138070809326056813274648859849705420",
+  "hash_direct": "967044962061544001716343007722265632205",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

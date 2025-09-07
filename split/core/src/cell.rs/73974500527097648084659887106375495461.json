@@ -1,7 +1,0 @@
-{
-  "file": "core/src/cell.rs",
-  "name": "cell::is_writing",
-  "hash": "73974500527097648084659887106375495461",
-  "hash_direct": "109852003735593796985901355943141990494",
-  "src": "const fn is_writing(x: BorrowCounter) -> bool {\n    x < UNUSED\n}"
-}

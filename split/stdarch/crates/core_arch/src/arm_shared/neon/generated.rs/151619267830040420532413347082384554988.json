@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vbicq_u64",
+  "hash": "151619267830040420532413347082384554988",
+  "hash_direct": "139758965471287709403928146683490939266",
+  "src": "pub fn vbicq_u64(a: uint64x2_t, b: uint64x2_t) -> uint64x2_t {\n    let c = int64x2_t::splat(-1);\n    unsafe { simd_and(simd_xor(b, transmute(c)), a) }\n}",
+  "callees": [
+    "1761848184088370022613926846118412510353"
+  ]
+}

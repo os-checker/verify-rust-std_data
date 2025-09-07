@@ -1,7 +1,0 @@
-{
-  "file": "core/src/option.rs",
-  "name": "<option::Option<&u8> as ops::try_trait::Try>::branch",
-  "hash": "315331140686166457616644577557668814534",
-  "hash_direct": "1713690078377514259516415296254717144599",
-  "src": "fn branch(self) -> ControlFlow<Self::Residual, Self::Output> {\n        match self {\n            Some(v) => ControlFlow::Continue(v),\n            None => ControlFlow::Break(None),\n        }\n    }"
-}

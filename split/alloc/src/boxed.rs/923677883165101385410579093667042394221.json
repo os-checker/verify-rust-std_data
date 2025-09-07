@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/boxed.rs",
+  "name": "boxed::Box::<[u8]>::allocator",
+  "hash": "923677883165101385410579093667042394221",
+  "hash_direct": "120713003039482510389775994369747728210",
+  "src": "pub fn allocator(b: &Self) -> &A {\n        &b.1\n    }"
+}

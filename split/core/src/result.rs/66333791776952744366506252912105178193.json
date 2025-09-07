@@ -1,0 +1,10 @@
+{
+  "file": "core/src/result.rs",
+  "name": "<core::result::Result<(), collections::TryReserveError> as core::ops::FromResidual<core::result::Result<core::convert::Infallible, collections::TryReserveError>>>::from_residual",
+  "hash": "66333791776952744366506252912105178193",
+  "hash_direct": "29158658379405661281963169117915780237",
+  "src": "fn from_residual(residual: Result<convert::Infallible, E>) -> Self {\n        match residual {\n            Err(e) => Err(From::from(e)),\n        }\n    }",
+  "callees": [
+    "112317438206578259322527982339728828336"
+  ]
+}

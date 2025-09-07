@@ -1,0 +1,10 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<core::char::DecodeUtf16<core::iter::Cloned<core::slice::Iter<'_, u16>>> as core::iter::Iterator>::map::<char, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/alloc/src/string.rs:763:18: 763:21}>",
+  "hash": "1700382421263291903510262922784355582171",
+  "hash_direct": "91037644068720461844164847195958725555",
+  "src": "fn map<B, F>(self, f: F) -> Map<Self, F>\n    where\n        Self: Sized,\n        F: FnMut(Self::Item) -> B,\n    {\n        Map::new(self, f)\n    }",
+  "callees": [
+    "131037427255872819154248567890782384125"
+  ]
+}

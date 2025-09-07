@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "ptr::swap_nonoverlapping_bytes::CHUNK_SIZE",
+  "hash": "181569779925398134432780313765255399501",
+  "hash_direct": "63684737582782219716391513535175924130",
+  "src": "const CHUNK_SIZE: usize = size_of::<*const ()>();",
+  "callees": [
+    "19152655601419963444974646541166489064"
+  ]
+}

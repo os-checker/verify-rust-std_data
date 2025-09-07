@@ -1,0 +1,7 @@
+{
+  "file": "core/src/sync/atomic.rs",
+  "name": "sync::atomic::atomic_or::<i16, i16>",
+  "hash": "7334613627726847632403865145687339674",
+  "hash_direct": "1361891545223650657214787861957193455255",
+  "src": "unsafe fn atomic_or<T: Copy, U: Copy>(dst: *mut T, val: U, order: Ordering) -> T {\n    // SAFETY: the caller must uphold the safety contract for `atomic_or`\n    unsafe {\n        match order {\n            SeqCst => intrinsics::atomic_or::<T, U, { AO::SeqCst }>(dst, val),\n            Acquire => intrinsics::atomic_or::<T, U, { AO::Acquire }>(dst, val),\n            Release => intrinsics::atomic_or::<T, U, { AO::Release }>(dst, val),\n            AcqRel => intrinsics::atomic_or::<T, U, { AO::AcqRel }>(dst, val),\n            Relaxed => intrinsics::atomic_or::<T, U, { AO::Relaxed }>(dst, val),\n        }\n    }\n}"
+}

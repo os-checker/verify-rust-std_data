@@ -1,7 +1,0 @@
-{
-  "file": "core/src/ptr/mut_ptr.rs",
-  "name": "ptr::mut_ptr::<impl *mut f32>::cast_const",
-  "hash": "136731459071020275662185450164424290100",
-  "hash_direct": "63001324725143208982122766874465472539",
-  "src": "pub const fn cast_const(self) -> *const T {\n        self as _\n    }"
-}

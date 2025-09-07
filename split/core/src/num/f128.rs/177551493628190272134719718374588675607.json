@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f128.rs",
+  "name": "f128::<impl f128>::NEG_INFINITY",
+  "hash": "177551493628190272134719718374588675607",
+  "hash_direct": "124366319266592757913859493924540636009",
+  "src": "pub const NEG_INFINITY: f128 = -1.0_f128 / 0.0_f128;"
+}

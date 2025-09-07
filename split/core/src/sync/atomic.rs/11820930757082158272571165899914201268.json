@@ -1,0 +1,11 @@
+{
+  "file": "core/src/sync/atomic.rs",
+  "name": "sync::atomic::AtomicBool::fetch_and",
+  "hash": "11820930757082158272571165899914201268",
+  "hash_direct": "1771961152125201541116214421553268362658",
+  "src": "pub fn fetch_and(&self, val: bool, order: Ordering) -> bool {\n        // SAFETY: data races are prevented by atomic intrinsics.\n        unsafe { atomic_and(self.v.get(), val as u8, order) != 0 }\n    }",
+  "callees": [
+    "163154036748054064804947938080591443326",
+    "84510624261113183585908456463933399967"
+  ]
+}

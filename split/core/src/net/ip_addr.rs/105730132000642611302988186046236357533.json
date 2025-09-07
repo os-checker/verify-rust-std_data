@@ -1,0 +1,12 @@
+{
+  "file": "core/src/net/ip_addr.rs",
+  "name": "net::ip_addr::Ipv6Addr::to_canonical",
+  "hash": "105730132000642611302988186046236357533",
+  "hash_direct": "152580792545295592884097379477392652593",
+  "src": "pub const fn to_canonical(&self) -> IpAddr {\n        if let Some(mapped) = self.to_ipv4_mapped() {\n            return IpAddr::V4(mapped);\n        }\n        IpAddr::V6(*self)\n    }",
+  "callees": [
+    "6502083445142584246779010121987916385",
+    "62038573511047791971320547253979391011",
+    "71246380578644339536635791968521120722"
+  ]
+}

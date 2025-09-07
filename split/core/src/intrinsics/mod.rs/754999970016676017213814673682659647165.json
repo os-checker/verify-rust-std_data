@@ -1,0 +1,12 @@
+{
+  "file": "core/src/intrinsics/mod.rs",
+  "name": "intrinsics::minimumf32",
+  "hash": "754999970016676017213814673682659647165",
+  "hash_direct": "586200362507321937216781317676467842992",
+  "src": "pub const fn minimumf32(x: f32, y: f32) -> f32 {\n    if x < y {\n        x\n    } else if y < x {\n        y\n    } else if x == y {\n        if x.is_sign_negative() && y.is_sign_positive() { x } else { y }\n    } else {\n        // At least one input is NaN. Use `+` to perform NaN propagation and quieting.\n        x + y\n    }\n}",
+  "callees": [
+    "169025222698088550701130642783988507306",
+    "894614440018548037910752981073189373335",
+    "1280257502160233765816408910554470634604"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/alignment.rs",
+  "name": "ptr::alignment::Alignment::MIN",
+  "hash": "66793974981248918071645242435619631135",
+  "hash_direct": "1414534745516960475912043394577054488250",
+  "src": "pub const MIN: Self = Self(AlignmentEnum::_Align1Shl0);"
+}

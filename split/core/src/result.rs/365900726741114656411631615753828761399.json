@@ -1,0 +1,10 @@
+{
+  "file": "core/src/result.rs",
+  "name": "<result::Result<num::nonzero::NonZero<isize>, num::error::TryFromIntError> as ops::try_trait::FromResidual<result::Result<convert::Infallible, num::error::TryFromIntError>>>::from_residual",
+  "hash": "365900726741114656411631615753828761399",
+  "hash_direct": "9808497834252900468342832018534538561",
+  "src": "fn from_residual(residual: Result<convert::Infallible, E>) -> Self {\n        match residual {\n            Err(e) => Err(From::from(e)),\n        }\n    }",
+  "callees": [
+    "92344261183987467315339399145368545244"
+  ]
+}

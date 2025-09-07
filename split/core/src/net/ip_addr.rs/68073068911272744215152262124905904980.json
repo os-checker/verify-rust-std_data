@@ -1,0 +1,7 @@
+{
+  "file": "core/src/net/ip_addr.rs",
+  "name": "<net::ip_addr::IpAddr as convert::From<net::ip_addr::Ipv6Addr>>::from",
+  "hash": "68073068911272744215152262124905904980",
+  "hash_direct": "1466815886171263373018446424512855642046",
+  "src": "fn from(ipv6: Ipv6Addr) -> IpAddr {\n        IpAddr::V6(ipv6)\n    }"
+}

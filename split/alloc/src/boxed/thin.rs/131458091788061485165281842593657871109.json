@@ -1,0 +1,10 @@
+{
+  "file": "alloc/src/boxed/thin.rs",
+  "name": "boxed::thin::WithOpaqueHeader",
+  "hash": "131458091788061485165281842593657871109",
+  "hash_direct": "141954041670760513133356616735207091327",
+  "attrs": [
+    "#[attr = Repr {reprs: [ReprTransparent]}]\n"
+  ],
+  "src": "struct WithOpaqueHeader"
+}

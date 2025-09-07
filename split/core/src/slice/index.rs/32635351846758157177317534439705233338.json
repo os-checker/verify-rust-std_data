@@ -1,0 +1,17 @@
+{
+  "file": "core/src/slice/index.rs",
+  "name": "<usize as core::slice::SliceIndex<[u8]>>::get_unchecked_mut",
+  "hash": "32635351846758157177317534439705233338",
+  "hash_direct": "47323945977706723815017724992469730575",
+  "src": "unsafe fn get_unchecked_mut(self, slice: *mut [T]) -> *mut T {\n        assert_unsafe_precondition!(\n            check_library_ub,\n            \"slice::get_unchecked_mut requires that the index is within the slice\",\n            (this: usize = self, len: usize = slice.len()) => this < len\n        );\n        // SAFETY: see comments for `get_unchecked` above.\n        unsafe { slice_get_unchecked(slice, self) }\n    }",
+  "callees": [
+    "12281449246394340237926324936375242532",
+    "181267529910573756716102767087485333561",
+    "986792852990965178117440249555081278778",
+    "90818112465881722349174357944217011292",
+    "63085389524472853348886374617170044294",
+    "752644167293716817117721550981127924220",
+    "4042300723774196022179957083724047688",
+    "1233028477207251576616341521939619932739"
+  ]
+}

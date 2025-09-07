@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/mod.rs",
-  "name": "num::<impl u8>::is_ascii_control",
-  "hash": "75078032937366500947486077182035050969",
-  "hash_direct": "4725031469443616957639787301104191900",
-  "src": "pub const fn is_ascii_control(&self) -> bool {\n        matches!(*self, b'\\0'..=b'\\x1F' | b'\\x7F')\n    }"
-}

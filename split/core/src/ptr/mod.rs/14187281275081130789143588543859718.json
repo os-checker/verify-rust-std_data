@@ -1,0 +1,8 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "core::ptr::drop_in_place::<core::iter::SkipWhile<core::iter::Rev<core::str::Chars<'_>>, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/alloc/src/str.rs:422:35: 422:39}>>",
+  "hash": "14187281275081130789143588543859718",
+  "hash_direct": "18337281651821205012500572593596026147",
+  "inst_kind": "\"Shim\"",
+  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
+}

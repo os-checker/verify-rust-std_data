@@ -1,0 +1,10 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<core::iter::Map<core::slice::Iter<'_, u8>, core::slice::ascii::EscapeByte> as core::iter::Iterator>::fuse",
+  "hash": "34539744011937574632649154663821605872",
+  "hash_direct": "54260141966518044414332408509613311066",
+  "src": "fn fuse(self) -> Fuse<Self>\n    where\n        Self: Sized,\n    {\n        Fuse::new(self)\n    }",
+  "callees": [
+    "724385813079616996718319265690785988195"
+  ]
+}

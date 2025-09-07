@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vtrn1q_s16",
+  "hash": "738733388150585392084889185824105128",
+  "hash_direct": "173110918011560564218006083805811970412",
+  "src": "pub fn vtrn1q_s16(a: int16x8_t, b: int16x8_t) -> int16x8_t {\n    unsafe { simd_shuffle!(a, b, [0, 8, 2, 10, 4, 12, 6, 14]) }\n}"
+}

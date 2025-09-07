@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
-  "name": "core_arch::aarch64::neon::generated::vld4_f64",
-  "hash": "113705662355492669015816787055927364467",
-  "hash_direct": "443838881857028468816912575155337581859",
-  "src": "pub unsafe fn vld4_f64(a: *const f64) -> float64x1x4_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.ld4.v1f64.p0\"\n        )]\n        fn _vld4_f64(ptr: *const float64x1_t) -> float64x1x4_t;\n    }\n    _vld4_f64(a as _)\n}"
-}

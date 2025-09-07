@@ -1,0 +1,7 @@
+{
+  "file": "src/probe/proc_macro_span.rs",
+  "name": "column",
+  "hash": "1484110739370792827911800758590120135423",
+  "hash_direct": "513642279401487616611908080641953998548",
+  "src": "pub fn column(this: &Span) -> usize {\n    this.column()\n}"
+}

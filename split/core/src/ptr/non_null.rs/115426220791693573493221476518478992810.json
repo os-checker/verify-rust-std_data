@@ -1,0 +1,12 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "ptr::non_null::NonNull::<[mem::maybe_uninit::MaybeUninit<i32>]>::len",
+  "hash": "115426220791693573493221476518478992810",
+  "hash_direct": "30665036499862249842670013064529261804",
+  "src": "pub const fn len(self) -> usize {\n        self.as_ptr().len()\n    }",
+  "callees": [
+    "1679201491558621255714199331082423262091",
+    "11529447432492317847473151575096641345",
+    "204900656628390787610420351472553398537"
+  ]
+}

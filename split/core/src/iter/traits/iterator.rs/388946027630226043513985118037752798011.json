@@ -1,0 +1,11 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "iter::traits::iterator::Iterator::try_for_each::call::<char, result::Result<(), fmt::Error>, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/str/iter.rs:1581:43: 1581:46}>::{closure#0}",
+  "hash": "388946027630226043513985118037752798011",
+  "hash_direct": "1370222236630201776712041687092516307666",
+  "src": "move |(), x| f(x)",
+  "callees": [
+    "180885054484727158889233344781249141486",
+    "855264319193696346418301004532916368860"
+  ]
+}

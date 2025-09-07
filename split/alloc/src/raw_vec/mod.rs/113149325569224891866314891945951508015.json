@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/raw_vec/mod.rs",
+  "name": "raw_vec::RawVecInner::allocator",
+  "hash": "113149325569224891866314891945951508015",
+  "hash_direct": "72524217112039526799681265162875847146",
+  "src": "fn allocator(&self) -> &A {\n        &self.alloc\n    }"
+}

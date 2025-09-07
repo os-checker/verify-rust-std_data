@@ -1,0 +1,11 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vtstd_s64",
+  "hash": "45460864231346100476498664435028997857",
+  "hash_direct": "627092477353943323916986567476262463786",
+  "src": "pub fn vtstd_s64(a: i64, b: i64) -> u64 {\n    unsafe { transmute(vtst_s64(transmute(a), transmute(b))) }\n}",
+  "callees": [
+    "23575001587290333602071643678218888598",
+    "881835745059494176511604045227685705066"
+  ]
+}

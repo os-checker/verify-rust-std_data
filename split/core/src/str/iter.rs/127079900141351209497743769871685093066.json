@@ -1,0 +1,10 @@
+{
+  "file": "core/src/str/iter.rs",
+  "name": "str::iter::SplitAsciiWhitespace::<'_>::remainder",
+  "hash": "127079900141351209497743769871685093066",
+  "hash_direct": "164102547471676330464151857711695805244",
+  "src": "pub fn remainder(&self) -> Option<&'a str> {\n        if self.inner.iter.iter.finished {\n            return None;\n        }\n\n        // SAFETY: Slice is created from str.\n        Some(unsafe { crate::str::from_utf8_unchecked(&self.inner.iter.iter.v) })\n    }",
+  "callees": [
+    "1153959874226978119913857890632071810994"
+  ]
+}

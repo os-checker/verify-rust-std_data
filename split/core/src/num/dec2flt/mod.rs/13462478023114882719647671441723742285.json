@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/dec2flt/mod.rs",
-  "name": "<num::dec2flt::ParseFloatError as error::Error>::description",
-  "hash": "13462478023114882719647671441723742285",
-  "hash_direct": "1115031440568584782914205353709980829870",
-  "src": "fn description(&self) -> &str {\n        match self.kind {\n            FloatErrorKind::Empty => \"cannot parse float from empty string\",\n            FloatErrorKind::Invalid => \"invalid float literal\",\n        }\n    }"
-}

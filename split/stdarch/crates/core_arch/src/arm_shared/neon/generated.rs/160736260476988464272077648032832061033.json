@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vcage_f16",
-  "hash": "160736260476988464272077648032832061033",
-  "hash_direct": "91559328516966237715694047828836688626",
-  "src": "pub fn vcage_f16(a: float16x4_t, b: float16x4_t) -> uint16x4_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(target_arch = \"arm\", link_name = \"llvm.arm.neon.vacge.v4i16.v4f16\")]\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.facge.v4i16.v4f16\"\n        )]\n        fn _vcage_f16(a: float16x4_t, b: float16x4_t) -> uint16x4_t;\n    }\n    unsafe { _vcage_f16(a, b) }\n}"
-}

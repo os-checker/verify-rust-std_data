@@ -1,0 +1,15 @@
+{
+  "file": "core/src/escape.rs",
+  "name": "escape::EscapeIterInner::<4, escape::AlwaysEscaped>::empty",
+  "hash": "441693391865659021714222114869728082602",
+  "hash_direct": "1743558771736551663810336157119986463861",
+  "src": "pub(crate) const fn empty() -> Self {\n        // SAFETY: `0..0` ensures an empty escape sequence.\n        unsafe { Self::new(MaybeEscapedCharacter { escape_seq: [ascii::Char::Null; N] }, 0..0) }\n    }",
+  "callees": [
+    "512055383770602547215839632678744451162",
+    "258820287469578611817448591488600041899",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "243931809744896974812513529918607549579",
+    "1752989996936949203916036071159051010960"
+  ]
+}

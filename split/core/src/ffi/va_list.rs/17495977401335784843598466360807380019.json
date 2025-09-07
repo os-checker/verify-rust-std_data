@@ -1,7 +1,0 @@
-{
-  "file": "core/src/ffi/va_list.rs",
-  "name": "ffi::va_list::VaListImpl::<'_>::as_va_list",
-  "hash": "17495977401335784843598466360807380019",
-  "hash_direct": "453263298052274651117237488368802550033",
-  "src": "pub fn as_va_list<'a>(&'a mut self) -> VaList<'a, 'f> {\n                VaList { inner: self, _marker: PhantomData }\n            }"
-}

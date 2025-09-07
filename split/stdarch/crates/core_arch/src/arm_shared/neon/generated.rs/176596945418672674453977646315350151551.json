@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vaba_u16",
+  "hash": "176596945418672674453977646315350151551",
+  "hash_direct": "169756482562562224008193410449394492792",
+  "src": "pub fn vaba_u16(a: uint16x4_t, b: uint16x4_t, c: uint16x4_t) -> uint16x4_t {\n    unsafe { simd_add(a, vabd_u16(b, c)) }\n}",
+  "callees": [
+    "1019676351335500968113459272340922868550"
+  ]
+}

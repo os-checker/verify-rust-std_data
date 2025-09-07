@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/traits/collect.rs",
+  "name": "<core::iter::Map<core::char::DecodeUtf16<core::iter::Map<core::iter::Copied<core::slice::Iter<'_, [u8; 2]>>, fn([u8; core::::num::{impl#7}::from_le_bytes::{constant#0}]) -> u16 {core::num::<impl u16>::from_le_bytes}>>, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/alloc/src/string.rs:835:26: 835:29}> as core::iter::IntoIterator>::into_iter",
+  "hash": "124051608438467425024455510129252646780",
+  "hash_direct": "43298524856048248232658218935807425102",
+  "src": "fn into_iter(self) -> I {\n        self\n    }"
+}

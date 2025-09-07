@@ -1,8 +1,0 @@
-{
-  "file": "core/src/ptr/mod.rs",
-  "name": "ptr::drop_in_place::<panic::panic_info::PanicInfo<'a>::payload::NoPayload>",
-  "hash": "89853951679170695036881244297606680887",
-  "hash_direct": "160665451456806613192840092016653703814",
-  "inst_kind": "\"Shim\"",
-  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
-}

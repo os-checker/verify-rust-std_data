@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/vec/set_len_on_drop.rs",
+  "name": "vec::set_len_on_drop::SetLenOnDrop::<'_>::increment_len",
+  "hash": "22764982947794928291619404638216582552",
+  "hash_direct": "14042543490648712374279262942754460520",
+  "src": "pub(super) fn increment_len(&mut self, increment: usize) {\n        self.local_len += increment;\n    }"
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/str/traits.rs",
+  "name": "str::traits::<impl slice::index::SliceIndex<str> for ops::range::RangeFull>::index_mut",
+  "hash": "1121902128450813851211485012944261786972",
+  "hash_direct": "1219656126373505502115135212814348685598",
+  "src": "fn index_mut(self, slice: &mut str) -> &mut Self::Output {\n        slice\n    }"
+}

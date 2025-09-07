@@ -1,0 +1,10 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<slice::iter::Iter<'_, u8> as iter::traits::iterator::Iterator>::map::<usize, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/iter/adapters/filter.rs:138:13: 138:21}>",
+  "hash": "61539750939002654969594741517578054227",
+  "hash_direct": "1278299593022317458217778939431126396745",
+  "src": "fn map<B, F>(self, f: F) -> Map<Self, F>\n    where\n        Self: Sized,\n        F: FnMut(Self::Item) -> B,\n    {\n        Map::new(self, f)\n    }",
+  "callees": [
+    "72993026513347610222044009578620103685"
+  ]
+}

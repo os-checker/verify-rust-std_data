@@ -1,0 +1,7 @@
+{
+  "file": "core/src/slice/sort/stable/drift.rs",
+  "name": "slice::sort::stable::drift::DriftsortRun::new_unsorted",
+  "hash": "1168707756219652878515544949458091231518",
+  "hash_direct": "127441361987091173454403910198697078198",
+  "src": "fn new_unsorted(length: usize) -> Self {\n        Self(length << 1)\n    }"
+}

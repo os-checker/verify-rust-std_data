@@ -1,0 +1,13 @@
+{
+  "file": "alloc/src/collections/mod.rs",
+  "name": "<collections::TryReserveError as core::fmt::Display>::fmt",
+  "hash": "259719202331463740517780704739530794632",
+  "hash_direct": "1513982844710204479317297661850018526575",
+  "src": "fn fmt(\n        &self,\n        fmt: &mut core::fmt::Formatter<'_>,\n    ) -> core::result::Result<(), core::fmt::Error> {\n        fmt.write_str(\"memory allocation failed\")?;\n        let reason = match self.kind {\n            TryReserveErrorKind::CapacityOverflow => {\n                \" because the computed capacity exceeded the collection's maximum\"\n            }\n            TryReserveErrorKind::AllocError { .. } => {\n                \" because the memory allocator returned an error\"\n            }\n        };\n        fmt.write_str(reason)\n    }",
+  "callees": [
+    "271581865380915142716623206153391998575",
+    "1571969697186667512510572825248226870481",
+    "74117228064460308068477844042643886972",
+    "253493680033796300410226743660802047383"
+  ]
+}

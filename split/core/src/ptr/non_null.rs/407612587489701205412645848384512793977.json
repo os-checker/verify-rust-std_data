@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "<ptr::non_null::NonNull<intrinsics::verify::u8_struct> as cmp::PartialEq>::eq",
+  "hash": "407612587489701205412645848384512793977",
+  "hash_direct": "1616382112336462734814261044483868310666",
+  "src": "fn eq(&self, other: &Self) -> bool {\n        self.as_ptr() == other.as_ptr()\n    }",
+  "callees": [
+    "156407003365315347231335480583974460614"
+  ]
+}

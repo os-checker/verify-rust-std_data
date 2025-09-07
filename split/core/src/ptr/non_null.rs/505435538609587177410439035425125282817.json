@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "<core::ptr::NonNull<sync::ArcInner<[u8; 1]>> as core::convert::From<&sync::ArcInner<[u8; 1]>>>::from",
+  "hash": "505435538609587177410439035425125282817",
+  "hash_direct": "56594974376732690578515204609127188040",
+  "src": "fn from(r: &T) -> Self {\n        NonNull::from_ref(r)\n    }",
+  "callees": [
+    "1813346176662868306612569394940573069715"
+  ]
+}

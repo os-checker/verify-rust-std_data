@@ -1,0 +1,7 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "fmt::Formatter::<'_>::precision",
+  "hash": "477872397646996624916867875680146746773",
+  "hash_direct": "183456833650961243243767980108262177984",
+  "src": "pub fn precision(&self) -> Option<usize> {\n        if self.options.flags & flags::PRECISION_FLAG == 0 {\n            None\n        } else {\n            Some(self.options.precision as usize)\n        }\n    }"
+}

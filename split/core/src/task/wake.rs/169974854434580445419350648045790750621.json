@@ -1,0 +1,7 @@
+{
+  "file": "core/src/task/wake.rs",
+  "name": "task::wake::ContextBuilder::<'_>::waker",
+  "hash": "169974854434580445419350648045790750621",
+  "hash_direct": "69521322804360117343795318343269778888",
+  "src": "pub const fn waker(self, waker: &'a Waker) -> Self {\n        Self { waker, ..self }\n    }"
+}

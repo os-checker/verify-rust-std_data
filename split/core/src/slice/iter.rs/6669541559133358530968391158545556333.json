@@ -1,0 +1,7 @@
+{
+  "file": "core/src/slice/iter.rs",
+  "name": "slice::iter::ChunksExact::<'_, i16>::remainder",
+  "hash": "6669541559133358530968391158545556333",
+  "hash_direct": "786339154956210397416955449019608277489",
+  "src": "pub fn remainder(&self) -> &'a [T] {\n        self.rem\n    }"
+}

@@ -1,8 +1,0 @@
-{
-  "file": "core/src/ptr/mod.rs",
-  "name": "ptr::drop_in_place::<for<'a> fn(&'a dyn error::Error) -> option::Option<&'a (dyn error::Error + 'static)> {<dyn error::Error as error::Error>::source}>",
-  "hash": "1181075284058285470612710880754741676473",
-  "hash_direct": "1615382342144882877714473460912630546924",
-  "inst_kind": "\"Shim\"",
-  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
-}

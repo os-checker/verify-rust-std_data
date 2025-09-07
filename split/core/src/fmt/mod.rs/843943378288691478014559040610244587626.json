@@ -1,0 +1,11 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "fmt::Formatter::<'_>::debug_set",
+  "hash": "843943378288691478014559040610244587626",
+  "hash_direct": "1083060346115441105012042461114129015701",
+  "src": "pub fn debug_set<'b>(&'b mut self) -> DebugSet<'b, 'a> {\n        builders::debug_set_new(self)\n    }",
+  "callees": [
+    "1828183984712930503318414165487348263102",
+    "243839084150888952911908111539685994713"
+  ]
+}

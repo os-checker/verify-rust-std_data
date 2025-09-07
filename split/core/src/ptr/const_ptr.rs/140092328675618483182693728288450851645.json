@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/const_ptr.rs",
+  "name": "ptr::const_ptr::<impl *const &dyn fmt::Debug>::cast::<()>",
+  "hash": "140092328675618483182693728288450851645",
+  "hash_direct": "649166869641199549010935558373620902506",
+  "src": "pub const fn cast<U>(self) -> *const U {\n        self as _\n    }"
+}

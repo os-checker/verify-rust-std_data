@@ -1,0 +1,10 @@
+{
+  "file": "core/src/num/f32.rs",
+  "name": "f32::math::div_euclid",
+  "hash": "15032386568545210375665912564520042984",
+  "hash_direct": "152778903601621703549040788178046233591",
+  "src": "pub fn div_euclid(x: f32, rhs: f32) -> f32 {\n        let q = trunc(x / rhs);\n        if x % rhs < 0.0 {\n            return if rhs > 0.0 { q - 1.0 } else { q + 1.0 };\n        }\n        q\n    }",
+  "callees": [
+    "157990166986652145461875664503021779858"
+  ]
+}

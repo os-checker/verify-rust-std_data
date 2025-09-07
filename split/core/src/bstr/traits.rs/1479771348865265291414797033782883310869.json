@@ -1,7 +1,0 @@
-{
-  "file": "core/src/bstr/traits.rs",
-  "name": "bstr::traits::<impl slice::index::SliceIndex<bstr::ByteStr> for ops::range::RangeFull>::get",
-  "hash": "1479771348865265291414797033782883310869",
-  "hash_direct": "4222789868443917153727419750039058781",
-  "src": "fn get(self, slice: &ByteStr) -> Option<&Self::Output> {\n        Some(slice)\n    }"
-}

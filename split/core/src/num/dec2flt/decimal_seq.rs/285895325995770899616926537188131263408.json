@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/dec2flt/decimal_seq.rs",
+  "name": "num::dec2flt::decimal_seq::DecimalSeq::try_add_digit",
+  "hash": "285895325995770899616926537188131263408",
+  "hash_direct": "162285722920544012109058320045810042039",
+  "src": "pub(super) fn try_add_digit(&mut self, digit: u8) {\n        if self.num_digits < Self::MAX_DIGITS {\n            self.digits[self.num_digits] = digit;\n        }\n        self.num_digits += 1;\n    }"
+}

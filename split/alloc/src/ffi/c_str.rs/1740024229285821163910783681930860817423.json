@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/ffi/c_str.rs",
+  "name": "ffi::c_str::<impl core::convert::From<&core::ffi::CStr> for borrow::Cow<'_, core::ffi::CStr>>::from",
+  "hash": "1740024229285821163910783681930860817423",
+  "hash_direct": "50953935871468380606375773242049098649",
+  "src": "fn from(s: &'a CStr) -> Cow<'a, CStr> {\n        Cow::Borrowed(s)\n    }"
+}

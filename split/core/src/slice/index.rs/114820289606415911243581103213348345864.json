@@ -1,7 +1,0 @@
-{
-  "file": "core/src/slice/index.rs",
-  "name": "<usize as slice::index::SliceIndex<[u8]>>::index",
-  "hash": "114820289606415911243581103213348345864",
-  "hash_direct": "22741245606692392006847354040673248621",
-  "src": "fn index(self, slice: &[T]) -> &T {\n        // N.B., use intrinsic indexing\n        &(*slice)[self]\n    }"
-}

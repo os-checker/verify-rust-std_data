@@ -1,0 +1,11 @@
+{
+  "file": "core/src/char/methods.rs",
+  "name": "char::methods::<impl char>::to_ascii_lowercase",
+  "hash": "1545000998026875087513078667640787051548",
+  "hash_direct": "622711127064861807310228286473034371111",
+  "src": "pub const fn to_ascii_lowercase(&self) -> char {\n        if self.is_ascii_uppercase() {\n            (*self as u8).ascii_change_case_unchecked() as char\n        } else {\n            *self\n        }\n    }",
+  "callees": [
+    "162761847482439689109896374123862067977",
+    "163595600001382853907822330752148741341"
+  ]
+}

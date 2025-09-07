@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ffi/c_str.rs",
+  "name": "ffi::c_str::CStr::count_bytes",
+  "hash": "183049146634230191333442948332655845748",
+  "hash_direct": "77851478800221334372178002796111740609",
+  "src": "pub const fn count_bytes(&self) -> usize {\n        self.inner.len() - 1\n    }"
+}

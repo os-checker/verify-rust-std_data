@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
-  "name": "core_arch::aarch64::neon::generated::vreinterpret_u8_f64",
-  "hash": "1585901326520561290011567983078164704569",
-  "hash_direct": "97388737104468865207980560035419496413",
-  "src": "pub fn vreinterpret_u8_f64(a: float64x1_t) -> uint8x8_t {\n    unsafe { transmute(a) }\n}"
-}

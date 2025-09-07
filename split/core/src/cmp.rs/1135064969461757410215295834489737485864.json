@@ -1,0 +1,10 @@
+{
+  "file": "core/src/cmp.rs",
+  "name": "cmp::Ordering::is_lt",
+  "hash": "1135064969461757410215295834489737485864",
+  "hash_direct": "30161931891542374115343370569825623253",
+  "src": "pub const fn is_lt(self) -> bool {\n        self.as_raw() < 0\n    }",
+  "callees": [
+    "1599087357710868766316850218022372470465"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ops/control_flow.rs",
+  "name": "<core::ops::ControlFlow<core::ops::try_trait::NeverShortCircuit<()>> as core::ops::FromResidual<core::ops::ControlFlow<core::ops::try_trait::NeverShortCircuit<()>, core::convert::Infallible>>>::from_residual",
+  "hash": "46472626336618274238310335203524417225",
+  "hash_direct": "28882088848354584909868424152086815629",
+  "src": "fn from_residual(residual: ControlFlow<B, convert::Infallible>) -> Self {\n        match residual {\n            ControlFlow::Break(b) => ControlFlow::Break(b),\n        }\n    }"
+}

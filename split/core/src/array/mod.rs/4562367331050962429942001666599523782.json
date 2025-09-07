@@ -1,0 +1,13 @@
+{
+  "file": "core/src/array/mod.rs",
+  "name": "<array::TryFromSliceError as clone::Clone>::clone",
+  "hash": "4562367331050962429942001666599523782",
+  "hash_direct": "156553922600278512988604618366876026294",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

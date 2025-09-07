@@ -1,0 +1,11 @@
+{
+  "file": "core/src/num/dec2flt/parse.rs",
+  "name": "num::dec2flt::parse::try_parse_digits::{closure#0}",
+  "hash": "136084625551339858638531556898770380387",
+  "hash_direct": "30833330241305446381522032445252220766",
+  "src": "|digit| {\n        x = x.wrapping_mul(10).wrapping_add(digit as _);\n    }",
+  "callees": [
+    "87170636661664677068004457186813404325",
+    "397719984256995366213973233668163909125"
+  ]
+}

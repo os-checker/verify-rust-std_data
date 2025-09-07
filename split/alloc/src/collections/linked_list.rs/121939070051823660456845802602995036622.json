@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/collections/linked_list.rs",
+  "name": "collections::linked_list::assert_covariance::a::<'_>",
+  "hash": "121939070051823660456845802602995036622",
+  "hash_direct": "947111199653476740318314197716433215617",
+  "src": "fn a<'a>(x: LinkedList<&'static str>) -> LinkedList<&'a str> {\n        x\n    }"
+}

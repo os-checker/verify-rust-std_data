@@ -1,0 +1,7 @@
+{
+  "file": "core/src/slice/mod.rs",
+  "name": "<ops::range::RangeInclusive<usize> as slice::GetDisjointMutIndex>::is_in_bounds",
+  "hash": "22422257990286609754819917724897024679",
+  "hash_direct": "1844606662066772979312523262297252332729",
+  "src": "fn is_in_bounds(&self, len: usize) -> bool {\n        (self.start <= self.end) & (self.end < len)\n    }"
+}

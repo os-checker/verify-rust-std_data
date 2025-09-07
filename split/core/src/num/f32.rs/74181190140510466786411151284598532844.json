@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f32.rs",
+  "name": "f32::<impl f32>::EXP_MASK",
+  "hash": "74181190140510466786411151284598532844",
+  "hash_direct": "782807394393420142111807928764101151802",
+  "src": "pub(crate) const EXP_MASK: u32 = 0x7f80_0000;"
+}

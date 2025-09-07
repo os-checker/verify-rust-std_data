@@ -1,0 +1,11 @@
+{
+  "file": "core/src/option.rs",
+  "name": "core::option::Option::<usize>::is_none_or::<{closure@<vec::into_iter::IntoIter<u8> as core::iter::Iterator>::collect<vec::Vec<u8>>::{closure#0}}>",
+  "hash": "61704723643431364315847141055216239692",
+  "hash_direct": "101913136227521858291031450549866329112",
+  "src": "pub const fn is_none_or(self, f: impl [const] FnOnce(T) -> bool + [const] Destruct) -> bool {\n        match self {\n            None => true,\n            Some(x) => f(x),\n        }\n    }",
+  "callees": [
+    "728803677246130818014179317963692087411",
+    "27869727459316725487526972366365708599"
+  ]
+}

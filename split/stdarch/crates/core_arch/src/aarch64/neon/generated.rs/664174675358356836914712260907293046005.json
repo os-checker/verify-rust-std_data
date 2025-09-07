@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vneg_f64",
+  "hash": "664174675358356836914712260907293046005",
+  "hash_direct": "136482852785370261845525247112976622456",
+  "src": "pub fn vneg_f64(a: float64x1_t) -> float64x1_t {\n    unsafe { simd_neg(a) }\n}"
+}

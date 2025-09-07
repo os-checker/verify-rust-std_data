@@ -1,0 +1,13 @@
+{
+  "file": "core/src/num/dec2flt/mod.rs",
+  "name": "<num::dec2flt::FloatErrorKind as cmp::Eq>::assert_receiver_is_total_eq",
+  "hash": "1332257997316420780915894390392057489961",
+  "hash_direct": "1693557942350196545812325096054452110343",
+  "src": "Eq",
+  "macro_backtrace": [
+    {
+      "callsite": "Eq",
+      "defsite": "pub macro Eq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

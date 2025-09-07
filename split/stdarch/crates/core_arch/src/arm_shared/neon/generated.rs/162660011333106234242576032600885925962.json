@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vbicq_s16",
+  "hash": "162660011333106234242576032600885925962",
+  "hash_direct": "37779036387422341512939905898571328115",
+  "src": "pub fn vbicq_s16(a: int16x8_t, b: int16x8_t) -> int16x8_t {\n    let c = int16x8_t::splat(-1);\n    unsafe { simd_and(simd_xor(b, c), a) }\n}",
+  "callees": [
+    "70681637525790678232819362189660235068"
+  ]
+}

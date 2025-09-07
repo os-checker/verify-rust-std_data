@@ -1,0 +1,13 @@
+{
+  "file": "core/src/slice/mod.rs",
+  "name": "<slice::GetDisjointMutError as cmp::PartialEq>::eq",
+  "hash": "523691030050819918113531301549014319341",
+  "hash_direct": "1186474185317213101012147095922984036603",
+  "src": "PartialEq",
+  "macro_backtrace": [
+    {
+      "callsite": "PartialEq",
+      "defsite": "pub macro PartialEq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/hints.rs",
-  "name": "core_arch::arm_shared::hints::__wfe",
-  "hash": "257205300309342747812349307563273448492",
-  "hash_direct": "1212344207862056353714565718295724882823",
-  "src": "pub unsafe fn __wfe() {\n    hint(HINT_WFE);\n}"
-}

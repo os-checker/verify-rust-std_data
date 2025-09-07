@@ -1,0 +1,7 @@
+{
+  "file": "core/src/bstr/mod.rs",
+  "name": "<bstr::ByteStr as borrow::Borrow<[u8]>>::borrow",
+  "hash": "816867576544826034317855455049284470233",
+  "hash_direct": "88456106298269617796961985678809955999",
+  "src": "fn borrow(&self) -> &[u8] {\n        &self.0\n    }"
+}

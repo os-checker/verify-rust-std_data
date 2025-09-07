@@ -1,0 +1,11 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/mod.rs",
+  "name": "core_arch::aarch64::neon::vld1q_dup_f64",
+  "hash": "158655560918321762811563210838721762295",
+  "hash_direct": "1526497645540319055517003810126318316947",
+  "src": "pub unsafe fn vld1q_dup_f64(ptr: *const f64) -> float64x2_t {\n    let x = vld1q_lane_f64::<0>(ptr, transmute(f64x2::splat(0.)));\n    simd_shuffle!(x, x, [0, 0])\n}",
+  "callees": [
+    "44653434415323292927007534379014759777",
+    "1735795357862304640812105308948086452166"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "file": "core/src/bstr/mod.rs",
+  "name": "<&bstr::ByteStr as default::Default>::default",
+  "hash": "125686440090565287313600801723253413560",
+  "hash_direct": "85128760319583758135729776462603288816",
+  "src": "fn default() -> Self {\n        ByteStr::from_bytes(b\"\")\n    }",
+  "callees": [
+    "12185417676863211823355814096156627848"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f32.rs",
+  "name": "f32::math::abs_sub",
+  "hash": "147824754210793306612224136684974876748",
+  "hash_direct": "37106406462755548367793361112334137097",
+  "src": "pub fn abs_sub(x: f32, other: f32) -> f32 {\n        libm::fdimf(x, other)\n    }"
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/mem/manually_drop.rs",
+  "name": "core::mem::ManuallyDrop::<sync::Arc<[u8; 0]>>::new",
+  "hash": "759963084984823040515358365905261888517",
+  "hash_direct": "165868374898333549118942338731883343745",
+  "src": "pub const fn new(value: T) -> ManuallyDrop<T> {\n        ManuallyDrop { value }\n    }"
+}

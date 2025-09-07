@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/adapters/enumerate.rs",
+  "name": "iter::adapters::enumerate::Enumerate::<slice::iter::Iter<'_, u32>>::new",
+  "hash": "82247094583875632759260556195307788299",
+  "hash_direct": "37931074059742973112511329375783263783",
+  "src": "pub(in crate::iter) fn new(iter: I) -> Enumerate<I> {\n        Enumerate { iter, count: 0 }\n    }"
+}

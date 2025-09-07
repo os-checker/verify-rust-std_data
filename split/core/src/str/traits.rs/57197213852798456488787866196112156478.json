@@ -1,0 +1,7 @@
+{
+  "file": "core/src/str/traits.rs",
+  "name": "str::traits::<impl slice::index::SliceIndex<str> for ops::range::RangeFull>::index",
+  "hash": "57197213852798456488787866196112156478",
+  "hash_direct": "104540081852002738984547953471875716826",
+  "src": "fn index(self, slice: &str) -> &Self::Output {\n        slice\n    }"
+}

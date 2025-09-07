@@ -1,0 +1,10 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<iter::adapters::copied::Copied<slice::iter::Iter<'_, *const ()>> as iter::traits::iterator::Iterator>::enumerate",
+  "hash": "1701103389643170050115445242021760957102",
+  "hash_direct": "18776189268362630892280757189643673900",
+  "src": "fn enumerate(self) -> Enumerate<Self>\n    where\n        Self: Sized,\n    {\n        Enumerate::new(self)\n    }",
+  "callees": [
+    "1841326336142191665814787320219338310143"
+  ]
+}

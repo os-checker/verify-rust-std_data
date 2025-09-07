@@ -1,0 +1,12 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vqrshlh_s16",
+  "hash": "39716029070727245375705458949866855533",
+  "hash_direct": "156741981775278616216945704917925479318",
+  "src": "pub fn vqrshlh_s16(a: i16, b: i16) -> i16 {\n    let a: int16x4_t = vdup_n_s16(a);\n    let b: int16x4_t = vdup_n_s16(b);\n    unsafe { simd_extract!(vqrshl_s16(a, b), 0) }\n}",
+  "callees": [
+    "65859905623404856491752100548310129618",
+    "123113980749581491935761516954662283696",
+    "157559781553867967496342547977077107983"
+  ]
+}

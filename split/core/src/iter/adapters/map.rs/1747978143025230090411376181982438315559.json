@@ -1,0 +1,10 @@
+{
+  "file": "core/src/iter/adapters/map.rs",
+  "name": "core::iter::Map::<core::slice::Iter<'_, u8>, core::slice::ascii::EscapeByte>::into_inner",
+  "hash": "1747978143025230090411376181982438315559",
+  "hash_direct": "1151115383061099896214357338529244239",
+  "src": "pub(crate) fn into_inner(self) -> I {\n        self.iter\n    }",
+  "callees": [
+    "1514665624601991452310444414495230700309"
+  ]
+}

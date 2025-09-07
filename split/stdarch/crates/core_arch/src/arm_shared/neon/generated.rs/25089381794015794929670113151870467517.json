@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vqshl_u64",
-  "hash": "25089381794015794929670113151870467517",
-  "hash_direct": "1375041927575231106214827057696729074293",
-  "src": "pub fn vqshl_u64(a: uint64x1_t, b: int64x1_t) -> uint64x1_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(target_arch = \"arm\", link_name = \"llvm.arm.neon.vqshiftu.v1i64\")]\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.uqshl.v1i64\"\n        )]\n        fn _vqshl_u64(a: uint64x1_t, b: int64x1_t) -> uint64x1_t;\n    }\n    unsafe { _vqshl_u64(a, b) }\n}"
-}

@@ -1,0 +1,11 @@
+{
+  "file": "core/src/slice/cmp.rs",
+  "name": "<[u32] as slice::cmp::SlicePartialEq<u32>>::equal",
+  "hash": "466553277231073908811153551035009520568",
+  "hash_direct": "32476971511408299639764429625282755676",
+  "src": "fn equal(&self, other: &[B]) -> bool {\n        if self.len() != other.len() {\n            return false;\n        }\n\n        // SAFETY: `self` and `other` are references and are thus guaranteed to be valid.\n        // The two slices have been checked to have the same size above.\n        unsafe {\n            let size = size_of_val(self);\n            compare_bytes(self.as_ptr() as *const u8, other.as_ptr() as *const u8, size) == 0\n        }\n    }",
+  "callees": [
+    "494026384611776431717585206890638965910",
+    "300789021156018688612686022687093941341"
+  ]
+}

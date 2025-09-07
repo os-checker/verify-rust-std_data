@@ -1,0 +1,11 @@
+{
+  "file": "core/src/alloc/layout.rs",
+  "name": "alloc::layout::size_align::<i32>",
+  "hash": "156921172482984406314674549785047112585",
+  "hash_direct": "167525875458379956328190896217775888689",
+  "src": "const fn size_align<T>() -> (usize, usize) {\n    (size_of::<T>(), align_of::<T>())\n}",
+  "callees": [
+    "171877024039358361415531368687110875076",
+    "79147560314209947671815415446941048751"
+  ]
+}

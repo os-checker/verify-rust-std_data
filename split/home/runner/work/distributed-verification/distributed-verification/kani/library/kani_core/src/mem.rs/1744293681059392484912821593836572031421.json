@@ -1,0 +1,23 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/mem.rs",
+  "name": "kani::mem::is_initialized::<u32>",
+  "hash": "1744293681059392484912821593836572031421",
+  "hash_direct": "7556651306514566039382947659532626830",
+  "attrs": [
+    "#[kanitool::fn_marker = \"IsInitializedIntrinsic\"]\n"
+  ],
+  "src": "pub(crate) fn is_initialized<T: PointeeSized>(_ptr: *const T) -> bool {\n            kani_intrinsic()\n        }",
+  "macro_backtrace": [
+    {
+      "callsite": "kani_core::kani_mem!(core)",
+      "defsite": "macro_rules! kani_mem"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ],
+  "callees": [
+    "1295499066349112484912490938496969975321"
+  ]
+}

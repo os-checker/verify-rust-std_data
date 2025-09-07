@@ -1,0 +1,10 @@
+{
+  "file": "core/src/num/f16.rs",
+  "name": "f16::<impl f16>::to_int_unchecked::<u128>",
+  "hash": "9400442964412481441134662530568530788",
+  "hash_direct": "1245229780701882486716646958802833734726",
+  "src": "pub unsafe fn to_int_unchecked<Int>(self) -> Int\n    where\n        Self: FloatToInt<Int>,\n    {\n        // SAFETY: the caller must uphold the safety contract for\n        // `FloatToInt::to_int_unchecked`.\n        unsafe { FloatToInt::<Int>::to_int_unchecked(self) }\n    }",
+  "callees": [
+    "1584507318570215242217093049813184331868"
+  ]
+}

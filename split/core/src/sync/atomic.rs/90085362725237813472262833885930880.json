@@ -1,0 +1,14 @@
+{
+  "file": "core/src/sync/atomic.rs",
+  "name": "sync::atomic::AtomicBool::fetch_nand",
+  "hash": "90085362725237813472262833885930880",
+  "hash_direct": "59770044564178829003040625238589776120",
+  "src": "pub fn fetch_nand(&self, val: bool, order: Ordering) -> bool {\n        // We can't use atomic_nand here because it can result in a bool with\n        // an invalid value. This happens because the atomic operation is done\n        // with an 8-bit integer internally, which would set the upper 7 bits.\n        // So we just use fetch_xor or swap instead.\n        if val {\n            // !(x & true) == !x\n            // We must invert the bool.\n            self.fetch_xor(true, order)\n        } else {\n            // !(x & false) == true\n            // We must set the bool to true.\n            self.swap(true, order)\n        }\n    }",
+  "callees": [
+    "163154036748054064804947938080591443326",
+    "58451948492497898931880582248136801712",
+    "1186837886665340036310854247971353381586",
+    "1621896035195046084713955429361162938199",
+    "17742179607541277545332297688417876232"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "file": "core/src/fmt/builders.rs",
+  "name": "fmt::builders::debug_map_new",
+  "hash": "1639347290071925771016045114099286712026",
+  "hash_direct": "47167616243429737585886180620860500429",
+  "src": "pub(super) fn debug_map_new<'a, 'b>(fmt: &'a mut fmt::Formatter<'b>) -> DebugMap<'a, 'b> {\n    let result = fmt.write_str(\"{\");\n    DebugMap { fmt, result, has_fields: false, has_key: false, state: Default::default() }\n}",
+  "callees": [
+    "81986060615313457313520860313503674379",
+    "243839084150888952911908111539685994713"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/const_ptr.rs",
+  "name": "ptr::const_ptr::<impl *const f64>::cast::<core_arch::aarch64::neon::float64x2_t>",
+  "hash": "690683942833345468714655857065719524279",
+  "hash_direct": "1161318506810293137715168827915460664015",
+  "src": "pub const fn cast<U>(self) -> *const U {\n        self as _\n    }"
+}

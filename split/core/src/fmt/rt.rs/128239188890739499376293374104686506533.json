@@ -1,0 +1,7 @@
+{
+  "file": "core/src/fmt/rt.rs",
+  "name": "core::fmt::rt::<impl core::fmt::Arguments<'_>>::new_v1_formatted",
+  "hash": "128239188890739499376293374104686506533",
+  "hash_direct": "326064491334278623612474657691891576709",
+  "src": "pub unsafe fn new_v1_formatted(\n        pieces: &'a [&'static str],\n        args: &'a [rt::Argument<'a>],\n        fmt: &'a [rt::Placeholder],\n    ) -> Arguments<'a> {\n        Arguments { pieces, fmt: Some(fmt), args }\n    }"
+}

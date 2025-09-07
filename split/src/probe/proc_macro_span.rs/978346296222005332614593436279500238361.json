@@ -1,0 +1,7 @@
+{
+  "file": "src/probe/proc_macro_span.rs",
+  "name": "line",
+  "hash": "978346296222005332614593436279500238361",
+  "hash_direct": "121912527146970925045950569387865781375",
+  "src": "pub fn line(this: &Span) -> usize {\n    this.line()\n}"
+}

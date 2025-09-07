@@ -1,0 +1,7 @@
+{
+  "file": "core/src/mem/transmutability.rs",
+  "name": "mem::transmutability::Assume::and",
+  "hash": "1084455007279128514714263400197774751518",
+  "hash_direct": "2917521986216233294315228202223018478",
+  "src": "pub const fn and(self, other_assumptions: Self) -> Self {\n        Self {\n            alignment: self.alignment || other_assumptions.alignment,\n            lifetimes: self.lifetimes || other_assumptions.lifetimes,\n            safety: self.safety || other_assumptions.safety,\n            validity: self.validity || other_assumptions.validity,\n        }\n    }"
+}

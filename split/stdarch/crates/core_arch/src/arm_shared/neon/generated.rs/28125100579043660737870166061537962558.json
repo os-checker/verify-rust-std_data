@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vcgeq_f32",
+  "hash": "28125100579043660737870166061537962558",
+  "hash_direct": "87455450061168984445594188781939645593",
+  "src": "pub fn vcgeq_f32(a: float32x4_t, b: float32x4_t) -> uint32x4_t {\n    unsafe { simd_ge(a, b) }\n}"
+}

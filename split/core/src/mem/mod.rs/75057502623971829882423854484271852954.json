@@ -1,0 +1,7 @@
+{
+  "file": "core/src/mem/mod.rs",
+  "name": "mem::size_of_val_raw::<[u8]>",
+  "hash": "75057502623971829882423854484271852954",
+  "hash_direct": "815621620293390923012909458003595220130",
+  "src": "pub const unsafe fn size_of_val_raw<T: ?Sized>(val: *const T) -> usize {\n    // SAFETY: the caller must provide a valid raw pointer\n    unsafe { intrinsics::size_of_val(val) }\n}"
+}

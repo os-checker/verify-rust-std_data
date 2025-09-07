@@ -1,0 +1,7 @@
+{
+  "file": "core/src/slice/sort/shared/smallsort.rs",
+  "name": "slice::sort::shared::smallsort::SMALL_SORT_GENERAL_SCRATCH_LEN",
+  "hash": "7679430211341345000610938454003633848",
+  "hash_direct": "1044341409473916109317017505108280271709",
+  "src": "pub(crate) const SMALL_SORT_GENERAL_SCRATCH_LEN: usize = SMALL_SORT_GENERAL_THRESHOLD + 16;"
+}

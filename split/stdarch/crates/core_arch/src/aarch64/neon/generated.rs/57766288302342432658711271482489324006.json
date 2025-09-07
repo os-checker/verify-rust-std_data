@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
-  "name": "core_arch::aarch64::neon::generated::vrndxh_f16",
-  "hash": "57766288302342432658711271482489324006",
-  "hash_direct": "15453332629627567919621334787984136188",
-  "src": "pub fn vrndxh_f16(a: f16) -> f16 {\n    round_ties_even_f16(a)\n}"
-}

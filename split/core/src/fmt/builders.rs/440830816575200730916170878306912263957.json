@@ -1,0 +1,10 @@
+{
+  "file": "core/src/fmt/builders.rs",
+  "name": "fmt::builders::debug_list_new",
+  "hash": "440830816575200730916170878306912263957",
+  "hash_direct": "1224194794103649662018340867524882458798",
+  "src": "pub(super) fn debug_list_new<'a, 'b>(fmt: &'a mut fmt::Formatter<'b>) -> DebugList<'a, 'b> {\n    let result = fmt.write_str(\"[\");\n    DebugList { inner: DebugInner { fmt, result, has_fields: false } }\n}",
+  "callees": [
+    "243839084150888952911908111539685994713"
+  ]
+}

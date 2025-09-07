@@ -1,0 +1,12 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vqdmulhq_n_s16",
+  "hash": "441319852944015667218281166144257651384",
+  "hash_direct": "91685462240544641817494973755835727472",
+  "src": "pub fn vqdmulhq_n_s16(a: int16x8_t, b: i16) -> int16x8_t {\n    let b: int16x8_t = vdupq_n_s16(b);\n    vqdmulhq_s16(a, b)\n}",
+  "callees": [
+    "63786553997269042834392675769039829801",
+    "1601576599117502805614973940682577845379",
+    "70681637525790678232819362189660235068"
+  ]
+}

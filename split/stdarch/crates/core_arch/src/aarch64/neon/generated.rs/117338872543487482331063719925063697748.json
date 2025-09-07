@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
-  "name": "core_arch::aarch64::neon::generated::vrnd64zq_f64",
-  "hash": "117338872543487482331063719925063697748",
-  "hash_direct": "1010098180098592479114691469811852807055",
-  "src": "pub fn vrnd64zq_f64(a: float64x2_t) -> float64x2_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.frint64z.v2f64\"\n        )]\n        fn _vrnd64zq_f64(a: float64x2_t) -> float64x2_t;\n    }\n    unsafe { _vrnd64zq_f64(a) }\n}"
-}

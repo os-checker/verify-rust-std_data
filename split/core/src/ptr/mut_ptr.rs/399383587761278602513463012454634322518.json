@@ -1,0 +1,13 @@
+{
+  "file": "core/src/ptr/mut_ptr.rs",
+  "name": "ptr::mut_ptr::verify::check_mut_offset_from_tuple_3_array::{constant#0}",
+  "hash": "399383587761278602513463012454634322518",
+  "hash_direct": "525381896999642344714363313179899404741",
+  "src": "{ gen_size * ARRAY_LEN }",
+  "macro_backtrace": [
+    {
+      "callsite": "generate_offset_from_harness!(\n        (u32, i16, f32),\n        check_mut_offset_from_tuple_3,\n        check_mut_offset_from_tuple_3_array\n    )",
+      "defsite": "macro_rules! generate_offset_from_harness {\n        ($type: ty, $proof_name1: ident, $proof_name2: ident) => {\n            #[kani::proof_for_contract(<*mut $type>::offset_from)]\n            // Below function is for a single element.\n            pub fn $proof_name1() {\n                const gen_size: usize = mem::size_of::<$type>();\n                let mut generator1 = PointerGenerator::<gen_size>::new();\n                let mut generator2 = PointerGenerator::<gen_size>::new();\n                let ptr1: *mut $type = generator1.any_in_bounds().ptr;\n                let ptr2: *mut $type = if kani::any() {\n                    generator1.any_alloc_status().ptr\n                } else {\n                    generator2.any_alloc_status().ptr\n                };\n\n                unsafe {\n                    ptr1.offset_from(ptr2);\n                }\n            }\n\n            // Below function is for large arrays\n            #[kani::proof_for_contract(<*mut $type>::offset_from)]\n            pub fn $proof_name2() {\n                const gen_size: usize = mem::size_of::<$type>();\n                let mut generator1 = PointerGenerator::<{ gen_size * ARRAY_LEN }>::new();\n                let mut generator2 = PointerGenerator::<{ gen_size * ARRAY_LEN }>::new();\n                let ptr1: *mut $type = generator1.any_in_bounds().ptr;\n                let ptr2: *mut $type = if kani::any() {\n                    generator1.any_alloc_status().ptr\n                } else {\n                    generator2.any_alloc_status().ptr\n                };\n\n                unsafe {\n                    ptr1.offset_from(ptr2);\n                }\n            }\n        };\n    }"
+    }
+  ]
+}

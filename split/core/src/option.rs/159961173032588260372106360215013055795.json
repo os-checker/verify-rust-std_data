@@ -1,0 +1,11 @@
+{
+  "file": "core/src/option.rs",
+  "name": "<option::Item<char::EscapeDebug> as iter::traits::iterator::Iterator>::next",
+  "hash": "159961173032588260372106360215013055795",
+  "hash_direct": "997684789066922374417096424392449139461",
+  "src": "fn next(&mut self) -> Option<A> {\n        self.opt.take()\n    }",
+  "callees": [
+    "300652783215287787118122424895675090929",
+    "833829771046316811218026346220384534200"
+  ]
+}

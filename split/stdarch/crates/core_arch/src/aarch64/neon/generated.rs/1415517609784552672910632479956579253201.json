@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vamin_f32",
+  "hash": "1415517609784552672910632479956579253201",
+  "hash_direct": "171383723538965445757849217379353883396",
+  "src": "pub fn vamin_f32(a: float32x2_t, b: float32x2_t) -> float32x2_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.famin.v2f32\"\n        )]\n        fn _vamin_f32(a: float32x2_t, b: float32x2_t) -> float32x2_t;\n    }\n    unsafe { _vamin_f32(a, b) }\n}"
+}

@@ -1,0 +1,11 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "fmt::Formatter::<'_>::debug_list",
+  "hash": "41327610661720841961024797866793562146",
+  "hash_direct": "601848809838586556911146960969518282264",
+  "src": "pub fn debug_list<'b>(&'b mut self) -> DebugList<'b, 'a> {\n        builders::debug_list_new(self)\n    }",
+  "callees": [
+    "440830816575200730916170878306912263957",
+    "243839084150888952911908111539685994713"
+  ]
+}

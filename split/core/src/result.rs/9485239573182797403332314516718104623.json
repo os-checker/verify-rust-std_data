@@ -1,0 +1,10 @@
+{
+  "file": "core/src/result.rs",
+  "name": "result::Result::<(), num::nonzero::NonZero<usize>>::is_err",
+  "hash": "9485239573182797403332314516718104623",
+  "hash_direct": "6889832513924438252564315588588039822",
+  "src": "pub const fn is_err(&self) -> bool {\n        !self.is_ok()\n    }",
+  "callees": [
+    "10533786826541476628325683021213245090"
+  ]
+}

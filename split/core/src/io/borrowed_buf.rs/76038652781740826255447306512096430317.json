@@ -1,7 +1,0 @@
-{
-  "file": "core/src/io/borrowed_buf.rs",
-  "name": "io::borrowed_buf::BorrowedCursor::<'_>::reborrow",
-  "hash": "76038652781740826255447306512096430317",
-  "hash_direct": "99510582420960980095645607902403311796",
-  "src": "pub fn reborrow<'this>(&'this mut self) -> BorrowedCursor<'this> {\n        BorrowedCursor {\n            // SAFETY: we never assign into `BorrowedCursor::buf`, so treating its\n            // lifetime covariantly is safe.\n            buf: unsafe {\n                mem::transmute::<&'this mut BorrowedBuf<'a>, &'this mut BorrowedBuf<'this>>(\n                    self.buf,\n                )\n            },\n        }\n    }"
-}

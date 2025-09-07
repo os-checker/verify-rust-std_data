@@ -1,0 +1,16 @@
+{
+  "file": "core/src/iter/adapters/zip.rs",
+  "name": "<iter::adapters::zip::Zip<A, B> as iter::traits::iterator::Iterator>::__iterator_get_unchecked::kani_contract_mode",
+  "hash": "889709888248261268618285010488654339943",
+  "hash_direct": "170547669266112801088207344014212647395",
+  "attrs": [
+    "#[kanitool::fn_marker = \"kani_contract_mode\"]\n"
+  ],
+  "src": "#[cfg_attr(kani, kani::modifies(self))]",
+  "macro_backtrace": [
+    {
+      "callsite": "#[cfg_attr(kani, kani::modifies(self))]",
+      "defsite": "pub fn modifies(attr: TokenStream, item: TokenStream) -> TokenStream"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/string.rs",
+  "name": "<string::FromUtf16Error as core::error::Error>::description",
+  "hash": "151753653714415798327334027468080725941",
+  "hash_direct": "694073377203957654611173412155900197449",
+  "src": "fn description(&self) -> &str {\n        \"invalid utf-16\"\n    }"
+}

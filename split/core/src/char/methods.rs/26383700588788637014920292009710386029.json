@@ -1,7 +1,0 @@
-{
-  "file": "core/src/char/methods.rs",
-  "name": "char::methods::<impl char>::is_ascii_whitespace",
-  "hash": "26383700588788637014920292009710386029",
-  "hash_direct": "82179651126956375951853357467452947334",
-  "src": "pub const fn is_ascii_whitespace(&self) -> bool {\n        matches!(*self, '\\t' | '\\n' | '\\x0C' | '\\r' | ' ')\n    }"
-}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/iter/adapters/flatten.rs",
-  "name": "<iter::adapters::flatten::FlattenCompat<I, U> as iter::traits::iterator::Iterator>::try_fold::flatten::<char::EscapeDebug, (), result::Result<(), fmt::Error>, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/iter/traits/iterator.rs:2489:13: 2489:25}>",
-  "hash": "1107974465487945339112992646005637336842",
-  "hash_direct": "27668644381654556417545704787785836102",
-  "src": "fn flatten<U: Iterator, Acc, R: Try<Output = Acc>>(\n            mut fold: impl FnMut(Acc, U::Item) -> R,\n        ) -> impl FnMut(Acc, &mut U) -> R {\n            move |acc, iter| iter.try_fold(acc, &mut fold)\n        }"
-}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/convert/mod.rs",
+  "name": "<str as convert::AsRef<str>>::as_ref",
+  "hash": "1004125838156099188413771402439004121880",
+  "hash_direct": "1828079069493410202310938734869429462185",
+  "src": "fn as_ref(&self) -> &str {\n        self\n    }"
+}

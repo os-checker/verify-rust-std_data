@@ -1,0 +1,23 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/mem.rs",
+  "name": "kani::mem::checked_align_of_raw::<((u8, u8), (u8, u8))>",
+  "hash": "215015517488756289913989348614177148349",
+  "hash_direct": "1444716355686878070214852969081930553015",
+  "attrs": [
+    "#[kanitool::fn_marker = \"CheckedAlignOfIntrinsic\"]\n"
+  ],
+  "src": "pub fn checked_align_of_raw<T: MetaSized>(ptr: *const T) -> Option<usize> {\n            #[cfg(not(feature = \"concrete_playback\"))]\n            return kani_intrinsic();\n\n            #[cfg(feature = \"concrete_playback\")]\n            if core::mem::size_of::<<T as Pointee>::Metadata>() == 0 {\n                // SAFETY: It is currently safe to call this with a thin pointer.\n                unsafe { Some(core::mem::align_of_val_raw(ptr)) }\n            } else {\n                panic!(\"Cannot safely compute size of `{}` at runtime\", core::any::type_name::<T>())\n            }\n        }",
+  "macro_backtrace": [
+    {
+      "callsite": "kani_core::kani_mem!(core)",
+      "defsite": "macro_rules! kani_mem"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ],
+  "callees": [
+    "808690604947597133713899618615583714737"
+  ]
+}

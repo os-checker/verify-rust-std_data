@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/mod.rs",
+  "name": "core::num::<impl u8>::is_ascii_lowercase",
+  "hash": "109376214995813975802462677917621523130",
+  "hash_direct": "10007709863898759138780983946874615858",
+  "src": "pub const fn is_ascii_lowercase(&self) -> bool {\n        matches!(*self, b'a'..=b'z')\n    }"
+}

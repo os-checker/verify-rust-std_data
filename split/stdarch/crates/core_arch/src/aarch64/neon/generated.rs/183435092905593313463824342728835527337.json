@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
-  "name": "core_arch::aarch64::neon::generated::vrndiq_f32",
-  "hash": "183435092905593313463824342728835527337",
-  "hash_direct": "13096007914329432138790680272966395",
-  "src": "pub fn vrndiq_f32(a: float32x4_t) -> float32x4_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.nearbyint.v4f32\"\n        )]\n        fn _vrndiq_f32(a: float32x4_t) -> float32x4_t;\n    }\n    unsafe { _vrndiq_f32(a) }\n}"
-}

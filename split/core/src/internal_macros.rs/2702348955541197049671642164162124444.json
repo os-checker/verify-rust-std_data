@@ -1,0 +1,20 @@
+{
+  "file": "core/src/internal_macros.rs",
+  "name": "<i32 as ops::arith::DivAssign<&i32>>::div_assign",
+  "hash": "2702348955541197049671642164162124444",
+  "hash_direct": "83906191043478903487985563143892254325",
+  "src": "fn $method(&mut self, other: &$u) {\n                $imp::$method(self, *other);\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "forward_ref_op_assign! { impl DivAssign, div_assign for $t, $t,\n        #[stable(feature = \"op_assign_builtins_by_ref\", since = \"1.22.0\")]\n        #[rustc_const_unstable(feature = \"const_ops\", issue = \"143802\")] }",
+      "defsite": "macro_rules! forward_ref_op_assign {\n    (impl $imp:ident, $method:ident for $t:ty, $u:ty, $(#[$attr:meta])+) => {\n        $(#[$attr])+\n        impl const $imp<&$u> for $t {\n            #[inline]\n            #[track_caller]\n            fn $method(&mut self, other: &$u) {\n                $imp::$method(self, *other);\n            }\n        }\n    }\n}"
+    },
+    {
+      "callsite": "div_assign_impl! { usize u8 u16 u32 u64 u128 isize i8 i16 i32 i64 i128 f16 f32 f64 f128 }",
+      "defsite": "macro_rules! div_assign_impl {\n    ($($t:ty)+) => ($(\n        #[stable(feature = \"op_assign_traits\", since = \"1.8.0\")]\n        #[rustc_const_unstable(feature = \"const_ops\", issue = \"143802\")]\n        impl const DivAssign for $t {\n            #[inline]\n            #[track_caller]\n            fn div_assign(&mut self, other: $t) { *self /= other }\n        }\n\n        forward_ref_op_assign! { impl DivAssign, div_assign for $t, $t,\n        #[stable(feature = \"op_assign_builtins_by_ref\", since = \"1.22.0\")]\n        #[rustc_const_unstable(feature = \"const_ops\", issue = \"143802\")] }\n    )+)\n}"
+    }
+  ],
+  "callees": [
+    "116162006915438678092222360406072105553"
+  ]
+}

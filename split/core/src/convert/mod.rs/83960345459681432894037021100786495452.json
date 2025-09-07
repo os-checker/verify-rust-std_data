@@ -1,0 +1,7 @@
+{
+  "file": "core/src/convert/mod.rs",
+  "name": "<core::alloc::AllocError as core::convert::From<core::alloc::AllocError>>::from",
+  "hash": "83960345459681432894037021100786495452",
+  "hash_direct": "1466875094827466053821681345191168342",
+  "src": "fn from(t: T) -> T {\n        t\n    }"
+}

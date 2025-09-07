@@ -1,0 +1,26 @@
+{
+  "file": "core/src/alloc/layout.rs",
+  "name": "core::alloc::Layout::array::inner",
+  "hash": "8733984433108875650667174123076132485",
+  "hash_direct": "65875582350103910933339023549978263267",
+  "src": "const fn inner(element_layout: Layout, n: usize) -> Result<Layout, LayoutError> {\n            let Layout { size: element_size, align } = element_layout;\n\n            // We need to check two things about the size:\n            //  - That the total size won't overflow a `usize`, and\n            //  - That the total size still fits in an `isize`.\n            // By using division we can check them both with a single threshold.\n            // That'd usually be a bad idea, but thankfully here the element size\n            // and alignment are constants, so the compiler will fold all of it.\n            if element_size != 0 && n > Layout::max_size_for_align(align) / element_size {\n                return Err(LayoutError);\n            }\n\n            // SAFETY: We just checked that we won't overflow `usize` when we multiply.\n            // This is a useless hint inside this function, but after inlining this helps\n            // deduplicate checks for whether the overall capacity is zero (e.g., in RawVec's\n            // allocation path) before/after this multiplication.\n            let array_size = unsafe { unchecked_mul(element_size, n) };\n\n            // SAFETY: We just checked above that the `array_size` will not\n            // exceed `isize::MAX` even when rounded up to the alignment.\n            // And `Alignment` guarantees it's a power of two.\n            unsafe { Ok(Layout::from_size_align_unchecked(array_size, align.as_usize())) }\n        }",
+  "callees": [
+    "1803329896288060234818324505062680243524",
+    "74582435882304541756907371447791300562",
+    "116988710396478150633330979827831642523",
+    "12281449246394340237926324936375242532",
+    "181267529910573756716102767087485333561",
+    "1824545319189397521315695847785602896178",
+    "897265533945643607115272871669854221703",
+    "89502211078669479795623704974378882516",
+    "986792852990965178117440249555081278778",
+    "90818112465881722349174357944217011292",
+    "63085389524472853348886374617170044294",
+    "41567241620038406215851091758143153711",
+    "219219865313711050111759755233398488515",
+    "117471816198702018754540855755299259662",
+    "102689691599348045787776542664671783227",
+    "166733430212842246099444193348241345083",
+    "112989397975222255532054380452996322405"
+  ]
+}

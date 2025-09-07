@@ -1,0 +1,14 @@
+{
+  "file": "core/src/slice/mod.rs",
+  "name": "core::slice::<impl [usize]>::chunks",
+  "hash": "440816482485945841515447314887867562352",
+  "hash_direct": "925341321090045508212390548255321610859",
+  "src": "pub const fn chunks(&self, chunk_size: usize) -> Chunks<'_, T> {\n        assert!(chunk_size != 0, \"chunk size must be non-zero\");\n        Chunks::new(self, chunk_size)\n    }",
+  "callees": [
+    "12281449246394340237926324936375242532",
+    "986792852990965178117440249555081278778",
+    "90818112465881722349174357944217011292",
+    "146612017564224181584303574960223420416",
+    "128398765141298140265495969286974493347"
+  ]
+}

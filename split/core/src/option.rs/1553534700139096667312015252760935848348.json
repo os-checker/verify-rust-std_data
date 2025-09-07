@@ -1,0 +1,10 @@
+{
+  "file": "core/src/option.rs",
+  "name": "option::Option::<u32>::unwrap_or_default",
+  "hash": "1553534700139096667312015252760935848348",
+  "hash_direct": "269942490110897944610604095751415587",
+  "src": "pub const fn unwrap_or_default(self) -> T\n    where\n        T: [const] Default,\n    {\n        match self {\n            Some(x) => x,\n            None => T::default(),\n        }\n    }",
+  "callees": [
+    "176721295741621449156391608664984007411"
+  ]
+}

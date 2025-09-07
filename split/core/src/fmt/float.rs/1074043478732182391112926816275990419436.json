@@ -1,0 +1,16 @@
+{
+  "file": "core/src/fmt/float.rs",
+  "name": "<f32 as fmt::float::GeneralFormat>::already_rounded_value_should_use_exponential",
+  "hash": "1074043478732182391112926816275990419436",
+  "hash_direct": "92681277657000994245784196849771608551",
+  "src": "fn already_rounded_value_should_use_exponential(&self) -> bool {\n                let abs = $t::abs(*self);\n                (abs != 0.0 && abs < 1e-4) || abs >= 1e+16\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "impl_general_format! { f32 f64 }",
+      "defsite": "macro_rules! impl_general_format {\n    ($($t:ident)*) => {\n        $(impl GeneralFormat for $t {\n            fn already_rounded_value_should_use_exponential(&self) -> bool {\n                let abs = $t::abs(*self);\n                (abs != 0.0 && abs < 1e-4) || abs >= 1e+16\n            }\n        })*\n    }\n}"
+    }
+  ],
+  "callees": [
+    "7140594435781266806154578540850139692"
+  ]
+}

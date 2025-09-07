@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vtrnq_f32",
+  "hash": "31859175190269464773692729730899010917",
+  "hash_direct": "64238140757216912348149647206737982057",
+  "src": "pub fn vtrnq_f32(a: float32x4_t, b: float32x4_t) -> float32x4x2_t {\n    unsafe {\n        let a1: float32x4_t = simd_shuffle!(a, b, [0, 4, 2, 6]);\n        let b1: float32x4_t = simd_shuffle!(a, b, [1, 5, 3, 7]);\n        transmute((a1, b1))\n    }\n}"
+}

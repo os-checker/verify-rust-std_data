@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ops/try_trait.rs",
+  "name": "<core::ops::try_trait::NeverShortCircuit<usize> as core::ops::FromResidual>::from_residual",
+  "hash": "170708008206974315912237474060989130492",
+  "hash_direct": "967655525382933678910369991288289104271",
+  "src": "fn from_residual(never: NeverShortCircuitResidual) -> Self {\n        match never {}\n    }"
+}

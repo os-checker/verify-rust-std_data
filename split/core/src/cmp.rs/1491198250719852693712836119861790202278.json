@@ -1,0 +1,11 @@
+{
+  "file": "core/src/cmp.rs",
+  "name": "cmp::impls::<impl cmp::PartialEq for &[i64; 2]>::eq",
+  "hash": "1491198250719852693712836119861790202278",
+  "hash_direct": "69567802498092951311821985668198947405",
+  "src": "fn eq(&self, other: &&B) -> bool {\n            PartialEq::eq(*self, *other)\n        }",
+  "callees": [
+    "5139741364510002675918510837927932862",
+    "1586838070015097146718117554388461340391"
+  ]
+}

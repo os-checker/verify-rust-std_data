@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/adapters/fuse.rs",
+  "name": "core::iter::Fuse::<core::iter::Map<core::slice::Iter<'_, u8>, core::slice::ascii::EscapeByte>>::new",
+  "hash": "724385813079616996718319265690785988195",
+  "hash_direct": "1433905541989199411111468851567474896804",
+  "src": "pub(in crate::iter) fn new(iter: I) -> Fuse<I> {\n        Fuse { iter: Some(iter) }\n    }"
+}

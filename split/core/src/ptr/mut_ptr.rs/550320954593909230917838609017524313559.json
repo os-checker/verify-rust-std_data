@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/mut_ptr.rs",
+  "name": "ptr::mut_ptr::<impl *mut [mem::maybe_uninit::MaybeUninit<(i8, u16, i32, u64, isize)>]>::len",
+  "hash": "550320954593909230917838609017524313559",
+  "hash_direct": "73674724458042099836788317344271373713",
+  "src": "pub const fn len(self) -> usize {\n        metadata(self)\n    }",
+  "callees": [
+    "131632623155026531303545583214835257543"
+  ]
+}

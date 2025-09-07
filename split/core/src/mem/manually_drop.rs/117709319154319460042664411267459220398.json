@@ -1,0 +1,7 @@
+{
+  "file": "core/src/mem/manually_drop.rs",
+  "name": "<core::mem::ManuallyDrop<boxed::Box<core::bstr::ByteStr>> as core::ops::DerefMut>::deref_mut",
+  "hash": "117709319154319460042664411267459220398",
+  "hash_direct": "7519805433222696439188836458389269457",
+  "src": "fn deref_mut(&mut self) -> &mut T {\n        &mut self.value\n    }"
+}

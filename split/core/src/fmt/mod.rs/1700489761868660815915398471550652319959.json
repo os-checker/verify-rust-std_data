@@ -1,7 +1,0 @@
-{
-  "file": "core/src/fmt/mod.rs",
-  "name": "fmt::FormattingOptions::get_sign",
-  "hash": "1700489761868660815915398471550652319959",
-  "hash_direct": "48120375432233376110674710519578994514",
-  "src": "pub const fn get_sign(&self) -> Option<Sign> {\n        if self.flags & flags::SIGN_PLUS_FLAG != 0 {\n            Some(Sign::Plus)\n        } else if self.flags & flags::SIGN_MINUS_FLAG != 0 {\n            Some(Sign::Minus)\n        } else {\n            None\n        }\n    }"
-}

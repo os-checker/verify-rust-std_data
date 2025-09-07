@@ -1,0 +1,7 @@
+{
+  "file": "core/src/cmp.rs",
+  "name": "cmp::impls::<impl cmp::Ord for bool>::min",
+  "hash": "45249092865509278445496023662989879959",
+  "hash_direct": "113416957575275284007740751723075139201",
+  "src": "fn min(self, other: bool) -> bool {\n            self & other\n        }"
+}

@@ -1,0 +1,16 @@
+{
+  "file": "core/src/mem/mod.rs",
+  "name": "mem::swap::kani_contract_mode",
+  "hash": "162765893897437527314167589271812008886",
+  "hash_direct": "20334144263079212101660839058015990652",
+  "attrs": [
+    "#[kanitool::fn_marker = \"kani_contract_mode\"]\n"
+  ],
+  "src": "crate::kani::modifies(x)",
+  "macro_backtrace": [
+    {
+      "callsite": "crate::kani::modifies(x)",
+      "defsite": "pub fn modifies(attr: TokenStream, item: TokenStream) -> TokenStream"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "file": "alloc/src/alloc.rs",
+  "name": "<alloc::Global as core::clone::Clone>::clone",
+  "hash": "188618813038227315415644954775386001916",
+  "hash_direct": "1342033921112852598714856082692723796912",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone"
+    }
+  ]
+}

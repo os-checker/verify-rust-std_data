@@ -1,7 +1,0 @@
-{
-  "file": "core/src/ffi/c_str.rs",
-  "name": "ffi::c_str::CStr::to_bytes_with_nul",
-  "hash": "58391052692638152419965317753136979131",
-  "hash_direct": "100880789875556732429429847914699839466",
-  "src": "pub const fn to_bytes_with_nul(&self) -> &[u8] {\n        // SAFETY: Transmuting a slice of `c_char`s to a slice of `u8`s\n        // is safe on all supported targets.\n        unsafe { &*((&raw const self.inner) as *const [u8]) }\n    }"
-}

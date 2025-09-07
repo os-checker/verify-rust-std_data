@@ -1,7 +1,0 @@
-{
-  "file": "core/src/fmt/mod.rs",
-  "name": "fmt::Formatter::<'_>::debug_lower_hex",
-  "hash": "17071058974145005632186640793723653443",
-  "hash_direct": "213751405682235534617832258937273707858",
-  "src": "fn debug_lower_hex(&self) -> bool {\n        self.options.flags & flags::DEBUG_LOWER_HEX_FLAG != 0\n    }"
-}

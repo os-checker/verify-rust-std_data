@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/adapters/rev.rs",
+  "name": "iter::adapters::rev::Rev::<slice::iter::IterMut<'_, u32>>::new",
+  "hash": "1292109234039467605109114823143827250",
+  "hash_direct": "111881680786061952586177599832775814447",
+  "src": "pub(in crate::iter) fn new(iter: T) -> Rev<T> {\n        Rev { iter }\n    }"
+}

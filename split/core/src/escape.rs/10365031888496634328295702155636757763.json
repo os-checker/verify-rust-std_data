@@ -1,0 +1,7 @@
+{
+  "file": "core/src/escape.rs",
+  "name": "escape::EscapeIterInner::<10, escape::MaybeEscaped>::printable",
+  "hash": "10365031888496634328295702155636757763",
+  "hash_direct": "144411001772520998714088727408811037950",
+  "src": "pub(crate) const fn printable(c: char) -> Self {\n        Self {\n            data: MaybeEscapedCharacter { literal: c },\n            // Uphold the invariant `alive.end > Self::LITERAL_ESCAPE_START`, and ensure\n            // `len` behaves correctly for iterating through one character literal.\n            alive: Self::LITERAL_ESCAPE_START..(Self::LITERAL_ESCAPE_START + 1),\n            escaping: PhantomData,\n        }\n    }"
+}

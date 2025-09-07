@@ -1,0 +1,10 @@
+{
+  "file": "core/src/slice/iter.rs",
+  "name": "<slice::iter::Split<'_, u8, str::IsAsciiWhitespace> as clone::Clone>::clone",
+  "hash": "70199811561411919145895661843698109357",
+  "hash_direct": "62420895663417782447662244389095920900",
+  "src": "fn clone(&self) -> Self {\n        Split { v: self.v, pred: self.pred.clone(), finished: self.finished }\n    }",
+  "callees": [
+    "690259270114141726215596604235015012549"
+  ]
+}

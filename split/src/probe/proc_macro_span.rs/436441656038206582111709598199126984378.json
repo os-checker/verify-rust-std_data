@@ -1,0 +1,7 @@
+{
+  "file": "src/probe/proc_macro_span.rs",
+  "name": "end",
+  "hash": "436441656038206582111709598199126984378",
+  "hash_direct": "28875668219369334006433357066070232765",
+  "src": "pub fn end(this: &Span) -> Span {\n    this.end()\n}"
+}

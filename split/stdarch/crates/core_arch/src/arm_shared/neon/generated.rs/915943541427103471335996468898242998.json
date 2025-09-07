@@ -1,0 +1,12 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vabsh_f16",
+  "hash": "915943541427103471335996468898242998",
+  "hash_direct": "86231585167115584725113343318199653250",
+  "src": "pub fn vabsh_f16(a: f16) -> f16 {\n    unsafe { simd_extract!(vabs_f16(vdup_n_f16(a)), 0) }\n}",
+  "callees": [
+    "606748749120295437513033185379323889512",
+    "387819937783107881412204763390036355174",
+    "170194402061146878175814615804956874944"
+  ]
+}

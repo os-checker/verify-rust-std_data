@@ -1,0 +1,12 @@
+{
+  "file": "alloc/src/alloc.rs",
+  "name": "alloc::realloc",
+  "hash": "92070042683033039606508164864049320478",
+  "hash_direct": "149019764846786741124440010644727913946",
+  "src": "pub unsafe fn realloc(ptr: *mut u8, layout: Layout, new_size: usize) -> *mut u8 {\n    unsafe { __rust_realloc(ptr, layout.size(), layout.align(), new_size) }\n}",
+  "callees": [
+    "12355321507198182179923507819259328874",
+    "1099899350342654162615874749245636043676",
+    "41567241620038406215851091758143153711"
+  ]
+}

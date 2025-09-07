@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/adapters/fuse.rs",
+  "name": "core::iter::Fuse::<core::iter::Map<core::slice::Iter<'_, u8>, core::slice::ascii::EscapeByte>>::into_inner",
+  "hash": "78626853076637519859980681949473968776",
+  "hash_direct": "134275712200052821812792546340116275871",
+  "src": "pub(crate) fn into_inner(self) -> Option<I> {\n        self.iter\n    }"
+}

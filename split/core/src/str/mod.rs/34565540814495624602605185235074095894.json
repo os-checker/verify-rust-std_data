@@ -1,0 +1,7 @@
+{
+  "file": "core/src/str/mod.rs",
+  "name": "str::<impl str>::as_bytes_mut",
+  "hash": "34565540814495624602605185235074095894",
+  "hash_direct": "4724973233095987368226121955715958995",
+  "src": "pub const unsafe fn as_bytes_mut(&mut self) -> &mut [u8] {\n        // SAFETY: the cast from `&str` to `&[u8]` is safe since `str`\n        // has the same layout as `&[u8]` (only std can make this guarantee).\n        // The pointer dereference is safe since it comes from a mutable reference which\n        // is guaranteed to be valid for writes.\n        unsafe { &mut *(self as *mut str as *mut [u8]) }\n    }"
+}

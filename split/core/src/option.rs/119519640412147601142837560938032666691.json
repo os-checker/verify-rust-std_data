@@ -1,0 +1,10 @@
+{
+  "file": "core/src/option.rs",
+  "name": "<core::option::Option<u8> as core::cmp::PartialEq>::eq",
+  "hash": "119519640412147601142837560938032666691",
+  "hash_direct": "13675568430530722365621129824646141348",
+  "src": "fn eq(&self, other: &Self) -> bool {\n        // Spelling out the cases explicitly optimizes better than\n        // `_ => false`\n        match (self, other) {\n            (Some(l), Some(r)) => *l == *r,\n            (Some(_), None) => false,\n            (None, Some(_)) => false,\n            (None, None) => true,\n        }\n    }",
+  "callees": [
+    "1593669671894872531511283277678965212892"
+  ]
+}

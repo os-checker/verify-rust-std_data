@@ -1,0 +1,10 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<core::ops::Range<usize> as core::iter::Iterator>::rev",
+  "hash": "146105268075378471708202374381697028730",
+  "hash_direct": "11784232956066949314908895372503698481",
+  "src": "fn rev(self) -> Rev<Self>\n    where\n        Self: Sized + DoubleEndedIterator,\n    {\n        Rev::new(self)\n    }",
+  "callees": [
+    "175902738860881228615483607864010986597"
+  ]
+}

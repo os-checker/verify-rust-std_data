@@ -1,0 +1,13 @@
+{
+  "file": "core/src/char/decode.rs",
+  "name": "<char::decode::DecodeUtf16Error as cmp::Eq>::assert_receiver_is_total_eq",
+  "hash": "35536810418520555035725241150857337",
+  "hash_direct": "664256696517339791717942573559170699184",
+  "src": "Eq",
+  "macro_backtrace": [
+    {
+      "callsite": "Eq",
+      "defsite": "pub macro Eq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

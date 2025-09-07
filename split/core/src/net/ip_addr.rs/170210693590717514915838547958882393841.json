@@ -1,0 +1,10 @@
+{
+  "file": "core/src/net/ip_addr.rs",
+  "name": "<net::ip_addr::IpAddr as convert::From<[u8; 4]>>::from",
+  "hash": "170210693590717514915838547958882393841",
+  "hash_direct": "851782050723416310814729719154105168513",
+  "src": "fn from(octets: [u8; 4]) -> IpAddr {\n        IpAddr::V4(Ipv4Addr::from(octets))\n    }",
+  "callees": [
+    "590872620568502661513453452280775232682"
+  ]
+}

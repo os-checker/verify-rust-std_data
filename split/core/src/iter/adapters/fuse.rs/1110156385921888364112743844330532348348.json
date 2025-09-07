@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/adapters/fuse.rs",
+  "name": "iter::adapters::fuse::Fuse::<iter::adapters::map::Map<str::iter::Chars<'_>, str::CharEscapeDebugContinue>>::new",
+  "hash": "1110156385921888364112743844330532348348",
+  "hash_direct": "112015002041673369491185747317020727274",
+  "src": "pub(in crate::iter) fn new(iter: I) -> Fuse<I> {\n        Fuse { iter: Some(iter) }\n    }"
+}

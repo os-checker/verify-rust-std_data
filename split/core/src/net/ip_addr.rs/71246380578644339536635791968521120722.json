@@ -1,0 +1,11 @@
+{
+  "file": "core/src/net/ip_addr.rs",
+  "name": "net::ip_addr::Ipv6Addr::to_ipv4_mapped",
+  "hash": "71246380578644339536635791968521120722",
+  "hash_direct": "998634262080917854416989085972129853222",
+  "src": "pub const fn to_ipv4_mapped(&self) -> Option<Ipv4Addr> {\n        match self.octets() {\n            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xff, 0xff, a, b, c, d] => {\n                Some(Ipv4Addr::new(a, b, c, d))\n            }\n            _ => None,\n        }\n    }",
+  "callees": [
+    "6502083445142584246779010121987916385",
+    "62038573511047791971320547253979391011"
+  ]
+}

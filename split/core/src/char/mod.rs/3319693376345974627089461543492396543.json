@@ -1,0 +1,43 @@
+{
+  "file": "core/src/char/mod.rs",
+  "name": "<char::ToUppercase as iter::traits::iterator::Iterator>::count",
+  "hash": "3319693376345974627089461543492396543",
+  "hash_direct": "136689731080868752021182776174025590102",
+  "src": "fn count(self) -> usize {\n                self.0.count()\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "casemappingiter_impls! {\n    /// Returns an iterator that yields the uppercase equivalent of a `char`.\n    ///\n    /// This `struct` is created by the [`to_uppercase`] method on [`char`]. See\n    /// its documentation for more.\n    ///\n    /// [`to_uppercase`]: char::to_uppercase\n    ToUppercase\n}",
+      "defsite": "macro_rules! casemappingiter_impls {\n    ($(#[$attr:meta])* $ITER_NAME:ident) => {\n        $(#[$attr])*\n        #[stable(feature = \"rust1\", since = \"1.0.0\")]\n        #[derive(Debug, Clone)]\n        pub struct $ITER_NAME(CaseMappingIter);\n\n        #[stable(feature = \"rust1\", since = \"1.0.0\")]\n        impl Iterator for $ITER_NAME {\n            type Item = char;\n            fn next(&mut self) -> Option<char> {\n                self.0.next()\n            }\n\n            fn size_hint(&self) -> (usize, Option<usize>) {\n                self.0.size_hint()\n            }\n\n            fn fold<Acc, Fold>(self, init: Acc, fold: Fold) -> Acc\n            where\n                Fold: FnMut(Acc, Self::Item) -> Acc,\n            {\n                self.0.fold(init, fold)\n            }\n\n            fn count(self) -> usize {\n                self.0.count()\n            }\n\n            fn last(self) -> Option<Self::Item> {\n                self.0.last()\n            }\n\n            fn advance_by(&mut self, n: usize) -> Result<(), NonZero<usize>> {\n                self.0.advance_by(n)\n            }\n\n            #[requires(idx < self.0.len())]\n            unsafe fn __iterator_get_unchecked(&mut self, idx: usize) -> Self::Item {\n                // SAFETY: just forwarding requirements to caller\n                unsafe { self.0.__iterator_get_unchecked(idx) }\n            }\n        }\n\n        #[stable(feature = \"case_mapping_double_ended\", since = \"1.59.0\")]\n        impl DoubleEndedIterator for $ITER_NAME {\n            fn next_back(&mut self) -> Option<char> {\n                self.0.next_back()\n            }\n\n            fn rfold<Acc, Fold>(self, init: Acc, rfold: Fold) -> Acc\n            where\n                Fold: FnMut(Acc, Self::Item) -> Acc,\n            {\n                self.0.rfold(init, rfold)\n            }\n\n            fn advance_back_by(&mut self, n: usize) -> Result<(), NonZero<usize>> {\n                self.0.advance_back_by(n)\n            }\n        }\n\n        #[stable(feature = \"fused\", since = \"1.26.0\")]\n        impl FusedIterator for $ITER_NAME {}\n\n        #[stable(feature = \"exact_size_case_mapping_iter\", since = \"1.35.0\")]\n        impl ExactSizeIterator for $ITER_NAME {\n            fn len(&self) -> usize {\n                self.0.len()\n            }\n\n            fn is_empty(&self) -> bool {\n                self.0.is_empty()\n            }\n        }\n\n        // SAFETY: forwards to inner `array::IntoIter`\n        #[unstable(feature = \"trusted_len\", issue = \"37572\")]\n        unsafe impl TrustedLen for $ITER_NAME {}\n\n        // SAFETY: forwards to inner `array::IntoIter`\n        #[doc(hidden)]\n        #[unstable(feature = \"std_internals\", issue = \"none\")]\n        unsafe impl TrustedRandomAccessNoCoerce for $ITER_NAME {\n            const MAY_HAVE_SIDE_EFFECT: bool = false;\n        }\n\n        // SAFETY: this iter has no subtypes/supertypes\n        #[doc(hidden)]\n        #[unstable(feature = \"std_internals\", issue = \"none\")]\n        unsafe impl TrustedRandomAccess for $ITER_NAME {}\n\n        #[stable(feature = \"char_struct_display\", since = \"1.16.0\")]\n        impl fmt::Display for $ITER_NAME {\n            #[inline]\n            fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {\n                fmt::Display::fmt(&self.0, f)\n            }\n        }\n    }\n}"
+    }
+  ],
+  "callees": [
+    "1003609651494284879511269085518126618702",
+    "127535574091756567322081887289998158489",
+    "51025675943828755637037811994748094664",
+    "1757865048021554780412516866743607567507",
+    "432200847242283258317865507289680966202",
+    "104498957538905282611513430893787585158",
+    "747234038101549700711091780759010802194",
+    "16442009387475745783617092712059147964",
+    "258820287469578611817448591488600041899",
+    "17421822894816687532325615181214565887",
+    "1693704404702877509412168993389266069802",
+    "366974912920839386515801963218903644372",
+    "884246074448727927914595282961940941192",
+    "975615807404907599012293873143289411403",
+    "27547235193633795771352944920978011050",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "478753423337745817613297159272845606672",
+    "17885338024940159556008007307872397104",
+    "670549127685520545617164454934528456005",
+    "1455939416681365858411630709201355813806",
+    "1388218849702697856212194078385673197731",
+    "73605271436615433592782990893848785911",
+    "643776580154816945711014088420858857492",
+    "32193535572390591639577511843833454884",
+    "65529622751361832374440681269696012118",
+    "710754756506940669613624793655219204199",
+    "98672616218528724113768882390038008401"
+  ]
+}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/cell.rs",
-  "name": "cell::UnsafeCell::<usize>::new",
-  "hash": "1132660573669465424310705546493073554843",
-  "hash_direct": "1410473210441080519917274584786899347475",
-  "src": "pub const fn new(value: T) -> UnsafeCell<T> {\n        UnsafeCell { value }\n    }"
-}

@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vclz_u32",
+  "hash": "348900012058941236329182715357753632",
+  "hash_direct": "118440168900720711945306146893026057181",
+  "src": "pub fn vclz_u32(a: uint32x2_t) -> uint32x2_t {\n    unsafe { transmute(vclz_s32(transmute(a))) }\n}",
+  "callees": [
+    "177345904056103832432893863124777402613"
+  ]
+}

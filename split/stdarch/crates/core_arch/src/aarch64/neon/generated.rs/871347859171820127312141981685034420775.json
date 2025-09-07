@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
-  "name": "core_arch::aarch64::neon::generated::vpmaxq_f16",
-  "hash": "871347859171820127312141981685034420775",
-  "hash_direct": "124548114650302055236858534001356434911",
-  "src": "pub fn vpmaxq_f16(a: float16x8_t, b: float16x8_t) -> float16x8_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.fmaxp.v8f16\"\n        )]\n        fn _vpmaxq_f16(a: float16x8_t, b: float16x8_t) -> float16x8_t;\n    }\n    unsafe { _vpmaxq_f16(a, b) }\n}"
-}

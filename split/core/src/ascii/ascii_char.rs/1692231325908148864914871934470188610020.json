@@ -1,0 +1,12 @@
+{
+  "file": "core/src/ascii/ascii_char.rs",
+  "name": "ascii::ascii_char::AsciiChar::eq_ignore_case",
+  "hash": "1692231325908148864914871934470188610020",
+  "hash_direct": "960328771541393073612964540587708845990",
+  "src": "pub const fn eq_ignore_case(self, other: Self) -> bool {\n        // FIXME(const-hack) `arg.to_u8().to_ascii_lowercase()` -> `arg.to_lowercase()`\n        // once `PartialEq` is const for `Self`.\n        self.to_u8().to_ascii_lowercase() == other.to_u8().to_ascii_lowercase()\n    }",
+  "callees": [
+    "211389067699639933614636457746408448112",
+    "69417484249274791359857467967200926715",
+    "1766778296466189972714376152058119054158"
+  ]
+}

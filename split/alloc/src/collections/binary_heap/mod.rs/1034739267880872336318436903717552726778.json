@@ -1,0 +1,10 @@
+{
+  "file": "alloc/src/collections/binary_heap/mod.rs",
+  "name": "collections::binary_heap::BinaryHeap::<T, A>::rebuild_tail::log2_fast",
+  "hash": "1034739267880872336318436903717552726778",
+  "hash_direct": "146942883641150314743497046539993020915",
+  "src": "fn log2_fast(x: usize) -> usize {\n            (usize::BITS - x.leading_zeros() - 1) as usize\n        }",
+  "callees": [
+    "584486653938484099616312941320174546863"
+  ]
+}

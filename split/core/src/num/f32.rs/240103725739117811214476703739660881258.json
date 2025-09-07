@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f32.rs",
+  "name": "core::f32::<impl f32>::to_bits",
+  "hash": "240103725739117811214476703739660881258",
+  "hash_direct": "613801264376858449213013957717243681967",
+  "src": "pub const fn to_bits(self) -> u32 {\n        // SAFETY: `u32` is a plain old datatype so we can always transmute to it.\n        unsafe { mem::transmute(self) }\n    }"
+}

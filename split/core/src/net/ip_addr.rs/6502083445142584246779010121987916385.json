@@ -1,0 +1,7 @@
+{
+  "file": "core/src/net/ip_addr.rs",
+  "name": "net::ip_addr::Ipv4Addr::new",
+  "hash": "6502083445142584246779010121987916385",
+  "hash_direct": "36045321572557468246889322760257126227",
+  "src": "pub const fn new(a: u8, b: u8, c: u8, d: u8) -> Ipv4Addr {\n        Ipv4Addr { octets: [a, b, c, d] }\n    }"
+}

@@ -1,0 +1,10 @@
+{
+  "file": "core/src/cmp.rs",
+  "name": "cmp::Ordering::is_gt",
+  "hash": "1413669743415980651815482576558527560187",
+  "hash_direct": "322053555091738635711752326542947177984",
+  "src": "pub const fn is_gt(self) -> bool {\n        self.as_raw() > 0\n    }",
+  "callees": [
+    "1599087357710868766316850218022372470465"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/adapters/map.rs",
+  "name": "core::iter::adapters::map::map_fold::<&u8, usize, usize, {closure@<core::iter::Filter<I, P> as core::iter::Iterator>::count::to_usize<&u8, {closure@core::str::count::char_count_general_case::{closure#0}}>::{closure#0}}, {closure@<usize as core::iter::Sum>::sum<core::iter::Map<core::slice::Iter<'_, u8>, {closure@<core::iter::Filter<I, P> as core::iter::Iterator>::count::to_usize<&u8, {closure@core::str::count::char_count_general_case::{closure#0}}>::{closure#0}}>>::{closure#0}}>",
+  "hash": "15804635088801066627112286658528667863",
+  "hash_direct": "105530443482669009121974155552109850367",
+  "src": "fn map_fold<T, B, Acc>(\n    mut f: impl FnMut(T) -> B,\n    mut g: impl FnMut(Acc, B) -> Acc,\n) -> impl FnMut(Acc, T) -> Acc {\n    move |acc, elt| g(acc, f(elt))\n}"
+}

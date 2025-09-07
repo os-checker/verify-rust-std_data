@@ -1,0 +1,7 @@
+{
+  "file": "core/src/convert/mod.rs",
+  "name": "<core::fmt::Error as core::convert::From<core::fmt::Error>>::from",
+  "hash": "271581865380915142716623206153391998575",
+  "hash_direct": "125884653299706139291181733085629276395",
+  "src": "fn from(t: T) -> T {\n        t\n    }"
+}

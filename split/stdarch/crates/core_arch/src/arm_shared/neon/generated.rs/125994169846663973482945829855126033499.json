@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vorr_s64",
-  "hash": "125994169846663973482945829855126033499",
-  "hash_direct": "859545003162647011218285865814130796571",
-  "src": "pub fn vorr_s64(a: int64x1_t, b: int64x1_t) -> int64x1_t {\n    unsafe { simd_or(a, b) }\n}"
-}

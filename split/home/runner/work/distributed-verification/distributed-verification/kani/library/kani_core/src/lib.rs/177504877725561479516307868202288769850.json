@@ -1,0 +1,23 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/lib.rs",
+  "name": "kani::unsupported",
+  "hash": "177504877725561479516307868202288769850",
+  "hash_direct": "155843978358715223063791628348446133307",
+  "attrs": [
+    "#[kanitool::fn_marker = \"UnsupportedCheckHook\"]\n"
+  ],
+  "src": "pub(crate) fn unsupported(msg: &'static str) -> ! {\n            #[cfg(not(feature = \"concrete_playback\"))]\n            return kani_intrinsic();\n\n            #[cfg(feature = \"concrete_playback\")]\n            unimplemented!(\"Unsupported Kani operation: {msg}\")\n        }",
+  "macro_backtrace": [
+    {
+      "callsite": "kani_core::kani_intrinsics!()",
+      "defsite": "macro_rules! kani_intrinsics"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ],
+  "callees": [
+    "80989463918046823203044749903697808714"
+  ]
+}

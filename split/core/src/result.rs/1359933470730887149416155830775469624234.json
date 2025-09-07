@@ -1,0 +1,7 @@
+{
+  "file": "core/src/result.rs",
+  "name": "<result::Result<(), fmt::Error> as ops::try_trait::Try>::branch",
+  "hash": "1359933470730887149416155830775469624234",
+  "hash_direct": "1694351922222346359012490215373175705718",
+  "src": "fn branch(self) -> ControlFlow<Self::Residual, Self::Output> {\n        match self {\n            Ok(v) => ControlFlow::Continue(v),\n            Err(e) => ControlFlow::Break(Err(e)),\n        }\n    }"
+}

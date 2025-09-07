@@ -1,0 +1,10 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<core::slice::Iter<'_, &str> as core::iter::Iterator>::map::<usize, {closure@core::fmt::Arguments<'_>::estimated_capacity::{closure#0}}>",
+  "hash": "812085359570770192918155400204891524118",
+  "hash_direct": "35730435199502157942847649254980942726",
+  "src": "fn map<B, F>(self, f: F) -> Map<Self, F>\n    where\n        Self: Sized,\n        F: FnMut(Self::Item) -> B,\n    {\n        Map::new(self, f)\n    }",
+  "callees": [
+    "675122505800363520012259284407973816466"
+  ]
+}

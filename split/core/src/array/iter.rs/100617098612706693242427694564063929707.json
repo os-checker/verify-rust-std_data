@@ -1,7 +1,0 @@
-{
-  "file": "core/src/array/iter.rs",
-  "name": "array::iter::IntoIter::<char, 3>::unsize",
-  "hash": "100617098612706693242427694564063929707",
-  "hash_direct": "531231389657821099312267422856465298324",
-  "src": "fn unsize(&self) -> &InnerUnsized<T> {\n        &self.inner\n    }"
-}

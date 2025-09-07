@@ -1,7 +1,0 @@
-{
-  "file": "core/src/slice/mod.rs",
-  "name": "slice::<impl [f32]>::as_ptr",
-  "hash": "75826364580901856306168378982072251228",
-  "hash_direct": "34891679788776837517776507317172621458",
-  "src": "pub const fn as_ptr(&self) -> *const T {\n        self as *const [T] as *const T\n    }"
-}

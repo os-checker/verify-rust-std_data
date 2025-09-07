@@ -1,0 +1,13 @@
+{
+  "file": "alloc/src/collections/btree/set_val.rs",
+  "name": "<collections::btree::set_val::SetValZST as core::default::Default>::default",
+  "hash": "883878486470611769410893299160888045942",
+  "hash_direct": "1721366567195246844110688195334890112635",
+  "src": "Default",
+  "macro_backtrace": [
+    {
+      "callsite": "Default",
+      "defsite": "pub macro Default"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f64.rs",
+  "name": "f64::math::cbrt",
+  "hash": "613407158268551309717617956002968467861",
+  "hash_direct": "429815074963877467714221289176007160132",
+  "src": "pub fn cbrt(x: f64) -> f64 {\n        libm::cbrt(x)\n    }"
+}

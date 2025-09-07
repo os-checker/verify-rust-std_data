@@ -1,0 +1,10 @@
+{
+  "file": "alloc/src/string.rs",
+  "name": "string::<impl core::convert::From<string::String> for vec::Vec<u8>>::from",
+  "hash": "1387045778072497629210915483577503833615",
+  "hash_direct": "23129772346437946319608771468390360213",
+  "src": "fn from(string: String) -> Vec<u8> {\n        string.into_bytes()\n    }",
+  "callees": [
+    "1757792106307468758515809618533964909067"
+  ]
+}

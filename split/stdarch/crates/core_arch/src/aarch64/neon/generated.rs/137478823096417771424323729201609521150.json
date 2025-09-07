@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vbcaxq_u8",
+  "hash": "137478823096417771424323729201609521150",
+  "hash_direct": "62303486944033534423245593557760496494",
+  "src": "pub fn vbcaxq_u8(a: uint8x16_t, b: uint8x16_t, c: uint8x16_t) -> uint8x16_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.crypto.bcaxu.v16i8\"\n        )]\n        fn _vbcaxq_u8(a: uint8x16_t, b: uint8x16_t, c: uint8x16_t) -> uint8x16_t;\n    }\n    unsafe { _vbcaxq_u8(a, b, c) }\n}"
+}

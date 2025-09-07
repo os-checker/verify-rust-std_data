@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f128.rs",
+  "name": "f128::<impl f128>::MAN_MASK",
+  "hash": "10414643740529639268793047527976828670",
+  "hash_direct": "117664574859106219574260807822103330383",
+  "src": "pub(crate) const MAN_MASK: u128 = 0x0000_ffff_ffff_ffff_ffff_ffff_ffff_ffff;"
+}

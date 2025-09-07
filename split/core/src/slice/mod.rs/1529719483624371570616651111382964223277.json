@@ -1,7 +1,0 @@
-{
-  "file": "core/src/slice/mod.rs",
-  "name": "<usize as slice::GetDisjointMutIndex>::is_in_bounds",
-  "hash": "1529719483624371570616651111382964223277",
-  "hash_direct": "709817006828449285413291715864980936888",
-  "src": "fn is_in_bounds(&self, len: usize) -> bool {\n        *self < len\n    }"
-}

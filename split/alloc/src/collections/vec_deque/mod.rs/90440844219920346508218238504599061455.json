@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/collections/vec_deque/mod.rs",
+  "name": "collections::vec_deque::VecDeque::<u32>::len",
+  "hash": "90440844219920346508218238504599061455",
+  "hash_direct": "141893888055605866018087948236343065851",
+  "src": "pub fn len(&self) -> usize {\n        self.len\n    }"
+}

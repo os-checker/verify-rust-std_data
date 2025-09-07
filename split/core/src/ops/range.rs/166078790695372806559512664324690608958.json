@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ops/range.rs",
+  "name": "<core::ops::RangeFull as core::ops::RangeBounds<usize>>::start_bound",
+  "hash": "166078790695372806559512664324690608958",
+  "hash_direct": "1142216997994879503216057564309883179646",
+  "src": "fn start_bound(&self) -> Bound<&T> {\n        Unbounded\n    }"
+}

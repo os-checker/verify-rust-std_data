@@ -1,0 +1,14 @@
+{
+  "file": "core/src/slice/sort/stable/drift.rs",
+  "name": "slice::sort::stable::drift::merge_tree_scale_factor",
+  "hash": "86645618479885479243232985640661285290",
+  "hash_direct": "83585457040132412210763173639268232542",
+  "src": "fn merge_tree_scale_factor(n: usize) -> u64 {\n    if usize::BITS > u64::BITS {\n        panic!(\"Platform not supported\");\n    }\n\n    (1u64 << 62).div_ceil(n as u64)\n}",
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "96199634200059537435480666067004467351",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "1752989996936949203916036071159051010960"
+  ]
+}

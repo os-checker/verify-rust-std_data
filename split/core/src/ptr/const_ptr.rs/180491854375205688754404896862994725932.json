@@ -1,7 +1,0 @@
-{
-  "file": "core/src/ptr/const_ptr.rs",
-  "name": "ptr::const_ptr::<impl *const mem::manually_drop::ManuallyDrop<core_arch::simd::u32x4>>::cast::<core_arch::simd::u32x4>",
-  "hash": "180491854375205688754404896862994725932",
-  "hash_direct": "634951481599244518310995733324565559484",
-  "src": "pub const fn cast<U>(self) -> *const U {\n        self as _\n    }"
-}

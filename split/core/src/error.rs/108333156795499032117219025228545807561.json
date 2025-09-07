@@ -1,0 +1,7 @@
+{
+  "file": "core/src/error.rs",
+  "name": "<core::str::Utf8Error as core::error::Error>::source",
+  "hash": "108333156795499032117219025228545807561",
+  "hash_direct": "143805840108876317184792283302578910727",
+  "src": "fn source(&self) -> Option<&(dyn Error + 'static)> {\n        None\n    }"
+}

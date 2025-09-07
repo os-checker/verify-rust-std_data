@@ -1,0 +1,13 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "<fmt::Alignment as cmp::Eq>::assert_receiver_is_total_eq",
+  "hash": "1020126266642071054913472207007823295715",
+  "hash_direct": "90263268861414937699813216469082200233",
+  "src": "Eq",
+  "macro_backtrace": [
+    {
+      "callsite": "Eq",
+      "defsite": "pub macro Eq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

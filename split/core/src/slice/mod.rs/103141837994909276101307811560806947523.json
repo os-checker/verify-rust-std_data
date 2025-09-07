@@ -1,0 +1,7 @@
+{
+  "file": "core/src/slice/mod.rs",
+  "name": "<ops::range::Range<usize> as slice::GetDisjointMutIndex>::is_overlapping",
+  "hash": "103141837994909276101307811560806947523",
+  "hash_direct": "43333239959935994149257546162551158964",
+  "src": "fn is_overlapping(&self, other: &Self) -> bool {\n        (self.start < other.end) & (other.start < self.end)\n    }"
+}

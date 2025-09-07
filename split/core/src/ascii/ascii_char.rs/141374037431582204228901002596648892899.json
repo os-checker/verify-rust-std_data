@@ -1,0 +1,11 @@
+{
+  "file": "core/src/ascii/ascii_char.rs",
+  "name": "ascii::ascii_char::AsciiChar::is_alphabetic",
+  "hash": "141374037431582204228901002596648892899",
+  "hash_direct": "36528780480262517517607223735131495207",
+  "src": "pub const fn is_alphabetic(self) -> bool {\n        self.to_u8().is_ascii_alphabetic()\n    }",
+  "callees": [
+    "211389067699639933614636457746408448112",
+    "5138601813322156891155001322872760576"
+  ]
+}

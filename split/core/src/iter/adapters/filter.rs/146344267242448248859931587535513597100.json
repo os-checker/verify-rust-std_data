@@ -1,0 +1,10 @@
+{
+  "file": "core/src/iter/adapters/filter.rs",
+  "name": "<iter::adapters::filter::Filter<str::iter::Split<'_, str::IsWhitespace>, str::IsNotEmpty> as iter::traits::iterator::Iterator>::size_hint",
+  "hash": "146344267242448248859931587535513597100",
+  "hash_direct": "1553113401505079541416617260602684416389",
+  "src": "fn size_hint(&self) -> (usize, Option<usize>) {\n        let (_, upper) = self.iter.size_hint();\n        (0, upper) // can't know a lower bound, due to the predicate\n    }",
+  "callees": [
+    "129508042790843769607811836869796036030"
+  ]
+}

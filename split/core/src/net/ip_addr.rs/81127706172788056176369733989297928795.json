@@ -1,0 +1,7 @@
+{
+  "file": "core/src/net/ip_addr.rs",
+  "name": "<net::ip_addr::Ipv6Addr as fmt::Display>::fmt::LONGEST_IPV6_ADDR",
+  "hash": "81127706172788056176369733989297928795",
+  "hash_direct": "3299721977699897647000775119241435960",
+  "src": "const LONGEST_IPV6_ADDR: &str = \"ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff\";"
+}

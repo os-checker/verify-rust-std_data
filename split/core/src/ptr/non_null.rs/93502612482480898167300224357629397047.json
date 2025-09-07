@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "ptr::non_null::NonNull::<net::ip_addr::Ipv4Addr>::cast::<()>",
+  "hash": "93502612482480898167300224357629397047",
+  "hash_direct": "59902858397046222449931248334456845831",
+  "src": "pub const fn cast<U>(self) -> NonNull<U> {\n        // SAFETY: `self` is a `NonNull` pointer which is necessarily non-null\n        unsafe { NonNull { pointer: self.as_ptr() as *mut U } }\n    }",
+  "callees": [
+    "813616011350224055816083829053721183646"
+  ]
+}

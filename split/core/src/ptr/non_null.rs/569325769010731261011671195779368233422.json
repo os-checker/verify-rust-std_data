@@ -1,0 +1,23 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "ptr::non_null::NonNull::<T>::write_bytes::kani_register_contract::<(), {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/ptr/non_null.rs:1279:22: 1279:92}>",
+  "hash": "569325769010731261011671195779368233422",
+  "hash_direct": "82121999017805646037279602030793479299",
+  "attrs": [
+    "#[kanitool::fn_marker = \"kani_register_contract\"]\n"
+  ],
+  "src": "kani::modifies(crate::ptr::slice_from_raw_parts(self.as_ptr(), count))",
+  "macro_backtrace": [
+    {
+      "callsite": "kani::modifies(crate::ptr::slice_from_raw_parts(self.as_ptr(), count))",
+      "defsite": "pub fn modifies(attr: TokenStream, item: TokenStream) -> TokenStream"
+    }
+  ],
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "243931809744896974812513529918607549579",
+    "1752989996936949203916036071159051010960"
+  ]
+}

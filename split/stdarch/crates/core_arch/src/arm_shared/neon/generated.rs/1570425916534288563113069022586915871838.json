@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vcleq_u16",
-  "hash": "1570425916534288563113069022586915871838",
-  "hash_direct": "142389587574883097028197224019994238568",
-  "src": "pub fn vcleq_u16(a: uint16x8_t, b: uint16x8_t) -> uint16x8_t {\n    unsafe { simd_le(a, b) }\n}"
-}

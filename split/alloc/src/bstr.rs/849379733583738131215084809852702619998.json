@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/bstr.rs",
+  "name": "<bstr::ByteString as core::ops::DerefMut>::deref_mut",
+  "hash": "849379733583738131215084809852702619998",
+  "hash_direct": "168131476191419530992951918780300577781",
+  "src": "fn deref_mut(&mut self) -> &mut Self::Target {\n        &mut self.0\n    }"
+}

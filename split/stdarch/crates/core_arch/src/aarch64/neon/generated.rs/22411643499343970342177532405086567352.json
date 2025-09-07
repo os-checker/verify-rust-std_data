@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vaddvq_s8",
+  "hash": "22411643499343970342177532405086567352",
+  "hash_direct": "3792199799550369211138887561915897052",
+  "src": "pub fn vaddvq_s8(a: int8x16_t) -> i8 {\n    unsafe { simd_reduce_add_unordered(a) }\n}"
+}

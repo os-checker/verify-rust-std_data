@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/string.rs",
+  "name": "string::String::into_bytes",
+  "hash": "1757792106307468758515809618533964909067",
+  "hash_direct": "1610580225297499707311868904798506476560",
+  "src": "pub const fn into_bytes(self) -> Vec<u8> {\n        self.vec\n    }"
+}

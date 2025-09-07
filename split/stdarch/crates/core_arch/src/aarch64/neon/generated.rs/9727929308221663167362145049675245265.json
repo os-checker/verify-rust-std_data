@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vclez_s32",
+  "hash": "9727929308221663167362145049675245265",
+  "hash_direct": "1052343206121006085712008181287003967299",
+  "src": "pub fn vclez_s32(a: int32x2_t) -> uint32x2_t {\n    let b: i32x2 = i32x2::new(0, 0);\n    unsafe { simd_le(a, transmute(b)) }\n}",
+  "callees": [
+    "8486236183496411111938056838491974288"
+  ]
+}

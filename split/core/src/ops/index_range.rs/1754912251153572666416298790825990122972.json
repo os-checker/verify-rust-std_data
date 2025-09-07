@@ -1,0 +1,15 @@
+{
+  "file": "core/src/ops/index_range.rs",
+  "name": "ops::index_range::IndexRange::new_unchecked",
+  "hash": "1754912251153572666416298790825990122972",
+  "hash_direct": "263532628786079701117749720740110281241",
+  "src": "pub(crate) const unsafe fn new_unchecked(start: usize, end: usize) -> Self {\n        ub_checks::assert_unsafe_precondition!(\n            check_library_ub,\n            \"IndexRange::new_unchecked requires `start <= end`\",\n            (start: usize = start, end: usize = end) => start <= end,\n        );\n        IndexRange { start, end }\n    }",
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "17421822894816687532325615181214565887",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "478753423337745817613297159272845606672",
+    "719065370181632267310362651566044974881"
+  ]
+}

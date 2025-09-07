@@ -1,0 +1,11 @@
+{
+  "file": "core/src/sync/atomic.rs",
+  "name": "sync::atomic::AtomicBool::as_ptr",
+  "hash": "121688814344096181017057708891062891331",
+  "hash_direct": "512130794659681709511113694861248472272",
+  "src": "pub const fn as_ptr(&self) -> *mut bool {\n        self.v.get().cast()\n    }",
+  "callees": [
+    "163154036748054064804947938080591443326",
+    "800239183463416020212436835064392899475"
+  ]
+}

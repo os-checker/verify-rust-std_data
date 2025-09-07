@@ -1,0 +1,12 @@
+{
+  "file": "core/src/iter/adapters/map.rs",
+  "name": "core::iter::Map::<core::iter::Copied<core::slice::Iter<'_, [u8; 2]>>, fn([u8; core::::num::{impl#7}::from_le_bytes::{constant#0}]) -> u16 {core::num::<impl u16>::from_le_bytes}>::new",
+  "hash": "48180005848596147021437095829791912271",
+  "hash_direct": "365058702480680138414735166238663639900",
+  "src": "pub(in crate::iter) fn new(iter: I, f: F) -> Map<I, F> {\n        Map { iter, f }\n    }",
+  "callees": [
+    "110222155973830814349260760002242824076",
+    "994990930139430189416100114842589589707",
+    "19356062152124973495301804916705406438"
+  ]
+}

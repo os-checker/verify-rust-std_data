@@ -1,0 +1,10 @@
+{
+  "file": "core/src/mem/mod.rs",
+  "name": "mem::forget::<mem::verify::CannotDrop<char>>",
+  "hash": "584925154460505509111889404891065791074",
+  "hash_direct": "1173550867849737311313597289480314276042",
+  "src": "pub const fn forget<T>(t: T) {\n    let _ = ManuallyDrop::new(t);\n}",
+  "callees": [
+    "37940554726370343622557693018572979545"
+  ]
+}

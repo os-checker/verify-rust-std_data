@@ -1,0 +1,16 @@
+{
+  "file": "core/src/iter/adapters/skip.rs",
+  "name": "<iter::adapters::skip::Skip<I> as iter::traits::iterator::Iterator>::__iterator_get_unchecked::{closure#0}::REENTRY",
+  "hash": "565254688468480495527700595069525508",
+  "hash_direct": "699449492240823706616116689274608304303",
+  "attrs": [
+    "#[kanitool::recursion_tracker]\n"
+  ],
+  "src": "#[cfg_attr(kani, kani::modifies(self))]",
+  "macro_backtrace": [
+    {
+      "callsite": "#[cfg_attr(kani, kani::modifies(self))]",
+      "defsite": "pub fn modifies(attr: TokenStream, item: TokenStream) -> TokenStream"
+    }
+  ]
+}

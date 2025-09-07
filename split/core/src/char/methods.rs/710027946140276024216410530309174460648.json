@@ -1,7 +1,0 @@
-{
-  "file": "core/src/char/methods.rs",
-  "name": "char::methods::<impl char>::to_digit::TO_UPPERCASE_MASK",
-  "hash": "710027946140276024216410530309174460648",
-  "hash_direct": "730540454040382947911953964328352915675",
-  "src": "const TO_UPPERCASE_MASK: u32 = !0b0010_0000;"
-}

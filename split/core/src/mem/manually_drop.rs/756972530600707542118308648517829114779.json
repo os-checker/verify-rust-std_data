@@ -1,0 +1,7 @@
+{
+  "file": "core/src/mem/manually_drop.rs",
+  "name": "core::mem::ManuallyDrop::<boxed::Box<str>>::new",
+  "hash": "756972530600707542118308648517829114779",
+  "hash_direct": "1663391635569049699012271229721293542960",
+  "src": "pub const fn new(value: T) -> ManuallyDrop<T> {\n        ManuallyDrop { value }\n    }"
+}

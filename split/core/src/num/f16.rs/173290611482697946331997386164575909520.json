@@ -1,0 +1,10 @@
+{
+  "file": "core/src/num/f16.rs",
+  "name": "f16::<impl f16>::fract",
+  "hash": "173290611482697946331997386164575909520",
+  "hash_direct": "116090857466288165851379911878152564800",
+  "src": "pub const fn fract(self) -> f16 {\n        self - self.trunc()\n    }",
+  "callees": [
+    "161445155628503363538073693770598233224"
+  ]
+}

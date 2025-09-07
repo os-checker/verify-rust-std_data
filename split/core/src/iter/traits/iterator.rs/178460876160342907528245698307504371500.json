@@ -1,0 +1,13 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<option::IntoIter<char::EscapeDebug> as iter::traits::iterator::Iterator>::flatten",
+  "hash": "178460876160342907528245698307504371500",
+  "hash_direct": "799059158991521655011543099974856476591",
+  "src": "fn flatten(self) -> Flatten<Self>\n    where\n        Self: Sized,\n        Self::Item: IntoIterator,\n    {\n        Flatten::new(self)\n    }",
+  "callees": [
+    "1822766214169220384311364467271140415990",
+    "406313541391081035016615357084091278853",
+    "127549276639869472781230120115534221639",
+    "10886863355016440829927700842862183086"
+  ]
+}

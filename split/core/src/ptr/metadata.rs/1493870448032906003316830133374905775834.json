@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/metadata.rs",
+  "name": "core::ptr::metadata::<core::bstr::ByteStr>",
+  "hash": "1493870448032906003316830133374905775834",
+  "hash_direct": "1492348670655510882513302033998238312049",
+  "src": "pub const fn metadata<T: PointeeSized>(ptr: *const T) -> <T as Pointee>::Metadata {\n    ptr_metadata(ptr)\n}"
+}

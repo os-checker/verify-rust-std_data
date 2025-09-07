@@ -1,0 +1,7 @@
+{
+  "file": "src/probe/proc_macro_span.rs",
+  "name": "start",
+  "hash": "52919844187972115311638524103412040462",
+  "hash_direct": "1709419951442137660411230917095799547208",
+  "src": "pub fn start(this: &Span) -> Span {\n    this.start()\n}"
+}

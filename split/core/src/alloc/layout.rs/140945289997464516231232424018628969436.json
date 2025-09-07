@@ -1,0 +1,10 @@
+{
+  "file": "core/src/alloc/layout.rs",
+  "name": "alloc::layout::verify::<impl kani::Arbitrary for alloc::layout::Layout>::any::{closure#0}",
+  "hash": "140945289997464516231232424018628969436",
+  "hash_direct": "155823378336481888922757935561811692027",
+  "src": "|s: &usize| *s <= isize::MAX as usize - (align.as_usize() - 1)",
+  "callees": [
+    "112152844438854238887994758767167519478"
+  ]
+}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/char/convert.rs",
-  "name": "<char::convert::ParseCharError as error::Error>::description",
-  "hash": "22726388861655761457318423133714441534",
-  "hash_direct": "1415906080745028190810986572333591942025",
-  "src": "fn description(&self) -> &str {\n        match self.kind {\n            CharErrorKind::EmptyString => \"cannot parse char from empty string\",\n            CharErrorKind::TooManyChars => \"too many characters in string\",\n        }\n    }"
-}

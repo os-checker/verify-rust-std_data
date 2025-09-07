@@ -1,0 +1,7 @@
+{
+  "file": "core/src/error.rs",
+  "name": "<boxed::convert::<impl core::convert::From<string::String> for boxed::Box<(dyn core::error::Error + core::marker::Send + core::marker::Sync + 'a)>>::from::StringError as core::error::Error>::provide",
+  "hash": "1109841109047806272910704347384526274128",
+  "hash_direct": "375769305004744029413536489494244288370",
+  "src": "fn provide<'a>(&'a self, request: &mut Request<'a>) {}"
+}

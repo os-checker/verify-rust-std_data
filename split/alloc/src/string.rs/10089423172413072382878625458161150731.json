@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/string.rs",
+  "name": "string::<impl core::convert::From<&str> for borrow::Cow<'_, str>>::from",
+  "hash": "10089423172413072382878625458161150731",
+  "hash_direct": "1531370492701775634814585376132893470118",
+  "src": "fn from(s: &'a str) -> Cow<'a, str> {\n        Cow::Borrowed(s)\n    }"
+}

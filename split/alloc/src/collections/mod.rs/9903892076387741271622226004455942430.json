@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/collections/mod.rs",
+  "name": "<collections::TryReserveErrorKind as core::convert::From<core::alloc::LayoutError>>::from",
+  "hash": "9903892076387741271622226004455942430",
+  "hash_direct": "246901831847132076716927035026005946284",
+  "src": "fn from(_: LayoutError) -> Self {\n        TryReserveErrorKind::CapacityOverflow\n    }"
+}

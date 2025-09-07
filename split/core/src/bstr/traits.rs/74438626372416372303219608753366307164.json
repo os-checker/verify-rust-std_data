@@ -1,7 +1,0 @@
-{
-  "file": "core/src/bstr/traits.rs",
-  "name": "bstr::traits::<impl slice::index::SliceIndex<bstr::ByteStr> for ops::range::RangeFull>::get_unchecked_mut",
-  "hash": "74438626372416372303219608753366307164",
-  "hash_direct": "600307430098030832112644851803048122797",
-  "src": "unsafe fn get_unchecked_mut(self, slice: *mut ByteStr) -> *mut Self::Output {\n        slice\n    }"
-}

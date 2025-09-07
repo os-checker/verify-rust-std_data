@@ -1,7 +1,0 @@
-{
-  "file": "core/src/fmt/mod.rs",
-  "name": "fmt::FormattingOptions::align",
-  "hash": "1749354356376422432110307264409629560948",
-  "hash_direct": "2500560720636775242727418599227215726",
-  "src": "pub fn align(&mut self, align: Option<Alignment>) -> &mut Self {\n        let align: u32 = match align {\n            Some(Alignment::Left) => flags::ALIGN_LEFT,\n            Some(Alignment::Right) => flags::ALIGN_RIGHT,\n            Some(Alignment::Center) => flags::ALIGN_CENTER,\n            None => flags::ALIGN_UNKNOWN,\n        };\n        self.flags = self.flags & !flags::ALIGN_BITS | align;\n        self\n    }"
-}

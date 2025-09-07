@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vdup_n_f16",
+  "hash": "387819937783107881412204763390036355174",
+  "hash_direct": "127776795805160281989364115889830682253",
+  "src": "pub fn vdup_n_f16(a: f16) -> float16x4_t {\n    float16x4_t::splat(a)\n}",
+  "callees": [
+    "170194402061146878175814615804956874944"
+  ]
+}

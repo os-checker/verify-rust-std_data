@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vget_low_s16",
-  "hash": "1725173651058630003815733004265436867878",
-  "hash_direct": "26483457857554420959030624661803096066",
-  "src": "pub fn vget_low_s16(a: int16x8_t) -> int16x4_t {\n    unsafe { simd_shuffle!(a, a, [0, 1, 2, 3]) }\n}"
-}

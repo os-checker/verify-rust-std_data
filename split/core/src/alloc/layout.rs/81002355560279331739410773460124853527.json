@@ -1,0 +1,11 @@
+{
+  "file": "core/src/alloc/layout.rs",
+  "name": "core::alloc::layout::size_align::<sync::ArcInner<()>>",
+  "hash": "81002355560279331739410773460124853527",
+  "hash_direct": "1659378888193147605115607946620835157872",
+  "src": "const fn size_align<T>() -> (usize, usize) {\n    (size_of::<T>(), align_of::<T>())\n}",
+  "callees": [
+    "1837946017561222202213139570819730530396",
+    "885821912638570428915114244659821338485"
+  ]
+}

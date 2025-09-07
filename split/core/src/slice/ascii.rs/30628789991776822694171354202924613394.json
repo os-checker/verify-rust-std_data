@@ -1,0 +1,12 @@
+{
+  "file": "core/src/slice/ascii.rs",
+  "name": "slice::ascii::<impl [u8]>::make_ascii_lowercase",
+  "hash": "30628789991776822694171354202924613394",
+  "hash_direct": "145737424378990671899186384568097704780",
+  "src": "pub const fn make_ascii_lowercase(&mut self) {\n        // FIXME(const-hack): We would like to simply iterate using `for` loops but this isn't currently allowed in constant expressions.\n        let mut i = 0;\n        while i < self.len() {\n            let byte = &mut self[i];\n            byte.make_ascii_lowercase();\n            i += 1;\n        }\n    }",
+  "callees": [
+    "69417484249274791359857467967200926715",
+    "115014031790079929662428883345860873260",
+    "1766778296466189972714376152058119054158"
+  ]
+}

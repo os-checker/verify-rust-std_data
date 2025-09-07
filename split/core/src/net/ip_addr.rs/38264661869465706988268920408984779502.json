@@ -1,0 +1,17 @@
+{
+  "file": "core/src/net/ip_addr.rs",
+  "name": "<&net::ip_addr::Ipv6Addr as ops::bit::BitOr>::bitor",
+  "hash": "38264661869465706988268920408984779502",
+  "hash_direct": "52002916850258576406626171830806750799",
+  "src": "fn $bitop(self, rhs: &'_ $ty) -> $ty {\n                    let mut lhs = *self;\n                    lhs.$bitop_assign(*rhs);\n                    lhs\n                }",
+  "macro_backtrace": [
+    {
+      "callsite": "bitop_impls! {\n    #[stable(feature = \"ip_bitops\", since = \"1.75.0\")]\n    #[rustc_const_unstable(feature = \"const_ops\", issue = \"143802\")]\n    impl (BitAnd, BitAndAssign) for Ipv4Addr = (bitand, bitand_assign);\n    #[stable(feature = \"ip_bitops\", since = \"1.75.0\")]\n    #[rustc_const_unstable(feature = \"const_ops\", issue = \"143802\")]\n    impl (BitOr, BitOrAssign) for Ipv4Addr = (bitor, bitor_assign);\n\n    #[stable(feature = \"ip_bitops\", since = \"1.75.0\")]\n    #[rustc_const_unstable(feature = \"const_ops\", issue = \"143802\")]\n    impl (BitAnd, BitAndAssign) for Ipv6Addr = (bitand, bitand_assign);\n    #[stable(feature = \"ip_bitops\", since = \"1.75.0\")]\n    #[rustc_const_unstable(feature = \"const_ops\", issue = \"143802\")]\n    impl (BitOr, BitOrAssign) for Ipv6Addr = (bitor, bitor_assign);\n}",
+      "defsite": "macro_rules! bitop_impls {\n    ($(\n        $(#[$attr:meta])*\n        impl ($BitOp:ident, $BitOpAssign:ident) for $ty:ty = ($bitop:ident, $bitop_assign:ident);\n    )*) => {\n        $(\n            $(#[$attr])*\n            impl const $BitOpAssign for $ty {\n                fn $bitop_assign(&mut self, rhs: $ty) {\n                    let mut idx = 0;\n                    while idx < self.octets.len() {\n                        self.octets[idx].$bitop_assign(rhs.octets[idx]);\n                        idx += 1;\n                    }\n                }\n            }\n\n            $(#[$attr])*\n            impl const $BitOpAssign<&'_ $ty> for $ty {\n                fn $bitop_assign(&mut self, rhs: &'_ $ty) {\n                    self.$bitop_assign(*rhs);\n                }\n            }\n\n            $(#[$attr])*\n            impl const $BitOp for $ty {\n                type Output = $ty;\n\n                #[inline]\n                fn $bitop(mut self, rhs: $ty) -> $ty {\n                    self.$bitop_assign(rhs);\n                    self\n                }\n            }\n\n            $(#[$attr])*\n            impl const $BitOp<&'_ $ty> for $ty {\n                type Output = $ty;\n\n                #[inline]\n                fn $bitop(mut self, rhs: &'_ $ty) -> $ty {\n                    self.$bitop_assign(*rhs);\n                    self\n                }\n            }\n\n            $(#[$attr])*\n            impl const $BitOp<$ty> for &'_ $ty {\n                type Output = $ty;\n\n                #[inline]\n                fn $bitop(self, rhs: $ty) -> $ty {\n                    let mut lhs = *self;\n                    lhs.$bitop_assign(rhs);\n                    lhs\n                }\n            }\n\n            $(#[$attr])*\n            impl const $BitOp<&'_ $ty> for &'_ $ty {\n                type Output = $ty;\n\n                #[inline]\n                fn $bitop(self, rhs: &'_ $ty) -> $ty {\n                    let mut lhs = *self;\n                    lhs.$bitop_assign(*rhs);\n                    lhs\n                }\n            }\n        )*\n    };\n}"
+    }
+  ],
+  "callees": [
+    "1423955562833255093613083828574392478228",
+    "139814459349455595639552591847916859779"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "file": "core/src/sync/atomic.rs",
+  "name": "sync::atomic::AtomicBool::compare_exchange",
+  "hash": "26390982529271784035353113031141869164",
+  "hash_direct": "355999520256125597515916710312316251875",
+  "src": "pub fn compare_exchange(\n        &self,\n        current: bool,\n        new: bool,\n        success: Ordering,\n        failure: Ordering,\n    ) -> Result<bool, bool> {\n        if EMULATE_ATOMIC_BOOL {\n            // Pick the strongest ordering from success and failure.\n            let order = match (success, failure) {\n                (SeqCst, _) => SeqCst,\n                (_, SeqCst) => SeqCst,\n                (AcqRel, _) => AcqRel,\n                (_, AcqRel) => {\n                    panic!(\"there is no such thing as an acquire-release failure ordering\")\n                }\n                (Release, Acquire) => AcqRel,\n                (Acquire, _) => Acquire,\n                (_, Acquire) => Acquire,\n                (Release, Relaxed) => Release,\n                (_, Release) => panic!(\"there is no such thing as a release failure ordering\"),\n                (Relaxed, Relaxed) => Relaxed,\n            };\n            let old = if current == new {\n                // This is a no-op, but we still need to perform the operation\n                // for memory ordering reasons.\n                self.fetch_or(false, order)\n            } else {\n                // This sets the value to the new one and returns the old one.\n                self.swap(new, order)\n            };\n            if old == current { Ok(old) } else { Err(old) }\n        } else {\n            // SAFETY: data races are prevented by atomic intrinsics.\n            match unsafe {\n                atomic_compare_exchange(self.v.get(), current as u8, new as u8, success, failure)\n            } {\n                Ok(x) => Ok(x != 0),\n                Err(x) => Err(x != 0),\n            }\n        }\n    }",
+  "callees": [
+    "163154036748054064804947938080591443326",
+    "258820287469578611817448591488600041899",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "1752989996936949203916036071159051010960",
+    "489850390879169204514736240302923706921"
+  ]
+}

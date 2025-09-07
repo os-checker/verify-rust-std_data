@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/rc.rs",
+  "name": "<rc::WeakInner<'_> as rc::RcInnerPtr>::weak_ref",
+  "hash": "1150509551551607152117943868680002696497",
+  "hash_direct": "89745572902017751479666282689568204752",
+  "src": "fn weak_ref(&self) -> &Cell<usize> {\n        self.weak\n    }"
+}

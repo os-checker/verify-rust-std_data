@@ -1,0 +1,7 @@
+{
+  "file": "core/src/result.rs",
+  "name": "<core::result::Result<string::String, core::char::DecodeUtf16Error> as core::ops::Try>::from_output",
+  "hash": "4452983040055099241932720510573231558",
+  "hash_direct": "162482385508772693897971032440156033826",
+  "src": "fn from_output(output: Self::Output) -> Self {\n        Ok(output)\n    }"
+}

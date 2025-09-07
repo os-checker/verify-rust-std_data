@@ -1,7 +1,0 @@
-{
-  "file": "core/src/ops/range.rs",
-  "name": "<ops::range::RangeInclusive<u32> as ops::range::RangeBounds<u32>>::start_bound",
-  "hash": "167770153702066478424411263638880757007",
-  "hash_direct": "127840991901866571562146454433256517939",
-  "src": "fn start_bound(&self) -> Bound<&T> {\n        Included(&self.start)\n    }"
-}

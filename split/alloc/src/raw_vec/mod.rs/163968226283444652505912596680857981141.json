@@ -1,0 +1,14 @@
+{
+  "file": "alloc/src/raw_vec/mod.rs",
+  "name": "raw_vec::RawVecInner::set_ptr_and_cap",
+  "hash": "163968226283444652505912596680857981141",
+  "hash_direct": "29643752277252711665709281178748578087",
+  "src": "unsafe fn set_ptr_and_cap(&mut self, ptr: NonNull<[u8]>, cap: usize) {\n        // Allocators currently return a `NonNull<[u8]>` whose length matches\n        // the size requested. If that ever changes, the capacity here should\n        // change to `ptr.len() / size_of::<T>()`.\n        self.ptr = Unique::from(ptr.cast());\n        self.cap = unsafe { Cap::new_unchecked(cap) };\n    }",
+  "callees": [
+    "116120406547640733017584320872607374165",
+    "86050674789736003825945519059478190170",
+    "21899365262288413956629574192061165528",
+    "29456426015549113827640020827732703416",
+    "735147566348915391518387477037509563238"
+  ]
+}

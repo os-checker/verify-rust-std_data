@@ -1,0 +1,10 @@
+{
+  "file": "core/src/mem/maybe_uninit.rs",
+  "name": "mem::maybe_uninit::MaybeUninit::<u8>::slice_as_mut_ptr",
+  "hash": "12565577626382118215570120606393948545",
+  "hash_direct": "605206512229668966314649831066380002161",
+  "src": "pub const fn slice_as_mut_ptr(this: &mut [MaybeUninit<T>]) -> *mut T {\n        this.as_mut_ptr() as *mut T\n    }",
+  "callees": [
+    "503585139943518020410375744080956054110"
+  ]
+}

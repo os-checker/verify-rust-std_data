@@ -1,0 +1,11 @@
+{
+  "file": "core/src/num/mod.rs",
+  "name": "num::<impl u8>::eq_ignore_ascii_case",
+  "hash": "988028711998370698513075918543258556788",
+  "hash_direct": "1182009459281667801313254404122542985592",
+  "src": "pub const fn eq_ignore_ascii_case(&self, other: &u8) -> bool {\n        self.to_ascii_lowercase() == other.to_ascii_lowercase()\n    }",
+  "callees": [
+    "69417484249274791359857467967200926715",
+    "1766778296466189972714376152058119054158"
+  ]
+}

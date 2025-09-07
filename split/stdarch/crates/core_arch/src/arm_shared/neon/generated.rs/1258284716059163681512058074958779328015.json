@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vcreate_u64",
-  "hash": "1258284716059163681512058074958779328015",
-  "hash_direct": "1631326701754455571210199206693320934067",
-  "src": "pub fn vcreate_u64(a: u64) -> uint64x1_t {\n    unsafe { transmute(a) }\n}"
-}

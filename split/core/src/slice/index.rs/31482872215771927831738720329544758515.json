@@ -1,0 +1,7 @@
+{
+  "file": "core/src/slice/index.rs",
+  "name": "<usize as core::slice::SliceIndex<[u8]>>::index_mut",
+  "hash": "31482872215771927831738720329544758515",
+  "hash_direct": "605269139240761657712463160704110527904",
+  "src": "fn index_mut(self, slice: &mut [T]) -> &mut T {\n        // N.B., use intrinsic indexing\n        &mut (*slice)[self]\n    }"
+}

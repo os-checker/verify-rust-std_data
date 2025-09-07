@@ -1,0 +1,8 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "ptr::drop_in_place::<&marker::PhantomData<hash::sip::Sip13Rounds>>",
+  "hash": "1250418906225985443218076841515740826343",
+  "hash_direct": "103024707606253327566449823965612141349",
+  "inst_kind": "\"Shim\"",
+  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
+}

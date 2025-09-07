@@ -1,0 +1,15 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<str::iter::Chars<'_> as iter::traits::iterator::Iterator>::flat_map::<char::EscapeDebug, str::CharEscapeDebugContinue>",
+  "hash": "9626884448281666380479427650071086940",
+  "hash_direct": "75618418232955784274757540988382320408",
+  "src": "fn flat_map<U, F>(self, f: F) -> FlatMap<Self, U, F>\n    where\n        Self: Sized,\n        U: IntoIterator,\n        F: FnMut(Self::Item) -> U,\n    {\n        FlatMap::new(self, f)\n    }",
+  "callees": [
+    "847921190324583335110551373227922391317",
+    "44415869941154867987506573125862309529",
+    "1110156385921888364112743844330532348348",
+    "1677098599324345450115802963963387966694",
+    "106677135120927672912610706370258097314",
+    "67384305439540379755252672762882582838"
+  ]
+}

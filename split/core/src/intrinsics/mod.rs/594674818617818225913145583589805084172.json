@@ -1,0 +1,13 @@
+{
+  "file": "core/src/intrinsics/mod.rs",
+  "name": "<intrinsics::verify::u8_struct as clone::Clone>::clone",
+  "hash": "594674818617818225913145583589805084172",
+  "hash_direct": "1173471201314177903311724034106004266221",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

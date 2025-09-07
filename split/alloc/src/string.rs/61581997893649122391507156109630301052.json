@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/string.rs",
+  "name": "string::String::from_utf8_unchecked",
+  "hash": "61581997893649122391507156109630301052",
+  "hash_direct": "52031243776268610612740560464194892763",
+  "src": "pub unsafe fn from_utf8_unchecked(bytes: Vec<u8>) -> String {\n        String { vec: bytes }\n    }"
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/flt2dec/decoder.rs",
+  "name": "<f32 as num::flt2dec::decoder::DecodableFloat>::min_pos_norm_value",
+  "hash": "70639346671593076312505980927961085607",
+  "hash_direct": "161018383001607725216356932707313933164",
+  "src": "fn min_pos_norm_value() -> Self {\n        f32::MIN_POSITIVE\n    }"
+}

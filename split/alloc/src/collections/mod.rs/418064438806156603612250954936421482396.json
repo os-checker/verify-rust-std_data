@@ -1,0 +1,11 @@
+{
+  "file": "alloc/src/collections/mod.rs",
+  "name": "collections::TryReserveError::kind",
+  "hash": "418064438806156603612250954936421482396",
+  "hash_direct": "106817291337919188517052475834587140817",
+  "src": "pub fn kind(&self) -> TryReserveErrorKind {\n        self.kind.clone()\n    }",
+  "callees": [
+    "1029563312923393900611914925131263606627",
+    "1034976420972693995867219351672413528"
+  ]
+}

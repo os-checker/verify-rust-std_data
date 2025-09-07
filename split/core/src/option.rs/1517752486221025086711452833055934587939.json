@@ -1,0 +1,7 @@
+{
+  "file": "core/src/option.rs",
+  "name": "core::option::Option::<core::fmt::builders::PadAdapter<'_, '_>>::as_mut",
+  "hash": "1517752486221025086711452833055934587939",
+  "hash_direct": "102639211566887913854492847581709417787",
+  "src": "pub const fn as_mut(&mut self) -> Option<&mut T> {\n        match *self {\n            Some(ref mut x) => Some(x),\n            None => None,\n        }\n    }"
+}

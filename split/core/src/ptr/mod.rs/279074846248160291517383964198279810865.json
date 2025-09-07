@@ -1,0 +1,8 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "ptr::drop_in_place::<&time::TryFromFloatSecsErrorKind>",
+  "hash": "279074846248160291517383964198279810865",
+  "hash_direct": "142045753256114662797393356839676115987",
+  "inst_kind": "\"Shim\"",
+  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
+}

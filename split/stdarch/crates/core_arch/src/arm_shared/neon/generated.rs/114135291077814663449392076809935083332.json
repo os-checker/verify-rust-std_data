@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vmin_u32",
-  "hash": "114135291077814663449392076809935083332",
-  "hash_direct": "50924715949188192431724879928762046185",
-  "src": "pub fn vmin_u32(a: uint32x2_t, b: uint32x2_t) -> uint32x2_t {\n    unsafe {\n        let mask: uint32x2_t = simd_le(a, b);\n        simd_select(mask, a, b)\n    }\n}"
-}

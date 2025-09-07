@@ -1,0 +1,7 @@
+{
+  "file": "core/src/net/socket_addr.rs",
+  "name": "<net::socket_addr::SocketAddrV4 as fmt::Display>::fmt::LONGEST_IPV4_SOCKET_ADDR",
+  "hash": "12300117984329353009509044350141236412",
+  "hash_direct": "77019357288829117066499142385928161983",
+  "src": "const LONGEST_IPV4_SOCKET_ADDR: &str = \"255.255.255.255:65535\";"
+}

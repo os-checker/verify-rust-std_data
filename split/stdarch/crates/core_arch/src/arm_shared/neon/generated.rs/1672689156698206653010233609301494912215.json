@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vmax_s32",
-  "hash": "1672689156698206653010233609301494912215",
-  "hash_direct": "13419326636847329046863315261950311000",
-  "src": "pub fn vmax_s32(a: int32x2_t, b: int32x2_t) -> int32x2_t {\n    unsafe {\n        let mask: int32x2_t = simd_ge(a, b);\n        simd_select(mask, a, b)\n    }\n}"
-}

@@ -1,0 +1,13 @@
+{
+  "file": "core/src/sync/atomic.rs",
+  "name": "sync::atomic::atomic_store::<isize>",
+  "hash": "481101338839520286042744582035694322",
+  "hash_direct": "133265705094527821106678183506717233525",
+  "src": "unsafe fn atomic_store<T: Copy>(dst: *mut T, val: T, order: Ordering) {\n    // SAFETY: the caller must uphold the safety contract for `atomic_store`.\n    unsafe {\n        match order {\n            Relaxed => intrinsics::atomic_store::<T, { AO::Relaxed }>(dst, val),\n            Release => intrinsics::atomic_store::<T, { AO::Release }>(dst, val),\n            SeqCst => intrinsics::atomic_store::<T, { AO::SeqCst }>(dst, val),\n            Acquire => panic!(\"there is no such thing as an acquire store\"),\n            AcqRel => panic!(\"there is no such thing as an acquire-release store\"),\n        }\n    }\n}",
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "1752989996936949203916036071159051010960"
+  ]
+}

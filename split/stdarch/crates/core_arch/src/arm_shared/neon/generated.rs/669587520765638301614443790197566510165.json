@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vmlsq_u8",
-  "hash": "669587520765638301614443790197566510165",
-  "hash_direct": "1695816558778744755113444882401355767480",
-  "src": "pub fn vmlsq_u8(a: uint8x16_t, b: uint8x16_t, c: uint8x16_t) -> uint8x16_t {\n    unsafe { simd_sub(a, simd_mul(b, c)) }\n}"
-}

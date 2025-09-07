@@ -1,0 +1,13 @@
+{
+  "file": "core/src/ascii/ascii_char.rs",
+  "name": "<ascii::ascii_char::AsciiChar as clone::Clone>::clone",
+  "hash": "111035433870535333634453815696196257193",
+  "hash_direct": "123748884410871987729825873486249824529",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "file": "core/src/error.rs",
+  "name": "error::Request::<'_>",
+  "hash": "986620603134164135217713716966589687124",
+  "hash_direct": "458964149259951075213804020881613823120",
+  "attrs": [
+    "#[attr = Repr {reprs: [ReprTransparent]}]\n"
+  ],
+  "src": "pub struct Request<'a>"
+}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/ptr/alignment.rs",
-  "name": "ptr::alignment::_alignment_can_be_structurally_matched",
-  "hash": "49137621040215897581805613400315521001",
-  "hash_direct": "74335227148868169314184078122221009156",
-  "src": "fn _alignment_can_be_structurally_matched(a: Alignment) -> bool {\n    matches!(a, Alignment::MIN)\n}"
-}

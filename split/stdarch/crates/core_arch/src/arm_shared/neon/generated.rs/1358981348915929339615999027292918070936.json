@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vmaxq_s8",
-  "hash": "1358981348915929339615999027292918070936",
-  "hash_direct": "262117040284285525915397620910995969098",
-  "src": "pub fn vmaxq_s8(a: int8x16_t, b: int8x16_t) -> int8x16_t {\n    unsafe {\n        let mask: int8x16_t = simd_ge(a, b);\n        simd_select(mask, a, b)\n    }\n}"
-}

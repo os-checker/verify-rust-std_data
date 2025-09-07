@@ -1,0 +1,16 @@
+{
+  "file": "alloc/src/collections/vec_deque/iter.rs",
+  "name": "<collections::vec_deque::iter::Iter<'a, T> as core::iter::Iterator>::__iterator_get_unchecked::{closure#0}::REENTRY",
+  "hash": "988912245264924711911164528698364875999",
+  "hash_direct": "115602937763677872136821422221552458776",
+  "attrs": [
+    "#[kanitool::recursion_tracker]\n"
+  ],
+  "src": "#[cfg_attr(kani, kani::modifies(self))]",
+  "macro_backtrace": [
+    {
+      "callsite": "#[cfg_attr(kani, kani::modifies(self))]",
+      "defsite": "pub fn modifies(attr: TokenStream, item: TokenStream) -> TokenStream"
+    }
+  ]
+}

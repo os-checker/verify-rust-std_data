@@ -1,0 +1,7 @@
+{
+  "file": "core/src/convert/mod.rs",
+  "name": "<convert::Infallible as convert::From<!>>::from",
+  "hash": "145072592751080775554993016163897370677",
+  "hash_direct": "70995757878552814558772283432435287614",
+  "src": "fn from(x: !) -> Self {\n        x\n    }"
+}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vmaxq_f32",
-  "hash": "930722120621595261912518010871780790162",
-  "hash_direct": "154519266768644070428175414481272680307",
-  "src": "pub fn vmaxq_f32(a: float32x4_t, b: float32x4_t) -> float32x4_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(target_arch = \"arm\", link_name = \"llvm.arm.neon.vmaxs.v4f32\")]\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.fmax.v4f32\"\n        )]\n        fn _vmaxq_f32(a: float32x4_t, b: float32x4_t) -> float32x4_t;\n    }\n    unsafe { _vmaxq_f32(a, b) }\n}"
-}

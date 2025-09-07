@@ -1,0 +1,8 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "ptr::drop_in_place::<&marker::PhantomData<&mut ffi::va_list::VaListImpl<'_>>>",
+  "hash": "23129348676746192194665306026550555798",
+  "hash_direct": "40135934045755751434025524511054701755",
+  "inst_kind": "\"Shim\"",
+  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
+}

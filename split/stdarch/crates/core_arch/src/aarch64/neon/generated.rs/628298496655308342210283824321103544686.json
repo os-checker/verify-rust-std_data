@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
-  "name": "core_arch::aarch64::neon::generated::vcages_f32",
-  "hash": "628298496655308342210283824321103544686",
-  "hash_direct": "578519120164849155412461669036201720875",
-  "src": "pub fn vcages_f32(a: f32, b: f32) -> u32 {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.facge.i32.f32\"\n        )]\n        fn _vcages_f32(a: f32, b: f32) -> u32;\n    }\n    unsafe { _vcages_f32(a, b) }\n}"
-}

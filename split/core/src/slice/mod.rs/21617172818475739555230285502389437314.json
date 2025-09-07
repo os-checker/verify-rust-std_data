@@ -1,0 +1,7 @@
+{
+  "file": "core/src/slice/mod.rs",
+  "name": "slice::<impl [u8]>::first",
+  "hash": "21617172818475739555230285502389437314",
+  "hash_direct": "93003458960819135377098092622837823234",
+  "src": "pub const fn first(&self) -> Option<&T> {\n        if let [first, ..] = self { Some(first) } else { None }\n    }"
+}

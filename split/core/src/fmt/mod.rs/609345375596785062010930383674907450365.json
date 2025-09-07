@@ -1,7 +1,0 @@
-{
-  "file": "core/src/fmt/mod.rs",
-  "name": "fmt::FormattingOptions::precision",
-  "hash": "609345375596785062010930383674907450365",
-  "hash_direct": "613091617554142147317911953515039448938",
-  "src": "pub fn precision(&mut self, precision: Option<u16>) -> &mut Self {\n        if let Some(precision) = precision {\n            self.flags |= flags::PRECISION_FLAG;\n            self.precision = precision;\n        } else {\n            self.flags &= !flags::PRECISION_FLAG;\n            self.precision = 0;\n        }\n        self\n    }"
-}

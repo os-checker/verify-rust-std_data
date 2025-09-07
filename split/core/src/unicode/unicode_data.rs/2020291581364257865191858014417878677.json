@@ -1,0 +1,10 @@
+{
+  "file": "core/src/unicode/unicode_data.rs",
+  "name": "unicode::unicode_data::conversions::to_lower::{closure#0}",
+  "hash": "2020291581364257865191858014417878677",
+  "hash_direct": "372768582824795575716192654340496460761",
+  "src": "|&(key, _)| key.cmp(&c)",
+  "callees": [
+    "139527066517240058298709637544916107716"
+  ]
+}

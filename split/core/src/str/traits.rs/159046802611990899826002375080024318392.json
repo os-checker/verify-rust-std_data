@@ -1,7 +1,0 @@
-{
-  "file": "core/src/str/traits.rs",
-  "name": "str::traits::<impl slice::index::SliceIndex<str> for ops::range::RangeFull>::get_unchecked_mut",
-  "hash": "159046802611990899826002375080024318392",
-  "hash_direct": "7996542904758234094405045328426913479",
-  "src": "unsafe fn get_unchecked_mut(self, slice: *mut str) -> *mut Self::Output {\n        slice\n    }"
-}

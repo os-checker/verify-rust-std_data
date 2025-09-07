@@ -1,0 +1,12 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "core::ptr::drop_in_place::<{closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/alloc/src/vec/mod.rs:3824:35: 3824:49}>",
+  "hash": "121699176439207571551116573453334694848",
+  "hash_direct": "104072370727144537679132913697956848031",
+  "inst_kind": "\"Shim\"",
+  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)",
+  "callees": [
+    "129832444481914698572618590208818518160",
+    "906948199880776417018241594337902780119"
+  ]
+}

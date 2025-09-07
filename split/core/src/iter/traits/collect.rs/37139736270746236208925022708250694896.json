@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/traits/collect.rs",
+  "name": "<core::slice::Chunks<'_, usize> as core::iter::IntoIterator>::into_iter",
+  "hash": "37139736270746236208925022708250694896",
+  "hash_direct": "64669189245543968166797038001423417611",
+  "src": "fn into_iter(self) -> I {\n        self\n    }"
+}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/f128.rs",
-  "name": "f128::<impl f128>::algebraic_div",
-  "hash": "85418637618309251024041589011417100713",
-  "hash_direct": "150644248370544714257828449265806617741",
-  "src": "pub const fn algebraic_div(self, rhs: f128) -> f128 {\n        intrinsics::fdiv_algebraic(self, rhs)\n    }"
-}

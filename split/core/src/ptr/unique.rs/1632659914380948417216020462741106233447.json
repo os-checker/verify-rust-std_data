@@ -1,0 +1,11 @@
+{
+  "file": "core/src/ptr/unique.rs",
+  "name": "core::ptr::Unique::<u8>::cast::<i32>",
+  "hash": "1632659914380948417216020462741106233447",
+  "hash_direct": "106071875524393644469142382795090724424",
+  "src": "pub const fn cast<U>(self) -> Unique<U> {\n        // FIXME(const-hack): replace with `From`\n        // SAFETY: is `NonNull`\n        Unique { pointer: self.pointer.cast(), _marker: PhantomData }\n    }",
+  "callees": [
+    "181717373102152254895109628399379607332",
+    "1400916696144447910810330642996712936878"
+  ]
+}

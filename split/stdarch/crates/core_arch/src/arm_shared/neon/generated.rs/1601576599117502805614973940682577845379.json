@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vqdmulhq_s16",
+  "hash": "1601576599117502805614973940682577845379",
+  "hash_direct": "129146663306213041479309814622989902731",
+  "src": "pub fn vqdmulhq_s16(a: int16x8_t, b: int16x8_t) -> int16x8_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(target_arch = \"arm\", link_name = \"llvm.arm.neon.vqdmulh.v8i16\")]\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.sqdmulh.v8i16\"\n        )]\n        fn _vqdmulhq_s16(a: int16x8_t, b: int16x8_t) -> int16x8_t;\n    }\n    unsafe { _vqdmulhq_s16(a, b) }\n}"
+}

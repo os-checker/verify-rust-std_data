@@ -1,0 +1,7 @@
+{
+  "file": "core/src/option.rs",
+  "name": "core::option::Option::<core::result::Result<core::convert::Infallible, core::char::DecodeUtf16Error>>::is_some",
+  "hash": "1607209720358702301515158680536417960931",
+  "hash_direct": "15184470206542059185718835967382124898",
+  "src": "pub const fn is_some(&self) -> bool {\n        matches!(*self, Some(_))\n    }"
+}

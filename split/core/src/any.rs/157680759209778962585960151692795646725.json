@@ -1,7 +1,0 @@
-{
-  "file": "core/src/any.rs",
-  "name": "any::type_name::<&mut ffi::va_list::VaListImpl<'_>>",
-  "hash": "157680759209778962585960151692795646725",
-  "hash_direct": "651018728374708029617798626586900306451",
-  "src": "pub const fn type_name<T: ?Sized>() -> &'static str {\n    const { intrinsics::type_name::<T>() }\n}"
-}

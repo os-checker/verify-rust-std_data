@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/f64.rs",
-  "name": "f64::math::mul_add",
-  "hash": "205011051640705883811198615143906100529",
-  "hash_direct": "1062474840437540626612798189307677341760",
-  "src": "pub fn mul_add(x: f64, a: f64, b: f64) -> f64 {\n        // SAFETY: intrinsic with no preconditions\n        unsafe { intrinsics::fmaf64(x, a, b) }\n    }"
-}

@@ -1,0 +1,23 @@
+{
+  "file": "core/src/char/mod.rs",
+  "name": "<char::CaseMappingIter as iter::traits::iterator::Iterator>::__iterator_get_unchecked::kani_register_contract::<char, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/char/mod.rs:543:5: 543:44}>",
+  "hash": "938222325264939516168699978474773581",
+  "hash_direct": "155629106935551464907644959684207831197",
+  "attrs": [
+    "#[kanitool::fn_marker = \"kani_register_contract\"]\n"
+  ],
+  "src": "#[cfg_attr(kani, kani::modifies(self))]",
+  "macro_backtrace": [
+    {
+      "callsite": "#[cfg_attr(kani, kani::modifies(self))]",
+      "defsite": "pub fn modifies(attr: TokenStream, item: TokenStream) -> TokenStream"
+    }
+  ],
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "243931809744896974812513529918607549579",
+    "1752989996936949203916036071159051010960"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/dec2flt/float.rs",
+  "name": "<f64 as num::dec2flt::float::RawFloat>::SIG_MASK",
+  "hash": "553975701027615934715477368824824851990",
+  "hash_direct": "176667147531594351702632964537880058370",
+  "src": "const SIG_MASK: Self::Int = Self::MAN_MASK;"
+}

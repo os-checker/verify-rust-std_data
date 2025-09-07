@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/metadata.rs",
+  "name": "ptr::metadata::from_raw_parts_mut::<[mem::maybe_uninit::MaybeUninit<f32>], mem::maybe_uninit::MaybeUninit<f32>>",
+  "hash": "167078669165713946566249370457565204911",
+  "hash_direct": "1257409132997294642512385321547212726912",
+  "src": "pub const fn from_raw_parts_mut<T: PointeeSized>(\n    data_pointer: *mut impl Thin,\n    metadata: <T as Pointee>::Metadata,\n) -> *mut T {\n    aggregate_raw_ptr(data_pointer, metadata)\n}"
+}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/fmt/rt.rs",
-  "name": "fmt::rt::<impl fmt::Arguments<'_>>::new_const::<1>",
-  "hash": "47323665595455568617290020941376774286",
-  "hash_direct": "621600307750338049217703069911881552662",
-  "src": "pub const fn new_const<const N: usize>(pieces: &'a [&'static str; N]) -> Self {\n        const { assert!(N <= 1) };\n        Arguments { pieces, fmt: None, args: &[] }\n    }"
-}

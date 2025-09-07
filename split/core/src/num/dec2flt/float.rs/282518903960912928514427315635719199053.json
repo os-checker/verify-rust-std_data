@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/dec2flt/float.rs",
+  "name": "<f64 as num::dec2flt::float::RawFloat>::pow10_fast_path",
+  "hash": "282518903960912928514427315635719199053",
+  "hash_direct": "51254957654297107594256232832787315591",
+  "src": "fn pow10_fast_path(exponent: usize) -> Self {\n        const TABLE: [f64; 32] = [\n            1e0, 1e1, 1e2, 1e3, 1e4, 1e5, 1e6, 1e7, 1e8, 1e9, 1e10, 1e11, 1e12, 1e13, 1e14, 1e15,\n            1e16, 1e17, 1e18, 1e19, 1e20, 1e21, 1e22, 0., 0., 0., 0., 0., 0., 0., 0., 0.,\n        ];\n        TABLE[exponent & 31]\n    }"
+}

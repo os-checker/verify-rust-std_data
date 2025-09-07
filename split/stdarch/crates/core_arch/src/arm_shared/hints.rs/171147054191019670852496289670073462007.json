@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/hints.rs",
+  "name": "core_arch::arm_shared::hints::__sevl",
+  "hash": "171147054191019670852496289670073462007",
+  "hash_direct": "64594782658176249906759416327484694910",
+  "src": "pub unsafe fn __sevl() {\n    hint(HINT_SEVL);\n}"
+}

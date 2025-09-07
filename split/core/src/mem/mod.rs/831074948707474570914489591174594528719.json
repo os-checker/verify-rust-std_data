@@ -1,0 +1,10 @@
+{
+  "file": "core/src/mem/mod.rs",
+  "name": "mem::forget::<slice::sort::shared::smallsort::CopyOnDrop<f64>>",
+  "hash": "831074948707474570914489591174594528719",
+  "hash_direct": "122117824080837399703634118143476820834",
+  "src": "pub const fn forget<T>(t: T) {\n    let _ = ManuallyDrop::new(t);\n}",
+  "callees": [
+    "31839912543330792949240639148670359750"
+  ]
+}

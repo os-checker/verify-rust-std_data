@@ -1,0 +1,7 @@
+{
+  "file": "core/src/str/lossy.rs",
+  "name": "str::lossy::Utf8Chunk::<'_>::invalid",
+  "hash": "811085023021402864512221825492273297478",
+  "hash_direct": "178165473877556888375444200091943368908",
+  "src": "pub fn invalid(&self) -> &'a [u8] {\n        self.invalid\n    }"
+}

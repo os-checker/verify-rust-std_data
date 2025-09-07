@@ -1,0 +1,16 @@
+{
+  "file": "core/src/error.rs",
+  "name": "<error::private::Internal as fmt::Debug>::fmt",
+  "hash": "1001948053952642865812151316534494852611",
+  "hash_direct": "871588237836392442210923314389565459475",
+  "src": "Debug",
+  "macro_backtrace": [
+    {
+      "callsite": "Debug",
+      "defsite": "pub macro Debug($item:item) {\n        /* compiler built-in */\n    }"
+    }
+  ],
+  "callees": [
+    "243839084150888952911908111539685994713"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vld3_dup_s8",
+  "hash": "11830249566566337881602304496708704705",
+  "hash_direct": "13341917825500631284925447499123061933",
+  "src": "pub unsafe fn vld3_dup_s8(a: *const i8) -> int8x8x3_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.ld3r.v8i8.p0\"\n        )]\n        fn _vld3_dup_s8(ptr: *const i8) -> int8x8x3_t;\n    }\n    _vld3_dup_s8(a as _)\n}"
+}

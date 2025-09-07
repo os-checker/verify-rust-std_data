@@ -1,0 +1,11 @@
+{
+  "file": "core/src/ops/function.rs",
+  "name": "<fn(cmp::Ordering) -> ops::control_flow::ControlFlow<cmp::Ordering, cmp::Ordering> {ops::control_flow::ControlFlow::<cmp::Ordering, cmp::Ordering>::Break} as ops::function::FnOnce<(cmp::Ordering,)>>::call_once",
+  "hash": "54715342662778911473244799235189690191",
+  "hash_direct": "1300466607637796660213762906123698268777",
+  "inst_kind": "\"Shim\"",
+  "src": "extern \"rust-call\" fn call_once(self, args: Args) -> Self::Output;",
+  "callees": [
+    "102517973830009543381480318350821537303"
+  ]
+}

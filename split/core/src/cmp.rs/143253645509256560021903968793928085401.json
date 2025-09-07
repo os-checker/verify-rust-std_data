@@ -1,0 +1,7 @@
+{
+  "file": "core/src/cmp.rs",
+  "name": "cmp::impls::<impl cmp::PartialOrd for !>::partial_cmp",
+  "hash": "143253645509256560021903968793928085401",
+  "hash_direct": "130185908065835081598396415090896296737",
+  "src": "fn partial_cmp(&self, _: &!) -> Option<Ordering> {\n            *self\n        }"
+}

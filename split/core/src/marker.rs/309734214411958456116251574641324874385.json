@@ -1,0 +1,16 @@
+{
+  "file": "core/src/marker.rs",
+  "name": "<marker::PhantomPinned as fmt::Debug>::fmt",
+  "hash": "309734214411958456116251574641324874385",
+  "hash_direct": "121815281463006984146408900182949772594",
+  "src": "Debug",
+  "macro_backtrace": [
+    {
+      "callsite": "Debug",
+      "defsite": "pub macro Debug($item:item) {\n        /* compiler built-in */\n    }"
+    }
+  ],
+  "callees": [
+    "243839084150888952911908111539685994713"
+  ]
+}

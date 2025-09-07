@@ -1,7 +1,0 @@
-{
-  "file": "core/src/mem/mod.rs",
-  "name": "mem::align_of::<core_simd::vector::Simd<f64, 4>>",
-  "hash": "721557527907257880912943740947217263166",
-  "hash_direct": "133864059452153701196891848175182553",
-  "src": "pub const fn align_of<T>() -> usize {\n    intrinsics::align_of::<T>()\n}"
-}

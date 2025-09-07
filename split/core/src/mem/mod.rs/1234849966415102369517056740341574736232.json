@@ -1,0 +1,7 @@
+{
+  "file": "core/src/mem/mod.rs",
+  "name": "core::mem::size_of::<core::fmt::rt::Argument<'_>>",
+  "hash": "1234849966415102369517056740341574736232",
+  "hash_direct": "1793895010375762822817300056646499820536",
+  "src": "pub const fn size_of<T>() -> usize {\n    intrinsics::size_of::<T>()\n}"
+}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/slice/index.rs",
-  "name": "<usize as slice::index::SliceIndex<[unicode::unicode_data::ShortOffsetRunHeader]>>::get",
-  "hash": "127894720137992047561307630410653898601",
-  "hash_direct": "71799743258512077847192573595058498700",
-  "src": "fn get(self, slice: &[T]) -> Option<&T> {\n        if self < slice.len() {\n            // SAFETY: `self` is checked to be in bounds.\n            unsafe { Some(slice_get_unchecked(slice, self)) }\n        } else {\n            None\n        }\n    }"
-}

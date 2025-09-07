@@ -1,0 +1,10 @@
+{
+  "file": "core/src/slice/sort/shared/smallsort.rs",
+  "name": "slice::sort::shared::smallsort::has_efficient_in_place_swap::<f64>",
+  "hash": "388966434747835064216029866122073394396",
+  "hash_direct": "1311701029647611141439757871336823572",
+  "src": "pub(crate) const fn has_efficient_in_place_swap<T>() -> bool {\n    // Heuristic that holds true on all tested 64-bit capable architectures.\n    size_of::<T>() <= 8 // size_of::<u64>()\n}",
+  "callees": [
+    "872205114925099333011215560138034927031"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vabs_s32",
+  "hash": "184125191376760298019895737831381619090",
+  "hash_direct": "599990539374366961115060988378071256002",
+  "src": "pub fn vabs_s32(a: int32x2_t) -> int32x2_t {\n    unsafe {\n        let neg: int32x2_t = simd_neg(a);\n        let mask: int32x2_t = simd_ge(a, neg);\n        simd_select(mask, a, neg)\n    }\n}"
+}

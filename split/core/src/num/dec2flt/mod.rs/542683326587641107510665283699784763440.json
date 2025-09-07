@@ -1,0 +1,11 @@
+{
+  "file": "core/src/num/dec2flt/mod.rs",
+  "name": "num::dec2flt::biased_fp_to_float::<f64>",
+  "hash": "542683326587641107510665283699784763440",
+  "hash_direct": "1229802400459314614911564410324695035811",
+  "src": "fn biased_fp_to_float<F: RawFloat>(x: BiasedFp) -> F {\n    let mut word = x.m;\n    word |= (x.p_biased as u64) << F::SIG_BITS;\n    F::from_u64_bits(word)\n}",
+  "callees": [
+    "139488482713517022392802644189683338670",
+    "36822172541893058416553893184635977627"
+  ]
+}

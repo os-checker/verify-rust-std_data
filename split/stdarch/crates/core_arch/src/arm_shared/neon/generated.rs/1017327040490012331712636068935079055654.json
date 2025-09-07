@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vpmax_s16",
+  "hash": "1017327040490012331712636068935079055654",
+  "hash_direct": "1163782704914878851116950822474065357512",
+  "src": "pub fn vpmax_s16(a: int16x4_t, b: int16x4_t) -> int16x4_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.smaxp.v4i16\"\n        )]\n        #[cfg_attr(target_arch = \"arm\", link_name = \"llvm.arm.neon.vpmaxs.v4i16\")]\n        fn _vpmax_s16(a: int16x4_t, b: int16x4_t) -> int16x4_t;\n    }\n    unsafe { _vpmax_s16(a, b) }\n}"
+}

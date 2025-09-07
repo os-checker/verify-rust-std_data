@@ -1,7 +1,0 @@
-{
-  "file": "core/src/time.rs",
-  "name": "time::Duration::from_nanos::NANOS_PER_SEC",
-  "hash": "322401334152029698013246691515247104471",
-  "hash_direct": "136324663776167840043546410266218542743",
-  "src": "const NANOS_PER_SEC: u64 = self::NANOS_PER_SEC as u64;"
-}

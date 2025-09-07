@@ -1,0 +1,12 @@
+{
+  "file": "core/src/ops/function.rs",
+  "name": "<fn(char) -> bool {char::methods::<impl char>::is_whitespace} as ops::function::FnMut<(char,)>>::call_mut",
+  "hash": "14796971644901686491932719069497151525",
+  "hash_direct": "175256846965959701631165410704325212831",
+  "inst_kind": "\"Shim\"",
+  "src": "extern \"rust-call\" fn call_mut(&mut self, args: Args) -> Self::Output;",
+  "callees": [
+    "79760301754771638958349888420647128122",
+    "89347776969484683885451283756595935835"
+  ]
+}

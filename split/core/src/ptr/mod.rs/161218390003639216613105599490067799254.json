@@ -1,8 +1,0 @@
-{
-  "file": "core/src/ptr/mod.rs",
-  "name": "ptr::drop_in_place::<&task::wake::Waker>",
-  "hash": "161218390003639216613105599490067799254",
-  "hash_direct": "913205386690806548917766273175155515835",
-  "inst_kind": "\"Shim\"",
-  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
-}

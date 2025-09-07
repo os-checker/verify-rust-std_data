@@ -1,0 +1,13 @@
+{
+  "file": "core/src/marker.rs",
+  "name": "<marker::PhantomPinned as cmp::Eq>::assert_receiver_is_total_eq",
+  "hash": "831869974603347859414716922117860800231",
+  "hash_direct": "34871167505100714891566692671279562738",
+  "src": "Eq",
+  "macro_backtrace": [
+    {
+      "callsite": "Eq",
+      "defsite": "pub macro Eq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

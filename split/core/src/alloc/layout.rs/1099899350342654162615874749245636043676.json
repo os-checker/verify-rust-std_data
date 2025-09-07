@@ -1,0 +1,7 @@
+{
+  "file": "core/src/alloc/layout.rs",
+  "name": "core::alloc::Layout::size",
+  "hash": "1099899350342654162615874749245636043676",
+  "hash_direct": "1820014964223087715917856426720730085442",
+  "src": "pub const fn size(&self) -> usize {\n        self.size\n    }"
+}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/option.rs",
-  "name": "option::Option::<net::socket_addr::SocketAddrV6>::is_some",
-  "hash": "622513905151751111614744082061927353226",
-  "hash_direct": "484315577229576481514547918439816828551",
-  "src": "pub const fn is_some(&self) -> bool {\n        matches!(*self, Some(_))\n    }"
-}

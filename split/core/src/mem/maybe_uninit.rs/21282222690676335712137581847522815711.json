@@ -1,0 +1,11 @@
+{
+  "file": "core/src/mem/maybe_uninit.rs",
+  "name": "<[mem::maybe_uninit::MaybeUninit<usize>]>::assume_init_drop",
+  "hash": "21282222690676335712137581847522815711",
+  "hash_direct": "182803529328401041494355410631575998733",
+  "src": "pub unsafe fn assume_init_drop(&mut self) {\n        if !self.is_empty() {\n            // SAFETY: the caller must guarantee that every element of `self`\n            // is initialized and satisfies all invariants of `T`.\n            // Dropping the value in place is safe if that is the case.\n            unsafe { ptr::drop_in_place(self as *mut [MaybeUninit<T>] as *mut [T]) }\n        }\n    }",
+  "callees": [
+    "56771380296863258365292171566219158103",
+    "149588873162497332836210716558493052153"
+  ]
+}

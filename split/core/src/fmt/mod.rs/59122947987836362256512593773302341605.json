@@ -1,0 +1,7 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "<str as core::fmt::Debug>::fmt::needs_escape",
+  "hash": "59122947987836362256512593773302341605",
+  "hash_direct": "46473693793441507307358007108827445628",
+  "src": "fn needs_escape(b: u8) -> bool {\n            b > 0x7E || b < 0x20 || b == b'\\\\' || b == b'\"'\n        }"
+}

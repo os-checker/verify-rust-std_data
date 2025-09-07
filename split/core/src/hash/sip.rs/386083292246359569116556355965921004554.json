@@ -1,7 +1,0 @@
-{
-  "file": "core/src/hash/sip.rs",
-  "name": "<hash::sip::Hasher<hash::sip::Sip13Rounds> as clone::Clone>::clone",
-  "hash": "386083292246359569116556355965921004554",
-  "hash_direct": "1151304664806527894217664181578466645707",
-  "src": "fn clone(&self) -> Hasher<S> {\n        Hasher {\n            k0: self.k0,\n            k1: self.k1,\n            length: self.length,\n            state: self.state,\n            tail: self.tail,\n            ntail: self.ntail,\n            _marker: self._marker,\n        }\n    }"
-}

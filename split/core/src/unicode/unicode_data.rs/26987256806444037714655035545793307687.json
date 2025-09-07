@@ -1,0 +1,7 @@
+{
+  "file": "core/src/unicode/unicode_data.rs",
+  "name": "core::unicode::unicode_data::ShortOffsetRunHeader::prefix_sum",
+  "hash": "26987256806444037714655035545793307687",
+  "hash_direct": "1603972585062601318216037020629680852221",
+  "src": "const fn prefix_sum(&self) -> u32 {\n        self.0 & ((1 << 21) - 1)\n    }"
+}

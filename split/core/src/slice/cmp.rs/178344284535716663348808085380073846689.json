@@ -1,0 +1,11 @@
+{
+  "file": "core/src/slice/cmp.rs",
+  "name": "slice::cmp::<impl cmp::PartialEq for [f16]>::eq",
+  "hash": "178344284535716663348808085380073846689",
+  "hash_direct": "105186792008976080808876620002361871287",
+  "src": "fn eq(&self, other: &[U]) -> bool {\n        SlicePartialEq::equal(self, other)\n    }",
+  "callees": [
+    "35902004169784870955892667614762650595",
+    "1789871348144907909612170432627434192404"
+  ]
+}

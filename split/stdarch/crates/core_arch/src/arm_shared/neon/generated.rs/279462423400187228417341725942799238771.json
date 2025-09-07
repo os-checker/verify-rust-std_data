@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vcaleq_f32",
+  "hash": "279462423400187228417341725942799238771",
+  "hash_direct": "673575749874231685118065685523248629238",
+  "src": "pub fn vcaleq_f32(a: float32x4_t, b: float32x4_t) -> uint32x4_t {\n    vcageq_f32(b, a)\n}",
+  "callees": [
+    "71814286390376318266143935623754042637"
+  ]
+}

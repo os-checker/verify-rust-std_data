@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/error.rs",
+  "name": "num::error::ParseIntError::kind",
+  "hash": "82038347365787383711313580505188759587",
+  "hash_direct": "1471757294716161290910428091916157303177",
+  "src": "pub const fn kind(&self) -> &IntErrorKind {\n        &self.kind\n    }"
+}

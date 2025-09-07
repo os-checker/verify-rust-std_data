@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/dec2flt/common.rs",
-  "name": "<[u8] as num::dec2flt::common::ByteSlice>::offset_from",
-  "hash": "92377261078918947577980415784748791330",
-  "hash_direct": "15470153391330561562623681231851017749",
-  "src": "fn offset_from(&self, other: &Self) -> isize {\n        other.len() as isize - self.len() as isize\n    }"
-}

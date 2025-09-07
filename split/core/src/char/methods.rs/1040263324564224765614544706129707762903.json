@@ -1,0 +1,17 @@
+{
+  "file": "core/src/char/methods.rs",
+  "name": "char::methods::<impl char>::as_ascii_unchecked",
+  "hash": "1040263324564224765614544706129707762903",
+  "hash_direct": "83278764579920240246735431118745971358",
+  "src": "pub const unsafe fn as_ascii_unchecked(&self) -> ascii::Char {\n        assert_unsafe_precondition!(\n            check_library_ub,\n            \"as_ascii_unchecked requires that the char is valid ASCII\",\n            (it: &char = self) => it.is_ascii()\n        );\n\n        // SAFETY: the caller promised that this char is ASCII.\n        unsafe { ascii::Char::from_u8_unchecked(*self as u8) }\n    }",
+  "callees": [
+    "15551977551413036531158252289522839939",
+    "121872163624966698483225952656434249831",
+    "258820287469578611817448591488600041899",
+    "17421822894816687532325615181214565887",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "478753423337745817613297159272845606672",
+    "54503986970663360841733369066593556777"
+  ]
+}

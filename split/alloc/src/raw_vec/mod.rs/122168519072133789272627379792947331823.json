@@ -1,0 +1,11 @@
+{
+  "file": "alloc/src/raw_vec/mod.rs",
+  "name": "raw_vec::RawVecInner::from_nonnull_in",
+  "hash": "122168519072133789272627379792947331823",
+  "hash_direct": "1394068873855007936815665155734996921425",
+  "src": "unsafe fn from_nonnull_in(ptr: NonNull<u8>, cap: Cap, alloc: A) -> Self {\n        Self { ptr: Unique::from(ptr), cap, alloc }\n    }",
+  "callees": [
+    "29456426015549113827640020827732703416",
+    "735147566348915391518387477037509563238"
+  ]
+}

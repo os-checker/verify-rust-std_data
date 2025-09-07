@@ -1,0 +1,7 @@
+{
+  "file": "core/src/str/pattern.rs",
+  "name": "<str::pattern::MatchOnly as str::pattern::TwoWayStrategy>::matching",
+  "hash": "1296411750804674058315087202364841236804",
+  "hash_direct": "634100293507526250351989987802729539",
+  "src": "fn matching(a: usize, b: usize) -> Self::Output {\n        Some((a, b))\n    }"
+}

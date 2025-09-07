@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
-  "name": "core_arch::aarch64::neon::generated::vqadds_u32",
-  "hash": "20361804660177306353516014417648954929",
-  "hash_direct": "33845745900476009833944279299292567948",
-  "src": "pub fn vqadds_u32(a: u32, b: u32) -> u32 {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.uqadd.i32\"\n        )]\n        fn _vqadds_u32(a: u32, b: u32) -> u32;\n    }\n    unsafe { _vqadds_u32(a, b) }\n}"
-}

@@ -1,0 +1,10 @@
+{
+  "file": "core/src/num/int_log10.rs",
+  "name": "core::num::int_log10::i8",
+  "hash": "759489039797147339512546096563816617729",
+  "hash_direct": "9789563721981702813062191769753204076",
+  "src": "pub(super) const fn i8(val: i8) -> u32 {\n    u8(val as u8)\n}",
+  "callees": [
+    "1672386537266076849616995207388824169196"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "file": "core/src/time.rs",
+  "name": "time::Duration::NANOSECOND",
+  "hash": "169226846876649175833199801204112191941",
+  "hash_direct": "1739521532854550249913502360669825926234",
+  "src": "pub const NANOSECOND: Duration = Duration::from_nanos(1);",
+  "callees": [
+    "65223988746766808039436936606294077616",
+    "1107599233612622532414735567524102315216"
+  ]
+}

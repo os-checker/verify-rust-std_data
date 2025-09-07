@@ -1,0 +1,7 @@
+{
+  "file": "core/src/slice/mod.rs",
+  "name": "slice::<impl [u8]>::last_mut",
+  "hash": "18627758387703203046724246868492382542",
+  "hash_direct": "143675361063713770288990420845145007331",
+  "src": "pub const fn last_mut(&mut self) -> Option<&mut T> {\n        if let [.., last] = self { Some(last) } else { None }\n    }"
+}

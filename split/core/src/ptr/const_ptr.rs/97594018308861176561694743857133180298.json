@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/const_ptr.rs",
+  "name": "ptr::const_ptr::<impl *const mem::manually_drop::ManuallyDrop<*mut f64>>::cast::<*mut f64>",
+  "hash": "97594018308861176561694743857133180298",
+  "hash_direct": "312550001866652541415580291350464462763",
+  "src": "pub const fn cast<U>(self) -> *const U {\n        self as _\n    }"
+}

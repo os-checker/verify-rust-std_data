@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vadd_p64",
+  "hash": "148828402582919615598576193170950736303",
+  "hash_direct": "9182267128788042694123999152659487646",
+  "src": "pub fn vadd_p64(a: poly64x1_t, b: poly64x1_t) -> poly64x1_t {\n    unsafe { simd_xor(a, b) }\n}"
+}

@@ -1,0 +1,13 @@
+{
+  "file": "core/src/marker.rs",
+  "name": "<marker::PhantomPinned as clone::Clone>::clone",
+  "hash": "825667327041390782617747015861779504959",
+  "hash_direct": "684096382677710832456105207638630666",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

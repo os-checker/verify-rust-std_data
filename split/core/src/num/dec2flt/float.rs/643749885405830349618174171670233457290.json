@@ -1,0 +1,10 @@
+{
+  "file": "core/src/num/dec2flt/float.rs",
+  "name": "<f32 as num::dec2flt::float::RawFloat>::to_bits",
+  "hash": "643749885405830349618174171670233457290",
+  "hash_direct": "1721309182397154974113159336388764299254",
+  "src": "fn to_bits(self) -> Self::Int {\n        self.to_bits()\n    }",
+  "callees": [
+    "1280257502160233765816408910554470634604"
+  ]
+}

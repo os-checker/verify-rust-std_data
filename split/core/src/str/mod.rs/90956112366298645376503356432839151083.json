@@ -1,0 +1,17 @@
+{
+  "file": "core/src/str/mod.rs",
+  "name": "str::<impl str>::ceil_char_boundary",
+  "hash": "90956112366298645376503356432839151083",
+  "hash_direct": "979649314201509084516600134726103090021",
+  "src": "pub const fn ceil_char_boundary(&self, index: usize) -> usize {\n        if index >= self.len() {\n            self.len()\n        } else {\n            let mut i = index;\n            while i < self.len() {\n                if self.as_bytes()[i].is_utf8_char_boundary() {\n                    break;\n                }\n                i += 1;\n            }\n\n            //  The character boundary will be within four bytes of the index\n            debug_assert!(i <= index + 3);\n\n            i\n        }\n    }",
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "170905408305733982667355251913602478519",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "243931809744896974812513529918607549579",
+    "1752989996936949203916036071159051010960",
+    "137147026445318887422604340055542353314",
+    "852298530973108873212161851321200820382"
+  ]
+}

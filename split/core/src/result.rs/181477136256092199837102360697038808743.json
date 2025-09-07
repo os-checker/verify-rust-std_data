@@ -1,0 +1,10 @@
+{
+  "file": "core/src/result.rs",
+  "name": "result::Result::<(), num::nonzero::NonZero<usize>>::ok",
+  "hash": "181477136256092199837102360697038808743",
+  "hash_direct": "144088905028302508065670608078171740797",
+  "src": "pub const fn ok(self) -> Option<T>\n    where\n        T: [const] Destruct,\n        E: [const] Destruct,\n    {\n        match self {\n            Ok(x) => Some(x),\n            Err(_) => None,\n        }\n    }",
+  "callees": [
+    "16554284367650193786337801210329994104"
+  ]
+}

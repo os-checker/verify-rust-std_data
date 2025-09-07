@@ -1,0 +1,7 @@
+{
+  "file": "core/src/mem/mod.rs",
+  "name": "mem::align_of::<*mut f64>",
+  "hash": "266080518554646339012946240505549165565",
+  "hash_direct": "97713327784344042156590661167893253165",
+  "src": "pub const fn align_of<T>() -> usize {\n    intrinsics::align_of::<T>()\n}"
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vminvq_s32",
+  "hash": "34957453630170638457879140743871439767",
+  "hash_direct": "66370548592816082018027455576050748362",
+  "src": "pub fn vminvq_s32(a: int32x4_t) -> i32 {\n    unsafe { simd_reduce_min(a) }\n}"
+}

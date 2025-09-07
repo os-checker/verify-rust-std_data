@@ -1,0 +1,8 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "core::ptr::drop_in_place::<{closure@core::iter::adapters::map::map_fold<core::str::Utf8Chunk<'_>, usize, usize, {closure@<core::bstr::ByteStr as core::fmt::Display>::fmt::{closure#0}}, {closure@<usize as core::iter::Sum>::sum<core::iter::Map<core::str::Utf8Chunks<'_>, {closure@<core::bstr::ByteStr as core::fmt::Display>::fmt::{closure#0}}>>::{closure#0}}>::{closure#0}}>",
+  "hash": "8096787389476187053307125363944296113",
+  "hash_direct": "553387116485350369215160207775310574796",
+  "inst_kind": "\"Shim\"",
+  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
+}

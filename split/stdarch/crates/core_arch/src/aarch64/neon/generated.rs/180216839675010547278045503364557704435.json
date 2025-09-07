@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vcgez_f64",
+  "hash": "180216839675010547278045503364557704435",
+  "hash_direct": "92080928515057548408752751004647552073",
+  "src": "pub fn vcgez_f64(a: float64x1_t) -> uint64x1_t {\n    let b: f64 = 0.0;\n    unsafe { simd_ge(a, transmute(b)) }\n}"
+}

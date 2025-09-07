@@ -1,0 +1,7 @@
+{
+  "file": "core/src/slice/sort/stable/quicksort.rs",
+  "name": "slice::sort::stable::quicksort::stable_partition::UNROLL_LEN",
+  "hash": "135300989082734151810714954280430737339",
+  "hash_direct": "137389739440026278026150337093101672492",
+  "src": "const UNROLL_LEN: usize = 4;"
+}

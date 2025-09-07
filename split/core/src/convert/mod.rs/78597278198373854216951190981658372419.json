@@ -1,0 +1,7 @@
+{
+  "file": "core/src/convert/mod.rs",
+  "name": "<core::str::Utf8Error as core::convert::From<core::str::Utf8Error>>::from",
+  "hash": "78597278198373854216951190981658372419",
+  "hash_direct": "8030122119402836817193533300350136319",
+  "src": "fn from(t: T) -> T {\n        t\n    }"
+}

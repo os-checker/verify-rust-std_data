@@ -1,0 +1,18 @@
+{
+  "file": "core/src/iter/adapters/filter.rs",
+  "name": "<iter::adapters::filter::Filter<slice::iter::Split<'_, u8, str::IsAsciiWhitespace>, str::BytesIsNotEmpty> as clone::Clone>::clone",
+  "hash": "497808592164364612614105770732427818697",
+  "hash_direct": "194680580847725224611240131615262053919",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ],
+  "callees": [
+    "70199811561411919145895661843698109357",
+    "1134462621956276629212356351043471815287",
+    "690259270114141726215596604235015012549"
+  ]
+}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
-  "name": "core_arch::aarch64::neon::generated::vminvq_f16",
-  "hash": "59135577217586504314506571266882655087",
-  "hash_direct": "1695949234713547238918122645932480403213",
-  "src": "pub fn vminvq_f16(a: float16x8_t) -> f16 {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.fminv.f16.v8f16\"\n        )]\n        fn _vminvq_f16(a: float16x8_t) -> f16;\n    }\n    unsafe { _vminvq_f16(a) }\n}"
-}

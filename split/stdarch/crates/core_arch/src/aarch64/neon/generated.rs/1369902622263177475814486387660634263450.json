@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
-  "name": "core_arch::aarch64::neon::generated::vrndp_f16",
-  "hash": "1369902622263177475814486387660634263450",
-  "hash_direct": "1012597126119501229111591615167514065909",
-  "src": "pub fn vrndp_f16(a: float16x4_t) -> float16x4_t {\n    unsafe { simd_ceil(a) }\n}"
-}

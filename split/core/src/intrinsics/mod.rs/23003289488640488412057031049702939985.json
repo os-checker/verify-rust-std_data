@@ -1,0 +1,23 @@
+{
+  "file": "core/src/intrinsics/mod.rs",
+  "name": "intrinsics::typed_swap_nonoverlapping::kani_register_contract::<(), {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/intrinsics/mod.rs:2494:18: 2494:35}>",
+  "hash": "23003289488640488412057031049702939985",
+  "hash_direct": "66467714164244549347825756486383646483",
+  "attrs": [
+    "#[kanitool::fn_marker = \"kani_register_contract\"]\n"
+  ],
+  "src": "kani::modifies(x)",
+  "macro_backtrace": [
+    {
+      "callsite": "kani::modifies(x)",
+      "defsite": "pub fn modifies(attr: TokenStream, item: TokenStream) -> TokenStream"
+    }
+  ],
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "243931809744896974812513529918607549579",
+    "1752989996936949203916036071159051010960"
+  ]
+}

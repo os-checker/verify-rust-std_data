@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/dec2flt/mod.rs",
+  "name": "num::dec2flt::pfe_empty",
+  "hash": "163583058705921443356149816263196482859",
+  "hash_direct": "54993469360866852110167092726123261500",
+  "src": "pub(super) fn pfe_empty() -> ParseFloatError {\n    ParseFloatError { kind: FloatErrorKind::Empty }\n}"
+}

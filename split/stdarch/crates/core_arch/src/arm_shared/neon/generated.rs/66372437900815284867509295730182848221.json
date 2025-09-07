@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vcvt_f16_s16",
+  "hash": "66372437900815284867509295730182848221",
+  "hash_direct": "90588320827485609969256316724431522464",
+  "src": "pub fn vcvt_f16_s16(a: int16x4_t) -> float16x4_t {\n    unsafe { simd_cast(a) }\n}"
+}

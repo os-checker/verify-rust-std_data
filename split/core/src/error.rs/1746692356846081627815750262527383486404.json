@@ -1,7 +1,0 @@
-{
-  "file": "core/src/error.rs",
-  "name": "<cell::BorrowMutError as error::Error>::description",
-  "hash": "1746692356846081627815750262527383486404",
-  "hash_direct": "28659976641591008089983420694270239906",
-  "src": "fn description(&self) -> &str {\n        \"already borrowed\"\n    }"
-}

@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/collections/btree/mem.rs",
+  "name": "<collections::btree::mem::replace::PanicGuard as core::ops::Drop>::drop",
+  "hash": "106041551097258177951361565161842063386",
+  "hash_direct": "131968767240209044861203532628387357156",
+  "src": "fn drop(&mut self) {\n            intrinsics::abort()\n        }"
+}

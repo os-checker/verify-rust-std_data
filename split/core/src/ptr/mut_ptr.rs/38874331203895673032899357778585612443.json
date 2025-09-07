@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/mut_ptr.rs",
+  "name": "ptr::mut_ptr::<impl *mut ptr::non_null::verify::non_null_check_drop_in_place::Droppable>::cast_const",
+  "hash": "38874331203895673032899357778585612443",
+  "hash_direct": "1763288812756342494315880484930803932788",
+  "src": "pub const fn cast_const(self) -> *const T {\n        self as _\n    }"
+}

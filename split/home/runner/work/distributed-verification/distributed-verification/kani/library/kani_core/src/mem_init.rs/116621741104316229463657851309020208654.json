@@ -1,0 +1,17 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/mem_init.rs",
+  "name": "kani::mem_init::MemoryInitializationState::new",
+  "hash": "116621741104316229463657851309020208654",
+  "hash_direct": "157139723928345591766468910835785961313",
+  "src": "pub const fn new() -> Self {\n                Self { tracked_object_id: 0, tracked_offset: 0, value: false }\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "kani_core::kani_mem_init!(core)",
+      "defsite": "macro_rules! kani_mem_init"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ]
+}

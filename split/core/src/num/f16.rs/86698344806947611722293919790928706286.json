@@ -1,0 +1,11 @@
+{
+  "file": "core/src/num/f16.rs",
+  "name": "f16::<impl f16>::is_sign_positive",
+  "hash": "86698344806947611722293919790928706286",
+  "hash_direct": "1109035376803400938013860463545717821139",
+  "src": "pub const fn is_sign_positive(self) -> bool {\n        !self.is_sign_negative()\n    }",
+  "callees": [
+    "41314493314170273698848119374772252082",
+    "331178422282659479317337493575173626152"
+  ]
+}

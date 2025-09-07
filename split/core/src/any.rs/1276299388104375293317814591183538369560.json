@@ -1,7 +1,0 @@
-{
-  "file": "core/src/any.rs",
-  "name": "any::TypeId::of::<panic::panic_info::PanicInfo<'a>::payload::NoPayload>",
-  "hash": "1276299388104375293317814591183538369560",
-  "hash_direct": "32823968394027339616718825391171276630",
-  "src": "pub const fn of<T: ?Sized + 'static>() -> TypeId {\n        const { intrinsics::type_id::<T>() }\n    }"
-}

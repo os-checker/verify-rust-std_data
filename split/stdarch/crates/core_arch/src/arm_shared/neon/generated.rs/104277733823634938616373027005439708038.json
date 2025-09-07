@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vaddl_u16",
+  "hash": "104277733823634938616373027005439708038",
+  "hash_direct": "97129487829856976567134792262605049083",
+  "src": "pub fn vaddl_u16(a: uint16x4_t, b: uint16x4_t) -> uint32x4_t {\n    unsafe {\n        let a: uint32x4_t = simd_cast(a);\n        let b: uint32x4_t = simd_cast(b);\n        simd_add(a, b)\n    }\n}"
+}

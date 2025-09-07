@@ -1,0 +1,19 @@
+{
+  "file": "core/src/iter/adapters/step_by.rs",
+  "name": "iter::adapters::step_by::StepBy::<ops::range::Range<u32>>::original_step",
+  "hash": "1094547809659256933816981267295897204376",
+  "hash_direct": "14896750137634979834146387336732568499",
+  "src": "fn original_step(&self) -> NonZero<usize> {\n        // SAFETY: By type invariant, `step_minus_one` cannot be `MAX`, which\n        // means the addition cannot overflow and the result cannot be zero.\n        unsafe { NonZero::new_unchecked(intrinsics::unchecked_add(self.step_minus_one, 1)) }\n    }",
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "17421822894816687532325615181214565887",
+    "23815256893174302637797703719499456373",
+    "1676806814539779643518083197252466559589",
+    "137727233253125029217674386074482569004",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "478753423337745817613297159272845606672",
+    "887235042902537721816254572592014930578",
+    "739520556846959085018120036998133255835"
+  ]
+}

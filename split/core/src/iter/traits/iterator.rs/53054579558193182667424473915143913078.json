@@ -1,0 +1,10 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<iter::adapters::filter::Filter<slice::iter::Split<'_, u8, str::IsAsciiWhitespace>, str::BytesIsNotEmpty> as iter::traits::iterator::Iterator>::map::<&str, str::UnsafeBytesToStr>",
+  "hash": "53054579558193182667424473915143913078",
+  "hash_direct": "370757028007022574011621221802856853350",
+  "src": "fn map<B, F>(self, f: F) -> Map<Self, F>\n    where\n        Self: Sized,\n        F: FnMut(Self::Item) -> B,\n    {\n        Map::new(self, f)\n    }",
+  "callees": [
+    "1619414174058401936114339402651229699775"
+  ]
+}

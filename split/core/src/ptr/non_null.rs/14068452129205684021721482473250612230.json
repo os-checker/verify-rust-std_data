@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "ptr::non_null::NonNull::<[u32]>::from_mut",
+  "hash": "14068452129205684021721482473250612230",
+  "hash_direct": "16818343324925570576668023399991504521",
+  "src": "pub const fn from_mut(r: &mut T) -> Self {\n        // SAFETY: A mutable reference cannot be null.\n        unsafe { NonNull { pointer: r as *mut T } }\n    }"
+}

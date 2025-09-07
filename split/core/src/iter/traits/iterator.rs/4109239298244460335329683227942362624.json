@@ -1,0 +1,10 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<core::str::Utf8Chunks<'_> as core::iter::Iterator>::map::<usize, {closure@<core::bstr::ByteStr as core::fmt::Display>::fmt::{closure#0}}>",
+  "hash": "4109239298244460335329683227942362624",
+  "hash_direct": "46288996511294857501002170276016560927",
+  "src": "fn map<B, F>(self, f: F) -> Map<Self, F>\n    where\n        Self: Sized,\n        F: FnMut(Self::Item) -> B,\n    {\n        Map::new(self, f)\n    }",
+  "callees": [
+    "1020454228050152141217372626523014194536"
+  ]
+}

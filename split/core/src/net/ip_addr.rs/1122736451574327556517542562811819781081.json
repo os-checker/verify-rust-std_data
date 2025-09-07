@@ -1,0 +1,7 @@
+{
+  "file": "core/src/net/ip_addr.rs",
+  "name": "<net::ip_addr::Ipv6Addr as ops::bit::Not>::not",
+  "hash": "1122736451574327556517542562811819781081",
+  "hash_direct": "42271563048004694777594510271697912901",
+  "src": "fn not(mut self) -> Ipv6Addr {\n        let mut idx = 0;\n        while idx < 16 {\n            self.octets[idx] = !self.octets[idx];\n            idx += 1;\n        }\n        self\n    }"
+}

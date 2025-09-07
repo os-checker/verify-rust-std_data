@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vqrdmlsh_s32",
+  "hash": "562985023866539236817304723071623210168",
+  "hash_direct": "102910177029033315512292395266535629957",
+  "src": "pub fn vqrdmlsh_s32(a: int32x2_t, b: int32x2_t, c: int32x2_t) -> int32x2_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.sqrdmlsh.v2i32\"\n        )]\n        fn _vqrdmlsh_s32(a: int32x2_t, b: int32x2_t, c: int32x2_t) -> int32x2_t;\n    }\n    unsafe { _vqrdmlsh_s32(a, b, c) }\n}"
+}

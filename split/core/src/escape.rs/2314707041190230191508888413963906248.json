@@ -1,0 +1,17 @@
+{
+  "file": "core/src/escape.rs",
+  "name": "core::escape::EscapeIterInner::<10, core::escape::MaybeEscaped>::unicode",
+  "hash": "2314707041190230191508888413963906248",
+  "hash_direct": "184373691405508666415156403236490878248",
+  "src": "pub(crate) const fn unicode(c: char) -> Self {\n        let (escape_seq, alive) = escape_unicode(c);\n        // SAFETY: `escape_seq` contains an escape sequence in the range given by `alive`.\n        unsafe { Self::new(MaybeEscapedCharacter { escape_seq }, alive) }\n    }",
+  "callees": [
+    "1478956514853034331812289727879465643808",
+    "755860497850700289610277419388823647854",
+    "12281449246394340237926324936375242532",
+    "1149474847652006342210816901268852505244",
+    "986792852990965178117440249555081278778",
+    "90818112465881722349174357944217011292",
+    "170281423934441608902372914597711355436",
+    "146612017564224181584303574960223420416"
+  ]
+}

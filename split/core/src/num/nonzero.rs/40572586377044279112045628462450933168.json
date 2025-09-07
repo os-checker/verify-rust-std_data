@@ -1,0 +1,36 @@
+{
+  "file": "core/src/num/nonzero.rs",
+  "name": "num::nonzero::verify::nonzero_check_from_mut_unchecked_u64",
+  "hash": "40572586377044279112045628462450933168",
+  "hash_direct": "71203506387855816188830497712426148554",
+  "proof_kind": "\"Contract\"",
+  "attrs": [
+    "#[kanitool::proof_for_contract = \"NonZero :: < u64 > :: from_mut_unchecked\"]\n"
+  ],
+  "src": "pub fn $harness_name() {\n                let mut x: $t = kani::any();\n                unsafe {\n                    <$nonzero_type>::from_mut_unchecked(&mut x);\n                }\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "nonzero_check_from_mut_unchecked!(\n        u64,\n        core::num::NonZeroU64,\n        nonzero_check_from_mut_unchecked_u64\n    )",
+      "defsite": "macro_rules! nonzero_check_from_mut_unchecked {\n        ($t:ty, $nonzero_type:ty, $harness_name:ident) => {\n            #[kani::proof_for_contract(NonZero::<$t>::from_mut_unchecked)]\n            pub fn $harness_name() {\n                let mut x: $t = kani::any();\n                unsafe {\n                    <$nonzero_type>::from_mut_unchecked(&mut x);\n                }\n            }\n        };\n    }"
+    }
+  ],
+  "callees": [
+    "173456776752791686561409570653074085",
+    "1795800258758546744112665996393728061596",
+    "54742968945796623344611399041438109385",
+    "1208955528702686560712085551422443389193",
+    "7526082995824335814466973137466280467",
+    "149406203697599390761498802948984239894",
+    "258820287469578611817448591488600041899",
+    "17421822894816687532325615181214565887",
+    "74318753242693389697461428218734070057",
+    "1808757127047983136114767465593097156964",
+    "8108042082834919971811951097020343717",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "478753423337745817613297159272845606672",
+    "8170942216328188709413174302126060556",
+    "34773513303972582017262724785801998356",
+    "947925086076299054212540105876296384566"
+  ]
+}

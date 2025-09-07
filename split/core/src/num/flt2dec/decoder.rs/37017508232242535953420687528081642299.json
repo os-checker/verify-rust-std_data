@@ -1,0 +1,23 @@
+{
+  "file": "core/src/num/flt2dec/decoder.rs",
+  "name": "num::flt2dec::decoder::decode::<f64>",
+  "hash": "37017508232242535953420687528081642299",
+  "hash_direct": "1536945378933106258111977347840338077049",
+  "src": "pub fn decode<T: DecodableFloat>(v: T) -> (/*negative?*/ bool, FullDecoded) {\n    let (mant, exp, sign) = v.integer_decode();\n    let even = (mant & 1) == 0;\n    let decoded = match v.classify() {\n        FpCategory::Nan => FullDecoded::Nan,\n        FpCategory::Infinite => FullDecoded::Infinite,\n        FpCategory::Zero => FullDecoded::Zero,\n        FpCategory::Subnormal => {\n            // neighbors: (mant - 2, exp) -- (mant, exp) -- (mant + 2, exp)\n            // Float::integer_decode always preserves the exponent,\n            // so the mantissa is scaled for subnormals.\n            FullDecoded::Finite(Decoded { mant, minus: 1, plus: 1, exp, inclusive: even })\n        }\n        FpCategory::Normal => {\n            let minnorm = <T as DecodableFloat>::min_pos_norm_value().integer_decode();\n            if mant == minnorm.0 {\n                // neighbors: (maxmant, exp - 1) -- (minnormmant, exp) -- (minnormmant + 1, exp)\n                // where maxmant = minnormmant * 2 - 1\n                FullDecoded::Finite(Decoded {\n                    mant: mant << 2,\n                    minus: 1,\n                    plus: 2,\n                    exp: exp - 2,\n                    inclusive: even,\n                })\n            } else {\n                // neighbors: (mant - 1, exp) -- (mant, exp) -- (mant + 1, exp)\n                FullDecoded::Finite(Decoded {\n                    mant: mant << 1,\n                    minus: 1,\n                    plus: 1,\n                    exp: exp - 1,\n                    inclusive: even,\n                })\n            }\n        }\n    };\n    (sign < 0, decoded)\n}",
+  "callees": [
+    "463280735582930019114404485781406104133",
+    "1257881012264488197416544782707968926175",
+    "1544961422073915624017234493607050736330",
+    "110136787095800963745070749484865738",
+    "1196682137644965430512900339900098789894",
+    "320659744895839940711142382562474182804",
+    "948784241142142375515727762281903710886",
+    "532879368499335525210375989760065508477",
+    "1033976944350554769714411313899354111723",
+    "88995097835845057026643214485317588839",
+    "1808562075960099839614038510097164394688",
+    "1135559399325654492218132048801409445489",
+    "259973385383139492817527305682536745599",
+    "74922203822057127656700924308741580812"
+  ]
+}

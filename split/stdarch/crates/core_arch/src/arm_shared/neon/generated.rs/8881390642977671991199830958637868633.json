@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vaddq_p64",
-  "hash": "8881390642977671991199830958637868633",
-  "hash_direct": "48730413775175428706460394623390149299",
-  "src": "pub fn vaddq_p64(a: poly64x2_t, b: poly64x2_t) -> poly64x2_t {\n    unsafe { simd_xor(a, b) }\n}"
-}

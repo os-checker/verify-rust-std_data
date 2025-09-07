@@ -1,0 +1,7 @@
+{
+  "file": "core/src/mem/transmutability.rs",
+  "name": "mem::transmutability::Assume::ALIGNMENT",
+  "hash": "1607252590984621812011780947326173707304",
+  "hash_direct": "111791285650182137839356028069709305023",
+  "src": "pub const ALIGNMENT: Self = Self { alignment: true, ..Self::NOTHING };"
+}

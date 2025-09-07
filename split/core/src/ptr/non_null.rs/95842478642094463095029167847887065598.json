@@ -1,7 +1,0 @@
-{
-  "file": "core/src/ptr/non_null.rs",
-  "name": "ptr::non_null::NonNull::<mem::maybe_uninit::MaybeUninit<mem::maybe_uninit::MaybeUninit<i32>>>::as_ptr",
-  "hash": "95842478642094463095029167847887065598",
-  "hash_direct": "1731025800325678518445678927219389248",
-  "src": "pub const fn as_ptr(self) -> *mut T {\n        // This is a transmute for the same reasons as `NonZero::get`.\n\n        // SAFETY: `NonNull` is `transparent` over a `*const T`, and `*const T`\n        // and `*mut T` have the same layout, so transitively we can transmute\n        // our `NonNull` to a `*mut T` directly.\n        unsafe { mem::transmute::<Self, *mut T>(self) }\n    }"
-}

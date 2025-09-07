@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vmvnq_u32",
+  "hash": "107385063996827280849208325704894824266",
+  "hash_direct": "1687979487600984311718407752221334996285",
+  "src": "pub fn vmvnq_u32(a: uint32x4_t) -> uint32x4_t {\n    let b = uint32x4_t::splat(4_294_967_295);\n    unsafe { simd_xor(a, b) }\n}",
+  "callees": [
+    "231137495344008881417068478514356149502"
+  ]
+}

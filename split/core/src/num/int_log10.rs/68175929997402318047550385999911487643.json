@@ -1,0 +1,10 @@
+{
+  "file": "core/src/num/int_log10.rs",
+  "name": "core::num::int_log10::u64",
+  "hash": "68175929997402318047550385999911487643",
+  "hash_direct": "83299119754124721938901941461027414312",
+  "src": "pub(super) const fn u64(mut val: u64) -> u32 {\n    let mut log = 0;\n    if val >= 10_000_000_000 {\n        val /= 10_000_000_000;\n        log += 10;\n    }\n    if val >= 100_000 {\n        val /= 100_000;\n        log += 5;\n    }\n    log + less_than_5(val as u32)\n}",
+  "callees": [
+    "134878469402037594989912241929912062374"
+  ]
+}

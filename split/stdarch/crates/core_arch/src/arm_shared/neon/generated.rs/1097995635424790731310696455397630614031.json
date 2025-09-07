@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vget_high_s64",
-  "hash": "1097995635424790731310696455397630614031",
-  "hash_direct": "598877480372141984713335588030865795131",
-  "src": "pub fn vget_high_s64(a: int64x2_t) -> int64x1_t {\n    unsafe { int64x1_t([simd_extract!(a, 1)]) }\n}"
-}

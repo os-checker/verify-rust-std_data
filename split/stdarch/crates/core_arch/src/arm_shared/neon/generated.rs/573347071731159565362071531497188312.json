@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vmls_u32",
+  "hash": "573347071731159565362071531497188312",
+  "hash_direct": "780503896034106697714366109050519186262",
+  "src": "pub fn vmls_u32(a: uint32x2_t, b: uint32x2_t, c: uint32x2_t) -> uint32x2_t {\n    unsafe { simd_sub(a, simd_mul(b, c)) }\n}"
+}

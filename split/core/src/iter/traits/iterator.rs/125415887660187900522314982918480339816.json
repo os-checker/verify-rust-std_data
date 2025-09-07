@@ -1,0 +1,12 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "iter::traits::iterator::Iterator::cmp_by::compare::<u8, u8, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/iter/traits/iterator.rs:3639:28: 3639:34}>::{closure#0}",
+  "hash": "125415887660187900522314982918480339816",
+  "hash_direct": "676387453363637609716440905097893340237",
+  "src": "move |x, y| match cmp(x, y) {\n                Ordering::Equal => ControlFlow::Continue(()),\n                non_eq => ControlFlow::Break(non_eq),\n            }",
+  "callees": [
+    "4298436512004098368501497010512321306",
+    "114489178550681278878859170194420966439",
+    "88732405038833504516786169729211538271"
+  ]
+}

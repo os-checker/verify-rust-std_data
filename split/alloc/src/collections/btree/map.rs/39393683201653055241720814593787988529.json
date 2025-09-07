@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/collections/btree/map.rs",
+  "name": "collections::btree::map::MIN_LEN",
+  "hash": "39393683201653055241720814593787988529",
+  "hash_direct": "1659634766709068153513641086952621819864",
+  "src": "pub(super) const MIN_LEN: usize = node::MIN_LEN_AFTER_SPLIT;"
+}

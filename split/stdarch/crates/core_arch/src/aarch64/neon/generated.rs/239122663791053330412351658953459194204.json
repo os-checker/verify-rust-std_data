@@ -1,0 +1,11 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vcltzd_s64",
+  "hash": "239122663791053330412351658953459194204",
+  "hash_direct": "783485270076380731618363272945612271611",
+  "src": "pub fn vcltzd_s64(a: i64) -> u64 {\n    unsafe { transmute(vcltz_s64(transmute(a))) }\n}",
+  "callees": [
+    "120287223177866864167736004436849514704",
+    "881835745059494176511604045227685705066"
+  ]
+}

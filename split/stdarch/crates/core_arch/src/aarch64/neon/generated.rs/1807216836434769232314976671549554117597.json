@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vrbit_u8",
+  "hash": "1807216836434769232314976671549554117597",
+  "hash_direct": "55184752342526644013065590058826155761",
+  "src": "pub fn vrbit_u8(a: uint8x8_t) -> uint8x8_t {\n    unsafe { transmute(vrbit_s8(transmute(a))) }\n}",
+  "callees": [
+    "147716516039861398854234631965983564710"
+  ]
+}

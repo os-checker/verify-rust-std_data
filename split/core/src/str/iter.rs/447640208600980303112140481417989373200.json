@@ -1,7 +1,0 @@
-{
-  "file": "core/src/str/iter.rs",
-  "name": "<str::iter::Chars<'a> as iter::traits::iterator::Iterator>::advance_by::CHUNK_SIZE",
-  "hash": "447640208600980303112140481417989373200",
-  "hash_direct": "332834772468740996215413667899140783077",
-  "src": "const CHUNK_SIZE: usize = 32;"
-}

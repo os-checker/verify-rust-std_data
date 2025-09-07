@@ -1,0 +1,16 @@
+{
+  "file": "core/src/net/parser.rs",
+  "name": "<net::parser::AddrParseError as cmp::PartialEq>::eq",
+  "hash": "130017362708044870112137214267689148259",
+  "hash_direct": "53852366484892325296831725187087701680",
+  "src": "PartialEq",
+  "macro_backtrace": [
+    {
+      "callsite": "PartialEq",
+      "defsite": "pub macro PartialEq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ],
+  "callees": [
+    "108990140259355343172568090755494475769"
+  ]
+}

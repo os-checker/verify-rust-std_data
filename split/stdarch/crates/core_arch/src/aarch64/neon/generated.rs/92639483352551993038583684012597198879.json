@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vqmovnd_u64",
+  "hash": "92639483352551993038583684012597198879",
+  "hash_direct": "841068168853686914115947330221181055068",
+  "src": "pub fn vqmovnd_u64(a: u64) -> u32 {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.scalar.uqxtn.i32.i64\"\n        )]\n        fn _vqmovnd_u64(a: u64) -> u32;\n    }\n    unsafe { _vqmovnd_u64(a) }\n}"
+}

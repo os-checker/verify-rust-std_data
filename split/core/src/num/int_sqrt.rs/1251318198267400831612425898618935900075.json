@@ -1,0 +1,13 @@
+{
+  "file": "core/src/num/int_sqrt.rs",
+  "name": "num::int_sqrt::u32_stages::N_SHIFT",
+  "hash": "1251318198267400831612425898618935900075",
+  "hash_direct": "1121402660631400572115769400816580597405",
+  "src": "const N_SHIFT: u32 = $original_bits - 8;",
+  "macro_backtrace": [
+    {
+      "callsite": "first_stage!(32, n)",
+      "defsite": "macro_rules! first_stage {\n    ($original_bits:literal, $n:ident) => {{\n        debug_assert!($n != 0, \"`$n` is  zero in `first_stage!`.\");\n\n        const N_SHIFT: u32 = $original_bits - 8;\n        let n = $n >> N_SHIFT;\n\n        let (s, r) = U8_ISQRT_WITH_REMAINDER[n as usize];\n\n        // Inform the optimizer that `s` is nonzero. This will allow it to\n        // avoid generating code to handle division-by-zero panics in the next\n        // stage.\n        //\n        // SAFETY: If the original `$n` is zero, the top of the `unsigned_fn`\n        // macro recurses instead of continuing to this point, so the original\n        // `$n` wasn't a 0 if we've reached here.\n        //\n        // Then the `unsigned_fn` macro normalizes `$n` so that at least one of\n        // its two most-significant bits is a 1.\n        //\n        // Then this stage puts the eight most-significant bits of `$n` into\n        // `n`. This means that `n` here has at least one 1 bit in its two\n        // most-significant bits, making `n` nonzero.\n        //\n        // `U8_ISQRT_WITH_REMAINDER[n as usize]` will give a nonzero `s` when\n        // given a nonzero `n`.\n        unsafe { crate::hint::assert_unchecked(s != 0) };\n        (s, r)\n    }};\n}"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "file": "core/src/net/parser.rs",
+  "name": "<net::parser::AddrParseError as fmt::Display>::fmt",
+  "hash": "59381937132960168613787602340123365942",
+  "hash_direct": "451036440173068628617599765237221896341",
+  "src": "fn fmt(&self, fmt: &mut fmt::Formatter<'_>) -> fmt::Result {\n        fmt.write_str(self.description())\n    }",
+  "callees": [
+    "243839084150888952911908111539685994713",
+    "93897805606052138209833822537600258215"
+  ]
+}

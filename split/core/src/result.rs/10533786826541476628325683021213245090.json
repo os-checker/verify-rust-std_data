@@ -1,0 +1,7 @@
+{
+  "file": "core/src/result.rs",
+  "name": "result::Result::<(), num::nonzero::NonZero<usize>>::is_ok",
+  "hash": "10533786826541476628325683021213245090",
+  "hash_direct": "582875810302570377417473728450983091855",
+  "src": "pub const fn is_ok(&self) -> bool {\n        matches!(*self, Ok(_))\n    }"
+}

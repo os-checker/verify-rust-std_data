@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/adapters/map.rs",
+  "name": "iter::adapters::map::Map::<str::iter::Chars<'_>, str::CharEscapeDebugContinue>::new",
+  "hash": "1677098599324345450115802963963387966694",
+  "hash_direct": "8038411415244636255626320488132486584",
+  "src": "pub(in crate::iter) fn new(iter: I, f: F) -> Map<I, F> {\n        Map { iter, f }\n    }"
+}

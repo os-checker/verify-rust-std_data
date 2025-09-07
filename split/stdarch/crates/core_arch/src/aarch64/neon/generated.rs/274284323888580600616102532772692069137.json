@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vmaxh_f16",
+  "hash": "274284323888580600616102532772692069137",
+  "hash_direct": "72763622862220512512204459991774673602",
+  "src": "pub fn vmaxh_f16(a: f16, b: f16) -> f16 {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.fmax.f16\"\n        )]\n        fn _vmaxh_f16(a: f16, b: f16) -> f16;\n    }\n    unsafe { _vmaxh_f16(a, b) }\n}"
+}

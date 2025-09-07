@@ -1,0 +1,12 @@
+{
+  "file": "core/src/panic/panic_info.rs",
+  "name": "panic::panic_info::PanicInfo::<'_>::payload",
+  "hash": "1571490087572948500515081593668697119050",
+  "hash_direct": "1553252713495229832211332102210965715098",
+  "src": "pub fn payload(&self) -> &(dyn crate::any::Any + Send) {\n        struct NoPayload;\n        &NoPayload\n    }",
+  "callees": [
+    "223736113579455897916455504201442194469",
+    "138225806136586733712884506829374345039",
+    "176316931674093439782262871849772819438"
+  ]
+}

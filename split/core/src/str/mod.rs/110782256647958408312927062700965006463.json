@@ -1,0 +1,7 @@
+{
+  "file": "core/src/str/mod.rs",
+  "name": "core::str::<impl str>::as_ptr",
+  "hash": "110782256647958408312927062700965006463",
+  "hash_direct": "100859910742284493721743690580606562854",
+  "src": "pub const fn as_ptr(&self) -> *const u8 {\n        self as *const str as *const u8\n    }"
+}

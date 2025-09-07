@@ -1,7 +1,0 @@
-{
-  "file": "core/src/sync/atomic.rs",
-  "name": "sync::atomic::strongest_failure_ordering",
-  "hash": "127437039186453598491454874528845978322",
-  "hash_direct": "553494108346445860115233958587715897477",
-  "src": "fn strongest_failure_ordering(order: Ordering) -> Ordering {\n    match order {\n        Release => Relaxed,\n        Relaxed => Relaxed,\n        SeqCst => SeqCst,\n        Acquire => Acquire,\n        AcqRel => Acquire,\n    }\n}"
-}

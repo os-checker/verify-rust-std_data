@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
-  "name": "core_arch::aarch64::neon::generated::vpaddq_f32",
-  "hash": "12301798123147533035643889194638012484",
-  "hash_direct": "348712822791232636411392428518836881057",
-  "src": "pub fn vpaddq_f32(a: float32x4_t, b: float32x4_t) -> float32x4_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.faddp.v4f32\"\n        )]\n        fn _vpaddq_f32(a: float32x4_t, b: float32x4_t) -> float32x4_t;\n    }\n    unsafe { _vpaddq_f32(a, b) }\n}"
-}

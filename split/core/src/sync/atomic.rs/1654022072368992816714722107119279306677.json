@@ -1,7 +1,0 @@
-{
-  "file": "core/src/sync/atomic.rs",
-  "name": "sync::atomic::EMULATE_ATOMIC_BOOL",
-  "hash": "1654022072368992816714722107119279306677",
-  "hash_direct": "992188888360170075911815078883033361682",
-  "src": "const EMULATE_ATOMIC_BOOL: bool = cfg!(any(\n    target_arch = \"riscv32\",\n    target_arch = \"riscv64\",\n    target_arch = \"loongarch32\",\n    target_arch = \"loongarch64\"\n));"
-}

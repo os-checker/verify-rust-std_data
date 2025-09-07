@@ -1,0 +1,10 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<str::iter::SplitInclusive<'_, char> as iter::traits::iterator::Iterator>::map::<&str, str::LinesMap>",
+  "hash": "72562156029762535965924560437265554266",
+  "hash_direct": "1423129353845656177517061391552976690770",
+  "src": "fn map<B, F>(self, f: F) -> Map<Self, F>\n    where\n        Self: Sized,\n        F: FnMut(Self::Item) -> B,\n    {\n        Map::new(self, f)\n    }",
+  "callees": [
+    "983841912740169786116941221282573689172"
+  ]
+}

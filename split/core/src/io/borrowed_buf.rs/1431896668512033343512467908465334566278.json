@@ -1,0 +1,7 @@
+{
+  "file": "core/src/io/borrowed_buf.rs",
+  "name": "io::borrowed_buf::BorrowedBuf::<'_>::init_len",
+  "hash": "1431896668512033343512467908465334566278",
+  "hash_direct": "830929616188963006718077767526336596659",
+  "src": "pub fn init_len(&self) -> usize {\n        self.init\n    }"
+}

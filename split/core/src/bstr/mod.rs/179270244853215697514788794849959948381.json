@@ -1,0 +1,7 @@
+{
+  "file": "core/src/bstr/mod.rs",
+  "name": "<bstr::ByteStr as borrow::BorrowMut<[u8]>>::borrow_mut",
+  "hash": "179270244853215697514788794849959948381",
+  "hash_direct": "267100342502986131715127098148968808679",
+  "src": "fn borrow_mut(&mut self) -> &mut [u8] {\n        &mut self.0\n    }"
+}

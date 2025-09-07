@@ -1,7 +1,0 @@
-{
-  "file": "core/src/ptr/mod.rs",
-  "name": "ptr::without_provenance_mut::<[usize; 4]>",
-  "hash": "184353680265586730536158755300629755859",
-  "hash_direct": "1404928349232622046316562802975414648730",
-  "src": "pub const fn without_provenance_mut<T>(addr: usize) -> *mut T {\n    // An int-to-pointer transmute currently has exactly the intended semantics: it creates a\n    // pointer without provenance. Note that this is *not* a stable guarantee about transmute\n    // semantics, it relies on sysroot crates having special status.\n    // SAFETY: every valid integer is also a valid pointer (as long as you don't dereference that\n    // pointer).\n    unsafe { mem::transmute(addr) }\n}"
-}

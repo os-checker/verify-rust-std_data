@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/unique.rs",
+  "name": "ptr::unique::Unique::<i32>::as_ptr",
+  "hash": "127397160344331272961297368114861654835",
+  "hash_direct": "172122227390119520667144647778730268502",
+  "src": "pub const fn as_ptr(self) -> *mut T {\n        self.pointer.as_ptr()\n    }",
+  "callees": [
+    "1248523668675078374717473437136873169174"
+  ]
+}

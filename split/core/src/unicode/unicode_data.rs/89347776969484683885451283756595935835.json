@@ -1,0 +1,7 @@
+{
+  "file": "core/src/unicode/unicode_data.rs",
+  "name": "unicode::unicode_data::white_space::lookup",
+  "hash": "89347776969484683885451283756595935835",
+  "hash_direct": "127306267470897803806527494092815150423",
+  "src": "pub const fn lookup(c: char) -> bool {\n        match c as u32 >> 8 {\n            0 => WHITESPACE_MAP[c as usize & 0xff] & 1 != 0,\n            22 => c as u32 == 0x1680,\n            32 => WHITESPACE_MAP[c as usize & 0xff] & 2 != 0,\n            48 => c as u32 == 0x3000,\n            _ => false,\n        }\n    }"
+}

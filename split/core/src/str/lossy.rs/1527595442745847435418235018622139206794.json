@@ -1,0 +1,13 @@
+{
+  "file": "core/src/str/lossy.rs",
+  "name": "<str::lossy::Utf8Chunks<'_> as clone::Clone>::clone",
+  "hash": "1527595442745847435418235018622139206794",
+  "hash_direct": "1563877709081621109713815855478699735867",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "file": "core/src/iter/adapters/fuse.rs",
+  "name": "<iter::adapters::fuse::Fuse<I> as iter::traits::iterator::Iterator>::__iterator_get_unchecked::{closure#0}::REENTRY",
+  "hash": "1643393909449969190514175076621897207412",
+  "hash_direct": "842349735932048012816554434665777175106",
+  "attrs": [
+    "#[kanitool::recursion_tracker]\n"
+  ],
+  "src": "#[cfg_attr(kani, kani::modifies(self))]",
+  "macro_backtrace": [
+    {
+      "callsite": "#[cfg_attr(kani, kani::modifies(self))]",
+      "defsite": "pub fn modifies(attr: TokenStream, item: TokenStream) -> TokenStream"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/arbitrary.rs",
+  "name": "<num::nonzero::NonZero<i64> as kani::Arbitrary>::any",
+  "hash": "1341910797260944066211904367475378925460",
+  "hash_direct": "1381336656003830899310350600628635026469",
+  "src": "fn any() -> Self {\n                        let val = <$base>::any();\n                        assume(val != 0);\n                        unsafe { <$type>::new_unchecked(val) }\n                    }",
+  "macro_backtrace": [
+    {
+      "callsite": "nonzero_arbitrary!(NonZeroI64, i64)",
+      "defsite": "macro_rules! nonzero_arbitrary {\n            ( $type: ty, $base: ty ) => {\n                use core_path::num::*;\n                impl Arbitrary for $type {\n                    #[inline(always)]\n                    fn any() -> Self {\n                        let val = <$base>::any();\n                        assume(val != 0);\n                        unsafe { <$type>::new_unchecked(val) }\n                    }\n                }\n            };\n        }"
+    },
+    {
+      "callsite": "kani_core::generate_arbitrary!()",
+      "defsite": "macro_rules! generate_arbitrary"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ],
+  "callees": [
+    "146908235034638159208859868167946843838",
+    "455266664225907363718433531888791329661",
+    "809857513675347729512830832735828419618",
+    "139704976908753389291209564980972955015",
+    "630599663716183336214125635728089623874",
+    "258820287469578611817448591488600041899",
+    "17421822894816687532325615181214565887",
+    "23815256893174302637797703719499456373",
+    "1147979670399206758315286428992360231052",
+    "3758406900067267902770104292894595937",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "478753423337745817613297159272845606672",
+    "887235042902537721816254572592014930578",
+    "739520556846959085018120036998133255835"
+  ]
+}

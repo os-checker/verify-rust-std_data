@@ -1,0 +1,13 @@
+{
+  "file": "core/src/io/borrowed_buf.rs",
+  "name": "io::borrowed_buf::BorrowedCursor::<'_>::advance_unchecked",
+  "hash": "1633476374610569444213529832854515773639",
+  "hash_direct": "82660811356612305847101192457450773805",
+  "src": "pub unsafe fn advance_unchecked(&mut self, n: usize) -> &mut Self {\n        self.buf.filled += n;\n        self.buf.init = cmp::max(self.buf.init, self.buf.filled);\n        self\n    }",
+  "callees": [
+    "366752582573636662618041715036916609810",
+    "155146884437592745449279657258619050520",
+    "170486207337946700033815843014261966755",
+    "18924474281332607947427114014473837479"
+  ]
+}

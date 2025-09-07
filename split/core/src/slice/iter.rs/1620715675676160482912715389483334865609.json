@@ -1,0 +1,7 @@
+{
+  "file": "core/src/slice/iter.rs",
+  "name": "slice::iter::Split::<'_, u8, str::IsAsciiWhitespace>::new",
+  "hash": "1620715675676160482912715389483334865609",
+  "hash_direct": "118811241302163636513190679422718527351",
+  "src": "pub(super) fn new(slice: &'a [T], pred: P) -> Self {\n        Self { v: slice, pred, finished: false }\n    }"
+}

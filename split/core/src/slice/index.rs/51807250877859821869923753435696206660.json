@@ -1,0 +1,10 @@
+{
+  "file": "core/src/slice/index.rs",
+  "name": "slice::index::<impl ops::index::IndexMut<ops::range::RangeFull> for [u32]>::index_mut",
+  "hash": "51807250877859821869923753435696206660",
+  "hash_direct": "565858412120532743812503857457291667337",
+  "src": "fn index_mut(&mut self, index: I) -> &mut I::Output {\n        index.index_mut(self)\n    }",
+  "callees": [
+    "102158074081008205498407343669368368587"
+  ]
+}

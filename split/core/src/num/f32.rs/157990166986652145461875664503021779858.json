@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f32.rs",
+  "name": "f32::math::trunc",
+  "hash": "157990166986652145461875664503021779858",
+  "hash_direct": "45656366414149193661466043933320538174",
+  "src": "pub const fn trunc(x: f32) -> f32 {\n        // SAFETY: intrinsic with no preconditions\n        unsafe { intrinsics::truncf32(x) }\n    }"
+}

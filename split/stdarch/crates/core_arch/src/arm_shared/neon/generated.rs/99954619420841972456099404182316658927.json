@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vcreate_p8",
+  "hash": "99954619420841972456099404182316658927",
+  "hash_direct": "12498181478489229208847753925949857355",
+  "src": "pub fn vcreate_p8(a: u64) -> poly8x8_t {\n    unsafe { transmute(a) }\n}"
+}

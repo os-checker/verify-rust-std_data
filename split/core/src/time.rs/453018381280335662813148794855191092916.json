@@ -1,0 +1,17 @@
+{
+  "file": "core/src/time.rs",
+  "name": "<time::Duration as default::Default>::default",
+  "hash": "453018381280335662813148794855191092916",
+  "hash_direct": "1759013265267089418615216339106650831541",
+  "src": "Default",
+  "macro_backtrace": [
+    {
+      "callsite": "Default",
+      "defsite": "pub macro Default($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ],
+  "callees": [
+    "67903923256944088678414142369330925193",
+    "7491658729142438251950090353170692194"
+  ]
+}

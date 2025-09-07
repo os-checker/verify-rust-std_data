@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/f64.rs",
-  "name": "f64::math::round",
-  "hash": "12303845670789987053550469328047565902",
-  "hash_direct": "53339490215970928594664355343952942098",
-  "src": "pub const fn round(x: f64) -> f64 {\n        // SAFETY: intrinsic with no preconditions\n        unsafe { intrinsics::roundf64(x) }\n    }"
-}

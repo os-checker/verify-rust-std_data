@@ -1,0 +1,11 @@
+{
+  "file": "core/src/iter/adapters/flatten.rs",
+  "name": "core::iter::adapters::flatten::FlattenCompat::<core::iter::Map<core::slice::Iter<'_, u8>, core::slice::ascii::EscapeByte>, core::ascii::EscapeDefault>::new",
+  "hash": "58827923041520855097249959417119319261",
+  "hash_direct": "121542265205883567869940061738632391502",
+  "src": "fn new(iter: I) -> FlattenCompat<I, U> {\n        FlattenCompat { iter: iter.fuse(), frontiter: None, backiter: None }\n    }",
+  "callees": [
+    "724385813079616996718319265690785988195",
+    "34539744011937574632649154663821605872"
+  ]
+}

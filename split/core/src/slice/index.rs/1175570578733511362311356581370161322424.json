@@ -1,0 +1,7 @@
+{
+  "file": "core/src/slice/index.rs",
+  "name": "slice::index::get_offset_len_noubcheck::<ascii::ascii_char::AsciiChar>",
+  "hash": "1175570578733511362311356581370161322424",
+  "hash_direct": "96059510161737777215035057184483778270",
+  "src": "const unsafe fn get_offset_len_noubcheck<T>(\n    ptr: *const [T],\n    offset: usize,\n    len: usize,\n) -> *const [T] {\n    let ptr = ptr as *const T;\n    // SAFETY: The caller already checked these preconditions\n    let ptr = unsafe { crate::intrinsics::offset(ptr, offset) };\n    crate::intrinsics::aggregate_raw_ptr(ptr, len)\n}"
+}

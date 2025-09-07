@@ -1,0 +1,11 @@
+{
+  "file": "core/src/convert/mod.rs",
+  "name": "<num::nonzero::NonZero<u64> as convert::Into<u64>>::into",
+  "hash": "917862914159740814610524825663207216801",
+  "hash_direct": "96457841042126800432334133439332102353",
+  "src": "fn into(self) -> U {\n        U::from(self)\n    }",
+  "callees": [
+    "83614329429479560454378861657170800778",
+    "746724656701179976464738604287732679"
+  ]
+}

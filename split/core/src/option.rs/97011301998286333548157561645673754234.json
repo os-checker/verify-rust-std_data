@@ -1,0 +1,10 @@
+{
+  "file": "core/src/option.rs",
+  "name": "core::option::Option::<usize>::ok_or::<collections::TryReserveErrorKind>",
+  "hash": "97011301998286333548157561645673754234",
+  "hash_direct": "390879965130554361011439510166385724393",
+  "src": "pub const fn ok_or<E: [const] Destruct>(self, err: E) -> Result<T, E> {\n        match self {\n            Some(v) => Ok(v),\n            None => Err(err),\n        }\n    }",
+  "callees": [
+    "741908763413599992516200825960637073992"
+  ]
+}

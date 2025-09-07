@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/const_ptr.rs",
+  "name": "ptr::const_ptr::<impl *const u8>::guaranteed_eq",
+  "hash": "167997667617143350199582833511778564912",
+  "hash_direct": "928084373726138395411378670962959629167",
+  "src": "pub const fn guaranteed_eq(self, other: *const T) -> Option<bool>\n    where\n        T: Sized,\n    {\n        match intrinsics::ptr_guaranteed_cmp(self, other) {\n            2 => None,\n            other => Some(other == 1),\n        }\n    }",
+  "callees": [
+    "1390331223725353716211196670350653795851"
+  ]
+}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/f128.rs",
-  "name": "f128::<impl f128>::algebraic_add",
-  "hash": "447118504585278649912378375322529974165",
-  "hash_direct": "1544395431059248986711312730661045482885",
-  "src": "pub const fn algebraic_add(self, rhs: f128) -> f128 {\n        intrinsics::fadd_algebraic(self, rhs)\n    }"
-}

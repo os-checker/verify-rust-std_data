@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "ptr::slice_from_raw_parts::<[u8; 32]>",
+  "hash": "858102309417714845412139815515491977464",
+  "hash_direct": "60017279390732919767630613369419228098",
+  "src": "pub const fn slice_from_raw_parts<T>(data: *const T, len: usize) -> *const [T] {\n    from_raw_parts(data, len)\n}",
+  "callees": [
+    "86113668461166532967926693353333699349"
+  ]
+}

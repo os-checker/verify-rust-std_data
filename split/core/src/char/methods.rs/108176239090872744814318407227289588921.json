@@ -1,0 +1,7 @@
+{
+  "file": "core/src/char/methods.rs",
+  "name": "core::char::methods::<impl char>::is_ascii",
+  "hash": "108176239090872744814318407227289588921",
+  "hash_direct": "180858131911231868842826635079035677658",
+  "src": "pub const fn is_ascii(&self) -> bool {\n        *self as u32 <= 0x7F\n    }"
+}

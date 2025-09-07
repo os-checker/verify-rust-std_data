@@ -1,0 +1,16 @@
+{
+  "file": "core/src/range/iter.rs",
+  "name": "<range::iter::IterRange<A> as iter::traits::iterator::Iterator>::__iterator_get_unchecked::kani_contract_mode",
+  "hash": "1513578138717873950014570531131485861483",
+  "hash_direct": "437718147548551725910605135706213791838",
+  "attrs": [
+    "#[kanitool::fn_marker = \"kani_contract_mode\"]\n"
+  ],
+  "src": "#[cfg_attr(kani, kani::modifies(self))]",
+  "macro_backtrace": [
+    {
+      "callsite": "#[cfg_attr(kani, kani::modifies(self))]",
+      "defsite": "pub fn modifies(attr: TokenStream, item: TokenStream) -> TokenStream"
+    }
+  ]
+}

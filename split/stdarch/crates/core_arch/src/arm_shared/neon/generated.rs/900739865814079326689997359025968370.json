@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vget_high_u16",
+  "hash": "900739865814079326689997359025968370",
+  "hash_direct": "49151611506536982534873497796456021526",
+  "src": "pub fn vget_high_u16(a: uint16x8_t) -> uint16x4_t {\n    unsafe { simd_shuffle!(a, a, [4, 5, 6, 7]) }\n}"
+}

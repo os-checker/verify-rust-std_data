@@ -1,0 +1,16 @@
+{
+  "file": "core/src/num/dec2flt/mod.rs",
+  "name": "<num::dec2flt::FloatErrorKind as fmt::Debug>::fmt",
+  "hash": "1014537517760515742312120505731422587026",
+  "hash_direct": "102469438353715497639480084971506003211",
+  "src": "Debug",
+  "macro_backtrace": [
+    {
+      "callsite": "Debug",
+      "defsite": "pub macro Debug($item:item) {\n        /* compiler built-in */\n    }"
+    }
+  ],
+  "callees": [
+    "243839084150888952911908111539685994713"
+  ]
+}

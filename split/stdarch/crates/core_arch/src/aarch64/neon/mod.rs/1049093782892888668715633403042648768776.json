@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/mod.rs",
+  "name": "core_arch::aarch64::neon::vget_high_p64",
+  "hash": "1049093782892888668715633403042648768776",
+  "hash_direct": "132558501689862149061344630506285641576",
+  "src": "pub fn vget_high_p64(a: poly64x2_t) -> poly64x1_t {\n    unsafe { transmute(u64x1::new(simd_extract!(a, 1))) }\n}",
+  "callees": [
+    "104196621766310105052318946087671180328"
+  ]
+}

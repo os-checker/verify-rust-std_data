@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/adapters/take_while.rs",
+  "name": "<iter::adapters::take_while::TakeWhile<I, P> as iter::traits::iterator::Iterator>::try_fold::check::<'_, &u8, usize, ops::try_trait::NeverShortCircuit<usize>, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/slice/ascii.rs:301:50: 301:55}, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/ops/try_trait.rs:401:9: 401:20}>",
+  "hash": "192320122097020926110741641336237035440",
+  "hash_direct": "415162591921236087710291379571755867228",
+  "src": "fn check<'a, T, Acc, R: Try<Output = Acc>>(\n            flag: &'a mut bool,\n            p: &'a mut impl FnMut(&T) -> bool,\n            mut fold: impl FnMut(Acc, T) -> R + 'a,\n        ) -> impl FnMut(Acc, T) -> ControlFlow<R, Acc> + 'a {\n            move |acc, x| {\n                if p(&x) {\n                    ControlFlow::from_try(fold(acc, x))\n                } else {\n                    *flag = true;\n                    ControlFlow::Break(try { acc })\n                }\n            }\n        }"
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/mem/maybe_uninit.rs",
+  "name": "mem::maybe_uninit::MaybeUninit::<core_arch::aarch64::neon::float64x1_t>::uninit",
+  "hash": "110237034326481966859728589779874542983",
+  "hash_direct": "433938988852030517016275110376359595584",
+  "src": "pub const fn uninit() -> MaybeUninit<T> {\n        MaybeUninit { uninit: () }\n    }"
+}

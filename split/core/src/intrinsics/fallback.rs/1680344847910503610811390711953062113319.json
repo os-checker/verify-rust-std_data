@@ -1,0 +1,10 @@
+{
+  "file": "core/src/intrinsics/fallback.rs",
+  "name": "core::intrinsics::fallback::wide_mul_u128::scalar_mul",
+  "hash": "1680344847910503610811390711953062113319",
+  "hash_direct": "1376921050687978965912822704545488442890",
+  "src": "const fn scalar_mul(low_high: [u128; 2], k: u128) -> [u128; 3] {\n        let [x, c] = to_low_high(k * low_high[0]);\n        let [y, z] = to_low_high(k * low_high[1] + c);\n        [x, y, z]\n    }",
+  "callees": [
+    "920980127064672019717947646353794366525"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "file": "core/src/pat.rs",
+  "name": "<u8 as pat::RangePattern>::MAX",
+  "hash": "1156957098788446645914663275936937590380",
+  "hash_direct": "1161403172746346144811003363914105364019",
+  "src": "const MAX: $ty = <$ty>::MAX;",
+  "macro_backtrace": [
+    {
+      "callsite": "impl_range_pat! {\n    i8, i16, i32, i64, i128, isize,\n    u8, u16, u32, u64, u128, usize,\n}",
+      "defsite": "macro_rules! impl_range_pat {\n    ($($ty:ty,)*) => {\n        $(\n            #[rustc_const_unstable(feature = \"pattern_type_range_trait\", issue = \"123646\")]\n            impl const RangePattern for $ty {\n                const MIN: $ty = <$ty>::MIN;\n                const MAX: $ty = <$ty>::MAX;\n                fn sub_one(self) -> Self {\n                    match self.checked_sub(1) {\n                        Some(val) => val,\n                        None => panic!(\"exclusive range end at minimum value of type\")\n                    }\n                }\n            }\n        )*\n    }\n}"
+    }
+  ]
+}

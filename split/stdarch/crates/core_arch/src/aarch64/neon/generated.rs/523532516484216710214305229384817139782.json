@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
-  "name": "core_arch::aarch64::neon::generated::vrecps_f64",
-  "hash": "523532516484216710214305229384817139782",
-  "hash_direct": "57431596779386835649466709819318832017",
-  "src": "pub fn vrecps_f64(a: float64x1_t, b: float64x1_t) -> float64x1_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.frecps.v1f64\"\n        )]\n        fn _vrecps_f64(a: float64x1_t, b: float64x1_t) -> float64x1_t;\n    }\n    unsafe { _vrecps_f64(a, b) }\n}"
-}

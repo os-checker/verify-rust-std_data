@@ -1,0 +1,11 @@
+{
+  "file": "core/src/num/nonzero.rs",
+  "name": "<num::nonzero::NonZero<i64> as cmp::Ord>::cmp",
+  "hash": "1017474893662788358614245935503644690473",
+  "hash_direct": "1738534024089882244016331503888298487695",
+  "src": "fn cmp(&self, other: &Self) -> Ordering {\n        self.get().cmp(&other.get())\n    }",
+  "callees": [
+    "131203065817488211067140136749599673893",
+    "639913184821088481813231898079805332633"
+  ]
+}

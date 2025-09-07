@@ -1,0 +1,7 @@
+{
+  "file": "core/src/slice/iter.rs",
+  "name": "<slice::iter::Split<'_, u8, str::IsAsciiWhitespace> as slice::iter::SplitIter>::finish",
+  "hash": "36063339571794410663821935619899876968",
+  "hash_direct": "1428893552717978265718135870574282136566",
+  "src": "fn finish(&mut self) -> Option<&'a [T]> {\n        if self.finished {\n            None\n        } else {\n            self.finished = true;\n            Some(self.v)\n        }\n    }"
+}

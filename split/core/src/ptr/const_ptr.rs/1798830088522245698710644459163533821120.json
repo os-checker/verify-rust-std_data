@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/const_ptr.rs",
+  "name": "ptr::const_ptr::<impl *const f64>::wrapping_add",
+  "hash": "1798830088522245698710644459163533821120",
+  "hash_direct": "30986313966841287584539332714714780558",
+  "src": "pub const fn wrapping_add(self, count: usize) -> Self\n    where\n        T: Sized,\n    {\n        self.wrapping_offset(count as isize)\n    }",
+  "callees": [
+    "37086712814028636114793508434074774477"
+  ]
+}

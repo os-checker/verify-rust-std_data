@@ -1,0 +1,12 @@
+{
+  "file": "core/src/option.rs",
+  "name": "option::Option::<net::socket_addr::SocketAddrV6>::map::<net::socket_addr::SocketAddr, fn(net::socket_addr::SocketAddrV6) -> net::socket_addr::SocketAddr {net::socket_addr::SocketAddr::V6}>",
+  "hash": "180688110122264595083707273192615382893",
+  "hash_direct": "646723342214620409914222455164814067682",
+  "src": "pub const fn map<U, F>(self, f: F) -> Option<U>\n    where\n        F: [const] FnOnce(T) -> U + [const] Destruct,\n    {\n        match self {\n            Some(x) => Some(f(x)),\n            None => None,\n        }\n    }",
+  "callees": [
+    "1485484873907222870713248877987783633755",
+    "73158015992148883407661270482638984015",
+    "266386884478986213313863240715232765188"
+  ]
+}

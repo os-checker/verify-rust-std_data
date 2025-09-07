@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/adapters/rev.rs",
+  "name": "iter::adapters::rev::Rev::<ops::range::Range<usize>>::new",
+  "hash": "111893148674317480745590608994062193214",
+  "hash_direct": "176128255900446144629443435409376284852",
+  "src": "pub(in crate::iter) fn new(iter: T) -> Rev<T> {\n        Rev { iter }\n    }"
+}

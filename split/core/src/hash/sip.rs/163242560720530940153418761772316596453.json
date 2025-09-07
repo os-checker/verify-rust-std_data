@@ -1,0 +1,11 @@
+{
+  "file": "core/src/hash/sip.rs",
+  "name": "hash::sip::SipHasher13::new_with_keys",
+  "hash": "163242560720530940153418761772316596453",
+  "hash_direct": "1718073841710246270413693400563002485295",
+  "src": "pub fn new_with_keys(key0: u64, key1: u64) -> SipHasher13 {\n        SipHasher13 { hasher: Hasher::new_with_keys(key0, key1) }\n    }",
+  "callees": [
+    "1210052842936195562713768992829232143887",
+    "2488920774309348569371253280638981956"
+  ]
+}

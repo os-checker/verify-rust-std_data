@@ -1,0 +1,13 @@
+{
+  "file": "core/src/ptr/alignment.rs",
+  "name": "<ptr::alignment::AlignmentEnum as cmp::Eq>::assert_receiver_is_total_eq",
+  "hash": "964894992477855073313140429528301903390",
+  "hash_direct": "133496602315269193462277987065473454609",
+  "src": "Eq",
+  "macro_backtrace": [
+    {
+      "callsite": "Eq",
+      "defsite": "pub macro Eq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "file": "core/src/time.rs",
+  "name": "time::Duration::from_hours",
+  "hash": "668214541815501826812824501992068812044",
+  "hash_direct": "1481886862487134028210971086999390670564",
+  "src": "pub const fn from_hours(hours: u64) -> Duration {\n        if hours > u64::MAX / (SECS_PER_MINUTE * MINS_PER_HOUR) {\n            panic!(\"overflow in Duration::from_hours\");\n        }\n\n        Duration::from_secs(hours * MINS_PER_HOUR * SECS_PER_MINUTE)\n    }",
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "1752989996936949203916036071159051010960",
+    "1270888124877289178512994789532778292810"
+  ]
+}

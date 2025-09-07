@@ -1,7 +1,0 @@
-{
-  "file": "core/src/ptr/mut_ptr.rs",
-  "name": "ptr::mut_ptr::<impl *mut intrinsics::verify::u8_struct>::cast_const",
-  "hash": "1464856505509996645913576536793169537478",
-  "hash_direct": "1120696279393073500913075236786290194902",
-  "src": "pub const fn cast_const(self) -> *const T {\n        self as _\n    }"
-}

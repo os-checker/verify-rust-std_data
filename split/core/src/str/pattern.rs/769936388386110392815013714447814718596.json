@@ -1,0 +1,7 @@
+{
+  "file": "core/src/str/pattern.rs",
+  "name": "<core::str::pattern::MatchOnly as core::str::pattern::TwoWayStrategy>::rejecting",
+  "hash": "769936388386110392815013714447814718596",
+  "hash_direct": "181866653475949417804842077292867597447",
+  "src": "fn rejecting(_a: usize, _b: usize) -> Self::Output {\n        None\n    }"
+}

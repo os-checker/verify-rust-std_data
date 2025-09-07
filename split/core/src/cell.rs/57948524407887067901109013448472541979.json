@@ -1,7 +1,0 @@
-{
-  "file": "core/src/cell.rs",
-  "name": "cell::assert_coerce_unsized",
-  "hash": "57948524407887067901109013448472541979",
-  "hash_direct": "163965406169569171787773592115944009416",
-  "src": "fn assert_coerce_unsized(\n    a: UnsafeCell<&i32>,\n    b: SyncUnsafeCell<&i32>,\n    c: Cell<&i32>,\n    d: RefCell<&i32>,\n) {\n    let _: UnsafeCell<&dyn Send> = a;\n    let _: SyncUnsafeCell<&dyn Send> = b;\n    let _: Cell<&dyn Send> = c;\n    let _: RefCell<&dyn Send> = d;\n}"
-}

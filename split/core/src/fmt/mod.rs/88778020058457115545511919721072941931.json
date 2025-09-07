@@ -1,0 +1,10 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "core::fmt::Formatter::<'_>::align",
+  "hash": "88778020058457115545511919721072941931",
+  "hash_direct": "95602268877006868358182736646409639736",
+  "src": "pub fn align(&self) -> Option<Alignment> {\n        self.options.get_align()\n    }",
+  "callees": [
+    "146657666860167611142330680524882016325"
+  ]
+}

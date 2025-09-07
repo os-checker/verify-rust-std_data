@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vcleq_u32",
+  "hash": "272930315566148475017335643193644440052",
+  "hash_direct": "26749967248853115645775362810912581824",
+  "src": "pub fn vcleq_u32(a: uint32x4_t, b: uint32x4_t) -> uint32x4_t {\n    unsafe { simd_le(a, b) }\n}"
+}

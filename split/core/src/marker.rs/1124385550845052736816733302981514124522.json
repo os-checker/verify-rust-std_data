@@ -1,0 +1,7 @@
+{
+  "file": "core/src/marker.rs",
+  "name": "<core::marker::PhantomData<core::escape::AlwaysEscaped> as core::clone::Clone>::clone",
+  "hash": "1124385550845052736816733302981514124522",
+  "hash_direct": "89061643510172831926394072606339063109",
+  "src": "fn clone(&self) -> Self {\n        Self\n    }"
+}

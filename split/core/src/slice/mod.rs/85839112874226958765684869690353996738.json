@@ -1,0 +1,12 @@
+{
+  "file": "core/src/slice/mod.rs",
+  "name": "core::slice::<impl [core::unicode::unicode_data::ShortOffsetRunHeader]>::binary_search_by_key::<'_, u32, {closure@core::unicode::unicode_data::skip_search<37, 905>::{closure#0}}>::{closure#0}",
+  "hash": "85839112874226958765684869690353996738",
+  "hash_direct": "129523640430789128572558256300974580532",
+  "src": "|k| f(k).cmp(b)",
+  "callees": [
+    "38033425202961758733378719026903933598",
+    "8161099640543304955344124854131248786",
+    "76473105542440629998935855571615310589"
+  ]
+}

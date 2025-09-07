@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f16.rs",
+  "name": "f16::<impl f16>::algebraic_div",
+  "hash": "104186358263751208487129328069002154041",
+  "hash_direct": "107847941050315624211480081363802370619",
+  "src": "pub const fn algebraic_div(self, rhs: f16) -> f16 {\n        intrinsics::fdiv_algebraic(self, rhs)\n    }"
+}

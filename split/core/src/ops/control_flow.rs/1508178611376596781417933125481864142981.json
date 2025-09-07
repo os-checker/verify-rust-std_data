@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ops/control_flow.rs",
+  "name": "core::ops::ControlFlow::<core::ops::try_trait::NeverShortCircuit<usize>, <core::ops::try_trait::NeverShortCircuit<usize> as core::ops::Try>::Output>::into_try",
+  "hash": "1508178611376596781417933125481864142981",
+  "hash_direct": "708300750066430863513841421420806753605",
+  "src": "pub(crate) fn into_try(self) -> R {\n        match self {\n            ControlFlow::Continue(v) => R::from_output(v),\n            ControlFlow::Break(v) => v,\n        }\n    }",
+  "callees": [
+    "50473529602911884987749622524980088147"
+  ]
+}

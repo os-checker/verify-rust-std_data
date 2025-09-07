@@ -1,0 +1,12 @@
+{
+  "file": "core/src/intrinsics/mod.rs",
+  "name": "intrinsics::maximumf16",
+  "hash": "177195277750013623434222008138939002035",
+  "hash_direct": "587696316946065737411950305602216341361",
+  "src": "pub const fn maximumf16(x: f16, y: f16) -> f16 {\n    if x > y {\n        x\n    } else if y > x {\n        y\n    } else if x == y {\n        if x.is_sign_positive() && y.is_sign_negative() { x } else { y }\n    } else {\n        x + y\n    }\n}",
+  "callees": [
+    "41314493314170273698848119374772252082",
+    "86698344806947611722293919790928706286",
+    "331178422282659479317337493575173626152"
+  ]
+}

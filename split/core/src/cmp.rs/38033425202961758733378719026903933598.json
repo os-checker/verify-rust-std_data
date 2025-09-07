@@ -1,0 +1,13 @@
+{
+  "file": "core/src/cmp.rs",
+  "name": "core::cmp::impls::<impl core::cmp::Ord for u32>::cmp",
+  "hash": "38033425202961758733378719026903933598",
+  "hash_direct": "1431913127501794175017359910753917845516",
+  "src": "fn cmp(&self, other: &Self) -> Ordering {\n                    crate::intrinsics::three_way_compare(*self, *other)\n                }",
+  "macro_backtrace": [
+    {
+      "callsite": "ord_impl! { char usize u8 u16 u32 u64 u128 isize i8 i16 i32 i64 i128 }",
+      "defsite": "macro_rules! ord_impl {\n        ($($t:ty)*) => ($(\n            #[stable(feature = \"rust1\", since = \"1.0.0\")]\n            impl PartialOrd for $t {\n                #[inline]\n                fn partial_cmp(&self, other: &Self) -> Option<Ordering> {\n                    Some(crate::intrinsics::three_way_compare(*self, *other))\n                }\n\n                partial_ord_methods_primitive_impl!();\n            }\n\n            #[stable(feature = \"rust1\", since = \"1.0.0\")]\n            impl Ord for $t {\n                #[inline]\n                fn cmp(&self, other: &Self) -> Ordering {\n                    crate::intrinsics::three_way_compare(*self, *other)\n                }\n            }\n        )*)\n    }"
+    }
+  ]
+}

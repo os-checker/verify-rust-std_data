@@ -1,0 +1,20 @@
+{
+  "file": "core/src/intrinsics/mir.rs",
+  "name": "intrinsics::mir::Assume",
+  "hash": "139116841123241296862329197121605946323",
+  "hash_direct": "650649175882468985314136480147606196115",
+  "src": "pub fn $($sig)* { panic!() }",
+  "macro_backtrace": [
+    {
+      "callsite": "define!(\"mir_assume\", fn Assume(operand: bool))",
+      "defsite": "macro_rules! define {\n    ($name:literal, $( #[ $meta:meta ] )* fn $($sig:tt)*) => {\n        #[rustc_diagnostic_item = $name]\n        #[inline]\n        $( #[ $meta ] )*\n        pub fn $($sig)* { panic!() }\n    }\n}"
+    }
+  ],
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "243931809744896974812513529918607549579",
+    "1752989996936949203916036071159051010960"
+  ]
+}

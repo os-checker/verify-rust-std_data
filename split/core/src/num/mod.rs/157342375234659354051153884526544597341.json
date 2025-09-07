@@ -1,0 +1,11 @@
+{
+  "file": "core/src/num/mod.rs",
+  "name": "num::<impl u8>::as_ascii",
+  "hash": "157342375234659354051153884526544597341",
+  "hash_direct": "640426486840368001413922183525027418096",
+  "src": "pub const fn as_ascii(&self) -> Option<ascii::Char> {\n        ascii::Char::from_u8(*self)\n    }",
+  "callees": [
+    "1263943423012824645318408613777809385475",
+    "15551977551413036531158252289522839939"
+  ]
+}

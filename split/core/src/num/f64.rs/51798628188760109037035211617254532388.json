@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/f64.rs",
-  "name": "f64::<impl f64>::NEG_TINY_BITS",
-  "hash": "51798628188760109037035211617254532388",
-  "hash_direct": "152821287403507084636646185163050116891",
-  "src": "const NEG_TINY_BITS: u64 = Self::TINY_BITS | Self::SIGN_MASK;"
-}

@@ -1,0 +1,61 @@
+{
+  "file": "core/src/ptr/const_ptr.rs",
+  "name": "ptr::const_ptr::verify::check_const_add_slice_i64",
+  "hash": "126094909268576269516034865879272643823",
+  "hash_direct": "143877690208585407572091726880685998917",
+  "proof_kind": "\"Contract\"",
+  "attrs": [
+    "#[kanitool::proof_for_contract = \"< * const i64 > :: add\"]\n"
+  ],
+  "src": "fn $proof_name() {\n                let arr: [$ty; ARRAY_SIZE] = kani::Arbitrary::any_array();\n                let test_ptr: *const $ty = arr.as_ptr();\n                let offset: usize = kani::any();\n                kani::assume(offset <= ARRAY_SIZE * mem::size_of::<$ty>());\n                let ptr_with_offset: *const $ty = test_ptr.wrapping_byte_add(offset);\n\n                let count: $count_ty = kani::any();\n                unsafe {\n                    ptr_with_offset.$fn_name(count);\n                }\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "generate_single_slice_harness!($ty, $add_fn_name, add, usize)",
+      "defsite": "macro_rules! generate_single_slice_harness {\n        ($ty:ty, $proof_name:ident, $fn_name:ident, $count_ty:ty) => {\n            #[kani::proof_for_contract(<*const $ty>::$fn_name)]\n            fn $proof_name() {\n                let arr: [$ty; ARRAY_SIZE] = kani::Arbitrary::any_array();\n                let test_ptr: *const $ty = arr.as_ptr();\n                let offset: usize = kani::any();\n                kani::assume(offset <= ARRAY_SIZE * mem::size_of::<$ty>());\n                let ptr_with_offset: *const $ty = test_ptr.wrapping_byte_add(offset);\n\n                let count: $count_ty = kani::any();\n                unsafe {\n                    ptr_with_offset.$fn_name(count);\n                }\n            }\n        };\n    }"
+    },
+    {
+      "callsite": "generate_slice_harnesses!(\n        i64,\n        check_const_add_slice_i64,\n        check_const_sub_slice_i64,\n        check_const_offset_slice_i64\n    )",
+      "defsite": "macro_rules! generate_slice_harnesses {\n        ($ty:ty, $add_fn_name:ident, $sub_fn_name:ident, $offset_fn_name:ident) => {\n            generate_single_slice_harness!($ty, $add_fn_name, add, usize);\n            generate_single_slice_harness!($ty, $sub_fn_name, sub, usize);\n            generate_single_slice_harness!($ty, $offset_fn_name, offset, isize);\n        };\n    }"
+    }
+  ],
+  "callees": [
+    "678189717551262389614376981317523753500",
+    "76761090215908344506703874042953626591",
+    "1194204153753465304412874113805257013333",
+    "15259771934090893357858335156163734693",
+    "113491588365793266817891648718126780380",
+    "96324645896709027806779562002866162991",
+    "826776783017468101310579743103719137160",
+    "139704976908753389291209564980972955015",
+    "7526082995824335814466973137466280467",
+    "1766051386498942411410962933936104212235",
+    "108393381985250317406898676759665844160",
+    "258820287469578611817448591488600041899",
+    "588974892899239543415856878986124229421",
+    "690438059002452523915046149102377829082",
+    "17421822894816687532325615181214565887",
+    "344205184641161321414779255303253264915",
+    "23815256893174302637797703719499456373",
+    "7294383037529148129694068087461345583",
+    "97892229237199250718782565098232937194",
+    "125312877505429677902664359715729802479",
+    "632379827537218859118037651046044448068",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "478753423337745817613297159272845606672",
+    "3658730781980743391697756456907208995",
+    "176386771705132260856587306647620489942",
+    "8161291837423649642305263678029669375",
+    "99240197464179824992859067321432013944",
+    "167193338160318463122786540544893242919",
+    "157481344122095880142829934960783295651",
+    "370552339004163660414313492575860422225",
+    "813578382545998277312366744418950688761",
+    "3158087186225067104207623212949621094",
+    "1976993422208648634594350574100553274",
+    "74182890320582312072411608097838709214",
+    "121069008826513481769959924250516256994",
+    "1703660345011483495218041991169194027213",
+    "739520556846959085018120036998133255835"
+  ]
+}

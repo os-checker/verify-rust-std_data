@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/dec2flt/float.rs",
-  "name": "<f16 as num::dec2flt::float::RawFloat>::pow10_fast_path",
-  "hash": "41014141829897906357615436989832794622",
-  "hash_direct": "104853145477524922961048369615835614596",
-  "src": "fn pow10_fast_path(exponent: usize) -> Self {\n        #[allow(clippy::use_self)]\n        const TABLE: [f16; 8] = [1e0, 1e1, 1e2, 1e3, 1e4, 0.0, 0.0, 0.];\n        TABLE[exponent & 7]\n    }"
-}

@@ -1,0 +1,14 @@
+{
+  "file": "core/src/io/borrowed_buf.rs",
+  "name": "io::borrowed_buf::BorrowedCursor::<'_>::advance",
+  "hash": "81821738225401190826915815335175945960",
+  "hash_direct": "157731709208808759438427601107657434886",
+  "src": "pub fn advance(&mut self, n: usize) -> &mut Self {\n        // The subtraction cannot underflow by invariant of this type.\n        assert!(n <= self.buf.init - self.buf.filled);\n\n        self.buf.filled += n;\n        self\n    }",
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "243931809744896974812513529918607549579",
+    "1752989996936949203916036071159051010960"
+  ]
+}

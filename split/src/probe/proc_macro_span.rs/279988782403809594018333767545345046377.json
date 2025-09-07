@@ -1,0 +1,7 @@
+{
+  "file": "src/probe/proc_macro_span.rs",
+  "name": "join",
+  "hash": "279988782403809594018333767545345046377",
+  "hash_direct": "142640622223418596011799428611948592118",
+  "src": "pub fn join(this: &Span, other: Span) -> Option<Span> {\n    this.join(other)\n}"
+}

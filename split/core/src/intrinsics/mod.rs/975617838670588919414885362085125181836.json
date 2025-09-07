@@ -1,0 +1,13 @@
+{
+  "file": "core/src/intrinsics/mod.rs",
+  "name": "intrinsics::maximumf32",
+  "hash": "975617838670588919414885362085125181836",
+  "hash_direct": "1443436837505396862811245367339244661404",
+  "inst_kind": "\"Intrinsic\"",
+  "src": "pub const fn maximumf32(x: f32, y: f32) -> f32 {\n    if x > y {\n        x\n    } else if y > x {\n        y\n    } else if x == y {\n        if x.is_sign_positive() && y.is_sign_negative() { x } else { y }\n    } else {\n        x + y\n    }\n}",
+  "callees": [
+    "169025222698088550701130642783988507306",
+    "894614440018548037910752981073189373335",
+    "1280257502160233765816408910554470634604"
+  ]
+}

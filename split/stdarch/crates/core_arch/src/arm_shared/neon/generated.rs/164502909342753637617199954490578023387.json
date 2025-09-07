@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vcls_u8",
+  "hash": "164502909342753637617199954490578023387",
+  "hash_direct": "1608095134265774748418254756774394565413",
+  "src": "pub fn vcls_u8(a: uint8x8_t) -> int8x8_t {\n    unsafe { vcls_s8(transmute(a)) }\n}",
+  "callees": [
+    "288298134955589773110766810149526260461"
+  ]
+}

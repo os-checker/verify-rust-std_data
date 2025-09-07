@@ -1,0 +1,12 @@
+{
+  "file": "core/src/intrinsics/mod.rs",
+  "name": "intrinsics::const_allocate",
+  "hash": "1643928417563595727114252839317269764770",
+  "hash_direct": "1583356910455964981311438629914277515845",
+  "src": "pub const unsafe fn const_allocate(_size: usize, _align: usize) -> *mut u8 {\n    // const eval overrides this function, but runtime code for now just returns null pointers.\n    // See <https://github.com/rust-lang/rust/issues/93935>.\n    crate::ptr::null_mut()\n}",
+  "callees": [
+    "1163942228701060528314476404382786524304",
+    "99438242294582221548013233680201224334",
+    "5149988702892797298383433462430069015"
+  ]
+}

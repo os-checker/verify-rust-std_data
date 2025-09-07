@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/const_ptr.rs",
+  "name": "ptr::const_ptr::<impl *const task::wake::RawWakerVTable>::cast::<()>",
+  "hash": "57318736036578966279145344938690383188",
+  "hash_direct": "695830753242759925814381513012539323281",
+  "src": "pub const fn cast<U>(self) -> *const U {\n        self as _\n    }"
+}

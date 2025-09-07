@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/mod.rs",
+  "name": "num::<impl u8>::is_ascii_graphic",
+  "hash": "141615893453559366675599442700992029800",
+  "hash_direct": "1466565646534842551014305623890534458386",
+  "src": "pub const fn is_ascii_graphic(&self) -> bool {\n        matches!(*self, b'!'..=b'~')\n    }"
+}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/dec2flt/common.rs",
-  "name": "num::dec2flt::common::BiasedFp::zero_pow2",
-  "hash": "44045435809800886759043385147663812926",
-  "hash_direct": "62165511767973352055103526922764871046",
-  "src": "pub const fn zero_pow2(p_biased: i32) -> Self {\n        Self { m: 0, p_biased }\n    }"
-}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/traits/collect.rs",
+  "name": "<iter::adapters::flatten::FlatMap<str::iter::Chars<'_>, char::EscapeDebug, str::CharEscapeDebugContinue> as iter::traits::collect::IntoIterator>::into_iter",
+  "hash": "674537124573458131817905730118140447852",
+  "hash_direct": "37611166407176379137002275310681640947",
+  "src": "fn into_iter(self) -> I {\n        self\n    }"
+}

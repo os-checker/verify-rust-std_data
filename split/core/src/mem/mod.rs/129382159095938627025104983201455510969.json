@@ -1,0 +1,7 @@
+{
+  "file": "core/src/mem/mod.rs",
+  "name": "mem::size_of::<&dyn fmt::Debug>",
+  "hash": "129382159095938627025104983201455510969",
+  "hash_direct": "149825249343562692947050384881497373902",
+  "src": "pub const fn size_of<T>() -> usize {\n    intrinsics::size_of::<T>()\n}"
+}

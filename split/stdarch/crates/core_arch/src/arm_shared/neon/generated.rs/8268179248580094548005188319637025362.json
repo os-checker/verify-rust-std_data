@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vadd_u16",
-  "hash": "8268179248580094548005188319637025362",
-  "hash_direct": "529186194348091301716344355815119409641",
-  "src": "pub fn vadd_u16(a: uint16x4_t, b: uint16x4_t) -> uint16x4_t {\n    unsafe { simd_add(a, b) }\n}"
-}

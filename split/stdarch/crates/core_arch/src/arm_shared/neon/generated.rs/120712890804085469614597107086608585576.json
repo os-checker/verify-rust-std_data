@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vmin_f32",
+  "hash": "120712890804085469614597107086608585576",
+  "hash_direct": "1409817914898575028613828973616328791077",
+  "src": "pub fn vmin_f32(a: float32x2_t, b: float32x2_t) -> float32x2_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(target_arch = \"arm\", link_name = \"llvm.arm.neon.vmins.v2f32\")]\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.fmin.v2f32\"\n        )]\n        fn _vmin_f32(a: float32x2_t, b: float32x2_t) -> float32x2_t;\n    }\n    unsafe { _vmin_f32(a, b) }\n}"
+}

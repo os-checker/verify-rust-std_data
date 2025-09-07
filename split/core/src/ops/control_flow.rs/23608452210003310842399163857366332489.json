@@ -1,0 +1,12 @@
+{
+  "file": "core/src/ops/control_flow.rs",
+  "name": "ops::control_flow::ControlFlow::<()>::map_break::<ops::control_flow::ControlFlow<(), cmp::Ordering>, fn(()) -> ops::control_flow::ControlFlow<(), cmp::Ordering> {ops::control_flow::ControlFlow::<(), cmp::Ordering>::Break}>",
+  "hash": "23608452210003310842399163857366332489",
+  "hash_direct": "728158073270962208115884046381931250775",
+  "src": "pub fn map_break<T>(self, f: impl FnOnce(B) -> T) -> ControlFlow<T, C> {\n        match self {\n            ControlFlow::Continue(x) => ControlFlow::Continue(x),\n            ControlFlow::Break(x) => ControlFlow::Break(f(x)),\n        }\n    }",
+  "callees": [
+    "1422517144103739044117611863969159333899",
+    "144366614822018216193700260200303691343",
+    "693347877502763010911820482685830842727"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vrev64_s32",
+  "hash": "39794761766225066877233481501599306526",
+  "hash_direct": "89388718897787785105053767067033506094",
+  "src": "pub fn vrev64_s32(a: int32x2_t) -> int32x2_t {\n    unsafe { simd_shuffle!(a, a, [1, 0]) }\n}"
+}

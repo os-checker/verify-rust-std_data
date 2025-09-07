@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vaddq_f32",
-  "hash": "18217509097879831303723349806914898826",
-  "hash_direct": "1398194305417238662813361111992855003244",
-  "src": "pub fn vaddq_f32(a: float32x4_t, b: float32x4_t) -> float32x4_t {\n    unsafe { simd_add(a, b) }\n}"
-}

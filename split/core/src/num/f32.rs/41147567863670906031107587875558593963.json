@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/f32.rs",
-  "name": "f32::math::floor",
-  "hash": "41147567863670906031107587875558593963",
-  "hash_direct": "2484982593009732495807661144138880673",
-  "src": "pub const fn floor(x: f32) -> f32 {\n        // SAFETY: intrinsic with no preconditions\n        unsafe { intrinsics::floorf32(x) }\n    }"
-}

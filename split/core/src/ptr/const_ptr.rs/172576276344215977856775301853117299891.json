@@ -1,0 +1,15 @@
+{
+  "file": "core/src/ptr/const_ptr.rs",
+  "name": "ptr::const_ptr::<impl *const (u32, i16, f32)>::offset_from",
+  "hash": "172576276344215977856775301853117299891",
+  "hash_direct": "14256860867569097296351072624718693920",
+  "src": "pub const unsafe fn offset_from(self, origin: *const T) -> isize\n    where\n        T: Sized,\n    {\n        let pointee_size = size_of::<T>();\n        assert!(0 < pointee_size && pointee_size <= isize::MAX as usize);\n        // SAFETY: the caller must uphold the safety contract for `ptr_offset_from`.\n        unsafe { intrinsics::ptr_offset_from(self, origin) }\n    }",
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "627645583140275250012633360066379231959",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "243931809744896974812513529918607549579",
+    "1752989996936949203916036071159051010960"
+  ]
+}

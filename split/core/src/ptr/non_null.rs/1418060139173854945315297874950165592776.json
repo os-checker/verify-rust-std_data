@@ -1,0 +1,16 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "ptr::non_null::NonNull::<T>::copy_to_nonoverlapping::kani_force_fn_once::<(), {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/ptr/non_null.rs:1164:22: 1164:89}>",
+  "hash": "1418060139173854945315297874950165592776",
+  "hash_direct": "160125468499465837611663633292955494270",
+  "attrs": [
+    "#[kanitool::fn_marker = \"kani_force_fn_once\"]\n"
+  ],
+  "src": "kani::modifies(NonNull::slice_from_raw_parts(dest, count).as_ptr())",
+  "macro_backtrace": [
+    {
+      "callsite": "kani::modifies(NonNull::slice_from_raw_parts(dest, count).as_ptr())",
+      "defsite": "pub fn modifies(attr: TokenStream, item: TokenStream) -> TokenStream"
+    }
+  ]
+}

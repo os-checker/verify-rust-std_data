@@ -1,0 +1,10 @@
+{
+  "file": "alloc/src/bstr.rs",
+  "name": "bstr::ByteString",
+  "hash": "1733156719751870763010310912645568931698",
+  "hash_direct": "39040052854860000274676346244603199028",
+  "attrs": [
+    "#[attr = Repr {reprs: [ReprTransparent]}]\n"
+  ],
+  "src": "pub struct ByteString"
+}

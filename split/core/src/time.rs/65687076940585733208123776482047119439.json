@@ -1,0 +1,13 @@
+{
+  "file": "core/src/time.rs",
+  "name": "<time::Duration as clone::Clone>::clone",
+  "hash": "65687076940585733208123776482047119439",
+  "hash_direct": "149090102613583319231019768766695473583",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

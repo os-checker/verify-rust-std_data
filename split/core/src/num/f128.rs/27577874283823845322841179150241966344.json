@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f128.rs",
+  "name": "f128::<impl f128>::copysign",
+  "hash": "27577874283823845322841179150241966344",
+  "hash_direct": "93312583444137211431763339440084220882",
+  "src": "pub const fn copysign(self, sign: f128) -> f128 {\n        // SAFETY: this is actually a safe intrinsic\n        unsafe { intrinsics::copysignf128(self, sign) }\n    }"
+}

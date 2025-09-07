@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/mut_ptr.rs",
+  "name": "ptr::mut_ptr::<impl *mut [f64]>::len",
+  "hash": "94127624693265425758774636252600510785",
+  "hash_direct": "125119191398894675763690409660398114731",
+  "src": "pub const fn len(self) -> usize {\n        metadata(self)\n    }",
+  "callees": [
+    "631624137564513328713497670360100084419"
+  ]
+}

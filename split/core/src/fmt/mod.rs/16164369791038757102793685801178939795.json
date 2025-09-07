@@ -1,0 +1,10 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "fmt::Formatter::<'a>::write_formatted_parts::write_bytes",
+  "hash": "16164369791038757102793685801178939795",
+  "hash_direct": "98631666314699804784130140021858807274",
+  "src": "unsafe fn write_bytes(buf: &mut dyn Write, s: &[u8]) -> Result {\n            // SAFETY: This is used for `numfmt::Part::Num` and `numfmt::Part::Copy`.\n            // It's safe to use for `numfmt::Part::Num` since every char `c` is between\n            // `b'0'` and `b'9'`, which means `s` is valid UTF-8. It's safe to use for\n            // `numfmt::Part::Copy` due to this function's precondition.\n            buf.write_str(unsafe { str::from_utf8_unchecked(s) })\n        }",
+  "callees": [
+    "1153959874226978119913857890632071810994"
+  ]
+}

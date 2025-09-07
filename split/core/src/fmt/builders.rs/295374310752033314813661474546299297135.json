@@ -1,0 +1,10 @@
+{
+  "file": "core/src/fmt/builders.rs",
+  "name": "fmt::builders::DebugSet::<'_, '_>::finish::{closure#0}",
+  "hash": "295374310752033314813661474546299297135",
+  "hash_direct": "1055305486224596527015019762801656398224",
+  "src": "|_| self.inner.fmt.write_str(\"}\")",
+  "callees": [
+    "243839084150888952911908111539685994713"
+  ]
+}

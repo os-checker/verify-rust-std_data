@@ -1,0 +1,10 @@
+{
+  "file": "alloc/src/raw_vec/mod.rs",
+  "name": "raw_vec::RawVecInner::capacity",
+  "hash": "172845444129193162842518920193739325054",
+  "hash_direct": "1168622604777924237712737773319070139043",
+  "src": "const fn capacity(&self, elem_size: usize) -> usize {\n        if elem_size == 0 { usize::MAX } else { self.cap.as_inner() }\n    }",
+  "callees": [
+    "433890548510973964412005170244666884332"
+  ]
+}

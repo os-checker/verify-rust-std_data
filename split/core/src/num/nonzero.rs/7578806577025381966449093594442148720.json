@@ -1,0 +1,36 @@
+{
+  "file": "core/src/num/nonzero.rs",
+  "name": "num::nonzero::verify::nonzero_check_from_mut_unchecked_u8",
+  "hash": "7578806577025381966449093594442148720",
+  "hash_direct": "824748318109853537612936274556054593543",
+  "proof_kind": "\"Contract\"",
+  "attrs": [
+    "#[kanitool::proof_for_contract = \"NonZero :: < u8 > :: from_mut_unchecked\"]\n"
+  ],
+  "src": "pub fn $harness_name() {\n                let mut x: $t = kani::any();\n                unsafe {\n                    <$nonzero_type>::from_mut_unchecked(&mut x);\n                }\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "nonzero_check_from_mut_unchecked!(\n        u8,\n        core::num::NonZeroU8,\n        nonzero_check_from_mut_unchecked_u8\n    )",
+      "defsite": "macro_rules! nonzero_check_from_mut_unchecked {\n        ($t:ty, $nonzero_type:ty, $harness_name:ident) => {\n            #[kani::proof_for_contract(NonZero::<$t>::from_mut_unchecked)]\n            pub fn $harness_name() {\n                let mut x: $t = kani::any();\n                unsafe {\n                    <$nonzero_type>::from_mut_unchecked(&mut x);\n                }\n            }\n        };\n    }"
+    }
+  ],
+  "callees": [
+    "175920677112080751315464247289376690681",
+    "42938380487287233808576660475073668669",
+    "223423045988591996014060300689406774665",
+    "129384448114184712212615089461891361189",
+    "7526082995824335814466973137466280467",
+    "134563002825040056909315119755976987940",
+    "258820287469578611817448591488600041899",
+    "17421822894816687532325615181214565887",
+    "419210790648834012412855052743319290195",
+    "26156539116200935994250598637651505374",
+    "1223762213198709860656387410471430913",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "478753423337745817613297159272845606672",
+    "1138545583675860456210371678277428203240",
+    "821809419967294936716047462553845522843",
+    "947925086076299054212540105876296384566"
+  ]
+}

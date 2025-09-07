@@ -1,7 +1,0 @@
-{
-  "file": "core/src/convert/mod.rs",
-  "name": "<convert::Infallible as cmp::Ord>::cmp",
-  "hash": "1585968787562903244513991769257373956315",
-  "hash_direct": "1210161721220006461915867835090049213288",
-  "src": "fn cmp(&self, _other: &Self) -> crate::cmp::Ordering {\n        match *self {}\n    }"
-}

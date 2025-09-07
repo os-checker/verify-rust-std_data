@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/alignment.rs",
+  "name": "ptr::alignment::<impl convert::From<ptr::alignment::Alignment> for num::nonzero::NonZero<usize>>::from",
+  "hash": "5988075202567892016019814834317464944",
+  "hash_direct": "129557340403443512057512172251918650453",
+  "src": "fn from(align: Alignment) -> NonZero<usize> {\n        align.as_nonzero()\n    }",
+  "callees": [
+    "201181288689639124415825169679319142024"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/traits/collect.rs",
+  "name": "<core::str::CharIndices<'_> as core::iter::IntoIterator>::into_iter",
+  "hash": "573613088297284256715820877485236072245",
+  "hash_direct": "67696586946593131568172974119729741041",
+  "src": "fn into_iter(self) -> I {\n        self\n    }"
+}

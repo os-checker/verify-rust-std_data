@@ -1,0 +1,12 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vqdmulhs_s32",
+  "hash": "1805336468420437029417479877046235689333",
+  "hash_direct": "102225777877782043104000229766835622509",
+  "src": "pub fn vqdmulhs_s32(a: i32, b: i32) -> i32 {\n    let a: int32x2_t = vdup_n_s32(a);\n    let b: int32x2_t = vdup_n_s32(b);\n    unsafe { simd_extract!(vqdmulh_s32(a, b), 0) }\n}",
+  "callees": [
+    "64941544020589987458118710774635299095",
+    "36050020283287974655072054047056532075",
+    "69974168088348755793415638350206435443"
+  ]
+}

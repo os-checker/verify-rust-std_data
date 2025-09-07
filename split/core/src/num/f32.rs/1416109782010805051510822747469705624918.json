@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f32.rs",
+  "name": "f32::<impl f32>::MAN_MASK",
+  "hash": "1416109782010805051510822747469705624918",
+  "hash_direct": "9678071265000041686004258637073040437",
+  "src": "pub(crate) const MAN_MASK: u32 = 0x007f_ffff;"
+}

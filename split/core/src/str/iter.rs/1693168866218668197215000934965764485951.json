@@ -1,0 +1,17 @@
+{
+  "file": "core/src/str/iter.rs",
+  "name": "<str::iter::CharIndices<'_> as clone::Clone>::clone",
+  "hash": "1693168866218668197215000934965764485951",
+  "hash_direct": "1487442590414351860418154234448861934480",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ],
+  "callees": [
+    "1127448244019747137816948501807508054133",
+    "415636605586044597014511502347166535165"
+  ]
+}

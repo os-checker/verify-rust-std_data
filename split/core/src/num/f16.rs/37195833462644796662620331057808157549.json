@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/f16.rs",
-  "name": "f16::<impl f16>::algebraic_mul",
-  "hash": "37195833462644796662620331057808157549",
-  "hash_direct": "144949370782680714014690154216722538535",
-  "src": "pub const fn algebraic_mul(self, rhs: f16) -> f16 {\n        intrinsics::fmul_algebraic(self, rhs)\n    }"
-}

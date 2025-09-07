@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vmvnq_s16",
+  "hash": "137005767323503728911005331139189654507",
+  "hash_direct": "755988128650846116414731365438170265490",
+  "src": "pub fn vmvnq_s16(a: int16x8_t) -> int16x8_t {\n    let b = int16x8_t::splat(-1);\n    unsafe { simd_xor(a, b) }\n}",
+  "callees": [
+    "70681637525790678232819362189660235068"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "file": "core/src/num/f128.rs",
+  "name": "f128::<impl f128>::is_sign_positive",
+  "hash": "260250833418102634914982796035296776119",
+  "hash_direct": "164363302083095123247170341861397086324",
+  "src": "pub const fn is_sign_positive(self) -> bool {\n        !self.is_sign_negative()\n    }",
+  "callees": [
+    "783290788233458409213943446188194581582",
+    "1974282168039380848894594196462410349"
+  ]
+}

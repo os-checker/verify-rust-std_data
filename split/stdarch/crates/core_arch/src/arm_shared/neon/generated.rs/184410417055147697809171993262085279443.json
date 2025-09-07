@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vorn_u8",
+  "hash": "184410417055147697809171993262085279443",
+  "hash_direct": "674701787050813635013241331108985011778",
+  "src": "pub fn vorn_u8(a: uint8x8_t, b: uint8x8_t) -> uint8x8_t {\n    let c = int8x8_t::splat(-1);\n    unsafe { simd_or(simd_xor(b, transmute(c)), a) }\n}",
+  "callees": [
+    "335203856091225096313741835442448767652"
+  ]
+}

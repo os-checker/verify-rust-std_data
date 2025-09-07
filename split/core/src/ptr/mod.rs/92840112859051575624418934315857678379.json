@@ -1,8 +1,0 @@
-{
-  "file": "core/src/ptr/mod.rs",
-  "name": "ptr::drop_in_place::<for<'a> fn(&'a mut char::EscapeUnicode) -> option::Option<<char::EscapeUnicode as iter::traits::iterator::Iterator>::Item> {<char::EscapeUnicode as iter::traits::iterator::Iterator>::next}>",
-  "hash": "92840112859051575624418934315857678379",
-  "hash_direct": "97359984381022567524985808859826684702",
-  "inst_kind": "\"Shim\"",
-  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
-}

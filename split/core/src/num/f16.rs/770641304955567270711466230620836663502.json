@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f16.rs",
+  "name": "f16::<impl f16>::algebraic_sub",
+  "hash": "770641304955567270711466230620836663502",
+  "hash_direct": "1299350785932850609816954968791333110417",
+  "src": "pub const fn algebraic_sub(self, rhs: f16) -> f16 {\n        intrinsics::fsub_algebraic(self, rhs)\n    }"
+}

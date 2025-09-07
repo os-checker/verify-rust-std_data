@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vcltq_s32",
+  "hash": "1328018838430674860117256362158804923547",
+  "hash_direct": "4835799309771586967631811522342749550",
+  "src": "pub fn vcltq_s32(a: int32x4_t, b: int32x4_t) -> uint32x4_t {\n    unsafe { simd_lt(a, b) }\n}"
+}

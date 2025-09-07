@@ -1,0 +1,17 @@
+{
+  "file": "core/src/num/mod.rs",
+  "name": "num::<impl u8>::as_ascii_unchecked",
+  "hash": "115229797083273352422457158100491949219",
+  "hash_direct": "26923225740217219207604104592218642414",
+  "src": "pub const unsafe fn as_ascii_unchecked(&self) -> ascii::Char {\n        assert_unsafe_precondition!(\n            check_library_ub,\n            \"as_ascii_unchecked requires that the byte is valid ASCII\",\n            (it: &u8 = self) => it.is_ascii()\n        );\n\n        // SAFETY: the caller promised that this byte is ASCII.\n        unsafe { ascii::Char::from_u8_unchecked(*self) }\n    }",
+  "callees": [
+    "15551977551413036531158252289522839939",
+    "258820287469578611817448591488600041899",
+    "17421822894816687532325615181214565887",
+    "758800371710587469314073968176229651883",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "478753423337745817613297159272845606672",
+    "60862708504990940004958112708298831718"
+  ]
+}

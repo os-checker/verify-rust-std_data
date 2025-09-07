@@ -1,0 +1,10 @@
+{
+  "file": "core/src/fmt/builders.rs",
+  "name": "fmt::builders::debug_set_new",
+  "hash": "1828183984712930503318414165487348263102",
+  "hash_direct": "1743202021292821472514899405297543607768",
+  "src": "pub(super) fn debug_set_new<'a, 'b>(fmt: &'a mut fmt::Formatter<'b>) -> DebugSet<'a, 'b> {\n    let result = fmt.write_str(\"{\");\n    DebugSet { inner: DebugInner { fmt, result, has_fields: false } }\n}",
+  "callees": [
+    "243839084150888952911908111539685994713"
+  ]
+}

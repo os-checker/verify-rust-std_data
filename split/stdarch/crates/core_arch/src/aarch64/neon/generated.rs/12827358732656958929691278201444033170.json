@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
-  "name": "core_arch::aarch64::neon::generated::vsubw_high_u32",
-  "hash": "12827358732656958929691278201444033170",
-  "hash_direct": "1371705454040684516316219085608213982278",
-  "src": "pub fn vsubw_high_u32(a: uint64x2_t, b: uint32x4_t) -> uint64x2_t {\n    unsafe {\n        let c: uint32x2_t = simd_shuffle!(b, b, [2, 3]);\n        simd_sub(a, simd_cast(c))\n    }\n}"
-}

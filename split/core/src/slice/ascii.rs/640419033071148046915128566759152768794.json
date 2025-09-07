@@ -1,0 +1,10 @@
+{
+  "file": "core/src/slice/ascii.rs",
+  "name": "slice::ascii::is_ascii::runtime::USIZE_SIZE",
+  "hash": "640419033071148046915128566759152768794",
+  "hash_direct": "152981800190934014933257171198474583579",
+  "src": "const USIZE_SIZE: usize = size_of::<usize>();",
+  "callees": [
+    "1749362715435459353511933873995340031229"
+  ]
+}

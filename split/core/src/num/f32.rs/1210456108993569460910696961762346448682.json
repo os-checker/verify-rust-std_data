@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/f32.rs",
-  "name": "f32::math::sqrt",
-  "hash": "1210456108993569460910696961762346448682",
-  "hash_direct": "1046520976622417532910937506591520962594",
-  "src": "pub fn sqrt(x: f32) -> f32 {\n        // SAFETY: intrinsic with no preconditions\n        unsafe { intrinsics::sqrtf32(x) }\n    }"
-}

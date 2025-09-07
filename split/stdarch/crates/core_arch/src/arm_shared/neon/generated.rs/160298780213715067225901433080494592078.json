@@ -1,0 +1,12 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vmla_n_u16",
+  "hash": "160298780213715067225901433080494592078",
+  "hash_direct": "1290175052268570923316190557866402998203",
+  "src": "pub fn vmla_n_u16(a: uint16x4_t, b: uint16x4_t, c: u16) -> uint16x4_t {\n    vmla_u16(a, b, vdup_n_u16(c))\n}",
+  "callees": [
+    "505750234136464789114763292571279925695",
+    "532785611406176351951288320619243736",
+    "98091609786140382210858500038207190579"
+  ]
+}

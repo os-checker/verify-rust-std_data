@@ -1,0 +1,13 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vfmsq_n_f32",
+  "hash": "136461627029881118814831951729279910979",
+  "hash_direct": "908624744357286252617469981316059801059",
+  "src": "pub fn vfmsq_n_f32(a: float32x4_t, b: float32x4_t, c: f32) -> float32x4_t {\n    vfmsq_f32(a, b, vdupq_n_f32_vfp4(c))\n}",
+  "callees": [
+    "279700394492022891213324172489101293205",
+    "62227928466109390664904442199418881734",
+    "1620234820674337513514251295129611932307",
+    "458899188288934918515822347469462306993"
+  ]
+}

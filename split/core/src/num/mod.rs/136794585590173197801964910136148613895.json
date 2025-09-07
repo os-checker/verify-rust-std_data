@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/mod.rs",
+  "name": "core::num::<impl u16>::is_utf16_surrogate",
+  "hash": "136794585590173197801964910136148613895",
+  "hash_direct": "87904098419442399025913032583763888902",
+  "src": "pub const fn is_utf16_surrogate(self) -> bool {\n        matches!(self, 0xD800..=0xDFFF)\n    }"
+}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/str/mod.rs",
-  "name": "str::<impl str>::as_mut_ptr",
-  "hash": "36043268148958695639659731256619667402",
-  "hash_direct": "120449365994587115009703223388889679980",
-  "src": "pub const fn as_mut_ptr(&mut self) -> *mut u8 {\n        self as *mut str as *mut u8\n    }"
-}

@@ -1,0 +1,13 @@
+{
+  "file": "core/src/num/dec2flt/common.rs",
+  "name": "<num::dec2flt::common::BiasedFp as clone::Clone>::clone",
+  "hash": "99441173741908537221041840997597706871",
+  "hash_direct": "962758254021972382011622702081554273194",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

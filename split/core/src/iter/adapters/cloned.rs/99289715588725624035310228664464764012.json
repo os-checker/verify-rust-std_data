@@ -1,7 +1,0 @@
-{
-  "file": "core/src/iter/adapters/cloned.rs",
-  "name": "iter::adapters::cloned::Cloned::<slice::iter::Iter<'_, u8>>::new",
-  "hash": "99289715588725624035310228664464764012",
-  "hash_direct": "168032349946312672207514857380334623451",
-  "src": "pub(in crate::iter) fn new(it: I) -> Cloned<I> {\n        Cloned { it }\n    }"
-}

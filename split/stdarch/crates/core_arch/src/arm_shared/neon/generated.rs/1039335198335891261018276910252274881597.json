@@ -1,0 +1,11 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vmov_n_s8",
+  "hash": "1039335198335891261018276910252274881597",
+  "hash_direct": "82600696833784963721416362402535273581",
+  "src": "pub fn vmov_n_s8(value: i8) -> int8x8_t {\n    vdup_n_s8(value)\n}",
+  "callees": [
+    "330393187347712307715036424877436160318",
+    "335203856091225096313741835442448767652"
+  ]
+}

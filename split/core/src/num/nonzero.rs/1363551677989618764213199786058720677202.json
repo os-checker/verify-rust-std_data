@@ -1,0 +1,50 @@
+{
+  "file": "core/src/num/nonzero.rs",
+  "name": "num::nonzero::verify::nonzero_check_clamp_for_i8",
+  "hash": "1363551677989618764213199786058720677202",
+  "hash_direct": "1194692668550973525513481428218914086244",
+  "proof_kind": "\"Standard\"",
+  "attrs": [
+    "#[kanitool::proof]\n"
+  ],
+  "src": "pub fn $nonzero_check_clamp_for() {\n                let x: $nonzero_type = kani::any();\n                let min: $nonzero_type = kani::any();\n                let max: $nonzero_type = kani::any();\n                // Ensure min <= max, so the function should no panic\n                kani::assume(min <= max);\n                // Use the clamp function and check the result\n                let result = x.clamp(min, max);\n                if x < min {\n                    assert!(result == min);\n                } else if x > max {\n                    assert!(result == max);\n                } else {\n                    assert!(result == x);\n                }\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "nonzero_check_clamp!(core::num::NonZeroI8, nonzero_check_clamp_for_i8)",
+      "defsite": "macro_rules! nonzero_check_clamp {\n        ($nonzero_type:ty, $nonzero_check_clamp_for:ident) => {\n            #[kani::proof]\n            pub fn $nonzero_check_clamp_for() {\n                let x: $nonzero_type = kani::any();\n                let min: $nonzero_type = kani::any();\n                let max: $nonzero_type = kani::any();\n                // Ensure min <= max, so the function should no panic\n                kani::assume(min <= max);\n                // Use the clamp function and check the result\n                let result = x.clamp(min, max);\n                if x < min {\n                    assert!(result == min);\n                } else if x > max {\n                    assert!(result == max);\n                } else {\n                    assert!(result == x);\n                }\n            }\n        };\n    }"
+    }
+  ],
+  "callees": [
+    "49618956978873163995324086899806194018",
+    "584439169751661234116534549959556269532",
+    "990772018832849123114108871621579296518",
+    "1265364704673487667316330420117594786451",
+    "125277921322113449508798707465544651276",
+    "139704976908753389291209564980972955015",
+    "31406905208446239141563463070273293022",
+    "1126975630882611803017458647216186928896",
+    "66112845269262938208238172803954980118",
+    "954451088741779958915780013560057788449",
+    "97944781607954234714933777742521747758",
+    "59431585877006832114506841815936661435",
+    "258820287469578611817448591488600041899",
+    "17421822894816687532325615181214565887",
+    "23815256893174302637797703719499456373",
+    "34360323943948505185250702191043827587",
+    "396198263562809227110577573029494459899",
+    "662667841187530298116753327770181661845",
+    "71852916133049143199068712378246331607",
+    "716419805525181853012219105102267305797",
+    "121146110855091051633912461341956071155",
+    "65087903618051294264133097032672551694",
+    "11348349726245922259481448904410483024",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "243931809744896974812513529918607549579",
+    "1752989996936949203916036071159051010960",
+    "478753423337745817613297159272845606672",
+    "2650873733956893593121535658983754120",
+    "887235042902537721816254572592014930578",
+    "739520556846959085018120036998133255835"
+  ]
+}

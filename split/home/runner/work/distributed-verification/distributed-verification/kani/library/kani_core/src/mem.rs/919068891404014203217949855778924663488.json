@@ -1,0 +1,30 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/mem.rs",
+  "name": "kani::mem::same_allocation::<()>",
+  "hash": "919068891404014203217949855778924663488",
+  "hash_direct": "1276389102285374942714620449718829400932",
+  "attrs": [
+    "#[kanitool::unstable(feature = \"mem-predicates\", issue = 2690, reason =\n\"experimental memory predicate API\")]\n"
+  ],
+  "src": "pub fn same_allocation<T: PointeeSized>(ptr1: *const T, ptr2: *const T) -> bool {\n            same_allocation_internal(ptr1, ptr2)\n        }",
+  "macro_backtrace": [
+    {
+      "callsite": "kani_core::kani_mem!(core)",
+      "defsite": "macro_rules! kani_mem"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ],
+  "callees": [
+    "80989463918046823203044749903697808714",
+    "1295499066349112484912490938496969975321",
+    "108393381985250317406898676759665844160",
+    "177504877725561479516307868202288769850",
+    "67202008249250073035419006078308699005",
+    "247863734272995071816029882222598095082",
+    "896888444305093759317012834705524625919",
+    "596794692914067914615904078176451152302"
+  ]
+}

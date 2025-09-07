@@ -1,0 +1,7 @@
+{
+  "file": "core/src/escape.rs",
+  "name": "escape::EscapeIterInner::<10, escape::MaybeEscaped>::to_char",
+  "hash": "1758912313049800270217802676586818662126",
+  "hash_direct": "424920647288768839810913170340153170535",
+  "src": "const fn to_char(&self) -> Option<char> {\n        if self.alive.end > Self::LITERAL_ESCAPE_START {\n            // SAFETY: We just checked that `self.data` contains a `char` in\n            //         its `literal` variant.\n            return Some(unsafe { self.data.literal });\n        }\n\n        None\n    }"
+}

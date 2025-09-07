@@ -1,0 +1,7 @@
+{
+  "file": "core/src/char/convert.rs",
+  "name": "char::convert::<impl convert::From<char> for u32>::from",
+  "hash": "113949204995067962305733038591445280689",
+  "hash_direct": "78649897322967870018303876160108551979",
+  "src": "fn from(c: char) -> Self {\n        c as u32\n    }"
+}

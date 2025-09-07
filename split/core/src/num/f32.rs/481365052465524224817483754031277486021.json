@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/f32.rs",
-  "name": "f32::math::cbrt",
-  "hash": "481365052465524224817483754031277486021",
-  "hash_direct": "643591931669993037617434613973314521108",
-  "src": "pub fn cbrt(x: f32) -> f32 {\n        libm::cbrtf(x)\n    }"
-}

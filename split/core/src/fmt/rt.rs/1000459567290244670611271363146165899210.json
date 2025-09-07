@@ -1,0 +1,13 @@
+{
+  "file": "core/src/fmt/rt.rs",
+  "name": "<fmt::rt::Argument<'_> as clone::Clone>::clone",
+  "hash": "1000459567290244670611271363146165899210",
+  "hash_direct": "457455421081202421614965852370173199109",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

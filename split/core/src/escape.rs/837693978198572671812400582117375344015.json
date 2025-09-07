@@ -1,0 +1,7 @@
+{
+  "file": "core/src/escape.rs",
+  "name": "core::escape::backslash::<10>",
+  "hash": "837693978198572671812400582117375344015",
+  "hash_direct": "143104565913825026671615334765042707134",
+  "src": "const fn backslash<const N: usize>(a: ascii::Char) -> ([ascii::Char; N], Range<u8>) {\n    const { assert!(N >= 2) };\n\n    let mut output = [ascii::Char::Null; N];\n\n    output[0] = ascii::Char::ReverseSolidus;\n    output[1] = a;\n\n    (output, 0..2)\n}"
+}

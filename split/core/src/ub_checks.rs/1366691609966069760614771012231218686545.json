@@ -1,7 +1,0 @@
-{
-  "file": "core/src/ub_checks.rs",
-  "name": "ub_checks::is_valid_allocation_size",
-  "hash": "1366691609966069760614771012231218686545",
-  "hash_direct": "778183625607033115215058293878340355362",
-  "src": "pub(crate) const fn is_valid_allocation_size(size: usize, len: usize) -> bool {\n    let max_len = if size == 0 { usize::MAX } else { isize::MAX as usize / size };\n    len <= max_len\n}"
-}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/mem/mod.rs",
+  "name": "mem::align_of::<sync::atomic::AtomicU32>",
+  "hash": "1679732870077180814715965902625358921618",
+  "hash_direct": "98234841432886208713895087412202972310",
+  "src": "pub const fn align_of<T>() -> usize {\n    intrinsics::align_of::<T>()\n}"
+}

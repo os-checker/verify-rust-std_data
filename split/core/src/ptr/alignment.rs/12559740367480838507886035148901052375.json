@@ -1,0 +1,13 @@
+{
+  "file": "core/src/ptr/alignment.rs",
+  "name": "<ptr::alignment::AlignmentEnum as clone::Clone>::clone",
+  "hash": "12559740367480838507886035148901052375",
+  "hash_direct": "61736208382403428013061751740360914866",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "file": "core/src/alloc/mod.rs",
+  "name": "<alloc::AllocError as cmp::Eq>::assert_receiver_is_total_eq",
+  "hash": "65317846572373040011151543001521417398",
+  "hash_direct": "114538666773436710708379959434889847001",
+  "src": "Eq",
+  "macro_backtrace": [
+    {
+      "callsite": "Eq",
+      "defsite": "pub macro Eq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

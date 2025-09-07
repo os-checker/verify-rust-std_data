@@ -1,0 +1,12 @@
+{
+  "file": "core/src/char/methods.rs",
+  "name": "char::methods::<impl char>::make_ascii_lowercase",
+  "hash": "63056492727050690364391917141093345859",
+  "hash_direct": "1836854342227216597312985169645745522587",
+  "src": "pub const fn make_ascii_lowercase(&mut self) {\n        *self = self.to_ascii_lowercase();\n    }",
+  "callees": [
+    "162761847482439689109896374123862067977",
+    "1545000998026875087513078667640787051548",
+    "163595600001382853907822330752148741341"
+  ]
+}

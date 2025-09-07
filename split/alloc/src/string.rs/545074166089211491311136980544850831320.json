@@ -1,0 +1,10 @@
+{
+  "file": "alloc/src/string.rs",
+  "name": "string::String::len",
+  "hash": "545074166089211491311136980544850831320",
+  "hash_direct": "81721336854443292383406739849851933609",
+  "src": "pub const fn len(&self) -> usize {\n        self.vec.len()\n    }",
+  "callees": [
+    "40419404375744685231598930210685677524"
+  ]
+}

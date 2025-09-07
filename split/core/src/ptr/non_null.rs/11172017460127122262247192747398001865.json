@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "<ptr::non_null::NonNull<[usize; 4]> as cmp::PartialEq>::eq",
+  "hash": "11172017460127122262247192747398001865",
+  "hash_direct": "17348421391536872223447208909954469273",
+  "src": "fn eq(&self, other: &Self) -> bool {\n        self.as_ptr() == other.as_ptr()\n    }",
+  "callees": [
+    "173488751360057668935869030627777552292"
+  ]
+}

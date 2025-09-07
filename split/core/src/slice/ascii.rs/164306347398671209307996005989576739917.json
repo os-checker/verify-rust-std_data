@@ -1,7 +1,0 @@
-{
-  "file": "core/src/slice/ascii.rs",
-  "name": "slice::ascii::<impl [u8]>::as_ascii_unchecked",
-  "hash": "164306347398671209307996005989576739917",
-  "hash_direct": "207274653707744927714532635956994158813",
-  "src": "pub const unsafe fn as_ascii_unchecked(&self) -> &[ascii::Char] {\n        let byte_ptr: *const [u8] = self;\n        let ascii_ptr = byte_ptr as *const [ascii::Char];\n        // SAFETY: The caller promised all the bytes are ASCII\n        unsafe { &*ascii_ptr }\n    }"
-}

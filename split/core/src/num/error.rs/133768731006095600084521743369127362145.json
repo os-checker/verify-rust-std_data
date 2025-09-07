@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/error.rs",
+  "name": "<num::error::TryFromIntError as error::Error>::description",
+  "hash": "133768731006095600084521743369127362145",
+  "hash_direct": "928930483460759043911969317118792152333",
+  "src": "fn description(&self) -> &str {\n        \"out of range integral type conversion attempted\"\n    }"
+}

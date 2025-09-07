@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ops/index_range.rs",
+  "name": "ops::index_range::IndexRange::start",
+  "hash": "27547235193633795771352944920978011050",
+  "hash_direct": "36823467715750321153804724397579733244",
+  "src": "pub(crate) const fn start(&self) -> usize {\n        self.start\n    }"
+}

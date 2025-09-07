@@ -1,0 +1,15 @@
+{
+  "file": "core/src/sync/atomic.rs",
+  "name": "sync::atomic::AtomicBool::compare_exchange_weak",
+  "hash": "26022529509928354922302895264644774425",
+  "hash_direct": "526248601351456251515364171556041759881",
+  "src": "pub fn compare_exchange_weak(\n        &self,\n        current: bool,\n        new: bool,\n        success: Ordering,\n        failure: Ordering,\n    ) -> Result<bool, bool> {\n        if EMULATE_ATOMIC_BOOL {\n            return self.compare_exchange(current, new, success, failure);\n        }\n\n        // SAFETY: data races are prevented by atomic intrinsics.\n        match unsafe {\n            atomic_compare_exchange_weak(self.v.get(), current as u8, new as u8, success, failure)\n        } {\n            Ok(x) => Ok(x != 0),\n            Err(x) => Err(x != 0),\n        }\n    }",
+  "callees": [
+    "163154036748054064804947938080591443326",
+    "258820287469578611817448591488600041899",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "1752989996936949203916036071159051010960",
+    "135572183939764762818731096488946309139"
+  ]
+}

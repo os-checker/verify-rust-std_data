@@ -1,0 +1,7 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "fmt::Formatter::<'_>::with_options",
+  "hash": "1797209535750675271813373264596603007884",
+  "hash_direct": "1042324481143151563117093191984852323689",
+  "src": "pub fn with_options<'b>(&'b mut self, options: FormattingOptions) -> Formatter<'b> {\n        Formatter { options, buf: self.buf }\n    }"
+}

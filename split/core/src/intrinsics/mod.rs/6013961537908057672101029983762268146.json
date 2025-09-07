@@ -1,7 +1,0 @@
-{
-  "file": "core/src/intrinsics/mod.rs",
-  "name": "intrinsics::assume",
-  "hash": "6013961537908057672101029983762268146",
-  "hash_direct": "166511518601430652856157259378746365933",
-  "src": "pub const unsafe fn assume(b: bool) {\n    if !b {\n        // SAFETY: the caller must guarantee the argument is never `false`\n        unsafe { unreachable() }\n    }\n}"
-}

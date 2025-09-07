@@ -1,0 +1,13 @@
+{
+  "file": "core/src/ops/range.rs",
+  "name": "<ops::range::RangeFull as default::Default>::default",
+  "hash": "81626075067298248429457633037843071814",
+  "hash_direct": "154142765879077438929069014815409749587",
+  "src": "Default",
+  "macro_backtrace": [
+    {
+      "callsite": "Default",
+      "defsite": "pub macro Default($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

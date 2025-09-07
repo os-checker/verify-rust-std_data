@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/const_ptr.rs",
+  "name": "ptr::const_ptr::<impl *const u64>::cast::<core_arch::arm_shared::neon::poly64x2_t>",
+  "hash": "979097011579793689612867347947949075773",
+  "hash_direct": "114958501870302251598904714273914703565",
+  "src": "pub const fn cast<U>(self) -> *const U {\n        self as _\n    }"
+}

@@ -1,0 +1,13 @@
+{
+  "file": "core/src/ops/function.rs",
+  "name": "<for<'a, 'b> fn(&'a f32, &'b f32) -> cmp::Ordering {f32::<impl f32>::total_cmp} as ops::function::FnMut<(&f32, &f32)>>::call_mut",
+  "hash": "1239687241192450573815900328634536806436",
+  "hash_direct": "108610630274697715294073738830175082266",
+  "inst_kind": "\"Shim\"",
+  "src": "extern \"rust-call\" fn call_mut(&mut self, args: Args) -> Self::Output;",
+  "callees": [
+    "842267059997019422815333829425931124000",
+    "1280257502160233765816408910554470634604",
+    "1157832635988226544312579101964623411278"
+  ]
+}

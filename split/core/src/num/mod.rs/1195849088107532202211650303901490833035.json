@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/mod.rs",
-  "name": "num::<impl u8>::is_ascii_octdigit",
-  "hash": "1195849088107532202211650303901490833035",
-  "hash_direct": "98909595372360930528596027113386474565",
-  "src": "pub const fn is_ascii_octdigit(&self) -> bool {\n        matches!(*self, b'0'..=b'7')\n    }"
-}

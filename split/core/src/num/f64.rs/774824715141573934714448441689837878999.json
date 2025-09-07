@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/f64.rs",
-  "name": "f64::<impl f64>::NEG_INFINITY",
-  "hash": "774824715141573934714448441689837878999",
-  "hash_direct": "79032732299983567115659347233265309446",
-  "src": "pub const NEG_INFINITY: f64 = -1.0_f64 / 0.0_f64;"
-}

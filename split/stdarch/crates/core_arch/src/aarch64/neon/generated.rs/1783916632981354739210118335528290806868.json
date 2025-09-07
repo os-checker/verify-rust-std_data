@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
-  "name": "core_arch::aarch64::neon::generated::vpmaxq_u8",
-  "hash": "1783916632981354739210118335528290806868",
-  "hash_direct": "14103041470601512851242871084477786929",
-  "src": "pub fn vpmaxq_u8(a: uint8x16_t, b: uint8x16_t) -> uint8x16_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.umaxp.v16i8\"\n        )]\n        fn _vpmaxq_u8(a: uint8x16_t, b: uint8x16_t) -> uint8x16_t;\n    }\n    unsafe { _vpmaxq_u8(a, b) }\n}"
-}

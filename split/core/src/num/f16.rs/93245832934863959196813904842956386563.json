@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/f16.rs",
-  "name": "f16::<impl f16>::round_ties_even",
-  "hash": "93245832934863959196813904842956386563",
-  "hash_direct": "164001877214247914412182521855405835538",
-  "src": "pub const fn round_ties_even(self) -> f16 {\n        intrinsics::round_ties_even_f16(self)\n    }"
-}

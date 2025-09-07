@@ -1,0 +1,13 @@
+{
+  "file": "core/src/array/mod.rs",
+  "name": "array::<impl default::Default for [T; ($n - 1)]>::{constant#0}",
+  "hash": "1463104275882131975115866412694995066698",
+  "hash_direct": "2720058505912264990505817610468808040",
+  "src": "($n - 1)",
+  "macro_backtrace": [
+    {
+      "callsite": "array_impl_default! {32, T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T}",
+      "defsite": "macro_rules! array_impl_default {\n    {$n:expr, $t:ident $($ts:ident)*} => {\n        #[stable(since = \"1.4.0\", feature = \"array_default\")]\n        impl<T> Default for [T; $n] where T: Default {\n            fn default() -> [T; $n] {\n                [$t::default(), $($ts::default()),*]\n            }\n        }\n        array_impl_default!{($n - 1), $($ts)*}\n    };\n    {$n:expr,} => {\n        #[stable(since = \"1.4.0\", feature = \"array_default\")]\n        impl<T> Default for [T; $n] {\n            fn default() -> [T; $n] { [] }\n        }\n    };\n}"
+    }
+  ]
+}

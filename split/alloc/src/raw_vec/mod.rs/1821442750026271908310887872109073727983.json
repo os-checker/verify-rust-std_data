@@ -1,0 +1,10 @@
+{
+  "file": "alloc/src/raw_vec/mod.rs",
+  "name": "raw_vec::RawVec::<u8>::allocator",
+  "hash": "1821442750026271908310887872109073727983",
+  "hash_direct": "1590393768569244111018308996146266035963",
+  "src": "pub(crate) fn allocator(&self) -> &A {\n        self.inner.allocator()\n    }",
+  "callees": [
+    "113149325569224891866314891945951508015"
+  ]
+}

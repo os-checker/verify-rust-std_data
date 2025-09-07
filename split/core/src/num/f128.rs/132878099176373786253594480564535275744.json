@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/f128.rs",
-  "name": "f128::<impl f128>::is_nan",
-  "hash": "132878099176373786253594480564535275744",
-  "hash_direct": "201206197671408632213565845054896466899",
-  "src": "pub const fn is_nan(self) -> bool {\n        self != self\n    }"
-}

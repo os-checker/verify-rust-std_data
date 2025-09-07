@@ -1,0 +1,13 @@
+{
+  "file": "core/src/ops/function.rs",
+  "name": "<for<'a> fn(&'a ascii::EscapeDefault) -> (usize, option::Option<usize>) {<ascii::EscapeDefault as iter::traits::iterator::Iterator>::size_hint} as ops::function::FnOnce<(&ascii::EscapeDefault,)>>::call_once",
+  "hash": "142984366010334309368557797310168805026",
+  "hash_direct": "636033571258789055711526486696841008956",
+  "inst_kind": "\"Shim\"",
+  "src": "extern \"rust-call\" fn call_once(self, args: Args) -> Self::Output;",
+  "callees": [
+    "713158921368867215913697166763151774877",
+    "119539198841178170095714608677850051781",
+    "974372577780349938310606371856678076291"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "file": "alloc/src/sync.rs",
+  "name": "sync::STATIC_INNER_SLICE",
+  "hash": "1335217633835430416815390156351939795425",
+  "hash_direct": "637907587214242919156076877263022440",
+  "src": "static STATIC_INNER_SLICE: SliceArcInnerForStatic = SliceArcInnerForStatic {\n    inner: ArcInner {\n        strong: atomic::AtomicUsize::new(1),\n        weak: atomic::AtomicUsize::new(1),\n        data: [0],\n    },\n};",
+  "callees": [
+    "1421758921509639765113891545982940459302",
+    "1062482322177188393610828895103712877733"
+  ]
+}

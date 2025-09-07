@@ -1,7 +1,0 @@
-{
-  "file": "core/src/mem/maybe_uninit.rs",
-  "name": "mem::maybe_uninit::MaybeUninit::<bool>::as_ptr",
-  "hash": "650463517479782358297473684833412165",
-  "hash_direct": "40825815504437160617810278913643593328",
-  "src": "pub const fn as_ptr(&self) -> *const T {\n        // `MaybeUninit` and `ManuallyDrop` are both `repr(transparent)` so we can cast the pointer.\n        self as *const _ as *const T\n    }"
-}

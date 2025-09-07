@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vbic_u8",
+  "hash": "7362846970298970848100002325800485023",
+  "hash_direct": "71781197836949771295878930646329592458",
+  "src": "pub fn vbic_u8(a: uint8x8_t, b: uint8x8_t) -> uint8x8_t {\n    let c = int8x8_t::splat(-1);\n    unsafe { simd_and(simd_xor(b, transmute(c)), a) }\n}",
+  "callees": [
+    "335203856091225096313741835442448767652"
+  ]
+}

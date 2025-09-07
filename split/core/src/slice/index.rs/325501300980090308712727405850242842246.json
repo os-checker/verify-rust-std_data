@@ -1,0 +1,10 @@
+{
+  "file": "core/src/slice/index.rs",
+  "name": "slice::index::<impl ops::index::Index<ops::range::RangeFull> for [i8]>::index",
+  "hash": "325501300980090308712727405850242842246",
+  "hash_direct": "69397141952200537244260546141735888009",
+  "src": "fn index(&self, index: I) -> &I::Output {\n        index.index(self)\n    }",
+  "callees": [
+    "180861041896370855552405347265524969600"
+  ]
+}

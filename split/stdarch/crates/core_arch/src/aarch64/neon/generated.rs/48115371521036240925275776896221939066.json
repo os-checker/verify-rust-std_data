@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
-  "name": "core_arch::aarch64::neon::generated::vrndx_f64",
-  "hash": "48115371521036240925275776896221939066",
-  "hash_direct": "58197333257658781386371439884562190396",
-  "src": "pub fn vrndx_f64(a: float64x1_t) -> float64x1_t {\n    unsafe { simd_round_ties_even(a) }\n}"
-}

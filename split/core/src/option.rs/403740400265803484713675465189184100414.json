@@ -1,0 +1,7 @@
+{
+  "file": "core/src/option.rs",
+  "name": "<option::Option<net::ip_addr::Ipv4Addr> as ops::try_trait::Try>::branch",
+  "hash": "403740400265803484713675465189184100414",
+  "hash_direct": "167781636489785601701651158887276546045",
+  "src": "fn branch(self) -> ControlFlow<Self::Residual, Self::Output> {\n        match self {\n            Some(v) => ControlFlow::Continue(v),\n            None => ControlFlow::Break(None),\n        }\n    }"
+}

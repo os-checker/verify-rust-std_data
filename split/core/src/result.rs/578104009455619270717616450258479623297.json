@@ -1,0 +1,16 @@
+{
+  "file": "core/src/result.rs",
+  "name": "core::result::Result::<*mut rc::RcInner<[u8]>, core::alloc::AllocError>::unwrap_or_else::<{closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/alloc/src/rc.rs:2067:33: 2067:36}>",
+  "hash": "578104009455619270717616450258479623297",
+  "hash_direct": "90282890078290545911877055922192835492",
+  "src": "pub const fn unwrap_or_else<F>(self, op: F) -> T\n    where\n        F: [const] FnOnce(E) -> T + [const] Destruct,\n    {\n        match self {\n            Ok(t) => t,\n            Err(e) => op(e),\n        }\n    }",
+  "callees": [
+    "593523720810475000712660203952371323969",
+    "140493508095315886339161612115402293715",
+    "95204694556932494031169709727253134126",
+    "12355321507198182179923507819259328874",
+    "1099899350342654162615874749245636043676",
+    "41567241620038406215851091758143153711",
+    "52510531627234021514415364461060987989"
+  ]
+}

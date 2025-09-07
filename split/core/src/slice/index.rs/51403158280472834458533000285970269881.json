@@ -1,0 +1,18 @@
+{
+  "file": "core/src/slice/index.rs",
+  "name": "<ops::range::Range<usize> as slice::index::SliceIndex<[u16]>>::get_unchecked",
+  "hash": "51403158280472834458533000285970269881",
+  "hash_direct": "90267915578428628187011778050590150209",
+  "src": "unsafe fn get_unchecked(self, slice: *const [T]) -> *const [T] {\n        assert_unsafe_precondition!(\n            check_library_ub,\n            \"slice::get_unchecked requires that the range is within the slice\",\n            (\n                start: usize = self.start,\n                end: usize = self.end,\n                len: usize = slice.len()\n            ) => end >= start && end <= len\n        );\n\n        // SAFETY: the caller guarantees that `slice` is not dangling, so it\n        // cannot be longer than `isize::MAX`. They also guarantee that\n        // `self` is in bounds of `slice` so `self` cannot overflow an `isize`,\n        // so the call to `add` is safe and the length calculation cannot overflow.\n        unsafe {\n            // Using the intrinsic avoids a superfluous UB check,\n            // since the one on this method already checked `end >= start`.\n            let new_len = crate::intrinsics::unchecked_sub(self.end, self.start);\n            get_offset_len_noubcheck(slice, self.start, new_len)\n        }\n    }",
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "17421822894816687532325615181214565887",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "478753423337745817613297159272845606672",
+    "178108489533327128507616347526513417408",
+    "89283912188383644544056872212551506764",
+    "80809114926828604019732240244000542097",
+    "87977286206191110206643684053945734595"
+  ]
+}

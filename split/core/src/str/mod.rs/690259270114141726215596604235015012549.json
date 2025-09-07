@@ -1,0 +1,13 @@
+{
+  "file": "core/src/str/mod.rs",
+  "name": "<str::IsAsciiWhitespace as clone::Clone>::clone",
+  "hash": "690259270114141726215596604235015012549",
+  "hash_direct": "202125405601106944116857230663918989147",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

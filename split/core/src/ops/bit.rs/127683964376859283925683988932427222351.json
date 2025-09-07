@@ -1,0 +1,13 @@
+{
+  "file": "core/src/ops/bit.rs",
+  "name": "<bool as ops::bit::Not>::not",
+  "hash": "127683964376859283925683988932427222351",
+  "hash_direct": "18232119646164801214434867976481727422",
+  "src": "fn not(self) -> $t { !self }",
+  "macro_backtrace": [
+    {
+      "callsite": "not_impl! { bool usize u8 u16 u32 u64 u128 isize i8 i16 i32 i64 i128 }",
+      "defsite": "macro_rules! not_impl {\n    ($($t:ty)*) => ($(\n        #[stable(feature = \"rust1\", since = \"1.0.0\")]\n        #[rustc_const_unstable(feature = \"const_ops\", issue = \"143802\")]\n        impl const Not for $t {\n            type Output = $t;\n\n            #[inline]\n            fn not(self) -> $t { !self }\n        }\n\n        forward_ref_unop! { impl Not, not for $t,\n        #[stable(feature = \"rust1\", since = \"1.0.0\")]\n        #[rustc_const_unstable(feature = \"const_ops\", issue = \"143802\")] }\n    )*)\n}"
+    }
+  ]
+}

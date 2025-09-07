@@ -1,7 +1,0 @@
-{
-  "file": "core/src/result.rs",
-  "name": "result::Result::<alloc::layout::Layout, alloc::layout::LayoutError>::is_ok",
-  "hash": "649963511150928342212548657406931555879",
-  "hash_direct": "1344310182277653913115715949627170005780",
-  "src": "pub const fn is_ok(&self) -> bool {\n        matches!(*self, Ok(_))\n    }"
-}

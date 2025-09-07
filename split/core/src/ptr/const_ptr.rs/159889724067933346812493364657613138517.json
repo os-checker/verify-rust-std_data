@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/const_ptr.rs",
+  "name": "ptr::const_ptr::<impl *const task::wake::RawWakerVTable>::expose_provenance",
+  "hash": "159889724067933346812493364657613138517",
+  "hash_direct": "43917778926487219821203323338599101615",
+  "src": "pub fn expose_provenance(self) -> usize {\n        self.cast::<()>() as usize\n    }",
+  "callees": [
+    "57318736036578966279145344938690383188"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vld3_dup_u8",
+  "hash": "2063214751839844361942283170883899684",
+  "hash_direct": "1079189033365752832615886915348707106987",
+  "src": "pub unsafe fn vld3_dup_u8(a: *const u8) -> uint8x8x3_t {\n    transmute(vld3_dup_s8(transmute(a)))\n}",
+  "callees": [
+    "11830249566566337881602304496708704705"
+  ]
+}

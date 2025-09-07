@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/f64.rs",
-  "name": "f64::<impl f64>::MAN_MASK",
-  "hash": "1249301045427472486910494308488602058465",
-  "hash_direct": "285518131523904833312308923867707611159",
-  "src": "pub(crate) const MAN_MASK: u64 = 0x000f_ffff_ffff_ffff;"
-}

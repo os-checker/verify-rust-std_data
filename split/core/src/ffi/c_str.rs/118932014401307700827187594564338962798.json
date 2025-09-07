@@ -1,0 +1,13 @@
+{
+  "file": "core/src/ffi/c_str.rs",
+  "name": "<ffi::c_str::Bytes<'_> as iter::traits::iterator::Iterator>::count",
+  "hash": "118932014401307700827187594564338962798",
+  "hash_direct": "1011817690088606286014462639985394652677",
+  "src": "fn count(self) -> usize {\n        // SAFETY: We always hold a valid pointer to a C string\n        unsafe { strlen(self.ptr.as_ptr().cast()) }\n    }",
+  "callees": [
+    "143191352035388339229276956670037975378",
+    "57984873840173317167477931613753267976",
+    "1551109058205573243914475930333424792709",
+    "53569486981529370344752868158650318763"
+  ]
+}

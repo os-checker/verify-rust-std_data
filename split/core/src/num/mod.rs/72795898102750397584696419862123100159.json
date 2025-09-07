@@ -1,0 +1,16 @@
+{
+  "file": "core/src/num/mod.rs",
+  "name": "<num::FpCategory as fmt::Debug>::fmt",
+  "hash": "72795898102750397584696419862123100159",
+  "hash_direct": "4132846993631692112191676357396999859",
+  "src": "Debug",
+  "macro_backtrace": [
+    {
+      "callsite": "Debug",
+      "defsite": "pub macro Debug($item:item) {\n        /* compiler built-in */\n    }"
+    }
+  ],
+  "callees": [
+    "243839084150888952911908111539685994713"
+  ]
+}

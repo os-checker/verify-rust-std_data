@@ -1,0 +1,10 @@
+{
+  "file": "core/src/str/traits.rs",
+  "name": "core::str::traits::<impl core::ops::Index<core::ops::RangeFull> for str>::index",
+  "hash": "131549958022719682648073225120926112828",
+  "hash_direct": "276385147552794679515731971633275587918",
+  "src": "fn index(&self, index: I) -> &I::Output {\n        index.index(self)\n    }",
+  "callees": [
+    "502317594467260197912026909171319940573"
+  ]
+}

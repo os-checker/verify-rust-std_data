@@ -1,0 +1,7 @@
+{
+  "file": "core/src/net/socket_addr.rs",
+  "name": "<net::socket_addr::SocketAddr as convert::From<net::socket_addr::SocketAddrV6>>::from",
+  "hash": "72683622554543568413747473558961338978",
+  "hash_direct": "21348748365867572668405405469050555250",
+  "src": "fn from(sock6: SocketAddrV6) -> SocketAddr {\n        SocketAddr::V6(sock6)\n    }"
+}

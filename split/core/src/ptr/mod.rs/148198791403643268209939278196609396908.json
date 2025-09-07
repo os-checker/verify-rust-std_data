@@ -1,8 +1,0 @@
-{
-  "file": "core/src/ptr/mod.rs",
-  "name": "ptr::drop_in_place::<for<'a, 'b> fn(&'a f64, &'b f64) -> cmp::Ordering {f64::<impl f64>::total_cmp}>",
-  "hash": "148198791403643268209939278196609396908",
-  "hash_direct": "154881100401275242892712800460841376995",
-  "inst_kind": "\"Shim\"",
-  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
-}

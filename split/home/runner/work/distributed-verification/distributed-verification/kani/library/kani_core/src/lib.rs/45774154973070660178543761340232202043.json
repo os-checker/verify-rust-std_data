@@ -1,0 +1,23 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/lib.rs",
+  "name": "kani::safety_check_no_assume",
+  "hash": "45774154973070660178543761340232202043",
+  "hash_direct": "975313137470134971715035470502673196704",
+  "attrs": [
+    "#[kanitool::fn_marker = \"SafetyCheckNoAssumeHook\"]\n"
+  ],
+  "src": "pub(crate) fn safety_check_no_assume(cond: bool, msg: &'static str) {\n            #[cfg(not(feature = \"concrete_playback\"))]\n            return kani_intrinsic();\n\n            #[cfg(feature = \"concrete_playback\")]\n            assert!(cond, \"Safety check failed: {msg}\");\n        }",
+  "macro_backtrace": [
+    {
+      "callsite": "kani_core::kani_intrinsics!()",
+      "defsite": "macro_rules! kani_intrinsics"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ],
+  "callees": [
+    "117428381423975957805089895478716013652"
+  ]
+}

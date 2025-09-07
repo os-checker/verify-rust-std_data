@@ -1,0 +1,16 @@
+{
+  "file": "core/src/iter/adapters/copied.rs",
+  "name": "<iter::adapters::copied::Copied<slice::iter::Iter<'_, u8>> as clone::Clone>::clone",
+  "hash": "31746450513620414926149905567996529053",
+  "hash_direct": "1430237815122254562614439423896764109297",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ],
+  "callees": [
+    "1127448244019747137816948501807508054133"
+  ]
+}

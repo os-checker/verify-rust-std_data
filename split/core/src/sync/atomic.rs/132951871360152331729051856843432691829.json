@@ -1,0 +1,16 @@
+{
+  "file": "core/src/sync/atomic.rs",
+  "name": "<sync::atomic::Ordering as fmt::Debug>::fmt",
+  "hash": "132951871360152331729051856843432691829",
+  "hash_direct": "85636256293620508765051522175138276630",
+  "src": "Debug",
+  "macro_backtrace": [
+    {
+      "callsite": "Debug",
+      "defsite": "pub macro Debug($item:item) {\n        /* compiler built-in */\n    }"
+    }
+  ],
+  "callees": [
+    "243839084150888952911908111539685994713"
+  ]
+}

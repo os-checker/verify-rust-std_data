@@ -1,0 +1,12 @@
+{
+  "file": "alloc/src/sync.rs",
+  "name": "sync::Arc::<core::ffi::CStr>::inner",
+  "hash": "11921452687239992626301204965072789134",
+  "hash_direct": "24130071141622771366481720058961451594",
+  "src": "fn inner(&self) -> &ArcInner<T> {\n        // This unsafety is ok because while this arc is alive we're guaranteed\n        // that the inner pointer is valid. Furthermore, we know that the\n        // `ArcInner` structure itself is `Sync` because the inner data is\n        // `Sync` as well, so we're ok loaning out an immutable pointer to these\n        // contents.\n        unsafe { self.ptr.as_ref() }\n    }",
+  "callees": [
+    "9297248957046646963852108909260076771",
+    "866660375846977150517443284944234904555",
+    "93947219591448812237225817182988509148"
+  ]
+}

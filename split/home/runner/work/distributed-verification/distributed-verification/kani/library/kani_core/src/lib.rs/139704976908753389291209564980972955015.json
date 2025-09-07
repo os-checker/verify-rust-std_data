@@ -1,0 +1,20 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/lib.rs",
+  "name": "kani::assume",
+  "hash": "139704976908753389291209564980972955015",
+  "hash_direct": "134871231628261129354079868663783700603",
+  "attrs": [
+    "#[kanitool::fn_marker = \"AssumeHook\"]\n"
+  ],
+  "src": "pub fn assume(cond: bool) {\n            let _ = cond;\n        }",
+  "macro_backtrace": [
+    {
+      "callsite": "kani_core::kani_intrinsics!()",
+      "defsite": "macro_rules! kani_intrinsics"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ]
+}

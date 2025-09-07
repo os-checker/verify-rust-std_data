@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vhadd_u32",
-  "hash": "62665387005653161954904250738643411022",
-  "hash_direct": "567289872563573308812864037001755646246",
-  "src": "pub fn vhadd_u32(a: uint32x2_t, b: uint32x2_t) -> uint32x2_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.uhadd.v2i32\"\n        )]\n        #[cfg_attr(target_arch = \"arm\", link_name = \"llvm.arm.neon.vhaddu.v2i32\")]\n        fn _vhadd_u32(a: uint32x2_t, b: uint32x2_t) -> uint32x2_t;\n    }\n    unsafe { _vhadd_u32(a, b) }\n}"
-}

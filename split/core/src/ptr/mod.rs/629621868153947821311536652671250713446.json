@@ -1,0 +1,8 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "ptr::drop_in_place::<kani::mem_init::MemoryInitializationState>",
+  "hash": "629621868153947821311536652671250713446",
+  "hash_direct": "68747665234174309716964124885752087894",
+  "inst_kind": "\"Shim\"",
+  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
+}

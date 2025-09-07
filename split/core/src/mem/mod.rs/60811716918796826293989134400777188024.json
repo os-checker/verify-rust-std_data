@@ -1,0 +1,7 @@
+{
+  "file": "core/src/mem/mod.rs",
+  "name": "core::mem::size_of::<bool>",
+  "hash": "60811716918796826293989134400777188024",
+  "hash_direct": "36718917934933942831545121257900156332",
+  "src": "pub const fn size_of<T>() -> usize {\n    intrinsics::size_of::<T>()\n}"
+}

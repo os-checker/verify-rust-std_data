@@ -1,0 +1,10 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<core::slice::Iter<'_, core::fmt::rt::Placeholder> as core::iter::Iterator>::enumerate",
+  "hash": "109964147859152657197339314493580390812",
+  "hash_direct": "12431834120271655298331356534832233676",
+  "src": "fn enumerate(self) -> Enumerate<Self>\n    where\n        Self: Sized,\n    {\n        Enumerate::new(self)\n    }",
+  "callees": [
+    "1772829597190523616114951817685481976942"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "file": "core/src/iter/adapters/filter.rs",
+  "name": "<iter::adapters::filter::Filter<I, P> as iter::traits::iterator::Iterator>::count::to_usize::<&u8, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/str/count.rs:136:21: 136:29}>::{closure#0}",
+  "hash": "8388353940802646364767634772864445262",
+  "hash_direct": "118134151197289102667236098201729650583",
+  "src": "move |x| predicate(&x) as usize",
+  "callees": [
+    "156761099224162496521554063647246510953",
+    "42675708704912587986905307549981316387",
+    "947833919457653120214810965083035955432"
+  ]
+}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/ptr/non_null.rs",
-  "name": "ptr::non_null::NonNull::<[mem::maybe_uninit::MaybeUninit<u8>]>::from_mut",
-  "hash": "168827708775377994022586529176588035922",
-  "hash_direct": "155354579174569149663411290832307495558",
-  "src": "pub const fn from_mut(r: &mut T) -> Self {\n        // SAFETY: A mutable reference cannot be null.\n        unsafe { NonNull { pointer: r as *mut T } }\n    }"
-}

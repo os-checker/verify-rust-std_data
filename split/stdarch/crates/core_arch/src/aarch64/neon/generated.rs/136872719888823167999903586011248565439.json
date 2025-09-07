@@ -1,0 +1,12 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vqmovund_s64",
+  "hash": "136872719888823167999903586011248565439",
+  "hash_direct": "1270894583941241946316223202981484320926",
+  "src": "pub fn vqmovund_s64(a: i64) -> u32 {\n    unsafe { simd_extract!(vqmovun_s64(vdupq_n_s64(a)), 0) }\n}",
+  "callees": [
+    "146792547358056457911760569779288725490",
+    "1690281153383204199917144377686369262997",
+    "1761848184088370022613926846118412510353"
+  ]
+}

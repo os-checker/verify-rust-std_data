@@ -1,0 +1,7 @@
+{
+  "file": "core/src/escape.rs",
+  "name": "escape::escape_ascii::LOOKUP",
+  "hash": "48430856524437771355813917397949115167",
+  "hash_direct": "1302572568650994724710706962235685937114",
+  "src": "const LOOKUP: [u8; 256] = {\n            let mut arr = [0; 256];\n            let mut idx = 0;\n            while idx <= 255 {\n                arr[idx] = match idx as u8 {\n                    // use 8th bit to indicate escaped\n                    b'\\t' => 0x80 | b't',\n                    b'\\r' => 0x80 | b'r',\n                    b'\\n' => 0x80 | b'n',\n                    b'\\\\' => 0x80 | b'\\\\',\n                    b'\\'' => 0x80 | b'\\'',\n                    b'\"' => 0x80 | b'\"',\n\n                    // use NUL to indicate hex-escaped\n                    0x00..=0x1F | 0x7F..=0xFF => 0x80 | b'\\0',\n\n                    idx => idx,\n                };\n                idx += 1;\n            }\n            arr\n        };"
+}

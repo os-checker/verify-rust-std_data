@@ -1,0 +1,7 @@
+{
+  "file": "core/src/array/iter.rs",
+  "name": "<array::iter::IntoIter<usize, 2> as ops::drop::Drop>::drop",
+  "hash": "164990924868829835338594208825241637473",
+  "hash_direct": "142388258346129762247795438001503214131",
+  "src": "fn drop(&mut self) {\n        // `inner` now handles this, but it'd technically be a breaking change\n        // to remove this `impl`, even though it's useless.\n    }"
+}

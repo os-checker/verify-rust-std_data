@@ -1,7 +1,0 @@
-{
-  "file": "core/src/slice/mod.rs",
-  "name": "slice::<impl [f32]>::as_mut_ptr",
-  "hash": "93887220617839191357133813816346400830",
-  "hash_direct": "107200479500130659916663919023292561161",
-  "src": "pub const fn as_mut_ptr(&mut self) -> *mut T {\n        self as *mut [T] as *mut T\n    }"
-}

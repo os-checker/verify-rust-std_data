@@ -1,0 +1,17 @@
+{
+  "file": "core/src/hint.rs",
+  "name": "hint::unreachable_unchecked",
+  "hash": "1415106497522421883676194742336801697",
+  "hash_direct": "14894555298529164505470491730566135498",
+  "src": "pub const unsafe fn unreachable_unchecked() -> ! {\n    ub_checks::assert_unsafe_precondition!(\n        check_language_ub,\n        \"hint::unreachable_unchecked must never be reached\",\n        () => false\n    );\n    // SAFETY: the safety contract for `intrinsics::unreachable` must\n    // be upheld by the caller.\n    unsafe { intrinsics::unreachable() }\n}",
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "17421822894816687532325615181214565887",
+    "23815256893174302637797703719499456373",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "478753423337745817613297159272845606672",
+    "819756211280848030917202637728825520633",
+    "739520556846959085018120036998133255835"
+  ]
+}

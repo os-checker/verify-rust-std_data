@@ -1,0 +1,13 @@
+{
+  "file": "core/src/fmt/builders.rs",
+  "name": "core::fmt::builders::debug_tuple_new",
+  "hash": "1084955025428769207812538418835352299406",
+  "hash_direct": "148826408752022359997701541018389369976",
+  "src": "pub(super) fn debug_tuple_new<'a, 'b>(\n    fmt: &'a mut fmt::Formatter<'b>,\n    name: &str,\n) -> DebugTuple<'a, 'b> {\n    let result = fmt.write_str(name);\n    DebugTuple { fmt, result, fields: 0, empty_name: name.is_empty() }\n}",
+  "callees": [
+    "1571969697186667512510572825248226870481",
+    "280133775636475637812335811211808216208",
+    "168803374556095914217018758851690782784",
+    "1508773653512704694540919786852289740"
+  ]
+}

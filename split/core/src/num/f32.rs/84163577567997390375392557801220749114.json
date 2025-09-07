@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/f32.rs",
-  "name": "f32::math::round",
-  "hash": "84163577567997390375392557801220749114",
-  "hash_direct": "1605982364750589240612759179296541317540",
-  "src": "pub const fn round(x: f32) -> f32 {\n        // SAFETY: intrinsic with no preconditions\n        unsafe { intrinsics::roundf32(x) }\n    }"
-}

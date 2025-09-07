@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vpadd_u8",
+  "hash": "34513144524522346141685328167474111064",
+  "hash_direct": "1645450523245370327017128677540744465496",
+  "src": "pub fn vpadd_u8(a: uint8x8_t, b: uint8x8_t) -> uint8x8_t {\n    unsafe { transmute(vpadd_s8(transmute(a), transmute(b))) }\n}",
+  "callees": [
+    "648255168555552623213345971815691996534"
+  ]
+}

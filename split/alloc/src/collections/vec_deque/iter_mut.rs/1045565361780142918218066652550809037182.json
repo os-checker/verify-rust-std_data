@@ -1,0 +1,16 @@
+{
+  "file": "alloc/src/collections/vec_deque/iter_mut.rs",
+  "name": "<collections::vec_deque::iter_mut::IterMut<'a, T> as core::iter::Iterator>::__iterator_get_unchecked::{closure#0}::REENTRY",
+  "hash": "1045565361780142918218066652550809037182",
+  "hash_direct": "34623455863970537759904241119652255558",
+  "attrs": [
+    "#[kanitool::recursion_tracker]\n"
+  ],
+  "src": "#[cfg_attr(kani, kani::modifies(self))]",
+  "macro_backtrace": [
+    {
+      "callsite": "#[cfg_attr(kani, kani::modifies(self))]",
+      "defsite": "pub fn modifies(attr: TokenStream, item: TokenStream) -> TokenStream"
+    }
+  ]
+}

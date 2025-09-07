@@ -1,0 +1,7 @@
+{
+  "file": "core/src/convert/mod.rs",
+  "name": "<core::char::DecodeUtf16Error as core::convert::From<core::char::DecodeUtf16Error>>::from",
+  "hash": "836386251216121827314945059151032631529",
+  "hash_direct": "56084285692655936737846036911978039895",
+  "src": "fn from(t: T) -> T {\n        t\n    }"
+}

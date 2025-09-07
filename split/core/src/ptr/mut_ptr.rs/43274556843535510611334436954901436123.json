@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/mut_ptr.rs",
+  "name": "ptr::mut_ptr::<impl *mut i8>::cast::<sync::atomic::AtomicI8>",
+  "hash": "43274556843535510611334436954901436123",
+  "hash_direct": "963218566297416597217001899485903231268",
+  "src": "pub const fn cast<U>(self) -> *mut U {\n        self as _\n    }"
+}

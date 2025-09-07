@@ -1,0 +1,10 @@
+{
+  "file": "alloc/src/sync.rs",
+  "name": "sync::Arc::<[u8; 0]>::from_inner",
+  "hash": "801106699807451654016848134298723667194",
+  "hash_direct": "183874686941757175865204831814758814193",
+  "src": "unsafe fn from_inner(ptr: NonNull<ArcInner<T>>) -> Self {\n        unsafe { Self::from_inner_in(ptr, Global) }\n    }",
+  "callees": [
+    "1652753943271577916710107606911841884446"
+  ]
+}

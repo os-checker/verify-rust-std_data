@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f16.rs",
+  "name": "f16::<impl f16>::round",
+  "hash": "138083676265772780101124621173759773073",
+  "hash_direct": "1381372628931226029513330826828787701881",
+  "src": "pub const fn round(self) -> f16 {\n        // SAFETY: intrinsic with no preconditions\n        unsafe { intrinsics::roundf16(self) }\n    }"
+}

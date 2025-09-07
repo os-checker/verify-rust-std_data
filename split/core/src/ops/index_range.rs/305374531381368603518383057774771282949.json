@@ -1,7 +1,0 @@
-{
-  "file": "core/src/ops/index_range.rs",
-  "name": "ops::index_range::IndexRange::len",
-  "hash": "305374531381368603518383057774771282949",
-  "hash_direct": "29231441741584779425870927611429541737",
-  "src": "pub(crate) const fn len(&self) -> usize {\n        // SAFETY: By invariant, this cannot wrap\n        // Using the intrinsic because a UB check here impedes LLVM optimization. (#131563)\n        unsafe { crate::intrinsics::unchecked_sub(self.end, self.start) }\n    }"
-}

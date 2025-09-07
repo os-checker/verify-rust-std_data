@@ -1,7 +1,0 @@
-{
-  "file": "core/src/ptr/metadata.rs",
-  "name": "ptr::metadata::metadata::<[mem::maybe_uninit::MaybeUninit<(u8, u8)>]>",
-  "hash": "1130443784285464205918245748632469206992",
-  "hash_direct": "9431317716089930038384770810314343577",
-  "src": "pub const fn metadata<T: PointeeSized>(ptr: *const T) -> <T as Pointee>::Metadata {\n    ptr_metadata(ptr)\n}"
-}

@@ -1,0 +1,16 @@
+{
+  "file": "alloc/src/raw_vec/mod.rs",
+  "name": "raw_vec::RawVec::<u8>::from_nonnull_in",
+  "hash": "711634056529404308717619098102147147161",
+  "hash_direct": "226040954457137517915108163229118982180",
+  "src": "pub(crate) unsafe fn from_nonnull_in(ptr: NonNull<T>, capacity: usize, alloc: A) -> Self {\n        // SAFETY: Precondition passed to the caller\n        unsafe {\n            let ptr = ptr.cast();\n            let capacity = new_cap::<T>(capacity);\n            Self { inner: RawVecInner::from_nonnull_in(ptr, capacity, alloc), _marker: PhantomData }\n        }\n    }",
+  "callees": [
+    "122168519072133789272627379792947331823",
+    "1711214648546878229516166388959941140765",
+    "116120406547640733017584320872607374165",
+    "181717373102152254895109628399379607332",
+    "1451197840112163405012358816355909731614",
+    "29456426015549113827640020827732703416",
+    "735147566348915391518387477037509563238"
+  ]
+}

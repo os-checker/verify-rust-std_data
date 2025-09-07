@@ -1,0 +1,23 @@
+{
+  "file": "core/src/intrinsics/mod.rs",
+  "name": "intrinsics::verify::should_fail_i8_to_bool",
+  "hash": "1630697644600351031812113838212023737269",
+  "hash_direct": "536285470057643905317178201936067992507",
+  "proof_kind": "\"Standard\"",
+  "attrs": [
+    "#[kanitool::should_panic]\n",
+    "#[kanitool::stub_verified = \"transmute_unchecked_wrapper\"]\n",
+    "#[kanitool::proof]\n"
+  ],
+  "src": "fn should_fail_i8_to_bool() {\n        let src: u8 = kani::any_where(|x| *x as u8 > 1);\n        let dst: bool = unsafe { transmute_unchecked_wrapper(src) };\n    }",
+  "callees": [
+    "175920677112080751315464247289376690681",
+    "223423045988591996014060300689406774665",
+    "129384448114184712212615089461891361189",
+    "406714392657578653315004676244818246983",
+    "139704976908753389291209564980972955015",
+    "134563002825040056909315119755976987940",
+    "1717436620820226438416048528126922774988",
+    "101324877181055014842153568881119088991"
+  ]
+}

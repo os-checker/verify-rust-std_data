@@ -1,0 +1,10 @@
+{
+  "file": "core/src/error.rs",
+  "name": "<error::Source<'_> as iter::traits::iterator::Iterator>::size_hint",
+  "hash": "174260966325418454711519187974369492399",
+  "hash_direct": "20609000694593617971865874140222168399",
+  "src": "fn size_hint(&self) -> (usize, Option<usize>) {\n        if self.current.is_some() { (1, None) } else { (0, Some(0)) }\n    }",
+  "callees": [
+    "15182775796324491429802299627354676039"
+  ]
+}

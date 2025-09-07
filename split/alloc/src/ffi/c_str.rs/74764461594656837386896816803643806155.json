@@ -1,0 +1,13 @@
+{
+  "file": "alloc/src/ffi/c_str.rs",
+  "name": "<ffi::c_str::CString as core::cmp::Eq>::assert_receiver_is_total_eq",
+  "hash": "74764461594656837386896816803643806155",
+  "hash_direct": "97146346892702584197964762702457649747",
+  "src": "Eq",
+  "macro_backtrace": [
+    {
+      "callsite": "Eq",
+      "defsite": "pub macro Eq"
+    }
+  ]
+}

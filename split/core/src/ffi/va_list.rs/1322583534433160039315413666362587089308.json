@@ -1,7 +1,0 @@
-{
-  "file": "core/src/ffi/va_list.rs",
-  "name": "<ffi::va_list::VaListImpl<'_> as ops::drop::Drop>::drop",
-  "hash": "1322583534433160039315413666362587089308",
-  "hash_direct": "160087343306652118252229229862599358453",
-  "src": "fn drop(&mut self) {\n        // FIXME: this should call `va_end`, but there's no clean way to\n        // guarantee that `drop` always gets inlined into its caller,\n        // so the `va_end` would get directly called from the same function as\n        // the corresponding `va_copy`. `man va_end` states that C requires this,\n        // and LLVM basically follows the C semantics, so we need to make sure\n        // that `va_end` is always called from the same function as `va_copy`.\n        // For more details, see https://github.com/rust-lang/rust/pull/59625\n        // and https://llvm.org/docs/LangRef.html#llvm-va-end-intrinsic.\n        //\n        // This works for now, since `va_end` is a no-op on all current LLVM targets.\n    }"
-}

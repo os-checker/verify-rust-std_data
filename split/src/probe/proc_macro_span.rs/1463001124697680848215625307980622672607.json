@@ -1,0 +1,7 @@
+{
+  "file": "src/probe/proc_macro_span.rs",
+  "name": "file",
+  "hash": "1463001124697680848215625307980622672607",
+  "hash_direct": "100444715392957809936597411644597518324",
+  "src": "pub fn file(this: &Span) -> String {\n    this.file()\n}"
+}

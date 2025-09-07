@@ -1,0 +1,8 @@
+{
+  "file": "core/src/intrinsics/mod.rs",
+  "name": "intrinsics::cold_path",
+  "hash": "588974892899239543415856878986124229421",
+  "hash_direct": "949049416529143556616384595906948359080",
+  "inst_kind": "\"Intrinsic\"",
+  "src": "pub const fn cold_path() {}"
+}

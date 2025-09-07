@@ -1,0 +1,10 @@
+{
+  "file": "core/src/result.rs",
+  "name": "result::Result::<u32, convert::Infallible>::ok",
+  "hash": "1747882974803406678316717807912919332347",
+  "hash_direct": "1242010473214534344513395817019406753433",
+  "src": "pub const fn ok(self) -> Option<T>\n    where\n        T: [const] Destruct,\n        E: [const] Destruct,\n    {\n        match self {\n            Ok(x) => Some(x),\n            Err(_) => None,\n        }\n    }",
+  "callees": [
+    "540990493817502691515157495818752962571"
+  ]
+}

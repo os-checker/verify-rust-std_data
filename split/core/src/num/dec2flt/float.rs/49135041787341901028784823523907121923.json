@@ -1,0 +1,13 @@
+{
+  "file": "core/src/num/dec2flt/float.rs",
+  "name": "<u64 as num::dec2flt::float::Integer>::ZERO",
+  "hash": "49135041787341901028784823523907121923",
+  "hash_direct": "851720186060415703315215662895936878116",
+  "src": "const ZERO: Self = 0;",
+  "macro_backtrace": [
+    {
+      "callsite": "int!(u16, u32, u64)",
+      "defsite": "macro_rules! int {\n    ($($ty:ty),+) => {\n        $(\n            impl CastInto<i16> for $ty {\n                fn cast(self) -> i16 {\n                    self as i16\n                }\n            }\n\n            impl Integer for $ty {\n                const ZERO: Self = 0;\n                const ONE: Self = 1;\n            }\n        )+\n    }\n}"
+    }
+  ]
+}

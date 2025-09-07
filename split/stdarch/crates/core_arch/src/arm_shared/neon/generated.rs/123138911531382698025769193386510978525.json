@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vqabsq_s8",
-  "hash": "123138911531382698025769193386510978525",
-  "hash_direct": "935562831981206712517402258487375680514",
-  "src": "pub fn vqabsq_s8(a: int8x16_t) -> int8x16_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.sqabs.v16i8\"\n        )]\n        #[cfg_attr(target_arch = \"arm\", link_name = \"llvm.arm.neon.vqabs.v16i8\")]\n        fn _vqabsq_s8(a: int8x16_t) -> int8x16_t;\n    }\n    unsafe { _vqabsq_s8(a) }\n}"
-}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/f64.rs",
-  "name": "f64::<impl f64>::is_infinite",
-  "hash": "54161655352067232365592711565939719072",
-  "hash_direct": "161062801122456975987029468918300919329",
-  "src": "pub const fn is_infinite(self) -> bool {\n        // Getting clever with transmutation can result in incorrect answers on some FPUs\n        // FIXME: alter the Rust <-> Rust calling convention to prevent this problem.\n        // See https://github.com/rust-lang/rust/issues/72327\n        (self == f64::INFINITY) | (self == f64::NEG_INFINITY)\n    }"
-}

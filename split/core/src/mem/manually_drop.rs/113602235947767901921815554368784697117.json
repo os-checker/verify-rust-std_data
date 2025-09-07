@@ -1,0 +1,7 @@
+{
+  "file": "core/src/mem/manually_drop.rs",
+  "name": "<core::mem::ManuallyDrop<raw_vec::RawVec<u8>> as core::ops::Deref>::deref",
+  "hash": "113602235947767901921815554368784697117",
+  "hash_direct": "1734735509126084725311318044140081197204",
+  "src": "fn deref(&self) -> &T {\n        &self.value\n    }"
+}

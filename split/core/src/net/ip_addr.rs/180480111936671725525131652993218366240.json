@@ -1,0 +1,7 @@
+{
+  "file": "core/src/net/ip_addr.rs",
+  "name": "net::ip_addr::Ipv6Addr::from_octets",
+  "hash": "180480111936671725525131652993218366240",
+  "hash_direct": "71503942867954211026862143511004638101",
+  "src": "pub const fn from_octets(octets: [u8; 16]) -> Ipv6Addr {\n        Ipv6Addr { octets }\n    }"
+}

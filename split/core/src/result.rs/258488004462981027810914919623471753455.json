@@ -1,0 +1,7 @@
+{
+  "file": "core/src/result.rs",
+  "name": "<core::result::Result<core::fmt::PostPadding, core::fmt::Error> as core::ops::Try>::branch",
+  "hash": "258488004462981027810914919623471753455",
+  "hash_direct": "1547613865649573311218311277347967722358",
+  "src": "fn branch(self) -> ControlFlow<Self::Residual, Self::Output> {\n        match self {\n            Ok(v) => ControlFlow::Continue(v),\n            Err(e) => ControlFlow::Break(Err(e)),\n        }\n    }"
+}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
-  "name": "core_arch::aarch64::neon::generated::vcvtpq_u16_f16",
-  "hash": "439177156202519064110974303617855398943",
-  "hash_direct": "129499327072930202768214190342506750161",
-  "src": "pub fn vcvtpq_u16_f16(a: float16x8_t) -> uint16x8_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.fcvtpu.v8i16.v8f16\"\n        )]\n        fn _vcvtpq_u16_f16(a: float16x8_t) -> uint16x8_t;\n    }\n    unsafe { _vcvtpq_u16_f16(a) }\n}"
-}

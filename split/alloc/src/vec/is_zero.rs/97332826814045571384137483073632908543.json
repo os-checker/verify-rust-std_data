@@ -1,0 +1,17 @@
+{
+  "file": "alloc/src/vec/is_zero.rs",
+  "name": "<core::option::Option<i128> as vec::is_zero::IsZero>::is_zero",
+  "hash": "97332826814045571384137483073632908543",
+  "hash_direct": "61935522942204636917234245352350249204",
+  "src": "fn is_zero(&self) -> bool {\n                const {\n                    let none: Self = unsafe { core::mem::MaybeUninit::zeroed().assume_init() };\n                    assert!(none.is_none());\n                }\n                self.is_none()\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "impl_is_zero_option_of_int!(u8, u16, u32, u64, u128, i8, i16, i32, i64, i128, usize, isize)",
+      "defsite": "macro_rules! impl_is_zero_option_of_int {\n    ($($t:ty),+ $(,)?) => {$(\n        unsafe impl IsZero for Option<$t> {\n            #[inline]\n            fn is_zero(&self) -> bool {\n                const {\n                    let none: Self = unsafe { core::mem::MaybeUninit::zeroed().assume_init() };\n                    assert!(none.is_none());\n                }\n                self.is_none()\n            }\n        }\n    )+};\n}"
+    }
+  ],
+  "callees": [
+    "5008607981740755863927055966588360024",
+    "809579884909791053318105554102774574696"
+  ]
+}

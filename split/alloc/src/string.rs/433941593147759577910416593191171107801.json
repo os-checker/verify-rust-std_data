@@ -1,0 +1,13 @@
+{
+  "file": "alloc/src/string.rs",
+  "name": "<u16 as string::SpecToString>::spec_to_string::{constant#0}",
+  "hash": "433941593147759577910416593191171107801",
+  "hash_direct": "12114939327725697016368413757410946530",
+  "src": "SIZE",
+  "macro_backtrace": [
+    {
+      "callsite": "impl_to_string! {\n    i8, u8,\n    i16, u16,\n    i32, u32,\n    i64, u64,\n    isize, usize,\n    i128, u128,\n}",
+      "defsite": "macro_rules! impl_to_string {\n    ($($signed:ident, $unsigned:ident,)*) => {\n        $(\n        #[cfg(not(no_global_oom_handling))]\n        #[cfg(not(feature = \"optimize_for_size\"))]\n        impl SpecToString for $signed {\n            #[inline]\n            fn spec_to_string(&self) -> String {\n                const SIZE: usize = $signed::MAX.ilog10() as usize + 1;\n                let mut buf = [core::mem::MaybeUninit::<u8>::uninit(); SIZE];\n                // Only difference between signed and unsigned are these 8 lines.\n                let mut out;\n                if *self < 0 {\n                    out = String::with_capacity(SIZE + 1);\n                    out.push('-');\n                } else {\n                    out = String::with_capacity(SIZE);\n                }\n\n                // SAFETY: `buf` is always big enough to contain all the digits.\n                unsafe { out.push_str(self.unsigned_abs()._fmt(&mut buf)); }\n                out\n            }\n        }\n        #[cfg(not(no_global_oom_handling))]\n        #[cfg(not(feature = \"optimize_for_size\"))]\n        impl SpecToString for $unsigned {\n            #[inline]\n            fn spec_to_string(&self) -> String {\n                const SIZE: usize = $unsigned::MAX.ilog10() as usize + 1;\n                let mut buf = [core::mem::MaybeUninit::<u8>::uninit(); SIZE];\n\n                // SAFETY: `buf` is always big enough to contain all the digits.\n                unsafe { self._fmt(&mut buf).to_string() }\n            }\n        }\n        )*\n    }\n}"
+    }
+  ]
+}

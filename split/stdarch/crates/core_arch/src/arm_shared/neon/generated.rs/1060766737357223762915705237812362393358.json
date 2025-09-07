@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vcvt_s32_f32",
-  "hash": "1060766737357223762915705237812362393358",
-  "hash_direct": "1315533332682615334411848834503937273742",
-  "src": "pub fn vcvt_s32_f32(a: float32x2_t) -> int32x2_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(target_arch = \"arm\", link_name = \"llvm.fptosi.sat.v2i32.v2f32\")]\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.fptosi.sat.v2i32.v2f32\"\n        )]\n        fn _vcvt_s32_f32(a: float32x2_t) -> int32x2_t;\n    }\n    unsafe { _vcvt_s32_f32(a) }\n}"
-}

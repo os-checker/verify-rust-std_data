@@ -1,0 +1,10 @@
+{
+  "file": "core/src/slice/ascii.rs",
+  "name": "slice::ascii::<impl [u8]>::trim_ascii_end",
+  "hash": "53426938606862588461810370896426652974",
+  "hash_direct": "1173395978667333238617282019209893985699",
+  "src": "pub const fn trim_ascii_end(&self) -> &[u8] {\n        let mut bytes = self;\n        // Note: A pattern matching based approach (instead of indexing) allows\n        // making the function const.\n        while let [rest @ .., last] = bytes {\n            if last.is_ascii_whitespace() {\n                bytes = rest;\n            } else {\n                break;\n            }\n        }\n        bytes\n    }",
+  "callees": [
+    "840557237266216613515959608352403941460"
+  ]
+}

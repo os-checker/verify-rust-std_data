@@ -1,7 +1,0 @@
-{
-  "file": "core/src/char/methods.rs",
-  "name": "char::methods::<impl char>::is_ascii_uppercase",
-  "hash": "75192597763840636289907384411943310117",
-  "hash_direct": "4332521656989199466511124837913019091",
-  "src": "pub const fn is_ascii_uppercase(&self) -> bool {\n        matches!(*self, 'A'..='Z')\n    }"
-}

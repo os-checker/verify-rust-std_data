@@ -1,0 +1,14 @@
+{
+  "file": "core/src/panicking.rs",
+  "name": "panicking::panic_null_pointer_dereference",
+  "hash": "167632833524046317173183025505928308152",
+  "hash_direct": "106484169237884747562526914093445411234",
+  "src": "fn panic_null_pointer_dereference() -> ! {\n    if cfg!(feature = \"panic_immediate_abort\") {\n        super::intrinsics::abort()\n    }\n\n    panic_nounwind_fmt(\n        format_args!(\"null pointer dereference occurred\"),\n        /* force_no_backtrace */ false,\n    )\n}",
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "17421822894816687532325615181214565887",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "478753423337745817613297159272845606672"
+  ]
+}

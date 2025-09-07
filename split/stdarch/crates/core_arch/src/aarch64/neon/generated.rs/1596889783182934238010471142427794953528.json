@@ -1,0 +1,13 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vfms_n_f16",
+  "hash": "1596889783182934238010471142427794953528",
+  "hash_direct": "9541478305060279529340064450577788363",
+  "src": "pub fn vfms_n_f16(a: float16x4_t, b: float16x4_t, c: f16) -> float16x4_t {\n    vfms_f16(a, b, vdup_n_f16(c))\n}",
+  "callees": [
+    "387819937783107881412204763390036355174",
+    "1586434636504409124813329512646885206744",
+    "16531726174782085331833253335293320312",
+    "170194402061146878175814615804956874944"
+  ]
+}

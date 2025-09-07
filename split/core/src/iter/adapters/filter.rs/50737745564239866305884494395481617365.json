@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/adapters/filter.rs",
+  "name": "iter::adapters::filter::Filter::<slice::iter::Split<'_, u8, str::IsAsciiWhitespace>, str::BytesIsNotEmpty>::new",
+  "hash": "50737745564239866305884494395481617365",
+  "hash_direct": "1250243324664082241417729385369978301851",
+  "src": "pub(in crate::iter) fn new(iter: I, predicate: P) -> Filter<I, P> {\n        Filter { iter, predicate }\n    }"
+}

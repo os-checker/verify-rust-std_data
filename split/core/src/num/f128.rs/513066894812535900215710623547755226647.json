@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/f128.rs",
-  "name": "f128::<impl f128>::from_bits",
-  "hash": "513066894812535900215710623547755226647",
-  "hash_direct": "162630875149583523774528400384781061953",
-  "src": "pub const fn from_bits(v: u128) -> Self {\n        // It turns out the safety issues with sNaN were overblown! Hooray!\n        // SAFETY: `u128` is a plain old datatype so we can always transmute from it.\n        unsafe { mem::transmute(v) }\n    }"
-}

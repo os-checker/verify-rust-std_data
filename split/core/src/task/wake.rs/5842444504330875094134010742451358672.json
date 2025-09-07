@@ -1,0 +1,11 @@
+{
+  "file": "core/src/task/wake.rs",
+  "name": "task::wake::Waker::wake",
+  "hash": "5842444504330875094134010742451358672",
+  "hash_direct": "1438016898790716040110349303923606234893",
+  "src": "pub fn wake(self) {\n        // The actual wakeup call is delegated through a virtual function call\n        // to the implementation which is defined by the executor.\n\n        // Don't call `drop` -- the waker will be consumed by `wake`.\n        let this = ManuallyDrop::new(self);\n\n        // SAFETY: This is safe because `Waker::from_raw` is the only way\n        // to initialize `wake` and `data` requiring the user to acknowledge\n        // that the contract of `RawWaker` is upheld.\n        unsafe { (this.waker.vtable.wake)(this.waker.data) };\n    }",
+  "callees": [
+    "79670444070875958338348753285627866649",
+    "156242220939712797086947335912345417299"
+  ]
+}

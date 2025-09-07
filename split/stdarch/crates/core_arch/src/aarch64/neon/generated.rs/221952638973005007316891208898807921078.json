@@ -1,0 +1,11 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vmul_n_f64",
+  "hash": "221952638973005007316891208898807921078",
+  "hash_direct": "10282188713822978085183659538551318442",
+  "src": "pub fn vmul_n_f64(a: float64x1_t, b: f64) -> float64x1_t {\n    unsafe { simd_mul(a, vdup_n_f64(b)) }\n}",
+  "callees": [
+    "1019943558099346212912075672494033222442",
+    "512492825224617729012945767045073920428"
+  ]
+}

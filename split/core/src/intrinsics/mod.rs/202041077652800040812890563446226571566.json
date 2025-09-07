@@ -1,0 +1,7 @@
+{
+  "file": "core/src/intrinsics/mod.rs",
+  "name": "intrinsics::contract_checks",
+  "hash": "202041077652800040812890563446226571566",
+  "hash_direct": "160138893765516237366999757001349280483",
+  "src": "pub const fn contract_checks() -> bool {\n    // FIXME: should this be `false` or `cfg!(contract_checks)`?\n\n    // cfg!(contract_checks)\n    false\n}"
+}

@@ -1,0 +1,12 @@
+{
+  "file": "core/src/num/f16.rs",
+  "name": "f16::<impl f16>::midpoint",
+  "hash": "169219455588132966417319892430623559685",
+  "hash_direct": "628651680482954052616554389979690393248",
+  "src": "pub const fn midpoint(self, other: f16) -> f16 {\n        const LO: f16 = f16::MIN_POSITIVE * 2.;\n        const HI: f16 = f16::MAX / 2.;\n\n        let (a, b) = (self, other);\n        let abs_a = a.abs();\n        let abs_b = b.abs();\n\n        if abs_a <= HI && abs_b <= HI {\n            // Overflow is impossible\n            (a + b) / 2.\n        } else if abs_a < LO {\n            // Not safe to halve `a` (would underflow)\n            a + (b / 2.)\n        } else if abs_b < LO {\n            // Not safe to halve `b` (would underflow)\n            (a / 2.) + b\n        } else {\n            // Safe to halve `a` and `b`\n            (a / 2.) + (b / 2.)\n        }\n    }",
+  "callees": [
+    "73925086737508027584524650242921435444",
+    "80331169847412004098471689422468576411",
+    "331178422282659479317337493575173626152"
+  ]
+}

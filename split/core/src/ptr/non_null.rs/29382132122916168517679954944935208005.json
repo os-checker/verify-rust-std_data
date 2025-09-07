@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "core::ptr::NonNull::<sync::ArcInner<[u8; 0]>>::from_mut",
+  "hash": "29382132122916168517679954944935208005",
+  "hash_direct": "1029417439878961909611300791998787722398",
+  "src": "pub const fn from_mut(r: &mut T) -> Self {\n        // SAFETY: A mutable reference cannot be null.\n        unsafe { NonNull { pointer: r as *mut T } }\n    }"
+}

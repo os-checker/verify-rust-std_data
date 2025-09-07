@@ -1,0 +1,16 @@
+{
+  "file": "core/src/char/convert.rs",
+  "name": "<char::convert::CharErrorKind as fmt::Debug>::fmt",
+  "hash": "127538843246043986599783109865823065677",
+  "hash_direct": "40212702333266540636432545084627750449",
+  "src": "Debug",
+  "macro_backtrace": [
+    {
+      "callsite": "Debug",
+      "defsite": "pub macro Debug($item:item) {\n        /* compiler built-in */\n    }"
+    }
+  ],
+  "callees": [
+    "243839084150888952911908111539685994713"
+  ]
+}

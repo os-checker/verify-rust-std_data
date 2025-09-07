@@ -1,0 +1,7 @@
+{
+  "file": "core/src/sync/atomic.rs",
+  "name": "sync::atomic::atomic_umax::<u8>",
+  "hash": "61097711630397592912759751248805991768",
+  "hash_direct": "148009211295280470356639798225479503303",
+  "src": "unsafe fn atomic_umax<T: Copy>(dst: *mut T, val: T, order: Ordering) -> T {\n    // SAFETY: the caller must uphold the safety contract for `atomic_umax`\n    unsafe {\n        match order {\n            Relaxed => intrinsics::atomic_umax::<T, { AO::Relaxed }>(dst, val),\n            Acquire => intrinsics::atomic_umax::<T, { AO::Acquire }>(dst, val),\n            Release => intrinsics::atomic_umax::<T, { AO::Release }>(dst, val),\n            AcqRel => intrinsics::atomic_umax::<T, { AO::AcqRel }>(dst, val),\n            SeqCst => intrinsics::atomic_umax::<T, { AO::SeqCst }>(dst, val),\n        }\n    }\n}"
+}

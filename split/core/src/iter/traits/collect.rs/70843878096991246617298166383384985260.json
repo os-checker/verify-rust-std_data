@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/traits/collect.rs",
+  "name": "<core::ops::Range<u16> as core::iter::IntoIterator>::into_iter",
+  "hash": "70843878096991246617298166383384985260",
+  "hash_direct": "944611483713148257913688663104689359137",
+  "src": "fn into_iter(self) -> I {\n        self\n    }"
+}

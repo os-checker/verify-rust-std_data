@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vhsub_s16",
-  "hash": "156992208458868344767092365769631355657",
-  "hash_direct": "361039755026707629516083614042549148126",
-  "src": "pub fn vhsub_s16(a: int16x4_t, b: int16x4_t) -> int16x4_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.shsub.v4i16\"\n        )]\n        #[cfg_attr(target_arch = \"arm\", link_name = \"llvm.arm.neon.vhsubs.v4i16\")]\n        fn _vhsub_s16(a: int16x4_t, b: int16x4_t) -> int16x4_t;\n    }\n    unsafe { _vhsub_s16(a, b) }\n}"
-}

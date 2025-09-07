@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vtst_u32",
+  "hash": "137904114191218277254389422569171571324",
+  "hash_direct": "43764502037287236382506120211328648951",
+  "src": "pub fn vtst_u32(a: uint32x2_t, b: uint32x2_t) -> uint32x2_t {\n    unsafe {\n        let c: uint32x2_t = simd_and(a, b);\n        let d: u32x2 = u32x2::new(0, 0);\n        simd_ne(c, transmute(d))\n    }\n}",
+  "callees": [
+    "46846616847990421638000235645710583940"
+  ]
+}

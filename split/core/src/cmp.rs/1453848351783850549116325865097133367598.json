@@ -1,0 +1,13 @@
+{
+  "file": "core/src/cmp.rs",
+  "name": "<cmp::Ordering as clone::Clone>::clone",
+  "hash": "1453848351783850549116325865097133367598",
+  "hash_direct": "1625321503159635254514923200550971855194",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

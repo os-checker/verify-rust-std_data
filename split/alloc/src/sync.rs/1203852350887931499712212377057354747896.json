@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/sync.rs",
+  "name": "sync::INTERNAL_OVERFLOW_ERROR",
+  "hash": "1203852350887931499712212377057354747896",
+  "hash_direct": "153093713273567406934802556278053405370",
+  "src": "const INTERNAL_OVERFLOW_ERROR: &str = \"Arc counter overflow\";"
+}

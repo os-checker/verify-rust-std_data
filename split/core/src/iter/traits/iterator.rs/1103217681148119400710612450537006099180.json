@@ -1,0 +1,14 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "iter::traits::iterator::Iterator::find::check::<&[u8], &mut str::BytesIsNotEmpty>::{closure#0}",
+  "hash": "1103217681148119400710612450537006099180",
+  "hash_direct": "984578685102069008015104440022797209332",
+  "src": "move |(), x| {\n                if predicate(&x) { ControlFlow::Break(x) } else { ControlFlow::Continue(()) }\n            }",
+  "callees": [
+    "1102831241619372522813490741452532505910",
+    "10419508648879065078328434863759131037",
+    "1747987462146090001016726025512332668317",
+    "939987132954987124616354466496995450921",
+    "497499364745128359314402117207900903418"
+  ]
+}

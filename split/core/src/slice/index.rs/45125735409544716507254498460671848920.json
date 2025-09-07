@@ -1,7 +1,0 @@
-{
-  "file": "core/src/slice/index.rs",
-  "name": "slice::index::get_offset_len_mut_noubcheck::<mem::maybe_uninit::MaybeUninit<(i32, f64, bool)>>",
-  "hash": "45125735409544716507254498460671848920",
-  "hash_direct": "148744689624088208282422499714106644942",
-  "src": "const unsafe fn get_offset_len_mut_noubcheck<T>(\n    ptr: *mut [T],\n    offset: usize,\n    len: usize,\n) -> *mut [T] {\n    let ptr = ptr as *mut T;\n    // SAFETY: The caller already checked these preconditions\n    let ptr = unsafe { crate::intrinsics::offset(ptr, offset) };\n    crate::intrinsics::aggregate_raw_ptr(ptr, len)\n}"
-}

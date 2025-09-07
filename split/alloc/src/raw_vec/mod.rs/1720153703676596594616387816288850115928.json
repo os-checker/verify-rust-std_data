@@ -1,0 +1,15 @@
+{
+  "file": "alloc/src/raw_vec/mod.rs",
+  "name": "raw_vec::RawVecInner::new_in",
+  "hash": "1720153703676596594616387816288850115928",
+  "hash_direct": "1637030818310911852018299355737261311939",
+  "src": "const fn new_in(alloc: A, align: Alignment) -> Self {\n        let ptr = Unique::from_non_null(NonNull::without_provenance(align.as_nonzero()));\n        // `cap: 0` means \"unallocated\". zero-sized types are ignored.\n        Self { ptr, cap: ZERO_CAP, alloc }\n    }",
+  "callees": [
+    "1077627557077316994111291229578800109768",
+    "50159216329881376683426042292994966409",
+    "1627504595542798394711855078209690330045",
+    "717317897984632901316617723476110950437",
+    "90197692979025443755993088945174038379",
+    "735147566348915391518387477037509563238"
+  ]
+}

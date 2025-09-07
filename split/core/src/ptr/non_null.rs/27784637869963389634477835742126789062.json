@@ -1,0 +1,16 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "ptr::non_null::verify::non_null_check_write_u8::ARR_SIZE",
+  "hash": "27784637869963389634477835742126789062",
+  "hash_direct": "394847907491343539610852654121225657951",
+  "src": "const ARR_SIZE: usize = mem::size_of::<$type>() * 100;",
+  "macro_backtrace": [
+    {
+      "callsite": "generate_write_harness!(u8, non_null_check_write_u8)",
+      "defsite": "macro_rules! generate_write_harness {\n        ($type:ty, $harness_name:ident) => {\n            #[kani::proof_for_contract(NonNull::write)]\n            pub fn $harness_name() {\n                // Create a pointer generator for the given type with appropriate byte size\n                const ARR_SIZE: usize = mem::size_of::<$type>() * 100;\n                let mut generator = kani::PointerGenerator::<ARR_SIZE>::new();\n\n                // Get a raw pointer from the generator\n                let raw_ptr: *mut $type = generator.any_in_bounds().ptr;\n\n                // Create a non-null pointer from the raw pointer\n                let ptr = NonNull::new(raw_ptr).unwrap();\n\n                // Create a non-deterministic value to write\n                let new_value: $type = kani::any();\n\n                unsafe {\n                    // Perform the volatile write operation\n                    ptr.write(new_value);\n\n                    // Read back the value and assert it's correct\n                    assert_eq!(ptr.as_ptr().read(), new_value);\n                }\n            }\n        };\n    }"
+    }
+  ],
+  "callees": [
+    "121097281700569241807917519510076722724"
+  ]
+}

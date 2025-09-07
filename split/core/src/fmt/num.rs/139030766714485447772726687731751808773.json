@@ -1,0 +1,13 @@
+{
+  "file": "core/src/fmt/num.rs",
+  "name": "<fmt::num::UpperHex as cmp::PartialEq>::eq",
+  "hash": "139030766714485447772726687731751808773",
+  "hash_direct": "865703251203871750914643549118209490493",
+  "src": "PartialEq",
+  "macro_backtrace": [
+    {
+      "callsite": "PartialEq",
+      "defsite": "pub macro PartialEq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

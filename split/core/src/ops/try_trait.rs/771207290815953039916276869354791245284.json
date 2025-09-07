@@ -1,7 +1,0 @@
-{
-  "file": "core/src/ops/try_trait.rs",
-  "name": "ops::try_trait::NeverShortCircuit::<usize>::wrap_mut_2::<usize, &u8, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/iter/traits/iterator.rs:232:13: 232:23}>",
-  "hash": "771207290815953039916276869354791245284",
-  "hash_direct": "497059261271326203313569755051427276198",
-  "src": "pub(crate) fn wrap_mut_2<A, B>(mut f: impl FnMut(A, B) -> T) -> impl FnMut(A, B) -> Self {\n        move |a, b| NeverShortCircuit(f(a, b))\n    }"
-}

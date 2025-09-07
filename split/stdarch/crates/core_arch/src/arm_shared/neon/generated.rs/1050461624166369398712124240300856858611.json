@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vld3_dup_s16",
-  "hash": "1050461624166369398712124240300856858611",
-  "hash_direct": "30119003276590810634502075120502618922",
-  "src": "pub unsafe fn vld3_dup_s16(a: *const i16) -> int16x4x3_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.ld3r.v4i16.p0\"\n        )]\n        fn _vld3_dup_s16(ptr: *const i16) -> int16x4x3_t;\n    }\n    _vld3_dup_s16(a as _)\n}"
-}

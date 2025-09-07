@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
-  "name": "core_arch::aarch64::neon::generated::vuzp2_p16",
-  "hash": "94651908549837573481215579912755731728",
-  "hash_direct": "145327026615810622410434216357743196477",
-  "src": "pub fn vuzp2_p16(a: poly16x4_t, b: poly16x4_t) -> poly16x4_t {\n    unsafe { simd_shuffle!(a, b, [1, 3, 5, 7]) }\n}"
-}

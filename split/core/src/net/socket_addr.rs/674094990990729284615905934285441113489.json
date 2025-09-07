@@ -1,0 +1,17 @@
+{
+  "file": "core/src/net/socket_addr.rs",
+  "name": "net::socket_addr::SocketAddr::set_ip",
+  "hash": "674094990990729284615905934285441113489",
+  "hash_direct": "1615207685074435188017251054803989411861",
+  "src": "pub const fn set_ip(&mut self, new_ip: IpAddr) {\n        // `match (*self, new_ip)` would have us mutate a copy of self only to throw it away.\n        match (self, new_ip) {\n            (&mut SocketAddr::V4(ref mut a), IpAddr::V4(new_ip)) => a.set_ip(new_ip),\n            (&mut SocketAddr::V6(ref mut a), IpAddr::V6(new_ip)) => a.set_ip(new_ip),\n            (self_, new_ip) => *self_ = Self::new(new_ip, self_.port()),\n        }\n    }",
+  "callees": [
+    "143820041307921704907427054283161380966",
+    "821056380986737062313722891210613829489",
+    "346801434708832420411564731853873358189",
+    "1661274048381503306651132033638689155",
+    "120687218285710837277016605598984744489",
+    "956390136576012052516294645937270315205",
+    "518917683179470932317479461022108880549",
+    "1017782510994436574815932785748847997117"
+  ]
+}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/option.rs",
-  "name": "<option::Option<&mut iter::adapters::map::Map<str::iter::Chars<'_>, str::CharEscapeDebugContinue>> as ops::try_trait::Try>::branch",
-  "hash": "38049151819390856545955780725743271874",
-  "hash_direct": "66437196006080620239230137985809320977",
-  "src": "fn branch(self) -> ControlFlow<Self::Residual, Self::Output> {\n        match self {\n            Some(v) => ControlFlow::Continue(v),\n            None => ControlFlow::Break(None),\n        }\n    }"
-}

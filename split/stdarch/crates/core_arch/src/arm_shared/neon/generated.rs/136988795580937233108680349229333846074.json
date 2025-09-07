@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vclt_u16",
+  "hash": "136988795580937233108680349229333846074",
+  "hash_direct": "47279584402860925036523668697442803663",
+  "src": "pub fn vclt_u16(a: uint16x4_t, b: uint16x4_t) -> uint16x4_t {\n    unsafe { simd_lt(a, b) }\n}"
+}

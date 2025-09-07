@@ -1,7 +1,0 @@
-{
-  "file": "core/src/ascii/ascii_char.rs",
-  "name": "ascii::ascii_char::AsciiChar::from_u8_unchecked",
-  "hash": "652182000514958061713215128671564018150",
-  "hash_direct": "1186636319360654608710125112928495962694",
-  "src": "pub const unsafe fn from_u8_unchecked(b: u8) -> Self {\n        // SAFETY: Our safety precondition is that `b` is in-range.\n        unsafe { transmute(b) }\n    }"
-}

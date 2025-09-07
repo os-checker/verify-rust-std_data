@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/rc.rs",
+  "name": "<rc::WeakInner<'_> as rc::RcInnerPtr>::strong_ref",
+  "hash": "207282218853012663714749952310619750979",
+  "hash_direct": "165038406560688269784531626543206135776",
+  "src": "fn strong_ref(&self) -> &Cell<usize> {\n        self.strong\n    }"
+}

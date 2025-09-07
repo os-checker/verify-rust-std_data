@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::__crc32d",
+  "hash": "72110641367584849168937333961389887421",
+  "hash_direct": "133804721089143615316755441529067237183",
+  "src": "pub fn __crc32d(crc: u32, data: u64) -> u32 {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.crc32x\"\n        )]\n        fn ___crc32d(crc: u32, data: u64) -> u32;\n    }\n    unsafe { ___crc32d(crc, data) }\n}"
+}

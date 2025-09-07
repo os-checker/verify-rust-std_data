@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
-  "name": "core_arch::aarch64::neon::generated::vminv_f32",
-  "hash": "1172884696523256187111939644713618328592",
-  "hash_direct": "282875723042789567612725927636203092208",
-  "src": "pub fn vminv_f32(a: float32x2_t) -> f32 {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.fminv.f32.v2f32\"\n        )]\n        fn _vminv_f32(a: float32x2_t) -> f32;\n    }\n    unsafe { _vminv_f32(a) }\n}"
-}

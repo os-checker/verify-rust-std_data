@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/f128.rs",
-  "name": "f128::<impl f128>::min",
-  "hash": "1441390011481440905817786562078202224583",
-  "hash_direct": "1085573990422438764815055968058565971487",
-  "src": "pub const fn min(self, other: f128) -> f128 {\n        intrinsics::minnumf128(self, other)\n    }"
-}

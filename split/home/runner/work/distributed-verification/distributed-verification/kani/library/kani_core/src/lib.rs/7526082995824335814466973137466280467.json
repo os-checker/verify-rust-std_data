@@ -1,0 +1,20 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/lib.rs",
+  "name": "kani::internal::init_contracts",
+  "hash": "7526082995824335814466973137466280467",
+  "hash_direct": "18582080451351980432608426330804715260",
+  "attrs": [
+    "#[kanitool::fn_marker = \"InitContractsHook\"]\n"
+  ],
+  "src": "pub fn init_contracts() {}",
+  "macro_backtrace": [
+    {
+      "callsite": "kani_core::kani_intrinsics!()",
+      "defsite": "macro_rules! kani_intrinsics"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ]
+}

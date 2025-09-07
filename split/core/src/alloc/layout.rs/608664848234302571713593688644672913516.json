@@ -1,0 +1,11 @@
+{
+  "file": "core/src/alloc/layout.rs",
+  "name": "alloc::layout::Layout::from_size_alignment",
+  "hash": "608664848234302571713593688644672913516",
+  "hash_direct": "160254154741306941537007372921301695277",
+  "src": "const fn from_size_alignment(size: usize, align: Alignment) -> Result<Self, LayoutError> {\n        if size > Self::max_size_for_align(align) {\n            return Err(LayoutError);\n        }\n\n        // SAFETY: Layout::size invariants checked above.\n        Ok(Layout { size, align })\n    }",
+  "callees": [
+    "113777446734612017643296714849006136962",
+    "112152844438854238887994758767167519478"
+  ]
+}

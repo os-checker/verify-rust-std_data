@@ -1,0 +1,13 @@
+{
+  "file": "core/src/time.rs",
+  "name": "<time::TryFromFloatSecsErrorKind as cmp::PartialEq>::eq",
+  "hash": "1683444906971388816513571978098658055133",
+  "hash_direct": "957581830970940497113713494366853025392",
+  "src": "PartialEq",
+  "macro_backtrace": [
+    {
+      "callsite": "PartialEq",
+      "defsite": "pub macro PartialEq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

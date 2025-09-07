@@ -1,0 +1,12 @@
+{
+  "file": "core/src/char/methods.rs",
+  "name": "char::methods::<impl char>::is_lowercase",
+  "hash": "17472793061341830387604313126917302659",
+  "hash_direct": "10920081203353337623882086705789859963",
+  "src": "pub const fn is_lowercase(self) -> bool {\n        match self {\n            'a'..='z' => true,\n            c => c > '\\x7f' && unicode::Lowercase(c),\n        }\n    }",
+  "callees": [
+    "53851555420899302082148520003293977402",
+    "148939166191139966689869119740406022170",
+    "1295295995959939682911629885029289120022"
+  ]
+}

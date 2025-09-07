@@ -1,0 +1,11 @@
+{
+  "file": "core/src/convert/mod.rs",
+  "name": "<&mut rc::RcInner<[u8; 0]> as core::convert::Into<core::ptr::NonNull<rc::RcInner<[u8; 0]>>>>::into",
+  "hash": "128928207891563824983187239007889256784",
+  "hash_direct": "1800998597269684822914700281192960926088",
+  "src": "fn into(self) -> U {\n        U::from(self)\n    }",
+  "callees": [
+    "114514032841237626348261112335469993309",
+    "95657007837321974509727858857932208647"
+  ]
+}

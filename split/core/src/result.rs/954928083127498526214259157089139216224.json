@@ -1,0 +1,7 @@
+{
+  "file": "core/src/result.rs",
+  "name": "<result::Result<(), fmt::Error> as ops::try_trait::Try>::from_output",
+  "hash": "954928083127498526214259157089139216224",
+  "hash_direct": "101419519293208206463211286901855067845",
+  "src": "fn from_output(output: Self::Output) -> Self {\n        Ok(output)\n    }"
+}

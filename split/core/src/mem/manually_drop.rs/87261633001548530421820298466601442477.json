@@ -1,0 +1,7 @@
+{
+  "file": "core/src/mem/manually_drop.rs",
+  "name": "<core::mem::ManuallyDrop<ffi::c_str::CString> as core::ops::Deref>::deref",
+  "hash": "87261633001548530421820298466601442477",
+  "hash_direct": "116905014124173723566755125975736813434",
+  "src": "fn deref(&self) -> &T {\n        &self.value\n    }"
+}

@@ -1,0 +1,10 @@
+{
+  "file": "core/src/hint.rs",
+  "name": "hint::cold_path",
+  "hash": "16392690540146237040910799779868652709",
+  "hash_direct": "85723798903162136814749890378451237278",
+  "src": "pub const fn cold_path() {\n    crate::intrinsics::cold_path()\n}",
+  "callees": [
+    "588974892899239543415856878986124229421"
+  ]
+}

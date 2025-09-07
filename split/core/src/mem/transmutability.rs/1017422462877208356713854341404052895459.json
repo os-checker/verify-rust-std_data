@@ -1,0 +1,13 @@
+{
+  "file": "core/src/mem/transmutability.rs",
+  "name": "<mem::transmutability::Assume as cmp::PartialEq>::eq",
+  "hash": "1017422462877208356713854341404052895459",
+  "hash_direct": "802197118970343794912768295833355086256",
+  "src": "PartialEq",
+  "macro_backtrace": [
+    {
+      "callsite": "PartialEq",
+      "defsite": "pub macro PartialEq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

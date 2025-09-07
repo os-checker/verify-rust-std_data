@@ -1,7 +1,0 @@
-{
-  "file": "core/src/intrinsics/mod.rs",
-  "name": "intrinsics::verify::transmute_unchecked_wrapper::<(i32, i32), [i32; 2]>",
-  "hash": "1678710958205320826012425678696017139980",
-  "hash_direct": "56570429149686219574147786881299370864",
-  "src": "unsafe fn transmute_unchecked_wrapper<T, U>(input: T) -> U {\n        unsafe { transmute_unchecked(input) }\n    }"
-}

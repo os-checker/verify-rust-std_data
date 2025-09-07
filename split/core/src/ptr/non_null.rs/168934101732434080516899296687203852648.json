@@ -1,0 +1,11 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "ptr::non_null::NonNull::<str>::as_ref::<'_>",
+  "hash": "168934101732434080516899296687203852648",
+  "hash_direct": "162732291929144492468434791472499201523",
+  "src": "pub const unsafe fn as_ref<'a>(&self) -> &'a T {\n        // SAFETY: the caller must guarantee that `self` meets all the\n        // requirements for a reference.\n        // `cast_const` avoids a mutable raw pointer deref.\n        unsafe { &*self.as_ptr().cast_const() }\n    }",
+  "callees": [
+    "800005153452579470712163306688074924140",
+    "354768622484284718112041554322788996628"
+  ]
+}

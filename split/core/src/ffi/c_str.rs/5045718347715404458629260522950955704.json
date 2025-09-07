@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ffi/c_str.rs",
+  "name": "ffi::c_str::CStr::is_empty",
+  "hash": "5045718347715404458629260522950955704",
+  "hash_direct": "5653448762533350481416355107109962826",
+  "src": "pub const fn is_empty(&self) -> bool {\n        // SAFETY: We know there is at least one byte; for empty strings it\n        // is the NUL terminator.\n        // FIXME(const-hack): use get_unchecked\n        unsafe { *self.inner.as_ptr() == 0 }\n    }",
+  "callees": [
+    "47822370175813177448723454097252028703"
+  ]
+}

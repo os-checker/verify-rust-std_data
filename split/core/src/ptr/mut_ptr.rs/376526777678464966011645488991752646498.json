@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/mut_ptr.rs",
+  "name": "core::ptr::mut_ptr::<impl *mut sync::ArcInner<[u8; 0]>>::cast_const",
+  "hash": "376526777678464966011645488991752646498",
+  "hash_direct": "168491222576866807017694598522839125575",
+  "src": "pub const fn cast_const(self) -> *const T {\n        self as _\n    }"
+}

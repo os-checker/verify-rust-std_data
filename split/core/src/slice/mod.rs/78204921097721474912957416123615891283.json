@@ -1,0 +1,7 @@
+{
+  "file": "core/src/slice/mod.rs",
+  "name": "slice::<impl [u8]>::split_first",
+  "hash": "78204921097721474912957416123615891283",
+  "hash_direct": "86989040074948832535279149769777181125",
+  "src": "pub const fn split_first(&self) -> Option<(&T, &[T])> {\n        if let [first, tail @ ..] = self { Some((first, tail)) } else { None }\n    }"
+}

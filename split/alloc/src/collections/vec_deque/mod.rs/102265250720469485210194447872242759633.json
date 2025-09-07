@@ -1,0 +1,10 @@
+{
+  "file": "alloc/src/collections/vec_deque/mod.rs",
+  "name": "<<collections::vec_deque::VecDeque<T, A> as core::ops::Drop>::drop::Dropper<'_, u32> as core::ops::Drop>::drop",
+  "hash": "102265250720469485210194447872242759633",
+  "hash_direct": "527864344935807495815687124746539575685",
+  "src": "fn drop(&mut self) {\n                unsafe {\n                    ptr::drop_in_place(self.0);\n                }\n            }",
+  "callees": [
+    "107648193987504958246437631987290871776"
+  ]
+}

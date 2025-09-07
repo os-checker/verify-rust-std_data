@@ -1,7 +1,0 @@
-{
-  "file": "core/src/iter/traits/collect.rs",
-  "name": "<slice::iter::Iter<'_, [u8; 2]> as iter::traits::collect::IntoIterator>::into_iter",
-  "hash": "121064572962266661981950439004012120363",
-  "hash_direct": "1608250326347221534912577545967860930251",
-  "src": "fn into_iter(self) -> I {\n        self\n    }"
-}

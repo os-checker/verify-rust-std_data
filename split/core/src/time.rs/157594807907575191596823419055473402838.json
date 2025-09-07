@@ -1,0 +1,10 @@
+{
+  "file": "core/src/time.rs",
+  "name": "time::Duration::from_micros",
+  "hash": "157594807907575191596823419055473402838",
+  "hash_direct": "117651624467439459243526978598497276016",
+  "src": "pub const fn from_micros(micros: u64) -> Duration {\n        let secs = micros / MICROS_PER_SEC;\n        let subsec_micros = (micros % MICROS_PER_SEC) as u32;\n        // SAFETY: (x % 1_000_000) * 1_000 < 1_000_000_000\n        //         => x % 1_000_000 < 1_000_000\n        let subsec_nanos = unsafe { Nanoseconds::new_unchecked(subsec_micros * NANOS_PER_MICRO) };\n\n        Duration { secs, nanos: subsec_nanos }\n    }",
+  "callees": [
+    "65223988746766808039436936606294077616"
+  ]
+}

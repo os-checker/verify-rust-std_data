@@ -1,0 +1,12 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vcvtxd_f32_f64",
+  "hash": "59822295017220409993371168783031381474",
+  "hash_direct": "1272544547749219946311285426703097803701",
+  "src": "pub fn vcvtxd_f32_f64(a: f64) -> f32 {\n    unsafe { simd_extract!(vcvtx_f32_f64(vdupq_n_f64(a)), 0) }\n}",
+  "callees": [
+    "1568110081094226675810020303518063422497",
+    "50067425476469693625352011230330301917",
+    "332666244871414837412199662475484225691"
+  ]
+}

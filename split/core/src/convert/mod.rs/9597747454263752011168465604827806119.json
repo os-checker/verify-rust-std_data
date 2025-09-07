@@ -1,0 +1,10 @@
+{
+  "file": "core/src/convert/mod.rs",
+  "name": "<[u8; 4] as convert::Into<net::ip_addr::Ipv4Addr>>::into",
+  "hash": "9597747454263752011168465604827806119",
+  "hash_direct": "6580204929826680452086728598486139911",
+  "src": "fn into(self) -> U {\n        U::from(self)\n    }",
+  "callees": [
+    "590872620568502661513453452280775232682"
+  ]
+}

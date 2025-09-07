@@ -1,0 +1,10 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<option::IntoIter<char::EscapeDebug> as iter::traits::iterator::Iterator>::fuse",
+  "hash": "10886863355016440829927700842862183086",
+  "hash_direct": "179805944427300793173528622768160806064",
+  "src": "fn fuse(self) -> Fuse<Self>\n    where\n        Self: Sized,\n    {\n        Fuse::new(self)\n    }",
+  "callees": [
+    "127549276639869472781230120115534221639"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "file": "alloc/src/alloc.rs",
+  "name": "alloc::dealloc",
+  "hash": "1818446027419519358414583805786772455766",
+  "hash_direct": "66331609195384393247716709367791304460",
+  "src": "pub unsafe fn dealloc(ptr: *mut u8, layout: Layout) {\n    unsafe { __rust_dealloc(ptr, layout.size(), layout.align()) }\n}",
+  "callees": [
+    "12355321507198182179923507819259328874",
+    "1099899350342654162615874749245636043676",
+    "41567241620038406215851091758143153711"
+  ]
+}

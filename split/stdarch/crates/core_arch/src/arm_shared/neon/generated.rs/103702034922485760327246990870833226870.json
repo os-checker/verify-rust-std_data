@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vcge_u8",
+  "hash": "103702034922485760327246990870833226870",
+  "hash_direct": "1331159392013534819312952244420304986746",
+  "src": "pub fn vcge_u8(a: uint8x8_t, b: uint8x8_t) -> uint8x8_t {\n    unsafe { simd_ge(a, b) }\n}"
+}

@@ -1,0 +1,10 @@
+{
+  "file": "core/src/mem/mod.rs",
+  "name": "mem::forget::<array::Guard<'_, &dyn fmt::Debug>>",
+  "hash": "109655042178928139909450014593309533738",
+  "hash_direct": "95166901159863982618462751580267344834",
+  "src": "pub const fn forget<T>(t: T) {\n    let _ = ManuallyDrop::new(t);\n}",
+  "callees": [
+    "5306209312237959703820939504240141463"
+  ]
+}

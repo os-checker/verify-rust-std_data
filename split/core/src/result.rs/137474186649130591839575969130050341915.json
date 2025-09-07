@@ -1,0 +1,7 @@
+{
+  "file": "core/src/result.rs",
+  "name": "<core::result::Result<core::ptr::NonNull<[u8]>, collections::TryReserveError> as core::ops::Try>::branch",
+  "hash": "137474186649130591839575969130050341915",
+  "hash_direct": "846399226275818122714506626407709042547",
+  "src": "fn branch(self) -> ControlFlow<Self::Residual, Self::Output> {\n        match self {\n            Ok(v) => ControlFlow::Continue(v),\n            Err(e) => ControlFlow::Break(Err(e)),\n        }\n    }"
+}

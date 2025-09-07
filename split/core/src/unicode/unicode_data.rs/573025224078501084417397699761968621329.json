@@ -1,0 +1,14 @@
+{
+  "file": "core/src/unicode/unicode_data.rs",
+  "name": "unicode::unicode_data::ShortOffsetRunHeader::new",
+  "hash": "573025224078501084417397699761968621329",
+  "hash_direct": "429930025525553462316384990810595589504",
+  "src": "const fn new(start_index: usize, prefix_sum: u32) -> Self {\n        assert!(start_index < (1 << 11));\n        assert!(prefix_sum < (1 << 21));\n\n        Self((start_index as u32) << 21 | prefix_sum)\n    }",
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "243931809744896974812513529918607549579",
+    "1752989996936949203916036071159051010960"
+  ]
+}

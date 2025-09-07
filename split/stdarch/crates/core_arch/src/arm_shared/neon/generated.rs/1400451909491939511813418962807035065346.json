@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vpadd_u32",
+  "hash": "1400451909491939511813418962807035065346",
+  "hash_direct": "1757537346091932123411098773850887527691",
+  "src": "pub fn vpadd_u32(a: uint32x2_t, b: uint32x2_t) -> uint32x2_t {\n    unsafe { transmute(vpadd_s32(transmute(a), transmute(b))) }\n}",
+  "callees": [
+    "19182289369532114723133288647151395238"
+  ]
+}

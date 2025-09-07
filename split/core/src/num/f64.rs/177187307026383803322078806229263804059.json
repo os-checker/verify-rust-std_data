@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f64.rs",
+  "name": "f64::<impl f64>::recip",
+  "hash": "177187307026383803322078806229263804059",
+  "hash_direct": "110551477303750241549594263178968228714",
+  "src": "pub const fn recip(self) -> f64 {\n        1.0 / self\n    }"
+}

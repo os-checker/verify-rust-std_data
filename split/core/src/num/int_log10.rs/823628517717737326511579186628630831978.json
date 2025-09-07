@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/int_log10.rs",
+  "name": "num::int_log10::u8",
+  "hash": "823628517717737326511579186628630831978",
+  "hash_direct": "455166471855369099613283883070153414809",
+  "src": "pub(super) const fn u8(val: u8) -> u32 {\n    let val = val as u32;\n\n    // For better performance, avoid branches by assembling the solution\n    // in the bits above the low 8 bits.\n\n    // Adding c1 to val gives 10 in the top bits for val < 10, 11 for val >= 10\n    const C1: u32 = 0b11_00000000 - 10; // 758\n    // Adding c2 to val gives 01 in the top bits for val < 100, 10 for val >= 100\n    const C2: u32 = 0b10_00000000 - 100; // 412\n\n    // Value of top bits:\n    //            +c1  +c2  1&2\n    //     0..=9   10   01   00 = 0\n    //   10..=99   11   01   01 = 1\n    // 100..=255   11   10   10 = 2\n    ((val + C1) & (val + C2)) >> 8\n}"
+}

@@ -1,0 +1,11 @@
+{
+  "file": "core/src/ops/try_trait.rs",
+  "name": "core::ops::try_trait::NeverShortCircuit::<usize>::wrap_mut_2::<usize, &u8, {closure@<core::iter::TakeWhile<core::slice::Iter<'_, u8>, {closure@<core::slice::EscapeAscii<'_> as core::fmt::Display>::fmt::{closure#0}}> as core::iter::Iterator>::count::{closure#0}}>::{closure#0}",
+  "hash": "67310489312575051035576184652342398890",
+  "hash_direct": "1795972211752893597315236271934624714266",
+  "src": "move |a, b| NeverShortCircuit(f(a, b))",
+  "callees": [
+    "4624680146933447685315508208087380447",
+    "1161957769894127133012856511664916235439"
+  ]
+}

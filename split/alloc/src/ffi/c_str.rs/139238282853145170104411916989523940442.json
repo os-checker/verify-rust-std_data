@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/ffi/c_str.rs",
+  "name": "ffi::c_str::NulError::into_vec",
+  "hash": "139238282853145170104411916989523940442",
+  "hash_direct": "1406446394556860946914417938747250681406",
+  "src": "pub fn into_vec(self) -> Vec<u8> {\n        self.1\n    }"
+}

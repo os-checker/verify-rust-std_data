@@ -1,0 +1,10 @@
+{
+  "file": "core/src/slice/cmp.rs",
+  "name": "<u16 as slice::cmp::SliceOrd>::compare::{closure#0}",
+  "hash": "138926998329043250526640571024582386907",
+  "hash_direct": "1530937498227184706314203979059593383256",
+  "src": "|a, b| match Ord::cmp(a, b) {\n            Ordering::Equal => ControlFlow::Continue(()),\n            non_eq => ControlFlow::Break(non_eq),\n        }",
+  "callees": [
+    "78730284242200430723749747438658132860"
+  ]
+}

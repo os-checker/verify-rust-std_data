@@ -1,7 +1,0 @@
-{
-  "file": "core/src/io/borrowed_buf.rs",
-  "name": "io::borrowed_buf::BorrowedCursor::<'_>::written",
-  "hash": "1119969732605383315312393199472600758817",
-  "hash_direct": "1710389678150801258516312574045931490203",
-  "src": "pub fn written(&self) -> usize {\n        self.buf.filled\n    }"
-}

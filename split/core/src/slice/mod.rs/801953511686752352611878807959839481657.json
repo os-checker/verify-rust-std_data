@@ -1,0 +1,7 @@
+{
+  "file": "core/src/slice/mod.rs",
+  "name": "slice::<impl [mem::maybe_uninit::MaybeUninit<u8>]>::as_ptr",
+  "hash": "801953511686752352611878807959839481657",
+  "hash_direct": "8891202002705688237936747323336459851",
+  "src": "pub const fn as_ptr(&self) -> *const T {\n        self as *const [T] as *const T\n    }"
+}

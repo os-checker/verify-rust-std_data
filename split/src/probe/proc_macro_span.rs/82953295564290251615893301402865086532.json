@@ -1,0 +1,7 @@
+{
+  "file": "src/probe/proc_macro_span.rs",
+  "name": "byte_range",
+  "hash": "82953295564290251615893301402865086532",
+  "hash_direct": "815925818471158840212821402983556930259",
+  "src": "pub fn byte_range(this: &Span) -> Range<usize> {\n    this.byte_range()\n}"
+}

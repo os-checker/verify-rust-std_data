@@ -1,0 +1,10 @@
+{
+  "file": "core/src/net/ip_addr.rs",
+  "name": "net::ip_addr::Ipv4Addr::is_shared",
+  "hash": "31755862083688557983057264915524589934",
+  "hash_direct": "84137775694670356793037824293884696429",
+  "src": "pub const fn is_shared(&self) -> bool {\n        self.octets()[0] == 100 && (self.octets()[1] & 0b1100_0000 == 0b0100_0000)\n    }",
+  "callees": [
+    "594101468346705865516588037143272085631"
+  ]
+}

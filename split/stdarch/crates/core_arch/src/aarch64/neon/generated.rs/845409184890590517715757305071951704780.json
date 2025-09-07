@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vmaxv_s32",
+  "hash": "845409184890590517715757305071951704780",
+  "hash_direct": "285848064293410480515874910681069829100",
+  "src": "pub fn vmaxv_s32(a: int32x2_t) -> i32 {\n    unsafe { simd_reduce_max(a) }\n}"
+}

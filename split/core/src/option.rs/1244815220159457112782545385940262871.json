@@ -1,0 +1,11 @@
+{
+  "file": "core/src/option.rs",
+  "name": "option::Option::<&dyn error::Error>::and_then::<&dyn error::Error, for<'a> fn(&'a dyn error::Error) -> option::Option<&'a (dyn error::Error + 'static)> {<dyn error::Error as error::Error>::source}>",
+  "hash": "1244815220159457112782545385940262871",
+  "hash_direct": "1273050090011845794910091929053938800554",
+  "src": "pub const fn and_then<U, F>(self, f: F) -> Option<U>\n    where\n        F: [const] FnOnce(T) -> Option<U> + [const] Destruct,\n    {\n        match self {\n            Some(x) => f(x),\n            None => None,\n        }\n    }",
+  "callees": [
+    "1251782662895651911114429423970888599104",
+    "60223182454201538031385000853448716574"
+  ]
+}

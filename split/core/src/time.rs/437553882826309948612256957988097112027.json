@@ -1,0 +1,16 @@
+{
+  "file": "core/src/time.rs",
+  "name": "<time::TryFromFloatSecsErrorKind as fmt::Debug>::fmt",
+  "hash": "437553882826309948612256957988097112027",
+  "hash_direct": "182126825322064168823283825202942072564",
+  "src": "Debug",
+  "macro_backtrace": [
+    {
+      "callsite": "Debug",
+      "defsite": "pub macro Debug($item:item) {\n        /* compiler built-in */\n    }"
+    }
+  ],
+  "callees": [
+    "243839084150888952911908111539685994713"
+  ]
+}

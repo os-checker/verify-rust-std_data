@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vrsubhn_u16",
+  "hash": "162163837620218150781374548885896770129",
+  "hash_direct": "59105223598382680954595675948379338186",
+  "src": "pub fn vrsubhn_u16(a: uint16x8_t, b: uint16x8_t) -> uint8x8_t {\n    unsafe { transmute(vrsubhn_s16(transmute(a), transmute(b))) }\n}",
+  "callees": [
+    "697879021915512026910200445624712798526"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "file": "core/src/num/f32.rs",
+  "name": "f32::<impl f32>::is_subnormal",
+  "hash": "1642289273768535047010633412175950183516",
+  "hash_direct": "1410363925911992381617324454299768974508",
+  "src": "pub const fn is_subnormal(self) -> bool {\n        matches!(self.classify(), FpCategory::Subnormal)\n    }",
+  "callees": [
+    "182543060698366627214161300569806267932",
+    "1280257502160233765816408910554470634604"
+  ]
+}

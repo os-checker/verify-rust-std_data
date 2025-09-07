@@ -1,0 +1,12 @@
+{
+  "file": "core/src/iter/adapters/filter.rs",
+  "name": "<core::iter::Filter<I, P> as core::iter::Iterator>::count::to_usize::<&u8, {closure@core::str::count::char_count_general_case::{closure#0}}>::{closure#0}",
+  "hash": "176037956622827736297417539670966810023",
+  "hash_direct": "6658544740377444685758143044092127363",
+  "src": "move |x| predicate(&x) as usize",
+  "callees": [
+    "1161957769894127133012856511664916235439",
+    "139970225734540393165428755631045813492",
+    "254750187630407980110034678645695049576"
+  ]
+}

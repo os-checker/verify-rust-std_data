@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/const_ptr.rs",
+  "name": "core::ptr::const_ptr::<impl *const [(char, u32)]>::len",
+  "hash": "54915130795945560367074131250030912561",
+  "hash_direct": "948636617139223523811000796739041487996",
+  "src": "pub const fn len(self) -> usize {\n        metadata(self)\n    }",
+  "callees": [
+    "238255751538736212110403326967051462921"
+  ]
+}

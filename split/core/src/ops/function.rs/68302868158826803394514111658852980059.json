@@ -1,0 +1,13 @@
+{
+  "file": "core/src/ops/function.rs",
+  "name": "ops::function::impls::<impl ops::function::FnMut<((), char)> for &mut &mut {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/iter/traits/iterator.rs:2489:13: 2489:25}>::call_mut",
+  "hash": "68302868158826803394514111658852980059",
+  "hash_direct": "875082113314516098013810030951814599809",
+  "src": "extern \"rust-call\" fn call_mut(&mut self, args: A) -> F::Output {\n            (*self).call_mut(args)\n        }",
+  "callees": [
+    "180885054484727158889233344781249141486",
+    "134194435109068273167810069453983566810",
+    "1807504791919470013616234087163610504901",
+    "325630020552471361814377154221519157974"
+  ]
+}

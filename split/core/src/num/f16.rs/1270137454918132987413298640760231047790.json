@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f16.rs",
+  "name": "f16::<impl f16>::SIGN_MASK",
+  "hash": "1270137454918132987413298640760231047790",
+  "hash_direct": "653069585497358958318234247534937954941",
+  "src": "pub(crate) const SIGN_MASK: u16 = 0x8000;"
+}

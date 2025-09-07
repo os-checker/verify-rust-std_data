@@ -1,0 +1,13 @@
+{
+  "file": "core/src/str/pattern.rs",
+  "name": "<str::pattern::SearchStep as clone::Clone>::clone",
+  "hash": "1087573110898129658217802012511246865689",
+  "hash_direct": "1714827622690148566318388463753059684830",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

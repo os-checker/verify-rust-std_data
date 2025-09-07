@@ -1,0 +1,7 @@
+{
+  "file": "core/src/convert/mod.rs",
+  "name": "<usize as convert::From<usize>>::from",
+  "hash": "495840091692981840217316891978944991283",
+  "hash_direct": "1230693979906264439510741924283821470687",
+  "src": "fn from(t: T) -> T {\n        t\n    }"
+}

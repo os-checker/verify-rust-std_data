@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/traits/double_ended.rs",
+  "name": "core::iter::DoubleEndedIterator::rfind::check::<char, {closure@<core::iter::SkipWhile<I, P> as core::iter::Iterator>::next::check<char, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/alloc/src/str.rs:422:35: 422:39}>::{closure#0}}>",
+  "hash": "103052415234125318711524981825480642952",
+  "hash_direct": "754868498591932351011779752350995231305",
+  "src": "fn check<T>(mut predicate: impl FnMut(&T) -> bool) -> impl FnMut((), T) -> ControlFlow<T> {\n            move |(), x| {\n                if predicate(&x) { ControlFlow::Break(x) } else { ControlFlow::Continue(()) }\n            }\n        }"
+}

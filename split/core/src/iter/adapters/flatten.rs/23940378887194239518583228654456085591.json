@@ -1,7 +1,0 @@
-{
-  "file": "core/src/iter/adapters/flatten.rs",
-  "name": "<char::EscapeUnicode as iter::adapters::flatten::ConstSizeIntoIterator>::size",
-  "hash": "23940378887194239518583228654456085591",
-  "hash_direct": "28230997813494509377190129245913383422",
-  "src": "default fn size() -> Option<usize> {\n        None\n    }"
-}

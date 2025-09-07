@@ -1,0 +1,7 @@
+{
+  "file": "core/src/convert/mod.rs",
+  "name": "<num::error::TryFromIntError as convert::From<num::error::TryFromIntError>>::from",
+  "hash": "92344261183987467315339399145368545244",
+  "hash_direct": "1295781870886690316014060973730050528695",
+  "src": "fn from(t: T) -> T {\n        t\n    }"
+}

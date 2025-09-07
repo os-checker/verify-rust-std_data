@@ -1,0 +1,7 @@
+{
+  "file": "core/src/io/borrowed_buf.rs",
+  "name": "io::borrowed_buf::BorrowedBuf::<'_>::capacity",
+  "hash": "88417836060611104111880908175248904248",
+  "hash_direct": "9940692080535405671877233578582989631",
+  "src": "pub fn capacity(&self) -> usize {\n        self.buf.len()\n    }"
+}

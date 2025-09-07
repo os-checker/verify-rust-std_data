@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/vec/set_len_on_drop.rs",
+  "name": "vec::set_len_on_drop::SetLenOnDrop::<'_>::current_len",
+  "hash": "1093003471854123858514730727513262573284",
+  "hash_direct": "123682164274574776962095122386971573749",
+  "src": "pub(super) fn current_len(&self) -> usize {\n        self.local_len\n    }"
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "fmt::Formatter::<'_>::flags",
+  "hash": "720705690744007377317236173180711276703",
+  "hash_direct": "1761712335265181218617386612623243346713",
+  "src": "pub fn flags(&self) -> u32 {\n        // Extract the debug upper/lower hex, zero pad, alternate, and plus/minus flags\n        // to stay compatible with older versions of Rust.\n        self.options.flags >> 21 & 0x3F\n    }"
+}

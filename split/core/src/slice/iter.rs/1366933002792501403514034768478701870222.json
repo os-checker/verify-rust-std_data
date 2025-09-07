@@ -1,0 +1,7 @@
+{
+  "file": "core/src/slice/iter.rs",
+  "name": "slice::iter::Chunks::<'_, usize>::new",
+  "hash": "1366933002792501403514034768478701870222",
+  "hash_direct": "920388542361786300312302137252980057674",
+  "src": "pub(super) const fn new(slice: &'a [T], size: usize) -> Self {\n        Self { v: slice, chunk_size: size }\n    }"
+}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/f64.rs",
-  "name": "f64::<impl f64>::EXP_MASK",
-  "hash": "180131558479934810512691579124663107387",
-  "hash_direct": "61674677692576124628503083293658349537",
-  "src": "pub(crate) const EXP_MASK: u64 = 0x7ff0_0000_0000_0000;"
-}

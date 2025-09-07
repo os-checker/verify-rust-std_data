@@ -1,0 +1,11 @@
+{
+  "file": "core/src/iter/traits/exact_size.rs",
+  "name": "<&mut ops::index_range::IndexRange as iter::traits::exact_size::ExactSizeIterator>::len",
+  "hash": "1232630557319299762117464203181083790137",
+  "hash_direct": "108081166790197880119446193157657136261",
+  "src": "fn len(&self) -> usize {\n        (**self).len()\n    }",
+  "callees": [
+    "880099753416866301016817688796490528363",
+    "975615807404907599012293873143289411403"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "file": "core/src/option.rs",
+  "name": "option::Option::<net::socket_addr::SocketAddrV6>::is_none",
+  "hash": "15586424401351902817987550025458507539",
+  "hash_direct": "62097524950096466771328235409420653122",
+  "src": "pub const fn is_none(&self) -> bool {\n        !self.is_some()\n    }",
+  "callees": [
+    "145711614153496321042629196750636538406"
+  ]
+}

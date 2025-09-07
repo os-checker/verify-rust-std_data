@@ -1,0 +1,12 @@
+{
+  "file": "core/src/intrinsics/mod.rs",
+  "name": "intrinsics::maximumf64",
+  "hash": "1761474634303920217017290991538678528378",
+  "hash_direct": "1002577292800537364013636144571400288705",
+  "src": "pub const fn maximumf64(x: f64, y: f64) -> f64 {\n    if x > y {\n        x\n    } else if y > x {\n        y\n    } else if x == y {\n        if x.is_sign_positive() && y.is_sign_negative() { x } else { y }\n    } else {\n        x + y\n    }\n}",
+  "callees": [
+    "1176328137589943253415190693832930071313",
+    "1415830620938680807913361960636901152453",
+    "1033976944350554769714411313899354111723"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/str/pattern.rs",
+  "name": "<core::str::pattern::RejectAndMatch as core::str::pattern::TwoWayStrategy>::rejecting",
+  "hash": "536261535131305517410470927862664321828",
+  "hash_direct": "1577289884194555044418149903021660730830",
+  "src": "fn rejecting(a: usize, b: usize) -> Self::Output {\n        SearchStep::Reject(a, b)\n    }"
+}

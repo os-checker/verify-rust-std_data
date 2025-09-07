@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vabd_f32",
-  "hash": "49459469348547593895091225455114561754",
-  "hash_direct": "66150990741751171292709369861978316533",
-  "src": "pub fn vabd_f32(a: float32x2_t, b: float32x2_t) -> float32x2_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(target_arch = \"arm\", link_name = \"llvm.arm.neon.vabds.v2f32\")]\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.fabd.v2f32\"\n        )]\n        fn _vabd_f32(a: float32x2_t, b: float32x2_t) -> float32x2_t;\n    }\n    unsafe { _vabd_f32(a, b) }\n}"
-}

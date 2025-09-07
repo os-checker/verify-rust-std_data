@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
-  "name": "core_arch::aarch64::neon::generated::vrndi_f16",
-  "hash": "111052888670810022633482005714205146779",
-  "hash_direct": "183714516957289861656960920863558397725",
-  "src": "pub fn vrndi_f16(a: float16x4_t) -> float16x4_t {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.nearbyint.v4f16\"\n        )]\n        fn _vrndi_f16(a: float16x4_t) -> float16x4_t;\n    }\n    unsafe { _vrndi_f16(a) }\n}"
-}

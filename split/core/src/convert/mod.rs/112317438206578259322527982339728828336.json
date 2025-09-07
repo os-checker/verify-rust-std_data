@@ -1,0 +1,7 @@
+{
+  "file": "core/src/convert/mod.rs",
+  "name": "<collections::TryReserveError as core::convert::From<collections::TryReserveError>>::from",
+  "hash": "112317438206578259322527982339728828336",
+  "hash_direct": "24814071116416163206784457661139779449",
+  "src": "fn from(t: T) -> T {\n        t\n    }"
+}

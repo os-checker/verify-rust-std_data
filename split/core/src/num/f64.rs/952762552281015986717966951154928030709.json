@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f64.rs",
+  "name": "f64::<impl f64>::algebraic_mul",
+  "hash": "952762552281015986717966951154928030709",
+  "hash_direct": "1157457547465102789310358823222415150813",
+  "src": "pub const fn algebraic_mul(self, rhs: f64) -> f64 {\n        intrinsics::fmul_algebraic(self, rhs)\n    }"
+}

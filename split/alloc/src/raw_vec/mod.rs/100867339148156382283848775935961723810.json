@@ -1,0 +1,10 @@
+{
+  "file": "alloc/src/raw_vec/mod.rs",
+  "name": "raw_vec::RawVec::<i32>::allocator",
+  "hash": "100867339148156382283848775935961723810",
+  "hash_direct": "1417696305024562685211639824240399152954",
+  "src": "pub(crate) fn allocator(&self) -> &A {\n        self.inner.allocator()\n    }",
+  "callees": [
+    "113149325569224891866314891945951508015"
+  ]
+}

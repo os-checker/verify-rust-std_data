@@ -1,0 +1,16 @@
+{
+  "file": "core/src/net/parser.rs",
+  "name": "<net::parser::AddrKind as fmt::Debug>::fmt",
+  "hash": "47805686734997212012498862568208178961",
+  "hash_direct": "178495027519703668713063068459939750910",
+  "src": "Debug",
+  "macro_backtrace": [
+    {
+      "callsite": "Debug",
+      "defsite": "pub macro Debug($item:item) {\n        /* compiler built-in */\n    }"
+    }
+  ],
+  "callees": [
+    "243839084150888952911908111539685994713"
+  ]
+}

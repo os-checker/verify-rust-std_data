@@ -1,7 +1,0 @@
-{
-  "file": "core/src/ptr/metadata.rs",
-  "name": "ptr::metadata::from_raw_parts::<[mem::maybe_uninit::MaybeUninit<mem::maybe_uninit::MaybeUninit<i32>>], mem::maybe_uninit::MaybeUninit<mem::maybe_uninit::MaybeUninit<i32>>>",
-  "hash": "111989847292052980862063641477087241919",
-  "hash_direct": "10914125284107341024948062764936529382",
-  "src": "pub const fn from_raw_parts<T: PointeeSized>(\n    data_pointer: *const impl Thin,\n    metadata: <T as Pointee>::Metadata,\n) -> *const T {\n    aggregate_raw_ptr(data_pointer, metadata)\n}"
-}

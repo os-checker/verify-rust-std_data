@@ -1,0 +1,11 @@
+{
+  "file": "core/src/num/mod.rs",
+  "name": "core::num::<impl u8>::make_ascii_lowercase",
+  "hash": "100546417618262913272619624474708031995",
+  "hash_direct": "89911015317076219726569679278367002556",
+  "src": "pub const fn make_ascii_lowercase(&mut self) {\n        *self = self.to_ascii_lowercase();\n    }",
+  "callees": [
+    "3165495841646412513829084282506961468",
+    "196906422805048841511379534387243732870"
+  ]
+}

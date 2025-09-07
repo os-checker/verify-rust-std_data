@@ -1,0 +1,7 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "core::fmt::Formatter::<'_>::sign_plus",
+  "hash": "172862119183583856229745200852578234443",
+  "hash_direct": "1650706743195890382816754010271616773979",
+  "src": "pub fn sign_plus(&self) -> bool {\n        self.options.flags & flags::SIGN_PLUS_FLAG != 0\n    }"
+}

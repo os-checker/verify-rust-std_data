@@ -1,7 +1,0 @@
-{
-  "file": "core/src/ptr/mut_ptr.rs",
-  "name": "ptr::mut_ptr::<impl *mut u8>::cast::<mem::maybe_uninit::MaybeUninit<[u8; 1]>>",
-  "hash": "121274693028279896216902099526002689993",
-  "hash_direct": "100157587456003123658338986635218272806",
-  "src": "pub const fn cast<U>(self) -> *mut U {\n        self as _\n    }"
-}

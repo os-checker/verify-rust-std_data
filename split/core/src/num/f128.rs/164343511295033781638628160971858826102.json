@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f128.rs",
+  "name": "f128::<impl f128>::floor",
+  "hash": "164343511295033781638628160971858826102",
+  "hash_direct": "112620001531082444294641599748429387620",
+  "src": "pub const fn floor(self) -> f128 {\n        // SAFETY: intrinsic with no preconditions\n        unsafe { intrinsics::floorf128(self) }\n    }"
+}

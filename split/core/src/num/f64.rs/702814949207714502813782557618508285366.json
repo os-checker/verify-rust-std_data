@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/f64.rs",
-  "name": "f64::<impl f64>::min",
-  "hash": "702814949207714502813782557618508285366",
-  "hash_direct": "62078274745437398263501851672022989442",
-  "src": "pub const fn min(self, other: f64) -> f64 {\n        intrinsics::minnumf64(self, other)\n    }"
-}

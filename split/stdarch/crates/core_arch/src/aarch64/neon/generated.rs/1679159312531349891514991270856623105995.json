@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
-  "name": "core_arch::aarch64::neon::generated::vpaddd_f64",
-  "hash": "1679159312531349891514991270856623105995",
-  "hash_direct": "561195726910324011710143362743584743647",
-  "src": "pub fn vpaddd_f64(a: float64x2_t) -> f64 {\n    unsafe {\n        let a1: f64 = simd_extract!(a, 0);\n        let a2: f64 = simd_extract!(a, 1);\n        a1 + a2\n    }\n}"
-}

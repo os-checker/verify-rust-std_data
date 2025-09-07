@@ -1,0 +1,10 @@
+{
+  "file": "core/src/option.rs",
+  "name": "option::Option::<ptr::alignment::Alignment>::ok_or::<num::error::TryFromIntError>",
+  "hash": "1693504094691034176217608882376305703290",
+  "hash_direct": "1386728698674870942011492430920507742096",
+  "src": "pub const fn ok_or<E: [const] Destruct>(self, err: E) -> Result<T, E> {\n        match self {\n            Some(v) => Ok(v),\n            None => Err(err),\n        }\n    }",
+  "callees": [
+    "177028096127130855141974597834504714571"
+  ]
+}

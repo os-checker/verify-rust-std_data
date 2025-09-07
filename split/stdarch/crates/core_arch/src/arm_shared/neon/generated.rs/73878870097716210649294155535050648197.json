@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
+  "name": "core_arch::arm_shared::neon::generated::vaddhn_high_u64",
+  "hash": "73878870097716210649294155535050648197",
+  "hash_direct": "834653304680471790810738667943043285813",
+  "src": "pub fn vaddhn_high_u64(r: uint32x2_t, a: uint64x2_t, b: uint64x2_t) -> uint32x4_t {\n    unsafe {\n        let x = simd_cast(simd_shr(simd_add(a, b), uint64x2_t::splat(32)));\n        simd_shuffle!(r, x, [0, 1, 2, 3])\n    }\n}",
+  "callees": [
+    "57984615732008793801375717201114340689"
+  ]
+}

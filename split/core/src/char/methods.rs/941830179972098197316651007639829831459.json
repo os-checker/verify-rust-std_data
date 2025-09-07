@@ -1,0 +1,14 @@
+{
+  "file": "core/src/char/methods.rs",
+  "name": "char::methods::<impl char>::to_digit",
+  "hash": "941830179972098197316651007639829831459",
+  "hash_direct": "181536552724139553799908905953527522225",
+  "src": "pub const fn to_digit(self, radix: u32) -> Option<u32> {\n        assert!(\n            radix >= 2 && radix <= 36,\n            \"to_digit: invalid radix -- radix must be in the range 2 to 36 inclusive\"\n        );\n        // check radix to remove letter handling code when radix is a known constant\n        let value = if self > '9' && radix > 10 {\n            // mask to convert ASCII letters to uppercase\n            const TO_UPPERCASE_MASK: u32 = !0b0010_0000;\n            // Converts an ASCII letter to its corresponding integer value:\n            // A-Z => 10-35, a-z => 10-35. Other characters produce values >= 36.\n            //\n            // Add Overflow Safety:\n            // By applying the mask after the subtraction, the first addendum is\n            // constrained such that it never exceeds u32::MAX - 0x20.\n            ((self as u32).wrapping_sub('A' as u32) & TO_UPPERCASE_MASK) + 10\n        } else {\n            // convert digit to value, non-digits wrap to values > 36\n            (self as u32).wrapping_sub('0' as u32)\n        };\n        // FIXME(const-hack): once then_some is const fn, use it here\n        if value < radix { Some(value) } else { None }\n    }",
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "20170180267557332822120616943783807769",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "1752989996936949203916036071159051010960"
+  ]
+}

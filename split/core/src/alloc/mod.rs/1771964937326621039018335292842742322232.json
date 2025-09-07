@@ -1,0 +1,15 @@
+{
+  "file": "core/src/alloc/mod.rs",
+  "name": "<&alloc::Global as core::alloc::Allocator>::deallocate",
+  "hash": "1771964937326621039018335292842742322232",
+  "hash_direct": "1465327949397896478313664736787497979930",
+  "src": "unsafe fn deallocate(&self, ptr: NonNull<u8>, layout: Layout) {\n        // SAFETY: the safety contract must be upheld by the caller\n        unsafe { (**self).deallocate(ptr, layout) }\n    }",
+  "callees": [
+    "394899740451847047017644777761427403196",
+    "1818446027419519358414583805786772455766",
+    "12355321507198182179923507819259328874",
+    "1099899350342654162615874749245636043676",
+    "41567241620038406215851091758143153711",
+    "181717373102152254895109628399379607332"
+  ]
+}

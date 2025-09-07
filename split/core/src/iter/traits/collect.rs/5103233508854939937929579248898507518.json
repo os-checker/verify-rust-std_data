@@ -1,7 +1,0 @@
-{
-  "file": "core/src/iter/traits/collect.rs",
-  "name": "<&mut slice::iter::ChunksExact<'_, u32> as iter::traits::collect::IntoIterator>::into_iter",
-  "hash": "5103233508854939937929579248898507518",
-  "hash_direct": "171058447049946374642037942196728683294",
-  "src": "fn into_iter(self) -> I {\n        self\n    }"
-}

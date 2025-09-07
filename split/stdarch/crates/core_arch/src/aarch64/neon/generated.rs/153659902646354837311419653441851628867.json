@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vuzp2q_u32",
+  "hash": "153659902646354837311419653441851628867",
+  "hash_direct": "445372375237831063017839456030585045474",
+  "src": "pub fn vuzp2q_u32(a: uint32x4_t, b: uint32x4_t) -> uint32x4_t {\n    unsafe { simd_shuffle!(a, b, [1, 3, 5, 7]) }\n}"
+}

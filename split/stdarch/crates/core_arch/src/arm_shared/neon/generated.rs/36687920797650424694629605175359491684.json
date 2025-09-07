@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vnegq_f32",
-  "hash": "36687920797650424694629605175359491684",
-  "hash_direct": "112910164363288887297253616077393336525",
-  "src": "pub fn vnegq_f32(a: float32x4_t) -> float32x4_t {\n    unsafe { simd_neg(a) }\n}"
-}

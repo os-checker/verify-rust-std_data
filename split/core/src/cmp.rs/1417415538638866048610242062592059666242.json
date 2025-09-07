@@ -1,0 +1,7 @@
+{
+  "file": "core/src/cmp.rs",
+  "name": "cmp::Ordering::then",
+  "hash": "1417415538638866048610242062592059666242",
+  "hash_direct": "755145858087642788796787367236851905",
+  "src": "pub const fn then(self, other: Ordering) -> Ordering {\n        match self {\n            Equal => other,\n            _ => self,\n        }\n    }"
+}

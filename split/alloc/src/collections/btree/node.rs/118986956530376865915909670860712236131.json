@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/collections/btree/node.rs",
+  "name": "collections::btree::node::CAPACITY",
+  "hash": "118986956530376865915909670860712236131",
+  "hash_direct": "1504152020770395055912124733723624857003",
+  "src": "pub(super) const CAPACITY: usize = 2 * B - 1;"
+}

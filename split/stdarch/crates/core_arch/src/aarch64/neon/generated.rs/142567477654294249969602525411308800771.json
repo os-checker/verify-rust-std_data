@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vfmah_f16",
+  "hash": "142567477654294249969602525411308800771",
+  "hash_direct": "6110846063431542758656044998206947153",
+  "src": "pub fn vfmah_f16(a: f16, b: f16, c: f16) -> f16 {\n    unsafe { fmaf16(b, c, a) }\n}"
+}

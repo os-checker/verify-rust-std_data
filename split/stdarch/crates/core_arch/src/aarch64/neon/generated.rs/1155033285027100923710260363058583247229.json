@@ -1,0 +1,7 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vqdmulls_s32",
+  "hash": "1155033285027100923710260363058583247229",
+  "hash_direct": "1264896049967796232716703478297288520940",
+  "src": "pub fn vqdmulls_s32(a: i32, b: i32) -> i64 {\n    unsafe extern \"unadjusted\" {\n        #[cfg_attr(\n            any(target_arch = \"aarch64\", target_arch = \"arm64ec\"),\n            link_name = \"llvm.aarch64.neon.sqdmulls.scalar\"\n        )]\n        fn _vqdmulls_s32(a: i32, b: i32) -> i64;\n    }\n    unsafe { _vqdmulls_s32(a, b) }\n}"
+}

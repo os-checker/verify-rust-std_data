@@ -1,7 +1,0 @@
-{
-  "file": "core/src/../../stdarch/crates/core_arch/src/arm_shared/neon/generated.rs",
-  "name": "core_arch::arm_shared::neon::generated::vcombine_s8",
-  "hash": "6380549514205482595555968504329093796",
-  "hash_direct": "15845717754615160396195366525181100315",
-  "src": "pub fn vcombine_s8(a: int8x8_t, b: int8x8_t) -> int8x16_t {\n    unsafe { simd_shuffle!(a, b, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]) }\n}"
-}
