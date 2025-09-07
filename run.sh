@@ -50,7 +50,7 @@ merge_results() {
     (.[0] + .[1])
     | group_by(.harness)
     | map(
-        add | { file, harness, proof_kind, time, props, func, hash }
+        add | { crate, file, harness, proof_kind, time, props, func, hash }
       )
     | walk(if type == "object" then with_entries(select(.value != null)) else . end)
   ' results-core.json merge_diff-proofs-only.json >merge_results-core.json
