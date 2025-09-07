@@ -58,7 +58,14 @@ merge_results() {
 }
 
 split() {
-
+  # Remove entire split folder.
+  rm split -rf
+  cd ../../
+  # Update core.sqlite3
+  ./download-artifact.sh
+  cd assets
+  # Generate new split folder.
+  ./split.sh ../artifacts/artifact-libcore/core.sqlite3 split.sql ../ui/verify-rust-std_data/split
 }
 
 declare -A cmds=(
@@ -66,6 +73,7 @@ declare -A cmds=(
   [merge_diff]=merge_diff
   [results]=results
   [merge_results]=merge_results
+  [split]=split
 )
 
 [[ $# -eq 0 ]] && {
