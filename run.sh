@@ -3,7 +3,7 @@
 set -exou pipefail
 
 all() {
-  verify_rust_std merge --hash-json ../../assets/core.json \
+  verify_rust_std merge --hash-json ../../assets/json \
     --kani-list ../../assets/kani-list_verify-rust-std-CI.json \
     --strip-kani-list-prefix /home/runner/work/verify-rust-std/verify-rust-std/library/ >merge_diff.json
   merge_diff
