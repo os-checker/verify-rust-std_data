@@ -2,8 +2,20 @@
 
 set -exou pipefail
 
-all() {
-  verify_rust_std merge --hash-json ../../assets/json \
+split() {
+  # Remove entire split folder.
+  rm split -rf
+  cd ../../
+  # Update core.sqlite3
+  ./download-artifact.sh
+  cd assets
+  # Generate new split folder.
+  ./split.sh ../artifacts/artifact-libcore/core.sqlite3 split.sql ../ui/verify-rust-std_data/split
+}
+
+# This relies on latest artifact-libcore, so run split first to update it.
+gen() {
+  verify_rust_std merge --hash-json ../../artifacts/artifact-libcore/json \
     --kani-list ../../assets/kani-list_verify-rust-std-CI.json \
     --strip-kani-list-prefix /home/runner/work/verify-rust-std/verify-rust-std/library/ >merge_diff.json
   merge_diff
@@ -57,23 +69,12 @@ merge_results() {
   ' results-core.json merge_diff-proofs-only.json >merge_results-core.json
 }
 
-split() {
-  # Remove entire split folder.
-  rm split -rf
-  cd ../../
-  # Update core.sqlite3
-  ./download-artifact.sh
-  cd assets
-  # Generate new split folder.
-  ./split.sh ../artifacts/artifact-libcore/core.sqlite3 split.sql ../ui/verify-rust-std_data/split
-}
-
 declare -A cmds=(
-  [all]=all
+  [split]=split
+  [gen]=gen
   [merge_diff]=merge_diff
   [results]=results
   [merge_results]=merge_results
-  [split]=split
 )
 
 [[ $# -eq 0 ]] && {
