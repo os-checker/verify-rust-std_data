@@ -1,0 +1,10 @@
+{
+  "file": "core/src/num/dec2flt/lemire.rs",
+  "name": "num::dec2flt::lemire::power",
+  "hash": "1134774619075691336512120415078180903148",
+  "hash_direct": "678594099900410404217253304729334853165",
+  "src": "fn power(q: i32) -> i32 {\n    (q.wrapping_mul(152_170 + 65536) >> 16) + 63\n}",
+  "callees": [
+    "79242728783770300391285614254369091785"
+  ]
+}

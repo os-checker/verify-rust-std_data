@@ -1,0 +1,10 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<core::str::Chars<'_> as core::iter::Iterator>::map::<core::char::EscapeDebug, {closure@<core::wtf8::Wtf8 as core::fmt::Debug>::fmt::write_str_escaped::{closure#0}}>",
+  "hash": "167350848454168398823362882345188550709",
+  "hash_direct": "12232826371304888178522261356596052856",
+  "src": "fn map<B, F>(self, f: F) -> Map<Self, F>\n    where\n        Self: Sized,\n        F: FnMut(Self::Item) -> B,\n    {\n        Map::new(self, f)\n    }",
+  "callees": [
+    "346740705577555206217801372046277046614"
+  ]
+}

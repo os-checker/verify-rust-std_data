@@ -1,0 +1,20 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/iter.rs",
+  "name": "<kani::KaniEnumerateIter<kani::KaniRefIter<'_, u8>> as kani::KaniIter>::first",
+  "hash": "16126613202306429927755769268851862198",
+  "hash_direct": "503554458841130034911691357504160283783",
+  "src": "fn first(&self) -> Self::Item {\n                let item = self.iter.first();\n                (0, item)\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "kani_core::generate_iter!()",
+      "defsite": "macro_rules! generate_iter"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ],
+  "callees": [
+    "172370803205269877729229040230112985546"
+  ]
+}

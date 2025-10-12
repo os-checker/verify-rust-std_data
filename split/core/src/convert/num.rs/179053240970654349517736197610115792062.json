@@ -1,0 +1,18 @@
+{
+  "file": "core/src/convert/num.rs",
+  "name": "convert::num::<impl convert::TryFrom<usize> for num::nonzero::NonZero<usize>>::try_from",
+  "hash": "179053240970654349517736197610115792062",
+  "hash_direct": "96639094149542892674467469892548839662",
+  "src": "fn try_from(value: $Int) -> Result<Self, Self::Error> {\n                Self::new(value).ok_or(TryFromIntError(()))\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "impl_nonzero_int_try_from_int!(usize)",
+      "defsite": "macro_rules! impl_nonzero_int_try_from_int {\n    ($Int:ty) => {\n        #[stable(feature = \"nzint_try_from_int_conv\", since = \"1.46.0\")]\n        #[rustc_const_unstable(feature = \"const_convert\", issue = \"143773\")]\n        impl const TryFrom<$Int> for NonZero<$Int> {\n            type Error = TryFromIntError;\n\n            // Rustdocs on the impl block show a \"[+] show undocumented items\" toggle.\n            // Rustdocs on functions do not.\n            #[doc = concat!(\"Attempts to convert [`\", stringify!($Int), \"`] \")]\n            #[doc = concat!(\"to <code>[NonZero]\\\\<[\", stringify!($Int), \"]></code>.\")]\n            #[inline]\n            fn try_from(value: $Int) -> Result<Self, Self::Error> {\n                Self::new(value).ok_or(TryFromIntError(()))\n            }\n        }\n    };\n}"
+    }
+  ],
+  "callees": [
+    "1676806814539779643518083197252466559589",
+    "69096379978025662388937736569885210078",
+    "177028096127130855141974597834504714571"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "file": "core/src/hash/sip.rs",
+  "name": "<hash::sip::Sip13Rounds as hash::sip::Sip>::d_rounds",
+  "hash": "994475640075799180313535985711534527745",
+  "hash_direct": "385787562673183592211139527695726667415",
+  "src": "fn d_rounds(state: &mut State) {\n        compress!(state);\n        compress!(state);\n        compress!(state);\n    }",
+  "callees": [
+    "1307016191746963152911648197049651189871",
+    "118531085298240041968493098956998850"
+  ]
+}

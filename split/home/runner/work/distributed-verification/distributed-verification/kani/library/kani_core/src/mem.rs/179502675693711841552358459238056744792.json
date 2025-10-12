@@ -1,0 +1,26 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/mem.rs",
+  "name": "kani::mem::same_allocation_internal::<(char, u8)>",
+  "hash": "179502675693711841552358459238056744792",
+  "hash_direct": "1805415430709904632515365747330598142273",
+  "src": "pub(super) fn same_allocation_internal<T: PointeeSized>(\n            ptr1: *const T,\n            ptr2: *const T,\n        ) -> bool {\n            let addr1 = ptr1 as *const ();\n            let addr2 = ptr2 as *const ();\n            cbmc::same_allocation(addr1, addr2)\n        }",
+  "macro_backtrace": [
+    {
+      "callsite": "kani_core::kani_mem!(core)",
+      "defsite": "macro_rules! kani_mem"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ],
+  "callees": [
+    "80989463918046823203044749903697808714",
+    "1295499066349112484912490938496969975321",
+    "108393381985250317406898676759665844160",
+    "177504877725561479516307868202288769850",
+    "42439857493457686231976896950670544502",
+    "1815553186172281223816604261080148270538",
+    "896888444305093759317012834705524625919"
+  ]
+}

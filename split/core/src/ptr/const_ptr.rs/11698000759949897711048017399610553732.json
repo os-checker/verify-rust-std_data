@@ -1,0 +1,17 @@
+{
+  "file": "core/src/ptr/const_ptr.rs",
+  "name": "core::ptr::const_ptr::<impl *const T>::add::runtime_add_nowrap",
+  "hash": "11698000759949897711048017399610553732",
+  "hash_direct": "141606813105300557149628954731371548157",
+  "src": "const fn runtime_add_nowrap(this: *const (), count: usize, size: usize) -> bool {\n            const_eval_select!(\n                @capture { this: *const (), count: usize, size: usize } -> bool:\n                if const {\n                    true\n                } else {\n                    let Some(byte_offset) = count.checked_mul(size) else {\n                        return false;\n                    };\n                    let (_, overflow) = this.addr().overflowing_add(byte_offset);\n                    byte_offset <= (isize::MAX as usize) && !overflow\n                }\n            )\n        }",
+  "callees": [
+    "99835071136844477394667148890151411684",
+    "73694171442177138896992135977130617471",
+    "1565020019114964267317960250432518071469",
+    "5731834383683152134719350346688847365",
+    "105784042461548404615622384875082564775",
+    "8896238559920380735332622633484699245",
+    "175623961004431005849298709567805707658",
+    "33067340742295788584221598515845050786"
+  ]
+}

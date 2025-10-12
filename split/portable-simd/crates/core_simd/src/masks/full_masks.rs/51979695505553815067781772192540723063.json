@@ -1,0 +1,17 @@
+{
+  "file": "core/src/../../portable-simd/crates/core_simd/src/masks/full_masks.rs",
+  "name": "<u32 as core_simd::masks::mask_impl::ReverseBits>::reverse_bits",
+  "hash": "51979695505553815067781772192540723063",
+  "hash_direct": "146305835008851808453026429536744511968",
+  "src": "fn reverse_bits(self, n: usize) -> Self {\n                let rev = <$int>::reverse_bits(self);\n                let bitsize = size_of::<$int>() * 8;\n                if n < bitsize {\n                    // Shift things back to the right\n                    rev >> (bitsize - n)\n                } else {\n                    rev\n                }\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "impl_reverse_bits! { u8, u16, u32, u64 }",
+      "defsite": "macro_rules! impl_reverse_bits {\n    { $($int:ty),* } => {\n        $(\n        impl ReverseBits for $int {\n            #[inline(always)]\n            fn reverse_bits(self, n: usize) -> Self {\n                let rev = <$int>::reverse_bits(self);\n                let bitsize = size_of::<$int>() * 8;\n                if n < bitsize {\n                    // Shift things back to the right\n                    rev >> (bitsize - n)\n                } else {\n                    rev\n                }\n            }\n        }\n        )*\n    }\n}"
+    }
+  ],
+  "callees": [
+    "99603598099498707762068107842012164044",
+    "150990564627644432059713403304445986981"
+  ]
+}

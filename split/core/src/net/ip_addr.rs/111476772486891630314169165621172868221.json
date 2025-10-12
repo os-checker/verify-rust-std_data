@@ -1,0 +1,22 @@
+{
+  "file": "core/src/net/ip_addr.rs",
+  "name": "net::ip_addr::Ipv4Addr::is_global",
+  "hash": "111476772486891630314169165621172868221",
+  "hash_direct": "1250237845266161709613953402006268231474",
+  "src": "pub const fn is_global(&self) -> bool {\n        !(self.octets()[0] == 0 // \"This network\"\n            || self.is_private()\n            || self.is_shared()\n            || self.is_loopback()\n            || self.is_link_local()\n            // addresses reserved for future protocols (`192.0.0.0/24`)\n            // .9 and .10 are documented as globally reachable so they're excluded\n            || (\n                self.octets()[0] == 192 && self.octets()[1] == 0 && self.octets()[2] == 0\n                && self.octets()[3] != 9 && self.octets()[3] != 10\n            )\n            || self.is_documentation()\n            || self.is_benchmarking()\n            || self.is_reserved()\n            || self.is_broadcast())\n    }",
+  "callees": [
+    "1154112256791800715810884634918423760489",
+    "19539067258683629587198030310902408607",
+    "114579728239549930234356732496816117126",
+    "213253987694335189314156504989406609016",
+    "321058546026469120416686063572945871223",
+    "6620292540561497585213147191522101109",
+    "1533461424577366903916340757475165187792",
+    "31755862083688557983057264915524589934",
+    "594101468346705865516588037143272085631",
+    "39448442586791900895129482515152215479",
+    "136265735123059691067824810333128644804",
+    "484581508578609862114020487117622286497",
+    "26223585139362857097682390085233538231"
+  ]
+}

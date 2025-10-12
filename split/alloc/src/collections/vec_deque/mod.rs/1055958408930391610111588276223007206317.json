@@ -1,0 +1,13 @@
+{
+  "file": "alloc/src/collections/vec_deque/mod.rs",
+  "name": "collections::vec_deque::VecDeque::<u32>::capacity",
+  "hash": "1055958408930391610111588276223007206317",
+  "hash_direct": "1064346855340409504813664493943992586114",
+  "src": "pub fn capacity(&self) -> usize {\n        if T::IS_ZST { usize::MAX } else { self.buf.capacity() }\n    }",
+  "callees": [
+    "122224066884184313146913510505193840958",
+    "593076053130787970912341718068175247042",
+    "55761216241652814815946828153974500326",
+    "127326289725169637608193061289084434233"
+  ]
+}

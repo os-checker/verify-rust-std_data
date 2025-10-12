@@ -1,0 +1,10 @@
+{
+  "file": "core/src/time.rs",
+  "name": "time::<impl ub_checks::Invariant for num::niche_types::Nanoseconds>::is_safe",
+  "hash": "528675514942257179111086169806688306465",
+  "hash_direct": "64041530413679844987825423947698658436",
+  "src": "fn is_safe(&self) -> bool {\n        self.as_inner() < NANOS_PER_SEC\n    }",
+  "callees": [
+    "27460360985597728751338915468532901532"
+  ]
+}

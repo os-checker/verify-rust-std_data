@@ -1,0 +1,7 @@
+{
+  "file": "core/src/mem/manually_drop.rs",
+  "name": "mem::manually_drop::ManuallyDrop::<hint::select_unpredictable::DropOnPanic<usize>>::new",
+  "hash": "14280420189120821201735625103429333129",
+  "hash_direct": "401807912893221655413457746267811132094",
+  "src": "pub const fn new(value: T) -> ManuallyDrop<T> {\n        ManuallyDrop { value }\n    }"
+}

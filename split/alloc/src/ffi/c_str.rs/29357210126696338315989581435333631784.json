@@ -1,7 +1,0 @@
-{
-  "file": "alloc/src/ffi/c_str.rs",
-  "name": "<ffi::c_str::NulError as core::error::Error>::description",
-  "hash": "29357210126696338315989581435333631784",
-  "hash_direct": "115222516211988571933981258262426620019",
-  "src": "fn description(&self) -> &str {\n        \"nul byte found in data\"\n    }"
-}

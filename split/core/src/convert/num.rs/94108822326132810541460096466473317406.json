@@ -1,0 +1,13 @@
+{
+  "file": "core/src/convert/num.rs",
+  "name": "convert::num::ptr_try_from_impls::<impl convert::TryFrom<usize> for i128>::try_from",
+  "hash": "94108822326132810541460096466473317406",
+  "hash_direct": "1094907685823630050410614182661623351300",
+  "src": "fn try_from(value: $source) -> Result<Self, Self::Error> {\n                Ok(value as Self)\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "impl_try_from_unbounded!(usize => i128)",
+      "defsite": "macro_rules! impl_try_from_unbounded {\n    ($source:ty => $($target:ty),+) => {$(\n        #[stable(feature = \"try_from\", since = \"1.34.0\")]\n        #[rustc_const_unstable(feature = \"const_convert\", issue = \"143773\")]\n        impl const TryFrom<$source> for $target {\n            type Error = TryFromIntError;\n\n            /// Tries to create the target number type from a source\n            /// number type. This returns an error if the source value\n            /// is outside of the range of the target type.\n            #[inline]\n            fn try_from(value: $source) -> Result<Self, Self::Error> {\n                Ok(value as Self)\n            }\n        }\n    )*}\n}"
+    }
+  ]
+}

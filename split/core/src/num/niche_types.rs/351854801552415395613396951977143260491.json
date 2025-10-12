@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/niche_types.rs",
+  "name": "<num::niche_types::CodePointInner as default::Default>::default",
+  "hash": "351854801552415395613396951977143260491",
+  "hash_direct": "34310732468592728337671500343419933771",
+  "src": "fn default() -> Self {\n        Self::ZERO\n    }"
+}

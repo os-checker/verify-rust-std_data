@@ -1,0 +1,19 @@
+{
+  "file": "core/src/wtf8.rs",
+  "name": "<wtf8::CodePoint as cmp::PartialOrd>::partial_cmp",
+  "hash": "136154664814711847142723019100956680223",
+  "hash_direct": "9459774746618761243110917269521467540",
+  "src": "PartialOrd",
+  "macro_backtrace": [
+    {
+      "callsite": "PartialOrd",
+      "defsite": "pub macro PartialOrd($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ],
+  "callees": [
+    "131804240691040385559237509421631119204",
+    "35625119464217248242707209573348038104",
+    "87069162141081345704595351319099471432",
+    "107496796079202766681632399080957069720"
+  ]
+}

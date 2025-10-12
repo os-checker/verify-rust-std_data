@@ -1,0 +1,27 @@
+{
+  "file": "core/src/convert/num.rs",
+  "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u32>> for num::nonzero::NonZero<i128>>::from",
+  "hash": "75561233371376533003535322358288847451",
+  "hash_direct": "1253888671278783563316284950607000538596",
+  "src": "fn from(small: NonZero<$Small>) -> Self {\n                // SAFETY: input type guarantees the value is non-zero\n                unsafe { Self::new_unchecked(From::from(small.get())) }\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "impl_nonzero_int_from_nonzero_int!(u32 => i128)",
+      "defsite": "macro_rules! impl_nonzero_int_from_nonzero_int {\n    ($Small:ty => $Large:ty) => {\n        #[stable(feature = \"nz_int_conv\", since = \"1.41.0\")]\n        #[rustc_const_unstable(feature = \"const_convert\", issue = \"143773\")]\n        impl const From<NonZero<$Small>> for NonZero<$Large> {\n            // Rustdocs on the impl block show a \"[+] show undocumented items\" toggle.\n            // Rustdocs on functions do not.\n            #[doc = concat!(\"Converts <code>[NonZero]\\\\<[\", stringify!($Small), \"]></code> \")]\n            #[doc = concat!(\"to <code>[NonZero]\\\\<[\", stringify!($Large), \"]></code> losslessly.\")]\n            #[inline]\n            fn from(small: NonZero<$Small>) -> Self {\n                // SAFETY: input type guarantees the value is non-zero\n                unsafe { Self::new_unchecked(From::from(small.get())) }\n            }\n        }\n    };\n}"
+    }
+  ],
+  "callees": [
+    "37471479290145605712541564470327110274",
+    "258820287469578611817448591488600041899",
+    "17421822894816687532325615181214565887",
+    "23815256893174302637797703719499456373",
+    "932845973401736304917643144105724113264",
+    "1355978393681950392614499740682770409695",
+    "127479067396745407510631415782656719",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "478753423337745817613297159272845606672",
+    "887235042902537721816254572592014930578",
+    "739520556846959085018120036998133255835"
+  ]
+}

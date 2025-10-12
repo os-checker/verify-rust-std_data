@@ -1,0 +1,16 @@
+{
+  "file": "core/src/intrinsics/mod.rs",
+  "name": "intrinsics::typed_swap_nonoverlapping::kani_force_fn_once::<(), {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/intrinsics/mod.rs:2568:18: 2568:35}>",
+  "hash": "1253506026178231812918014497033058605334",
+  "hash_direct": "1641768221867843716116084622393680729145",
+  "attrs": [
+    "#[kanitool::fn_marker = \"kani_force_fn_once\"]\n"
+  ],
+  "src": "kani::modifies(x)",
+  "macro_backtrace": [
+    {
+      "callsite": "kani::modifies(x)",
+      "defsite": "pub fn modifies(attr: TokenStream, item: TokenStream) -> TokenStream"
+    }
+  ]
+}

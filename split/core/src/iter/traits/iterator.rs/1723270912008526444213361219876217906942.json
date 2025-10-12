@@ -1,0 +1,16 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<iter::adapters::rev::Rev<iter::adapters::skip::Skip<ops::range::Range<usize>>> as iter::traits::iterator::Iterator>::step_by",
+  "hash": "1723270912008526444213361219876217906942",
+  "hash_direct": "662263048774473668313354153313919519632",
+  "src": "fn step_by(self, step: usize) -> StepBy<Self>\n    where\n        Self: Sized,\n    {\n        StepBy::new(self, step)\n    }",
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "23134458339938598921008615884984951637",
+    "1251036442019028997614064328835283459235",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "243931809744896974812513529918607549579",
+    "1752989996936949203916036071159051010960"
+  ]
+}

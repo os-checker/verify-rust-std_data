@@ -1,0 +1,7 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "fmt::FormattingOptions::create_formatter",
+  "hash": "1083701312735350184916199980103122293872",
+  "hash_direct": "1024192521129489832413280190611272625710",
+  "src": "pub const fn create_formatter<'a>(self, write: &'a mut (dyn Write + 'a)) -> Formatter<'a> {\n        Formatter { options: self, buf: write }\n    }"
+}

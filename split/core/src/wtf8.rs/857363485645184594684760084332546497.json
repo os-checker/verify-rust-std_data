@@ -1,0 +1,10 @@
+{
+  "file": "core/src/wtf8.rs",
+  "name": "core::wtf8::CodePoint::from_u32_unchecked",
+  "hash": "857363485645184594684760084332546497",
+  "hash_direct": "143009486418944445652293277465732736657",
+  "src": "pub unsafe fn from_u32_unchecked(value: u32) -> CodePoint {\n        // SAFETY: Guaranteed by caller.\n        CodePoint(unsafe { CodePointInner::new_unchecked(value) })\n    }",
+  "callees": [
+    "67499480346920193986871918260744463750"
+  ]
+}

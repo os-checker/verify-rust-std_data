@@ -1,0 +1,16 @@
+{
+  "file": "core/src/wtf8.rs",
+  "name": "<wtf8::Wtf8CodePoints<'_> as clone::Clone>::clone",
+  "hash": "1825549383105606633416040317177190423410",
+  "hash_direct": "101915686309517623368149266455441894924",
+  "src": "Clone",
+  "macro_backtrace": [
+    {
+      "callsite": "Clone",
+      "defsite": "pub macro Clone($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ],
+  "callees": [
+    "1127448244019747137816948501807508054133"
+  ]
+}

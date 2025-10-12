@@ -1,0 +1,7 @@
+{
+  "file": "core/src/char/methods.rs",
+  "name": "char::methods::<impl char>::is_control",
+  "hash": "100152346448650025919357157074383610137",
+  "hash_direct": "407045092876445888918356510397644257971",
+  "src": "pub fn is_control(self) -> bool {\n        // According to\n        // https://www.unicode.org/policies/stability_policy.html#Property_Value,\n        // the set of codepoints in `Cc` will never change.\n        // So we can just hard-code the patterns to match against instead of using a table.\n        matches!(self, '\\0'..='\\x1f' | '\\x7f'..='\\u{9f}')\n    }"
+}

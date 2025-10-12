@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/traits/collect.rs",
+  "name": "<core::iter::FlatMap<core::str::Chars<'_>, core::char::EscapeDebug, {closure@<core::wtf8::Wtf8 as core::fmt::Debug>::fmt::write_str_escaped::{closure#0}}> as core::iter::IntoIterator>::into_iter",
+  "hash": "875794310683837788414818593941513577588",
+  "hash_direct": "1505750176784111808694996578797001671",
+  "src": "fn into_iter(self) -> I {\n        self\n    }"
+}

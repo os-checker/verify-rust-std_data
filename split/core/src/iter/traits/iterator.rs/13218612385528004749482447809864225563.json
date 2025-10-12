@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<core::iter::Map<core::slice::Iter<'_, u8>, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/alloc/src/str.rs:710:49: 710:52}> as core::iter::Iterator>::collect::<vec::Vec<u8>>::{closure#0}",
+  "hash": "13218612385528004749482447809864225563",
+  "hash_direct": "1228257812627946517014248511585857080071",
+  "src": "|high| high >= hint.0"
+}

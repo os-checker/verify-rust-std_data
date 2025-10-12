@@ -1,0 +1,12 @@
+{
+  "file": "core/src/panic/location.rs",
+  "name": "panic::location::Location::<'_>::file",
+  "hash": "235183243893836060312628337207698731044",
+  "hash_direct": "58818727413121275646890191101423805469",
+  "src": "pub const fn file(&self) -> &'a str {\n        // SAFETY: The filename is valid.\n        unsafe { self.filename.as_ref() }\n    }",
+  "callees": [
+    "800005153452579470712163306688074924140",
+    "354768622484284718112041554322788996628",
+    "168934101732434080516899296687203852648"
+  ]
+}

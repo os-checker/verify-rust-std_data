@@ -1,0 +1,21 @@
+{
+  "file": "core/src/fmt/num.rs",
+  "name": "fmt::num::<impl fmt::Binary for u128>::fmt::BASE",
+  "hash": "1496676191621377649016866253882900051651",
+  "hash_direct": "128245984650097651908428711602904027700",
+  "src": "const BASE: $Unsigned = DIG_TAB.len() as $Unsigned;",
+  "macro_backtrace": [
+    {
+      "callsite": "radix_integer! { fmt::Binary   for $Signed and $Unsigned, \"0b\", b\"01\" }",
+      "defsite": "macro_rules! radix_integer {\n    (fmt::$Trait:ident for $Signed:ident and $Unsigned:ident, $prefix:literal, $dig_tab:literal) => {\n        #[stable(feature = \"rust1\", since = \"1.0.0\")]\n        impl fmt::$Trait for $Unsigned {\n            /// Format unsigned integers in the radix.\n            fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {\n                // Check macro arguments at compile time.\n                const {\n                    assert!($Unsigned::MIN == 0, \"need unsigned\");\n                    assert!($dig_tab.is_ascii(), \"need single-byte entries\");\n                }\n\n                // ASCII digits in ascending order are used as a lookup table.\n                const DIG_TAB: &[u8] = $dig_tab;\n                const BASE: $Unsigned = DIG_TAB.len() as $Unsigned;\n                const MAX_DIG_N: usize = $Unsigned::MAX.ilog(BASE) as usize + 1;\n\n                // Buffer digits of self with right alignment.\n                let mut buf = [MaybeUninit::<u8>::uninit(); MAX_DIG_N];\n                // Count the number of bytes in buf that are not initialized.\n                let mut offset = buf.len();\n\n                // Accumulate each digit of the number from the least\n                // significant to the most significant figure.\n                let mut remain = *self;\n                loop {\n                    let digit = remain % BASE;\n                    remain /= BASE;\n\n                    offset -= 1;\n                    // SAFETY: `remain` will reach 0 and we will break before `offset` wraps\n                    unsafe { core::hint::assert_unchecked(offset < buf.len()) }\n                    buf[offset].write(DIG_TAB[digit as usize]);\n                    if remain == 0 {\n                        break;\n                    }\n                }\n\n                // SAFETY: Starting from `offset`, all elements of the slice have been set.\n                let digits = unsafe { slice_buffer_to_str(&buf, offset) };\n                f.pad_integral(true, $prefix, digits)\n            }\n        }\n\n        #[stable(feature = \"rust1\", since = \"1.0.0\")]\n        impl fmt::$Trait for $Signed {\n            /// Format signed integers in the two’s-complement form.\n            fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {\n                fmt::$Trait::fmt(&self.cast_unsigned(), f)\n            }\n        }\n    };\n}"
+    },
+    {
+      "callsite": "radix_integers! { i128, u128 }",
+      "defsite": "macro_rules! radix_integers {\n    ($Signed:ident, $Unsigned:ident) => {\n        radix_integer! { fmt::Binary   for $Signed and $Unsigned, \"0b\", b\"01\" }\n        radix_integer! { fmt::Octal    for $Signed and $Unsigned, \"0o\", b\"01234567\" }\n        radix_integer! { fmt::LowerHex for $Signed and $Unsigned, \"0x\", b\"0123456789abcdef\" }\n        radix_integer! { fmt::UpperHex for $Signed and $Unsigned, \"0x\", b\"0123456789ABCDEF\" }\n    };\n}"
+    }
+  ],
+  "callees": [
+    "100566549119408744214400768677206684395",
+    "85792172357998657915509705891549832202"
+  ]
+}

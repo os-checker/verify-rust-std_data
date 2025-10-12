@@ -1,0 +1,10 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<ops::range::Range<usize> as iter::traits::iterator::Iterator>::skip",
+  "hash": "5362885408968349414622654779595370654",
+  "hash_direct": "927236405245852257217173400461872893609",
+  "src": "fn skip(self, n: usize) -> Skip<Self>\n    where\n        Self: Sized,\n    {\n        Skip::new(self, n)\n    }",
+  "callees": [
+    "115937277923474507805311091435719418219"
+  ]
+}

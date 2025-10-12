@@ -1,7 +1,0 @@
-{
-  "file": "core/src/time.rs",
-  "name": "time::TryFromFloatSecsError::description",
-  "hash": "247677837715132856214705198943614511338",
-  "hash_direct": "3125363541359510924004964564572915799",
-  "src": "const fn description(&self) -> &'static str {\n        match self.kind {\n            TryFromFloatSecsErrorKind::Negative => {\n                \"cannot convert float seconds to Duration: value is negative\"\n            }\n            TryFromFloatSecsErrorKind::OverflowOrNan => {\n                \"cannot convert float seconds to Duration: value is either too big or NaN\"\n            }\n        }\n    }"
-}

@@ -1,0 +1,14 @@
+{
+  "file": "core/src/ops/function.rs",
+  "name": "<fn([u8; core::::num::{impl#7}::from_be_bytes::{constant#0}]) -> u16 {core::num::<impl u16>::from_be_bytes} as core::ops::FnMut<([u8; 2],)>>::call_mut",
+  "hash": "1679812924801921140510137166035386030402",
+  "hash_direct": "496830185499450158217680949387069762729",
+  "inst_kind": "\"Shim\"",
+  "src": "extern \"rust-call\" fn call_mut(&mut self, args: Args) -> Self::Output;",
+  "callees": [
+    "1617570292963852830913345087424814033855",
+    "987031093223511743510569934423363728762",
+    "164920246545788730618233309646997589036",
+    "80694080790607962231671899254960220588"
+  ]
+}

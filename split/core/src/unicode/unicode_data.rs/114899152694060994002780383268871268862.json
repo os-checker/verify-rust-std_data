@@ -1,0 +1,10 @@
+{
+  "file": "core/src/unicode/unicode_data.rs",
+  "name": "unicode::unicode_data::bitset_search::<123, 16, 20, 56, 21>",
+  "hash": "114899152694060994002780383268871268862",
+  "hash_direct": "168802729025613012915535657693917692740",
+  "src": "const fn bitset_search<\n    const N: usize,\n    const CHUNK_SIZE: usize,\n    const N1: usize,\n    const CANONICAL: usize,\n    const CANONICALIZED: usize,\n>(\n    needle: u32,\n    chunk_idx_map: &[u8; N],\n    bitset_chunk_idx: &[[u8; CHUNK_SIZE]; N1],\n    bitset_canonical: &[u64; CANONICAL],\n    bitset_canonicalized: &[(u8, u8); CANONICALIZED],\n) -> bool {\n    let bucket_idx = (needle / 64) as usize;\n    let chunk_map_idx = bucket_idx / CHUNK_SIZE;\n    let chunk_piece = bucket_idx % CHUNK_SIZE;\n    // FIXME(const-hack): Revert to `slice::get` when slice indexing becomes possible in const.\n    let chunk_idx = if chunk_map_idx < chunk_idx_map.len() {\n        chunk_idx_map[chunk_map_idx]\n    } else {\n        return false;\n    };\n    let idx = bitset_chunk_idx[chunk_idx as usize][chunk_piece] as usize;\n    // FIXME(const-hack): Revert to `slice::get` when slice indexing becomes possible in const.\n    let word = if idx < bitset_canonical.len() {\n        bitset_canonical[idx]\n    } else {\n        let (real_idx, mapping) = bitset_canonicalized[idx - bitset_canonical.len()];\n        let mut word = bitset_canonical[real_idx as usize];\n        let should_invert = mapping & (1 << 6) != 0;\n        if should_invert {\n            word = !word;\n        }\n        // Lower 6 bits\n        let quantity = mapping & ((1 << 6) - 1);\n        if mapping & (1 << 7) != 0 {\n            // shift\n            word >>= quantity as u64;\n        } else {\n            word = word.rotate_left(quantity as u32);\n        }\n        word\n    };\n    (word & (1 << (needle % 64) as u64)) != 0\n}",
+  "callees": [
+    "1307016191746963152911648197049651189871"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "file": "core/src/wtf8.rs",
+  "name": "wtf8::CodePoint::from_char",
+  "hash": "137222369825588898039407712901858202996",
+  "hash_direct": "138752032843640458607483214524840342534",
+  "src": "pub fn from_char(value: char) -> CodePoint {\n        // SAFETY: All char are valid for this type.\n        unsafe { CodePoint::from_u32_unchecked(value as u32) }\n    }",
+  "callees": [
+    "72906633798708398514741480268678697739",
+    "84266730152490042238903478970182342750"
+  ]
+}

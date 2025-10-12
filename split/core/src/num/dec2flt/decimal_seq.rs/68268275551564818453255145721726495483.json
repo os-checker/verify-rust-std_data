@@ -1,0 +1,10 @@
+{
+  "file": "core/src/num/dec2flt/decimal_seq.rs",
+  "name": "num::dec2flt::decimal_seq::DecimalSeq::left_shift::kani_register_loop_contract_149_9_161_10::<{closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/num/dec2flt/decimal_seq.rs:141:47: 147:75}>",
+  "hash": "68268275551564818453255145721726495483",
+  "hash_direct": "174507016312890419519580753564720761922",
+  "attrs": [
+    "#[kanitool::fn_marker = \"kani_register_loop_contract\"]\n"
+  ],
+  "src": "read_index <= Self::MAX_DIGITS &&\n            write_index == read_index + num_new_digits &&\n            n < 10u64 << (shift - 1) &&\n            (n == 0 || (shift & 63) <= 3 || (shift & 63) >= 61 || write_index > 0) &&\n            self.num_digits <= Self::MAX_DIGITS &&\n            self.decimal_point <= self.num_digits as i32 &&\n            forall!(|i in (0,DecimalSeq::MAX_DIGITS)| self.digits[i] <= 9)"
+}

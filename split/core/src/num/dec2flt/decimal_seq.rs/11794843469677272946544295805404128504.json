@@ -1,0 +1,10 @@
+{
+  "file": "core/src/num/dec2flt/decimal_seq.rs",
+  "name": "num::dec2flt::decimal_seq::DecimalSeq::trim::kani_register_loop_contract_93_9_95_10::<{closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/num/dec2flt/decimal_seq.rs:92:47: 92:82}>",
+  "hash": "11794843469677272946544295805404128504",
+  "hash_direct": "756838648497169699116666884042440605812",
+  "attrs": [
+    "#[kanitool::fn_marker = \"kani_register_loop_contract\"]\n"
+  ],
+  "src": "self.num_digits <= Self::MAX_DIGITS"
+}

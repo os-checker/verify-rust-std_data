@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/adapters/step_by.rs",
+  "name": "<iter::adapters::rev::Rev<iter::adapters::skip::Skip<ops::range::Range<usize>>> as iter::adapters::step_by::SpecRangeSetup<iter::adapters::rev::Rev<iter::adapters::skip::Skip<ops::range::Range<usize>>>>>::setup",
+  "hash": "23134458339938598921008615884984951637",
+  "hash_direct": "115336668884830376415772892896086206489",
+  "src": "default fn setup(inner: T, _step: usize) -> T {\n        inner\n    }"
+}

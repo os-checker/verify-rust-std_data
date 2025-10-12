@@ -1,0 +1,11 @@
+{
+  "file": "core/src/char/convert.rs",
+  "name": "core::char::convert::from_u32",
+  "hash": "99868170223016098517564450843296325450",
+  "hash_direct": "142527372548115825123362668941700340197",
+  "src": "pub(super) const fn from_u32(i: u32) -> Option<char> {\n    // FIXME(const-hack): once Result::ok is const fn, use it here\n    match char_try_from_u32(i) {\n        Ok(c) => Some(c),\n        Err(_) => None,\n    }\n}",
+  "callees": [
+    "104550528282774795524117016372908034501",
+    "596717226459156418513221677816795970108"
+  ]
+}

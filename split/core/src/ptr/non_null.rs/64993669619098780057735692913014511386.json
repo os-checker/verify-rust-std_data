@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "ptr::non_null::NonNull::<time::TryFromFloatSecsError>::cast::<()>",
+  "hash": "64993669619098780057735692913014511386",
+  "hash_direct": "125264541620744126214049681066527240790",
+  "src": "pub const fn cast<U>(self) -> NonNull<U> {\n        // SAFETY: `self` is a `NonNull` pointer which is necessarily non-null\n        unsafe { NonNull { pointer: self.as_ptr() as *mut U } }\n    }",
+  "callees": [
+    "128204806972428178817777260486679155391"
+  ]
+}

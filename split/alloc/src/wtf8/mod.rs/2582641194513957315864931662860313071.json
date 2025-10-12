@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/wtf8/mod.rs",
+  "name": "wtf8::Wtf8Buf::from_bytes_unchecked",
+  "hash": "2582641194513957315864931662860313071",
+  "hash_direct": "601392383979460709595815690078858690",
+  "src": "pub unsafe fn from_bytes_unchecked(value: Vec<u8>) -> Wtf8Buf {\n        Wtf8Buf { bytes: value, is_known_utf8: false }\n    }"
+}

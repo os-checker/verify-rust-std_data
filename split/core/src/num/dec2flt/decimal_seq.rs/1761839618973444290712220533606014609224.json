@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/dec2flt/decimal_seq.rs",
+  "name": "num::dec2flt::decimal_seq::decimal_seq_verify::<impl kani::Arbitrary for num::dec2flt::decimal_seq::DecimalSeq>::any::{closure#1}",
+  "hash": "1761839618973444290712220533606014609224",
+  "hash_direct": "32031501054997133577296389425426190007",
+  "src": "|x| *x >= 0"
+}

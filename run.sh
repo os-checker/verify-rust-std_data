@@ -80,7 +80,7 @@ declare -A cmds=(
 )
 
 [[ $# -eq 0 ]] && {
-  echo "Usage: $0 {all|merge_diff|results|merge_results} [args...]"
+  echo "Usage: $0 {gen|merge_diff|results|merge_results} [args...]"
   exit 1
 }
 

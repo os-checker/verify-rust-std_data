@@ -1,0 +1,11 @@
+{
+  "file": "core/src/num/dec2flt/parse.rs",
+  "name": "num::dec2flt::parse::try_parse_19digits",
+  "hash": "1729759490968732088117726153187329646607",
+  "hash_direct": "109541452157687009212491514843943727655",
+  "src": "fn try_parse_19digits(s_ref: &mut &[u8], x: &mut u64) {\n    let mut s = *s_ref;\n\n    while *x < MIN_19DIGIT_INT {\n        if let Some((c, s_next)) = s.split_first() {\n            let digit = c.wrapping_sub(b'0');\n\n            if digit < 10 {\n                *x = (*x * 10) + digit as u64; // no overflows here\n                s = s_next;\n            } else {\n                break;\n            }\n        } else {\n            break;\n        }\n    }\n\n    *s_ref = s;\n}",
+  "callees": [
+    "62117014233557603814466131219830999524",
+    "78204921097721474912957416123615891283"
+  ]
+}

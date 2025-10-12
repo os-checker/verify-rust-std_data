@@ -1,0 +1,17 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/iter.rs",
+  "name": "<kani::KaniRefIter<'_, u8> as kani::KaniIter>::first",
+  "hash": "172370803205269877729229040230112985546",
+  "hash_direct": "1718452346606690260814563742502767205100",
+  "src": "fn first(&self) -> Self::Item {\n                unsafe { &*self.ptr }\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "kani_core::generate_iter!()",
+      "defsite": "macro_rules! generate_iter"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ]
+}

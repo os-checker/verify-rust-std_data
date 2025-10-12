@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/adapters/map.rs",
+  "name": "iter::adapters::map::Map::<array::drain::Drain<'_, ()>, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/ops/try_trait.rs:393:9: 393:17}>::new",
+  "hash": "13890377396431440028247685791743348521",
+  "hash_direct": "71892429312218762610136566432015399645",
+  "src": "pub(in crate::iter) fn new(iter: I, f: F) -> Map<I, F> {\n        Map { iter, f }\n    }"
+}

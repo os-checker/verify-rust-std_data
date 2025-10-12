@@ -1,0 +1,11 @@
+{
+  "file": "core/src/result.rs",
+  "name": "core::result::Result::<(core::alloc::Layout, usize), core::alloc::LayoutError>::map::<core::alloc::Layout, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/alloc/src/raw_vec/mod.rs:798:33: 798:49}>",
+  "hash": "20804767484639170545815388037949833040",
+  "hash_direct": "100330397325124370753458198424320338356",
+  "src": "pub const fn map<U, F>(self, op: F) -> Result<U, E>\n    where\n        F: [const] FnOnce(T) -> U + [const] Destruct,\n    {\n        match self {\n            Ok(t) => Ok(op(t)),\n            Err(e) => Err(e),\n        }\n    }",
+  "callees": [
+    "53926950490582236258169579281820050953",
+    "2606110305375740603218034316591318086"
+  ]
+}

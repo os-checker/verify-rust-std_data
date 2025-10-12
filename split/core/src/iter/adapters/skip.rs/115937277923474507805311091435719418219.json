@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/adapters/skip.rs",
+  "name": "iter::adapters::skip::Skip::<ops::range::Range<usize>>::new",
+  "hash": "115937277923474507805311091435719418219",
+  "hash_direct": "103241977751979700078780552898770619336",
+  "src": "pub(in crate::iter) fn new(iter: I, n: usize) -> Skip<I> {\n        Skip { iter, n }\n    }"
+}

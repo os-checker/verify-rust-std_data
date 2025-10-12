@@ -1,0 +1,7 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "fmt::FormattingOptions::width",
+  "hash": "399585986683883915517776172855848018359",
+  "hash_direct": "142124226599006014483594070228193033108",
+  "src": "pub const fn width(&mut self, width: Option<u16>) -> &mut Self {\n        if let Some(width) = width {\n            self.flags |= flags::WIDTH_FLAG;\n            self.width = width;\n        } else {\n            self.flags &= !flags::WIDTH_FLAG;\n            self.width = 0;\n        }\n        self\n    }"
+}

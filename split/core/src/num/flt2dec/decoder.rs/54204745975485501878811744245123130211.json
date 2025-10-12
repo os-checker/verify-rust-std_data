@@ -1,0 +1,23 @@
+{
+  "file": "core/src/num/flt2dec/decoder.rs",
+  "name": "num::flt2dec::decoder::decode::<f16>",
+  "hash": "54204745975485501878811744245123130211",
+  "hash_direct": "13842836886224388995805167168711794622",
+  "src": "pub fn decode<T: DecodableFloat>(v: T) -> (/*negative?*/ bool, FullDecoded) {\n    let (mant, exp, sign) = v.integer_decode();\n    let even = (mant & 1) == 0;\n    let decoded = match v.classify() {\n        FpCategory::Nan => FullDecoded::Nan,\n        FpCategory::Infinite => FullDecoded::Infinite,\n        FpCategory::Zero => FullDecoded::Zero,\n        FpCategory::Subnormal => {\n            // neighbors: (mant - 2, exp) -- (mant, exp) -- (mant + 2, exp)\n            // Float::integer_decode always preserves the exponent,\n            // so the mantissa is scaled for subnormals.\n            FullDecoded::Finite(Decoded { mant, minus: 1, plus: 1, exp, inclusive: even })\n        }\n        FpCategory::Normal => {\n            let minnorm = <T as DecodableFloat>::min_pos_norm_value().integer_decode();\n            if mant == minnorm.0 {\n                // neighbors: (maxmant, exp - 1) -- (minnormmant, exp) -- (minnormmant + 1, exp)\n                // where maxmant = minnormmant * 2 - 1\n                FullDecoded::Finite(Decoded {\n                    mant: mant << 2,\n                    minus: 1,\n                    plus: 2,\n                    exp: exp - 2,\n                    inclusive: even,\n                })\n            } else {\n                // neighbors: (mant - 1, exp) -- (mant, exp) -- (mant + 1, exp)\n                FullDecoded::Finite(Decoded {\n                    mant: mant << 1,\n                    minus: 1,\n                    plus: 1,\n                    exp: exp - 1,\n                    inclusive: even,\n                })\n            }\n        }\n    };\n    (sign < 0, decoded)\n}",
+  "callees": [
+    "99976419681519545577929510319272264645",
+    "58051456222089673938298762129264340947",
+    "98734322721287726416755294233666693251",
+    "1346210993873871991211666290987960334823",
+    "16888542162505057818213716203797475820",
+    "1330230614802694744615177276662987673529",
+    "127687323327805648567195218735907442787",
+    "821624783380660323912636252934479695499",
+    "331178422282659479317337493575173626152",
+    "1411683336468757870511743711763464370685",
+    "173427564344180055716436903422574280366",
+    "150746008680852917955868139213269468543",
+    "364936906377227211710947794863491976999",
+    "485915223492594619514764989821076116849"
+  ]
+}

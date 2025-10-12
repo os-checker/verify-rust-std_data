@@ -1,0 +1,10 @@
+{
+  "file": "core/src/time.rs",
+  "name": "time::Duration::subsec_millis",
+  "hash": "184084505959136145138783942518865749352",
+  "hash_direct": "80744289255809345709315365289901986923",
+  "src": "pub const fn subsec_millis(&self) -> u32 {\n        self.nanos.as_inner() / NANOS_PER_MILLI\n    }",
+  "callees": [
+    "27460360985597728751338915468532901532"
+  ]
+}

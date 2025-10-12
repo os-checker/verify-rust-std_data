@@ -1,0 +1,10 @@
+{
+  "file": "core/src/ptr/mut_ptr.rs",
+  "name": "ptr::mut_ptr::<impl *mut usize>::drop_in_place",
+  "hash": "43593707891869731298181689567737146647",
+  "hash_direct": "158813127926197199424024766037432046326",
+  "src": "pub unsafe fn drop_in_place(self) {\n        // SAFETY: the caller must uphold the safety contract for `drop_in_place`.\n        unsafe { drop_in_place(self) }\n    }",
+  "callees": [
+    "18924474281332607947427114014473837479"
+  ]
+}

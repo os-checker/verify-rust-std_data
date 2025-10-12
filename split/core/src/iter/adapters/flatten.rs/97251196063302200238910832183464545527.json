@@ -1,0 +1,11 @@
+{
+  "file": "core/src/iter/adapters/flatten.rs",
+  "name": "iter::adapters::flatten::FlattenCompat::<iter::adapters::map::Map<str::iter::Chars<'_>, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/wtf8.rs:148:41: 148:44}>, char::EscapeDebug>::new",
+  "hash": "97251196063302200238910832183464545527",
+  "hash_direct": "16969151450217256162532711164290800079",
+  "src": "fn new(iter: I) -> FlattenCompat<I, U> {\n        FlattenCompat { iter: iter.fuse(), frontiter: None, backiter: None }\n    }",
+  "callees": [
+    "69149089423387280687043564174661471904",
+    "171396606861367566904190663197397245406"
+  ]
+}

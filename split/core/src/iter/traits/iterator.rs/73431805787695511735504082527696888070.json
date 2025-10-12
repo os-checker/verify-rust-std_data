@@ -1,0 +1,10 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<core::iter::Map<core::str::Chars<'_>, {closure@<core::wtf8::Wtf8 as core::fmt::Debug>::fmt::write_str_escaped::{closure#0}}> as core::iter::Iterator>::fuse",
+  "hash": "73431805787695511735504082527696888070",
+  "hash_direct": "1096325067130628695212750203375718454324",
+  "src": "fn fuse(self) -> Fuse<Self>\n    where\n        Self: Sized,\n    {\n        Fuse::new(self)\n    }",
+  "callees": [
+    "14542777221471563433465828270021882396"
+  ]
+}

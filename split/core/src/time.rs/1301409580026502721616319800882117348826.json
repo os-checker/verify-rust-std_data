@@ -1,0 +1,20 @@
+{
+  "file": "core/src/time.rs",
+  "name": "<time::Duration as cmp::PartialOrd>::partial_cmp",
+  "hash": "1301409580026502721616319800882117348826",
+  "hash_direct": "862419745965990167516854776544554439554",
+  "src": "PartialOrd",
+  "macro_backtrace": [
+    {
+      "callsite": "PartialOrd",
+      "defsite": "pub macro PartialOrd($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ],
+  "callees": [
+    "131804240691040385559237509421631119204",
+    "877085482244590541498241263273192687",
+    "12272874884680288726617854333721840052",
+    "42800782563270888976682317232258164000",
+    "27460360985597728751338915468532901532"
+  ]
+}

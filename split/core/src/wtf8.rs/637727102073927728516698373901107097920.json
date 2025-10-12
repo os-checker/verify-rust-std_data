@@ -1,0 +1,7 @@
+{
+  "file": "core/src/wtf8.rs",
+  "name": "wtf8::Wtf8::from_bytes_unchecked",
+  "hash": "637727102073927728516698373901107097920",
+  "hash_direct": "123151464392691716351982042880685399255",
+  "src": "pub unsafe fn from_bytes_unchecked(value: &[u8]) -> &Wtf8 {\n        // SAFETY: start with &[u8], end with fancy &[u8]\n        unsafe { &*(value as *const [u8] as *const Wtf8) }\n    }"
+}

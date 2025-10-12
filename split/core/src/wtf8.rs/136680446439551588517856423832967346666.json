@@ -1,0 +1,18 @@
+{
+  "file": "core/src/wtf8.rs",
+  "name": "<wtf8::CodePoint as cmp::Ord>::cmp",
+  "hash": "136680446439551588517856423832967346666",
+  "hash_direct": "115041208618128508253673395594741746472",
+  "src": "Ord",
+  "macro_backtrace": [
+    {
+      "callsite": "Ord",
+      "defsite": "pub macro Ord($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ],
+  "callees": [
+    "131804240691040385559237509421631119204",
+    "35625119464217248242707209573348038104",
+    "107496796079202766681632399080957069720"
+  ]
+}

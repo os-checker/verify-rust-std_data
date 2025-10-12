@@ -1,8 +1,0 @@
-{
-  "file": "core/src/ptr/mod.rs",
-  "name": "core::ptr::drop_in_place::<{closure@core::ops::try_trait::NeverShortCircuit<()>::wrap_mut_2<(), char, {closure@core::iter::Iterator::for_each::call<char, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/alloc/src/string.rs:2407:27: 2407:35}>::{closure#0}}>::{closure#0}}>",
-  "hash": "149620253734957796606598070853584287534",
-  "hash_direct": "39576760428787359818991399687308068286",
-  "inst_kind": "\"Shim\"",
-  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
-}

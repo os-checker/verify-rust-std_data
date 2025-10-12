@@ -1,0 +1,15 @@
+{
+  "file": "core/src/unicode/unicode_data.rs",
+  "name": "unicode::unicode_data::cased::SHORT_OFFSET_RUNS",
+  "hash": "329303812261095736118006047654596234821",
+  "hash_direct": "60885504867108453239555413965322683611",
+  "src": "static SHORT_OFFSET_RUNS: [ShortOffsetRunHeader; 22] = [\n        ShortOffsetRunHeader::new(0, 4256), ShortOffsetRunHeader::new(51, 5024),\n        ShortOffsetRunHeader::new(61, 7296), ShortOffsetRunHeader::new(65, 7958),\n        ShortOffsetRunHeader::new(74, 9398), ShortOffsetRunHeader::new(149, 11264),\n        ShortOffsetRunHeader::new(151, 42560), ShortOffsetRunHeader::new(163, 43824),\n        ShortOffsetRunHeader::new(183, 64256), ShortOffsetRunHeader::new(189, 65313),\n        ShortOffsetRunHeader::new(193, 66560), ShortOffsetRunHeader::new(197, 67456),\n        ShortOffsetRunHeader::new(219, 68736), ShortOffsetRunHeader::new(227, 71840),\n        ShortOffsetRunHeader::new(235, 93760), ShortOffsetRunHeader::new(237, 119808),\n        ShortOffsetRunHeader::new(239, 120486), ShortOffsetRunHeader::new(276, 122624),\n        ShortOffsetRunHeader::new(299, 122928), ShortOffsetRunHeader::new(305, 125184),\n        ShortOffsetRunHeader::new(307, 127280), ShortOffsetRunHeader::new(309, 1241482),\n    ];",
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "243931809744896974812513529918607549579",
+    "1752989996936949203916036071159051010960",
+    "573025224078501084417397699761968621329"
+  ]
+}

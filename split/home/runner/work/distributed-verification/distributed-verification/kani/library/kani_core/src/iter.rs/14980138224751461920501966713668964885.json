@@ -1,0 +1,21 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/iter.rs",
+  "name": "<ops::range::Range<u128> as kani::KaniIntoIter>::kani_into_iter",
+  "hash": "14980138224751461920501966713668964885",
+  "hash_direct": "845093556604804051112772718425859159720",
+  "src": "fn kani_into_iter(self) -> Self::Iter {\n                        self\n                    }",
+  "macro_backtrace": [
+    {
+      "callsite": "generate_impl_KaniIter_range!(u128)",
+      "defsite": "macro_rules! generate_impl_KaniIter_range {\n            ($t:ty) => {\n                impl KaniIntoIter for Range<$t> {\n                    type Iter = Range<$t>;\n                    fn kani_into_iter(self) -> Self::Iter {\n                        self\n                    }\n                }\n            };\n        }"
+    },
+    {
+      "callsite": "kani_core::generate_iter!()",
+      "defsite": "macro_rules! generate_iter"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "file": "core/src/intrinsics/mod.rs",
+  "name": "intrinsics::verify::should_fail_tuple_to_tuple",
+  "hash": "816670127590145549711058689959766512555",
+  "hash_direct": "2932017416196781047636245588988331829",
+  "proof_kind": "\"Standard\"",
+  "attrs": [
+    "#[kanitool::should_panic]\n",
+    "#[kanitool::stub_verified = \"transmute_unchecked_wrapper\"]\n",
+    "#[kanitool::proof]\n"
+  ],
+  "src": "fn should_fail_tuple_to_tuple() {\n        let src: (u8, u8) = (kani::any(), kani::any_where(|x| *x > 1));\n        let dst: (u8, bool) = unsafe { transmute_unchecked_wrapper(src) };\n    }",
+  "callees": [
+    "175920677112080751315464247289376690681",
+    "42938380487287233808576660475073668669",
+    "223423045988591996014060300689406774665",
+    "129384448114184712212615089461891361189",
+    "36027384788613182351877492988660044926",
+    "139704976908753389291209564980972955015",
+    "134563002825040056909315119755976987940",
+    "35222725392457609435678438532064928497",
+    "159601435369922003314278587796088241623"
+  ]
+}

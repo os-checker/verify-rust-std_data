@@ -1,0 +1,8 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "ptr::drop_in_place::<{closure@/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/lib.rs:205:33: 205:37}>",
+  "hash": "1046794659200866944112594283578730164606",
+  "hash_direct": "1243500347288152921016013849009565941798",
+  "inst_kind": "\"Shim\"",
+  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
+}

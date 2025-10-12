@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/adapters/map.rs",
+  "name": "core::iter::adapters::map::map_fold::<&bool, u8, u8, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/alloc/src/str.rs:662:32: 662:35}, {closure@<u8 as core::iter::Sum>::sum<core::iter::Map<core::slice::Iter<'_, bool>, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/alloc/src/str.rs:662:32: 662:35}>>::{closure#0}}>",
+  "hash": "91128575694341564707460474725168578890",
+  "hash_direct": "17581960029778254601545766132613654653",
+  "src": "fn map_fold<T, B, Acc>(\n    mut f: impl FnMut(T) -> B,\n    mut g: impl FnMut(Acc, B) -> Acc,\n) -> impl FnMut(Acc, T) -> Acc {\n    move |acc, elt| g(acc, f(elt))\n}"
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/traits/collect.rs",
+  "name": "<iter::adapters::step_by::StepBy<iter::adapters::rev::Rev<iter::adapters::skip::Skip<ops::range::Range<usize>>>> as iter::traits::collect::IntoIterator>::into_iter",
+  "hash": "65851033442715344443793921639623749561",
+  "hash_direct": "580168902718450147214179810804954780556",
+  "src": "fn into_iter(self) -> I {\n        self\n    }"
+}

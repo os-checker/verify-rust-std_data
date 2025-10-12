@@ -1,0 +1,12 @@
+{
+  "file": "core/src/hint.rs",
+  "name": "hint::spin_loop",
+  "hash": "18373020802021212176105694317921636196",
+  "hash_direct": "86215431570790929641751369736902649961",
+  "src": "pub fn spin_loop() {\n    crate::cfg_select! {\n        target_arch = \"x86\" => {\n            // SAFETY: the `cfg` attr ensures that we only execute this on x86 targets.\n            unsafe { crate::arch::x86::_mm_pause() }\n        }\n        target_arch = \"x86_64\" => {\n            // SAFETY: the `cfg` attr ensures that we only execute this on x86_64 targets.\n            unsafe { crate::arch::x86_64::_mm_pause() }\n        }\n        target_arch = \"riscv32\" => crate::arch::riscv32::pause(),\n        target_arch = \"riscv64\" => crate::arch::riscv64::pause(),\n        any(target_arch = \"aarch64\", target_arch = \"arm64ec\") => {\n            // SAFETY: the `cfg` attr ensures that we only execute this on aarch64 targets.\n            unsafe { crate::arch::aarch64::__isb(crate::arch::aarch64::SY) }\n        }\n        all(target_arch = \"arm\", target_feature = \"v6\") => {\n            // SAFETY: the `cfg` attr ensures that we only execute this on arm targets\n            // with support for the v6 feature.\n            unsafe { crate::arch::arm::__yield() }\n        }\n        target_arch = \"loongarch32\" => crate::arch::loongarch32::ibar::<0>(),\n        target_arch = \"loongarch64\" => crate::arch::loongarch64::ibar::<0>(),\n        _ => { /* do nothing */ }\n    }\n}",
+  "callees": [
+    "13846925087180981303035990539932075806",
+    "1106767033740742078512949697947954141369",
+    "1446081966469926424712809056754751983114"
+  ]
+}

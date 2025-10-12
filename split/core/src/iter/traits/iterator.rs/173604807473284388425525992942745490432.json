@@ -1,0 +1,10 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<iter::adapters::skip::Skip<ops::range::Range<usize>> as iter::traits::iterator::Iterator>::rev",
+  "hash": "173604807473284388425525992942745490432",
+  "hash_direct": "1127625817946140902010451365360049345765",
+  "src": "fn rev(self) -> Rev<Self>\n    where\n        Self: Sized + DoubleEndedIterator,\n    {\n        Rev::new(self)\n    }",
+  "callees": [
+    "4674594975919938547314863798114199354"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "file": "core/src/ascii.rs",
+  "name": "<ascii::EscapeDefault as iter::traits::iterator::Iterator>::size_hint",
+  "hash": "6672578801221819315105508154965308900",
+  "hash_direct": "59141579236166298355197412402104079769",
+  "src": "fn size_hint(&self) -> (usize, Option<usize>) {\n        let n = self.0.len();\n        (n, Some(n))\n    }",
+  "callees": [
+    "9122690305665940051388962439719640221",
+    "122576781510791772413446095572293380174"
+  ]
+}

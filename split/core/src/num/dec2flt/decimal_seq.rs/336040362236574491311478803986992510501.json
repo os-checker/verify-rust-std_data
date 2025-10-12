@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/dec2flt/decimal_seq.rs",
+  "name": "num::dec2flt::decimal_seq::decimal_seq_verify::check_right_shift::{closure#0}",
+  "hash": "336040362236574491311478803986992510501",
+  "hash_direct": "1628253696370008111318426432062597386704",
+  "src": "|x| *x > 0 && *x <= 60"
+}

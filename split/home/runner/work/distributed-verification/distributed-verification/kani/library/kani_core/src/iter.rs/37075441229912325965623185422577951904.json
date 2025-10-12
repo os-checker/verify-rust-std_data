@@ -1,0 +1,21 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/iter.rs",
+  "name": "<kani::KaniRefIter<'_, u8> as kani::KaniIter>::assumption",
+  "hash": "37075441229912325965623185422577951904",
+  "hash_direct": "1291953145525184540017297322569578194327",
+  "src": "fn assumption(&self) -> bool {\n                //SAFETY: this call is safe as Rust compiler will complain if we write a for-loop for uninitialized object\n                unsafe { mem::is_allocated(self.ptr as *const (), self.len) }\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "kani_core::generate_iter!()",
+      "defsite": "macro_rules! generate_iter"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ],
+  "callees": [
+    "1295499066349112484912490938496969975321",
+    "1815553186172281223816604261080148270538"
+  ]
+}

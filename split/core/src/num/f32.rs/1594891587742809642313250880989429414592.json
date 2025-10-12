@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f32.rs",
+  "name": "f32::<impl f32>::to_radians",
+  "hash": "1594891587742809642313250880989429414592",
+  "hash_direct": "317361138993630488813802265920640349624",
+  "src": "pub const fn to_radians(self) -> f32 {\n        // The division here is correctly rounded with respect to the true value of π/180.\n        // Although π is irrational and already rounded, the double rounding happens\n        // to produce correct result for f32.\n        const RADS_PER_DEG: f32 = consts::PI / 180.0;\n        self * RADS_PER_DEG\n    }"
+}

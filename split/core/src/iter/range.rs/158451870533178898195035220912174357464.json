@@ -1,0 +1,16 @@
+{
+  "file": "core/src/iter/range.rs",
+  "name": "<ascii::ascii_char::AsciiChar as iter::range::Step>::backward_checked",
+  "hash": "158451870533178898195035220912174357464",
+  "hash_direct": "51658454179260987476712041818687383891",
+  "src": "fn backward_checked(start: AsciiChar, count: usize) -> Option<AsciiChar> {\n        let end = Step::backward_checked(start.to_u8(), count)?;\n\n        // SAFETY: Values below that of a valid ASCII character are also valid ASCII\n        Some(unsafe { AsciiChar::from_u8_unchecked(end) })\n    }",
+  "callees": [
+    "15551977551413036531158252289522839939",
+    "211389067699639933614636457746408448112",
+    "2290980464301696929957012594850492860",
+    "562975586856471688612148749155815005525",
+    "59114905596214944275336065890603581369",
+    "136795678312592439615174150107319947358",
+    "33605783209889310876275651287772169825"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "file": "core/src/num/diy_float.rs",
+  "name": "num::diy_float::Fp::mul",
+  "hash": "61192806222280460022726642951850667017",
+  "hash_direct": "35871891678792857072618465784184451892",
+  "src": "pub fn mul(self, other: Self) -> Self {\n        let (lo, hi) = self.f.widening_mul(other.f);\n        let f = hi + (lo >> 63) /* round */;\n        let e = self.e + other.e + 64;\n        Self { f, e }\n    }",
+  "callees": [
+    "15780086404796901452171114016829526503",
+    "182589585921433151244757111956503984331",
+    "117998536721572181153424129200097728114",
+    "169520961882201194496320957712378488659"
+  ]
+}

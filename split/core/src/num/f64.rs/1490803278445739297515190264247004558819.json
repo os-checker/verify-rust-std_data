@@ -1,0 +1,11 @@
+{
+  "file": "core/src/num/f64.rs",
+  "name": "f64::<impl f64>::from_ne_bytes",
+  "hash": "1490803278445739297515190264247004558819",
+  "hash_direct": "110502740240776527606314606174617118027",
+  "src": "pub const fn from_ne_bytes(bytes: [u8; 8]) -> Self {\n        Self::from_bits(u64::from_ne_bytes(bytes))\n    }",
+  "callees": [
+    "36822172541893058416553893184635977627",
+    "96140319758256573166219708888473423648"
+  ]
+}

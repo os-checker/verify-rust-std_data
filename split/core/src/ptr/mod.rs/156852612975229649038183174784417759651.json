@@ -1,0 +1,8 @@
+{
+  "file": "core/src/ptr/mod.rs",
+  "name": "core::ptr::drop_in_place::<{closure@<core::iter::Map<core::slice::Iter<'_, u8>, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/alloc/src/str.rs:710:49: 710:52}> as core::iter::Iterator>::collect<vec::Vec<u8>>::{closure#0}}>",
+  "hash": "156852612975229649038183174784417759651",
+  "hash_direct": "1346149286597939569414267886939132218326",
+  "inst_kind": "\"Shim\"",
+  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
+}

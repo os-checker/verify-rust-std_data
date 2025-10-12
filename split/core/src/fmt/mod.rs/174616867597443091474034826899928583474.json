@@ -1,7 +1,0 @@
-{
-  "file": "core/src/fmt/mod.rs",
-  "name": "fmt::FormattingOptions::alternate",
-  "hash": "174616867597443091474034826899928583474",
-  "hash_direct": "5594504349453037414693946320243333223",
-  "src": "pub fn alternate(&mut self, alternate: bool) -> &mut Self {\n        if alternate {\n            self.flags |= flags::ALTERNATE_FLAG;\n        } else {\n            self.flags &= !flags::ALTERNATE_FLAG;\n        }\n        self\n    }"
-}

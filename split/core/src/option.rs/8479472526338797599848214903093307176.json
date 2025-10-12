@@ -1,0 +1,7 @@
+{
+  "file": "core/src/option.rs",
+  "name": "option::Option::<iter::adapters::map::Map<str::iter::Chars<'_>, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/wtf8.rs:148:41: 148:44}>>::as_mut",
+  "hash": "8479472526338797599848214903093307176",
+  "hash_direct": "89916208967476501593711569781131408907",
+  "src": "pub const fn as_mut(&mut self) -> Option<&mut T> {\n        match *self {\n            Some(ref mut x) => Some(x),\n            None => None,\n        }\n    }"
+}

@@ -1,0 +1,17 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/iter.rs",
+  "name": "kani::KaniEnumerateIter::<kani::KaniRefIter<'_, u8>>::new",
+  "hash": "358458189766559126416118138898036249006",
+  "hash_direct": "314288717621156965114908970973937014319",
+  "src": "pub fn new(iter: I) -> Self {\n                KaniEnumerateIter { iter }\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "kani_core::generate_iter!()",
+      "defsite": "macro_rules! generate_iter"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ]
+}

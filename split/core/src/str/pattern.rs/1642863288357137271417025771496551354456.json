@@ -1,0 +1,11 @@
+{
+  "file": "core/src/str/pattern.rs",
+  "name": "core::str::pattern::CharSearcher::<'_>::utf8_size",
+  "hash": "1642863288357137271417025771496551354456",
+  "hash_direct": "15930856359485388988222090810289218759",
+  "src": "fn utf8_size(&self) -> usize {\n        self.utf8_size.into()\n    }",
+  "callees": [
+    "1465239756534352918116949609466915830401",
+    "21494050064510967155859247947068579189"
+  ]
+}

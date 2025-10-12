@@ -1,7 +1,0 @@
-{
-  "file": "core/src/array/mod.rs",
-  "name": "array::try_from_trusted_iterator::next::<ops::try_trait::NeverShortCircuit<(u8, u8)>, iter::adapters::map::Map<array::drain::Drain<'_, ()>, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/ops/try_trait.rs:396:9: 396:17}>>",
-  "hash": "1098637663214696834617800233529881276034",
-  "hash_direct": "76958603823020382732323515360636510976",
-  "src": "fn next<T>(mut iter: impl UncheckedIterator<Item = T>) -> impl FnMut(usize) -> T {\n        move |_| {\n            // SAFETY: We know that `from_fn` will call this at most N times,\n            // and we checked to ensure that we have at least that many items.\n            unsafe { iter.next_unchecked() }\n        }\n    }"
-}

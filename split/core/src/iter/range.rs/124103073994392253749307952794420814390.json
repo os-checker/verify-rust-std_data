@@ -1,0 +1,10 @@
+{
+  "file": "core/src/iter/range.rs",
+  "name": "<char as iter::range::Step>::steps_between",
+  "hash": "124103073994392253749307952794420814390",
+  "hash_direct": "51741396393109910125533211346724676633",
+  "src": "fn steps_between(&start: &char, &end: &char) -> (usize, Option<usize>) {\n        let start = start as u32;\n        let end = end as u32;\n        if start <= end {\n            let count = end - start;\n            if start < 0xD800 && 0xE000 <= end {\n                if let Ok(steps) = usize::try_from(count - 0x800) {\n                    (steps, Some(steps))\n                } else {\n                    (usize::MAX, None)\n                }\n            } else {\n                if let Ok(steps) = usize::try_from(count) {\n                    (steps, Some(steps))\n                } else {\n                    (usize::MAX, None)\n                }\n            }\n        } else {\n            (0, None)\n        }\n    }",
+  "callees": [
+    "92936935846902606246615418880539885029"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "file": "core/src/option.rs",
+  "name": "core::option::Option::<[u8; 2]>::map::<u16, &mut fn([u8; core::::num::{impl#7}::from_le_bytes::{constant#0}]) -> u16 {core::num::<impl u16>::from_le_bytes}>",
+  "hash": "674545409956571749715398991869454958923",
+  "hash_direct": "1510656567151358869313215371635550293090",
+  "src": "pub const fn map<U, F>(self, f: F) -> Option<U>\n    where\n        F: [const] FnOnce(T) -> U + [const] Destruct,\n    {\n        match self {\n            Some(x) => Some(f(x)),\n            None => None,\n        }\n    }",
+  "callees": [
+    "110529358142384840932381700667077663633",
+    "154814872857791229444909894964015826161",
+    "164920246545788730618233309646997589036",
+    "56512467496642389877585091471634591177",
+    "882516872501883330013947781493068822685",
+    "64689618837288227206170671061387173645"
+  ]
+}

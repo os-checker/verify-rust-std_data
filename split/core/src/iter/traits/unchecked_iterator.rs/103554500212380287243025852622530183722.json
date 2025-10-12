@@ -1,0 +1,16 @@
+{
+  "file": "core/src/iter/traits/unchecked_iterator.rs",
+  "name": "iter::traits::unchecked_iterator::UncheckedIterator::next_unchecked::kani_contract_mode",
+  "hash": "103554500212380287243025852622530183722",
+  "hash_direct": "7920366857916470916527189583273931858",
+  "attrs": [
+    "#[kanitool::fn_marker = \"kani_contract_mode\"]\n"
+  ],
+  "src": "#[cfg_attr(kani, kani::modifies(self))]",
+  "macro_backtrace": [
+    {
+      "callsite": "#[cfg_attr(kani, kani::modifies(self))]",
+      "defsite": "pub fn modifies(attr: TokenStream, item: TokenStream) -> TokenStream"
+    }
+  ]
+}

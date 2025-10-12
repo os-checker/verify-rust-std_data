@@ -1,0 +1,8 @@
+{
+  "file": "core/src/intrinsics/mod.rs",
+  "name": "intrinsics::is_val_statically_known::<u64>",
+  "hash": "1712939219734338253417574648234143823151",
+  "hash_direct": "24624882715710703871981181932404316613",
+  "inst_kind": "\"Intrinsic\"",
+  "src": "pub const fn is_val_statically_known<T: Copy>(_arg: T) -> bool {\n    false\n}"
+}

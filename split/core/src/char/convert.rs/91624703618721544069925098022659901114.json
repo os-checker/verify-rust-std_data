@@ -1,0 +1,7 @@
+{
+  "file": "core/src/char/convert.rs",
+  "name": "core::char::convert::<impl core::convert::From<u8> for char>::from",
+  "hash": "91624703618721544069925098022659901114",
+  "hash_direct": "17413125515313717578896261412440446898",
+  "src": "fn from(i: u8) -> Self {\n        i as char\n    }"
+}

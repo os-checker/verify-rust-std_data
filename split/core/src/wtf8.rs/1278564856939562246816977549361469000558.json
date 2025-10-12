@@ -1,0 +1,7 @@
+{
+  "file": "core/src/wtf8.rs",
+  "name": "wtf8::Wtf8::ascii_byte_at",
+  "hash": "1278564856939562246816977549361469000558",
+  "hash_direct": "106438834632991050914317316047784749539",
+  "src": "pub fn ascii_byte_at(&self, position: usize) -> u8 {\n        match self.bytes[position] {\n            ascii_byte @ 0x00..=0x7F => ascii_byte,\n            _ => 0xFF,\n        }\n    }"
+}

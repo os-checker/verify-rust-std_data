@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/f16.rs",
-  "name": "f16::<impl f16>::to_degrees",
-  "hash": "115624753997309890619016079197436323869",
-  "hash_direct": "172441122429748970793433046225673875046",
-  "src": "pub const fn to_degrees(self) -> Self {\n        // Use a literal for better precision.\n        const PIS_IN_180: f16 = 57.2957795130823208767981548141051703_f16;\n        self * PIS_IN_180\n    }"
-}

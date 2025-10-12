@@ -1,0 +1,10 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<iter::adapters::map::Map<str::iter::Chars<'_>, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/wtf8.rs:148:41: 148:44}> as iter::traits::iterator::Iterator>::fuse",
+  "hash": "171396606861367566904190663197397245406",
+  "hash_direct": "93486522892456780965601789614544927918",
+  "src": "fn fuse(self) -> Fuse<Self>\n    where\n        Self: Sized,\n    {\n        Fuse::new(self)\n    }",
+  "callees": [
+    "69149089423387280687043564174661471904"
+  ]
+}

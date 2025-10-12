@@ -1,0 +1,13 @@
+{
+  "file": "alloc/src/wtf8/mod.rs",
+  "name": "<wtf8::Wtf8Buf as core::cmp::Eq>::assert_receiver_is_total_eq",
+  "hash": "71667970531254848447429069260487737032",
+  "hash_direct": "91161841297994541128807063702894192840",
+  "src": "Eq",
+  "macro_backtrace": [
+    {
+      "callsite": "Eq",
+      "defsite": "pub macro Eq"
+    }
+  ]
+}

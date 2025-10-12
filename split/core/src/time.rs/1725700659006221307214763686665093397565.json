@@ -1,0 +1,11 @@
+{
+  "file": "core/src/time.rs",
+  "name": "time::Duration::MILLISECOND",
+  "hash": "1725700659006221307214763686665093397565",
+  "hash_direct": "1357752864039466989915964624450125275823",
+  "src": "pub const MILLISECOND: Duration = Duration::from_millis(1);",
+  "callees": [
+    "950957549956578784317830715657615300922",
+    "103201209251474754949132317369828318810"
+  ]
+}

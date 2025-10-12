@@ -1,0 +1,10 @@
+{
+  "file": "core/src/time.rs",
+  "name": "time::Duration::as_millis",
+  "hash": "363585868887122075111608777546152278592",
+  "hash_direct": "1206905356009847031818384402440797377410",
+  "src": "pub const fn as_millis(&self) -> u128 {\n        self.secs as u128 * MILLIS_PER_SEC as u128\n            + (self.nanos.as_inner() / NANOS_PER_MILLI) as u128\n    }",
+  "callees": [
+    "27460360985597728751338915468532901532"
+  ]
+}

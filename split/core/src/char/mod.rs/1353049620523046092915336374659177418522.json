@@ -1,0 +1,11 @@
+{
+  "file": "core/src/char/mod.rs",
+  "name": "<char::EscapeUnicode as iter::traits::iterator::Iterator>::count",
+  "hash": "1353049620523046092915336374659177418522",
+  "hash_direct": "683827009620738700013404843193945101556",
+  "src": "fn count(self) -> usize {\n        self.0.len()\n    }",
+  "callees": [
+    "9122690305665940051388962439719640221",
+    "6481093660164787647198171041158156151"
+  ]
+}

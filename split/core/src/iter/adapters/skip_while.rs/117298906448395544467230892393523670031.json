@@ -1,7 +1,0 @@
-{
-  "file": "core/src/iter/adapters/skip_while.rs",
-  "name": "core::iter::SkipWhile::<core::iter::Rev<core::str::Chars<'_>>, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/alloc/src/str.rs:422:35: 422:39}>::new",
-  "hash": "117298906448395544467230892393523670031",
-  "hash_direct": "1842875475049240860912020998323643502626",
-  "src": "pub(in crate::iter) fn new(iter: I, predicate: P) -> SkipWhile<I, P> {\n        SkipWhile { iter, flag: false, predicate }\n    }"
-}

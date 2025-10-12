@@ -1,0 +1,15 @@
+{
+  "file": "core/src/option.rs",
+  "name": "option::Option::<&char::EscapeUnicode>::map_or::<(usize, option::Option<usize>), for<'a> fn(&'a char::EscapeUnicode) -> (usize, option::Option<usize>) {<char::EscapeUnicode as iter::traits::iterator::Iterator>::size_hint}>",
+  "hash": "65227893797142329191985415659225325531",
+  "hash_direct": "153300251233894264491181512137848348591",
+  "src": "pub const fn map_or<U, F>(self, default: U, f: F) -> U\n    where\n        F: [const] FnOnce(T) -> U + [const] Destruct,\n        U: [const] Destruct,\n    {\n        match self {\n            Some(t) => f(t),\n            None => default,\n        }\n    }",
+  "callees": [
+    "105478058656958201033706608385635715348",
+    "9122690305665940051388962439719640221",
+    "6481093660164787647198171041158156151",
+    "146950355894543752523119223258562201306",
+    "66631883600104442883671173806470690647",
+    "580249689936400260514404781608174812569"
+  ]
+}

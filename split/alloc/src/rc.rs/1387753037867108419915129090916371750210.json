@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/rc.rs",
+  "name": "rc::Rc::<core::wtf8::Wtf8>::from_inner_in",
+  "hash": "1387753037867108419915129090916371750210",
+  "hash_direct": "159475603298824146911044305431548330188",
+  "src": "unsafe fn from_inner_in(ptr: NonNull<RcInner<T>>, alloc: A) -> Self {\n        Self { ptr, phantom: PhantomData, alloc }\n    }"
+}

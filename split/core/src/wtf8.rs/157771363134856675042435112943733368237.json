@@ -1,0 +1,7 @@
+{
+  "file": "core/src/wtf8.rs",
+  "name": "core::wtf8::Wtf8::as_bytes",
+  "hash": "157771363134856675042435112943733368237",
+  "hash_direct": "74260349612645722534971054931234111810",
+  "src": "pub fn as_bytes(&self) -> &[u8] {\n        &self.bytes\n    }"
+}

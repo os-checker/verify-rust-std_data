@@ -1,0 +1,7 @@
+{
+  "file": "core/src/option.rs",
+  "name": "<core::option::Option<&mut core::iter::Map<core::str::Chars<'_>, {closure@<core::wtf8::Wtf8 as core::fmt::Debug>::fmt::write_str_escaped::{closure#0}}>> as core::ops::Try>::branch",
+  "hash": "1798672732599155028514466835028394918352",
+  "hash_direct": "74884733373483634787108689287444930419",
+  "src": "fn branch(self) -> ControlFlow<Self::Residual, Self::Output> {\n        match self {\n            Some(v) => ControlFlow::Continue(v),\n            None => ControlFlow::Break(None),\n        }\n    }"
+}

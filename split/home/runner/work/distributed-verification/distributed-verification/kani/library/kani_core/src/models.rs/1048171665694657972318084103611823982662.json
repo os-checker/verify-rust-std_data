@@ -1,0 +1,26 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/models.rs",
+  "name": "kani::mem_models::size_of_slice_object",
+  "hash": "1048171665694657972318084103611823982662",
+  "hash_direct": "1279467542615075337113724109995177746091",
+  "attrs": [
+    "#[kanitool::fn_marker = \"SizeOfSliceObjectModel\"]\n"
+  ],
+  "src": "pub(crate) fn size_of_slice_object(\n                len: usize,\n                elem_size: usize,\n                head_size: usize,\n                align: usize,\n            ) -> Option<usize> {\n                let (slice_sz, mul_overflow) = elem_size.overflowing_mul(len);\n                let (total, sum_overflow) = slice_sz.overflowing_add(head_size);\n                // Round up size to the nearest multiple of alignment, i.e.: (size + (align - 1)) & -align\n                let (adjust, adjust_overflow) = total.overflowing_add(align.wrapping_sub(1));\n                let adjusted_size = adjust & align.wrapping_neg();\n                if mul_overflow\n                    || sum_overflow\n                    || adjust_overflow\n                    || adjusted_size > isize::MAX as _\n                {\n                    None\n                } else {\n                    Some(adjusted_size)\n                }\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "kani_core::generate_models!()",
+      "defsite": "macro_rules! generate_models"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ],
+  "callees": [
+    "13303575705867660165971022725037666878",
+    "761861023504359043615820998596748928032",
+    "51265597946994964859113084491107688968",
+    "172853077466930782957249088533345327364"
+  ]
+}

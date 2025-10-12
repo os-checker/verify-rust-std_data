@@ -1,0 +1,11 @@
+{
+  "file": "core/src/bstr/traits.rs",
+  "name": "bstr::traits::<impl slice::index::SliceIndex<bstr::ByteStr> for usize>::index",
+  "hash": "112401338116229083334791773600339918422",
+  "hash_direct": "665757159218626822211412466701882226978",
+  "src": "fn index(self, slice: &ByteStr) -> &Self::Output {\n        self.index(slice.as_bytes())\n    }",
+  "callees": [
+    "1274025542878796514526074388697738620",
+    "25714816836918638856706049262904742471"
+  ]
+}

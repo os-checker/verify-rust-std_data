@@ -1,0 +1,7 @@
+{
+  "file": "alloc/src/wtf8/mod.rs",
+  "name": "wtf8::Wtf8Buf::into_bytes",
+  "hash": "168874226422886622666640422877356944353",
+  "hash_direct": "978516577326423533012771852739049537845",
+  "src": "pub fn into_bytes(self) -> Vec<u8> {\n        self.bytes\n    }"
+}

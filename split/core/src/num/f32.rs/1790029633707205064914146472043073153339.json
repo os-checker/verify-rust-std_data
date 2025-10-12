@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f32.rs",
+  "name": "f32::<impl f32>::to_degrees",
+  "hash": "1790029633707205064914146472043073153339",
+  "hash_direct": "169021570457399050412142737951615459332",
+  "src": "pub const fn to_degrees(self) -> f32 {\n        // Use a literal to avoid double rounding, consts::PI is already rounded,\n        // and dividing would round again.\n        const PIS_IN_180: f32 = 57.2957795130823208767981548141051703_f32;\n        self * PIS_IN_180\n    }"
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f16.rs",
+  "name": "f16::<impl f16>::to_degrees",
+  "hash": "1668718189272279930615015280623345311293",
+  "hash_direct": "147111028938896935211285938077460065978",
+  "src": "pub const fn to_degrees(self) -> Self {\n        // Use a literal to avoid double rounding, consts::PI is already rounded,\n        // and dividing would round again.\n        const PIS_IN_180: f16 = 57.2957795130823208767981548141051703_f16;\n        self * PIS_IN_180\n    }"
+}

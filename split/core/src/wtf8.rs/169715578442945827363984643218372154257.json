@@ -1,0 +1,10 @@
+{
+  "file": "core/src/wtf8.rs",
+  "name": "wtf8::Wtf8::final_lead_surrogate",
+  "hash": "169715578442945827363984643218372154257",
+  "hash_direct": "1097444539564160339611009458860038638841",
+  "src": "pub fn final_lead_surrogate(&self) -> Option<u16> {\n        match self.bytes {\n            [.., 0xED, b2 @ 0xA0..=0xAF, b3] => Some(decode_surrogate(b2, b3)),\n            _ => None,\n        }\n    }",
+  "callees": [
+    "16261241472119900705985823798939400202"
+  ]
+}

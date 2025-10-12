@@ -1,0 +1,16 @@
+{
+  "file": "core/src/num/dec2flt/parse.rs",
+  "name": "num::dec2flt::parse::parse_scientific",
+  "hash": "35800924823573124218164357000641476390",
+  "hash_direct": "1054387132664178904716366070737271117706",
+  "src": "fn parse_scientific(s_ref: &mut &[u8]) -> Option<i64> {\n    let mut exponent = 0i64;\n    let mut negative = false;\n\n    let mut s = *s_ref;\n\n    if let Some((&c, s_next)) = s.split_first() {\n        negative = c == b'-';\n        if c == b'-' || c == b'+' {\n            s = s_next;\n        }\n    }\n\n    if matches!(s.first(), Some(&x) if x.is_ascii_digit()) {\n        *s_ref = s.parse_digits(|digit| {\n            // no overflows here, saturate well before overflow\n            if exponent < 0x10000 {\n                exponent = 10 * exponent + digit as i64;\n            }\n        });\n        if negative { Some(-exponent) } else { Some(exponent) }\n    } else {\n        *s_ref = s;\n        None\n    }\n}",
+  "callees": [
+    "1744607065492100259317739876866905923967",
+    "69938730942773633538096115219434964865",
+    "89633452296352964709599256705517159051",
+    "62117014233557603814466131219830999524",
+    "164575987249284638413089673635026732238",
+    "21617172818475739555230285502389437314",
+    "78204921097721474912957416123615891283"
+  ]
+}

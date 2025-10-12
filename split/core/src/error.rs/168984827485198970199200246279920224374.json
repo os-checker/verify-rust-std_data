@@ -1,0 +1,7 @@
+{
+  "file": "core/src/error.rs",
+  "name": "<boxed::convert::<impl core::convert::From<string::String> for boxed::Box<(dyn core::error::Error + core::marker::Send + core::marker::Sync + 'a)>>::from::StringError as core::error::Error>::description",
+  "hash": "168984827485198970199200246279920224374",
+  "hash_direct": "147895846600085414057144982874026359261",
+  "src": "fn description(&self) -> &str {\n        \"description() is deprecated; use Display\"\n    }"
+}

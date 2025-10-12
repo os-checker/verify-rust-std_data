@@ -1,0 +1,16 @@
+{
+  "file": "core/src/num/dec2flt/decimal_seq.rs",
+  "name": "num::dec2flt::decimal_seq::DecimalSeq::round",
+  "hash": "52206125963560751428658468352121213337",
+  "hash_direct": "231001439379004768815632003027240594493",
+  "src": "pub(super) fn round(&self) -> u64 {\n        if self.num_digits == 0 || self.decimal_point < 0 {\n            return 0;\n        } else if self.decimal_point >= Self::MAX_DIGITS_WITHOUT_OVERFLOW as i32 {\n            return 0xFFFF_FFFF_FFFF_FFFF_u64;\n        }\n\n        let dp = self.decimal_point as usize;\n        let mut n = 0_u64;\n\n        #[cfg_attr(kani, kani::loop_invariant(n < 10u64.pow(kani::index as u32)))]\n        for i in 0..dp {\n            n *= 10;\n            if i < self.num_digits {\n                n += self.digits[i] as u64;\n            }\n        }\n\n        let mut round_up = false;\n\n        if dp < self.num_digits {\n            round_up = self.digits[dp] >= 5;\n            if self.digits[dp] == 5 && dp + 1 == self.num_digits {\n                round_up = self.truncated || ((dp != 0) && (1 & self.digits[dp - 1] != 0))\n            }\n        }\n\n        if round_up {\n            n += 1;\n        }\n        n\n    }",
+  "callees": [
+    "1800466113240133999810677919737894632971",
+    "342263724175048013812455251641339164896",
+    "544081670932276717315588127065459024108",
+    "183745428816047423697245885798850409248",
+    "2027409230208452168840571471408388908",
+    "139704976908753389291209564980972955015",
+    "155280945542911490915496988614590662491"
+  ]
+}

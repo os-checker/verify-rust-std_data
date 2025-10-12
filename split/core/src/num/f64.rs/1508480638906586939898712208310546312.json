@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f64.rs",
+  "name": "f64::<impl f64>::to_degrees",
+  "hash": "1508480638906586939898712208310546312",
+  "hash_direct": "1110552996718505848313370850770812062816",
+  "src": "pub const fn to_degrees(self) -> f64 {\n        // The division here is correctly rounded with respect to the true value of 180/π.\n        // Although π is irrational and already rounded, the double rounding happens\n        // to produce correct result for f64.\n        const PIS_IN_180: f64 = 180.0 / consts::PI;\n        self * PIS_IN_180\n    }"
+}

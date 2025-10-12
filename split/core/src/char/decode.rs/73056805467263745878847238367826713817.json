@@ -1,0 +1,12 @@
+{
+  "file": "core/src/char/decode.rs",
+  "name": "<core::char::DecodeUtf16<core::iter::Cloned<core::slice::Iter<'_, u16>>> as core::iter::Iterator>::size_hint::{closure#0}",
+  "hash": "73056805467263745878847238367826713817",
+  "hash_direct": "138951348709554472796280101863717743931",
+  "src": "|h| h.checked_add(high_buf)",
+  "callees": [
+    "99835071136844477394667148890151411684",
+    "73694171442177138896992135977130617471",
+    "122007648122754002943023341031948475816"
+  ]
+}

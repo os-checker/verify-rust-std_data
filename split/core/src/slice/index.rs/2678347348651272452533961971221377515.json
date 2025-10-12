@@ -1,0 +1,14 @@
+{
+  "file": "core/src/slice/index.rs",
+  "name": "slice::index::into_range",
+  "hash": "2678347348651272452533961971221377515",
+  "hash_direct": "38455698209796750537912784515898532810",
+  "src": "pub(crate) fn into_range(\n    len: usize,\n    (start, end): (ops::Bound<usize>, ops::Bound<usize>),\n) -> Option<ops::Range<usize>> {\n    use ops::Bound;\n    let start = match start {\n        Bound::Included(start) => start,\n        Bound::Excluded(start) => start.checked_add(1)?,\n        Bound::Unbounded => 0,\n    };\n\n    let end = match end {\n        Bound::Included(end) => end.checked_add(1)?,\n        Bound::Excluded(end) => end,\n        Bound::Unbounded => len,\n    };\n\n    // Don't bother with checking `start < end` and `end <= len`\n    // since these checks are handled by `Range` impls\n\n    Some(start..end)\n}",
+  "callees": [
+    "588974892899239543415856878986124229421",
+    "690438059002452523915046149102377829082",
+    "79628754160654265195868607472716161204",
+    "97258710297774307175121940197255709961",
+    "935327613547407926313303453668085555306"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/unicode/unicode_data.rs",
+  "name": "unicode::unicode_data::conversions::LOWERCASE_TABLE_MULTI",
+  "hash": "1575789579003225288014432624666524544814",
+  "hash_direct": "14968041186668298307863813460294205484",
+  "src": "static LOWERCASE_TABLE_MULTI: &[[char; 3]; 1] = &[\n        ['i', '\\u{307}', '\\u{0}'],\n    ];"
+}

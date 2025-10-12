@@ -1,0 +1,10 @@
+{
+  "file": "core/src/slice/mod.rs",
+  "name": "slice::<impl [u8]>::len",
+  "hash": "85792172357998657915509705891549832202",
+  "hash_direct": "87200580602389969284858582047467794762",
+  "src": "pub const fn len(&self) -> usize {\n        ptr::metadata(self)\n    }",
+  "callees": [
+    "100566549119408744214400768677206684395"
+  ]
+}

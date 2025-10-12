@@ -1,0 +1,32 @@
+{
+  "file": "core/src/bstr/traits.rs",
+  "name": "bstr::traits::<impl slice::index::SliceIndex<bstr::ByteStr> for (ops::range::Bound<usize>, ops::range::Bound<usize>)>::get_mut",
+  "hash": "69459226352421487065136200493727607042",
+  "hash_direct": "1001535709047449051317679384025607645036",
+  "src": "fn get_mut(self, slice: &mut ByteStr) -> Option<&mut Self::Output> {\n                self.get_mut(slice.as_bytes_mut()).map(ByteStr::from_bytes_mut)\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "impl_slice_index!((ops::Bound<usize>, ops::Bound<usize>))",
+      "defsite": "macro_rules! impl_slice_index {\n    ($index:ty) => {\n        #[unstable(feature = \"bstr\", issue = \"134915\")]\n        unsafe impl SliceIndex<ByteStr> for $index {\n            type Output = ByteStr;\n            #[inline]\n            fn get(self, slice: &ByteStr) -> Option<&Self::Output> {\n                self.get(slice.as_bytes()).map(ByteStr::from_bytes)\n            }\n            #[inline]\n            fn get_mut(self, slice: &mut ByteStr) -> Option<&mut Self::Output> {\n                self.get_mut(slice.as_bytes_mut()).map(ByteStr::from_bytes_mut)\n            }\n            #[inline]\n            unsafe fn get_unchecked(self, slice: *const ByteStr) -> *const Self::Output {\n                // SAFETY: the caller has to uphold the safety contract for `get_unchecked`.\n                unsafe { self.get_unchecked(slice as *const [u8]) as *const ByteStr }\n            }\n            #[inline]\n            unsafe fn get_unchecked_mut(self, slice: *mut ByteStr) -> *mut Self::Output {\n                // SAFETY: the caller has to uphold the safety contract for `get_unchecked_mut`.\n                unsafe { self.get_unchecked_mut(slice as *mut [u8]) as *mut ByteStr }\n            }\n            #[inline]\n            fn index(self, slice: &ByteStr) -> &Self::Output {\n                ByteStr::from_bytes(self.index(slice.as_bytes()))\n            }\n            #[inline]\n            fn index_mut(self, slice: &mut ByteStr) -> &mut Self::Output {\n                ByteStr::from_bytes_mut(self.index_mut(slice.as_bytes_mut()))\n            }\n        }\n    };\n}"
+    }
+  ],
+  "callees": [
+    "5785573104578677001405117597964291879",
+    "60669093460926144821351075926158486336",
+    "588974892899239543415856878986124229421",
+    "690438059002452523915046149102377829082",
+    "79628754160654265195868607472716161204",
+    "979090888644938360611991061608854301815",
+    "10331439224694994899922944785163287950",
+    "1789589934729638079314472717619136894232",
+    "97258710297774307175121940197255709961",
+    "1258464984597353139113143524566786893794",
+    "935327613547407926313303453668085555306",
+    "39364042954325476852206492822821512779",
+    "732374513817134745817071711119891796662",
+    "15397705112836405492744030583940075820",
+    "88360245395064043064634101589841978240",
+    "25047678897068037619032084817793238854",
+    "2678347348651272452533961971221377515"
+  ]
+}

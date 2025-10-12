@@ -1,0 +1,21 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/iter.rs",
+  "name": "<kani::KaniRefIter<'_, u8> as kani::KaniIter>::nth",
+  "hash": "67528780670489378913520011254179737252",
+  "hash_direct": "168358748384819569251505100255555955560",
+  "src": "fn nth(&self, i: usize) -> Self::Item {\n                unsafe { &*self.ptr.wrapping_add(i) }\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "kani_core::generate_iter!()",
+      "defsite": "macro_rules! generate_iter"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ],
+  "callees": [
+    "813578382545998277312366744418950688761",
+    "3158087186225067104207623212949621094"
+  ]
+}

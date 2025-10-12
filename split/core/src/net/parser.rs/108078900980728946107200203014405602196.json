@@ -1,0 +1,27 @@
+{
+  "file": "core/src/net/parser.rs",
+  "name": "<u32 as net::parser::ReadNumberHelper>::checked_mul",
+  "hash": "108078900980728946107200203014405602196",
+  "hash_direct": "306337950659022554626685895921354129",
+  "src": "fn checked_mul(&self, other: u32) -> Option<Self> {\n            Self::checked_mul(*self, other.try_into().ok()?)\n        }",
+  "macro_backtrace": [
+    {
+      "callsite": "impl_helper! { u8 u16 u32 }",
+      "defsite": "macro_rules! impl_helper {\n    ($($t:ty)*) => ($(impl ReadNumberHelper for $t {\n        const ZERO: Self = 0;\n        #[inline]\n        fn checked_mul(&self, other: u32) -> Option<Self> {\n            Self::checked_mul(*self, other.try_into().ok()?)\n        }\n        #[inline]\n        fn checked_add(&self, other: u32) -> Option<Self> {\n            Self::checked_add(*self, other.try_into().ok()?)\n        }\n    })*)\n}"
+    }
+  ],
+  "callees": [
+    "1392407438641980646011338402895728813916",
+    "634927983275490497016701312471324181130",
+    "194409383402153860316229451154861162774",
+    "1123712166519360581914509162167226732765",
+    "588974892899239543415856878986124229421",
+    "690438059002452523915046149102377829082",
+    "141105166115437627477272930219714833415",
+    "1745451321050495194918138817064128180120",
+    "1424839172046310268011085042199237354602",
+    "719129286597258618217317545152508524920",
+    "540990493817502691515157495818752962571",
+    "1747882974803406678316717807912919332347"
+  ]
+}

@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/f64.rs",
-  "name": "f64::<impl f64>::to_degrees",
-  "hash": "117990293606584255616668156579751747098",
-  "hash_direct": "951483607650596313510754734499883520862",
-  "src": "pub const fn to_degrees(self) -> f64 {\n        // The division here is correctly rounded with respect to the true\n        // value of 180/π. (This differs from f32, where a constant must be\n        // used to ensure a correctly rounded result.)\n        self * (180.0f64 / consts::PI)\n    }"
-}

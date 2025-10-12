@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/non_null.rs",
+  "name": "ptr::non_null::NonNull::<time::TryFromFloatSecsError>::from_ref",
+  "hash": "159550345424600759791578366974547076983",
+  "hash_direct": "855587562351047123715674649806295263638",
+  "src": "pub const fn from_ref(r: &T) -> Self {\n        // SAFETY: A reference cannot be null.\n        unsafe { NonNull { pointer: r as *const T } }\n    }"
+}

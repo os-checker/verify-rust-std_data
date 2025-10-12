@@ -1,0 +1,11 @@
+{
+  "file": "core/src/bstr/traits.rs",
+  "name": "bstr::traits::<impl slice::index::SliceIndex<bstr::ByteStr> for usize>::get",
+  "hash": "1361902629054407950715927611328166900054",
+  "hash_direct": "544018180095294707315783361930477668722",
+  "src": "fn get(self, slice: &ByteStr) -> Option<&Self::Output> {\n        self.get(slice.as_bytes())\n    }",
+  "callees": [
+    "1274025542878796514526074388697738620",
+    "760499024176919446914647389213438349877"
+  ]
+}

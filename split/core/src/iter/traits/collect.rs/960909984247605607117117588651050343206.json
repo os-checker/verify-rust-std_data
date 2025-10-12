@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/traits/collect.rs",
+  "name": "<core::char::EscapeDebug as core::iter::IntoIterator>::into_iter",
+  "hash": "960909984247605607117117588651050343206",
+  "hash_direct": "71130129741636523009800182219138682623",
+  "src": "fn into_iter(self) -> I {\n        self\n    }"
+}

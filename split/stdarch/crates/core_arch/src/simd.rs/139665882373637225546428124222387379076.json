@@ -1,0 +1,48 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/simd.rs",
+  "name": "core_arch::simd::u32x2::ZERO",
+  "hash": "139665882373637225546428124222387379076",
+  "hash_direct": "26172373392073652303085647384068411226",
+  "src": "pub(crate) const ZERO: Self = unsafe { crate::mem::zeroed() };",
+  "macro_backtrace": [
+    {
+      "callsite": "simd_ty!(u32x2[u32;2]: x0, x1)",
+      "defsite": "macro_rules! simd_ty {\n    ($id:ident [$elem_type:ty ; $len:literal]: $($param_name:ident),*) => {\n        #[repr(simd)]\n        #[derive(Copy, Clone)]\n        pub(crate) struct $id([$elem_type; $len]);\n\n        #[allow(clippy::use_self)]\n        impl $id {\n            /// A value of this type where all elements are zeroed out.\n            pub(crate) const ZERO: Self = unsafe { crate::mem::zeroed() };\n\n            #[inline(always)]\n            pub(crate) const fn new($($param_name: $elem_type),*) -> Self {\n                $id([$($param_name),*])\n            }\n            #[inline(always)]\n            pub(crate) const fn from_array(elements: [$elem_type; $len]) -> Self {\n                $id(elements)\n            }\n            // FIXME: Workaround rust@60637\n            #[inline(always)]\n            pub(crate) fn splat(value: $elem_type) -> Self {\n                #[derive(Copy, Clone)]\n                #[repr(simd)]\n                struct JustOne([$elem_type; 1]);\n                let one = JustOne([value]);\n                // SAFETY: 0 is always in-bounds because we're shuffling\n                // a simd type with exactly one element.\n                unsafe { simd_shuffle!(one, one, [0; $len]) }\n            }\n\n            /// Extract the element at position `index`.\n            /// `index` is not a constant so this is not efficient!\n            /// Use for testing only.\n            // FIXME: Workaround rust@60637\n            #[inline(always)]\n            pub(crate) fn extract(&self, index: usize) -> $elem_type {\n                self.as_array()[index]\n            }\n\n            #[inline]\n            pub(crate) fn as_array(&self) -> &[$elem_type; $len] {\n                let simd_ptr: *const Self = self;\n                let array_ptr: *const [$elem_type; $len] = simd_ptr.cast();\n                // SAFETY: We can always read the prefix of a simd type as an array.\n                // There might be more padding afterwards for some widths, but\n                // that's not a problem for reading less than that.\n                unsafe { &*array_ptr }\n            }\n        }\n\n        impl core::cmp::PartialEq for $id {\n            #[inline]\n            fn eq(&self, other: &Self) -> bool {\n                self.as_array() == other.as_array()\n            }\n        }\n\n        impl core::fmt::Debug for $id {\n            #[inline]\n            fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {\n                debug_simd_finish(f, stringify!($id), self.as_array())\n            }\n        }\n    }\n}"
+    }
+  ],
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "17421822894816687532325615181214565887",
+    "27480086118489678191003877857780025576",
+    "23815256893174302637797703719499456373",
+    "1639190511405576016712069487289226138136",
+    "75757916937141663573244030461211530812",
+    "23288973769641981247234090828224721794",
+    "166269158864235020074207667087617026165",
+    "87248770465260163097374639762440015879",
+    "17409870691165491581345276286871294162",
+    "10197651524865985362387395460645506563",
+    "137368381448604167703416046205455599816",
+    "156396365605833484958181337486344432065",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "1752989996936949203916036071159051010960",
+    "478753423337745817613297159272845606672",
+    "3658730781980743391697756456907208995",
+    "176386771705132260856587306647620489942",
+    "24720139230274117689328858551755358968",
+    "1566168013061370513711054548557151263674",
+    "137056938380777605792885916057725135940",
+    "48928537173135837066760455269643695630",
+    "187482952606822645712460029589708661523",
+    "126818845945534382313624863669169238336",
+    "585795801987818560216162153341142284682",
+    "53313725820327697514116190146305502710",
+    "144081404868619003159641761385412722791",
+    "74111286315405054421392461884745781298",
+    "45349019683235474339692671738062328832",
+    "739520556846959085018120036998133255835",
+    "71112245793085408723525187754979718597",
+    "1217330957027791981411010835694243116934"
+  ]
+}

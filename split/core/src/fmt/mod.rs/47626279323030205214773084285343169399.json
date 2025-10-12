@@ -1,7 +1,0 @@
-{
-  "file": "core/src/fmt/mod.rs",
-  "name": "core::fmt::FormattingOptions::fill",
-  "hash": "47626279323030205214773084285343169399",
-  "hash_direct": "81017126942015595259351039086430273627",
-  "src": "pub fn fill(&mut self, fill: char) -> &mut Self {\n        self.flags = self.flags & (u32::MAX << 21) | fill as u32;\n        self\n    }"
-}

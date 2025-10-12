@@ -1,0 +1,20 @@
+{
+  "file": "core/src/slice/mod.rs",
+  "name": "slice::<impl [u8]>::subslice_range",
+  "hash": "10521387127682850727120856875194116877",
+  "hash_direct": "76884350432439734939108629291035400765",
+  "src": "pub fn subslice_range(&self, subslice: &[T]) -> Option<Range<usize>> {\n        if T::IS_ZST {\n            panic!(\"elements are zero-sized\");\n        }\n\n        let self_start = self.as_ptr().addr();\n        let subslice_start = subslice.as_ptr().addr();\n\n        let byte_start = subslice_start.wrapping_sub(self_start);\n\n        if !byte_start.is_multiple_of(size_of::<T>()) {\n            return None;\n        }\n\n        let start = byte_start / size_of::<T>();\n        let end = start.wrapping_add(subslice.len());\n\n        if start <= self.len() && end <= self.len() { Some(start..end) } else { None }\n    }",
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "121097281700569241807917519510076722724",
+    "80466408942777512049363027701449327301",
+    "7249394009779449325411716998498825991",
+    "172853077466930782957249088533345327364",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "1752989996936949203916036071159051010960",
+    "187482952606822645712460029589708661523",
+    "126818845945534382313624863669169238336",
+    "47822370175813177448723454097252028703"
+  ]
+}

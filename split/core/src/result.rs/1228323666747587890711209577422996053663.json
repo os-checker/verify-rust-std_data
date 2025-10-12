@@ -1,0 +1,11 @@
+{
+  "file": "core/src/result.rs",
+  "name": "core::result::Result::<core::ptr::NonNull<[u8]>, core::alloc::AllocError>::map_err::<collections::TryReserveErrorKind, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/alloc/src/raw_vec/mod.rs:733:30: 733:33}>",
+  "hash": "1228323666747587890711209577422996053663",
+  "hash_direct": "149285775569066684594405875314965178695",
+  "src": "pub const fn map_err<F, O>(self, op: O) -> Result<T, F>\n    where\n        O: [const] FnOnce(E) -> F + [const] Destruct,\n    {\n        match self {\n            Ok(t) => Ok(t),\n            Err(e) => Err(op(e)),\n        }\n    }",
+  "callees": [
+    "101887227810897168785368003181164395724",
+    "336580171582578185211515647053530584570"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "file": "core/src/ub_checks.rs",
+  "name": "core::ub_checks::maybe_is_nonoverlapping",
+  "hash": "166373361662591074473535274776041925454",
+  "hash_direct": "589965121016265384812551222764374035804",
+  "src": "pub(crate) const fn maybe_is_nonoverlapping(\n    src: *const (),\n    dst: *const (),\n    size: usize,\n    count: usize,\n) -> bool {\n    // This is just for safety checks so we can const_eval_select.\n    const_eval_select!(\n        @capture { src: *const (), dst: *const (), size: usize, count: usize } -> bool:\n        if const {\n            true\n        } else {\n            let src_usize = src.addr();\n            let dst_usize = dst.addr();\n            let Some(size) = size.checked_mul(count) else {\n                crate::panicking::panic_nounwind(\n                    \"is_nonoverlapping: `size_of::<T>() * count` overflows a usize\",\n                )\n            };\n            let diff = src_usize.abs_diff(dst_usize);\n            // If the absolute distance between the ptrs is at least as big as the size of the buffer,\n            // they do not overlap.\n            diff >= size\n        }\n    )\n}",
+  "callees": [
+    "12281449246394340237926324936375242532",
+    "99835071136844477394667148890151411684",
+    "73694171442177138896992135977130617471",
+    "181267529910573756716102767087485333561",
+    "84780317084020579966811399143563955375",
+    "149201007125728463455320865149411692001",
+    "166325244074050097544283093602579933301",
+    "818091824337665628316617518721539232565",
+    "115806450246090040692653274553708621133",
+    "1823508476679096781415355381427585710734",
+    "11015370305812625914353823910903422046",
+    "144103001060493135011774832490678287373",
+    "5731834383683152134719350346688847365",
+    "8896238559920380735332622633484699245",
+    "986792852990965178117440249555081278778",
+    "90818112465881722349174357944217011292",
+    "1357412281760869556115161719233556173642",
+    "63085389524472853348886374617170044294",
+    "175623961004431005849298709567805707658",
+    "33067340742295788584221598515845050786"
+  ]
+}

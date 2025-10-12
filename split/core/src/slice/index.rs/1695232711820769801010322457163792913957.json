@@ -1,0 +1,12 @@
+{
+  "file": "core/src/slice/index.rs",
+  "name": "<ops::range::RangeFrom<usize> as slice::index::SliceIndex<[u8]>>::get_mut",
+  "hash": "1695232711820769801010322457163792913957",
+  "hash_direct": "113303512288044762159491246716628535666",
+  "src": "fn get_mut(self, slice: &mut [T]) -> Option<&mut [T]> {\n        (self.start..slice.len()).get_mut(slice)\n    }",
+  "callees": [
+    "979090888644938360611991061608854301815",
+    "88360245395064043064634101589841978240",
+    "25047678897068037619032084817793238854"
+  ]
+}

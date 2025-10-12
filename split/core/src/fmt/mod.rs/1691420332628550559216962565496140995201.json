@@ -1,0 +1,7 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "fmt::FormattingOptions::debug_as_hex",
+  "hash": "1691420332628550559216962565496140995201",
+  "hash_direct": "13590090530003537954505038251501586002",
+  "src": "pub const fn debug_as_hex(&mut self, debug_as_hex: Option<DebugAsHex>) -> &mut Self {\n        let debug_as_hex = match debug_as_hex {\n            None => 0,\n            Some(DebugAsHex::Lower) => flags::DEBUG_LOWER_HEX_FLAG,\n            Some(DebugAsHex::Upper) => flags::DEBUG_UPPER_HEX_FLAG,\n        };\n        self.flags = self.flags & !(flags::DEBUG_LOWER_HEX_FLAG | flags::DEBUG_UPPER_HEX_FLAG)\n            | debug_as_hex;\n        self\n    }"
+}

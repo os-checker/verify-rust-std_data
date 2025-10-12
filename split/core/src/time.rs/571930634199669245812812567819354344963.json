@@ -1,0 +1,10 @@
+{
+  "file": "core/src/time.rs",
+  "name": "time::Duration::as_micros",
+  "hash": "571930634199669245812812567819354344963",
+  "hash_direct": "32154120522943506483152144184584137032",
+  "src": "pub const fn as_micros(&self) -> u128 {\n        self.secs as u128 * MICROS_PER_SEC as u128\n            + (self.nanos.as_inner() / NANOS_PER_MICRO) as u128\n    }",
+  "callees": [
+    "27460360985597728751338915468532901532"
+  ]
+}

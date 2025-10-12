@@ -1,8 +1,0 @@
-{
-  "file": "core/src/ptr/mod.rs",
-  "name": "core::ptr::drop_in_place::<{closure@<core::iter::adapters::GenericShunt<'_, core::char::DecodeUtf16<core::iter::Map<core::iter::Copied<core::slice::Iter<'_, [u8; 2]>>, fn([u8; core::::num::{impl#7}::from_le_bytes::{constant#0}]) -> u16 {core::num::<impl u16>::from_le_bytes}>>, core::result::Result<core::convert::Infallible, core::char::DecodeUtf16Error>> as core::iter::Iterator>::try_fold<(), {closure@core::ops::try_trait::NeverShortCircuit<()>::wrap_mut_2<(), char, {closure@core::iter::Iterator::for_each::call<char, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/alloc/src/string.rs:2407:27: 2407:35}>::{closure#0}}>::{closure#0}}, core::ops::try_trait::NeverShortCircuit<()>>::{closure#0}}>",
-  "hash": "157120750132646969927149840027100778798",
-  "hash_direct": "19046883236045916699389297352613181234",
-  "inst_kind": "\"Shim\"",
-  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
-}

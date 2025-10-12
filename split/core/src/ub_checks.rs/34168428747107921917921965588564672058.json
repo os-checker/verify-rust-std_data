@@ -1,0 +1,33 @@
+{
+  "file": "core/src/ub_checks.rs",
+  "name": "core::ptr::read::precondition_check",
+  "hash": "34168428747107921917921965588564672058",
+  "hash_direct": "563963743284968123913841313582151413884",
+  "src": "const fn precondition_check($($name:$ty),*) {\n                if !$e {\n                    let msg = concat!(\"unsafe precondition(s) violated: \", $message,\n                        \"\\n\\nThis indicates a bug in the program. \\\n                        This Undefined Behavior check is optional, and cannot be relied on for safety.\");\n                    ::core::panicking::panic_nounwind_fmt(::core::fmt::Arguments::new_const(&[msg]), false);\n                }\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "ub_checks::assert_unsafe_precondition!(\n            check_language_ub,\n            \"ptr::read requires that the pointer argument is aligned and non-null\",\n            (\n                addr: *const () = src as *const (),\n                align: usize = align_of::<T>(),\n                is_zst: bool = T::IS_ZST,\n            ) => ub_checks::maybe_is_aligned_and_not_null(addr, align, is_zst)\n        )",
+      "defsite": "macro_rules! assert_unsafe_precondition {\n    ($kind:ident, $message:expr, ($($name:ident:$ty:ty = $arg:expr),*$(,)?) => $e:expr $(,)?) => {\n        {\n            // This check is inlineable, but not by the MIR inliner.\n            // The reason for this is that the MIR inliner is in an exceptionally bad position\n            // to think about whether or not to inline this. In MIR, this call is gated behind `debug_assertions`,\n            // which will codegen to `false` in release builds. Inlining the check would be wasted work in that case and\n            // would be bad for compile times.\n            //\n            // LLVM on the other hand sees the constant branch, so if it's `false`, it can immediately delete it without\n            // inlining the check. If it's `true`, it can inline it and get significantly better performance.\n            #[rustc_no_mir_inline]\n            #[inline]\n            #[rustc_nounwind]\n            #[track_caller]\n            const fn precondition_check($($name:$ty),*) {\n                if !$e {\n                    let msg = concat!(\"unsafe precondition(s) violated: \", $message,\n                        \"\\n\\nThis indicates a bug in the program. \\\n                        This Undefined Behavior check is optional, and cannot be relied on for safety.\");\n                    ::core::panicking::panic_nounwind_fmt(::core::fmt::Arguments::new_const(&[msg]), false);\n                }\n            }\n\n            if ::core::ub_checks::$kind() {\n                precondition_check($($arg,)*);\n            }\n        }\n    };\n}"
+    }
+  ],
+  "callees": [
+    "12281449246394340237926324936375242532",
+    "181267529910573756716102767087485333561",
+    "79817071675776388295206212610749591701",
+    "141051090481435808783715316343782561731",
+    "51372523453683089364244340980133861262",
+    "169382045895387326079929663684999712557",
+    "986792852990965178117440249555081278778",
+    "90818112465881722349174357944217011292",
+    "146612017564224181584303574960223420416",
+    "63085389524472853348886374617170044294",
+    "175623961004431005849298709567805707658",
+    "33067340742295788584221598515845050786",
+    "139907086782363519768211215911218405340",
+    "181953690662554297912505335505865467275",
+    "1793681111599931821712213635413918902143",
+    "55408212128999564608147158566316072753",
+    "56586361413793673417653620039252553370",
+    "192903257417349624310389255189038584608"
+  ]
+}

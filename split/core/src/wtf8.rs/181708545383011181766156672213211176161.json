@@ -1,0 +1,7 @@
+{
+  "file": "core/src/wtf8.rs",
+  "name": "wtf8::Wtf8::from_mut_bytes_unchecked",
+  "hash": "181708545383011181766156672213211176161",
+  "hash_direct": "1654577159752245387712859048475126708236",
+  "src": "pub unsafe fn from_mut_bytes_unchecked(value: &mut [u8]) -> &mut Wtf8 {\n        // SAFETY: start with &mut [u8], end with fancy &mut [u8]\n        unsafe { &mut *(value as *mut [u8] as *mut Wtf8) }\n    }"
+}

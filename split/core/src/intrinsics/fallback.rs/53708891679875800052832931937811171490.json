@@ -1,0 +1,16 @@
+{
+  "file": "core/src/intrinsics/fallback.rs",
+  "name": "<i128 as intrinsics::fallback::CarryingMulAdd>::carrying_mul_add",
+  "hash": "53708891679875800052832931937811171490",
+  "hash_direct": "1343658057064995859616782991869145526183",
+  "src": "fn carrying_mul_add(self, b: i128, c: i128, d: i128) -> (u128, i128) {\n        let (low, high) = wide_mul_u128(self as u128, b as u128);\n        let mut high = high as i128;\n        high = high.wrapping_add(i128::wrapping_mul(self >> 127, b));\n        high = high.wrapping_add(i128::wrapping_mul(self, b >> 127));\n        let (low, carry) = u128::overflowing_add(low, c as u128);\n        high = high.wrapping_add((carry as i128) + (c >> 127));\n        let (low, carry) = u128::overflowing_add(low, d as u128);\n        high = high.wrapping_add((carry as i128) + (d >> 127));\n        (low, high)\n    }",
+  "callees": [
+    "56064935532181582357217772644767711324",
+    "1215867595331634964412092261842216784704",
+    "96480950455274538863936471544432656148",
+    "1424635015723676172711879731863681352571",
+    "139037607927126898323742206625509613182",
+    "997073802075895252610603976605452368575",
+    "28458177317181383215572604684214577331"
+  ]
+}

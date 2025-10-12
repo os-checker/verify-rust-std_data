@@ -1,0 +1,18 @@
+{
+  "file": "core/src/ptr/mut_ptr.rs",
+  "name": "ptr::mut_ptr::<impl *mut i32>::with_addr",
+  "hash": "182582047751501572007554073218788134561",
+  "hash_direct": "13158084919576618853296586859524617906",
+  "src": "pub fn with_addr(self, addr: usize) -> Self {\n        // This should probably be an intrinsic to avoid doing any sort of arithmetic, but\n        // meanwhile, we can implement it with `wrapping_offset`, which preserves the pointer's\n        // provenance.\n        let self_addr = self.addr() as isize;\n        let dest_addr = addr as isize;\n        let offset = dest_addr.wrapping_sub(self_addr);\n        self.wrapping_byte_offset(offset)\n    }",
+  "callees": [
+    "7858545234940505117539855476375371758",
+    "40642165106552594208289295355660198084",
+    "1775502821080152362517912409228600780762",
+    "61766192677233189794786476636738481602",
+    "74491948996729089571945377863185569579",
+    "162412065019695347719126621602314800720",
+    "164142763800687054814458452989256103874",
+    "25870263527159595123614989065746225326",
+    "833553174169562286714471950209380562777"
+  ]
+}

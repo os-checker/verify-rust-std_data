@@ -1,0 +1,7 @@
+{
+  "file": "core/src/wtf8.rs",
+  "name": "wtf8::Wtf8::len",
+  "hash": "96984243220377031815618416015724948348",
+  "hash_direct": "251159306322401111914618774200758720755",
+  "src": "pub fn len(&self) -> usize {\n        self.bytes.len()\n    }"
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/option.rs",
+  "name": "<option::Option<&mut iter::adapters::map::Map<str::iter::Chars<'_>, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/wtf8.rs:148:41: 148:44}>> as ops::try_trait::Try>::branch",
+  "hash": "1514968689549553172414190420642383910676",
+  "hash_direct": "142909314293805185951799532391963387814",
+  "src": "fn branch(self) -> ControlFlow<Self::Residual, Self::Output> {\n        match self {\n            Some(v) => ControlFlow::Continue(v),\n            None => ControlFlow::Break(None),\n        }\n    }"
+}

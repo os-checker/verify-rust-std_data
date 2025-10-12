@@ -1,0 +1,7 @@
+{
+  "file": "core/src/array/ascii.rs",
+  "name": "array::ascii::<impl [u8; 4]>::as_ascii_unchecked",
+  "hash": "1763756007100818166316394435208347213472",
+  "hash_direct": "1688003643477935059418244783491201593686",
+  "src": "pub const unsafe fn as_ascii_unchecked(&self) -> &[ascii::Char; N] {\n        let byte_ptr: *const [u8; N] = self;\n        let ascii_ptr = byte_ptr as *const [ascii::Char; N];\n        // SAFETY: The caller promised all the bytes are ASCII\n        unsafe { &*ascii_ptr }\n    }"
+}

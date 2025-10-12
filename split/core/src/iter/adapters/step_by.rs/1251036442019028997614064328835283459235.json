@@ -1,0 +1,15 @@
+{
+  "file": "core/src/iter/adapters/step_by.rs",
+  "name": "iter::adapters::step_by::StepBy::<iter::adapters::rev::Rev<iter::adapters::skip::Skip<ops::range::Range<usize>>>>::new",
+  "hash": "1251036442019028997614064328835283459235",
+  "hash_direct": "486866600584750904010074452178704031375",
+  "src": "pub(in crate::iter) fn new(iter: I, step: usize) -> StepBy<I> {\n        assert!(step != 0);\n        let iter = <I as SpecRangeSetup<I>>::setup(iter, step);\n        StepBy { iter, step_minus_one: step - 1, first_take: true }\n    }",
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "23134458339938598921008615884984951637",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "243931809744896974812513529918607549579",
+    "1752989996936949203916036071159051010960"
+  ]
+}

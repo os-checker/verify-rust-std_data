@@ -1,0 +1,24 @@
+{
+  "file": "core/src/internal_macros.rs",
+  "name": "<str::IsWhitespace as ops::function::FnOnce<(char,)>>::call_once",
+  "hash": "144901485728295170916662295686107338805",
+  "hash_direct": "1199667141762790922412486351593977013567",
+  "src": "extern \"rust-call\" fn call_once(self, ($( $arg, )*): ($( $ArgTy, )*)) -> $ReturnTy {\n                    Fn::call(&self, ($( $arg, )*))\n                }",
+  "macro_backtrace": [
+    {
+      "callsite": "impl_fn_for_zst! {\n    /// A nameable, cloneable fn type\n    #[derive(Clone)]\n    struct LinesMap impl<'a> Fn = |line: &'a str| -> &'a str {\n        let Some(line) = line.strip_suffix('\\n') else { return line };\n        let Some(line) = line.strip_suffix('\\r') else { return line };\n        line\n    };\n\n    #[derive(Clone)]\n    struct CharEscapeDebugContinue impl Fn = |c: char| -> char::EscapeDebug {\n        c.escape_debug_ext(EscapeDebugExtArgs {\n            escape_grapheme_extended: false,\n            escape_single_quote: true,\n            escape_double_quote: true\n        })\n    };\n\n    #[derive(Clone)]\n    struct CharEscapeUnicode impl Fn = |c: char| -> char::EscapeUnicode {\n        c.escape_unicode()\n    };\n    #[derive(Clone)]\n    struct CharEscapeDefault impl Fn = |c: char| -> char::EscapeDefault {\n        c.escape_default()\n    };\n\n    #[derive(Clone)]\n    struct IsWhitespace impl Fn = |c: char| -> bool {\n        c.is_whitespace()\n    };\n\n    #[derive(Clone)]\n    struct IsAsciiWhitespace impl Fn = |byte: &u8| -> bool {\n        byte.is_ascii_whitespace()\n    };\n\n    #[derive(Clone)]\n    struct IsNotEmpty impl<'a, 'b> Fn = |s: &'a &'b str| -> bool {\n        !s.is_empty()\n    };\n\n    #[derive(Clone)]\n    struct BytesIsNotEmpty impl<'a, 'b> Fn = |s: &'a &'b [u8]| -> bool {\n        !s.is_empty()\n    };\n\n    #[derive(Clone)]\n    struct UnsafeBytesToStr impl<'a> Fn = |bytes: &'a [u8]| -> &'a str {\n        // SAFETY: not safe\n        unsafe { from_utf8_unchecked(bytes) }\n    };\n}",
+      "defsite": "macro_rules! impl_fn_for_zst {\n    ($(\n        $( #[$attr: meta] )*\n        struct $Name: ident impl$( <$( $lifetime : lifetime ),+> )? Fn =\n            |$( $arg: ident: $ArgTy: ty ),*| -> $ReturnTy: ty\n            $body: block;\n    )+) => {\n        $(\n            $( #[$attr] )*\n            struct $Name;\n\n            impl $( <$( $lifetime ),+> )? Fn<($( $ArgTy, )*)> for $Name {\n                #[inline]\n                extern \"rust-call\" fn call(&self, ($( $arg, )*): ($( $ArgTy, )*)) -> $ReturnTy {\n                    $body\n                }\n            }\n\n            impl $( <$( $lifetime ),+> )? FnMut<($( $ArgTy, )*)> for $Name {\n                #[inline]\n                extern \"rust-call\" fn call_mut(\n                    &mut self,\n                    ($( $arg, )*): ($( $ArgTy, )*)\n                ) -> $ReturnTy {\n                    Fn::call(&*self, ($( $arg, )*))\n                }\n            }\n\n            impl $( <$( $lifetime ),+> )? FnOnce<($( $ArgTy, )*)> for $Name {\n                type Output = $ReturnTy;\n\n                #[inline]\n                extern \"rust-call\" fn call_once(self, ($( $arg, )*): ($( $ArgTy, )*)) -> $ReturnTy {\n                    Fn::call(&self, ($( $arg, )*))\n                }\n            }\n        )+\n    }\n}"
+    }
+  ],
+  "callees": [
+    "121872163624966698483225952656434249831",
+    "183702634530756494073025673838836651007",
+    "258820287469578611817448591488600041899",
+    "140979162253101145428042644231275222209",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "243931809744896974812513529918607549579",
+    "1752989996936949203916036071159051010960",
+    "42593226902273250284228501629666851752"
+  ]
+}

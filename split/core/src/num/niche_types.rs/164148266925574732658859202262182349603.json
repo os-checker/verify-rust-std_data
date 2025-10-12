@@ -1,0 +1,10 @@
+{
+  "file": "core/src/num/niche_types.rs",
+  "name": "num::niche_types::Nanoseconds::ZERO",
+  "hash": "164148266925574732658859202262182349603",
+  "hash_direct": "128071529833752354101373495284743855084",
+  "src": "pub const ZERO: Self = unsafe { Nanoseconds::new_unchecked(0) };",
+  "callees": [
+    "950957549956578784317830715657615300922"
+  ]
+}

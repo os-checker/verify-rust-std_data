@@ -1,7 +1,0 @@
-{
-  "file": "core/src/num/error.rs",
-  "name": "<num::error::ParseIntError as error::Error>::description",
-  "hash": "1716277859784042556215440372005255736537",
-  "hash_direct": "1008187105614848975415771225454892379391",
-  "src": "fn description(&self) -> &str {\n        match self.kind {\n            IntErrorKind::Empty => \"cannot parse integer from empty string\",\n            IntErrorKind::InvalidDigit => \"invalid digit found in string\",\n            IntErrorKind::PosOverflow => \"number too large to fit in target type\",\n            IntErrorKind::NegOverflow => \"number too small to fit in target type\",\n            IntErrorKind::Zero => \"number would be zero for non-zero type\",\n        }\n    }"
-}

@@ -1,0 +1,11 @@
+{
+  "file": "core/src/bstr/traits.rs",
+  "name": "bstr::traits::<impl slice::index::SliceIndex<bstr::ByteStr> for usize>::index_mut",
+  "hash": "137705073572888602327831890769010352112",
+  "hash_direct": "153060805963292138855255773466666036539",
+  "src": "fn index_mut(self, slice: &mut ByteStr) -> &mut Self::Output {\n        self.index_mut(slice.as_bytes_mut())\n    }",
+  "callees": [
+    "5785573104578677001405117597964291879",
+    "268692748672248342213847315215571190930"
+  ]
+}

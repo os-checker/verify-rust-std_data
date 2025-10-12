@@ -1,0 +1,11 @@
+{
+  "file": "core/src/wtf8.rs",
+  "name": "<wtf8::Wtf8CodePoints<'_> as iter::traits::iterator::Iterator>::next::{closure#0}",
+  "hash": "127464900367643177702565288206952825770",
+  "hash_direct": "9362358323424675732062122500921546633",
+  "src": "|c| CodePoint::from_u32_unchecked(c)",
+  "callees": [
+    "72906633798708398514741480268678697739",
+    "84266730152490042238903478970182342750"
+  ]
+}

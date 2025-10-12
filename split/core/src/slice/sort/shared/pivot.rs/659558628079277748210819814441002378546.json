@@ -1,0 +1,15 @@
+{
+  "file": "core/src/slice/sort/shared/pivot.rs",
+  "name": "slice::sort::shared::pivot::median3::<f32, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/slice/mod.rs:3165:41: 3165:47}>",
+  "hash": "659558628079277748210819814441002378546",
+  "hash_direct": "20527655225305094747541807490878254477",
+  "src": "fn median3<T, F: FnMut(&T, &T) -> bool>(a: &T, b: &T, c: &T, is_less: &mut F) -> *const T {\n    // Compiler tends to make this branchless when sensible, and avoids the\n    // third comparison when not.\n    let x = is_less(a, b);\n    let y = is_less(a, c);\n    if x == y {\n        // If x=y=0 then b, c <= a. In this case we want to return max(b, c).\n        // If x=y=1 then a < b, c. In this case we want to return min(b, c).\n        // By toggling the outcome of b < c using XOR x we get this behavior.\n        let z = is_less(b, c);\n        if z ^ x { c } else { b }\n    } else {\n        // Either c <= a < b or b <= a < c, thus a is our median.\n        a\n    }\n}",
+  "callees": [
+    "25315992229481465352451865580694346951",
+    "842267059997019422815333829425931124000",
+    "1280257502160233765816408910554470634604",
+    "1157832635988226544312579101964623411278",
+    "1239687241192450573815900328634536806436",
+    "124656679884072299719740859888952081738"
+  ]
+}

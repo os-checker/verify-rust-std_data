@@ -1,0 +1,7 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "fmt::FormattingOptions::sign_aware_zero_pad",
+  "hash": "1771343344827971571013287530707954834772",
+  "hash_direct": "529015356069869123610103615814063190499",
+  "src": "pub const fn sign_aware_zero_pad(&mut self, sign_aware_zero_pad: bool) -> &mut Self {\n        if sign_aware_zero_pad {\n            self.flags |= flags::SIGN_AWARE_ZERO_PAD_FLAG;\n        } else {\n            self.flags &= !flags::SIGN_AWARE_ZERO_PAD_FLAG;\n        }\n        self\n    }"
+}

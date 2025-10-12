@@ -1,0 +1,10 @@
+{
+  "file": "core/src/wtf8.rs",
+  "name": "wtf8::Wtf8::is_empty",
+  "hash": "120271117605061410914143983761860799957",
+  "hash_direct": "50971783644402597214463543311033753621",
+  "src": "pub fn is_empty(&self) -> bool {\n        self.bytes.is_empty()\n    }",
+  "callees": [
+    "497499364745128359314402117207900903418"
+  ]
+}

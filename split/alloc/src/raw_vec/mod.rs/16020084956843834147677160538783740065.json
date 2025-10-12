@@ -1,0 +1,12 @@
+{
+  "file": "alloc/src/raw_vec/mod.rs",
+  "name": "raw_vec::RawVec::<core::num::NonZero<u8>>::capacity",
+  "hash": "16020084956843834147677160538783740065",
+  "hash_direct": "1800308724582907043514320927587663163015",
+  "src": "pub(crate) const fn capacity(&self) -> usize {\n        self.inner.capacity(size_of::<T>())\n    }",
+  "callees": [
+    "593076053130787970912341718068175247042",
+    "1430871660384893176412006454621167618890",
+    "127326289725169637608193061289084434233"
+  ]
+}

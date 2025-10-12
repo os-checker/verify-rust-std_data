@@ -1,0 +1,7 @@
+{
+  "file": "core/src/error.rs",
+  "name": "<core::str::Utf8Error as core::error::Error>::description",
+  "hash": "6358266521388999647610001976180135584",
+  "hash_direct": "9133352636976536592273002670142228962",
+  "src": "fn description(&self) -> &str {\n        \"description() is deprecated; use Display\"\n    }"
+}

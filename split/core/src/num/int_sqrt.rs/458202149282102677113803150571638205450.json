@@ -1,0 +1,35 @@
+{
+  "file": "core/src/num/int_sqrt.rs",
+  "name": "num::int_sqrt::u32",
+  "hash": "458202149282102677113803150571638205450",
+  "hash_direct": "57232965355618301131273886156967370325",
+  "src": "pub(super) const fn $UnsignedT(mut n: $UnsignedT) -> $UnsignedT {\n            if n <= <$HalfBitsT>::MAX as $UnsignedT {\n                $HalfBitsT(n as $HalfBitsT) as $UnsignedT\n            } else {\n                // The normalization shift satisfies the Karatsuba square root\n                // algorithm precondition \"a₃ ≥ b/4\" where a₃ is the most\n                // significant quarter of `n`'s bits and b is the number of\n                // values that can be represented by that quarter of the bits.\n                //\n                // b/4 would then be all 0s except the second most significant\n                // bit (010...0) in binary. Since a₃ must be at least b/4, a₃'s\n                // most significant bit or its neighbor must be a 1. Since a₃'s\n                // most significant bits are `n`'s most significant bits, the\n                // same applies to `n`.\n                //\n                // The reason to shift by an even number of bits is because an\n                // even number of bits produces the square root shifted to the\n                // left by half of the normalization shift:\n                //\n                // sqrt(n << (2 * p))\n                // sqrt(2.pow(2 * p) * n)\n                // sqrt(2.pow(2 * p)) * sqrt(n)\n                // 2.pow(p) * sqrt(n)\n                // sqrt(n) << p\n                //\n                // Shifting by an odd number of bits leaves an ugly sqrt(2)\n                // multiplied in:\n                //\n                // sqrt(n << (2 * p + 1))\n                // sqrt(2.pow(2 * p + 1) * n)\n                // sqrt(2 * 2.pow(2 * p) * n)\n                // sqrt(2) * sqrt(2.pow(2 * p)) * sqrt(n)\n                // sqrt(2) * 2.pow(p) * sqrt(n)\n                // sqrt(2) * (sqrt(n) << p)\n                const EVEN_MAKING_BITMASK: u32 = !1;\n                let normalization_shift = n.leading_zeros() & EVEN_MAKING_BITMASK;\n                n <<= normalization_shift;\n\n                let s = $stages(n);\n\n                let denormalization_shift = normalization_shift >> 1;\n                s >> denormalization_shift\n            }\n        }",
+  "macro_backtrace": [
+    {
+      "callsite": "unsigned_fn!(u32, u16, u32_stages)",
+      "defsite": "macro_rules! unsigned_fn {\n    ($UnsignedT:ident, $HalfBitsT:ident, $stages:ident) => {\n        /// Returns the [integer square root](\n        /// https://en.wikipedia.org/wiki/Integer_square_root) of any\n        #[doc = concat!(\"[`\", stringify!($UnsignedT), \"`](prim@\", stringify!($UnsignedT), \")\")]\n        /// input.\n        #[must_use = \"this returns the result of the operation, \\\n                      without modifying the original\"]\n        #[inline]\n        pub(super) const fn $UnsignedT(mut n: $UnsignedT) -> $UnsignedT {\n            if n <= <$HalfBitsT>::MAX as $UnsignedT {\n                $HalfBitsT(n as $HalfBitsT) as $UnsignedT\n            } else {\n                // The normalization shift satisfies the Karatsuba square root\n                // algorithm precondition \"a₃ ≥ b/4\" where a₃ is the most\n                // significant quarter of `n`'s bits and b is the number of\n                // values that can be represented by that quarter of the bits.\n                //\n                // b/4 would then be all 0s except the second most significant\n                // bit (010...0) in binary. Since a₃ must be at least b/4, a₃'s\n                // most significant bit or its neighbor must be a 1. Since a₃'s\n                // most significant bits are `n`'s most significant bits, the\n                // same applies to `n`.\n                //\n                // The reason to shift by an even number of bits is because an\n                // even number of bits produces the square root shifted to the\n                // left by half of the normalization shift:\n                //\n                // sqrt(n << (2 * p))\n                // sqrt(2.pow(2 * p) * n)\n                // sqrt(2.pow(2 * p)) * sqrt(n)\n                // 2.pow(p) * sqrt(n)\n                // sqrt(n) << p\n                //\n                // Shifting by an odd number of bits leaves an ugly sqrt(2)\n                // multiplied in:\n                //\n                // sqrt(n << (2 * p + 1))\n                // sqrt(2.pow(2 * p + 1) * n)\n                // sqrt(2 * 2.pow(2 * p) * n)\n                // sqrt(2) * sqrt(2.pow(2 * p)) * sqrt(n)\n                // sqrt(2) * 2.pow(p) * sqrt(n)\n                // sqrt(2) * (sqrt(n) << p)\n                const EVEN_MAKING_BITMASK: u32 = !1;\n                let normalization_shift = n.leading_zeros() & EVEN_MAKING_BITMASK;\n                n <<= normalization_shift;\n\n                let s = $stages(n);\n\n                let denormalization_shift = normalization_shift >> 1;\n                s >> denormalization_shift\n            }\n        }\n    };\n}"
+    }
+  ],
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "6962362284417680556415378392413733050",
+    "17421822894816687532325615181214565887",
+    "23815256893174302637797703719499456373",
+    "148131587498236735283254898947308266416",
+    "159501640769214524245042016289694267677",
+    "955186324838588195716147025325337593981",
+    "60960868849511503248088905502240646288",
+    "671874059102009783417338587524839501010",
+    "1508557820869042035017329617948728186885",
+    "230043199525005021015126493782242955113",
+    "126995290523701752392306498242602668054",
+    "913423096705529582812295291280909896630",
+    "1745451321050495194918138817064128180120",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "1752989996936949203916036071159051010960",
+    "478753423337745817613297159272845606672",
+    "36990817497430174858508344623774643994",
+    "739520556846959085018120036998133255835"
+  ]
+}

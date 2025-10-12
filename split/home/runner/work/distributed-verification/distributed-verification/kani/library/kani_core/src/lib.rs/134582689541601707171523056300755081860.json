@@ -1,0 +1,26 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/lib.rs",
+  "name": "kani::internal::kani_forall::<usize, {closure@/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/lib.rs:205:33: 205:37}>",
+  "hash": "134582689541601707171523056300755081860",
+  "hash_direct": "43198409860822178174308722989862338826",
+  "attrs": [
+    "#[kanitool::unstable(feature = \"quantifiers\", issue = 2546, reason =\n\"experimental quantifiers\")]\n",
+    "#[kanitool::fn_marker = \"ForallHook\"]\n"
+  ],
+  "src": "pub fn kani_forall<T, F>(lower_bound: T, upper_bound: T, predicate: F) -> bool\n            where\n                F: Fn(T) -> bool,\n            {\n                predicate(lower_bound)\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "kani_core::kani_intrinsics!()",
+      "defsite": "macro_rules! kani_intrinsics"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ],
+  "callees": [
+    "24103311567888690512064645050450741342",
+    "18924474281332607947427114014473837479",
+    "1046794659200866944112594283578730164606"
+  ]
+}

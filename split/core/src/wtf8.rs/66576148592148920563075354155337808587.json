@@ -1,0 +1,12 @@
+{
+  "file": "core/src/wtf8.rs",
+  "name": "wtf8::Wtf8::is_code_point_boundary",
+  "hash": "66576148592148920563075354155337808587",
+  "hash_direct": "16520034135571981325593846836188739505",
+  "src": "pub fn is_code_point_boundary(&self, index: usize) -> bool {\n        if index == 0 {\n            return true;\n        }\n        match self.bytes.get(index) {\n            None => index == self.len(),\n            Some(&b) => (b as i8) >= -0x40,\n        }\n    }",
+  "callees": [
+    "760499024176919446914647389213438349877",
+    "18415684320297405220951080584907961160",
+    "96984243220377031815618416015724948348"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/lib.rs",
+  "name": "num::dec2flt::decimal_seq::decimal_seq_verify::<impl kani::Arbitrary for num::dec2flt::decimal_seq::DecimalSeq>::any::{closure#2}",
+  "hash": "24103311567888690512064645050450741342",
+  "hash_direct": "1405406393024429643014291481464576752903",
+  "src": "|$i| $predicate",
+  "macro_backtrace": [
+    {
+      "callsite": "forall!(|i in (0,DecimalSeq::MAX_DIGITS)| ret.digits[i] <= 9)",
+      "defsite": "macro_rules! forall {\n            (|$i:ident in ($lower_bound:expr, $upper_bound:expr)| $predicate:expr) => {{\n                let lower_bound: usize = $lower_bound;\n                let upper_bound: usize = $upper_bound;\n                let predicate = |$i| $predicate;\n                kani::internal::kani_forall(lower_bound, upper_bound, predicate)\n            }};\n            (|$i:ident | $predicate:expr) => {{\n                let predicate = |$i| $predicate;\n                kani::internal::kani_forall(usize::MIN, usize::MAX, predicate)\n            }};\n        }"
+    }
+  ]
+}

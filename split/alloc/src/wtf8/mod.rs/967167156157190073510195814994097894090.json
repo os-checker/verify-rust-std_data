@@ -1,0 +1,10 @@
+{
+  "file": "alloc/src/wtf8/mod.rs",
+  "name": "wtf8::Wtf8Buf::from_string",
+  "hash": "967167156157190073510195814994097894090",
+  "hash_direct": "1360951860177012158012400680764603017901",
+  "src": "pub const fn from_string(string: String) -> Wtf8Buf {\n        Wtf8Buf { bytes: string.into_bytes(), is_known_utf8: true }\n    }",
+  "callees": [
+    "1757792106307468758515809618533964909067"
+  ]
+}

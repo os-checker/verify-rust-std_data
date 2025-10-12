@@ -1,0 +1,7 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "fmt::FormattingOptions::sign",
+  "hash": "51266055501168515924678692450285645547",
+  "hash_direct": "1791522374496861531915640076359007350583",
+  "src": "pub const fn sign(&mut self, sign: Option<Sign>) -> &mut Self {\n        let sign = match sign {\n            None => 0,\n            Some(Sign::Plus) => flags::SIGN_PLUS_FLAG,\n            Some(Sign::Minus) => flags::SIGN_MINUS_FLAG,\n        };\n        self.flags = self.flags & !(flags::SIGN_PLUS_FLAG | flags::SIGN_MINUS_FLAG) | sign;\n        self\n    }"
+}

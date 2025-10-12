@@ -1,0 +1,21 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/iter.rs",
+  "name": "<ops::range::Range<usize> as kani::KaniIter>::nth",
+  "hash": "2027409230208452168840571471408388908",
+  "hash_direct": "1059219272627164574012424292115662001719",
+  "src": "fn nth(&self, i: usize) -> Self::Item {\n                        self.start + i as $t\n                    }",
+  "macro_backtrace": [
+    {
+      "callsite": "generate_impl_range!(usize)",
+      "defsite": "macro_rules! generate_impl_range {\n            ($t:ty) => {\n                impl KaniIter for Range<$t> {\n                    type Item = $t;\n                    fn nth(&self, i: usize) -> Self::Item {\n                        self.start + i as $t\n                    }\n                    fn first(&self) -> Self::Item {\n                        self.start\n                    }\n                    fn assumption(&self) -> bool {\n                        true\n                    }\n                    fn len(&self) -> usize {\n                        (self.end - self.start) as usize\n                    }\n                }\n            };\n        }"
+    },
+    {
+      "callsite": "kani_core::generate_iter!()",
+      "defsite": "macro_rules! generate_iter"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ]
+}

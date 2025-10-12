@@ -1,0 +1,15 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<str::iter::Chars<'_> as iter::traits::iterator::Iterator>::flat_map::<char::EscapeDebug, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/wtf8.rs:148:41: 148:44}>",
+  "hash": "82505610220388918355242278519042446911",
+  "hash_direct": "888908991767492048317924262937973494409",
+  "src": "fn flat_map<U, F>(self, f: F) -> FlatMap<Self, U, F>\n    where\n        Self: Sized,\n        U: IntoIterator,\n        F: FnMut(Self::Item) -> U,\n    {\n        FlatMap::new(self, f)\n    }",
+  "callees": [
+    "933868963283985365716604384936830717420",
+    "97251196063302200238910832183464545527",
+    "69149089423387280687043564174661471904",
+    "1261258928208025940111564299850087284739",
+    "171396606861367566904190663197397245406",
+    "130541805626945302885494282237584375979"
+  ]
+}

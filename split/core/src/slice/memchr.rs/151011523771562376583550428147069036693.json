@@ -1,0 +1,10 @@
+{
+  "file": "core/src/slice/memchr.rs",
+  "name": "core::slice::memchr::contains_zero_byte",
+  "hash": "151011523771562376583550428147069036693",
+  "hash_direct": "25647993446451248529022864293695776373",
+  "src": "const fn contains_zero_byte(x: usize) -> bool {\n    x.wrapping_sub(LO_USIZE) & !x & HI_USIZE != 0\n}",
+  "callees": [
+    "1277238822590522796410685110027985158703"
+  ]
+}

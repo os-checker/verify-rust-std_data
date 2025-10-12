@@ -1,0 +1,10 @@
+{
+  "file": "core/src/bstr/mod.rs",
+  "name": "<&mut bstr::ByteStr as default::Default>::default",
+  "hash": "1244790236992922242613687391779415760805",
+  "hash_direct": "41917576024456946063815522785176005148",
+  "src": "fn default() -> Self {\n        ByteStr::from_bytes_mut(&mut [])\n    }",
+  "callees": [
+    "60669093460926144821351075926158486336"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/wtf8.rs",
+  "name": "wtf8::decode_surrogate",
+  "hash": "16261241472119900705985823798939400202",
+  "hash_direct": "753610890729802638617371941447460277921",
+  "src": "fn decode_surrogate(second_byte: u8, third_byte: u8) -> u16 {\n    // The first byte is assumed to be 0xED\n    0xD800 | (second_byte as u16 & 0x3F) << 6 | third_byte as u16 & 0x3F\n}"
+}

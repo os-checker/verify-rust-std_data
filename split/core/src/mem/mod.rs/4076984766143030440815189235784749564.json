@@ -1,0 +1,10 @@
+{
+  "file": "core/src/mem/mod.rs",
+  "name": "core::mem::forget::<core::hint::select_unpredictable::DropOnPanic<usize>>",
+  "hash": "4076984766143030440815189235784749564",
+  "hash_direct": "33859219440331718776844440920859387244",
+  "src": "pub const fn forget<T>(t: T) {\n    let _ = ManuallyDrop::new(t);\n}",
+  "callees": [
+    "11976266579713756835272321175156879554"
+  ]
+}

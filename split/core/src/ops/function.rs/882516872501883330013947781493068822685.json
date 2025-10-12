@@ -1,0 +1,13 @@
+{
+  "file": "core/src/ops/function.rs",
+  "name": "core::ops::function::impls::<impl core::ops::FnOnce<([u8; 2],)> for &mut fn([u8; core::::num::{impl#7}::from_le_bytes::{constant#0}]) -> u16 {core::num::<impl u16>::from_le_bytes}>::call_once",
+  "hash": "882516872501883330013947781493068822685",
+  "hash_direct": "11048770526018431292235342009229647438",
+  "src": "extern \"rust-call\" fn call_once(self, args: A) -> F::Output {\n            (*self).call_mut(args)\n        }",
+  "callees": [
+    "110529358142384840932381700667077663633",
+    "154814872857791229444909894964015826161",
+    "164920246545788730618233309646997589036",
+    "56512467496642389877585091471634591177"
+  ]
+}

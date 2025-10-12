@@ -1,0 +1,11 @@
+{
+  "file": "core/src/wtf8.rs",
+  "name": "wtf8::Wtf8::from_str",
+  "hash": "139545332751983361011124237375186929356",
+  "hash_direct": "1585753827388767742413831199709123997103",
+  "src": "pub fn from_str(value: &str) -> &Wtf8 {\n        // SAFETY: Since WTF-8 is a superset of UTF-8, this always is valid.\n        unsafe { Wtf8::from_bytes_unchecked(value.as_bytes()) }\n    }",
+  "callees": [
+    "137147026445318887422604340055542353314",
+    "637727102073927728516698373901107097920"
+  ]
+}

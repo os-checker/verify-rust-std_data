@@ -1,0 +1,10 @@
+{
+  "file": "core/src/wtf8.rs",
+  "name": "core::wtf8::Wtf8::initial_trail_surrogate",
+  "hash": "817178901184574400417018983717759081386",
+  "hash_direct": "1395367057386106321115496863178151063480",
+  "src": "pub fn initial_trail_surrogate(&self) -> Option<u16> {\n        match self.bytes {\n            [0xED, b2 @ 0xB0..=0xBF, b3, ..] => Some(decode_surrogate(b2, b3)),\n            _ => None,\n        }\n    }",
+  "callees": [
+    "10956010451201585635214824300302305028"
+  ]
+}

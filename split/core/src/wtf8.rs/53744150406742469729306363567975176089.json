@@ -1,0 +1,17 @@
+{
+  "file": "core/src/wtf8.rs",
+  "name": "<wtf8::CodePoint as cmp::PartialEq>::eq",
+  "hash": "53744150406742469729306363567975176089",
+  "hash_direct": "1796088241976177485910921605273923119475",
+  "src": "PartialEq",
+  "macro_backtrace": [
+    {
+      "callsite": "PartialEq",
+      "defsite": "pub macro PartialEq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ],
+  "callees": [
+    "42205199488613790039931280811009634324",
+    "107496796079202766681632399080957069720"
+  ]
+}

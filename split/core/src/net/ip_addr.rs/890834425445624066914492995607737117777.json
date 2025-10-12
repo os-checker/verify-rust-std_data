@@ -1,0 +1,12 @@
+{
+  "file": "core/src/net/ip_addr.rs",
+  "name": "net::ip_addr::Ipv6Addr::is_unicast_link_local",
+  "hash": "890834425445624066914492995607737117777",
+  "hash_direct": "123363987161840585599866303489767511851",
+  "src": "pub const fn is_unicast_link_local(&self) -> bool {\n        (self.segments()[0] & 0xffc0) == 0xfe80\n    }",
+  "callees": [
+    "134724938574094262089516253074382302486",
+    "1296974665896773491711060472797309810764",
+    "816297832958388115413690138049006858020"
+  ]
+}

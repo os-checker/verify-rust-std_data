@@ -1,0 +1,13 @@
+{
+  "file": "core/src/slice/mod.rs",
+  "name": "slice::<impl [u8]>::get_mut::<ops::range::RangeTo<usize>>",
+  "hash": "342839850141467737417042194911382086381",
+  "hash_direct": "161590737452425490092871275172904648645",
+  "src": "pub const fn get_mut<I>(&mut self, index: I) -> Option<&mut I::Output>\n    where\n        I: [const] SliceIndex<Self>,\n    {\n        index.get_mut(self)\n    }",
+  "callees": [
+    "979090888644938360611991061608854301815",
+    "88360245395064043064634101589841978240",
+    "371781274556383483012332251027381311234",
+    "25047678897068037619032084817793238854"
+  ]
+}

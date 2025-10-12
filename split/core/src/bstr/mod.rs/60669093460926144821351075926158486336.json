@@ -1,0 +1,7 @@
+{
+  "file": "core/src/bstr/mod.rs",
+  "name": "bstr::ByteStr::from_bytes_mut",
+  "hash": "60669093460926144821351075926158486336",
+  "hash_direct": "745320166227010338810536321036000851011",
+  "src": "pub const fn from_bytes_mut(slice: &mut [u8]) -> &mut Self {\n        // SAFETY: `ByteStr` is a transparent wrapper around `[u8]`, so we can turn a reference to\n        // the wrapped type into a reference to the wrapper type.\n        unsafe { &mut *(slice as *mut [u8] as *mut Self) }\n    }"
+}

@@ -1,0 +1,10 @@
+{
+  "file": "core/src/str/count.rs",
+  "name": "str::count::sum_bytes_in_usize",
+  "hash": "58675320035953499899532680283682396280",
+  "hash_direct": "1350912312924645107714949315183300517600",
+  "src": "fn sum_bytes_in_usize(values: usize) -> usize {\n    const LSB_SHORTS: usize = usize::repeat_u16(0x0001);\n    const SKIP_BYTES: usize = usize::repeat_u16(0x00ff);\n\n    let pair_sum: usize = (values & SKIP_BYTES) + ((values >> 8) & SKIP_BYTES);\n    pair_sum.wrapping_mul(LSB_SHORTS) >> ((USIZE_SIZE - 2) * 8)\n}",
+  "callees": [
+    "136731688598983939127472435238823692605"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "file": "core/src/wtf8.rs",
+  "name": "core::wtf8::CodePoint::to_lead_surrogate",
+  "hash": "1242095035858101221111409027199127393385",
+  "hash_direct": "1827218884229988189610670649643583181867",
+  "src": "pub fn to_lead_surrogate(&self) -> Option<u16> {\n        match self.to_u32() {\n            lead @ 0xD800..=0xDBFF => Some(lead as u16),\n            _ => None,\n        }\n    }",
+  "callees": [
+    "835425347325482902216659312554423305674",
+    "175877024834842685977702169688111596856"
+  ]
+}

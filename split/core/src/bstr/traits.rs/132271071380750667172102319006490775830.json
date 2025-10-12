@@ -1,0 +1,25 @@
+{
+  "file": "core/src/bstr/traits.rs",
+  "name": "bstr::traits::<impl slice::index::SliceIndex<bstr::ByteStr> for range::Range<usize>>::get",
+  "hash": "132271071380750667172102319006490775830",
+  "hash_direct": "1101614082594276717614434823650741329640",
+  "src": "fn get(self, slice: &ByteStr) -> Option<&Self::Output> {\n                self.get(slice.as_bytes()).map(ByteStr::from_bytes)\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "impl_slice_index!(range::Range<usize>)",
+      "defsite": "macro_rules! impl_slice_index {\n    ($index:ty) => {\n        #[unstable(feature = \"bstr\", issue = \"134915\")]\n        unsafe impl SliceIndex<ByteStr> for $index {\n            type Output = ByteStr;\n            #[inline]\n            fn get(self, slice: &ByteStr) -> Option<&Self::Output> {\n                self.get(slice.as_bytes()).map(ByteStr::from_bytes)\n            }\n            #[inline]\n            fn get_mut(self, slice: &mut ByteStr) -> Option<&mut Self::Output> {\n                self.get_mut(slice.as_bytes_mut()).map(ByteStr::from_bytes_mut)\n            }\n            #[inline]\n            unsafe fn get_unchecked(self, slice: *const ByteStr) -> *const Self::Output {\n                // SAFETY: the caller has to uphold the safety contract for `get_unchecked`.\n                unsafe { self.get_unchecked(slice as *const [u8]) as *const ByteStr }\n            }\n            #[inline]\n            unsafe fn get_unchecked_mut(self, slice: *mut ByteStr) -> *mut Self::Output {\n                // SAFETY: the caller has to uphold the safety contract for `get_unchecked_mut`.\n                unsafe { self.get_unchecked_mut(slice as *mut [u8]) as *mut ByteStr }\n            }\n            #[inline]\n            fn index(self, slice: &ByteStr) -> &Self::Output {\n                ByteStr::from_bytes(self.index(slice.as_bytes()))\n            }\n            #[inline]\n            fn index_mut(self, slice: &mut ByteStr) -> &mut Self::Output {\n                ByteStr::from_bytes_mut(self.index_mut(slice.as_bytes_mut()))\n            }\n        }\n    };\n}"
+    }
+  ],
+  "callees": [
+    "1274025542878796514526074388697738620",
+    "1022001651060799933110198452482061030147",
+    "979090888644938360611991061608854301815",
+    "1514574983801903058616516690757233315424",
+    "572285014956127410012027859332803154923",
+    "1616191069419900474815028734521190477888",
+    "263058729650888797416482539365310542384",
+    "182905984608557862932815513141399110877",
+    "73671032001074133838543484967897067470",
+    "1574076206413902276617103312132801420117"
+  ]
+}

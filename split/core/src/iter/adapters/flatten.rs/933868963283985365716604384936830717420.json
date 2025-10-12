@@ -1,0 +1,14 @@
+{
+  "file": "core/src/iter/adapters/flatten.rs",
+  "name": "iter::adapters::flatten::FlatMap::<str::iter::Chars<'_>, char::EscapeDebug, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/wtf8.rs:148:41: 148:44}>::new",
+  "hash": "933868963283985365716604384936830717420",
+  "hash_direct": "75784962197646909571817881788766337558",
+  "src": "pub(in crate::iter) fn new(iter: I, f: F) -> FlatMap<I, U, F> {\n        FlatMap { inner: FlattenCompat::new(iter.map(f)) }\n    }",
+  "callees": [
+    "97251196063302200238910832183464545527",
+    "69149089423387280687043564174661471904",
+    "1261258928208025940111564299850087284739",
+    "171396606861367566904190663197397245406",
+    "130541805626945302885494282237584375979"
+  ]
+}

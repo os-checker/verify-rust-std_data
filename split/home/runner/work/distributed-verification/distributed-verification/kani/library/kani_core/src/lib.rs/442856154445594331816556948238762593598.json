@@ -1,0 +1,30 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/lib.rs",
+  "name": "kani::any_where::<f32, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/intrinsics/mod.rs:3544:40: 3544:43}>",
+  "hash": "442856154445594331816556948238762593598",
+  "hash_direct": "46445242297560067617148465140823856026",
+  "src": "pub fn any_where<T: Arbitrary, F: FnOnce(&T) -> bool>(f: F) -> T {\n            let result = T::any();\n            assume(f(&result));\n            result\n        }",
+  "macro_backtrace": [
+    {
+      "callsite": "kani_core::kani_intrinsics!()",
+      "defsite": "macro_rules! kani_intrinsics"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ],
+  "callees": [
+    "670113478247484310210240607638878845290",
+    "74825136526453919664219528636088885642",
+    "329435249764941756315607754667978236634",
+    "139704976908753389291209564980972955015",
+    "130812896255483315711214574947641504756",
+    "125895754419976834712369234308535121418",
+    "128974011851584301084276742985471198788",
+    "134155172736845441354909341801842248059",
+    "44602616552605954814307106705195188814",
+    "303127917241666984113380325134893912788",
+    "681734761653390516017251020815506328030"
+  ]
+}

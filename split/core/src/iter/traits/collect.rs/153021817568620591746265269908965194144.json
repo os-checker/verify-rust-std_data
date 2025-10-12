@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/traits/collect.rs",
+  "name": "<iter::adapters::flatten::FlatMap<str::iter::Chars<'_>, char::EscapeDebug, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/wtf8.rs:148:41: 148:44}> as iter::traits::collect::IntoIterator>::into_iter",
+  "hash": "153021817568620591746265269908965194144",
+  "hash_direct": "92049563575720223777947489048585175474",
+  "src": "fn into_iter(self) -> I {\n        self\n    }"
+}

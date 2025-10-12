@@ -1,0 +1,19 @@
+{
+  "file": "core/src/alloc/layout.rs",
+  "name": "<alloc::layout::Layout as ub_checks::Invariant>::is_safe",
+  "hash": "74832120848682808746781179739132876020",
+  "hash_direct": "130924779690017753327971207160911256661",
+  "src": "Invariant",
+  "macro_backtrace": [
+    {
+      "callsite": "Invariant",
+      "defsite": "#[proc_macro_error]"
+    }
+  ],
+  "callees": [
+    "137368381448604167703416046205455599816",
+    "156396365605833484958181337486344432065",
+    "1574783854124112156816797958374362129069",
+    "922315106903690419814131998191411440948"
+  ]
+}

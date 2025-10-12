@@ -1,0 +1,11 @@
+{
+  "file": "core/src/wtf8.rs",
+  "name": "core::wtf8::CodePoint::to_trail_surrogate",
+  "hash": "534178601838686588412332239415212558467",
+  "hash_direct": "11075117502112525496532173565139657958",
+  "src": "pub fn to_trail_surrogate(&self) -> Option<u16> {\n        match self.to_u32() {\n            trail @ 0xDC00..=0xDFFF => Some(trail as u16),\n            _ => None,\n        }\n    }",
+  "callees": [
+    "835425347325482902216659312554423305674",
+    "175877024834842685977702169688111596856"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "file": "core/src/str/validations.rs",
+  "name": "str::validations::NONASCII_MASK",
+  "hash": "33111478725431271197126700439653926904",
+  "hash_direct": "135463971115036895726088325569035717420",
+  "src": "const NONASCII_MASK: usize = usize::repeat_u8(0x80);",
+  "callees": [
+    "113976926829195441887553509461786022633",
+    "44865517427538800504241740979033245306"
+  ]
+}

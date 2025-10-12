@@ -1,0 +1,10 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<array::drain::Drain<'_, ()> as iter::traits::iterator::Iterator>::map::<ops::try_trait::NeverShortCircuit<bool>, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/ops/try_trait.rs:393:9: 393:17}>",
+  "hash": "821691740052836909917810084898035490128",
+  "hash_direct": "649041444657768369617726658145986298188",
+  "src": "fn map<B, F>(self, f: F) -> Map<Self, F>\n    where\n        Self: Sized,\n        F: FnMut(Self::Item) -> B,\n    {\n        Map::new(self, f)\n    }",
+  "callees": [
+    "13890377396431440028247685791743348521"
+  ]
+}

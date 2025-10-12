@@ -1,0 +1,13 @@
+{
+  "file": "core/src/intrinsics/mod.rs",
+  "name": "intrinsics::unchecked_funnel_shl::<usize>",
+  "hash": "39340311974475708792109358758477758046",
+  "hash_direct": "7058227374614935881195051704585963224",
+  "inst_kind": "\"Intrinsic\"",
+  "src": "pub const unsafe fn unchecked_funnel_shl<T: [const] fallback::FunnelShift>(\n    a: T,\n    b: T,\n    shift: u32,\n) -> T {\n    // SAFETY: caller ensures that `shift` is in-range\n    unsafe { a.unchecked_funnel_shl(b, shift) }\n}",
+  "callees": [
+    "130330123525716393101034958525209554520",
+    "111578832161705947388803849334876584267",
+    "99787285922047279249929110595932064894"
+  ]
+}

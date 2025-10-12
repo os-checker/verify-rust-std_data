@@ -1,0 +1,7 @@
+{
+  "file": "core/src/wtf8.rs",
+  "name": "<wtf8::Wtf8 as ops::index::Index<ops::range::RangeFull>>::index",
+  "hash": "1818404234915484168217930817467882962187",
+  "hash_direct": "938833947682308574016650715084718479542",
+  "src": "fn index(&self, _range: ops::RangeFull) -> &Wtf8 {\n        self\n    }"
+}

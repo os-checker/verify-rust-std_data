@@ -1,0 +1,13 @@
+{
+  "file": "alloc/src/raw_vec/mod.rs",
+  "name": "raw_vec::RawVecInner::needs_to_grow",
+  "hash": "146160518815533716415349492187807273997",
+  "hash_direct": "147642988101161260247520873333068687123",
+  "src": "fn needs_to_grow(&self, len: usize, additional: usize, elem_layout: Layout) -> bool {\n        additional > self.capacity(elem_layout.size()).wrapping_sub(len)\n    }",
+  "callees": [
+    "593076053130787970912341718068175247042",
+    "1099899350342654162615874749245636043676",
+    "127326289725169637608193061289084434233",
+    "1277238822590522796410685110027985158703"
+  ]
+}

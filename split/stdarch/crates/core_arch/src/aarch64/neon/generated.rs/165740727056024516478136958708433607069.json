@@ -1,0 +1,11 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/generated.rs",
+  "name": "core_arch::aarch64::neon::generated::vnegd_s64",
+  "hash": "165740727056024516478136958708433607069",
+  "hash_direct": "176919329035376313461876320648418379191",
+  "src": "pub fn vnegd_s64(a: i64) -> i64 {\n    a.wrapping_neg()\n}",
+  "callees": [
+    "995285317202435294714319303510167602079",
+    "1763131247416446000818338850787315673722"
+  ]
+}

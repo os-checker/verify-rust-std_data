@@ -1,0 +1,15 @@
+{
+  "file": "core/src/unicode/unicode_data.rs",
+  "name": "unicode::unicode_data::white_space::lookup",
+  "hash": "42593226902273250284228501629666851752",
+  "hash_direct": "246626953577057356513014398941375091496",
+  "src": "pub const fn lookup(c: char) -> bool {\n        debug_assert!(!c.is_ascii());\n        match c as u32 >> 8 {\n            0 => WHITESPACE_MAP[c as usize & 0xff] & 1 != 0,\n            22 => c as u32 == 0x1680,\n            32 => WHITESPACE_MAP[c as usize & 0xff] & 2 != 0,\n            48 => c as u32 == 0x3000,\n            _ => false,\n        }\n    }",
+  "callees": [
+    "121872163624966698483225952656434249831",
+    "258820287469578611817448591488600041899",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "243931809744896974812513529918607549579",
+    "1752989996936949203916036071159051010960"
+  ]
+}

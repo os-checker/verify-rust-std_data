@@ -1,7 +1,0 @@
-{
-  "file": "core/src/str/mod.rs",
-  "name": "str::<impl str>::as_str",
-  "hash": "1180787390845786299316044198423082325159",
-  "hash_direct": "795699704678835638316883868521410921763",
-  "src": "pub fn as_str(&self) -> &str {\n        self\n    }"
-}

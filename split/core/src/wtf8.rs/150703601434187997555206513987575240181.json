@@ -1,0 +1,13 @@
+{
+  "file": "core/src/wtf8.rs",
+  "name": "<wtf8::CodePoint as cmp::Eq>::assert_receiver_is_total_eq",
+  "hash": "150703601434187997555206513987575240181",
+  "hash_direct": "8627006651069388584398503669229954409",
+  "src": "Eq",
+  "macro_backtrace": [
+    {
+      "callsite": "Eq",
+      "defsite": "pub macro Eq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ]
+}

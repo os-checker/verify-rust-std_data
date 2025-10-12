@@ -1,0 +1,17 @@
+{
+  "file": "core/src/time.rs",
+  "name": "<time::Duration as cmp::PartialEq>::eq",
+  "hash": "50260268632718934194550421386752020750",
+  "hash_direct": "4242987487233131407652234731539131326",
+  "src": "PartialEq",
+  "macro_backtrace": [
+    {
+      "callsite": "PartialEq",
+      "defsite": "pub macro PartialEq($item:item) {\n    /* compiler built-in */\n}"
+    }
+  ],
+  "callees": [
+    "14124548386454289006595217407936017995",
+    "27460360985597728751338915468532901532"
+  ]
+}

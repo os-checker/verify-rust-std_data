@@ -1,0 +1,13 @@
+{
+  "file": "core/src/ascii/ascii_char.rs",
+  "name": "ascii::ascii_char::<impl convert::From<ascii::ascii_char::AsciiChar> for char>::from",
+  "hash": "303887510259205112610660316864342870755",
+  "hash_direct": "511073468826612017315713681393966221260",
+  "src": "fn from(chr: AsciiChar) -> $ty {\n                    chr as u8 as $ty\n                }",
+  "macro_backtrace": [
+    {
+      "callsite": "into_int_impl!(u8 u16 u32 u64 u128 char)",
+      "defsite": "macro_rules! into_int_impl {\n    ($($ty:ty)*) => {\n        $(\n            #[unstable(feature = \"ascii_char\", issue = \"110998\")]\n            #[rustc_const_unstable(feature = \"const_convert\", issue = \"143773\")]\n            impl const From<AsciiChar> for $ty {\n                #[inline]\n                fn from(chr: AsciiChar) -> $ty {\n                    chr as u8 as $ty\n                }\n            }\n        )*\n    }\n}"
+    }
+  ]
+}

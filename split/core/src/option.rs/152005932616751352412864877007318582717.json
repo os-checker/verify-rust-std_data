@@ -1,0 +1,7 @@
+{
+  "file": "core/src/option.rs",
+  "name": "core::option::Option::<core::char::EscapeDebug>::as_mut",
+  "hash": "152005932616751352412864877007318582717",
+  "hash_direct": "71932385352102766726101119902354175663",
+  "src": "pub const fn as_mut(&mut self) -> Option<&mut T> {\n        match *self {\n            Some(ref mut x) => Some(x),\n            None => None,\n        }\n    }"
+}

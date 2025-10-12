@@ -1,0 +1,22 @@
+{
+  "file": "core/src/iter/range.rs",
+  "name": "<ascii::ascii_char::AsciiChar as iter::range::Step>::forward_unchecked",
+  "hash": "109139637908755460326884182542280911770",
+  "hash_direct": "176071744301726949554575043494132201027",
+  "src": "unsafe fn forward_unchecked(start: AsciiChar, count: usize) -> AsciiChar {\n        // SAFETY: Caller asserts that result is a valid ASCII character,\n        // and therefore it is a valid u8.\n        let end = unsafe { Step::forward_unchecked(start.to_u8(), count) };\n\n        // SAFETY: Caller asserts that result is a valid ASCII character.\n        unsafe { AsciiChar::from_u8_unchecked(end) }\n    }",
+  "callees": [
+    "15551977551413036531158252289522839939",
+    "211389067699639933614636457746408448112",
+    "258820287469578611817448591488600041899",
+    "17421822894816687532325615181214565887",
+    "23815256893174302637797703719499456373",
+    "66558832420252384767352894655095642857",
+    "26195867178919098137740125012797303465",
+    "18305200539080999937692536706112892813",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "478753423337745817613297159272845606672",
+    "1655209669618753209114659502170458211993",
+    "739520556846959085018120036998133255835"
+  ]
+}

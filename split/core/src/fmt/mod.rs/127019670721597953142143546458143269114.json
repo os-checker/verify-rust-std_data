@@ -1,0 +1,7 @@
+{
+  "file": "core/src/fmt/mod.rs",
+  "name": "core::fmt::Formatter::<'_>::new",
+  "hash": "127019670721597953142143546458143269114",
+  "hash_direct": "801371666058278584912207230814014750020",
+  "src": "pub const fn new(write: &'a mut (dyn Write + 'a), options: FormattingOptions) -> Self {\n        Formatter { options, buf: write }\n    }"
+}

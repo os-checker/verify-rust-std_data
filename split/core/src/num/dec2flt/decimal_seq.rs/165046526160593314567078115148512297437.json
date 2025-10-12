@@ -1,0 +1,15 @@
+{
+  "file": "core/src/num/dec2flt/decimal_seq.rs",
+  "name": "num::dec2flt::decimal_seq::DecimalSeq::trim",
+  "hash": "165046526160593314567078115148512297437",
+  "hash_direct": "540805995426463254510716424412277149396",
+  "src": "pub fn trim(&mut self) {\n        // All of the following calls to `DecimalSeq::trim` can't panic because:\n        //\n        //  1. `parse_decimal` sets `num_digits` to a max of `DecimalSeq::MAX_DIGITS`.\n        //  2. `right_shift` sets `num_digits` to `write_index`, which is bounded by `num_digits`.\n        //  3. `left_shift` `num_digits` to a max of `DecimalSeq::MAX_DIGITS`.\n        //\n        // Trim is only called in `right_shift` and `left_shift`.\n        debug_assert!(self.num_digits <= Self::MAX_DIGITS);\n        #[cfg_attr(kani, kani::loop_invariant(self.num_digits <= Self::MAX_DIGITS))]\n        while self.num_digits != 0 && self.digits[self.num_digits - 1] == 0 {\n            self.num_digits -= 1;\n        }\n    }",
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "11794843469677272946544295805404128504",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "243931809744896974812513529918607549579",
+    "1752989996936949203916036071159051010960"
+  ]
+}

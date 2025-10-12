@@ -1,0 +1,11 @@
+{
+  "file": "core/src/net/ip_addr.rs",
+  "name": "net::ip_addr::Ipv6Addr::segments",
+  "hash": "134724938574094262089516253074382302486",
+  "hash_direct": "45834228541547268419247071423832171074",
+  "src": "pub const fn segments(&self) -> [u16; 8] {\n        // All elements in `self.octets` must be big endian.\n        // SAFETY: `[u8; 16]` is always safe to transmute to `[u16; 8]`.\n        let [a, b, c, d, e, f, g, h] = unsafe { transmute::<_, [u16; 8]>(self.octets) };\n        // We want native endian u16\n        [\n            u16::from_be(a),\n            u16::from_be(b),\n            u16::from_be(c),\n            u16::from_be(d),\n            u16::from_be(e),\n            u16::from_be(f),\n            u16::from_be(g),\n            u16::from_be(h),\n        ]\n    }",
+  "callees": [
+    "1296974665896773491711060472797309810764",
+    "816297832958388115413690138049006858020"
+  ]
+}

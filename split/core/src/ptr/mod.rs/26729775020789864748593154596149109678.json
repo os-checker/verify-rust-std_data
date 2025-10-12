@@ -1,8 +1,0 @@
-{
-  "file": "core/src/ptr/mod.rs",
-  "name": "core::ptr::drop_in_place::<{closure@core::iter::adapters::map::map_fold<&bool, u8, u8, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/alloc/src/str.rs:663:32: 663:35}, {closure@<u8 as core::iter::Sum>::sum<core::iter::Map<core::slice::Iter<'_, bool>, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/alloc/src/str.rs:663:32: 663:35}>>::{closure#0}}>::{closure#0}}>",
-  "hash": "26729775020789864748593154596149109678",
-  "hash_direct": "685215018743810018911784560954882956020",
-  "inst_kind": "\"Shim\"",
-  "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
-}

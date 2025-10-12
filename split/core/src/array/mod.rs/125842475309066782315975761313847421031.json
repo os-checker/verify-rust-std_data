@@ -1,7 +1,0 @@
-{
-  "file": "core/src/array/mod.rs",
-  "name": "<array::TryFromSliceError as error::Error>::description",
-  "hash": "125842475309066782315975761313847421031",
-  "hash_direct": "113018630298083942467898127283837566351",
-  "src": "fn description(&self) -> &str {\n        \"could not convert slice to array\"\n    }"
-}

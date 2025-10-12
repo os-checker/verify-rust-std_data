@@ -1,0 +1,15 @@
+{
+  "file": "core/src/unicode/unicode_data.rs",
+  "name": "unicode::unicode_data::alphabetic::SHORT_OFFSET_RUNS",
+  "hash": "144920088755191283579747926528384559934",
+  "hash_direct": "41024380889847621965586539417124032004",
+  "src": "static SHORT_OFFSET_RUNS: [ShortOffsetRunHeader; 53] = [\n        ShortOffsetRunHeader::new(0, 706), ShortOffsetRunHeader::new(12, 4681),\n        ShortOffsetRunHeader::new(414, 5741), ShortOffsetRunHeader::new(452, 7958),\n        ShortOffsetRunHeader::new(552, 9398), ShortOffsetRunHeader::new(623, 11264),\n        ShortOffsetRunHeader::new(625, 12293), ShortOffsetRunHeader::new(663, 13312),\n        ShortOffsetRunHeader::new(687, 19904), ShortOffsetRunHeader::new(688, 42125),\n        ShortOffsetRunHeader::new(690, 42509), ShortOffsetRunHeader::new(694, 55204),\n        ShortOffsetRunHeader::new(784, 63744), ShortOffsetRunHeader::new(789, 64110),\n        ShortOffsetRunHeader::new(790, 64830), ShortOffsetRunHeader::new(812, 66176),\n        ShortOffsetRunHeader::new(853, 67383), ShortOffsetRunHeader::new(900, 73440),\n        ShortOffsetRunHeader::new(1217, 74650), ShortOffsetRunHeader::new(1228, 77712),\n        ShortOffsetRunHeader::new(1233, 78896), ShortOffsetRunHeader::new(1236, 82939),\n        ShortOffsetRunHeader::new(1240, 83527), ShortOffsetRunHeader::new(1242, 90368),\n        ShortOffsetRunHeader::new(1243, 92160), ShortOffsetRunHeader::new(1245, 92729),\n        ShortOffsetRunHeader::new(1246, 93504), ShortOffsetRunHeader::new(1261, 100344),\n        ShortOffsetRunHeader::new(1278, 101590), ShortOffsetRunHeader::new(1280, 110576),\n        ShortOffsetRunHeader::new(1283, 110883), ShortOffsetRunHeader::new(1290, 111356),\n        ShortOffsetRunHeader::new(1300, 113664), ShortOffsetRunHeader::new(1301, 119808),\n        ShortOffsetRunHeader::new(1311, 120486), ShortOffsetRunHeader::new(1348, 122624),\n        ShortOffsetRunHeader::new(1371, 123536), ShortOffsetRunHeader::new(1395, 124112),\n        ShortOffsetRunHeader::new(1399, 124896), ShortOffsetRunHeader::new(1405, 126464),\n        ShortOffsetRunHeader::new(1421, 127280), ShortOffsetRunHeader::new(1487, 131072),\n        ShortOffsetRunHeader::new(1493, 173792), ShortOffsetRunHeader::new(1494, 177978),\n        ShortOffsetRunHeader::new(1496, 183970), ShortOffsetRunHeader::new(1500, 191457),\n        ShortOffsetRunHeader::new(1502, 192094), ShortOffsetRunHeader::new(1504, 194560),\n        ShortOffsetRunHeader::new(1505, 195102), ShortOffsetRunHeader::new(1506, 196608),\n        ShortOffsetRunHeader::new(1507, 201547), ShortOffsetRunHeader::new(1508, 205744),\n        ShortOffsetRunHeader::new(1510, 1319856),\n    ];",
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "243931809744896974812513529918607549579",
+    "1752989996936949203916036071159051010960",
+    "573025224078501084417397699761968621329"
+  ]
+}

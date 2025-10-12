@@ -1,0 +1,7 @@
+{
+  "file": "core/src/ptr/const_ptr.rs",
+  "name": "core::ptr::const_ptr::<impl *const core::wtf8::Wtf8>::cast::<u8>",
+  "hash": "83478478096423275633024624508055811381",
+  "hash_direct": "16780768461295359998880154883247509104",
+  "src": "pub const fn cast<U>(self) -> *const U {\n        self as _\n    }"
+}

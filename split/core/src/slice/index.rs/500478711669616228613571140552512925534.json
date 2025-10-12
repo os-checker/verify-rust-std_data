@@ -1,0 +1,12 @@
+{
+  "file": "core/src/slice/index.rs",
+  "name": "<ops::range::RangeFrom<usize> as slice::index::SliceIndex<[u8]>>::get",
+  "hash": "500478711669616228613571140552512925534",
+  "hash_direct": "179723581442998912179623068401526011035",
+  "src": "fn get(self, slice: &[T]) -> Option<&[T]> {\n        (self.start..slice.len()).get(slice)\n    }",
+  "callees": [
+    "979090888644938360611991061608854301815",
+    "182905984608557862932815513141399110877",
+    "1574076206413902276617103312132801420117"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "file": "core/src/../../stdarch/crates/core_arch/src/aarch64/neon/mod.rs",
+  "name": "core_arch::aarch64::neon::vaddd_s64",
+  "hash": "110173270802347650038064048347305719790",
+  "hash_direct": "488767518670125210916751448314279292528",
+  "src": "pub fn vaddd_s64(a: i64, b: i64) -> i64 {\n    a.wrapping_add(b)\n}",
+  "callees": [
+    "39254961878224837063955731406028894450"
+  ]
+}

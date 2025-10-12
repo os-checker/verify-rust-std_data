@@ -1,0 +1,25 @@
+{
+  "file": "/home/runner/work/distributed-verification/distributed-verification/kani/library/kani_core/src/iter.rs",
+  "name": "<kani::KaniTakeIter<kani::KaniEnumerateIter<kani::KaniRefIter<'_, u8>>> as kani::KaniIter>::len",
+  "hash": "1198502269205597624113704946775523445525",
+  "hash_direct": "132871781170504488329860207831128315458",
+  "src": "fn len(&self) -> usize {\n                min(self.iter.len(), self.n)\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "kani_core::generate_iter!()",
+      "defsite": "macro_rules! generate_iter"
+    },
+    {
+      "callsite": "kani_core::kani_lib!(core)",
+      "defsite": "macro_rules! kani_lib"
+    }
+  ],
+  "callees": [
+    "2957598553464968455307676553531086318",
+    "106076156173763835541491953341570628522",
+    "7482589000750884340327816351015335759",
+    "155146884437592745449279657258619050520",
+    "111948483962809339883106353795926089322",
+    "18924474281332607947427114014473837479"
+  ]
+}

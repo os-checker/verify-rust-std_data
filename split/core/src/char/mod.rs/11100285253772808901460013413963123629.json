@@ -1,0 +1,11 @@
+{
+  "file": "core/src/char/mod.rs",
+  "name": "<core::char::EscapeDebug as core::iter::ExactSizeIterator>::len",
+  "hash": "11100285253772808901460013413963123629",
+  "hash_direct": "31267325983589728382058909815209974946",
+  "src": "fn len(&self) -> usize {\n        self.0.len()\n    }",
+  "callees": [
+    "21494050064510967155859247947068579189",
+    "1443283055659255439013764866109845632885"
+  ]
+}

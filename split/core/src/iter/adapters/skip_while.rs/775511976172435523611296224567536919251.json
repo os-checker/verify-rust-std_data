@@ -1,0 +1,7 @@
+{
+  "file": "core/src/iter/adapters/skip_while.rs",
+  "name": "<core::iter::SkipWhile<I, P> as core::iter::Iterator>::next::check::<char, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/alloc/src/str.rs:421:35: 421:39}>",
+  "hash": "775511976172435523611296224567536919251",
+  "hash_direct": "1401772869593620871817275376471004829860",
+  "src": "fn check<'a, T>(\n            flag: &'a mut bool,\n            pred: &'a mut impl FnMut(&T) -> bool,\n        ) -> impl FnMut(&T) -> bool + 'a {\n            move |x| {\n                if *flag || !pred(x) {\n                    *flag = true;\n                    true\n                } else {\n                    false\n                }\n            }\n        }"
+}

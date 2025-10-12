@@ -1,0 +1,11 @@
+{
+  "file": "core/src/num/f16.rs",
+  "name": "f16::<impl f16>::from_ne_bytes",
+  "hash": "58324662727659343404189347005211570358",
+  "hash_direct": "34216269922602277687885162928548090859",
+  "src": "pub const fn from_ne_bytes(bytes: [u8; 2]) -> Self {\n        Self::from_bits(u16::from_ne_bytes(bytes))\n    }",
+  "callees": [
+    "80331169847412004098471689422468576411",
+    "4463086293634870107475791268773138509"
+  ]
+}

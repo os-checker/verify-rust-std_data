@@ -1,0 +1,11 @@
+{
+  "file": "core/src/intrinsics/mod.rs",
+  "name": "intrinsics::select_unpredictable::<*mut usize>",
+  "hash": "203046086675419464615602037990874887658",
+  "hash_direct": "1624418677791240652816713659813420806772",
+  "inst_kind": "\"Intrinsic\"",
+  "src": "pub fn select_unpredictable<T>(b: bool, true_val: T, false_val: T) -> T {\n    if b { true_val } else { false_val }\n}",
+  "callees": [
+    "337252503770367200416843019610480962888"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "file": "core/src/iter/adapters/skip.rs",
+  "name": "<iter::adapters::skip::Skip<ops::range::Range<usize>> as iter::traits::iterator::Iterator>::size_hint",
+  "hash": "329013759990458435215547070445277797207",
+  "hash_direct": "1274791041190537077934629210059287010",
+  "src": "fn size_hint(&self) -> (usize, Option<usize>) {\n        let (lower, upper) = self.iter.size_hint();\n\n        let lower = lower.saturating_sub(self.n);\n        let upper = match upper {\n            Some(x) => Some(x.saturating_sub(self.n)),\n            None => None,\n        };\n\n        (lower, upper)\n    }",
+  "callees": [
+    "155146884437592745449279657258619050520",
+    "177965079280133880087474300800680994427",
+    "146712954650226763451478546031657267674",
+    "164529513330108498239508375239415786354"
+  ]
+}

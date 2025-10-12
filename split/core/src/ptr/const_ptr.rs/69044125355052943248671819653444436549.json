@@ -1,0 +1,20 @@
+{
+  "file": "core/src/ptr/const_ptr.rs",
+  "name": "core::ptr::const_ptr::<impl *const u8>::align_offset",
+  "hash": "69044125355052943248671819653444436549",
+  "hash_direct": "1195650683242017651617123191549169798604",
+  "src": "pub fn align_offset(self, align: usize) -> usize\n    where\n        T: Sized,\n    {\n        if !align.is_power_of_two() {\n            panic!(\"align_offset: align is not a power-of-two\");\n        }\n\n        // SAFETY: `align` has been checked to be a power of 2 above\n        let ret = unsafe { align_offset(self, align) };\n\n        // Inform Miri that we want to consider the resulting pointer to be suitably aligned.\n        #[cfg(miri)]\n        if ret != usize::MAX {\n            intrinsics::miri_promise_symbolic_alignment(self.wrapping_add(ret).cast(), align);\n        }\n\n        ret\n    }",
+  "callees": [
+    "12281449246394340237926324936375242532",
+    "1055043272310861592713228670863657256034",
+    "51372523453683089364244340980133861262",
+    "169382045895387326079929663684999712557",
+    "986792852990965178117440249555081278778",
+    "90818112465881722349174357944217011292",
+    "146612017564224181584303574960223420416",
+    "1793681111599931821712213635413918902143",
+    "55408212128999564608147158566316072753",
+    "1436162929177886985111617736217739715982",
+    "1670871865166106544517920089333181878250"
+  ]
+}

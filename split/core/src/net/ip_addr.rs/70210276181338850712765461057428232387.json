@@ -1,0 +1,12 @@
+{
+  "file": "core/src/net/ip_addr.rs",
+  "name": "<net::ip_addr::Ipv6Addr as convert::From<[u16; 8]>>::from",
+  "hash": "70210276181338850712765461057428232387",
+  "hash_direct": "2220357697142513478252247352191541875",
+  "src": "fn from(segments: [u16; 8]) -> Ipv6Addr {\n        let [a, b, c, d, e, f, g, h] = segments;\n        Ipv6Addr::new(a, b, c, d, e, f, g, h)\n    }",
+  "callees": [
+    "23821264730853199911213785152831109479",
+    "816297832958388115413690138049006858020",
+    "5839590610321107933750519890409312341"
+  ]
+}

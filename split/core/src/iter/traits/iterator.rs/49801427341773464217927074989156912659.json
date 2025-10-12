@@ -1,0 +1,14 @@
+{
+  "file": "core/src/iter/traits/iterator.rs",
+  "name": "<core::iter::Copied<core::slice::Iter<'_, [u8; 2]>> as core::iter::Iterator>::map::<u16, fn([u8; core::::num::{impl#7}::from_be_bytes::{constant#0}]) -> u16 {core::num::<impl u16>::from_be_bytes}>",
+  "hash": "49801427341773464217927074989156912659",
+  "hash_direct": "38658647506305491475165129002946925077",
+  "src": "fn map<B, F>(self, f: F) -> Map<Self, F>\n    where\n        Self: Sized,\n        F: FnMut(Self::Item) -> B,\n    {\n        Map::new(self, f)\n    }",
+  "callees": [
+    "708294589697594657613961058699547672383",
+    "1617570292963852830913345087424814033855",
+    "987031093223511743510569934423363728762",
+    "164920246545788730618233309646997589036",
+    "80694080790607962231671899254960220588"
+  ]
+}

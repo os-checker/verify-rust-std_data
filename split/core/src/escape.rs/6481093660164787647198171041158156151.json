@@ -1,0 +1,10 @@
+{
+  "file": "core/src/escape.rs",
+  "name": "escape::EscapeIterInner::<10, escape::AlwaysEscaped>::len",
+  "hash": "6481093660164787647198171041158156151",
+  "hash_direct": "1603001267410742606616046063695494378425",
+  "src": "pub(crate) fn len(&self) -> usize {\n        usize::from(self.alive.end - self.alive.start)\n    }",
+  "callees": [
+    "9122690305665940051388962439719640221"
+  ]
+}

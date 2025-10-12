@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f64.rs",
+  "name": "f64::<impl f64>::to_radians",
+  "hash": "55366884052654534681733128703751848086",
+  "hash_direct": "1425150233313277919917399399523289690218",
+  "src": "pub const fn to_radians(self) -> f64 {\n        // The division here is correctly rounded with respect to the true value of π/180.\n        // Although π is irrational and already rounded, the double rounding happens\n        // to produce correct result for f64.\n        const RADS_PER_DEG: f64 = consts::PI / 180.0;\n        self * RADS_PER_DEG\n    }"
+}

@@ -1,0 +1,56 @@
+{
+  "file": "core/src/ptr/mut_ptr.rs",
+  "name": "ptr::mut_ptr::verify::check_mut_sub_slice_usize",
+  "hash": "108666641729112044562867739565061274515",
+  "hash_direct": "47609882190289540912190353356480723000",
+  "proof_kind": "\"Contract\"",
+  "attrs": [
+    "#[kanitool::proof_for_contract = \"< * mut usize > :: sub\"]\n"
+  ],
+  "src": "fn $sub_fn() {\n                let mut arr: [$ty; ARRAY_SIZE] = kani::Arbitrary::any_array();\n                let test_ptr: *mut $ty = arr.as_mut_ptr();\n                let offset: usize = kani::any();\n                let count: usize = kani::any();\n                kani::assume(offset <= ARRAY_SIZE * mem::size_of::<$ty>());\n                let ptr_with_offset: *mut $ty = test_ptr.wrapping_byte_add(offset);\n                unsafe {\n                    ptr_with_offset.sub(count);\n                }\n            }",
+  "macro_backtrace": [
+    {
+      "callsite": "generate_mut_slice_harnesses!(\n        usize,\n        check_mut_offset_slice_usize,\n        check_mut_add_slice_usize,\n        check_mut_sub_slice_usize\n    )",
+      "defsite": "macro_rules! generate_mut_slice_harnesses {\n        ($ty:ty, $offset_fn:ident, $add_fn:ident, $sub_fn:ident) => {\n            // Generates a harness for the `offset` operation\n            #[kani::proof_for_contract(<*mut $ty>::offset)]\n            fn $offset_fn() {\n                let mut arr: [$ty; ARRAY_SIZE] = kani::Arbitrary::any_array();\n                let test_ptr: *mut $ty = arr.as_mut_ptr();\n                let offset: usize = kani::any();\n                let count: isize = kani::any();\n                kani::assume(offset <= ARRAY_SIZE * mem::size_of::<$ty>());\n                let ptr_with_offset: *mut $ty = test_ptr.wrapping_byte_add(offset);\n                unsafe {\n                    ptr_with_offset.offset(count);\n                }\n            }\n\n            // Generates a harness for the `add` operation\n            #[kani::proof_for_contract(<*mut $ty>::add)]\n            fn $add_fn() {\n                let mut arr: [$ty; ARRAY_SIZE] = kani::Arbitrary::any_array();\n                let test_ptr: *mut $ty = arr.as_mut_ptr();\n                let offset: usize = kani::any();\n                let count: usize = kani::any();\n                kani::assume(offset <= ARRAY_SIZE * mem::size_of::<$ty>());\n                let ptr_with_offset: *mut $ty = test_ptr.wrapping_byte_add(offset);\n                unsafe {\n                    ptr_with_offset.add(count);\n                }\n            }\n\n            // Generates a harness for the `sub` operation\n            #[kani::proof_for_contract(<*mut $ty>::sub)]\n            fn $sub_fn() {\n                let mut arr: [$ty; ARRAY_SIZE] = kani::Arbitrary::any_array();\n                let test_ptr: *mut $ty = arr.as_mut_ptr();\n                let offset: usize = kani::any();\n                let count: usize = kani::any();\n                kani::assume(offset <= ARRAY_SIZE * mem::size_of::<$ty>());\n                let ptr_with_offset: *mut $ty = test_ptr.wrapping_byte_add(offset);\n                unsafe {\n                    ptr_with_offset.sub(count);\n                }\n            }\n        };\n    }"
+    }
+  ],
+  "callees": [
+    "76761090215908344506703874042953626591",
+    "25935270603613507701964067883494196314",
+    "1194204153753465304412874113805257013333",
+    "1710581015367055883618386502383745965599",
+    "113491588365793266817891648718126780380",
+    "1389251414322875890517314806513286039157",
+    "826776783017468101310579743103719137160",
+    "139704976908753389291209564980972955015",
+    "7526082995824335814466973137466280467",
+    "31653839761977354378602835866385075542",
+    "108393381985250317406898676759665844160",
+    "258820287469578611817448591488600041899",
+    "588974892899239543415856878986124229421",
+    "690438059002452523915046149102377829082",
+    "17421822894816687532325615181214565887",
+    "118969608371033492241203013207235849818",
+    "23815256893174302637797703719499456373",
+    "1749362715435459353511933873995340031229",
+    "143572956432032064744447501745832117320",
+    "761861023504359043615820998596748928032",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "478753423337745817613297159272845606672",
+    "3658730781980743391697756456907208995",
+    "176386771705132260856587306647620489942",
+    "276682657950582912317661465225661940953",
+    "137336638615117406682094440501507020286",
+    "170477930193487407342654832140393402043",
+    "33959448495802775425803566343162277324",
+    "95833143949527862342301651250424936271",
+    "833553174169562286714471950209380562777",
+    "762886414448410022214656255402287184990",
+    "132657972278969090112744067753115129451",
+    "1394055322305792064317518926451499269857",
+    "33341876454250998732777549667200553724",
+    "935658007883373388218268314737148286081",
+    "739520556846959085018120036998133255835"
+  ]
+}

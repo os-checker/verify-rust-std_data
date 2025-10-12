@@ -1,0 +1,13 @@
+{
+  "file": "core/src/net/ip_addr.rs",
+  "name": "net::ip_addr::Ipv6Addr::multicast_scope",
+  "hash": "523641140430087893316301314139455702837",
+  "hash_direct": "76181431914031164266592497669258643155",
+  "src": "pub const fn multicast_scope(&self) -> Option<Ipv6MulticastScope> {\n        if self.is_multicast() {\n            match self.segments()[0] & 0x000f {\n                1 => Some(Ipv6MulticastScope::InterfaceLocal),\n                2 => Some(Ipv6MulticastScope::LinkLocal),\n                3 => Some(Ipv6MulticastScope::RealmLocal),\n                4 => Some(Ipv6MulticastScope::AdminLocal),\n                5 => Some(Ipv6MulticastScope::SiteLocal),\n                8 => Some(Ipv6MulticastScope::OrganizationLocal),\n                14 => Some(Ipv6MulticastScope::Global),\n                _ => None,\n            }\n        } else {\n            None\n        }\n    }",
+  "callees": [
+    "9882864542450372813623879688080678840",
+    "134724938574094262089516253074382302486",
+    "1296974665896773491711060472797309810764",
+    "816297832958388115413690138049006858020"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "file": "core/src/num/f16.rs",
+  "name": "f16::<impl f16>::to_radians",
+  "hash": "702138316709949028115526273021606948057",
+  "hash_direct": "2654082686570560056752180720717823210",
+  "src": "pub const fn to_radians(self) -> f16 {\n        // Use a literal to avoid double rounding, consts::PI is already rounded,\n        // and dividing would round again.\n        const RADS_PER_DEG: f16 = 0.017453292519943295769236907684886_f16;\n        self * RADS_PER_DEG\n    }"
+}

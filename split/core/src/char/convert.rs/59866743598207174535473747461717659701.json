@@ -1,0 +1,11 @@
+{
+  "file": "core/src/char/convert.rs",
+  "name": "char::convert::<impl convert::TryFrom<char> for u8>::try_from",
+  "hash": "59866743598207174535473747461717659701",
+  "hash_direct": "1355392428541265542411596138040360908365",
+  "src": "fn try_from(c: char) -> Result<u8, Self::Error> {\n        // FIXME(const-hack): this should use map_err instead\n        match u8::try_from(u32::from(c)) {\n            Ok(b) => Ok(b),\n            Err(_) => Err(TryFromCharError(())),\n        }\n    }",
+  "callees": [
+    "113949204995067962305733038591445280689",
+    "153464131300973601641642416030510450301"
+  ]
+}

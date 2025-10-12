@@ -1,0 +1,19 @@
+{
+  "file": "core/src/ptr/alignment.rs",
+  "name": "ptr::alignment::Alignment::new_unchecked",
+  "hash": "21093895404218893828635808083668477303",
+  "hash_direct": "1217494404136737967816518799090350539907",
+  "src": "pub const unsafe fn new_unchecked(align: usize) -> Self {\n        assert_unsafe_precondition!(\n            check_language_ub,\n            \"Alignment::new_unchecked requires a power of two\",\n            (align: usize = align) => align.is_power_of_two()\n        );\n\n        // SAFETY: By precondition, this must be a power of two, and\n        // our variants encompass all possible powers of two.\n        unsafe { mem::transmute::<usize, Alignment>(align) }\n    }",
+  "callees": [
+    "258820287469578611817448591488600041899",
+    "17421822894816687532325615181214565887",
+    "23815256893174302637797703719499456373",
+    "137368381448604167703416046205455599816",
+    "156396365605833484958181337486344432065",
+    "1113032932815665948217565294476098756403",
+    "41505289739977656509611396154325757795",
+    "478753423337745817613297159272845606672",
+    "178390828132391436389433453402564282927",
+    "739520556846959085018120036998133255835"
+  ]
+}

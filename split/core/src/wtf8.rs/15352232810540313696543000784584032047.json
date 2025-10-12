@@ -1,0 +1,7 @@
+{
+  "file": "core/src/wtf8.rs",
+  "name": "<wtf8::Wtf8 as convert::AsRef<[u8]>>::as_ref",
+  "hash": "15352232810540313696543000784584032047",
+  "hash_direct": "131242829271879766611119660352979066365",
+  "src": "fn as_ref(&self) -> &[u8] {\n        &self.bytes\n    }"
+}
