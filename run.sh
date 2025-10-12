@@ -2,6 +2,12 @@
 
 set -exou pipefail
 
+# Entrypoint.
+all() {
+  split
+  gen
+}
+
 split() {
   # Remove entire split folder.
   rm split -rf
@@ -17,6 +23,7 @@ split() {
 
 # This relies on latest artifact-libcore, so run split first to update it.
 gen() {
+  # The artifacts must accord with split cmd.
   verify_rust_std merge --hash-json ../../artifacts/artifact-libcore/json \
     --kani-list ../../assets/kani-list_verify-rust-std-CI.json \
     --strip-kani-list-prefix /home/runner/work/verify-rust-std/verify-rust-std/library/ >merge_diff.json
@@ -72,6 +79,7 @@ merge_results() {
 }
 
 declare -A cmds=(
+  [all]=all
   [split]=split
   [gen]=gen
   [merge_diff]=merge_diff
@@ -80,7 +88,7 @@ declare -A cmds=(
 )
 
 [[ $# -eq 0 ]] && {
-  echo "Usage: $0 {gen|merge_diff|results|merge_results} [args...]"
+  echo "Usage: $0 {all|split|gen|merge_diff|results|merge_results} [args...]"
   exit 1
 }
 
