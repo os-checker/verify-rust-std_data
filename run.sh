@@ -78,6 +78,18 @@ merge_results() {
   ' results-core.json merge_diff-proofs-only.json >merge_results-core.json
 }
 
+chart() {
+  jq 'map(
+    # filter in crates (core and alloc) and normal functions
+    select( .crate and (.func | startswith("<") | not ) )
+    # extract `crate::submod`
+    | { mod: ( .crate + "::" + (.func | split("::")[0]) ) }
+  )
+  | group_by(.mod)
+    | map({ mod: .[0].mod, cnt: length })
+  ' merge_diff.json
+}
+
 declare -A cmds=(
   [all]=all
   [split]=split
@@ -85,10 +97,11 @@ declare -A cmds=(
   [merge_diff]=merge_diff
   [results]=results
   [merge_results]=merge_results
+  [chart]=chart
 )
 
 [[ $# -eq 0 ]] && {
-  echo "Usage: $0 {all|split|gen|merge_diff|results|merge_results} [args...]"
+  echo "Usage: $0 {all|split|gen|merge_diff|results|merge_results|chart} [args...]"
   exit 1
 }
 
