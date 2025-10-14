@@ -58,11 +58,11 @@ results() {
       },
       output
     }
-
     | del(.ok | select(. == null)) # remove null time
     | del(.time | select(. == null)) # remove null time
     | del(.output | select(. == [])) # remove .output field if empty
     | del(.n_failed_properties | select(. == 0)) # remove .n_failed_properties field if zero
+    | del(.func.safe | select(. == null)) # remove null .func.safe
   ]' ../../tmp/ubuntu-latest-results.json/results.json >results-core.json
 }
 

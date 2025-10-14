@@ -35,7 +35,6 @@
     "props": 339,
     "func": {
       "name": "intrinsics::transmute_unchecked_slice_metadata",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -55,7 +54,6 @@
     "props": 81,
     "func": {
       "name": "intrinsics::transmute_unchecked_ref_address",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -65,7 +63,6 @@
     "props": 79,
     "func": {
       "name": "intrinsics::transmute_unchecked_ptr_address",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -75,7 +72,6 @@
     "props": 528,
     "func": {
       "name": "collections::vec_deque::vecdeque_swap",
-      "safe": null,
       "file": "alloc/src/collections/vec_deque/mod.rs"
     }
   },
@@ -85,7 +81,6 @@
     "props": 389,
     "func": {
       "name": "vec::swap_remove",
-      "safe": null,
       "file": "alloc/src/vec/mod.rs"
     }
   },
@@ -335,7 +330,6 @@
     "props": 159,
     "func": {
       "name": "intrinsics::verify::char_mod::transmute_unchecked_2ways_struct_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -386,7 +380,6 @@
     "n_failed_properties": 1,
     "func": {
       "name": "num::nonzero::clamp_panic_for_i8",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     },
     "output": [
@@ -401,7 +394,6 @@
     "n_failed_properties": 1,
     "func": {
       "name": "num::nonzero::clamp_panic_for_usize",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     },
     "output": [
@@ -416,7 +408,6 @@
     "n_failed_properties": 1,
     "func": {
       "name": "num::nonzero::clamp_panic_for_32",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     },
     "output": [
@@ -431,7 +422,6 @@
     "n_failed_properties": 1,
     "func": {
       "name": "num::nonzero::clamp_panic_for_16",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     },
     "output": [
@@ -446,7 +436,6 @@
     "n_failed_properties": 1,
     "func": {
       "name": "num::nonzero::clamp_panic_for_u128",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     },
     "output": [
@@ -460,7 +449,6 @@
     "props": 71,
     "func": {
       "name": "intrinsics::verify::i32_mod::transmute_unchecked_2ways_struct_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -471,7 +459,6 @@
     "n_failed_properties": 1,
     "func": {
       "name": "num::nonzero::clamp_panic_for_u32",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     },
     "output": [
@@ -486,7 +473,6 @@
     "n_failed_properties": 1,
     "func": {
       "name": "num::nonzero::clamp_panic_for_u8",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     },
     "output": [
@@ -501,7 +487,6 @@
     "n_failed_properties": 1,
     "func": {
       "name": "num::nonzero::clamp_panic_for_u64",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     },
     "output": [
@@ -516,7 +501,6 @@
     "n_failed_properties": 1,
     "func": {
       "name": "num::nonzero::clamp_panic_for_64",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     },
     "output": [
@@ -531,7 +515,6 @@
     "n_failed_properties": 1,
     "func": {
       "name": "num::nonzero::clamp_panic_for_u16",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     },
     "output": [
@@ -546,7 +529,6 @@
     "n_failed_properties": 1,
     "func": {
       "name": "num::nonzero::clamp_panic_for_isize",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     },
     "output": [
@@ -561,7 +543,6 @@
     "n_failed_properties": 1,
     "func": {
       "name": "num::nonzero::clamp_panic_for_128",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     },
     "output": [
@@ -585,7 +566,6 @@
     "props": 110,
     "func": {
       "name": "num::nonzero::clamp_for_u64",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -595,7 +575,6 @@
     "props": 110,
     "func": {
       "name": "num::nonzero::clamp_for_u8",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -605,7 +584,6 @@
     "props": 59,
     "func": {
       "name": "intrinsics::verify::i32_mod::transmute_unchecked_2ways_tuple_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -625,7 +603,6 @@
     "props": 110,
     "func": {
       "name": "num::nonzero::clamp_for_usize",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -635,7 +612,6 @@
     "props": 110,
     "func": {
       "name": "num::nonzero::clamp_for_u16",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -645,7 +621,6 @@
     "props": 110,
     "func": {
       "name": "num::nonzero::clamp_for_128",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -655,7 +630,6 @@
     "props": 110,
     "func": {
       "name": "num::nonzero::clamp_for_32",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -665,7 +639,6 @@
     "props": 71,
     "func": {
       "name": "intrinsics::verify::i8_mod::transmute_unchecked_2ways_struct_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -675,7 +648,6 @@
     "props": 110,
     "func": {
       "name": "num::nonzero::clamp_for_i8",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -685,7 +657,6 @@
     "props": 110,
     "func": {
       "name": "num::nonzero::clamp_for_16",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -695,7 +666,6 @@
     "props": 110,
     "func": {
       "name": "num::nonzero::clamp_for_u32",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -705,7 +675,6 @@
     "props": 110,
     "func": {
       "name": "num::nonzero::clamp_for_u128",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -735,7 +704,6 @@
     "props": 110,
     "func": {
       "name": "num::nonzero::clamp_for_64",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -755,7 +723,6 @@
     "props": 31,
     "func": {
       "name": "alloc::layout::align",
-      "safe": null,
       "file": "core/src/alloc/layout.rs"
     }
   },
@@ -765,7 +732,6 @@
     "props": 59,
     "func": {
       "name": "intrinsics::verify::u128_mod::transmute_unchecked_2ways_tuple_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -775,7 +741,6 @@
     "props": 110,
     "func": {
       "name": "num::nonzero::clamp_for_isize",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -785,7 +750,6 @@
     "props": 60,
     "func": {
       "name": "num::nonzero::min_for_isize",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -795,7 +759,6 @@
     "props": 60,
     "func": {
       "name": "num::nonzero::min_for_u32",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -805,7 +768,6 @@
     "props": 60,
     "func": {
       "name": "num::nonzero::min_for_i16",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -815,7 +777,6 @@
     "props": 71,
     "func": {
       "name": "intrinsics::verify::u16_mod::transmute_unchecked_2ways_struct_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -825,7 +786,6 @@
     "props": 60,
     "func": {
       "name": "num::nonzero::min_for_i32",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -835,7 +795,6 @@
     "props": 84,
     "func": {
       "name": "alloc::layout::size",
-      "safe": null,
       "file": "core/src/alloc/layout.rs"
     }
   },
@@ -845,7 +804,6 @@
     "props": 60,
     "func": {
       "name": "num::nonzero::min_for_i8",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -855,7 +813,6 @@
     "props": 60,
     "func": {
       "name": "num::nonzero::min_for_u16",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -865,7 +822,6 @@
     "props": 60,
     "func": {
       "name": "num::nonzero::min_for_usize",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -875,7 +831,6 @@
     "props": 60,
     "func": {
       "name": "num::nonzero::min_for_u8",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -885,7 +840,6 @@
     "props": 60,
     "func": {
       "name": "num::nonzero::min_for_i64",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -895,7 +849,6 @@
     "props": 60,
     "func": {
       "name": "num::nonzero::min_for_u64",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -905,7 +858,6 @@
     "props": 60,
     "func": {
       "name": "num::nonzero::min_for_i128",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -915,7 +867,6 @@
     "props": 60,
     "func": {
       "name": "num::nonzero::min_for_u128",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -925,7 +876,6 @@
     "props": 72,
     "func": {
       "name": "num::nonzero::max_for_i64",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -935,7 +885,6 @@
     "props": 72,
     "func": {
       "name": "num::nonzero::max_for_usize",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -945,7 +894,6 @@
     "props": 59,
     "func": {
       "name": "intrinsics::verify::u64_mod::transmute_unchecked_2ways_tuple_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -955,7 +903,6 @@
     "props": 72,
     "func": {
       "name": "num::nonzero::max_for_u128",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -965,7 +912,6 @@
     "props": 72,
     "func": {
       "name": "num::nonzero::max_for_isize",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -975,7 +921,6 @@
     "props": 72,
     "func": {
       "name": "num::nonzero::max_for_i32",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -985,7 +930,6 @@
     "props": 72,
     "func": {
       "name": "num::nonzero::max_for_u16",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -995,7 +939,6 @@
     "props": 72,
     "func": {
       "name": "num::nonzero::max_for_u8",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -1005,7 +948,6 @@
     "props": 72,
     "func": {
       "name": "num::nonzero::max_for_i16",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -1015,7 +957,6 @@
     "props": 72,
     "func": {
       "name": "num::nonzero::max_for_i8",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -1025,7 +966,6 @@
     "props": 72,
     "func": {
       "name": "num::nonzero::max_for_i128",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -1035,7 +975,6 @@
     "props": 72,
     "func": {
       "name": "num::nonzero::max_for_u64",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -1045,7 +984,6 @@
     "props": 71,
     "func": {
       "name": "intrinsics::verify::i64_mod::transmute_unchecked_2ways_struct_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -1055,7 +993,6 @@
     "props": 72,
     "func": {
       "name": "num::nonzero::max_for_u32",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -1065,7 +1002,6 @@
     "props": 97,
     "func": {
       "name": "num::nonzero::cmp_for_i32",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -1075,7 +1011,6 @@
     "props": 97,
     "func": {
       "name": "num::nonzero::cmp_for_i64",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -1085,7 +1020,6 @@
     "props": 97,
     "func": {
       "name": "num::nonzero::cmp_for_u64",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -1095,7 +1029,6 @@
     "props": 97,
     "func": {
       "name": "num::nonzero::cmp_for_u32",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -1105,7 +1038,6 @@
     "props": 97,
     "func": {
       "name": "num::nonzero::cmp_for_usize",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -1115,7 +1047,6 @@
     "props": 97,
     "func": {
       "name": "num::nonzero::cmp_for_i16",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -1125,7 +1056,6 @@
     "props": 61,
     "func": {
       "name": "intrinsics::verify::i64_mod::transmute_unchecked_2ways_arr_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -1135,7 +1065,6 @@
     "props": 97,
     "func": {
       "name": "num::nonzero::cmp_for_u16",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -1145,7 +1074,6 @@
     "props": 97,
     "func": {
       "name": "num::nonzero::cmp_for_isize",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -1155,7 +1083,6 @@
     "props": 97,
     "func": {
       "name": "num::nonzero::cmp_for_u8",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -1175,7 +1102,6 @@
     "props": 97,
     "func": {
       "name": "num::nonzero::cmp_for_u128",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -1185,7 +1111,6 @@
     "props": 97,
     "func": {
       "name": "num::nonzero::cmp_for_i8",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -1195,7 +1120,6 @@
     "props": 97,
     "func": {
       "name": "num::nonzero::cmp_for_i128",
-      "safe": null,
       "file": "core/src/num/nonzero.rs"
     }
   },
@@ -1205,7 +1129,6 @@
     "props": 159,
     "func": {
       "name": "intrinsics::verify::char_mod::transmute_unchecked_2ways_struct_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -1215,7 +1138,6 @@
     "props": 152,
     "func": {
       "name": "char::methods::verify::as_ascii_clone",
-      "safe": null,
       "file": "core/src/char/methods.rs"
     }
   },
@@ -1235,7 +1157,6 @@
     "props": 152,
     "func": {
       "name": "char::methods::verify::as_ascii_clone",
-      "safe": null,
       "file": "core/src/char/methods.rs"
     }
   },
@@ -1335,7 +1256,6 @@
     "props": 61,
     "func": {
       "name": "intrinsics::verify::i8_mod::transmute_unchecked_2ways_arr_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -1375,7 +1295,6 @@
     "props": 71,
     "func": {
       "name": "intrinsics::verify::u32_mod::transmute_unchecked_2ways_struct_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -1415,7 +1334,6 @@
     "props": 61,
     "func": {
       "name": "intrinsics::verify::u8_mod::transmute_unchecked_2ways_arr_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -1445,7 +1363,6 @@
     "props": 71,
     "func": {
       "name": "intrinsics::verify::u128_mod::transmute_unchecked_2ways_struct_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -1565,7 +1482,6 @@
     "props": 378,
     "func": {
       "name": "intrinsics::verify::char_mod::transmute_unchecked_2ways_arr_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -1655,7 +1571,6 @@
     "props": 61,
     "func": {
       "name": "intrinsics::verify::i128_mod::transmute_unchecked_2ways_arr_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -1875,7 +1790,6 @@
     "props": 95,
     "func": {
       "name": "intrinsics::verify::struct_mod::transmute_unchecked_2ways_struct_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -1965,7 +1879,6 @@
     "props": 61,
     "func": {
       "name": "intrinsics::verify::i128_mod::transmute_unchecked_2ways_arr_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -2005,7 +1918,6 @@
     "props": 71,
     "func": {
       "name": "intrinsics::verify::u32_mod::transmute_unchecked_2ways_struct_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -2025,7 +1937,6 @@
     "props": 59,
     "func": {
       "name": "intrinsics::verify::u32_mod::transmute_unchecked_2ways_tuple_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -2035,7 +1946,6 @@
     "props": 89,
     "func": {
       "name": "intrinsics::verify::bool_mod::transmute_unchecked_2ways_struct_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -2115,7 +2025,6 @@
     "props": 77,
     "func": {
       "name": "intrinsics::verify::bool_mod::transmute_unchecked_2ways_tuple_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -2125,7 +2034,6 @@
     "props": 40,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i32::isize::check_nonzero_int_try_from_nonzero_int_infallible",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -2135,7 +2043,6 @@
     "props": 40,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i64::isize::check_nonzero_int_try_from_nonzero_int_infallible",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -2145,7 +2052,6 @@
     "props": 297,
     "func": {
       "name": "intrinsics::verify::arr_mod::transmute_unchecked_2ways_arr_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -2155,7 +2061,6 @@
     "props": 40,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u32::isize::check_nonzero_int_try_from_nonzero_int_infallible",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -2165,7 +2070,6 @@
     "props": 95,
     "func": {
       "name": "intrinsics::verify::struct_mod::transmute_unchecked_2ways_struct_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -2175,7 +2079,6 @@
     "props": 40,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u32::usize::check_nonzero_int_try_from_nonzero_int_infallible",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -2195,7 +2098,6 @@
     "props": 40,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u16::isize::check_nonzero_int_try_from_nonzero_int_infallible",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -2215,7 +2117,6 @@
     "props": 40,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u64::usize::check_nonzero_int_try_from_nonzero_int_infallible",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -2225,7 +2126,6 @@
     "props": 59,
     "func": {
       "name": "intrinsics::verify::i16_mod::transmute_unchecked_2ways_tuple_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -2236,7 +2136,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u64::u16::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -2252,7 +2151,6 @@
     "props": 71,
     "func": {
       "name": "intrinsics::verify::i16_mod::transmute_unchecked_2ways_struct_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -2263,7 +2161,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i128::u16::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -2279,7 +2176,6 @@
     "props": 71,
     "func": {
       "name": "intrinsics::verify::i8_mod::transmute_unchecked_2ways_struct_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -2290,7 +2186,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i128::u128::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -2306,7 +2201,6 @@
     "props": 61,
     "func": {
       "name": "intrinsics::verify::u128_mod::transmute_unchecked_2ways_arr_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -2317,7 +2211,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u32::u16::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -2334,7 +2227,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i64::u8::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -2361,7 +2253,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i8::u64::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -2377,7 +2268,6 @@
     "props": 59,
     "func": {
       "name": "intrinsics::verify::i8_mod::transmute_unchecked_2ways_tuple_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -2398,7 +2288,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u32::i8::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -2415,7 +2304,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u64::i32::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -2431,7 +2319,6 @@
     "props": 61,
     "func": {
       "name": "intrinsics::verify::u128_mod::transmute_unchecked_2ways_arr_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -2442,7 +2329,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i32::u8::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -2458,7 +2344,6 @@
     "props": 61,
     "func": {
       "name": "intrinsics::verify::u16_mod::transmute_unchecked_2ways_arr_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -2469,7 +2354,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u128::i64::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -2485,7 +2369,6 @@
     "props": 59,
     "func": {
       "name": "intrinsics::verify::tuple_mod::transmute_unchecked_2ways_tuple_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -2496,7 +2379,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u32::i16::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -2512,7 +2394,6 @@
     "props": 59,
     "func": {
       "name": "intrinsics::verify::i128_mod::transmute_unchecked_2ways_tuple_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -2523,7 +2404,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u128::u16::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -2540,7 +2420,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u16::i16::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -2556,7 +2435,6 @@
     "props": 61,
     "func": {
       "name": "intrinsics::verify::u32_mod::transmute_unchecked_2ways_arr_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -2567,7 +2445,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i64::i16::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -2624,7 +2501,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i128::i8::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -2640,7 +2516,6 @@
     "props": 98,
     "func": {
       "name": "option::as_slice",
-      "safe": null,
       "file": "core/src/option.rs"
     }
   },
@@ -2650,7 +2525,6 @@
     "props": 298,
     "func": {
       "name": "intrinsics::verify::tuple_mod::transmute_unchecked_2ways_arr_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -2661,7 +2535,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i128::i32::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -2678,7 +2551,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i64::i32::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -2694,7 +2566,6 @@
     "props": 59,
     "func": {
       "name": "intrinsics::verify::u32_mod::transmute_unchecked_2ways_tuple_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -2720,7 +2591,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i16::u64::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -2736,7 +2606,6 @@
     "props": 71,
     "func": {
       "name": "intrinsics::verify::u128_mod::transmute_unchecked_2ways_struct_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -2757,7 +2626,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i64::u64::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -2783,7 +2651,6 @@
     "props": 61,
     "func": {
       "name": "intrinsics::verify::i16_mod::transmute_unchecked_2ways_arr_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -2794,7 +2661,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u128::u8::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -2820,7 +2686,6 @@
     "props": 71,
     "func": {
       "name": "intrinsics::verify::i32_mod::transmute_unchecked_2ways_struct_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -2831,7 +2696,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i32::u64::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -2857,7 +2721,6 @@
     "props": 59,
     "func": {
       "name": "intrinsics::verify::i8_mod::transmute_unchecked_2ways_tuple_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -2878,7 +2741,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i8::u32::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -2894,7 +2756,6 @@
     "props": 71,
     "func": {
       "name": "intrinsics::verify::struct_mod::transmute_unchecked_2ways_tuple_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -2915,7 +2776,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u16::i8::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -2931,7 +2791,6 @@
     "props": 71,
     "func": {
       "name": "intrinsics::verify::i16_mod::transmute_unchecked_2ways_struct_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -2952,7 +2811,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u128::i128::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -2968,7 +2826,6 @@
     "props": 61,
     "func": {
       "name": "intrinsics::verify::i16_mod::transmute_unchecked_2ways_arr_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -2989,7 +2846,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i16::u16::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -3015,7 +2871,6 @@
     "props": 59,
     "func": {
       "name": "intrinsics::verify::tuple_mod::transmute_unchecked_2ways_tuple_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -3026,7 +2881,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u128::i8::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -3063,7 +2917,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u64::u32::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -3089,7 +2942,6 @@
     "props": 85,
     "func": {
       "name": "intrinsics::verify::arr_mod::transmute_unchecked_2ways_struct_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -3100,7 +2952,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i128::u8::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -3126,7 +2977,6 @@
     "props": 85,
     "func": {
       "name": "intrinsics::verify::arr_mod::transmute_unchecked_2ways_struct_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -3137,7 +2987,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i16::i8::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -3174,7 +3023,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i64::usize::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -3200,7 +3048,6 @@
     "props": 61,
     "func": {
       "name": "intrinsics::verify::u16_mod::transmute_unchecked_2ways_arr_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -3221,7 +3068,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i128::isize::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -3237,7 +3083,6 @@
     "props": 61,
     "func": {
       "name": "intrinsics::verify::u64_mod::transmute_unchecked_2ways_arr_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -3248,7 +3093,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i32::i16::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -3285,7 +3129,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i8::usize::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -3301,7 +3144,6 @@
     "props": 61,
     "func": {
       "name": "intrinsics::verify::u32_mod::transmute_unchecked_2ways_arr_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -3332,7 +3174,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i32::i8::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -3359,7 +3200,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i64::i8::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -3375,7 +3215,6 @@
     "props": 59,
     "func": {
       "name": "intrinsics::verify::i64_mod::transmute_unchecked_2ways_tuple_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -3396,7 +3235,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i128::usize::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -3412,7 +3250,6 @@
     "props": 83,
     "func": {
       "name": "intrinsics::verify::tuple_mod::transmute_unchecked_2ways_struct_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -3433,7 +3270,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u128::usize::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -3449,7 +3285,6 @@
     "props": 61,
     "func": {
       "name": "intrinsics::verify::i32_mod::transmute_unchecked_2ways_arr_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -3470,7 +3305,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u128::i16::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -3496,7 +3330,6 @@
     "props": 61,
     "func": {
       "name": "intrinsics::verify::arr_mod::transmute_unchecked_2ways_tuple_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -3507,7 +3340,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u64::i64::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -3533,7 +3365,6 @@
     "props": 71,
     "func": {
       "name": "intrinsics::verify::i128_mod::transmute_unchecked_2ways_struct_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -3554,7 +3385,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u64::isize::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -3580,7 +3410,6 @@
     "props": 71,
     "func": {
       "name": "intrinsics::verify::u8_mod::transmute_unchecked_2ways_struct_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -3591,7 +3420,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u128::i32::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -3628,7 +3456,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u128::u32::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -3655,7 +3482,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i64::u32::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -3681,7 +3507,6 @@
     "props": 310,
     "func": {
       "name": "intrinsics::verify::struct_mod::transmute_unchecked_2ways_arr_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -3692,7 +3517,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u128::u64::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -3729,7 +3553,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i16::u8::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -3745,7 +3568,6 @@
     "props": 298,
     "func": {
       "name": "intrinsics::verify::tuple_mod::transmute_unchecked_2ways_arr_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -3766,7 +3588,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u64::u8::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -3782,7 +3603,6 @@
     "props": 59,
     "func": {
       "name": "intrinsics::verify::u8_mod::transmute_unchecked_2ways_tuple_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -3792,7 +3612,6 @@
     "props": 92,
     "func": {
       "name": "ptr::const_ptr::const_byte_offset_from_fixed_offset",
-      "safe": null,
       "file": "core/src/ptr/const_ptr.rs"
     }
   },
@@ -3803,7 +3622,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i16::u128::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -3829,7 +3647,6 @@
     "props": 89,
     "func": {
       "name": "intrinsics::verify::bool_mod::transmute_unchecked_2ways_struct_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -3840,7 +3657,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u128::isize::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -3866,7 +3682,6 @@
     "props": 59,
     "func": {
       "name": "intrinsics::verify::i32_mod::transmute_unchecked_2ways_tuple_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -3877,7 +3692,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i128::u32::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -3894,7 +3708,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i64::u128::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -3910,7 +3723,6 @@
     "props": 59,
     "func": {
       "name": "intrinsics::verify::u128_mod::transmute_unchecked_2ways_tuple_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -3961,7 +3773,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i32::u32::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -3977,7 +3788,6 @@
     "props": 61,
     "func": {
       "name": "intrinsics::verify::arr_mod::transmute_unchecked_2ways_tuple_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -3988,7 +3798,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i128::i64::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -4014,7 +3823,6 @@
     "props": 61,
     "func": {
       "name": "intrinsics::verify::i8_mod::transmute_unchecked_2ways_arr_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -4035,7 +3843,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u16::u8::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -4051,7 +3858,6 @@
     "props": 59,
     "func": {
       "name": "intrinsics::verify::u8_mod::transmute_unchecked_2ways_tuple_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -4062,7 +3868,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i16::usize::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -4119,7 +3924,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u32::i32::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -4135,7 +3939,6 @@
     "props": 71,
     "func": {
       "name": "intrinsics::verify::u16_mod::transmute_unchecked_2ways_struct_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -4156,7 +3959,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u32::u8::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -4182,7 +3984,6 @@
     "props": 317,
     "func": {
       "name": "intrinsics::verify::bool_mod::transmute_unchecked_2ways_arr_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -4203,7 +4004,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i128::u64::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -4229,7 +4029,6 @@
     "props": 147,
     "func": {
       "name": "intrinsics::verify::char_mod::transmute_unchecked_2ways_tuple_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -4240,7 +4039,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u64::i8::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -4257,7 +4055,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i64::u16::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -4283,7 +4080,6 @@
     "props": 71,
     "func": {
       "name": "intrinsics::verify::u64_mod::transmute_unchecked_2ways_struct_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -4304,7 +4100,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u64::i16::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -4341,7 +4136,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i8::u8::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -4367,7 +4161,6 @@
     "props": 71,
     "func": {
       "name": "intrinsics::verify::i64_mod::transmute_unchecked_2ways_struct_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -4378,7 +4171,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i32::usize::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -4395,7 +4187,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i32::u128::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -4452,7 +4243,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i32::u16::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -4478,7 +4268,6 @@
     "props": 71,
     "func": {
       "name": "intrinsics::verify::i128_mod::transmute_unchecked_2ways_struct_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -4489,7 +4278,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i128::i16::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -4515,7 +4303,6 @@
     "props": 71,
     "func": {
       "name": "intrinsics::verify::u64_mod::transmute_unchecked_2ways_struct_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -4536,7 +4323,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i16::u32::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -4553,7 +4339,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i8::u16::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -4579,7 +4364,6 @@
     "props": 297,
     "func": {
       "name": "intrinsics::verify::arr_mod::transmute_unchecked_2ways_arr_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -4590,7 +4374,6 @@
     "n_failed_properties": 2,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i8::u128::check_nonzero_int_try_from_nonzero_int_should_panic",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     },
     "output": [
@@ -4616,7 +4399,6 @@
     "props": 311,
     "func": {
       "name": "intrinsics::verify::bool_mod::transmute_unchecked_2ways_arr_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -4646,7 +4428,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u64::i64::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -4676,7 +4457,6 @@
     "props": 61,
     "func": {
       "name": "intrinsics::verify::u64_mod::transmute_unchecked_2ways_arr_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -4696,7 +4476,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u32::i8::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -4726,7 +4505,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u128::usize::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -4756,7 +4534,6 @@
     "props": 310,
     "func": {
       "name": "intrinsics::verify::struct_mod::transmute_unchecked_2ways_arr_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -4786,7 +4563,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i128::usize::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -4816,7 +4592,6 @@
     "props": 61,
     "func": {
       "name": "intrinsics::verify::u8_mod::transmute_unchecked_2ways_arr_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -4836,7 +4611,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u64::u32::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -4866,7 +4640,6 @@
     "props": 71,
     "func": {
       "name": "intrinsics::verify::u8_mod::transmute_unchecked_2ways_struct_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -4886,7 +4659,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i8::u64::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -4926,7 +4698,6 @@
     "props": 83,
     "func": {
       "name": "intrinsics::verify::tuple_mod::transmute_unchecked_2ways_struct_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -4936,7 +4707,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i16::u128::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -4976,7 +4746,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u128::u16::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -5016,7 +4785,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i32::u16::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -5046,7 +4814,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i64::u128::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -5056,7 +4823,6 @@
     "props": 59,
     "func": {
       "name": "intrinsics::verify::u16_mod::transmute_unchecked_2ways_tuple_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -5086,7 +4852,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i64::u8::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -5096,7 +4861,6 @@
     "props": 147,
     "func": {
       "name": "intrinsics::verify::char_mod::transmute_unchecked_2ways_tuple_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -5116,7 +4880,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u128::i8::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -5136,7 +4899,6 @@
     "props": 61,
     "func": {
       "name": "intrinsics::verify::i64_mod::transmute_unchecked_2ways_arr_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -5156,7 +4918,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i32::usize::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -5196,7 +4957,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i8::u32::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -5206,7 +4966,6 @@
     "props": 378,
     "func": {
       "name": "intrinsics::verify::char_mod::transmute_unchecked_2ways_arr_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -5226,7 +4985,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i128::i16::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -5246,7 +5004,6 @@
     "props": 59,
     "func": {
       "name": "intrinsics::verify::u64_mod::transmute_unchecked_2ways_tuple_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -5266,7 +5023,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i8::u128::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -5286,7 +5042,6 @@
     "props": 59,
     "func": {
       "name": "intrinsics::verify::i64_mod::transmute_unchecked_2ways_tuple_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -5306,7 +5061,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i64::i8::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -5326,7 +5080,6 @@
     "props": 59,
     "func": {
       "name": "intrinsics::verify::i128_mod::transmute_unchecked_2ways_tuple_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -5346,7 +5099,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i64::u64::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -5386,7 +5138,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i128::i64::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -5426,7 +5177,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u64::isize::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -5456,7 +5206,6 @@
     "props": 59,
     "func": {
       "name": "intrinsics::verify::i16_mod::transmute_unchecked_2ways_tuple_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -5466,7 +5215,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u16::i8::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -5496,7 +5244,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i128::u128::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -5516,7 +5263,6 @@
     "props": 71,
     "func": {
       "name": "intrinsics::verify::struct_mod::transmute_unchecked_2ways_tuple_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -5536,7 +5282,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i128::u32::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -5546,7 +5291,6 @@
     "props": 83,
     "func": {
       "name": "intrinsics::verify::bool_mod::transmute_unchecked_2ways_tuple_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -5576,7 +5320,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u128::i32::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -5616,7 +5359,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u16::u8::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -5636,7 +5378,6 @@
     "props": 59,
     "func": {
       "name": "intrinsics::verify::u16_mod::transmute_unchecked_2ways_tuple_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -5656,7 +5397,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u128::isize::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -5676,7 +5416,6 @@
     "props": 61,
     "func": {
       "name": "intrinsics::verify::i32_mod::transmute_unchecked_2ways_arr_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -5686,7 +5425,6 @@
     "props": 31,
     "func": {
       "name": "intrinsics::verify::transmute_unchecked_wrapper",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -5696,7 +5434,6 @@
     "props": 11,
     "func": {
       "name": "intrinsics::verify::should_succeed_i16_to_u16",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -5706,7 +5443,6 @@
     "props": 11,
     "func": {
       "name": "intrinsics::verify::should_succeed_bool_to_i8",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -5716,7 +5452,6 @@
     "props": 11,
     "func": {
       "name": "intrinsics::verify::should_succeed_i64_to_f64",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -5736,7 +5471,6 @@
     "props": 11,
     "func": {
       "name": "intrinsics::verify::should_succeed_i64_to_u64",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -5746,7 +5480,6 @@
     "props": 11,
     "func": {
       "name": "intrinsics::verify::should_succeed_u16_to_i16",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -5756,7 +5489,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i128::isize::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -5766,7 +5498,6 @@
     "props": 11,
     "func": {
       "name": "intrinsics::verify::should_succeed_u32_to_i32",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -5776,7 +5507,6 @@
     "props": 11,
     "func": {
       "name": "intrinsics::verify::should_succeed_f64_to_i64",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -5786,7 +5516,6 @@
     "props": 81,
     "func": {
       "name": "intrinsics::verify::should_succeed_char_to_u32",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -5806,7 +5535,6 @@
     "props": 11,
     "func": {
       "name": "intrinsics::verify::should_succeed_u64_to_i64",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -5816,7 +5544,6 @@
     "props": 81,
     "func": {
       "name": "intrinsics::verify::should_succeed_char_to_f32",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -5826,7 +5553,6 @@
     "props": 11,
     "func": {
       "name": "intrinsics::verify::should_succeed_i32_to_u32",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -5836,7 +5562,6 @@
     "props": 11,
     "func": {
       "name": "intrinsics::verify::should_succeed_i128_to_u128",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -5846,7 +5571,6 @@
     "props": 11,
     "func": {
       "name": "intrinsics::verify::should_succeed_u32_to_f32",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -5856,7 +5580,6 @@
     "props": 11,
     "func": {
       "name": "intrinsics::verify::should_succeed_i32_to_f32",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -5866,7 +5589,6 @@
     "props": 11,
     "func": {
       "name": "intrinsics::verify::should_succeed_u128_to_i128",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -5886,7 +5608,6 @@
     "props": 11,
     "func": {
       "name": "intrinsics::verify::should_succeed_f64_to_u64",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -5896,7 +5617,6 @@
     "props": 11,
     "func": {
       "name": "intrinsics::verify::should_succeed_u8_to_i8",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -5906,7 +5626,6 @@
     "props": 11,
     "func": {
       "name": "intrinsics::verify::should_succeed_f32_to_u32",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -5916,7 +5635,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i128::u64::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -5926,7 +5644,6 @@
     "props": 11,
     "func": {
       "name": "intrinsics::verify::should_succeed_i8_to_u8",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -5936,7 +5653,6 @@
     "props": 11,
     "func": {
       "name": "intrinsics::verify::should_succeed_f32_to_i32",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -5946,7 +5662,6 @@
     "props": 11,
     "func": {
       "name": "intrinsics::verify::should_succeed_u64_to_f64",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -5956,7 +5671,6 @@
     "props": 81,
     "func": {
       "name": "intrinsics::verify::should_succeed_char_to_i32",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -5976,7 +5690,6 @@
     "props": 11,
     "func": {
       "name": "intrinsics::verify::should_succeed_bool_to_u8",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -5987,7 +5700,6 @@
     "n_failed_properties": 1,
     "func": {
       "name": "intrinsics::verify::should_fail_tuple_to_array",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     },
     "output": [
@@ -6011,7 +5723,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u128::u64::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -6021,7 +5732,6 @@
     "props": 273,
     "func": {
       "name": "intrinsics::verify::should_succeed_tuple_to_array",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -6032,7 +5742,6 @@
     "n_failed_properties": 1,
     "func": {
       "name": "intrinsics::verify::should_fail_tuple_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     },
     "output": [
@@ -6056,7 +5765,6 @@
     "props": 29,
     "func": {
       "name": "intrinsics::verify::should_succeed_tuple_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -6067,7 +5775,6 @@
     "n_failed_properties": 1,
     "func": {
       "name": "intrinsics::verify::should_fail_tuple_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     },
     "output": [
@@ -6081,7 +5788,6 @@
     "props": 29,
     "func": {
       "name": "intrinsics::verify::should_succeed_tuple_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -6092,7 +5798,6 @@
     "n_failed_properties": 1,
     "func": {
       "name": "intrinsics::verify::should_fail_i8_to_bool",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     },
     "output": [
@@ -6106,7 +5811,6 @@
     "props": 23,
     "func": {
       "name": "intrinsics::verify::should_succeed_i8_to_bool",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -6127,7 +5831,6 @@
     "n_failed_properties": 1,
     "func": {
       "name": "intrinsics::verify::should_fail_u8_to_bool",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     },
     "output": [
@@ -6141,7 +5844,6 @@
     "props": 23,
     "func": {
       "name": "intrinsics::verify::should_succeed_u8_to_bool",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -6151,7 +5853,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u64::u16::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -6162,7 +5863,6 @@
     "n_failed_properties": 1,
     "func": {
       "name": "intrinsics::verify::should_fail_i32_to_char",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     },
     "output": [
@@ -6176,7 +5876,6 @@
     "props": 102,
     "func": {
       "name": "intrinsics::verify::should_succeed_i32_to_char",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -6187,7 +5886,6 @@
     "n_failed_properties": 1,
     "func": {
       "name": "intrinsics::verify::should_fail_f32_to_char",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     },
     "output": [
@@ -6211,7 +5909,6 @@
     "props": 102,
     "func": {
       "name": "intrinsics::verify::should_succeed_f32_to_char",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -6222,7 +5919,6 @@
     "n_failed_properties": 1,
     "func": {
       "name": "intrinsics::verify::should_fail_u32_to_char",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     },
     "output": [
@@ -6236,7 +5932,6 @@
     "props": 102,
     "func": {
       "name": "intrinsics::verify::should_succeed_u32_to_char",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -6246,7 +5941,6 @@
     "props": 106,
     "func": {
       "name": "intrinsics::verify::transmute_unchecked_wrapper",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -6266,7 +5960,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i32::u32::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -6276,7 +5969,6 @@
     "props": 30,
     "func": {
       "name": "intrinsics::verify::transmute_unchecked_wrapper",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -6286,7 +5978,6 @@
     "props": 36,
     "func": {
       "name": "intrinsics::verify::transmute_unchecked_wrapper",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -6296,7 +5987,6 @@
     "props": 30,
     "func": {
       "name": "intrinsics::verify::transmute_unchecked_wrapper",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -6316,7 +6006,6 @@
     "props": 30,
     "func": {
       "name": "intrinsics::verify::transmute_unchecked_wrapper",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -6326,7 +6015,6 @@
     "props": 30,
     "func": {
       "name": "intrinsics::verify::transmute_unchecked_wrapper",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -6336,7 +6024,6 @@
     "props": 30,
     "func": {
       "name": "intrinsics::verify::transmute_unchecked_wrapper",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -6356,7 +6043,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i128::i32::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -6366,7 +6052,6 @@
     "props": 106,
     "func": {
       "name": "intrinsics::verify::transmute_unchecked_wrapper",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -6386,7 +6071,6 @@
     "props": 30,
     "func": {
       "name": "intrinsics::verify::transmute_unchecked_wrapper",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -6396,7 +6080,6 @@
     "props": 30,
     "func": {
       "name": "intrinsics::verify::transmute_unchecked_wrapper",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -6406,7 +6089,6 @@
     "props": 36,
     "func": {
       "name": "intrinsics::verify::transmute_unchecked_wrapper",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -6426,7 +6108,6 @@
     "props": 30,
     "func": {
       "name": "intrinsics::verify::transmute_unchecked_wrapper",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -6436,7 +6117,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u32::u16::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -6446,7 +6126,6 @@
     "props": 30,
     "func": {
       "name": "intrinsics::verify::transmute_unchecked_wrapper",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -6456,7 +6135,6 @@
     "props": 36,
     "func": {
       "name": "intrinsics::verify::transmute_unchecked_wrapper",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -6466,7 +6144,6 @@
     "props": 30,
     "func": {
       "name": "intrinsics::verify::transmute_unchecked_wrapper",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -6476,7 +6153,6 @@
     "props": 36,
     "func": {
       "name": "intrinsics::verify::transmute_unchecked_wrapper",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -6486,7 +6162,6 @@
     "props": 106,
     "func": {
       "name": "intrinsics::verify::transmute_unchecked_wrapper",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -6496,7 +6171,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u128::u8::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -6506,7 +6180,6 @@
     "props": 30,
     "func": {
       "name": "intrinsics::verify::transmute_unchecked_wrapper",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -6516,7 +6189,6 @@
     "props": 30,
     "func": {
       "name": "intrinsics::verify::transmute_unchecked_wrapper",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -6526,7 +6198,6 @@
     "props": 30,
     "func": {
       "name": "intrinsics::verify::transmute_unchecked_wrapper",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -6536,7 +6207,6 @@
     "props": 36,
     "func": {
       "name": "intrinsics::verify::transmute_unchecked_wrapper",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -6546,7 +6216,6 @@
     "props": 30,
     "func": {
       "name": "intrinsics::verify::transmute_unchecked_wrapper",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -6556,7 +6225,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u32::i32::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -6566,7 +6234,6 @@
     "props": 30,
     "func": {
       "name": "intrinsics::verify::transmute_unchecked_wrapper",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -6576,7 +6243,6 @@
     "props": 30,
     "func": {
       "name": "intrinsics::verify::transmute_unchecked_wrapper",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -6586,7 +6252,6 @@
     "props": 30,
     "func": {
       "name": "intrinsics::verify::transmute_unchecked_wrapper",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -6596,7 +6261,6 @@
     "props": 30,
     "func": {
       "name": "intrinsics::verify::transmute_unchecked_wrapper",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -6606,7 +6270,6 @@
     "props": 30,
     "func": {
       "name": "intrinsics::verify::transmute_unchecked_wrapper",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -6616,7 +6279,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u128::i16::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -6626,7 +6288,6 @@
     "props": 30,
     "func": {
       "name": "intrinsics::verify::transmute_unchecked_wrapper",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -6636,7 +6297,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i8::usize::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -6646,7 +6306,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i16::u8::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -6656,7 +6315,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i64::u16::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -6666,7 +6324,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i64::u32::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -6676,7 +6333,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i32::u8::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -6686,7 +6342,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u32::u8::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -6696,7 +6351,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i128::u16::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -6706,7 +6360,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u64::u8::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -6716,7 +6369,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i32::u64::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -6736,7 +6388,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u64::i8::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -6746,7 +6397,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i64::usize::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -6756,7 +6406,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i8::u8::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -6766,7 +6415,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i8::u16::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -6776,7 +6424,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i16::u32::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -6786,7 +6433,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u16::i16::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -6796,7 +6442,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i16::i8::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -6816,7 +6461,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i32::u128::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -6826,7 +6470,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i128::u8::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -6836,7 +6479,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i16::u64::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -6846,7 +6488,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i32::i16::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -6866,7 +6507,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u128::i128::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -6876,7 +6516,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i16::usize::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -6886,7 +6525,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u64::i32::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -6896,7 +6534,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i16::u16::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -6906,7 +6543,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i32::i8::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -6916,7 +6552,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u32::i16::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -6926,7 +6561,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u128::i64::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -6936,7 +6570,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i64::i32::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -6956,7 +6589,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u128::u32::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -6976,7 +6608,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u64::i16::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -6986,7 +6617,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i64::i16::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -7016,7 +6646,6 @@
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i128::i8::check_nonzero_int_try_from_nonzero_int",
-      "safe": null,
       "file": "core/src/convert/num.rs"
     }
   },
@@ -7096,7 +6725,6 @@
     "props": 96,
     "func": {
       "name": "ptr::mut_ptr::mut_byte_offset_from_fixed_offset",
-      "safe": null,
       "file": "core/src/ptr/mut_ptr.rs"
     }
   },
@@ -7291,7 +6919,6 @@
     "props": 823,
     "func": {
       "name": "num::dec2flt::decimal_seq::decimal_seq_verify::check_left_shift",
-      "safe": null,
       "file": "core/src/num/dec2flt/decimal_seq.rs"
     }
   },
@@ -7351,7 +6978,6 @@
     "props": 518,
     "func": {
       "name": "num::dec2flt::decimal_seq::decimal_seq_verify::check_right_shift",
-      "safe": null,
       "file": "core/src/num/dec2flt/decimal_seq.rs"
     }
   },
@@ -7451,7 +7077,6 @@
     "props": 416,
     "func": {
       "name": "num::dec2flt::decimal_seq::decimal_seq_verify::check_number_of_digits_decimal_left_shift",
-      "safe": null,
       "file": "core/src/num/dec2flt/decimal_seq.rs"
     }
   },
@@ -7481,7 +7106,6 @@
     "props": 227,
     "func": {
       "name": "num::dec2flt::decimal_seq::decimal_seq_verify::check_round",
-      "safe": null,
       "file": "core/src/num/dec2flt/decimal_seq.rs"
     }
   },
@@ -8081,7 +7705,6 @@
     "props": 239,
     "func": {
       "name": "ffi::c_str::is_empty",
-      "safe": null,
       "file": "core/src/ffi/c_str.rs"
     }
   },
@@ -9051,7 +8674,6 @@
     "props": 64,
     "func": {
       "name": "num::widening",
-      "safe": null,
       "file": "core/src/num/mod.rs"
     }
   },
@@ -9061,7 +8683,6 @@
     "props": 74,
     "func": {
       "name": "num::widening",
-      "safe": null,
       "file": "core/src/num/mod.rs"
     }
   },
@@ -9071,7 +8692,6 @@
     "props": 62,
     "func": {
       "name": "num::widening",
-      "safe": null,
       "file": "core/src/num/mod.rs"
     }
   },
@@ -9081,7 +8701,6 @@
     "props": 74,
     "func": {
       "name": "num::widening",
-      "safe": null,
       "file": "core/src/num/mod.rs"
     }
   },
@@ -9091,7 +8710,6 @@
     "props": 64,
     "func": {
       "name": "num::widening",
-      "safe": null,
       "file": "core/src/num/mod.rs"
     }
   },
@@ -9101,7 +8719,6 @@
     "props": 62,
     "func": {
       "name": "num::widening",
-      "safe": null,
       "file": "core/src/num/mod.rs"
     }
   },
@@ -9111,7 +8728,6 @@
     "props": 74,
     "func": {
       "name": "num::widening",
-      "safe": null,
       "file": "core/src/num/mod.rs"
     }
   },
@@ -9121,7 +8737,6 @@
     "props": 62,
     "func": {
       "name": "num::widening",
-      "safe": null,
       "file": "core/src/num/mod.rs"
     }
   },
@@ -9131,7 +8746,6 @@
     "props": 62,
     "func": {
       "name": "num::widening",
-      "safe": null,
       "file": "core/src/num/mod.rs"
     }
   },
@@ -9141,7 +8755,6 @@
     "props": 64,
     "func": {
       "name": "num::widening",
-      "safe": null,
       "file": "core/src/num/mod.rs"
     }
   },
@@ -9151,7 +8764,6 @@
     "props": 64,
     "func": {
       "name": "num::carrying",
-      "safe": null,
       "file": "core/src/num/mod.rs"
     }
   },
@@ -9161,7 +8773,6 @@
     "props": 61,
     "func": {
       "name": "num::carrying",
-      "safe": null,
       "file": "core/src/num/mod.rs"
     }
   },
@@ -9171,7 +8782,6 @@
     "props": 79,
     "func": {
       "name": "num::carrying",
-      "safe": null,
       "file": "core/src/num/mod.rs"
     }
   },
@@ -9191,7 +8801,6 @@
     "props": 61,
     "func": {
       "name": "num::carrying",
-      "safe": null,
       "file": "core/src/num/mod.rs"
     }
   },
@@ -9201,7 +8810,6 @@
     "props": 79,
     "func": {
       "name": "num::carrying",
-      "safe": null,
       "file": "core/src/num/mod.rs"
     }
   },
@@ -9211,7 +8819,6 @@
     "props": 64,
     "func": {
       "name": "num::carrying",
-      "safe": null,
       "file": "core/src/num/mod.rs"
     }
   },
@@ -9231,7 +8838,6 @@
     "props": 61,
     "func": {
       "name": "num::carrying",
-      "safe": null,
       "file": "core/src/num/mod.rs"
     }
   },
@@ -9241,7 +8847,6 @@
     "props": 61,
     "func": {
       "name": "num::carrying",
-      "safe": null,
       "file": "core/src/num/mod.rs"
     }
   },
@@ -9261,7 +8866,6 @@
     "props": 250,
     "func": {
       "name": "ffi::c_str::to_bytes_with_nul",
-      "safe": null,
       "file": "core/src/ffi/c_str.rs"
     }
   },
@@ -9891,7 +9495,6 @@
     "props": 556,
     "func": {
       "name": "slice::iter::tup::check_advance_back_by",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -9901,7 +9504,6 @@
     "props": 461,
     "func": {
       "name": "slice::iter::char::check_clone",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -9911,7 +9513,6 @@
     "props": 206,
     "func": {
       "name": "slice::iter::unit::check_as_ref",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -9921,7 +9522,6 @@
     "props": 544,
     "func": {
       "name": "slice::iter::tup::check_next_back",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -9931,7 +9531,6 @@
     "props": 188,
     "func": {
       "name": "slice::iter::u8::check_is_empty",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -9941,7 +9540,6 @@
     "props": 200,
     "func": {
       "name": "slice::iter::unit::check_as_slice",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -9951,7 +9549,6 @@
     "props": 267,
     "func": {
       "name": "slice::iter::u8::check_advance_back_by",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -9961,7 +9558,6 @@
     "props": 288,
     "func": {
       "name": "slice::iter::unit::check_nth_back",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -9971,7 +9567,6 @@
     "props": 290,
     "func": {
       "name": "slice::iter::u8::check_nth_back",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -9981,7 +9576,6 @@
     "props": 491,
     "func": {
       "name": "slice::iter::char::check_len",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -9991,7 +9585,6 @@
     "props": 507,
     "func": {
       "name": "slice::iter::tup::check_next",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -10001,7 +9594,6 @@
     "props": 561,
     "func": {
       "name": "slice::iter::char::check_nth",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -10021,7 +9613,6 @@
     "props": 538,
     "func": {
       "name": "slice::iter::char::check_advance_by",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -10031,7 +9622,6 @@
     "props": 186,
     "func": {
       "name": "slice::iter::unit::check_is_empty",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -10041,7 +9631,6 @@
     "props": 202,
     "func": {
       "name": "slice::iter::u8::check_size_hint",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -10051,7 +9640,6 @@
     "props": 208,
     "func": {
       "name": "slice::iter::u8::check_as_ref",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -10071,7 +9659,6 @@
     "props": 579,
     "func": {
       "name": "slice::iter::tup::check_nth_back",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -10091,7 +9678,6 @@
     "props": 491,
     "func": {
       "name": "slice::iter::char::check_size_hint",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -10121,7 +9707,6 @@
     "props": 538,
     "func": {
       "name": "slice::iter::tup::check_advance_by",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -10131,7 +9716,6 @@
     "props": 251,
     "func": {
       "name": "ffi::c_str::to_bytes",
-      "safe": null,
       "file": "core/src/ffi/c_str.rs"
     }
   },
@@ -10151,7 +9735,6 @@
     "props": 497,
     "func": {
       "name": "slice::iter::char::check_as_ref",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -10171,7 +9754,6 @@
     "props": 252,
     "func": {
       "name": "slice::iter::unit::check_next_back",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -10191,7 +9773,6 @@
     "props": 491,
     "func": {
       "name": "slice::iter::tup::check_size_hint",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -10221,7 +9802,6 @@
     "props": 353,
     "func": {
       "name": "ffi::c_str::count_bytes",
-      "safe": null,
       "file": "core/src/ffi/c_str.rs"
     }
   },
@@ -10231,7 +9811,6 @@
     "props": 561,
     "func": {
       "name": "slice::iter::tup::check_nth",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -10241,7 +9820,6 @@
     "props": 254,
     "func": {
       "name": "slice::iter::u8::check_next_back",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -10261,7 +9839,6 @@
     "props": 270,
     "func": {
       "name": "slice::iter::unit::check_nth",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -10271,7 +9848,6 @@
     "props": 200,
     "func": {
       "name": "slice::iter::unit::check_len",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -10291,7 +9867,6 @@
     "props": 544,
     "func": {
       "name": "slice::iter::char::check_next_back",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -10301,7 +9876,6 @@
     "props": 217,
     "func": {
       "name": "slice::iter::u8::check_next",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -10311,7 +9885,6 @@
     "props": 461,
     "func": {
       "name": "slice::iter::tup::check_clone",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -10321,7 +9894,6 @@
     "props": 491,
     "func": {
       "name": "slice::iter::tup::check_len",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -10331,7 +9903,6 @@
     "props": 202,
     "func": {
       "name": "slice::iter::u8::check_len",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -10351,7 +9922,6 @@
     "props": 478,
     "func": {
       "name": "slice::iter::tup::check_is_empty",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -10361,7 +9931,6 @@
     "props": 169,
     "func": {
       "name": "slice::iter::unit::check_clone",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -10391,7 +9960,6 @@
     "props": 497,
     "func": {
       "name": "slice::iter::tup::check_as_ref",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -10401,7 +9969,6 @@
     "props": 507,
     "func": {
       "name": "slice::iter::char::check_next",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -10431,7 +9998,6 @@
     "props": 340,
     "func": {
       "name": "slice::reverse",
-      "safe": null,
       "file": "core/src/slice/mod.rs"
     }
   },
@@ -10441,7 +10007,6 @@
     "props": 172,
     "func": {
       "name": "ffi::c_str::from_bytes_with_nul",
-      "safe": null,
       "file": "core/src/ffi/c_str.rs"
     }
   },
@@ -10631,7 +10196,6 @@
     "props": 272,
     "func": {
       "name": "ffi::c_str::as_ptr",
-      "safe": null,
       "file": "core/src/ffi/c_str.rs"
     }
   },
@@ -10881,7 +10445,6 @@
     "props": 589,
     "func": {
       "name": "ffi::c_str::to_str",
-      "safe": null,
       "file": "core/src/ffi/c_str.rs"
     }
   },
@@ -11281,7 +10844,6 @@
     "props": 390,
     "func": {
       "name": "ffi::c_str::bytes",
-      "safe": null,
       "file": "core/src/ffi/c_str.rs"
     }
   },
@@ -11322,7 +10884,6 @@
     "n_failed_properties": 1,
     "func": {
       "name": "ptr::non_null::is_aligned_to_no_power_two",
-      "safe": null,
       "file": "core/src/ptr/non_null.rs"
     },
     "output": [
@@ -11356,7 +10917,6 @@
     "props": 32,
     "func": {
       "name": "ptr::non_null::is_empty",
-      "safe": null,
       "file": "core/src/ptr/non_null.rs"
     }
   },
@@ -11366,7 +10926,6 @@
     "props": 32,
     "func": {
       "name": "ptr::non_null::len",
-      "safe": null,
       "file": "core/src/ptr/non_null.rs"
     }
   },
@@ -11691,7 +11250,6 @@
     "props": 168,
     "func": {
       "name": "ffi::c_str::from_bytes_until_nul",
-      "safe": null,
       "file": "core/src/ffi/c_str.rs"
     }
   },
@@ -11721,7 +11279,6 @@
     "props": 339,
     "func": {
       "name": "intrinsics::transmute_slice_metadata",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -11731,7 +11288,6 @@
     "props": 81,
     "func": {
       "name": "intrinsics::transmute_ref_address",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -11741,7 +11297,6 @@
     "props": 79,
     "func": {
       "name": "intrinsics::transmute_ptr_address",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -11751,7 +11306,6 @@
     "props": 56,
     "func": {
       "name": "intrinsics::verify::transmute_2ways_f32_to_u32",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -11761,7 +11315,6 @@
     "props": 62,
     "func": {
       "name": "intrinsics::verify::transmute_2ways_f32_to_char",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -11771,7 +11324,6 @@
     "props": 56,
     "func": {
       "name": "intrinsics::verify::transmute_2ways_f64_to_u64",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -11791,7 +11343,6 @@
     "props": 56,
     "func": {
       "name": "intrinsics::verify::transmute_2ways_f32_to_i32",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -11801,7 +11352,6 @@
     "props": 56,
     "func": {
       "name": "intrinsics::verify::transmute_2ways_f64_to_i64",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -11821,7 +11371,6 @@
     "props": 55,
     "func": {
       "name": "intrinsics::verify::transmute_2ways_u64_to_f64",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -11831,7 +11380,6 @@
     "props": 55,
     "func": {
       "name": "intrinsics::verify::u8_mod::transmute_2ways_tuple_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -11841,7 +11389,6 @@
     "props": 55,
     "func": {
       "name": "intrinsics::verify::i128_mod::transmute_2ways_tuple_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -11851,7 +11398,6 @@
     "props": 55,
     "func": {
       "name": "intrinsics::verify::transmute_2ways_bool_to_i8",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -11861,7 +11407,6 @@
     "props": 55,
     "func": {
       "name": "intrinsics::verify::i64_mod::transmute_2ways_tuple_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -11871,7 +11416,6 @@
     "props": 67,
     "func": {
       "name": "intrinsics::verify::struct_mod::transmute_2ways_tuple_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -11881,7 +11425,6 @@
     "props": 67,
     "func": {
       "name": "intrinsics::verify::i128_mod::transmute_2ways_struct_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -11891,7 +11434,6 @@
     "props": 57,
     "func": {
       "name": "intrinsics::verify::u8_mod::transmute_2ways_arr_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -11901,7 +11443,6 @@
     "props": 67,
     "func": {
       "name": "intrinsics::verify::i8_mod::transmute_2ways_struct_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -11911,7 +11452,6 @@
     "props": 61,
     "func": {
       "name": "intrinsics::verify::transmute_2ways_i8_to_bool",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -11921,7 +11461,6 @@
     "props": 57,
     "func": {
       "name": "intrinsics::verify::i8_mod::transmute_2ways_arr_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -11931,7 +11470,6 @@
     "props": 55,
     "func": {
       "name": "intrinsics::verify::i16_mod::transmute_2ways_tuple_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -11941,7 +11479,6 @@
     "props": 67,
     "func": {
       "name": "intrinsics::verify::struct_mod::transmute_2ways_tuple_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -11951,7 +11488,6 @@
     "props": 91,
     "func": {
       "name": "intrinsics::verify::struct_mod::transmute_2ways_struct_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -11961,7 +11497,6 @@
     "props": 55,
     "func": {
       "name": "intrinsics::verify::transmute_2ways_i128_to_u128",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -11971,7 +11506,6 @@
     "props": 55,
     "func": {
       "name": "intrinsics::verify::transmute_2ways_u32_to_f32",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -11981,7 +11515,6 @@
     "props": 67,
     "func": {
       "name": "intrinsics::verify::i32_mod::transmute_2ways_struct_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12001,7 +11534,6 @@
     "props": 55,
     "func": {
       "name": "intrinsics::verify::transmute_2ways_u64_to_i64",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12011,7 +11543,6 @@
     "props": 143,
     "func": {
       "name": "intrinsics::verify::char_mod::transmute_2ways_tuple_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12021,7 +11552,6 @@
     "props": 55,
     "func": {
       "name": "intrinsics::verify::u64_mod::transmute_2ways_tuple_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12041,7 +11571,6 @@
     "props": 55,
     "func": {
       "name": "intrinsics::verify::u32_mod::transmute_2ways_tuple_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12051,7 +11580,6 @@
     "props": 293,
     "func": {
       "name": "intrinsics::verify::arr_mod::transmute_2ways_arr_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12071,7 +11599,6 @@
     "props": 57,
     "func": {
       "name": "intrinsics::verify::i64_mod::transmute_2ways_arr_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12081,7 +11608,6 @@
     "props": 79,
     "func": {
       "name": "intrinsics::verify::tuple_mod::transmute_2ways_struct_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12121,7 +11647,6 @@
     "props": 55,
     "func": {
       "name": "intrinsics::verify::u16_mod::transmute_2ways_tuple_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12131,7 +11656,6 @@
     "props": 67,
     "func": {
       "name": "intrinsics::verify::u32_mod::transmute_2ways_struct_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12141,7 +11665,6 @@
     "props": 78,
     "func": {
       "name": "ptr::unique::cast",
-      "safe": null,
       "file": "core/src/ptr/unique.rs"
     }
   },
@@ -12151,7 +11674,6 @@
     "props": 57,
     "func": {
       "name": "intrinsics::verify::i64_mod::transmute_2ways_arr_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12161,7 +11683,6 @@
     "props": 70,
     "func": {
       "name": "ptr::unique::as_mut",
-      "safe": null,
       "file": "core/src/ptr/unique.rs"
     }
   },
@@ -12171,7 +11692,6 @@
     "props": 61,
     "func": {
       "name": "intrinsics::verify::transmute_2ways_i32_to_char",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12181,7 +11701,6 @@
     "props": 70,
     "func": {
       "name": "ptr::unique::as_ref",
-      "safe": null,
       "file": "core/src/ptr/unique.rs"
     }
   },
@@ -12201,7 +11720,6 @@
     "props": 67,
     "func": {
       "name": "intrinsics::verify::u128_mod::transmute_2ways_struct_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12211,7 +11729,6 @@
     "props": 55,
     "func": {
       "name": "intrinsics::verify::u128_mod::transmute_2ways_tuple_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12231,7 +11748,6 @@
     "props": 55,
     "func": {
       "name": "intrinsics::verify::tuple_mod::transmute_2ways_tuple_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12261,7 +11777,6 @@
     "props": 106,
     "func": {
       "name": "slice::iter::unit::check_default",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -12271,7 +11786,6 @@
     "props": 106,
     "func": {
       "name": "slice::iter::char::check_default",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -12281,7 +11795,6 @@
     "props": 106,
     "func": {
       "name": "slice::iter::u8::check_default",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -12291,7 +11804,6 @@
     "props": 106,
     "func": {
       "name": "slice::iter::tup::check_default",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -12301,7 +11813,6 @@
     "props": 374,
     "func": {
       "name": "intrinsics::verify::char_mod::transmute_2ways_arr_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12311,7 +11822,6 @@
     "props": 306,
     "func": {
       "name": "intrinsics::verify::struct_mod::transmute_2ways_arr_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12321,7 +11831,6 @@
     "props": 387,
     "func": {
       "name": "slice::iter::char::check_count",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -12331,7 +11840,6 @@
     "props": 306,
     "func": {
       "name": "intrinsics::verify::struct_mod::transmute_2ways_arr_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12341,7 +11849,6 @@
     "props": 96,
     "func": {
       "name": "slice::iter::unit::check_count",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -12351,7 +11858,6 @@
     "props": 55,
     "func": {
       "name": "intrinsics::verify::i16_mod::transmute_2ways_tuple_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12361,7 +11867,6 @@
     "props": 55,
     "func": {
       "name": "intrinsics::verify::u32_mod::transmute_2ways_tuple_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12381,7 +11886,6 @@
     "props": 55,
     "func": {
       "name": "intrinsics::verify::transmute_2ways_i16_to_u16",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12391,7 +11895,6 @@
     "props": 374,
     "func": {
       "name": "intrinsics::verify::char_mod::transmute_2ways_arr_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12411,7 +11914,6 @@
     "props": 387,
     "func": {
       "name": "slice::iter::tup::check_count",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -12421,7 +11923,6 @@
     "props": 55,
     "func": {
       "name": "intrinsics::verify::transmute_2ways_i32_to_f32",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12431,7 +11932,6 @@
     "props": 98,
     "func": {
       "name": "slice::iter::u8::check_count",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -12441,7 +11941,6 @@
     "props": 55,
     "func": {
       "name": "intrinsics::verify::i128_mod::transmute_2ways_tuple_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12451,7 +11950,6 @@
     "props": 293,
     "func": {
       "name": "intrinsics::verify::arr_mod::transmute_2ways_arr_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12461,7 +11959,6 @@
     "props": 57,
     "func": {
       "name": "intrinsics::verify::i8_mod::transmute_2ways_arr_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12471,7 +11968,6 @@
     "props": 57,
     "func": {
       "name": "intrinsics::verify::u16_mod::transmute_2ways_arr_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12481,7 +11977,6 @@
     "props": 55,
     "func": {
       "name": "intrinsics::verify::transmute_2ways_i64_to_u64",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12491,7 +11986,6 @@
     "props": 85,
     "func": {
       "name": "intrinsics::verify::bool_mod::transmute_2ways_struct_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12501,7 +11995,6 @@
     "props": 448,
     "func": {
       "name": "slice::iter::char::check_new_iter",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -12511,7 +12004,6 @@
     "props": 156,
     "func": {
       "name": "slice::iter::unit::check_new_iter",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -12521,7 +12013,6 @@
     "props": 294,
     "func": {
       "name": "intrinsics::verify::tuple_mod::transmute_2ways_arr_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12531,7 +12022,6 @@
     "props": 158,
     "func": {
       "name": "slice::iter::u8::check_new_iter",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -12541,7 +12031,6 @@
     "props": 294,
     "func": {
       "name": "intrinsics::verify::tuple_mod::transmute_2ways_arr_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12551,7 +12040,6 @@
     "props": 55,
     "func": {
       "name": "intrinsics::verify::transmute_2ways_i32_to_u32",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12561,7 +12049,6 @@
     "props": 73,
     "func": {
       "name": "intrinsics::verify::bool_mod::transmute_2ways_tuple_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12581,7 +12068,6 @@
     "props": 55,
     "func": {
       "name": "intrinsics::verify::transmute_2ways_u8_to_i8",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12591,7 +12077,6 @@
     "props": 448,
     "func": {
       "name": "slice::iter::tup::check_new_iter",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -12601,7 +12086,6 @@
     "props": 67,
     "func": {
       "name": "intrinsics::verify::i16_mod::transmute_2ways_struct_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12611,7 +12095,6 @@
     "props": 61,
     "func": {
       "name": "intrinsics::verify::transmute_2ways_u32_to_char",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12631,7 +12114,6 @@
     "props": 67,
     "func": {
       "name": "intrinsics::verify::u64_mod::transmute_2ways_struct_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12641,7 +12123,6 @@
     "props": 85,
     "func": {
       "name": "intrinsics::verify::bool_mod::transmute_2ways_struct_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12651,7 +12132,6 @@
     "props": 57,
     "func": {
       "name": "intrinsics::verify::u128_mod::transmute_2ways_arr_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12671,7 +12151,6 @@
     "props": 55,
     "func": {
       "name": "intrinsics::verify::tuple_mod::transmute_2ways_tuple_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12681,7 +12160,6 @@
     "props": 67,
     "func": {
       "name": "intrinsics::verify::i16_mod::transmute_2ways_struct_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12691,7 +12169,6 @@
     "props": 55,
     "func": {
       "name": "intrinsics::verify::transmute_2ways_u16_to_i16",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12701,7 +12178,6 @@
     "props": 55,
     "func": {
       "name": "intrinsics::verify::u8_mod::transmute_2ways_tuple_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12711,7 +12187,6 @@
     "props": 57,
     "func": {
       "name": "intrinsics::verify::i128_mod::transmute_2ways_arr_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12731,7 +12206,6 @@
     "props": 307,
     "func": {
       "name": "intrinsics::verify::bool_mod::transmute_2ways_arr_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12741,7 +12215,6 @@
     "props": 57,
     "func": {
       "name": "intrinsics::verify::u16_mod::transmute_2ways_arr_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12751,7 +12224,6 @@
     "props": 67,
     "func": {
       "name": "intrinsics::verify::i8_mod::transmute_2ways_struct_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12761,7 +12233,6 @@
     "props": 79,
     "func": {
       "name": "intrinsics::verify::tuple_mod::transmute_2ways_struct_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12791,7 +12262,6 @@
     "props": 67,
     "func": {
       "name": "intrinsics::verify::u8_mod::transmute_2ways_struct_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12801,7 +12271,6 @@
     "props": 61,
     "func": {
       "name": "intrinsics::verify::transmute_2ways_u8_to_bool",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12811,7 +12280,6 @@
     "props": 55,
     "func": {
       "name": "intrinsics::verify::transmute_2ways_i64_to_f64",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12841,7 +12309,6 @@
     "props": 57,
     "func": {
       "name": "intrinsics::verify::u64_mod::transmute_2ways_arr_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12851,7 +12318,6 @@
     "props": 67,
     "func": {
       "name": "intrinsics::verify::i128_mod::transmute_2ways_struct_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12861,7 +12327,6 @@
     "props": 57,
     "func": {
       "name": "intrinsics::verify::i32_mod::transmute_2ways_arr_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12881,7 +12346,6 @@
     "props": 125,
     "func": {
       "name": "intrinsics::verify::transmute_2ways_char_to_u32",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12891,7 +12355,6 @@
     "props": 55,
     "func": {
       "name": "intrinsics::verify::transmute_2ways_u128_to_i128",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12901,7 +12364,6 @@
     "props": 81,
     "func": {
       "name": "intrinsics::verify::arr_mod::transmute_2ways_struct_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12921,7 +12383,6 @@
     "props": 55,
     "func": {
       "name": "intrinsics::verify::i32_mod::transmute_2ways_tuple_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12931,7 +12392,6 @@
     "props": 55,
     "func": {
       "name": "intrinsics::verify::i8_mod::transmute_2ways_tuple_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12941,7 +12401,6 @@
     "props": 125,
     "func": {
       "name": "intrinsics::verify::transmute_2ways_char_to_i32",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12951,7 +12410,6 @@
     "props": 143,
     "func": {
       "name": "intrinsics::verify::char_mod::transmute_2ways_tuple_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12961,7 +12419,6 @@
     "props": 67,
     "func": {
       "name": "intrinsics::verify::u8_mod::transmute_2ways_struct_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12971,7 +12428,6 @@
     "props": 155,
     "func": {
       "name": "intrinsics::verify::char_mod::transmute_2ways_struct_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12981,7 +12437,6 @@
     "props": 67,
     "func": {
       "name": "intrinsics::verify::u16_mod::transmute_2ways_struct_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -12991,7 +12446,6 @@
     "props": 57,
     "func": {
       "name": "intrinsics::verify::u8_mod::transmute_2ways_arr_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -13001,7 +12455,6 @@
     "props": 67,
     "func": {
       "name": "intrinsics::verify::u64_mod::transmute_2ways_struct_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -13011,7 +12464,6 @@
     "props": 55,
     "func": {
       "name": "intrinsics::verify::u16_mod::transmute_2ways_tuple_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -13021,7 +12473,6 @@
     "props": 67,
     "func": {
       "name": "intrinsics::verify::i32_mod::transmute_2ways_struct_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -13041,7 +12492,6 @@
     "props": 57,
     "func": {
       "name": "intrinsics::verify::i16_mod::transmute_2ways_arr_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -13051,7 +12501,6 @@
     "props": 57,
     "func": {
       "name": "intrinsics::verify::u64_mod::transmute_2ways_arr_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -13071,7 +12520,6 @@
     "props": 155,
     "func": {
       "name": "intrinsics::verify::char_mod::transmute_2ways_struct_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -13091,7 +12539,6 @@
     "props": 79,
     "func": {
       "name": "intrinsics::verify::bool_mod::transmute_2ways_tuple_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -13101,7 +12548,6 @@
     "props": 67,
     "func": {
       "name": "intrinsics::verify::u32_mod::transmute_2ways_struct_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -13111,7 +12557,6 @@
     "props": 55,
     "func": {
       "name": "intrinsics::verify::u64_mod::transmute_2ways_tuple_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -13121,7 +12566,6 @@
     "props": 57,
     "func": {
       "name": "intrinsics::verify::i16_mod::transmute_2ways_arr_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -13131,7 +12575,6 @@
     "props": 57,
     "func": {
       "name": "intrinsics::verify::i128_mod::transmute_2ways_arr_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -13151,7 +12594,6 @@
     "props": 57,
     "func": {
       "name": "intrinsics::verify::u32_mod::transmute_2ways_arr_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -13161,7 +12603,6 @@
     "props": 91,
     "func": {
       "name": "intrinsics::verify::struct_mod::transmute_2ways_struct_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -13171,7 +12612,6 @@
     "props": 81,
     "func": {
       "name": "intrinsics::verify::arr_mod::transmute_2ways_struct_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -13181,7 +12621,6 @@
     "props": 55,
     "func": {
       "name": "intrinsics::verify::u128_mod::transmute_2ways_tuple_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -13191,7 +12630,6 @@
     "props": 55,
     "func": {
       "name": "intrinsics::verify::transmute_2ways_bool_to_u8",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -13201,7 +12639,6 @@
     "props": 67,
     "func": {
       "name": "intrinsics::verify::u16_mod::transmute_2ways_struct_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -13221,7 +12658,6 @@
     "props": 67,
     "func": {
       "name": "intrinsics::verify::i64_mod::transmute_2ways_struct_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -13231,7 +12667,6 @@
     "props": 57,
     "func": {
       "name": "intrinsics::verify::i32_mod::transmute_2ways_arr_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -13241,7 +12676,6 @@
     "props": 55,
     "func": {
       "name": "intrinsics::verify::transmute_2ways_i8_to_u8",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -13261,7 +12695,6 @@
     "props": 57,
     "func": {
       "name": "intrinsics::verify::arr_mod::transmute_2ways_tuple_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -13271,7 +12704,6 @@
     "props": 55,
     "func": {
       "name": "intrinsics::verify::i64_mod::transmute_2ways_tuple_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -13281,7 +12713,6 @@
     "props": 57,
     "func": {
       "name": "intrinsics::verify::u32_mod::transmute_2ways_arr_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -13301,7 +12732,6 @@
     "props": 55,
     "func": {
       "name": "intrinsics::verify::i8_mod::transmute_2ways_tuple_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -13311,7 +12741,6 @@
     "props": 125,
     "func": {
       "name": "intrinsics::verify::transmute_2ways_char_to_f32",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -13321,7 +12750,6 @@
     "props": 57,
     "func": {
       "name": "intrinsics::verify::u128_mod::transmute_2ways_arr_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -13331,7 +12759,6 @@
     "props": 55,
     "func": {
       "name": "intrinsics::verify::i32_mod::transmute_2ways_tuple_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -13341,7 +12768,6 @@
     "props": 55,
     "func": {
       "name": "intrinsics::verify::transmute_2ways_u32_to_i32",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -13351,7 +12777,6 @@
     "props": 313,
     "func": {
       "name": "intrinsics::verify::bool_mod::transmute_2ways_arr_to_struct",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -13361,7 +12786,6 @@
     "props": 67,
     "func": {
       "name": "intrinsics::verify::i64_mod::transmute_2ways_struct_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -13371,7 +12795,6 @@
     "props": 67,
     "func": {
       "name": "intrinsics::verify::u128_mod::transmute_2ways_struct_to_tuple",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -13381,7 +12804,6 @@
     "props": 57,
     "func": {
       "name": "intrinsics::verify::arr_mod::transmute_2ways_tuple_to_arr",
-      "safe": null,
       "file": "core/src/intrinsics/mod.rs"
     }
   },
@@ -13631,7 +13053,6 @@
     "props": 171,
     "func": {
       "name": "slice::iter::u8::check_clone",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -13661,7 +13082,6 @@
     "props": 478,
     "func": {
       "name": "slice::iter::char::check_is_empty",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -13671,7 +13091,6 @@
     "props": 215,
     "func": {
       "name": "slice::iter::unit::check_next",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -13691,7 +13110,6 @@
     "props": 272,
     "func": {
       "name": "slice::iter::u8::check_nth",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -13701,7 +13119,6 @@
     "props": 265,
     "func": {
       "name": "slice::iter::unit::check_advance_back_by",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -13711,7 +13128,6 @@
     "props": 249,
     "func": {
       "name": "slice::iter::u8::check_advance_by",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -13731,7 +13147,6 @@
     "props": 491,
     "func": {
       "name": "slice::iter::char::check_as_slice",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -13751,7 +13166,6 @@
     "props": 579,
     "func": {
       "name": "slice::iter::char::check_nth_back",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -13771,7 +13185,6 @@
     "props": 202,
     "func": {
       "name": "slice::iter::u8::check_as_slice",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -13811,7 +13224,6 @@
     "props": 556,
     "func": {
       "name": "slice::iter::char::check_advance_back_by",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -13831,7 +13243,6 @@
     "props": 200,
     "func": {
       "name": "slice::iter::unit::check_size_hint",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -13871,7 +13282,6 @@
     "props": 491,
     "func": {
       "name": "slice::iter::tup::check_as_slice",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -13881,7 +13291,6 @@
     "props": 247,
     "func": {
       "name": "slice::iter::unit::check_advance_by",
-      "safe": null,
       "file": "core/src/slice/iter.rs"
     }
   },
@@ -13902,7 +13311,6 @@
     "n_failed_properties": 1,
     "func": {
       "name": "time::duration::as_nanos",
-      "safe": null,
       "file": "core/src/time.rs"
     },
     "output": [
@@ -13916,7 +13324,6 @@
     "props": 33,
     "func": {
       "name": "time::duration::as_nanos",
-      "safe": null,
       "file": "core/src/time.rs"
     }
   },
@@ -13936,7 +13343,6 @@
     "props": 441,
     "func": {
       "name": "str::pattern::small_slice_eq_empty",
-      "safe": null,
       "file": "core/src/str/pattern.rs"
     }
   },
