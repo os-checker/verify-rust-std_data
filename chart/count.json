@@ -1,40 +1,610 @@
-[{"mod":"alloc::collections","proof_kind":null,"cnt":41,"pct":"97.6"},
-{"mod":"alloc::collections","proof_kind":"\"Standard\"","cnt":1,"pct":"2.4"},
-{"mod":"alloc::vec","proof_kind":null,"cnt":71,"pct":"98.6"},
-{"mod":"alloc::vec","proof_kind":"\"Standard\"","cnt":1,"pct":"1.4"},
-{"mod":"core::alloc","proof_kind":null,"cnt":31,"pct":"68.9"},
-{"mod":"core::alloc","proof_kind":"\"Contract\"","cnt":12,"pct":"26.7"},
-{"mod":"core::alloc","proof_kind":"\"Standard\"","cnt":2,"pct":"4.4"},
-{"mod":"core::array","proof_kind":null,"cnt":512,"pct":"99.8"},
-{"mod":"core::array","proof_kind":"\"Contract\"","cnt":1,"pct":"0.2"},
-{"mod":"core::char","proof_kind":null,"cnt":113,"pct":"98.3"},
-{"mod":"core::char","proof_kind":"\"Contract\"","cnt":2,"pct":"1.7"},
-{"mod":"core::convert","proof_kind":null,"cnt":451,"pct":"70.4"},
-{"mod":"core::convert","proof_kind":"\"Standard\"","cnt":142,"pct":"22.2"},
-{"mod":"core::convert","proof_kind":"\"Contract\"","cnt":48,"pct":"7.5"},
-{"mod":"core::ffi","proof_kind":null,"cnt":50,"pct":"80.6"},
-{"mod":"core::ffi","proof_kind":"\"Standard\"","cnt":9,"pct":"14.5"},
-{"mod":"core::ffi","proof_kind":"\"Contract\"","cnt":3,"pct":"4.8"},
-{"mod":"core::intrinsics","proof_kind":null,"cnt":780,"pct":"71.4"},
-{"mod":"core::intrinsics","proof_kind":"\"Standard\"","cnt":281,"pct":"25.7"},
-{"mod":"core::intrinsics","proof_kind":"\"Contract\"","cnt":32,"pct":"2.9"},
-{"mod":"core::mem","proof_kind":null,"cnt":946,"pct":"99.8"},
-{"mod":"core::mem","proof_kind":"\"Contract\"","cnt":2,"pct":"0.2"},
-{"mod":"core::num","proof_kind":null,"cnt":3307,"pct":"93.4"},
-{"mod":"core::num","proof_kind":"\"Contract\"","cnt":150,"pct":"4.2"},
-{"mod":"core::num","proof_kind":"\"Standard\"","cnt":82,"pct":"2.3"},
-{"mod":"core::ops","proof_kind":null,"cnt":126,"pct":"97.7"},
-{"mod":"core::ops","proof_kind":"\"Contract\"","cnt":3,"pct":"2.3"},
-{"mod":"core::option","proof_kind":null,"cnt":229,"pct":"99.6"},
-{"mod":"core::option","proof_kind":"\"Standard\"","cnt":1,"pct":"0.4"},
-{"mod":"core::ptr","proof_kind":null,"cnt":3718,"pct":"90.8"},
-{"mod":"core::ptr","proof_kind":"\"Contract\"","cnt":367,"pct":"9.0"},
-{"mod":"core::ptr","proof_kind":"\"Standard\"","cnt":8,"pct":"0.2"},
-{"mod":"core::slice","proof_kind":null,"cnt":1337,"pct":"86.9"},
-{"mod":"core::slice","proof_kind":"\"Contract\"","cnt":140,"pct":"9.1"},
-{"mod":"core::slice","proof_kind":"\"Standard\"","cnt":62,"pct":"4.0"},
-{"mod":"core::str","proof_kind":null,"cnt":215,"pct":"99.5"},
-{"mod":"core::str","proof_kind":"\"Standard\"","cnt":1,"pct":"0.5"},
-{"mod":"core::time","proof_kind":null,"cnt":67,"pct":"73.6"},
-{"mod":"core::time","proof_kind":"\"Contract\"","cnt":22,"pct":"24.2"},
-{"mod":"core::time","proof_kind":"\"Standard\"","cnt":2,"pct":"2.2"}]
+[
+  {
+    "mod": "alloc::raw_vec",
+    "cnt": {
+      "not_proof": 54,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "alloc::alloc",
+    "cnt": {
+      "not_proof": 27,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "alloc::borrow",
+    "cnt": {
+      "not_proof": 24,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "alloc::boxed",
+    "cnt": {
+      "not_proof": 183,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "alloc::bstr",
+    "cnt": {
+      "not_proof": 110,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "alloc::collections",
+    "cnt": {
+      "not_proof": 1025,
+      "standard": 1,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "alloc::ffi",
+    "cnt": {
+      "not_proof": 105,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "alloc::fmt",
+    "cnt": {
+      "not_proof": 2,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "alloc::rc",
+    "cnt": {
+      "not_proof": 168,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "alloc::slice",
+    "cnt": {
+      "not_proof": 32,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "alloc::str",
+    "cnt": {
+      "not_proof": 21,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "alloc::string",
+    "cnt": {
+      "not_proof": 199,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "alloc::sync",
+    "cnt": {
+      "not_proof": 162,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "alloc::task",
+    "cnt": {
+      "not_proof": 18,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "alloc::vec",
+    "cnt": {
+      "not_proof": 301,
+      "standard": 1,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "alloc::wtf8",
+    "cnt": {
+      "not_proof": 57,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::contracts",
+    "cnt": {
+      "not_proof": 1,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::f128",
+    "cnt": {
+      "not_proof": 51,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::f16",
+    "cnt": {
+      "not_proof": 52,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::f32",
+    "cnt": {
+      "not_proof": 53,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::f64",
+    "cnt": {
+      "not_proof": 55,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::num",
+    "cnt": {
+      "not_proof": 4885,
+      "standard": 82,
+      "contract": 150
+    }
+  },
+  {
+    "mod": "core::hint",
+    "cnt": {
+      "not_proof": 12,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::intrinsics",
+    "cnt": {
+      "not_proof": 456,
+      "standard": 281,
+      "contract": 32
+    }
+  },
+  {
+    "mod": "core::mem",
+    "cnt": {
+      "not_proof": 94,
+      "standard": 0,
+      "contract": 2
+    }
+  },
+  {
+    "mod": "core::ptr",
+    "cnt": {
+      "not_proof": 388,
+      "standard": 8,
+      "contract": 367
+    }
+  },
+  {
+    "mod": "core::ub_checks",
+    "cnt": {
+      "not_proof": 31,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::borrow",
+    "cnt": {
+      "not_proof": 7,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::clone",
+    "cnt": {
+      "not_proof": 39,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::cmp",
+    "cnt": {
+      "not_proof": 306,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::convert",
+    "cnt": {
+      "not_proof": 391,
+      "standard": 142,
+      "contract": 48
+    }
+  },
+  {
+    "mod": "core::default",
+    "cnt": {
+      "not_proof": 21,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::error",
+    "cnt": {
+      "not_proof": 42,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::marker",
+    "cnt": {
+      "not_proof": 67,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::ops",
+    "cnt": {
+      "not_proof": 2704,
+      "standard": 0,
+      "contract": 3
+    }
+  },
+  {
+    "mod": "core::any",
+    "cnt": {
+      "not_proof": 33,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::array",
+    "cnt": {
+      "not_proof": 164,
+      "standard": 0,
+      "contract": 1
+    }
+  },
+  {
+    "mod": "core::ascii",
+    "cnt": {
+      "not_proof": 56,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::asserting",
+    "cnt": {
+      "not_proof": 7,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::async_iter",
+    "cnt": {
+      "not_proof": 14,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::bstr",
+    "cnt": {
+      "not_proof": 110,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::cell",
+    "cnt": {
+      "not_proof": 135,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::char",
+    "cnt": {
+      "not_proof": 187,
+      "standard": 0,
+      "contract": 2
+    }
+  },
+  {
+    "mod": "core::ffi",
+    "cnt": {
+      "not_proof": 60,
+      "standard": 9,
+      "contract": 3
+    }
+  },
+  {
+    "mod": "core::io",
+    "cnt": {
+      "not_proof": 26,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::iter",
+    "cnt": {
+      "not_proof": 1304,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::net",
+    "cnt": {
+      "not_proof": 229,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::option",
+    "cnt": {
+      "not_proof": 94,
+      "standard": 1,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::panic",
+    "cnt": {
+      "not_proof": 35,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::panicking",
+    "cnt": {
+      "not_proof": 46,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::pat",
+    "cnt": {
+      "not_proof": 14,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::pin",
+    "cnt": {
+      "not_proof": 41,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::random",
+    "cnt": {
+      "not_proof": 16,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::range",
+    "cnt": {
+      "not_proof": 90,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::result",
+    "cnt": {
+      "not_proof": 71,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::sync",
+    "cnt": {
+      "not_proof": 426,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::fmt",
+    "cnt": {
+      "not_proof": 386,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::hash",
+    "cnt": {
+      "not_proof": 130,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::slice",
+    "cnt": {
+      "not_proof": 734,
+      "standard": 62,
+      "contract": 140
+    }
+  },
+  {
+    "mod": "core::str",
+    "cnt": {
+      "not_proof": 549,
+      "standard": 1,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::time",
+    "cnt": {
+      "not_proof": 73,
+      "standard": 2,
+      "contract": 22
+    }
+  },
+  {
+    "mod": "core::wtf8",
+    "cnt": {
+      "not_proof": 59,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::unicode",
+    "cnt": {
+      "not_proof": 22,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::future",
+    "cnt": {
+      "not_proof": 24,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::task",
+    "cnt": {
+      "not_proof": 66,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::alloc",
+    "cnt": {
+      "not_proof": 58,
+      "standard": 2,
+      "contract": 12
+    }
+  },
+  {
+    "mod": "core::bool",
+    "cnt": {
+      "not_proof": 4,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::escape",
+    "cnt": {
+      "not_proof": 27,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::unit",
+    "cnt": {
+      "not_proof": 4,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::core_arch",
+    "cnt": {
+      "not_proof": 6419,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::arch",
+    "cnt": {
+      "not_proof": 1,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::core_simd",
+    "cnt": {
+      "not_proof": 1469,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::tuple",
+    "cnt": {
+      "not_proof": 180,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "core::kani",
+    "cnt": {
+      "not_proof": 302,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "dummy_crate",
+    "cnt": {
+      "not_proof": 1,
+      "standard": 0,
+      "contract": 0
+    }
+  },
+  {
+    "mod": "proc_macro2",
+    "cnt": {
+      "not_proof": 9,
+      "standard": 0,
+      "contract": 0
+    }
+  }
+]

@@ -80,14 +80,31 @@ merge_results() {
 
 chart() {
   jq 'map(
-    # filter in crates (core and alloc) and normal functions
-    select( .crate and (.func | startswith("<") | not ) )
+    select(.crate and .time)
     # extract `crate::submod`
-    | { mod: ( .crate + "::" + (.func | split("::")[0]) ) }
+    | { mod: ( .crate + "::" + (.func.name | split("::")[0]) ), time }
   )
   | group_by(.mod)
-    | map({ mod: .[0].mod, cnt: length })
-  ' merge_diff.json
+  | map({
+      mod: .[0].mod,
+      avg: (map(.time) | add / length) | round,
+      time: map(.time) | sort
+    })
+  ' merge_results-core.json >chart/time.json
+
+  # Merge and flatten data.
+  jq --slurp '
+    map( .local.count_in_module | to_entries | map({ mod: .key, cnt: .value }) ) | flatten 
+  ' ../../assets/json/stat/*.json >chart/count.json
+
+  jq --slurp '
+    add | group_by(.mod) | map(
+      add
+      | select(.mod | startswith("core") or startswith("std") or startswith("alloc"))
+    )
+  ' chart/count.json chart/time.json >chart/merged.json
+
+  jless chart/merged.json
 }
 
 declare -A cmds=(
