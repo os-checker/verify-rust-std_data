@@ -3,7 +3,7 @@
   "name": "ptr::mut_ptr::verify::check_mut_offset_from_unit",
   "hash": "565957972217767163114685095598082032803",
   "hash_direct": "392075173542450301913723754720528743696",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::should_panic]\n",
     "#[kanitool::proof_for_contract = \"<*mut ()>::offset_from\"]\n"

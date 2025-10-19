@@ -3,6 +3,6 @@
   "name": "ptr::drop_in_place::<&char::CaseMappingIter>",
   "hash": "617814621228004556616396041967449669098",
   "hash_direct": "1161697831820851810210834278343755077768",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

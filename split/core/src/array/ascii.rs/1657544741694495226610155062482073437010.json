@@ -3,7 +3,7 @@
   "name": "array::ascii::verify::proof_for_as_ascii_unchecked",
   "hash": "1657544741694495226610155062482073437010",
   "hash_direct": "1786350874040473181011705917252085885357",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::unwind(10)]\n",
     "#[kanitool::proof_for_contract = \"<[u8; 4]>::as_ascii_unchecked\"]\n"

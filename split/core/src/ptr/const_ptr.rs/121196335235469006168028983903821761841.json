@@ -3,7 +3,7 @@
   "name": "ptr::const_ptr::verify::check_const_add_usize",
   "hash": "121196335235469006168028983903821761841",
   "hash_direct": "156466001958814564137511341345515109271",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"< * const usize > :: add\"]\n"
   ],

@@ -3,7 +3,7 @@
   "name": "intrinsics::unchecked_funnel_shl::<u16>",
   "hash": "105204804363823314139464248959220775007",
   "hash_direct": "1333446358796140417015276314325250375593",
-  "inst_kind": "\"Intrinsic\"",
+  "inst_kind": "Intrinsic",
   "src": "pub const unsafe fn unchecked_funnel_shl<T: [const] fallback::FunnelShift>(\n    a: T,\n    b: T,\n    shift: u32,\n) -> T {\n    // SAFETY: caller ensures that `shift` is in-range\n    unsafe { a.unchecked_funnel_shl(b, shift) }\n}",
   "callees": [
     "1806494181001350783915205167250141868281",

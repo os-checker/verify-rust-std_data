@@ -3,6 +3,6 @@
   "name": "ptr::drop_in_place::<mem::maybe_uninit::MaybeUninit<*mut f32>>",
   "hash": "1814024728092996720912341531616753304217",
   "hash_direct": "1260143261987248243311684667654733702550",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

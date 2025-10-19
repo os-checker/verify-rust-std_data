@@ -3,7 +3,7 @@
   "name": "ptr::mut_ptr::verify::check_mut_offset_slice_tuple_4",
   "hash": "1372384537834551357515635421652937842648",
   "hash_direct": "69738578364307349032000287650065003198",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract =\n\"< * mut (i8, u16, i32, u64, isize) > :: offset\"]\n"
   ],

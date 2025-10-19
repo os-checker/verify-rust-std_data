@@ -3,7 +3,7 @@
   "name": "<for<'a> fn(&'a char::EscapeDebug) -> (usize, option::Option<usize>) {<char::EscapeDebug as iter::traits::iterator::Iterator>::size_hint} as ops::function::FnOnce<(&char::EscapeDebug,)>>::call_once",
   "hash": "346823333908696641916341616270177181118",
   "hash_direct": "1124623085577017009415256642123245347849",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "extern \"rust-call\" fn call_once(self, args: Args) -> Self::Output;",
   "callees": [
     "29692277963445026189949060184005755332",

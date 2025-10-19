@@ -3,7 +3,7 @@
   "name": "num::nonzero::verify::nonzero_check_unchecked_add_for_u32",
   "hash": "104601731907400759313038430477433708532",
   "hash_direct": "655050452836376929011248715768459114735",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"NonZero :: < u32 > :: unchecked_add\"]\n"
   ],

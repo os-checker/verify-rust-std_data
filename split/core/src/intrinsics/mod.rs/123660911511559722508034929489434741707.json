@@ -3,7 +3,7 @@
   "name": "intrinsics::verify::transmute_unchecked_u16_to_i16",
   "hash": "123660911511559722508034929489434741707",
   "hash_direct": "765793908636052061013442142890451498411",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"transmute_unchecked_wrapper\"]\n"
   ],

@@ -3,7 +3,7 @@
   "name": "<fn(()) -> ops::control_flow::ControlFlow<(), cmp::Ordering> {ops::control_flow::ControlFlow::<(), cmp::Ordering>::Break} as ops::function::FnOnce<((),)>>::call_once",
   "hash": "144366614822018216193700260200303691343",
   "hash_direct": "120540476448530143105022116185488239298",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "extern \"rust-call\" fn call_once(self, args: Args) -> Self::Output;",
   "callees": [
     "1422517144103739044117611863969159333899"

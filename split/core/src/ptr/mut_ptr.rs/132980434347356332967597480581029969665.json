@@ -3,7 +3,7 @@
   "name": "ptr::mut_ptr::verify::check_mut_add_u128",
   "hash": "132980434347356332967597480581029969665",
   "hash_direct": "32155278651692706366060061882916290407",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"< * mut u128 > :: add\"]\n"
   ],

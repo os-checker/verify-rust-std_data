@@ -3,6 +3,6 @@
   "name": "ptr::drop_in_place::<{closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/slice/cmp.rs:401:58: 401:61}>",
   "hash": "151332515389462887513652497243051504477",
   "hash_direct": "1266692019976409328914203590336626771523",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

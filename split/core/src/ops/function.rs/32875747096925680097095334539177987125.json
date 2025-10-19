@@ -3,7 +3,7 @@
   "name": "<for<'a> fn(&'a mut iter::adapters::flatten::Flatten<option::IntoIter<char::EscapeDebug>>) -> option::Option<<iter::adapters::flatten::Flatten<option::IntoIter<char::EscapeDebug>> as iter::traits::iterator::Iterator>::Item> {<iter::adapters::flatten::Flatten<option::IntoIter<char::EscapeDebug>> as iter::traits::iterator::Iterator>::next} as ops::function::FnOnce<(&mut iter::adapters::flatten::Flatten<option::IntoIter<char::EscapeDebug>>,)>>::call_once",
   "hash": "32875747096925680097095334539177987125",
   "hash_direct": "117805048633161469095218989148550912017",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "extern \"rust-call\" fn call_once(self, args: Args) -> Self::Output;",
   "callees": [
     "211389067699639933614636457746408448112",

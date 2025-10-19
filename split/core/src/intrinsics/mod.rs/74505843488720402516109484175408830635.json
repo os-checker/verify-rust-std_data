@@ -3,7 +3,7 @@
   "name": "intrinsics::minimumf64",
   "hash": "74505843488720402516109484175408830635",
   "hash_direct": "1240531175481942877511489883480032014964",
-  "inst_kind": "\"Intrinsic\"",
+  "inst_kind": "Intrinsic",
   "src": "pub const fn minimumf64(x: f64, y: f64) -> f64 {\n    if x < y {\n        x\n    } else if y < x {\n        y\n    } else if x == y {\n        if x.is_sign_negative() && y.is_sign_positive() { x } else { y }\n    } else {\n        // At least one input is NaN. Use `+` to perform NaN propagation and quieting.\n        x + y\n    }\n}",
   "callees": [
     "1176328137589943253415190693832930071313",

@@ -3,7 +3,7 @@
   "name": "ptr::non_null::verify::non_null_slice_is_aligned_check",
   "hash": "865387162892180275511481896112514052461",
   "hash_direct": "85874778458037586241612680186888980375",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"NonNull::is_aligned\"]\n"
   ],

@@ -3,6 +3,6 @@
   "name": "core::ptr::drop_in_place::<{closure@core::fmt::builders::DebugInner<'_, '_>::entry_with<{closure@core::fmt::DebugList<'_, '_>::entry::{closure#0}}>::{closure#0}}>",
   "hash": "72008774824958885507622015196334851471",
   "hash_direct": "932683481782000337113260635078524777473",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

@@ -3,7 +3,7 @@
   "name": "core::ptr::drop_in_place::<<vec::drain::Drain<'_, T, A> as core::ops::Drop>::drop::DropGuard<'_, '_, u8, alloc::Global>>",
   "hash": "129517669124705058592251807949417709040",
   "hash_direct": "133667640864773371573436718942800608492",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)",
   "callees": [
     "609329418194659516618287966669285042522",

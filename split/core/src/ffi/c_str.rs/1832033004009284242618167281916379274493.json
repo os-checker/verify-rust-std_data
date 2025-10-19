@@ -3,7 +3,7 @@
   "name": "ffi::c_str::verify::check_from_bytes_until_nul",
   "hash": "1832033004009284242618167281916379274493",
   "hash_direct": "1050889298071405502512994948765169166790",
-  "proof_kind": "\"Standard\"",
+  "proof_kind": "Standard",
   "attrs": [
     "#[kanitool::unwind(32)]\n",
     "#[kanitool::proof]\n"

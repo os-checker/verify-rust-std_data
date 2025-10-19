@@ -3,7 +3,7 @@
   "name": "core::ptr::drop_in_place::<borrow::Cow<'_, str>>",
   "hash": "60515514789306440595601503060141289670",
   "hash_direct": "1430355412722672181511345039891300800922",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)",
   "callees": [
     "394899740451847047017644777761427403196",

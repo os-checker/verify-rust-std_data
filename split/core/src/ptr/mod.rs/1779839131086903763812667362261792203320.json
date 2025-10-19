@@ -3,6 +3,6 @@
   "name": "core::ptr::drop_in_place::<&vec::Vec<u8>>",
   "hash": "1779839131086903763812667362261792203320",
   "hash_direct": "356059102305442260514147606912281136978",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

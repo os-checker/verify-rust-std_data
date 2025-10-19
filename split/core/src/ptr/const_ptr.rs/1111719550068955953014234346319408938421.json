@@ -3,7 +3,7 @@
   "name": "ptr::const_ptr::verify::check_const_offset_from_u32",
   "hash": "1111719550068955953014234346319408938421",
   "hash_direct": "123290163425605302965939706896864455004",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"< * const u32 > :: offset_from\"]\n"
   ],

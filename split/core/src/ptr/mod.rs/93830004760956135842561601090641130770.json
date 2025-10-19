@@ -3,6 +3,6 @@
   "name": "ptr::drop_in_place::<&num::flt2dec::decoder::Decoded>",
   "hash": "93830004760956135842561601090641130770",
   "hash_direct": "141797715499253625095934895369954629054",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

@@ -3,6 +3,6 @@
   "name": "core::ptr::drop_in_place::<{closure@<core::iter::TakeWhile<I, P> as core::iter::Iterator>::try_fold::check<'_, &u8, usize, core::ops::try_trait::NeverShortCircuit<usize>, {closure@<core::slice::EscapeAscii<'_> as core::fmt::Display>::fmt::{closure#0}}, {closure@core::ops::try_trait::NeverShortCircuit<usize>::wrap_mut_2<usize, &u8, {closure@<core::iter::TakeWhile<core::slice::Iter<'_, u8>, {closure@<core::slice::EscapeAscii<'_> as core::fmt::Display>::fmt::{closure#0}}> as core::iter::Iterator>::count::{closure#0}}>::{closure#0}}>::{closure#0}}>",
   "hash": "18416949209895000159200296936904864710",
   "hash_direct": "953106629662002984510442841820468610234",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

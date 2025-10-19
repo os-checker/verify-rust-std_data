@@ -3,6 +3,6 @@
   "name": "ptr::drop_in_place::<&char::EscapeDebug>",
   "hash": "151340466358257416088894852330980743484",
   "hash_direct": "145673553911698118717471110198145411895",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

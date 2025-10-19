@@ -3,6 +3,6 @@
   "name": "core::intrinsics::cold_path",
   "hash": "99835071136844477394667148890151411684",
   "hash_direct": "175453554668166203327086182001246045776",
-  "inst_kind": "\"Intrinsic\"",
+  "inst_kind": "Intrinsic",
   "src": "pub const fn cold_path() {}"
 }

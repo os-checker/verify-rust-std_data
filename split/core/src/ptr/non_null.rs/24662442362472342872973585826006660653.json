@@ -3,7 +3,7 @@
   "name": "ptr::non_null::verify::non_null_check_copy_to_nonoverlapping",
   "hash": "24662442362472342872973585826006660653",
   "hash_direct": "28553495372624417203168235204833734583",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"NonNull::<T>::copy_to_nonoverlapping\"]\n"
   ],

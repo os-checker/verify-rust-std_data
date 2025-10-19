@@ -3,6 +3,6 @@
   "name": "core::ptr::drop_in_place::<sync::SliceArcInnerForStatic>",
   "hash": "7944202859690988918148715172592121688",
   "hash_direct": "1545751957668528683810667090056617933904",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

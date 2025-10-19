@@ -3,7 +3,7 @@
   "name": "ptr::const_ptr::verify::check_const_add_u64",
   "hash": "59055924678771916781802696048054271268",
   "hash_direct": "1520146241846231459614064578399137186668",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"< * const u64 > :: add\"]\n"
   ],

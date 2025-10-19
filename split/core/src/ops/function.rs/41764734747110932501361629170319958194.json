@@ -3,7 +3,7 @@
   "name": "<fn(core::iter::Map<core::slice::Iter<'_, u8>, core::slice::ascii::EscapeByte>) -> core::slice::Iter<'_, u8> {core::iter::Map::<core::slice::Iter<'_, u8>, core::slice::ascii::EscapeByte>::into_inner} as core::ops::FnOnce<(core::iter::Map<core::slice::Iter<'_, u8>, core::slice::ascii::EscapeByte>,)>>::call_once",
   "hash": "41764734747110932501361629170319958194",
   "hash_direct": "145266121590162378362342597101728987651",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "extern \"rust-call\" fn call_once(self, args: Args) -> Self::Output;",
   "callees": [
     "1747978143025230090411376181982438315559",

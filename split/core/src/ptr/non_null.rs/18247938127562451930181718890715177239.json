@@ -3,7 +3,7 @@
   "name": "ptr::non_null::verify::non_null_check_write_unaligned_i8",
   "hash": "18247938127562451930181718890715177239",
   "hash_direct": "58736060088717258907266972449577909380",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"NonNull :: write_unaligned\"]\n"
   ],

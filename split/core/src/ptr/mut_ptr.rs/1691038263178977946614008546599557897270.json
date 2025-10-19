@@ -3,7 +3,7 @@
   "name": "ptr::mut_ptr::verify::check_mut_sub_slice_i8",
   "hash": "1691038263178977946614008546599557897270",
   "hash_direct": "69015742577772252054100973457425590865",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"< * mut i8 > :: sub\"]\n"
   ],

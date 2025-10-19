@@ -3,7 +3,7 @@
   "name": "intrinsics::verify::should_succeed_tuple_to_array",
   "hash": "1388761137575246791715542363763057593428",
   "hash_direct": "96436611948949916962044151442654191599",
-  "proof_kind": "\"Standard\"",
+  "proof_kind": "Standard",
   "attrs": [
     "#[kanitool::stub_verified = \"transmute_unchecked_wrapper\"]\n",
     "#[kanitool::proof]\n"

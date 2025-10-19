@@ -3,7 +3,7 @@
   "name": "ptr::mut_ptr::verify::check_mut_offset_from_tuple_2_array",
   "hash": "89460945724694988357074482412302684325",
   "hash_direct": "18344145807015045556881081072893443503",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"< * mut (f64, bool) > :: offset_from\"]\n"
   ],

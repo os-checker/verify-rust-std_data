@@ -3,7 +3,7 @@
   "name": "ptr::mut_ptr::verify::check_mut_offset_slice_isize",
   "hash": "1483394535952618341510656686980081138712",
   "hash_direct": "73794156261967126106673717269133560918",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"< * mut isize > :: offset\"]\n"
   ],

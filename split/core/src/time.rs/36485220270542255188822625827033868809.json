@@ -3,7 +3,7 @@
   "name": "time::duration_verify::duration_subsec_nanos_panics",
   "hash": "36485220270542255188822625827033868809",
   "hash_direct": "54437827587189928764939429875610260064",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::should_panic]\n",
     "#[kanitool::proof_for_contract = \"Duration::subsec_nanos\"]\n"

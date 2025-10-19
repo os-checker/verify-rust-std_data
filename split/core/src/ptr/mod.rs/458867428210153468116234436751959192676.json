@@ -3,6 +3,6 @@
   "name": "ptr::drop_in_place::<&intrinsics::verify::u32_mod::generated_struct>",
   "hash": "458867428210153468116234436751959192676",
   "hash_direct": "32238944326933852018451338768655737171",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

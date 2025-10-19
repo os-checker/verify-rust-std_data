@@ -3,6 +3,6 @@
   "name": "ptr::drop_in_place::<fmt::builders::PadAdapter<'_, '_>>",
   "hash": "979905345926612536015630663886892108940",
   "hash_direct": "1779900419998778654413984013278891914635",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

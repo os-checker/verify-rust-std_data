@@ -3,7 +3,7 @@
   "name": "ptr::const_ptr::verify::check_const_add_i32",
   "hash": "151161786406764971174764361204914955092",
   "hash_direct": "63909828476603835196667693952332664331",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"< * const i32 > :: add\"]\n"
   ],

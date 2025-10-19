@@ -3,6 +3,6 @@
   "name": "core::ptr::drop_in_place::<fn(core::num::NonZero<usize>) -> core::result::Result<(), core::num::NonZero<usize>> {core::result::Result::<(), core::num::NonZero<usize>>::Err}>",
   "hash": "624717257606261138314077919778228401956",
   "hash_direct": "645086156645640566111210462960382699021",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

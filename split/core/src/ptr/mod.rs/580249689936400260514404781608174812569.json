@@ -3,6 +3,6 @@
   "name": "ptr::drop_in_place::<for<'a> fn(&'a char::EscapeUnicode) -> (usize, option::Option<usize>) {<char::EscapeUnicode as iter::traits::iterator::Iterator>::size_hint}>",
   "hash": "580249689936400260514404781608174812569",
   "hash_direct": "857825339112641105711549851551453105725",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

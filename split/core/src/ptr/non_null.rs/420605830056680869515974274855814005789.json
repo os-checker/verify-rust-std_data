@@ -3,7 +3,7 @@
   "name": "ptr::non_null::verify::non_null_check_add",
   "hash": "420605830056680869515974274855814005789",
   "hash_direct": "947987845679258839514045132981268573115",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"NonNull::add\"]\n"
   ],

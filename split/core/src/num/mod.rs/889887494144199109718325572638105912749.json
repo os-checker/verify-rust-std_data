@@ -3,7 +3,7 @@
   "name": "num::verify::unchecked_mul_i64_large_neg",
   "hash": "889887494144199109718325572638105912749",
   "hash_direct": "2625425336349697809906631115215602318",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"i64 :: unchecked_mul\"]\n"
   ],

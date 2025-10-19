@@ -3,7 +3,7 @@
   "name": "intrinsics::typed_swap_nonoverlapping::<char>",
   "hash": "356801626861550210613772934743303966117",
   "hash_direct": "84390589979502506976917765649082255135",
-  "inst_kind": "\"Intrinsic\"",
+  "inst_kind": "Intrinsic",
   "attrs": [
     "#[kanitool::recursion_check =\n\"__kani_recursion_check_typed_swap_nonoverlapping\"]\n",
     "#[kanitool::checked_with = \"__kani_check_typed_swap_nonoverlapping\"]\n",

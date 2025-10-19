@@ -3,7 +3,7 @@
   "name": "ptr::unique::verify::check_as_non_null_ptr",
   "hash": "831016235601497219512943774543026617439",
   "hash_direct": "62459873864820956804651476773559292122",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"Unique::as_non_null_ptr\"]\n"
   ],

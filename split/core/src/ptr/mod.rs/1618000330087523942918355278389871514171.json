@@ -3,7 +3,7 @@
   "name": "core::ptr::drop_in_place::<string::String>",
   "hash": "1618000330087523942918355278389871514171",
   "hash_direct": "54061580588475965918392945444410652344",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)",
   "callees": [
     "394899740451847047017644777761427403196",

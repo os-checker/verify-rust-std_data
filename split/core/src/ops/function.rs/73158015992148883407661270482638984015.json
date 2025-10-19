@@ -3,7 +3,7 @@
   "name": "<fn(net::socket_addr::SocketAddrV6) -> net::socket_addr::SocketAddr {net::socket_addr::SocketAddr::V6} as ops::function::FnOnce<(net::socket_addr::SocketAddrV6,)>>::call_once",
   "hash": "73158015992148883407661270482638984015",
   "hash_direct": "61891455088674699926316543625386463859",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "extern \"rust-call\" fn call_once(self, args: Args) -> Self::Output;",
   "callees": [
     "1485484873907222870713248877987783633755"

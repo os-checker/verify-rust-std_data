@@ -3,7 +3,7 @@
   "name": "ptr::const_ptr::verify::check_const_add_i64",
   "hash": "1026994685333348501715108286405423567107",
   "hash_direct": "96635193546022129559277215839687973986",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"< * const i64 > :: add\"]\n"
   ],

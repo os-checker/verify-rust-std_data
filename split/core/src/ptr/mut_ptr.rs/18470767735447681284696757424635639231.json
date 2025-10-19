@@ -3,7 +3,7 @@
   "name": "ptr::mut_ptr::verify::check_mut_sub_u16",
   "hash": "18470767735447681284696757424635639231",
   "hash_direct": "1449676774655313249013349821708863906",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"< * mut u16 > :: sub\"]\n"
   ],

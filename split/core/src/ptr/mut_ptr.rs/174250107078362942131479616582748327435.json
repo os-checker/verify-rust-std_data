@@ -3,7 +3,7 @@
   "name": "ptr::mut_ptr::verify::check_mut_add_isize",
   "hash": "174250107078362942131479616582748327435",
   "hash_direct": "172586901372272571011467665104479531320",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"< * mut isize > :: add\"]\n"
   ],

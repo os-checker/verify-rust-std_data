@@ -3,7 +3,7 @@
   "name": "ptr::const_ptr::verify::check_const_sub_i8",
   "hash": "174906575824537592708683136716686686208",
   "hash_direct": "1749207257260918362514647853483889488885",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"< * const i8 > :: sub\"]\n"
   ],

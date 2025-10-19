@@ -3,7 +3,7 @@
   "name": "ptr::non_null::verify::non_null_check_write_i128",
   "hash": "385333409479032999415157513254369252341",
   "hash_direct": "1381110277245075375418228038289830992336",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"NonNull :: write\"]\n"
   ],

@@ -3,7 +3,7 @@
   "name": "ptr::non_null::verify::non_null_check_as_mut_ptr",
   "hash": "90449939735544265753974389740584337670",
   "hash_direct": "10871558538593796022706889558413623998",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"NonNull::<[T]>::as_mut_ptr\"]\n"
   ],

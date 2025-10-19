@@ -3,7 +3,7 @@
   "name": "core::ptr::drop_in_place::<collections::vec_deque::VecDeque<u32>>",
   "hash": "527176612457956519715685399235865189446",
   "hash_direct": "75675708200575647908965256852501936542",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)",
   "callees": [
     "394899740451847047017644777761427403196",

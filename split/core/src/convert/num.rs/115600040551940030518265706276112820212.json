@@ -3,7 +3,7 @@
   "name": "convert::num::verify::check_f16_to_int_unchecked::f32::usize::check_float_to_int_unchecked",
   "hash": "115600040551940030518265706276112820212",
   "hash_direct": "1661146146312222135614704846320053465042",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"< f32 > :: to_int_unchecked\"]\n"
   ],

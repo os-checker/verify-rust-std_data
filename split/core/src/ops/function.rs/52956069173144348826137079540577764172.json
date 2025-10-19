@@ -3,7 +3,7 @@
   "name": "<for<'b, 'a> fn(&'b num::flt2dec::decoder::Decoded, &'a mut [mem::maybe_uninit::MaybeUninit<u8>]) -> (&'a [u8], i16) {num::flt2dec::strategy::grisu::format_shortest} as ops::function::FnMut<(&num::flt2dec::decoder::Decoded, &mut [mem::maybe_uninit::MaybeUninit<u8>])>>::call_mut",
   "hash": "52956069173144348826137079540577764172",
   "hash_direct": "1385953408164762686416894284410905583255",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "extern \"rust-call\" fn call_mut(&mut self, args: Args) -> Self::Output;",
   "callees": [
     "80887250879108148015413891736608607220",

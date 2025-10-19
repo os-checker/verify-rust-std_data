@@ -3,6 +3,6 @@
   "name": "ptr::drop_in_place::<for<'a> fn(&'a mut [u8]) -> &'a mut bstr::ByteStr {bstr::ByteStr::from_bytes_mut}>",
   "hash": "732374513817134745817071711119891796662",
   "hash_direct": "150399374848266471062956628080491075015",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

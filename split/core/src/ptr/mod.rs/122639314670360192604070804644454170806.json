@@ -3,6 +3,6 @@
   "name": "core::ptr::drop_in_place::<{closure@core::iter::adapters::map::map_fold<core::result::Result<char, core::char::DecodeUtf16Error>, char, (), {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/alloc/src/string.rs:835:26: 835:29}, {closure@core::iter::Iterator::for_each::call<char, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/alloc/src/string.rs:2397:27: 2397:35}>::{closure#0}}>::{closure#0}}>",
   "hash": "122639314670360192604070804644454170806",
   "hash_direct": "52210406910310272217359216114996828499",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

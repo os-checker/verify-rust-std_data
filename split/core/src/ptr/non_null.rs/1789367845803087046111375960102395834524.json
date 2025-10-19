@@ -3,7 +3,7 @@
   "name": "ptr::non_null::verify::non_null_check_write_volatile_i32",
   "hash": "1789367845803087046111375960102395834524",
   "hash_direct": "1508769104023544578415873268227773458309",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"NonNull :: write_volatile\"]\n"
   ],

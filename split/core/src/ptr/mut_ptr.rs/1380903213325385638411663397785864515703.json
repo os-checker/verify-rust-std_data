@@ -3,7 +3,7 @@
   "name": "ptr::mut_ptr::verify::check_mut_offset_from_usize_array",
   "hash": "1380903213325385638411663397785864515703",
   "hash_direct": "839746960066769168010920440108452990609",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"< * mut usize > :: offset_from\"]\n"
   ],

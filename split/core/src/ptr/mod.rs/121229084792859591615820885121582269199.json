@@ -3,6 +3,6 @@
   "name": "core::ptr::drop_in_place::<{closure@<core::str::Chars<'_> as core::iter::Iterator>::next::{closure#0}}>",
   "hash": "121229084792859591615820885121582269199",
   "hash_direct": "126130044833926678161616525313140927748",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

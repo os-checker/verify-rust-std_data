@@ -3,7 +3,7 @@
   "name": "ptr::const_ptr::verify::check_const_add_slice_u8",
   "hash": "59898716349608459557173485803192759100",
   "hash_direct": "72492775657637380365210773816566990277",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"< * const u8 > :: add\"]\n"
   ],

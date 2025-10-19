@@ -3,7 +3,7 @@
   "name": "<fn(core::num::NonZero<usize>) -> core::result::Result<(), core::num::NonZero<usize>> {core::result::Result::<(), core::num::NonZero<usize>>::Err} as core::ops::FnOnce<(core::num::NonZero<usize>,)>>::call_once",
   "hash": "674705445464042650116032405720727943861",
   "hash_direct": "94588857626819668715829742361132641284",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "extern \"rust-call\" fn call_once(self, args: Args) -> Self::Output;",
   "callees": [
     "182633521436243547785642894468751253037"

@@ -3,7 +3,7 @@
   "name": "time::duration_verify::duration_as_nanos_panics",
   "hash": "65416581173855060643566630819425149946",
   "hash_direct": "145927822832192963344845855556960396328",
-  "proof_kind": "\"Standard\"",
+  "proof_kind": "Standard",
   "attrs": [
     "#[kanitool::should_panic]\n",
     "#[kanitool::proof]\n"

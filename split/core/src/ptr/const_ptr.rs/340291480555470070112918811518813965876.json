@@ -3,7 +3,7 @@
   "name": "ptr::const_ptr::verify::check_const_offset_from_u64_arr",
   "hash": "340291480555470070112918811518813965876",
   "hash_direct": "705204995968592503313863857052548757611",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"< * const u64 > :: offset_from\"]\n"
   ],

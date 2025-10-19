@@ -3,7 +3,7 @@
   "name": "<for<'a> fn(&'a mut ascii::EscapeDefault) -> option::Option<<ascii::EscapeDefault as iter::traits::iterator::Iterator>::Item> {<ascii::EscapeDefault as iter::traits::iterator::Iterator>::next} as ops::function::FnOnce<(&mut ascii::EscapeDefault,)>>::call_once",
   "hash": "65903705491072905214897377658891944941",
   "hash_direct": "1440973092838044602014697763220248066669",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "extern \"rust-call\" fn call_once(self, args: Args) -> Self::Output;",
   "callees": [
     "5110000758852373595734899414250198648",

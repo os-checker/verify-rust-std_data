@@ -3,7 +3,7 @@
   "name": "<for<'a, 'b> fn(&'a f64, &'b f64) -> cmp::Ordering {f64::<impl f64>::total_cmp} as ops::function::FnMut<(&f64, &f64)>>::call_mut",
   "hash": "29910668401302440137796026586948212988",
   "hash_direct": "7839325573706679406911100076059292622",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "extern \"rust-call\" fn call_mut(&mut self, args: Args) -> Self::Output;",
   "callees": [
     "131203065817488211067140136749599673893",

@@ -3,7 +3,7 @@
   "name": "num::verify::unchecked_mul_u128_edge",
   "hash": "374717028137013294415766049293145767610",
   "hash_direct": "85059775253039122697953331674585954782",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"u128 :: unchecked_mul\"]\n"
   ],

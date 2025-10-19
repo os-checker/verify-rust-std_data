@@ -3,6 +3,6 @@
   "name": "ptr::drop_in_place::<&str::pattern::EmptyNeedle>",
   "hash": "10740547959651728798776596913369977322",
   "hash_direct": "104131283711740088945149833262045069186",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

@@ -3,7 +3,7 @@
   "name": "ptr::const_ptr::verify::check_const_offset_slice_tuple_1",
   "hash": "123815696069383312810857468023597809826",
   "hash_direct": "1139354071712653860211725937641695910080",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"< * const (i8, i8) > :: offset\"]\n"
   ],

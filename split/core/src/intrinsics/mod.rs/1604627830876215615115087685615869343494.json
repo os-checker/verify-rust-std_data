@@ -3,7 +3,7 @@
   "name": "intrinsics::select_unpredictable::<*mut *mut f64>",
   "hash": "1604627830876215615115087685615869343494",
   "hash_direct": "692962030001173432516225788210737554782",
-  "inst_kind": "\"Intrinsic\"",
+  "inst_kind": "Intrinsic",
   "src": "pub fn select_unpredictable<T>(b: bool, true_val: T, false_val: T) -> T {\n    if b { true_val } else { false_val }\n}",
   "callees": [
     "88584634134516743865765855768986953291"

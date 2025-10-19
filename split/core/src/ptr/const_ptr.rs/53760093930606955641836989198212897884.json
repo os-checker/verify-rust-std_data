@@ -3,7 +3,7 @@
   "name": "ptr::const_ptr::verify::check_const_add_slice_u32",
   "hash": "53760093930606955641836989198212897884",
   "hash_direct": "488384034520323980511764009371883843670",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"< * const u32 > :: add\"]\n"
   ],

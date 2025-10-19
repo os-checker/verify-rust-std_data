@@ -3,7 +3,7 @@
   "name": "ptr::mut_ptr::verify::check_mut_add_u16",
   "hash": "1289546471538436096810904423487246501805",
   "hash_direct": "1353600208029491025510488531680006451701",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"< * mut u16 > :: add\"]\n"
   ],

@@ -3,6 +3,6 @@
   "name": "ptr::drop_in_place::<iter::adapters::flatten::FlattenCompat<iter::adapters::map::Map<str::iter::Chars<'_>, str::CharEscapeUnicode>, char::EscapeUnicode>>",
   "hash": "113560144027342421911999107957943071288",
   "hash_direct": "1165435199828872195813971255413027164246",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

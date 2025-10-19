@@ -3,6 +3,6 @@
   "name": "ptr::drop_in_place::<net::display_buffer::DisplayBuffer<15>>",
   "hash": "127005735410293327601370939899038697581",
   "hash_direct": "1551927213257280272613697201687205627406",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

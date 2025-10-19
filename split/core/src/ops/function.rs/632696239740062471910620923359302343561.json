@@ -3,7 +3,7 @@
   "name": "<for<'a> fn(&'a mut core::char::EscapeDebug) -> core::option::Option<<core::char::EscapeDebug as core::iter::Iterator>::Item> {<core::char::EscapeDebug as core::iter::Iterator>::next} as core::ops::FnOnce<(&mut core::char::EscapeDebug,)>>::call_once",
   "hash": "632696239740062471910620923359302343561",
   "hash_direct": "142772945031603848517327210080912084666",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "extern \"rust-call\" fn call_once(self, args: Args) -> Self::Output;",
   "callees": [
     "94092291067066871594599361884041748607",

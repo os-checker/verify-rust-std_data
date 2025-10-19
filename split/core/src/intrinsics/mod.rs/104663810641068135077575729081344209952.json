@@ -3,7 +3,7 @@
   "name": "intrinsics::verify::transmute_unchecked_i8_to_bool",
   "hash": "104663810641068135077575729081344209952",
   "hash_direct": "137635145073882405617462637200564156184",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"transmute_unchecked_wrapper\"]\n"
   ],

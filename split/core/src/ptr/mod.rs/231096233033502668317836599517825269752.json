@@ -3,7 +3,7 @@
   "name": "core::ptr::drop_in_place::<raw_vec::RawVec<u32>>",
   "hash": "231096233033502668317836599517825269752",
   "hash_direct": "1179698459630470709813385816290279558315",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)",
   "callees": [
     "394899740451847047017644777761427403196",

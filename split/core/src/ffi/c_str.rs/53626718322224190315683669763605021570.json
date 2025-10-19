@@ -3,7 +3,7 @@
   "name": "ffi::c_str::verify::check_strlen_contract",
   "hash": "53626718322224190315683669763605021570",
   "hash_direct": "220721348153898264213692720105649026211",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::unwind(33)]\n",
     "#[kanitool::proof_for_contract = \"super::strlen\"]\n"

@@ -3,7 +3,7 @@
   "name": "alloc::layout::verify::check_new_i32",
   "hash": "176419161553410462444635667704895406120",
   "hash_direct": "120510045033629803868872942739473210347",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"Layout::new\"]\n"
   ],

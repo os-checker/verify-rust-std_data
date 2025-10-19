@@ -3,6 +3,6 @@
   "name": "core::ptr::drop_in_place::<{closure@<core::iter::Map<core::char::DecodeUtf16<core::iter::Map<core::iter::Copied<core::slice::Iter<'_, [u8; 2]>>, fn([u8; core::::num::{impl#7}::from_be_bytes::{constant#0}]) -> u16 {core::num::<impl u16>::from_be_bytes}>>, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/alloc/src/string.rs:910:26: 910:29}> as core::iter::Iterator>::collect<string::String>::{closure#0}}>",
   "hash": "1787701691845695700611902911205039307246",
   "hash_direct": "26579210549762423222718988726071775224",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

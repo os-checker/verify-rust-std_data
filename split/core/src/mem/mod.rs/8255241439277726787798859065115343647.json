@@ -3,7 +3,7 @@
   "name": "mem::verify::check_swap_adt_no_drop",
   "hash": "8255241439277726787798859065115343647",
   "hash_direct": "91693012286974802833405809685419942127",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"swap\"]\n"
   ],

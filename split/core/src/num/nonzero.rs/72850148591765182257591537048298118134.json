@@ -3,7 +3,7 @@
   "name": "num::nonzero::verify::check_mul_usize_edge",
   "hash": "72850148591765182257591537048298118134",
   "hash_direct": "15909582209321560233177421284584865055",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"NonZero :: < usize > :: unchecked_mul\"]\n"
   ],

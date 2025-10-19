@@ -3,6 +3,6 @@
   "name": "core::ptr::drop_in_place::<&collections::TryReserveErrorKind>",
   "hash": "946735774263217209341545543372160526",
   "hash_direct": "1065567120198475255116522179283652606715",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

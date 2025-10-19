@@ -3,6 +3,6 @@
   "name": "<for<'a> fn(&'a dyn error::Error) -> option::Option<&'a (dyn error::Error + 'static)> {<dyn error::Error as error::Error>::source} as ops::function::FnOnce<(&dyn error::Error,)>>::call_once",
   "hash": "1251782662895651911114429423970888599104",
   "hash_direct": "1830582733488648856310362658108337478147",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "extern \"rust-call\" fn call_once(self, args: Args) -> Self::Output;"
 }

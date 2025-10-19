@@ -3,7 +3,7 @@
   "name": "<{closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/ptr/non_null.rs:2530:17: 2530:53} as ops::function::FnOnce<(num::nonzero::NonZero<usize>,)>>::call_once",
   "hash": "544710505366087714314884776054587463861",
   "hash_direct": "1628897316931979854612153603397561347174",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "extern \"rust-call\" fn call_once(self, args: Args) -> Self::Output;",
   "callees": [
     "258820287469578611817448591488600041899",

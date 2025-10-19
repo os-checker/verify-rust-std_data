@@ -3,6 +3,6 @@
   "name": "ptr::drop_in_place::<&num::dec2flt::FloatErrorKind>",
   "hash": "1677386581445269694917259637732991890267",
   "hash_direct": "681906973093546150514701766624941379491",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

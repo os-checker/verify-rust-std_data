@@ -3,7 +3,7 @@
   "name": "intrinsics::typed_swap_nonoverlapping::<mem::verify::CannotDrop<char>>",
   "hash": "2488207727792731428467528328288323156",
   "hash_direct": "602525070571993596612463248286755267586",
-  "inst_kind": "\"Intrinsic\"",
+  "inst_kind": "Intrinsic",
   "attrs": [
     "#[kanitool::recursion_check =\n\"__kani_recursion_check_typed_swap_nonoverlapping\"]\n",
     "#[kanitool::checked_with = \"__kani_check_typed_swap_nonoverlapping\"]\n",

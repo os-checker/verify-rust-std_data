@@ -3,7 +3,7 @@
   "name": "core::ptr::drop_in_place::<boxed::Box<core::mem::ManuallyDrop<[u8]>, &alloc::Global>>",
   "hash": "825960505060497890816174380271532816140",
   "hash_direct": "1336790871294939408218162215245647273231",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)",
   "callees": [
     "394899740451847047017644777761427403196",

@@ -3,7 +3,7 @@
   "name": "ptr::const_ptr::verify::check_const_offset_slice_isize",
   "hash": "1761579748710586113615645641518799457653",
   "hash_direct": "21601861864834749824609079525913591467",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"< * const isize > :: offset\"]\n"
   ],

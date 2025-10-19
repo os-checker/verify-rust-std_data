@@ -3,6 +3,6 @@
   "name": "<unsafe fn(*const ()) -> task::wake::RawWaker as marker::FnPtr>::addr",
   "hash": "90408654295929975252715199538450811441",
   "hash_direct": "887172217842009234013662345122163774413",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "fn addr(self) -> *const ();"
 }

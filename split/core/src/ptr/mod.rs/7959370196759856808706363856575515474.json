@@ -3,7 +3,7 @@
   "name": "ptr::drop_in_place::<task::wake::Waker>",
   "hash": "7959370196759856808706363856575515474",
   "hash_direct": "138710158124901838013617016093193016802",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)",
   "callees": [
     "23583164469639393263663777942582268949"

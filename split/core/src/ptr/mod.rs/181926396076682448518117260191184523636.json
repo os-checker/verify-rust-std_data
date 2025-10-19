@@ -3,6 +3,6 @@
   "name": "ptr::drop_in_place::<&array::iter::IntoIter<char, 3>>",
   "hash": "181926396076682448518117260191184523636",
   "hash_direct": "14106569116450612154216793560090781112",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

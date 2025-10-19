@@ -3,7 +3,7 @@
   "name": "ptr::verify::check_align_offset_5",
   "hash": "1594273380168666918211653958339539558906",
   "hash_direct": "604583074681097988512169608862790987410",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::solver(kissat)]\n",
     "#[kanitool::proof_for_contract = \"align_offset\"]\n"

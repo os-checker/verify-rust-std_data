@@ -3,6 +3,6 @@
   "name": "intrinsics::is_val_statically_known::<u8>",
   "hash": "31509444585759279245313149797344578710",
   "hash_direct": "1378455469884093223518340164669960947781",
-  "inst_kind": "\"Intrinsic\"",
+  "inst_kind": "Intrinsic",
   "src": "pub const fn is_val_statically_known<T: Copy>(_arg: T) -> bool {\n    false\n}"
 }

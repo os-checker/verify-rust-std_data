@@ -3,7 +3,7 @@
   "name": "ptr::drop_in_place::<array::iter::iter_inner::PolymorphicIter<[mem::maybe_uninit::MaybeUninit<char>; 3]>>",
   "hash": "1388218849702697856212194078385673197731",
   "hash_direct": "10656496447482408022760697739132542268",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)",
   "callees": [
     "1757865048021554780412516866743607567507",

@@ -3,7 +3,7 @@
   "name": "ptr::non_null::verify::non_null_byte_offset_from_proof",
   "hash": "78900859252264105111487333437400890359",
   "hash_direct": "88057007962151136258912389069373852507",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"NonNull::byte_offset_from\"]\n"
   ],

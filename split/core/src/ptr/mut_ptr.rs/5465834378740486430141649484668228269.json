@@ -3,7 +3,7 @@
   "name": "ptr::mut_ptr::verify::check_mut_offset_from_u32",
   "hash": "5465834378740486430141649484668228269",
   "hash_direct": "175772061080612340174548257127907305027",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"< * mut u32 > :: offset_from\"]\n"
   ],

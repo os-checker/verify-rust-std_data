@@ -3,7 +3,7 @@
   "name": "ptr::drop_in_place::<array::Guard<'_, &dyn fmt::Debug>>",
   "hash": "122155668180197906669314042718311509453",
   "hash_direct": "881608165678484898217261303503273516689",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)",
   "callees": [
     "300692309997290073216558160321948389202",

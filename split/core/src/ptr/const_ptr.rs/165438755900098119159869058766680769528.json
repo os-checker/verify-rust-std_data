@@ -3,7 +3,7 @@
   "name": "ptr::const_ptr::verify::check_const_offset_slice_u128",
   "hash": "165438755900098119159869058766680769528",
   "hash_direct": "148244213679007629366663307637398820117",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"< * const u128 > :: offset\"]\n"
   ],

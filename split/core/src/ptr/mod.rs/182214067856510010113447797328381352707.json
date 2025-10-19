@@ -3,6 +3,6 @@
   "name": "ptr::drop_in_place::<for<'b, 'a> fn(&'b num::flt2dec::decoder::Decoded, &'a mut [mem::maybe_uninit::MaybeUninit<u8>]) -> (&'a [u8], i16) {num::flt2dec::strategy::grisu::format_shortest}>",
   "hash": "182214067856510010113447797328381352707",
   "hash_direct": "134711017851284661891149052039859366411",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

@@ -3,6 +3,6 @@
   "name": "ptr::drop_in_place::<&&mut io::borrowed_buf::BorrowedBuf<'_>>",
   "hash": "32332023634208135158669089888257583904",
   "hash_direct": "112711512182206083976289673630039675668",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

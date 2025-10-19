@@ -3,7 +3,7 @@
   "name": "num::nonzero::verify::check_mul_i32_small",
   "hash": "46760712974898698721978745810316616167",
   "hash_direct": "55478200314457692411266997403425442618",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"NonZero :: < i32 > :: unchecked_mul\"]\n"
   ],

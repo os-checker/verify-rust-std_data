@@ -3,7 +3,7 @@
   "name": "num::verify::checked_f64_to_int_unchecked_u8",
   "hash": "64817357001448750818521361145468351590",
   "hash_direct": "18227201233276942602976448816959794686",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"f64 :: to_int_unchecked\"]\n"
   ],

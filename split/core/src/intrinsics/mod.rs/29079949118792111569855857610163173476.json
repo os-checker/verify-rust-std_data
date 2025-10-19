@@ -3,7 +3,7 @@
   "name": "intrinsics::verify::should_succeed_tuple_to_struct",
   "hash": "29079949118792111569855857610163173476",
   "hash_direct": "1038489045062073806812973581181105020782",
-  "proof_kind": "\"Standard\"",
+  "proof_kind": "Standard",
   "attrs": [
     "#[kanitool::stub_verified = \"transmute_unchecked_wrapper\"]\n",
     "#[kanitool::proof]\n"

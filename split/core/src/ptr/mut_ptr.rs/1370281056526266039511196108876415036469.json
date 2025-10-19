@@ -3,7 +3,7 @@
   "name": "ptr::mut_ptr::verify::check_mut_offset_i128",
   "hash": "1370281056526266039511196108876415036469",
   "hash_direct": "1806580849149945511114378974958983233667",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"< * mut i128 > :: offset\"]\n"
   ],

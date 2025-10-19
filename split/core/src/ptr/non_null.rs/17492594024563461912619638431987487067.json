@@ -3,7 +3,7 @@
   "name": "ptr::non_null::verify::non_null_check_drop_in_place",
   "hash": "17492594024563461912619638431987487067",
   "hash_direct": "3298152454995634459556580791029617273",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"NonNull::drop_in_place\"]\n"
   ],

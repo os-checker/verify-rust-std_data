@@ -3,6 +3,6 @@
   "name": "ptr::drop_in_place::<option::Option<net::socket_addr::SocketAddrV6>>",
   "hash": "131265455908479428359515839678214513705",
   "hash_direct": "1281326432750279250211849579000581886228",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

@@ -3,7 +3,7 @@
   "name": "intrinsics::verify::should_succeed_i8_to_u8",
   "hash": "1359279884243369717812081074938713810318",
   "hash_direct": "1320741703685887266111844528953785196433",
-  "proof_kind": "\"Standard\"",
+  "proof_kind": "Standard",
   "attrs": [
     "#[kanitool::stub_verified = \"transmute_unchecked_wrapper\"]\n",
     "#[kanitool::proof]\n"

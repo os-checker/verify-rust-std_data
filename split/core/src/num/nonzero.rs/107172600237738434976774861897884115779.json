@@ -3,7 +3,7 @@
   "name": "num::nonzero::verify::check_mul_i64_edge_neg",
   "hash": "107172600237738434976774861897884115779",
   "hash_direct": "80754169731367004818309569675807572461",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"NonZero :: < i64 > :: unchecked_mul\"]\n"
   ],

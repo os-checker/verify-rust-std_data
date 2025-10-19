@@ -3,7 +3,7 @@
   "name": "num::nonzero::verify::nonzero_check_clamp_panic_for_usize",
   "hash": "145957964533382946248195308212081371566",
   "hash_direct": "1024326481951413116910464108644146431155",
-  "proof_kind": "\"Standard\"",
+  "proof_kind": "Standard",
   "attrs": [
     "#[kanitool::should_panic]\n",
     "#[kanitool::proof]\n"

@@ -3,7 +3,7 @@
   "name": "intrinsics::maximumf64",
   "hash": "146828586334854565084661278218678210413",
   "hash_direct": "925138887683668097212630911337544331492",
-  "inst_kind": "\"Intrinsic\"",
+  "inst_kind": "Intrinsic",
   "src": "pub const fn maximumf64(x: f64, y: f64) -> f64 {\n    if x > y {\n        x\n    } else if y > x {\n        y\n    } else if x == y {\n        if x.is_sign_positive() && y.is_sign_negative() { x } else { y }\n    } else {\n        x + y\n    }\n}",
   "callees": [
     "1176328137589943253415190693832930071313",

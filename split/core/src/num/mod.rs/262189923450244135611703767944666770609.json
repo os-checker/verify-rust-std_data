@@ -3,7 +3,7 @@
   "name": "num::verify::unchecked_mul_i32_large_pos",
   "hash": "262189923450244135611703767944666770609",
   "hash_direct": "15505519982655983935949834858575534923",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"i32 :: unchecked_mul\"]\n"
   ],

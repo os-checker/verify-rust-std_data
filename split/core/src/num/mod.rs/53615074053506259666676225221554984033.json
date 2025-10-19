@@ -3,7 +3,7 @@
   "name": "num::verify::carrying_mul_u16_full_range",
   "hash": "53615074053506259666676225221554984033",
   "hash_direct": "1838744737135513151916919888223327204543",
-  "proof_kind": "\"Standard\"",
+  "proof_kind": "Standard",
   "attrs": [
     "#[kanitool::solver(kissat)]\n",
     "#[kanitool::proof]\n"

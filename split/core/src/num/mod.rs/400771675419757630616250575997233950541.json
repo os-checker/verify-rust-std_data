@@ -3,7 +3,7 @@
   "name": "num::verify::carrying_mul_u64_small",
   "hash": "400771675419757630616250575997233950541",
   "hash_direct": "1686708193267401628716874455313747473480",
-  "proof_kind": "\"Standard\"",
+  "proof_kind": "Standard",
   "attrs": [
     "#[kanitool::solver(kissat)]\n",
     "#[kanitool::proof]\n"

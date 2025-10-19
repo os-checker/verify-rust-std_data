@@ -3,7 +3,7 @@
   "name": "ptr::non_null::verify::non_null_check_is_aligned_to_no_power_two",
   "hash": "25590931988544704029045884850996433386",
   "hash_direct": "118619357949616834765597296927403178477",
-  "proof_kind": "\"Standard\"",
+  "proof_kind": "Standard",
   "attrs": [
     "#[kanitool::should_panic]\n",
     "#[kanitool::proof]\n"

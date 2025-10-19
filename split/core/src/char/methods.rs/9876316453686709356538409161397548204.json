@@ -3,7 +3,7 @@
   "name": "char::methods::verify::check_as_ascii_non_ascii_char",
   "hash": "9876316453686709356538409161397548204",
   "hash_direct": "1044666286437291254513385009949969530653",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"as_ascii_clone\"]\n"
   ],

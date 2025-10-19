@@ -3,7 +3,7 @@
   "name": "core::ptr::drop_in_place::<boxed::convert::<impl core::convert::From<string::String> for boxed::Box<(dyn core::error::Error + core::marker::Send + core::marker::Sync + 'a)>>::from::StringError>",
   "hash": "1290897731097286934311446100922464971086",
   "hash_direct": "476924425035799182614952814978340550987",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)",
   "callees": [
     "394899740451847047017644777761427403196",

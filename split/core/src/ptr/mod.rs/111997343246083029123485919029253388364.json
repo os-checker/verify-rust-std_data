@@ -3,6 +3,6 @@
   "name": "ptr::drop_in_place::<&hash::sip::Hasher<hash::sip::Sip13Rounds>>",
   "hash": "111997343246083029123485919029253388364",
   "hash_direct": "1348876534476984729144324345404992587",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

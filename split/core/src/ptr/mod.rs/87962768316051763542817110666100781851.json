@@ -3,6 +3,6 @@
   "name": "ptr::drop_in_place::<fmt::Alignment>",
   "hash": "87962768316051763542817110666100781851",
   "hash_direct": "1143483925863342546716309715091591491829",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

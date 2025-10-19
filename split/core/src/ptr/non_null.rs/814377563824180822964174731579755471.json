@@ -3,7 +3,7 @@
   "name": "ptr::non_null::verify::non_null_check_align_offset_negative",
   "hash": "814377563824180822964174731579755471",
   "hash_direct": "635196723413598806013114573477926059578",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"NonNull::align_offset\"]\n",
     "#[kanitool::should_panic]\n"

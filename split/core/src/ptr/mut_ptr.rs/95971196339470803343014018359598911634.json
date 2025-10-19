@@ -3,7 +3,7 @@
   "name": "ptr::mut_ptr::verify::check_mut_offset_from_i16_array",
   "hash": "95971196339470803343014018359598911634",
   "hash_direct": "353976445769752093610687279821134670969",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"< * mut i16 > :: offset_from\"]\n"
   ],

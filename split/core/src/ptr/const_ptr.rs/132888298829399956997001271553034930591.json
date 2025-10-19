@@ -3,7 +3,7 @@
   "name": "ptr::const_ptr::verify::check_const_sub_slice_tuple_3",
   "hash": "132888298829399956997001271553034930591",
   "hash_direct": "140181052639688000606069621039127342408",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"< * const (i32, f64, bool) > :: sub\"]\n"
   ],

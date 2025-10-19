@@ -3,7 +3,7 @@
   "name": "time::duration_verify::duration_checked_mul_panics",
   "hash": "1287422757634056058917731923144601988856",
   "hash_direct": "918452314383242584812889847293615046818",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::should_panic]\n",
     "#[kanitool::proof_for_contract = \"Duration::checked_mul\"]\n"

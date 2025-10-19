@@ -3,7 +3,7 @@
   "name": "<fn(char) -> bool {char::methods::<impl char>::is_whitespace} as ops::function::FnMut<(char,)>>::call_mut",
   "hash": "1492489932263133402213267674984925131529",
   "hash_direct": "175256846965959701631165410704325212831",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "extern \"rust-call\" fn call_mut(&mut self, args: Args) -> Self::Output;",
   "callees": [
     "121872163624966698483225952656434249831",

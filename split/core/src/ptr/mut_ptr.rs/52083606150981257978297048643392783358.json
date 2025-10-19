@@ -3,7 +3,7 @@
   "name": "ptr::mut_ptr::verify::check_mut_add_unit",
   "hash": "52083606150981257978297048643392783358",
   "hash_direct": "13172930478376829948649124558321781357",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"< * mut () > :: add\"]\n"
   ],

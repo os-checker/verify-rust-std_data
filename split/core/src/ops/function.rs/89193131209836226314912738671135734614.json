@@ -3,7 +3,7 @@
   "name": "<fn(net::ip_addr::Ipv4Addr) -> net::ip_addr::IpAddr {net::ip_addr::IpAddr::V4} as ops::function::FnOnce<(net::ip_addr::Ipv4Addr,)>>::call_once",
   "hash": "89193131209836226314912738671135734614",
   "hash_direct": "1746008967606159477311960434023838679848",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "extern \"rust-call\" fn call_once(self, args: Args) -> Self::Output;",
   "callees": [
     "334858408271706807817316796006079684889"

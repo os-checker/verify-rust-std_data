@@ -3,7 +3,7 @@
   "name": "ptr::non_null::verify::non_null_check_get_unchecked_mut",
   "hash": "182958456325323925503627787767890623489",
   "hash_direct": "1344706054922490137516629667999625650913",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"NonNull::get_unchecked_mut\"]\n"
   ],

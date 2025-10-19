@@ -3,7 +3,7 @@
   "name": "ptr::non_null::verify::non_null_check_read_unaligned",
   "hash": "1711252794170300212137387146363510980",
   "hash_direct": "4880382334245357418333176102393616288",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"NonNull::read_unaligned\"]\n"
   ],

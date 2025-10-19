@@ -3,6 +3,6 @@
   "name": "core::ptr::drop_in_place::<for<'a> fn(&'a mut core::char::EscapeDebug) -> core::option::Option<<core::char::EscapeDebug as core::iter::Iterator>::Item> {<core::char::EscapeDebug as core::iter::Iterator>::next}>",
   "hash": "503522306027218445418049014177048534620",
   "hash_direct": "151005792393407820914829453182059294723",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

@@ -3,7 +3,7 @@
   "name": "num::verify::carrying_mul_u64_mid_edge",
   "hash": "943573477373511403916830175918260829126",
   "hash_direct": "9436378845291082250836462205200291163",
-  "proof_kind": "\"Standard\"",
+  "proof_kind": "Standard",
   "attrs": [
     "#[kanitool::solver(kissat)]\n",
     "#[kanitool::proof]\n"

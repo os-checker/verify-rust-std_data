@@ -3,7 +3,7 @@
   "name": "num::verify::unchecked_mul_usize_edge",
   "hash": "776039618287232434413009728216331177252",
   "hash_direct": "447149750134623279812369421610954933553",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"usize :: unchecked_mul\"]\n"
   ],

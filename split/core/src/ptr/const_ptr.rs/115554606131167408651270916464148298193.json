@@ -3,7 +3,7 @@
   "name": "ptr::const_ptr::verify::check_const_offset_from_unit",
   "hash": "115554606131167408651270916464148298193",
   "hash_direct": "103823897773356068973377360823751003231",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::should_panic]\n",
     "#[kanitool::proof_for_contract = \"<*const ()>::offset_from\"]\n"

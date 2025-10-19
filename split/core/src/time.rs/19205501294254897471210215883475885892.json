@@ -3,7 +3,7 @@
   "name": "time::duration_verify::duration_subsec_millis",
   "hash": "19205501294254897471210215883475885892",
   "hash_direct": "561639074477148910016482276591652175045",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"Duration::subsec_millis\"]\n"
   ],

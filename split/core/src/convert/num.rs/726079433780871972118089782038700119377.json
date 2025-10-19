@@ -3,7 +3,7 @@
   "name": "convert::num::verify::check_f16_to_int_unchecked::f128::i128::check_float_to_int_unchecked",
   "hash": "726079433780871972118089782038700119377",
   "hash_direct": "28835681632615781405629344193964214115",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"< f128 > :: to_int_unchecked\"]\n"
   ],

@@ -3,7 +3,7 @@
   "name": "ops::index_range::verify::proof_for_index_range_new_unchecked",
   "hash": "551150047287067492413662467301369738002",
   "hash_direct": "134057621800777670457459929486125967627",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"IndexRange::new_unchecked\"]\n"
   ],

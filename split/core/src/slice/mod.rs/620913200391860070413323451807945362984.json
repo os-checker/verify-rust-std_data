@@ -3,7 +3,7 @@
   "name": "slice::verify::align_to_mut_from_u8::align_to_mut_u64",
   "hash": "620913200391860070413323451807945362984",
   "hash_direct": "596763007169767346517936279707444117053",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"< [u8] > :: align_to_mut\"]\n"
   ],

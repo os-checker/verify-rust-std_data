@@ -3,7 +3,7 @@
   "name": "alloc::layout::verify::check_dangling",
   "hash": "500270562905367672010412223090188761579",
   "hash_direct": "605454986384786373614556332282539358589",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"Layout::dangling\"]\n"
   ],

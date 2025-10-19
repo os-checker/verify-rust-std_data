@@ -3,7 +3,7 @@
   "name": "num::nonzero::verify::check_mul_i128_large_pos",
   "hash": "1220052394500090937813581033184319228882",
   "hash_direct": "116797421520967544357946315719177559164",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"NonZero :: < i128 > :: unchecked_mul\"]\n"
   ],

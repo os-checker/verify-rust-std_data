@@ -3,6 +3,6 @@
   "name": "core::ptr::drop_in_place::<core::fmt::Error>",
   "hash": "163940674820981789928579380722115531358",
   "hash_direct": "946889503876879072414617039631669968540",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

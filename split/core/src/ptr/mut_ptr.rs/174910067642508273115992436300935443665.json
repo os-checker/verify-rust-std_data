@@ -3,7 +3,7 @@
   "name": "ptr::mut_ptr::verify::check_mut_add_tuple_2",
   "hash": "174910067642508273115992436300935443665",
   "hash_direct": "289333229629345521714023612287413162293",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"< * mut (f64, bool) > :: add\"]\n"
   ],

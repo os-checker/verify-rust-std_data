@@ -3,7 +3,7 @@
   "name": "ptr::non_null::verify::non_null_check_write_bytes_u8",
   "hash": "21444934917621798696573134836459638917",
   "hash_direct": "1069284206014989033512432020600517282202",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"NonNull :: write_bytes\"]\n"
   ],

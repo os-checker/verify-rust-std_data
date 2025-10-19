@@ -3,6 +3,6 @@
   "name": "ptr::drop_in_place::<fn(u128) -> net::ip_addr::Ipv6Addr {net::ip_addr::Ipv6Addr::from_bits}>",
   "hash": "104736542723451539528772055703876057164",
   "hash_direct": "688534708237343667815393444403895541500",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

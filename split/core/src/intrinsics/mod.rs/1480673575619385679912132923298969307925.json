@@ -3,7 +3,7 @@
   "name": "intrinsics::type_id_eq",
   "hash": "1480673575619385679912132923298969307925",
   "hash_direct": "795367761436019627316027185733070719050",
-  "inst_kind": "\"Intrinsic\"",
+  "inst_kind": "Intrinsic",
   "src": "pub const fn type_id_eq(a: crate::any::TypeId, b: crate::any::TypeId) -> bool {\n    a.data == b.data\n}",
   "callees": [
     "129487679712028542259988731283607598275",

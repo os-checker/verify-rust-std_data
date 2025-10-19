@@ -3,7 +3,7 @@
   "name": "num::nonzero::verify::nonzero_check_new_unchecked_for_isize",
   "hash": "16259504769628895916516428020459992687",
   "hash_direct": "318367536900560203917686418064105695316",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"NonZero :: new_unchecked\"]\n"
   ],

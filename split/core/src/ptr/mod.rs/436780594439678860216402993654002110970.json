@@ -3,6 +3,6 @@
   "name": "core::ptr::drop_in_place::<core::iter::SkipWhile<core::str::Chars<'_>, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/alloc/src/str.rs:421:35: 421:39}>>",
   "hash": "436780594439678860216402993654002110970",
   "hash_direct": "150857196577038264769122022013783977444",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

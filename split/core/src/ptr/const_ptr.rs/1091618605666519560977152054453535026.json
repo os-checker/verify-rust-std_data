@@ -3,7 +3,7 @@
   "name": "ptr::const_ptr::verify::check_const_sub_u32",
   "hash": "1091618605666519560977152054453535026",
   "hash_direct": "63428024741351128348616354161782467107",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"< * const u32 > :: sub\"]\n"
   ],

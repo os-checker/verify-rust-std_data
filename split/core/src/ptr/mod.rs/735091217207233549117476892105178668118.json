@@ -3,6 +3,6 @@
   "name": "ptr::drop_in_place::<&net::parser::AddrKind>",
   "hash": "735091217207233549117476892105178668118",
   "hash_direct": "22931879257815044957435578825688332866",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

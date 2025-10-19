@@ -3,7 +3,7 @@
   "name": "intrinsics::verify::transmute_zero_size",
   "hash": "484507416527538729312714644315538965810",
   "hash_direct": "549452201449381299015102668724647447950",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"transmute_unchecked_wrapper\"]\n"
   ],

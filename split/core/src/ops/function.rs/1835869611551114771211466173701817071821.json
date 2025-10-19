@@ -3,7 +3,7 @@
   "name": "<for<'a> fn(&'a mut char::EscapeDebug) -> option::Option<<char::EscapeDebug as iter::traits::iterator::Iterator>::Item> {<char::EscapeDebug as iter::traits::iterator::Iterator>::next} as ops::function::FnOnce<(&mut char::EscapeDebug,)>>::call_once",
   "hash": "1835869611551114771211466173701817071821",
   "hash_direct": "25815123622136784348063972325985174333",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "extern \"rust-call\" fn call_once(self, args: Args) -> Self::Output;",
   "callees": [
     "211389067699639933614636457746408448112",

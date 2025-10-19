@@ -3,7 +3,7 @@
   "name": "num::verify::unchecked_mul_isize_edge_pos",
   "hash": "19430715594234947091275911469422092826",
   "hash_direct": "101089599849969165816684292716485306705",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"isize :: unchecked_mul\"]\n"
   ],

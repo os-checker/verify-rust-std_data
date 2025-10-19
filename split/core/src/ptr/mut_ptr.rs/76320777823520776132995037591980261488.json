@@ -3,7 +3,7 @@
   "name": "ptr::mut_ptr::verify::check_mut_add_slice_u64",
   "hash": "76320777823520776132995037591980261488",
   "hash_direct": "102726263042280293395893558991985233159",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"< * mut u64 > :: add\"]\n"
   ],

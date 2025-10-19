@@ -3,6 +3,6 @@
   "name": "ptr::drop_in_place::<str::pattern::MultiCharEqSearcher<'_, &[char]>>",
   "hash": "723748397134661627116076076606727203233",
   "hash_direct": "71990718513473147828153874959642912882",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

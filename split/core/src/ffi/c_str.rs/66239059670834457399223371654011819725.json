@@ -3,7 +3,7 @@
   "name": "ffi::c_str::verify::check_from_ptr_contract",
   "hash": "66239059670834457399223371654011819725",
   "hash_direct": "164202044501547943305720181483343079505",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::unwind(33)]\n",
     "#[kanitool::proof_for_contract = \"CStr::from_ptr\"]\n"

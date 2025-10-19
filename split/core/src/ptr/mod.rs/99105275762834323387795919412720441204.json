@@ -3,6 +3,6 @@
   "name": "core::ptr::drop_in_place::<{closure@core::iter::DoubleEndedIterator::rfind::check<char, {closure@<core::iter::SkipWhile<I, P> as core::iter::Iterator>::next::check<char, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/alloc/src/str.rs:421:35: 421:39}>::{closure#0}}>::{closure#0}}>",
   "hash": "99105275762834323387795919412720441204",
   "hash_direct": "1822537914200504628415173537607432667126",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

@@ -3,6 +3,6 @@
   "name": "core::ptr::drop_in_place::<{closure@core::ops::try_trait::NeverShortCircuit<()>::wrap_mut_2<(), char, {closure@core::iter::Iterator::for_each::call<char, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/alloc/src/string.rs:2397:27: 2397:35}>::{closure#0}}>::{closure#0}}>",
   "hash": "160220471550564324265919084049138918841",
   "hash_direct": "1384009072020905732713987035262830969672",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

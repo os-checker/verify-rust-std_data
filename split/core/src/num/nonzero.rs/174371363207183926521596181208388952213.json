@@ -3,7 +3,7 @@
   "name": "num::nonzero::verify::check_mul_u32_edge",
   "hash": "174371363207183926521596181208388952213",
   "hash_direct": "10721227153202140900239049558614017017",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"NonZero :: < u32 > :: unchecked_mul\"]\n"
   ],

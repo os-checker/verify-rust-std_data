@@ -3,7 +3,7 @@
   "name": "ptr::mut_ptr::verify::check_mut_add_i32",
   "hash": "131641803850848972393945424299137226587",
   "hash_direct": "508965119929212162318013531400470641204",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"< * mut i32 > :: add\"]\n"
   ],

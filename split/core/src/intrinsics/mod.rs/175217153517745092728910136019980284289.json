@@ -3,7 +3,7 @@
   "name": "intrinsics::verify::should_succeed_char_to_i32",
   "hash": "175217153517745092728910136019980284289",
   "hash_direct": "1571377901337381739511824077823511558577",
-  "proof_kind": "\"Standard\"",
+  "proof_kind": "Standard",
   "attrs": [
     "#[kanitool::stub_verified = \"transmute_unchecked_wrapper\"]\n",
     "#[kanitool::proof]\n"

@@ -3,7 +3,7 @@
   "name": "ptr::const_ptr::verify::check_const_add_tuple_3",
   "hash": "182262128575167861999408458836424256010",
   "hash_direct": "62360253968044094624929111421447515158",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"< * const (i32, f64, bool) > :: add\"]\n"
   ],

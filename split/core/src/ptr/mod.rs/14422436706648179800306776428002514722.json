@@ -3,6 +3,6 @@
   "name": "core::ptr::drop_in_place::<core::iter::adapters::GenericShunt<'_, core::char::DecodeUtf16<core::iter::Map<core::iter::Copied<core::slice::Iter<'_, [u8; 2]>>, fn([u8; core::::num::{impl#7}::from_be_bytes::{constant#0}]) -> u16 {core::num::<impl u16>::from_be_bytes}>>, core::result::Result<core::convert::Infallible, core::char::DecodeUtf16Error>>>",
   "hash": "14422436706648179800306776428002514722",
   "hash_direct": "417483438180926646412837661724930628867",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

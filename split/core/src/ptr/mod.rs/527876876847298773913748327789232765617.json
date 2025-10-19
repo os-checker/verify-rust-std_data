@@ -3,6 +3,6 @@
   "name": "core::ptr::drop_in_place::<core::option::Option<core::fmt::builders::PadAdapter<'_, '_>>>",
   "hash": "527876876847298773913748327789232765617",
   "hash_direct": "54130587740409647828867273987582546583",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

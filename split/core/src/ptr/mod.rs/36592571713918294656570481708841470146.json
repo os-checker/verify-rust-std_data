@@ -3,7 +3,7 @@
   "name": "ptr::drop_in_place::<iter::adapters::map::Map<array::drain::Drain<'_, ()>, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/core/src/ops/try_trait.rs:393:9: 393:17}>>",
   "hash": "36592571713918294656570481708841470146",
   "hash_direct": "21115417132138395344457404476333555074",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)",
   "callees": [
     "99325972956607470175076639234107353072",

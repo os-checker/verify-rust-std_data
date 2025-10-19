@@ -3,6 +3,6 @@
   "name": "core::ptr::drop_in_place::<for<'a> fn(&'a str) -> <str as borrow::ToOwned>::Owned {<str as borrow::ToOwned>::to_owned}>",
   "hash": "233861456265351093512156725373995645621",
   "hash_direct": "136212254068998060516073139291989188454",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

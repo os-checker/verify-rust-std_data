@@ -3,7 +3,7 @@
   "name": "<fn(u8) -> char {<char as convert::From<u8>>::from} as ops::function::FnOnce<(u8,)>>::call_once",
   "hash": "46038740822384856925408093080908502431",
   "hash_direct": "107347775653954794439456167327078811004",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "extern \"rust-call\" fn call_once(self, args: Args) -> Self::Output;",
   "callees": [
     "511962504776047044912646038885098500692"

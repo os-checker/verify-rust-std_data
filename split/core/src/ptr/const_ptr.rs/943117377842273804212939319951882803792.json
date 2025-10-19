@@ -3,7 +3,7 @@
   "name": "ptr::const_ptr::verify::check_const_add_slice_i128",
   "hash": "943117377842273804212939319951882803792",
   "hash_direct": "637631701596213307015659957804626011639",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"< * const i128 > :: add\"]\n"
   ],

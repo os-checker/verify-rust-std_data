@@ -3,7 +3,7 @@
   "name": "core::ptr::drop_in_place::<{closure@core::iter::Iterator::for_each::call<u8, {closure@/home/runner/work/distributed-verification/distributed-verification/verify-rust-std/library/alloc/src/vec/mod.rs:3824:35: 3824:49}>::{closure#0}}>",
   "hash": "56605460301092211643908078480200231888",
   "hash_direct": "1062801001093779561314712320788631349235",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)",
   "callees": [
     "129832444481914698572618590208818518160",

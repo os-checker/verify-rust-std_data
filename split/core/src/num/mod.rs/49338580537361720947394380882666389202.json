@@ -3,7 +3,7 @@
   "name": "num::verify::carrying_mul_u8_full_range",
   "hash": "49338580537361720947394380882666389202",
   "hash_direct": "132907112437171990348148641280196339699",
-  "proof_kind": "\"Standard\"",
+  "proof_kind": "Standard",
   "attrs": [
     "#[kanitool::solver(kissat)]\n",
     "#[kanitool::proof]\n"

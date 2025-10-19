@@ -3,7 +3,7 @@
   "name": "num::nonzero::verify::nonzero_check_mul_for_u8",
   "hash": "12444508509310409415903647184282963574",
   "hash_direct": "75229528516069134261389555501039804219",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"NonZero :: < u8 > :: unchecked_mul\"]\n"
   ],

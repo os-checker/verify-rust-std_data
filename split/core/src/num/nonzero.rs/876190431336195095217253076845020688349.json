@@ -3,7 +3,7 @@
   "name": "num::nonzero::verify::nonzero_check_from_mut_unchecked_u128",
   "hash": "876190431336195095217253076845020688349",
   "hash_direct": "1791292181527803422511979780555311673924",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"NonZero :: < u128 > :: from_mut_unchecked\"]\n"
   ],

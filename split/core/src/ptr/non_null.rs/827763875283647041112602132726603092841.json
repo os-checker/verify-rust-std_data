@@ -3,7 +3,7 @@
   "name": "ptr::non_null::verify::non_null_check_with_addr",
   "hash": "827763875283647041112602132726603092841",
   "hash_direct": "8935648459608022233190171406812992368",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"NonNull::with_addr\"]\n"
   ],

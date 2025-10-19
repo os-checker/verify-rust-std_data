@@ -3,6 +3,6 @@
   "name": "ptr::drop_in_place::<&[intrinsics::verify::u8_struct; 2]>",
   "hash": "106085585282405982818141483338393699518",
   "hash_direct": "159934074430954617148630597752526820816",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

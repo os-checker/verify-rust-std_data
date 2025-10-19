@@ -3,7 +3,7 @@
   "name": "<for<'a> fn(&'a str) -> <str as borrow::ToOwned>::Owned {<str as borrow::ToOwned>::to_owned} as core::ops::FnOnce<(&str,)>>::call_once",
   "hash": "140371816255886762314466915621247906380",
   "hash_direct": "86299163808845023312008498427577157732",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "extern \"rust-call\" fn call_once(self, args: Args) -> Self::Output;",
   "callees": [
     "1141955903753897517014625167327847791907",

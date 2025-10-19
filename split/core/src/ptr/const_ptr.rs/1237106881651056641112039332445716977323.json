@@ -3,7 +3,7 @@
   "name": "ptr::const_ptr::verify::check_const_offset_usize",
   "hash": "1237106881651056641112039332445716977323",
   "hash_direct": "303188771978483862817803253802990099985",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"< * const usize > :: offset\"]\n"
   ],

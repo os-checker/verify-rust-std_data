@@ -3,7 +3,7 @@
   "name": "ptr::non_null::verify::non_null_check_replace",
   "hash": "854311642950958319812065937843685416310",
   "hash_direct": "87296539314353801371800845879248538494",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"NonNull::replace\"]\n"
   ],

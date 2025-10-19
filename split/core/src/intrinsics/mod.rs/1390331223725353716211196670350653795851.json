@@ -3,6 +3,6 @@
   "name": "intrinsics::ptr_guaranteed_cmp::<u8>",
   "hash": "1390331223725353716211196670350653795851",
   "hash_direct": "97216565327600494762834991493582214682",
-  "inst_kind": "\"Intrinsic\"",
+  "inst_kind": "Intrinsic",
   "src": "pub const fn ptr_guaranteed_cmp<T>(ptr: *const T, other: *const T) -> u8 {\n    (ptr == other) as u8\n}"
 }

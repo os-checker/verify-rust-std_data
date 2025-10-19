@@ -3,7 +3,7 @@
   "name": "ptr::mut_ptr::verify::check_mut_add_slice_u32",
   "hash": "1089837989641359339314152913230884864742",
   "hash_direct": "1707941578671943663510051413618971358959",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"< * mut u32 > :: add\"]\n"
   ],

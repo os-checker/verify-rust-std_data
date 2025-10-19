@@ -3,7 +3,7 @@
   "name": "core::ptr::drop_in_place::<vec::set_len_on_drop::SetLenOnDrop<'_>>",
   "hash": "906948199880776417018241594337902780119",
   "hash_direct": "143918693623466018083061434771875340207",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)",
   "callees": [
     "129832444481914698572618590208818518160"

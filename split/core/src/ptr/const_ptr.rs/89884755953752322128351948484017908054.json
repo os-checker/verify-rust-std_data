@@ -3,7 +3,7 @@
   "name": "ptr::const_ptr::verify::check_const_sub_i64",
   "hash": "89884755953752322128351948484017908054",
   "hash_direct": "1603360362670137634610562062845112841236",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"< * const i64 > :: sub\"]\n"
   ],

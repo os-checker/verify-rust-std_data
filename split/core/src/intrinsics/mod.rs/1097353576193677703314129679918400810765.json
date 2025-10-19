@@ -3,7 +3,7 @@
   "name": "intrinsics::disjoint_bitor::<u128>",
   "hash": "1097353576193677703314129679918400810765",
   "hash_direct": "176480642163429011362274506771936697149",
-  "inst_kind": "\"Intrinsic\"",
+  "inst_kind": "Intrinsic",
   "src": "pub const unsafe fn disjoint_bitor<T: [const] fallback::DisjointBitOr>(a: T, b: T) -> T {\n    // SAFETY: same preconditions as this function.\n    unsafe { fallback::DisjointBitOr::disjoint_bitor(a, b) }\n}",
   "callees": [
     "41389422597421656741395145042566161444"

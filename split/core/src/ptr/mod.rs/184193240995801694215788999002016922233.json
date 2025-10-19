@@ -3,6 +3,6 @@
   "name": "ptr::drop_in_place::<ops::control_flow::ControlFlow<&[u8]>>",
   "hash": "184193240995801694215788999002016922233",
   "hash_direct": "498226860949428908212211726510644092108",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

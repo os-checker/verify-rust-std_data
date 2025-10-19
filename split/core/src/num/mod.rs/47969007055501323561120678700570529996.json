@@ -3,7 +3,7 @@
   "name": "num::verify::checked_unchecked_mul_u16",
   "hash": "47969007055501323561120678700570529996",
   "hash_direct": "9264234298729633476193238871345505414",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"u16 :: unchecked_mul\"]\n"
   ],

@@ -3,7 +3,7 @@
   "name": "ptr::const_ptr::verify::check_const_add_i16",
   "hash": "5403424686293964588207842170352614522",
   "hash_direct": "1711936553858054676413391027514821672580",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"< * const i16 > :: add\"]\n"
   ],

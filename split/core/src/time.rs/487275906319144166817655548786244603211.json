@@ -3,7 +3,7 @@
   "name": "time::duration_verify::duration_subsec_nanos",
   "hash": "487275906319144166817655548786244603211",
   "hash_direct": "47641903713406207365894210993140392661",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"Duration::subsec_nanos\"]\n"
   ],

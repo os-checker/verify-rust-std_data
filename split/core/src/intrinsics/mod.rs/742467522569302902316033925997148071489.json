@@ -3,7 +3,7 @@
   "name": "intrinsics::verify::should_succeed_u16_to_i16",
   "hash": "742467522569302902316033925997148071489",
   "hash_direct": "1736679526183952456416648118958881962982",
-  "proof_kind": "\"Standard\"",
+  "proof_kind": "Standard",
   "attrs": [
     "#[kanitool::stub_verified = \"transmute_unchecked_wrapper\"]\n",
     "#[kanitool::proof]\n"

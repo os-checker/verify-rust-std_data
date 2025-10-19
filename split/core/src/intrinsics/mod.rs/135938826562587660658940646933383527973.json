@@ -3,7 +3,7 @@
   "name": "intrinsics::carrying_mul_add::<u32, u32>",
   "hash": "135938826562587660658940646933383527973",
   "hash_direct": "160910002290293506592207524213240930601",
-  "inst_kind": "\"Intrinsic\"",
+  "inst_kind": "Intrinsic",
   "src": "pub const fn carrying_mul_add<T: [const] fallback::CarryingMulAdd<Unsigned = U>, U>(\n    multiplier: T,\n    multiplicand: T,\n    addend: T,\n    carry: T,\n) -> (U, T) {\n    multiplier.carrying_mul_add(multiplicand, addend, carry)\n}",
   "callees": [
     "1333588820054761765511554855614177767265"

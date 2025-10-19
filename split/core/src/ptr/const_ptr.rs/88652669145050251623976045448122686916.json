@@ -3,7 +3,7 @@
   "name": "ptr::const_ptr::verify::check_const_sub_slice_isize",
   "hash": "88652669145050251623976045448122686916",
   "hash_direct": "69867724307646300234636241810472543165",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"< * const isize > :: sub\"]\n"
   ],

@@ -3,6 +3,6 @@
   "name": "core::ptr::drop_in_place::<core::ops::Range<usize>>",
   "hash": "182069836292977390396027314115904583111",
   "hash_direct": "25831665149898970289186834205990626511",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

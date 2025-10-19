@@ -3,7 +3,7 @@
   "name": "time::duration_verify::duration_checked_mul",
   "hash": "105393491468886204273874121710067102117",
   "hash_direct": "909440389118380933516819168244646290809",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"Duration::checked_mul\"]\n"
   ],

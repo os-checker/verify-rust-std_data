@@ -3,7 +3,7 @@
   "name": "ptr::const_ptr::verify::check_const_offset_from_u128",
   "hash": "930183225157280103015786427508930642273",
   "hash_direct": "74207917626219991794172717089326607637",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"< * const u128 > :: offset_from\"]\n"
   ],

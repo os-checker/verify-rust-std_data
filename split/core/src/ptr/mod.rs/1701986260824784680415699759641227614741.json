@@ -3,7 +3,7 @@
   "name": "ptr::drop_in_place::<slice::sort::shared::smallsort::CopyOnDrop<f32>>",
   "hash": "1701986260824784680415699759641227614741",
   "hash_direct": "56548998969880574684734492244138806093",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)",
   "callees": [
     "258820287469578611817448591488600041899",

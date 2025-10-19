@@ -3,7 +3,7 @@
   "name": "ffi::c_str::verify::check_from_bytes_with_nul_unchecked",
   "hash": "654339337585151027012276232736675304794",
   "hash_direct": "826196553017747170811495746307281939005",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::unwind(33)]\n",
     "#[kanitool::proof_for_contract = \"CStr::from_bytes_with_nul_unchecked\"]\n"

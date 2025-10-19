@@ -3,7 +3,7 @@
   "name": "ptr::non_null::verify::non_null_check_from_raw_part_trait",
   "hash": "1431861985627818240215180392146937552152",
   "hash_direct": "155071452294939639326427468220332651941",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"NonNull::from_raw_parts\"]\n"
   ],

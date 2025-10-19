@@ -3,6 +3,6 @@
   "name": "ptr::drop_in_place::<unsafe fn(*const ()) -> task::wake::RawWaker>",
   "hash": "160919914616016924437914545360266869856",
   "hash_direct": "58426121194968959971596282862342878661",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

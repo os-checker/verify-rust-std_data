@@ -3,7 +3,7 @@
   "name": "ptr::unique::verify::check_new_unchecked",
   "hash": "1166163788602461075615081779163807482614",
   "hash_direct": "166344938659067962412730681560974258102",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"Unique::new_unchecked\"]\n"
   ],

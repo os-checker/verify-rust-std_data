@@ -3,7 +3,7 @@
   "name": "num::verify::unchecked_mul_isize_small",
   "hash": "1001413482835619000210570915098704863819",
   "hash_direct": "163373007871866927747617276615119425859",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"isize :: unchecked_mul\"]\n"
   ],

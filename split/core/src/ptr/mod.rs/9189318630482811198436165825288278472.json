@@ -3,7 +3,7 @@
   "name": "ptr::verify::check_read_u128",
   "hash": "9189318630482811198436165825288278472",
   "hash_direct": "711299267500948081910607068018742855520",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"read_volatile\"]\n"
   ],

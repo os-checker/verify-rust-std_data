@@ -3,7 +3,7 @@
   "name": "ptr::const_ptr::verify::check_const_offset_from_i16",
   "hash": "7118346933658904828282507079504301468",
   "hash_direct": "1486137964060397284115326452296007114335",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"< * const i16 > :: offset_from\"]\n"
   ],

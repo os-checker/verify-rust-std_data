@@ -3,6 +3,6 @@
   "name": "core::ptr::drop_in_place::<&mut fn([u8; core::::num::{impl#7}::from_le_bytes::{constant#0}]) -> u16 {core::num::<impl u16>::from_le_bytes}>",
   "hash": "64689618837288227206170671061387173645",
   "hash_direct": "138418358063149089165456056305173526",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

@@ -3,6 +3,6 @@
   "name": "ptr::drop_in_place::<[&dyn fmt::Debug]>",
   "hash": "89865554858775438993320943979132842902",
   "hash_direct": "968815236726301535317857959653088255714",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

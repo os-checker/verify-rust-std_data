@@ -3,7 +3,7 @@
   "name": "ptr::mut_ptr::verify::check_mut_sub_slice_usize",
   "hash": "108666641729112044562867739565061274515",
   "hash_direct": "47609882190289540912190353356480723000",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"< * mut usize > :: sub\"]\n"
   ],

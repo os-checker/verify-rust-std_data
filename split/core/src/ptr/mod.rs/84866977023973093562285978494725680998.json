@@ -3,6 +3,6 @@
   "name": "ptr::drop_in_place::<&core_arch::arm_shared::neon::float32x4_t>",
   "hash": "84866977023973093562285978494725680998",
   "hash_direct": "119333790031954570399506639820185324103",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }

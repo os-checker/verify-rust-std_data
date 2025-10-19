@@ -3,7 +3,7 @@
   "name": "intrinsics::verify::check_typed_swap_char",
   "hash": "175186470432967693803061875506622177794",
   "hash_direct": "72248445390524566264268152022374164687",
-  "proof_kind": "\"Contract\"",
+  "proof_kind": "Contract",
   "attrs": [
     "#[kanitool::proof_for_contract = \"typed_swap_nonoverlapping\"]\n"
   ],

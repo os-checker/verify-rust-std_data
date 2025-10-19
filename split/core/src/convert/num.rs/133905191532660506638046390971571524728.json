@@ -3,7 +3,7 @@
   "name": "convert::num::verify::check_nonzero_int_try_from_u16::i8::check_nonzero_int_try_from_nonzero_int_should_panic",
   "hash": "133905191532660506638046390971571524728",
   "hash_direct": "45163981933751982523633447806713872626",
-  "proof_kind": "\"Standard\"",
+  "proof_kind": "Standard",
   "attrs": [
     "#[kanitool::should_panic]\n",
     "#[kanitool::proof]\n"

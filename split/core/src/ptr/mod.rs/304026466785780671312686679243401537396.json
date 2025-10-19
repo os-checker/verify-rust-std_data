@@ -3,6 +3,6 @@
   "name": "ptr::drop_in_place::<for<'a> fn(&'a mut iter::adapters::flatten::Flatten<option::IntoIter<char::EscapeDebug>>) -> option::Option<<iter::adapters::flatten::Flatten<option::IntoIter<char::EscapeDebug>> as iter::traits::iterator::Iterator>::Item> {<iter::adapters::flatten::Flatten<option::IntoIter<char::EscapeDebug>> as iter::traits::iterator::Iterator>::next}>",
   "hash": "304026466785780671312686679243401537396",
   "hash_direct": "83771872199716658736336516245971121195",
-  "inst_kind": "\"Shim\"",
+  "inst_kind": "Shim",
   "src": "pub unsafe fn drop_in_place<T: PointeeSized>(to_drop: *mut T)"
 }
