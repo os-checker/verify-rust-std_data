@@ -95,7 +95,7 @@ merge_results() {
     (.[0] + .[1])
     | group_by(.harness)
     | map(
-        add | { crate, file, harness, proof_kind, time, props, func, hash }
+        add | { crate, file, harness, proof_kind, time, props, func, hash } | select(.time != null)
       )
     | walk(if type == "object" then with_entries(select(.value != null)) else . end)
     | sort_by(.crate, .file, .harness, .proof_kind, .time)

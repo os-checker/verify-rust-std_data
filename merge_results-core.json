@@ -429,21 +429,6 @@
     }
   },
   {
-    "file": "core/src/ptr/mod.rs",
-    "harness": "ptr::align_offset::{closure#0}::{closure#1}::{closure#1}::mod_inv",
-    "proof_kind": "Auto"
-  },
-  {
-    "file": "core/src/ptr/mod.rs",
-    "harness": "ptr::align_offset::{closure#2}::{closure#1}::mod_inv",
-    "proof_kind": "Auto"
-  },
-  {
-    "file": "core/src/ptr/mod.rs",
-    "harness": "ptr::align_offset::{closure#3}::{closure#0}::mod_inv",
-    "proof_kind": "Auto"
-  },
-  {
     "crate": "alloc",
     "file": "alloc/src/collections/vec_deque/mod.rs",
     "harness": "collections::vec_deque::verify::check_vecdeque_swap",
@@ -772,370 +757,6 @@
       "file": "core/src/char/methods.rs"
     },
     "hash": "9876316453686709356538409161397548204"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/char/mod.rs",
-    "harness": "<char::CaseMappingIter as iter::traits::iterator::Iterator>::__iterator_get_unchecked",
-    "proof_kind": "Auto",
-    "hash": "949792096248023971711514731404863324947"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/char/mod.rs",
-    "harness": "<char::ToLowercase as iter::traits::iterator::Iterator>::__iterator_get_unchecked",
-    "proof_kind": "Auto",
-    "hash": "169461752388621164842822206058426452127"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/char/mod.rs",
-    "harness": "<char::ToUppercase as iter::traits::iterator::Iterator>::__iterator_get_unchecked",
-    "proof_kind": "Auto",
-    "hash": "158641604252574621329089955805779685"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/char/mod.rs",
-    "harness": "char::from_u32_unchecked",
-    "proof_kind": "Auto",
-    "hash": "169157450674248986457480567982993655557"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f128 as convert::num::FloatToInt<i128>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "5401272748005108225170015231844042415"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f128 as convert::num::FloatToInt<i16>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "8106237640557471073580597645246276389"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f128 as convert::num::FloatToInt<i32>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "492233870384668259417646718277520613131"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f128 as convert::num::FloatToInt<i64>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "85436354481777373298678937161968822808"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f128 as convert::num::FloatToInt<i8>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "67272556067146161882674407005627671670"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f128 as convert::num::FloatToInt<isize>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "145859362768437713122255974850783963947"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f128 as convert::num::FloatToInt<u128>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "649373533595446747616634326362916258113"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f128 as convert::num::FloatToInt<u16>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "68691467309782099588566504033335306113"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f128 as convert::num::FloatToInt<u32>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "142095150557611732085601685115493352309"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f128 as convert::num::FloatToInt<u64>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "4047051432235026783944635623816623002"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f128 as convert::num::FloatToInt<u8>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "8759826370357264640712844467855374887"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f128 as convert::num::FloatToInt<usize>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "987003126600730429312936607391211602970"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f16 as convert::num::FloatToInt<i128>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "16330166665644353718187662156311451106"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f16 as convert::num::FloatToInt<i16>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "46138308164662925421872131734313820414"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f16 as convert::num::FloatToInt<i32>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "922371780220321241915961426071415444094"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f16 as convert::num::FloatToInt<i64>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "30943267019948841189819240036255568574"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f16 as convert::num::FloatToInt<i8>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "11540754517172685714952890080583928020"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f16 as convert::num::FloatToInt<isize>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "1657647698240050611110600248014284790678"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f16 as convert::num::FloatToInt<u128>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "1584507318570215242217093049813184331868"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f16 as convert::num::FloatToInt<u16>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "605022253927063737518373324847650302490"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f16 as convert::num::FloatToInt<u32>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "113194812208013255087998247489448877960"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f16 as convert::num::FloatToInt<u64>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "1655810091731811610911551844610285981497"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f16 as convert::num::FloatToInt<u8>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "149684059415400330131224220641522900093"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f16 as convert::num::FloatToInt<usize>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "236602267344438528112569534307232442444"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f32 as convert::num::FloatToInt<i128>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "15080030101056987978349956702811452423"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f32 as convert::num::FloatToInt<i16>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "166802358580199115719878010896079132113"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f32 as convert::num::FloatToInt<i32>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "548163622760939740816876510990731455391"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f32 as convert::num::FloatToInt<i64>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "1084895836427789824717598742751658306639"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f32 as convert::num::FloatToInt<i8>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "34890024067839659768026381397380918139"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f32 as convert::num::FloatToInt<isize>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "167708659183710072111515128342092549088"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f32 as convert::num::FloatToInt<u128>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "433207813363144498614421505327452795449"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f32 as convert::num::FloatToInt<u16>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "1231920946327885171814833090428139865746"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f32 as convert::num::FloatToInt<u32>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "1214858424165111957313963051426664600400"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f32 as convert::num::FloatToInt<u64>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "94526677244680493164919154072316679657"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f32 as convert::num::FloatToInt<u8>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "93978316644746463992277797426831022622"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f32 as convert::num::FloatToInt<usize>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "440086421632680266711470680405402503739"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f64 as convert::num::FloatToInt<i128>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "147227011374976596589077049069025332704"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f64 as convert::num::FloatToInt<i16>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "79501386549668259428026726782306385145"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f64 as convert::num::FloatToInt<i32>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "53595793617303824321148836128309304338"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f64 as convert::num::FloatToInt<i64>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "5317042478714973718750854311883021473"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f64 as convert::num::FloatToInt<i8>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "119408407444599371510815039566879659785"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f64 as convert::num::FloatToInt<isize>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "59245911038507173017966681126328345067"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f64 as convert::num::FloatToInt<u128>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "1334842237500446619917057637565054429902"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f64 as convert::num::FloatToInt<u16>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "1483028211588406849813308090296863861059"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f64 as convert::num::FloatToInt<u32>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "117969322134786505349670780818056937488"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f64 as convert::num::FloatToInt<u64>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "488821708153327801840929483641102328"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f64 as convert::num::FloatToInt<u8>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "890139287041388898414349884129634908933"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/convert/num.rs",
-    "harness": "<f64 as convert::num::FloatToInt<usize>>::to_int_unchecked",
-    "proof_kind": "Auto",
-    "hash": "1231465154010309634711140755662905314330"
   },
   {
     "crate": "core",
@@ -3813,20 +3434,6 @@
       "file": "core/src/ffi/c_str.rs"
     },
     "hash": "864911414016978777811519501145437056877"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/hint.rs",
-    "harness": "hint::assert_unchecked",
-    "proof_kind": "Auto",
-    "hash": "6962362284417680556415378392413733050"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/hint.rs",
-    "harness": "hint::unreachable_unchecked",
-    "proof_kind": "Auto",
-    "hash": "1415106497522421883676194742336801697"
   },
   {
     "crate": "core",
@@ -8640,13 +8247,6 @@
   },
   {
     "crate": "core",
-    "file": "core/src/num/dec2flt/decimal_seq.rs",
-    "harness": "num::dec2flt::decimal_seq::number_of_digits_decimal_left_shift",
-    "proof_kind": "Auto",
-    "hash": "1221885333266410625418266723469411290891"
-  },
-  {
-    "crate": "core",
     "file": "core/src/num/int_macros.rs",
     "harness": "num::<impl i128>::unchecked_add",
     "proof_kind": "Auto",
@@ -12868,13 +12468,6 @@
   {
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
-    "harness": "num::<impl u128>::unchecked_disjoint_bitor",
-    "proof_kind": "Auto",
-    "hash": "62468179505928643547186831495519549610"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/uint_macros.rs",
     "harness": "num::<impl u128>::unchecked_shl",
     "proof_kind": "Auto",
     "time": 60,
@@ -12955,13 +12548,6 @@
       "file": "core/src/num/uint_macros.rs"
     },
     "hash": "1530195770348625061718410767804951205478"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/uint_macros.rs",
-    "harness": "num::<impl u16>::unchecked_disjoint_bitor",
-    "proof_kind": "Auto",
-    "hash": "1646567059477211263013560649947789195895"
   },
   {
     "crate": "core",
@@ -13050,13 +12636,6 @@
   {
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
-    "harness": "num::<impl u32>::unchecked_disjoint_bitor",
-    "proof_kind": "Auto",
-    "hash": "1509205979857540178714701701431614399599"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/uint_macros.rs",
     "harness": "num::<impl u32>::unchecked_shl",
     "proof_kind": "Auto",
     "time": 60,
@@ -13137,13 +12716,6 @@
       "file": "core/src/num/uint_macros.rs"
     },
     "hash": "87221581696529708117747633625843428992"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/uint_macros.rs",
-    "harness": "num::<impl u64>::unchecked_disjoint_bitor",
-    "proof_kind": "Auto",
-    "hash": "1254196771101498421216397036414100436388"
   },
   {
     "crate": "core",
@@ -13232,13 +12804,6 @@
   {
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
-    "harness": "num::<impl u8>::unchecked_disjoint_bitor",
-    "proof_kind": "Auto",
-    "hash": "41980680107816792213662023038772750117"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/uint_macros.rs",
     "harness": "num::<impl u8>::unchecked_shl",
     "proof_kind": "Auto",
     "time": 85,
@@ -13319,13 +12884,6 @@
       "file": "core/src/num/uint_macros.rs"
     },
     "hash": "174107661030119018973646362480685393050"
-  },
-  {
-    "crate": "core",
-    "file": "core/src/num/uint_macros.rs",
-    "harness": "num::<impl usize>::unchecked_disjoint_bitor",
-    "proof_kind": "Auto",
-    "hash": "33675937863748577387218057049454129764"
   },
   {
     "crate": "core",
