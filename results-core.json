@@ -85,6 +85,16 @@
     }
   },
   {
+    "harness": "core_arch::x86::__m128d::as_f64x2",
+    "time": 23,
+    "props": 0,
+    "func": {
+      "name": "core_arch::x86::__m128d::as_f64x2",
+      "safe": "safe",
+      "file": "core/src/../../stdarch/crates/core_arch/src/x86/mod.rs"
+    }
+  },
+  {
     "harness": "num::nonzero::verify::check_mul_i128_small",
     "time": 8944,
     "props": 109,
@@ -817,6 +827,16 @@
     }
   },
   {
+    "harness": "alloc::layout::Layout::from_size_align_unchecked",
+    "time": 146,
+    "props": 143,
+    "func": {
+      "name": "alloc::layout::Layout::from_size_align_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/alloc/layout.rs"
+    }
+  },
+  {
     "harness": "num::nonzero::verify::nonzero_check_min_for_usize",
     "time": 206,
     "props": 60,
@@ -832,6 +852,16 @@
     "func": {
       "name": "num::nonzero::min_for_u8",
       "file": "core/src/num/nonzero.rs"
+    }
+  },
+  {
+    "harness": "alloc::layout::Layout::from_size_alignment",
+    "time": 194,
+    "props": 13,
+    "func": {
+      "name": "alloc::layout::Layout::from_size_alignment",
+      "safe": "safe",
+      "file": "core/src/alloc/layout.rs"
     }
   },
   {
@@ -1033,6 +1063,16 @@
     }
   },
   {
+    "harness": "alloc::layout::Layout::from_size_align",
+    "time": 2854,
+    "props": 189,
+    "func": {
+      "name": "alloc::layout::Layout::from_size_align",
+      "safe": "safe",
+      "file": "core/src/alloc/layout.rs"
+    }
+  },
+  {
     "harness": "num::nonzero::verify::nonzero_check_cmp_for_usize",
     "time": 214,
     "props": 97,
@@ -1097,6 +1137,16 @@
     }
   },
   {
+    "harness": "ascii::ascii_char::AsciiChar::from_u8_unchecked",
+    "time": 92,
+    "props": 55,
+    "func": {
+      "name": "ascii::ascii_char::AsciiChar::from_u8_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/ascii/ascii_char.rs"
+    }
+  },
+  {
     "harness": "num::nonzero::verify::nonzero_check_cmp_for_u128",
     "time": 555,
     "props": 97,
@@ -1121,6 +1171,26 @@
     "func": {
       "name": "num::nonzero::cmp_for_i128",
       "file": "core/src/num/nonzero.rs"
+    }
+  },
+  {
+    "harness": "ascii::ascii_char::AsciiChar::from_u8",
+    "time": 264,
+    "props": 88,
+    "func": {
+      "name": "ascii::ascii_char::AsciiChar::from_u8",
+      "safe": "safe abstraction",
+      "file": "core/src/ascii/ascii_char.rs"
+    }
+  },
+  {
+    "harness": "char::convert::from_u32_unchecked",
+    "time": 104,
+    "props": 78,
+    "func": {
+      "name": "char::convert::from_u32_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/char/convert.rs"
     }
   },
   {
@@ -1922,6 +1992,16 @@
     }
   },
   {
+    "harness": "num::nonzero::NonZero::<isize>::rotate_right",
+    "time": 870,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<isize>::rotate_right",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    }
+  },
+  {
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f128::u8::check_float_to_int_unchecked",
     "time": 3172,
     "props": 49,
@@ -1929,6 +2009,16 @@
       "name": "f128::<impl f128>::to_int_unchecked",
       "safe": "unsafe",
       "file": "core/src/num/f128.rs"
+    }
+  },
+  {
+    "harness": "num::nonzero::NonZero::<usize>::rotate_right",
+    "time": 1001,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<usize>::rotate_right",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
     }
   },
   {
@@ -1960,6 +2050,16 @@
     }
   },
   {
+    "harness": "num::nonzero::NonZero::<u128>::rotate_right",
+    "time": 2780,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<u128>::rotate_right",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    }
+  },
+  {
     "harness": "convert::num::verify::check_f16_to_int_unchecked::f128::i32::check_float_to_int_unchecked",
     "time": 99,
     "props": 49,
@@ -1977,6 +2077,16 @@
       "name": "f64::<impl f64>::to_int_unchecked",
       "safe": "unsafe",
       "file": "core/src/num/f64.rs"
+    }
+  },
+  {
+    "harness": "num::nonzero::NonZero::<u32>::rotate_right",
+    "time": 166,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<u32>::rotate_right",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
     }
   },
   {
@@ -2038,12 +2148,62 @@
     }
   },
   {
+    "harness": "num::nonzero::NonZero::<i128>::rotate_right",
+    "time": 2727,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<i128>::rotate_right",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    }
+  },
+  {
+    "harness": "num::nonzero::NonZero::<i16>::rotate_right",
+    "time": 113,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<i16>::rotate_right",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    }
+  },
+  {
+    "harness": "num::nonzero::NonZero::<i64>::rotate_right",
+    "time": 807,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<i64>::rotate_right",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    }
+  },
+  {
     "harness": "convert::num::verify::check_nonzero_int_try_from_i64::isize::check_nonzero_int_try_from_nonzero_int_infallible",
     "time": 319,
     "props": 40,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i64::isize::check_nonzero_int_try_from_nonzero_int_infallible",
       "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "num::nonzero::NonZero::<u16>::rotate_right",
+    "time": 158,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<u16>::rotate_right",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    }
+  },
+  {
+    "harness": "num::nonzero::NonZero::<i8>::rotate_right",
+    "time": 140,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<i8>::rotate_right",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
     }
   },
   {
@@ -2056,12 +2216,42 @@
     }
   },
   {
+    "harness": "num::nonzero::NonZero::<u8>::rotate_right",
+    "time": 105,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<u8>::rotate_right",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    }
+  },
+  {
+    "harness": "num::nonzero::NonZero::<u64>::rotate_right",
+    "time": 827,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<u64>::rotate_right",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    }
+  },
+  {
     "harness": "convert::num::verify::check_nonzero_int_try_from_u32::isize::check_nonzero_int_try_from_nonzero_int_infallible",
     "time": 358,
     "props": 40,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u32::isize::check_nonzero_int_try_from_nonzero_int_infallible",
       "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "num::nonzero::NonZero::<i32>::rotate_right",
+    "time": 234,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<i32>::rotate_right",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
     }
   },
   {
@@ -2074,12 +2264,52 @@
     }
   },
   {
+    "harness": "num::nonzero::NonZero::<i16>::rotate_left",
+    "time": 124,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<i16>::rotate_left",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    }
+  },
+  {
+    "harness": "num::nonzero::NonZero::<u32>::rotate_left",
+    "time": 198,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<u32>::rotate_left",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    }
+  },
+  {
     "harness": "convert::num::verify::check_nonzero_int_try_from_u32::usize::check_nonzero_int_try_from_nonzero_int_infallible",
     "time": 362,
     "props": 40,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u32::usize::check_nonzero_int_try_from_nonzero_int_infallible",
       "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "num::nonzero::NonZero::<i8>::rotate_left",
+    "time": 161,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<i8>::rotate_left",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    }
+  },
+  {
+    "harness": "num::nonzero::NonZero::<usize>::rotate_left",
+    "time": 510,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<usize>::rotate_left",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
     }
   },
   {
@@ -2112,6 +2342,16 @@
     }
   },
   {
+    "harness": "num::nonzero::NonZero::<u128>::rotate_left",
+    "time": 2556,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<u128>::rotate_left",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    }
+  },
+  {
     "harness": "convert::num::verify::check_nonzero_int_try_from_u64::usize::check_nonzero_int_try_from_nonzero_int_infallible",
     "time": 383,
     "props": 40,
@@ -2121,12 +2361,32 @@
     }
   },
   {
+    "harness": "num::nonzero::NonZero::<i64>::rotate_left",
+    "time": 514,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<i64>::rotate_left",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    }
+  },
+  {
     "harness": "intrinsics::verify::i16_mod::transmute_unchecked_2ways_tuple_to_arr",
     "time": 469,
     "props": 59,
     "func": {
       "name": "intrinsics::verify::i16_mod::transmute_unchecked_2ways_tuple_to_arr",
       "file": "core/src/intrinsics/mod.rs"
+    }
+  },
+  {
+    "harness": "num::nonzero::NonZero::<isize>::rotate_left",
+    "time": 527,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<isize>::rotate_left",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
     }
   },
   {
@@ -2146,12 +2406,52 @@
     ]
   },
   {
+    "harness": "num::nonzero::NonZero::<u64>::rotate_left",
+    "time": 565,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<u64>::rotate_left",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    }
+  },
+  {
+    "harness": "num::nonzero::NonZero::<u16>::rotate_left",
+    "time": 110,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<u16>::rotate_left",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    }
+  },
+  {
     "harness": "intrinsics::verify::i16_mod::transmute_unchecked_2ways_struct_to_arr",
     "time": 517,
     "props": 71,
     "func": {
       "name": "intrinsics::verify::i16_mod::transmute_unchecked_2ways_struct_to_arr",
       "file": "core/src/intrinsics/mod.rs"
+    }
+  },
+  {
+    "harness": "num::nonzero::NonZero::<i32>::rotate_left",
+    "time": 202,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<i32>::rotate_left",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    }
+  },
+  {
+    "harness": "num::nonzero::NonZero::<u8>::rotate_left",
+    "time": 167,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<u8>::rotate_left",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
     }
   },
   {
@@ -2196,6 +2496,46 @@
     ]
   },
   {
+    "harness": "num::nonzero::NonZero::<i128>::rotate_left",
+    "time": 2169,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<i128>::rotate_left",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    }
+  },
+  {
+    "harness": "num::nonzero::NonZero::<i16>::count_ones",
+    "time": 115,
+    "props": 59,
+    "func": {
+      "name": "num::nonzero::NonZero::<i16>::count_ones",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    }
+  },
+  {
+    "harness": "num::nonzero::NonZero::<i8>::count_ones",
+    "time": 82,
+    "props": 59,
+    "func": {
+      "name": "num::nonzero::NonZero::<i8>::count_ones",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    }
+  },
+  {
+    "harness": "num::nonzero::NonZero::<u32>::count_ones",
+    "time": 116,
+    "props": 52,
+    "func": {
+      "name": "num::nonzero::NonZero::<u32>::count_ones",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    }
+  },
+  {
     "harness": "intrinsics::verify::u128_mod::transmute_unchecked_2ways_arr_to_tuple",
     "time": 521,
     "props": 61,
@@ -2219,6 +2559,46 @@
       "Failed Checks: called `Option::unwrap()` on a `None` value",
       " File: \"/home/runner/work/verify-rust-std/verify-rust-std/library/core/src/option.rs\", line 2168, in option::unwrap_failed"
     ]
+  },
+  {
+    "harness": "num::nonzero::NonZero::<u128>::count_ones",
+    "time": 133,
+    "props": 59,
+    "func": {
+      "name": "num::nonzero::NonZero::<u128>::count_ones",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    }
+  },
+  {
+    "harness": "num::nonzero::NonZero::<isize>::count_ones",
+    "time": 126,
+    "props": 59,
+    "func": {
+      "name": "num::nonzero::NonZero::<isize>::count_ones",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    }
+  },
+  {
+    "harness": "num::nonzero::NonZero::<u16>::count_ones",
+    "time": 123,
+    "props": 59,
+    "func": {
+      "name": "num::nonzero::NonZero::<u16>::count_ones",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    }
+  },
+  {
+    "harness": "num::nonzero::NonZero::<usize>::count_ones",
+    "time": 85,
+    "props": 59,
+    "func": {
+      "name": "num::nonzero::NonZero::<usize>::count_ones",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    }
   },
   {
     "harness": "convert::num::verify::check_nonzero_int_try_from_i64::u8::check_nonzero_int_try_from_nonzero_int_should_panic",
@@ -2247,6 +2627,46 @@
     }
   },
   {
+    "harness": "num::nonzero::NonZero::<u64>::count_ones",
+    "time": 126,
+    "props": 59,
+    "func": {
+      "name": "num::nonzero::NonZero::<u64>::count_ones",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    }
+  },
+  {
+    "harness": "num::nonzero::NonZero::<i128>::count_ones",
+    "time": 133,
+    "props": 59,
+    "func": {
+      "name": "num::nonzero::NonZero::<i128>::count_ones",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    }
+  },
+  {
+    "harness": "num::nonzero::NonZero::<i32>::count_ones",
+    "time": 89,
+    "props": 59,
+    "func": {
+      "name": "num::nonzero::NonZero::<i32>::count_ones",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    }
+  },
+  {
+    "harness": "num::nonzero::NonZero::<i64>::count_ones",
+    "time": 90,
+    "props": 59,
+    "func": {
+      "name": "num::nonzero::NonZero::<i64>::count_ones",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    }
+  },
+  {
     "harness": "convert::num::verify::check_nonzero_int_try_from_i8::u64::check_nonzero_int_try_from_nonzero_int_should_panic",
     "time": 409,
     "props": 42,
@@ -2263,12 +2683,52 @@
     ]
   },
   {
+    "harness": "num::nonzero::NonZero::<u8>::count_ones",
+    "time": 113,
+    "props": 59,
+    "func": {
+      "name": "num::nonzero::NonZero::<u8>::count_ones",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    }
+  },
+  {
     "harness": "intrinsics::verify::i8_mod::transmute_unchecked_2ways_tuple_to_struct",
     "time": 448,
     "props": 59,
     "func": {
       "name": "intrinsics::verify::i8_mod::transmute_unchecked_2ways_tuple_to_struct",
       "file": "core/src/intrinsics/mod.rs"
+    }
+  },
+  {
+    "harness": "num::<impl u8>::wrapping_shr",
+    "time": 132,
+    "props": 84,
+    "func": {
+      "name": "num::<impl u8>::wrapping_shr",
+      "safe": "safe abstraction",
+      "file": "core/src/num/uint_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl u16>::wrapping_shr",
+    "time": 125,
+    "props": 84,
+    "func": {
+      "name": "num::<impl u16>::wrapping_shr",
+      "safe": "safe abstraction",
+      "file": "core/src/num/uint_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl usize>::wrapping_shr",
+    "time": 197,
+    "props": 84,
+    "func": {
+      "name": "num::<impl usize>::wrapping_shr",
+      "safe": "safe abstraction",
+      "file": "core/src/num/uint_macros.rs"
     }
   },
   {
@@ -2298,6 +2758,46 @@
     ]
   },
   {
+    "harness": "num::<impl u64>::wrapping_shr",
+    "time": 283,
+    "props": 84,
+    "func": {
+      "name": "num::<impl u64>::wrapping_shr",
+      "safe": "safe abstraction",
+      "file": "core/src/num/uint_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl u32>::wrapping_shr",
+    "time": 142,
+    "props": 84,
+    "func": {
+      "name": "num::<impl u32>::wrapping_shr",
+      "safe": "safe abstraction",
+      "file": "core/src/num/uint_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl u128>::wrapping_shr",
+    "time": 484,
+    "props": 84,
+    "func": {
+      "name": "num::<impl u128>::wrapping_shr",
+      "safe": "safe abstraction",
+      "file": "core/src/num/uint_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl u16>::wrapping_shl",
+    "time": 134,
+    "props": 84,
+    "func": {
+      "name": "num::<impl u16>::wrapping_shl",
+      "safe": "safe abstraction",
+      "file": "core/src/num/uint_macros.rs"
+    }
+  },
+  {
     "harness": "convert::num::verify::check_nonzero_int_try_from_u64::i32::check_nonzero_int_try_from_nonzero_int_should_panic",
     "time": 398,
     "props": 42,
@@ -2314,12 +2814,42 @@
     ]
   },
   {
+    "harness": "num::<impl u32>::wrapping_shl",
+    "time": 144,
+    "props": 84,
+    "func": {
+      "name": "num::<impl u32>::wrapping_shl",
+      "safe": "safe abstraction",
+      "file": "core/src/num/uint_macros.rs"
+    }
+  },
+  {
     "harness": "intrinsics::verify::u128_mod::transmute_unchecked_2ways_arr_to_struct",
     "time": 655,
     "props": 61,
     "func": {
       "name": "intrinsics::verify::u128_mod::transmute_unchecked_2ways_arr_to_struct",
       "file": "core/src/intrinsics/mod.rs"
+    }
+  },
+  {
+    "harness": "num::<impl usize>::wrapping_shl",
+    "time": 301,
+    "props": 84,
+    "func": {
+      "name": "num::<impl usize>::wrapping_shl",
+      "safe": "safe abstraction",
+      "file": "core/src/num/uint_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl u64>::wrapping_shl",
+    "time": 304,
+    "props": 84,
+    "func": {
+      "name": "num::<impl u64>::wrapping_shl",
+      "safe": "safe abstraction",
+      "file": "core/src/num/uint_macros.rs"
     }
   },
   {
@@ -2339,12 +2869,62 @@
     ]
   },
   {
+    "harness": "num::<impl u8>::wrapping_shl",
+    "time": 133,
+    "props": 84,
+    "func": {
+      "name": "num::<impl u8>::wrapping_shl",
+      "safe": "safe abstraction",
+      "file": "core/src/num/uint_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl u128>::wrapping_shl",
+    "time": 563,
+    "props": 84,
+    "func": {
+      "name": "num::<impl u128>::wrapping_shl",
+      "safe": "safe abstraction",
+      "file": "core/src/num/uint_macros.rs"
+    }
+  },
+  {
     "harness": "intrinsics::verify::u16_mod::transmute_unchecked_2ways_arr_to_tuple",
     "time": 529,
     "props": 61,
     "func": {
       "name": "intrinsics::verify::u16_mod::transmute_unchecked_2ways_arr_to_tuple",
       "file": "core/src/intrinsics/mod.rs"
+    }
+  },
+  {
+    "harness": "num::<impl usize>::unchecked_shr",
+    "time": 59,
+    "props": 58,
+    "func": {
+      "name": "num::<impl usize>::unchecked_shr",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl u64>::unchecked_shr",
+    "time": 62,
+    "props": 58,
+    "func": {
+      "name": "num::<impl u64>::unchecked_shr",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl u8>::unchecked_shr",
+    "time": 59,
+    "props": 58,
+    "func": {
+      "name": "num::<impl u8>::unchecked_shr",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
     }
   },
   {
@@ -2364,12 +2944,72 @@
     ]
   },
   {
+    "harness": "num::<impl u16>::unchecked_shr",
+    "time": 67,
+    "props": 58,
+    "func": {
+      "name": "num::<impl u16>::unchecked_shr",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl u128>::unchecked_shr",
+    "time": 58,
+    "props": 58,
+    "func": {
+      "name": "num::<impl u128>::unchecked_shr",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl u32>::unchecked_shr",
+    "time": 60,
+    "props": 58,
+    "func": {
+      "name": "num::<impl u32>::unchecked_shr",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl usize>::unchecked_shl",
+    "time": 87,
+    "props": 58,
+    "func": {
+      "name": "num::<impl usize>::unchecked_shl",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    }
+  },
+  {
     "harness": "intrinsics::verify::tuple_mod::transmute_unchecked_2ways_tuple_to_arr",
     "time": 486,
     "props": 59,
     "func": {
       "name": "intrinsics::verify::tuple_mod::transmute_unchecked_2ways_tuple_to_arr",
       "file": "core/src/intrinsics/mod.rs"
+    }
+  },
+  {
+    "harness": "num::<impl u16>::unchecked_shl",
+    "time": 87,
+    "props": 58,
+    "func": {
+      "name": "num::<impl u16>::unchecked_shl",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl u64>::unchecked_shl",
+    "time": 80,
+    "props": 58,
+    "func": {
+      "name": "num::<impl u64>::unchecked_shl",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
     }
   },
   {
@@ -2389,12 +3029,62 @@
     ]
   },
   {
+    "harness": "num::<impl u32>::unchecked_shl",
+    "time": 60,
+    "props": 58,
+    "func": {
+      "name": "num::<impl u32>::unchecked_shl",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl u128>::unchecked_shl",
+    "time": 60,
+    "props": 58,
+    "func": {
+      "name": "num::<impl u128>::unchecked_shl",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl u8>::unchecked_shl",
+    "time": 85,
+    "props": 58,
+    "func": {
+      "name": "num::<impl u8>::unchecked_shl",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl u64>::unchecked_sub",
+    "time": 90,
+    "props": 70,
+    "func": {
+      "name": "num::<impl u64>::unchecked_sub",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    }
+  },
+  {
     "harness": "intrinsics::verify::i128_mod::transmute_unchecked_2ways_tuple_to_struct",
     "time": 363,
     "props": 59,
     "func": {
       "name": "intrinsics::verify::i128_mod::transmute_unchecked_2ways_tuple_to_struct",
       "file": "core/src/intrinsics/mod.rs"
+    }
+  },
+  {
+    "harness": "num::<impl u32>::unchecked_sub",
+    "time": 68,
+    "props": 70,
+    "func": {
+      "name": "num::<impl u32>::unchecked_sub",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
     }
   },
   {
@@ -2412,6 +3102,56 @@
       "Failed Checks: called `Option::unwrap()` on a `None` value",
       " File: \"/home/runner/work/verify-rust-std/verify-rust-std/library/core/src/option.rs\", line 2168, in option::unwrap_failed"
     ]
+  },
+  {
+    "harness": "num::<impl u8>::unchecked_sub",
+    "time": 86,
+    "props": 70,
+    "func": {
+      "name": "num::<impl u8>::unchecked_sub",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl u16>::unchecked_sub",
+    "time": 84,
+    "props": 70,
+    "func": {
+      "name": "num::<impl u16>::unchecked_sub",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl u128>::unchecked_sub",
+    "time": 91,
+    "props": 70,
+    "func": {
+      "name": "num::<impl u128>::unchecked_sub",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl usize>::unchecked_sub",
+    "time": 91,
+    "props": 70,
+    "func": {
+      "name": "num::<impl usize>::unchecked_sub",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl u8>::unchecked_add",
+    "time": 90,
+    "props": 70,
+    "func": {
+      "name": "num::<impl u8>::unchecked_add",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    }
   },
   {
     "harness": "convert::num::verify::check_nonzero_int_try_from_u16::i16::check_nonzero_int_try_from_nonzero_int_should_panic",
@@ -2436,6 +3176,56 @@
     "func": {
       "name": "intrinsics::verify::u32_mod::transmute_unchecked_2ways_arr_to_struct",
       "file": "core/src/intrinsics/mod.rs"
+    }
+  },
+  {
+    "harness": "num::<impl u128>::unchecked_add",
+    "time": 64,
+    "props": 70,
+    "func": {
+      "name": "num::<impl u128>::unchecked_add",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl usize>::unchecked_add",
+    "time": 76,
+    "props": 70,
+    "func": {
+      "name": "num::<impl usize>::unchecked_add",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl u64>::unchecked_add",
+    "time": 63,
+    "props": 70,
+    "func": {
+      "name": "num::<impl u64>::unchecked_add",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl u16>::unchecked_add",
+    "time": 63,
+    "props": 70,
+    "func": {
+      "name": "num::<impl u16>::unchecked_add",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl u32>::unchecked_add",
+    "time": 63,
+    "props": 70,
+    "func": {
+      "name": "num::<impl u32>::unchecked_add",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
     }
   },
   {
@@ -2529,6 +3319,16 @@
     }
   },
   {
+    "harness": "ptr::alignment::Alignment::mask",
+    "time": 379,
+    "props": 111,
+    "func": {
+      "name": "ptr::alignment::Alignment::mask",
+      "safe": "safe abstraction",
+      "file": "core/src/ptr/alignment.rs"
+    }
+  },
+  {
     "harness": "convert::num::verify::check_nonzero_int_try_from_i128::i32::check_nonzero_int_try_from_nonzero_int_should_panic",
     "time": 417,
     "props": 42,
@@ -2543,6 +3343,36 @@
       "Failed Checks: This is a placeholder message; Kani doesn't support message formatted at runtime",
       " File: \"/home/runner/work/verify-rust-std/verify-rust-std/library/core/src/result.rs\", line 1854, in result::unwrap_failed"
     ]
+  },
+  {
+    "harness": "ptr::alignment::Alignment::log2",
+    "time": 251,
+    "props": 79,
+    "func": {
+      "name": "ptr::alignment::Alignment::log2",
+      "safe": "safe",
+      "file": "core/src/ptr/alignment.rs"
+    }
+  },
+  {
+    "harness": "ptr::alignment::Alignment::as_nonzero",
+    "time": 292,
+    "props": 66,
+    "func": {
+      "name": "ptr::alignment::Alignment::as_nonzero",
+      "safe": "safe",
+      "file": "core/src/ptr/alignment.rs"
+    }
+  },
+  {
+    "harness": "ptr::alignment::Alignment::as_usize",
+    "time": 211,
+    "props": 43,
+    "func": {
+      "name": "ptr::alignment::Alignment::as_usize",
+      "safe": "safe",
+      "file": "core/src/ptr/alignment.rs"
+    }
   },
   {
     "harness": "convert::num::verify::check_nonzero_int_try_from_i64::i32::check_nonzero_int_try_from_nonzero_int_should_panic",
@@ -2567,6 +3397,26 @@
     "func": {
       "name": "intrinsics::verify::u32_mod::transmute_unchecked_2ways_tuple_to_struct",
       "file": "core/src/intrinsics/mod.rs"
+    }
+  },
+  {
+    "harness": "ptr::alignment::Alignment::new_unchecked",
+    "time": 134,
+    "props": 93,
+    "func": {
+      "name": "ptr::alignment::Alignment::new_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/ptr/alignment.rs"
+    }
+  },
+  {
+    "harness": "ptr::alignment::Alignment::new",
+    "time": 387,
+    "props": 97,
+    "func": {
+      "name": "ptr::alignment::Alignment::new",
+      "safe": "safe abstraction",
+      "file": "core/src/ptr/alignment.rs"
     }
   },
   {
@@ -6502,12 +7352,52 @@
     }
   },
   {
+    "harness": "<net::ip_addr::Ipv6Addr as iter::range::Step>::backward_unchecked",
+    "time": 178,
+    "props": 72,
+    "func": {
+      "name": "<net::ip_addr::Ipv6Addr as iter::range::Step>::backward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    }
+  },
+  {
+    "harness": "<net::ip_addr::Ipv6Addr as iter::range::Step>::forward_unchecked",
+    "time": 109,
+    "props": 72,
+    "func": {
+      "name": "<net::ip_addr::Ipv6Addr as iter::range::Step>::forward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    }
+  },
+  {
     "harness": "convert::num::verify::check_nonzero_int_try_from_u128::i128::check_nonzero_int_try_from_nonzero_int",
     "time": 406,
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u128::i128::check_nonzero_int_try_from_nonzero_int",
       "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "<net::ip_addr::Ipv4Addr as iter::range::Step>::backward_unchecked",
+    "time": 139,
+    "props": 72,
+    "func": {
+      "name": "<net::ip_addr::Ipv4Addr as iter::range::Step>::backward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    }
+  },
+  {
+    "harness": "<net::ip_addr::Ipv4Addr as iter::range::Step>::forward_unchecked",
+    "time": 140,
+    "props": 72,
+    "func": {
+      "name": "<net::ip_addr::Ipv4Addr as iter::range::Step>::forward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
     }
   },
   {
@@ -6520,12 +7410,72 @@
     }
   },
   {
+    "harness": "<ascii::ascii_char::AsciiChar as iter::range::Step>::backward_unchecked",
+    "time": 514,
+    "props": 82,
+    "func": {
+      "name": "<ascii::ascii_char::AsciiChar as iter::range::Step>::backward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    }
+  },
+  {
+    "harness": "<ascii::ascii_char::AsciiChar as iter::range::Step>::forward_unchecked",
+    "time": 714,
+    "props": 82,
+    "func": {
+      "name": "<ascii::ascii_char::AsciiChar as iter::range::Step>::forward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    }
+  },
+  {
     "harness": "convert::num::verify::check_nonzero_int_try_from_u64::i32::check_nonzero_int_try_from_nonzero_int",
     "time": 249,
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u64::i32::check_nonzero_int_try_from_nonzero_int",
       "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "<char as iter::range::Step>::backward_unchecked",
+    "time": 119,
+    "props": 147,
+    "func": {
+      "name": "<char as iter::range::Step>::backward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    }
+  },
+  {
+    "harness": "<char as iter::range::Step>::forward_unchecked",
+    "time": 123,
+    "props": 147,
+    "func": {
+      "name": "<char as iter::range::Step>::forward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    }
+  },
+  {
+    "harness": "<u64 as iter::range::Step>::backward_unchecked",
+    "time": 105,
+    "props": 61,
+    "func": {
+      "name": "<u64 as iter::range::Step>::backward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    }
+  },
+  {
+    "harness": "<usize as iter::range::Step>::backward_unchecked",
+    "time": 63,
+    "props": 61,
+    "func": {
+      "name": "<usize as iter::range::Step>::backward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
     }
   },
   {
@@ -6538,12 +7488,112 @@
     }
   },
   {
+    "harness": "<u8 as iter::range::Step>::backward_unchecked",
+    "time": 64,
+    "props": 61,
+    "func": {
+      "name": "<u8 as iter::range::Step>::backward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    }
+  },
+  {
+    "harness": "<u128 as iter::range::Step>::backward_unchecked",
+    "time": 68,
+    "props": 61,
+    "func": {
+      "name": "<u128 as iter::range::Step>::backward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    }
+  },
+  {
+    "harness": "<u16 as iter::range::Step>::backward_unchecked",
+    "time": 101,
+    "props": 61,
+    "func": {
+      "name": "<u16 as iter::range::Step>::backward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    }
+  },
+  {
+    "harness": "<u32 as iter::range::Step>::backward_unchecked",
+    "time": 103,
+    "props": 61,
+    "func": {
+      "name": "<u32 as iter::range::Step>::backward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    }
+  },
+  {
+    "harness": "<u128 as iter::range::Step>::forward_unchecked",
+    "time": 69,
+    "props": 68,
+    "func": {
+      "name": "<u128 as iter::range::Step>::forward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    }
+  },
+  {
     "harness": "convert::num::verify::check_nonzero_int_try_from_i32::i8::check_nonzero_int_try_from_nonzero_int",
     "time": 378,
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_i32::i8::check_nonzero_int_try_from_nonzero_int",
       "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "<u64 as iter::range::Step>::forward_unchecked",
+    "time": 72,
+    "props": 68,
+    "func": {
+      "name": "<u64 as iter::range::Step>::forward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    }
+  },
+  {
+    "harness": "<usize as iter::range::Step>::forward_unchecked",
+    "time": 70,
+    "props": 68,
+    "func": {
+      "name": "<usize as iter::range::Step>::forward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    }
+  },
+  {
+    "harness": "<u8 as iter::range::Step>::forward_unchecked",
+    "time": 104,
+    "props": 68,
+    "func": {
+      "name": "<u8 as iter::range::Step>::forward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    }
+  },
+  {
+    "harness": "<u32 as iter::range::Step>::forward_unchecked",
+    "time": 110,
+    "props": 68,
+    "func": {
+      "name": "<u32 as iter::range::Step>::forward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    }
+  },
+  {
+    "harness": "<u16 as iter::range::Step>::forward_unchecked",
+    "time": 109,
+    "props": 68,
+    "func": {
+      "name": "<u16 as iter::range::Step>::forward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
     }
   },
   {
@@ -6556,12 +7606,92 @@
     }
   },
   {
+    "harness": "<i32 as iter::range::Step>::backward_unchecked",
+    "time": 103,
+    "props": 68,
+    "func": {
+      "name": "<i32 as iter::range::Step>::backward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    }
+  },
+  {
+    "harness": "<i64 as iter::range::Step>::backward_unchecked",
+    "time": 79,
+    "props": 68,
+    "func": {
+      "name": "<i64 as iter::range::Step>::backward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    }
+  },
+  {
+    "harness": "<i16 as iter::range::Step>::backward_unchecked",
+    "time": 73,
+    "props": 68,
+    "func": {
+      "name": "<i16 as iter::range::Step>::backward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    }
+  },
+  {
+    "harness": "<i8 as iter::range::Step>::backward_unchecked",
+    "time": 69,
+    "props": 68,
+    "func": {
+      "name": "<i8 as iter::range::Step>::backward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    }
+  },
+  {
+    "harness": "<i128 as iter::range::Step>::backward_unchecked",
+    "time": 90,
+    "props": 68,
+    "func": {
+      "name": "<i128 as iter::range::Step>::backward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    }
+  },
+  {
     "harness": "convert::num::verify::check_nonzero_int_try_from_u128::i64::check_nonzero_int_try_from_nonzero_int",
     "time": 259,
     "props": 42,
     "func": {
       "name": "convert::num::nonzero_int_try_from_u128::i64::check_nonzero_int_try_from_nonzero_int",
       "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "<isize as iter::range::Step>::backward_unchecked",
+    "time": 122,
+    "props": 68,
+    "func": {
+      "name": "<isize as iter::range::Step>::backward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    }
+  },
+  {
+    "harness": "<i16 as iter::range::Step>::forward_unchecked",
+    "time": 114,
+    "props": 68,
+    "func": {
+      "name": "<i16 as iter::range::Step>::forward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    }
+  },
+  {
+    "harness": "<isize as iter::range::Step>::forward_unchecked",
+    "time": 113,
+    "props": 68,
+    "func": {
+      "name": "<isize as iter::range::Step>::forward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
     }
   },
   {
@@ -6574,6 +7704,26 @@
     }
   },
   {
+    "harness": "<i8 as iter::range::Step>::forward_unchecked",
+    "time": 105,
+    "props": 68,
+    "func": {
+      "name": "<i8 as iter::range::Step>::forward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    }
+  },
+  {
+    "harness": "<i64 as iter::range::Step>::forward_unchecked",
+    "time": 73,
+    "props": 68,
+    "func": {
+      "name": "<i64 as iter::range::Step>::forward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    }
+  },
+  {
     "harness": "ptr::verify::check_align_offset_5",
     "time": 69830,
     "props": 266,
@@ -6581,6 +7731,26 @@
       "name": "ptr::align_offset",
       "safe": "unsafe",
       "file": "core/src/ptr/mod.rs"
+    }
+  },
+  {
+    "harness": "<i32 as iter::range::Step>::forward_unchecked",
+    "time": 109,
+    "props": 68,
+    "func": {
+      "name": "<i32 as iter::range::Step>::forward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    }
+  },
+  {
+    "harness": "<i128 as iter::range::Step>::forward_unchecked",
+    "time": 79,
+    "props": 68,
+    "func": {
+      "name": "<i128 as iter::range::Step>::forward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
     }
   },
   {
@@ -6650,6 +7820,46 @@
     }
   },
   {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i8>> for num::nonzero::NonZero<i64>>::from",
+    "time": 27,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i8>> for num::nonzero::NonZero<i64>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u32>> for num::nonzero::NonZero<i128>>::from",
+    "time": 29,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u32>> for num::nonzero::NonZero<i128>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i8>> for num::nonzero::NonZero<isize>>::from",
+    "time": 29,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i8>> for num::nonzero::NonZero<isize>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<i32>>::from",
+    "time": 30,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<i32>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
     "harness": "ptr::verify::check_align_offset_u64",
     "time": 1483,
     "props": 266,
@@ -6657,6 +7867,126 @@
       "name": "ptr::align_offset",
       "safe": "unsafe",
       "file": "core/src/ptr/mod.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i64>> for num::nonzero::NonZero<i128>>::from",
+    "time": 30,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i64>> for num::nonzero::NonZero<i128>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<i16>>::from",
+    "time": 39,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<i16>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u32>> for num::nonzero::NonZero<i64>>::from",
+    "time": 35,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u32>> for num::nonzero::NonZero<i64>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<usize>>::from",
+    "time": 42,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<usize>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i8>> for num::nonzero::NonZero<i16>>::from",
+    "time": 42,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i8>> for num::nonzero::NonZero<i16>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<u64>>::from",
+    "time": 41,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<u64>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<isize>>::from",
+    "time": 41,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<isize>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<i128>>::from",
+    "time": 40,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<i128>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i16>> for num::nonzero::NonZero<isize>>::from",
+    "time": 42,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i16>> for num::nonzero::NonZero<isize>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<i64>>::from",
+    "time": 41,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<i64>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i8>> for num::nonzero::NonZero<i32>>::from",
+    "time": 40,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i8>> for num::nonzero::NonZero<i32>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<i32>>::from",
+    "time": 41,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<i32>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
     }
   },
   {
@@ -6670,6 +8000,126 @@
     }
   },
   {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i16>> for num::nonzero::NonZero<i128>>::from",
+    "time": 37,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i16>> for num::nonzero::NonZero<i128>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<u64>>::from",
+    "time": 29,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<u64>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i32>> for num::nonzero::NonZero<i64>>::from",
+    "time": 36,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i32>> for num::nonzero::NonZero<i64>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<u128>>::from",
+    "time": 38,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<u128>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<u32>>::from",
+    "time": 41,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<u32>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u32>> for num::nonzero::NonZero<u128>>::from",
+    "time": 40,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u32>> for num::nonzero::NonZero<u128>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<i128>>::from",
+    "time": 40,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<i128>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<i64>>::from",
+    "time": 40,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<i64>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<u32>>::from",
+    "time": 40,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<u32>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u64>> for num::nonzero::NonZero<i128>>::from",
+    "time": 40,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u64>> for num::nonzero::NonZero<i128>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<u16>>::from",
+    "time": 40,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<u16>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u64>> for num::nonzero::NonZero<u128>>::from",
+    "time": 41,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u64>> for num::nonzero::NonZero<u128>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
     "harness": "ptr::verify::check_align_offset_u16",
     "time": 1633,
     "props": 266,
@@ -6677,6 +8127,76 @@
       "name": "ptr::align_offset",
       "safe": "unsafe",
       "file": "core/src/ptr/mod.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i16>> for num::nonzero::NonZero<i64>>::from",
+    "time": 34,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i16>> for num::nonzero::NonZero<i64>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i8>> for num::nonzero::NonZero<i128>>::from",
+    "time": 41,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i8>> for num::nonzero::NonZero<i128>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i32>> for num::nonzero::NonZero<i128>>::from",
+    "time": 38,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i32>> for num::nonzero::NonZero<i128>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u32>> for num::nonzero::NonZero<u64>>::from",
+    "time": 41,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u32>> for num::nonzero::NonZero<u64>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<u128>>::from",
+    "time": 28,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<u128>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i16>> for num::nonzero::NonZero<i32>>::from",
+    "time": 27,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i16>> for num::nonzero::NonZero<i32>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<usize>>::from",
+    "time": 27,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<usize>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
     }
   },
   {
@@ -6715,6 +8235,16 @@
     "props": 118,
     "func": {
       "name": "ptr::read_volatile",
+      "safe": "unsafe",
+      "file": "core/src/ptr/mod.rs"
+    }
+  },
+  {
+    "harness": "ptr::align_offset::mod_inv",
+    "time": 118,
+    "props": 84,
+    "func": {
+      "name": "ptr::align_offset::mod_inv",
       "safe": "unsafe",
       "file": "core/src/ptr/mod.rs"
     }
@@ -7110,6 +8640,16 @@
     }
   },
   {
+    "harness": "num::<impl i32>::wrapping_shr",
+    "time": 101,
+    "props": 84,
+    "func": {
+      "name": "num::<impl i32>::wrapping_shr",
+      "safe": "safe abstraction",
+      "file": "core/src/num/int_macros.rs"
+    }
+  },
+  {
     "harness": "ptr::mut_ptr::verify::check_mut_sub_tuple_3",
     "time": 372,
     "props": 167,
@@ -7117,6 +8657,26 @@
       "name": "ptr::mut_ptr::<impl *mut T>::sub",
       "safe": "unsafe",
       "file": "core/src/ptr/mut_ptr.rs"
+    }
+  },
+  {
+    "harness": "num::<impl i8>::wrapping_shr",
+    "time": 96,
+    "props": 84,
+    "func": {
+      "name": "num::<impl i8>::wrapping_shr",
+      "safe": "safe abstraction",
+      "file": "core/src/num/int_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl i16>::wrapping_shr",
+    "time": 133,
+    "props": 84,
+    "func": {
+      "name": "num::<impl i16>::wrapping_shr",
+      "safe": "safe abstraction",
+      "file": "core/src/num/int_macros.rs"
     }
   },
   {
@@ -7140,6 +8700,26 @@
     }
   },
   {
+    "harness": "num::<impl i128>::wrapping_shr",
+    "time": 844,
+    "props": 84,
+    "func": {
+      "name": "num::<impl i128>::wrapping_shr",
+      "safe": "safe abstraction",
+      "file": "core/src/num/int_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl i64>::wrapping_shr",
+    "time": 273,
+    "props": 84,
+    "func": {
+      "name": "num::<impl i64>::wrapping_shr",
+      "safe": "safe abstraction",
+      "file": "core/src/num/int_macros.rs"
+    }
+  },
+  {
     "harness": "ptr::mut_ptr::verify::check_mut_add_tuple_3",
     "time": 399,
     "props": 231,
@@ -7147,6 +8727,26 @@
       "name": "ptr::mut_ptr::<impl *mut T>::add",
       "safe": "unsafe",
       "file": "core/src/ptr/mut_ptr.rs"
+    }
+  },
+  {
+    "harness": "num::<impl isize>::wrapping_shr",
+    "time": 317,
+    "props": 84,
+    "func": {
+      "name": "num::<impl isize>::wrapping_shr",
+      "safe": "safe abstraction",
+      "file": "core/src/num/int_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl i16>::wrapping_shl",
+    "time": 142,
+    "props": 84,
+    "func": {
+      "name": "num::<impl i16>::wrapping_shl",
+      "safe": "safe abstraction",
+      "file": "core/src/num/int_macros.rs"
     }
   },
   {
@@ -7160,6 +8760,16 @@
     }
   },
   {
+    "harness": "num::<impl i128>::wrapping_shl",
+    "time": 720,
+    "props": 84,
+    "func": {
+      "name": "num::<impl i128>::wrapping_shl",
+      "safe": "safe abstraction",
+      "file": "core/src/num/int_macros.rs"
+    }
+  },
+  {
     "harness": "ptr::mut_ptr::verify::check_mut_add_isize",
     "time": 414,
     "props": 231,
@@ -7167,6 +8777,26 @@
       "name": "ptr::mut_ptr::<impl *mut T>::add",
       "safe": "unsafe",
       "file": "core/src/ptr/mut_ptr.rs"
+    }
+  },
+  {
+    "harness": "num::<impl i64>::wrapping_shl",
+    "time": 265,
+    "props": 84,
+    "func": {
+      "name": "num::<impl i64>::wrapping_shl",
+      "safe": "safe abstraction",
+      "file": "core/src/num/int_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl isize>::wrapping_shl",
+    "time": 219,
+    "props": 84,
+    "func": {
+      "name": "num::<impl isize>::wrapping_shl",
+      "safe": "safe abstraction",
+      "file": "core/src/num/int_macros.rs"
     }
   },
   {
@@ -7180,6 +8810,36 @@
     }
   },
   {
+    "harness": "num::<impl i32>::wrapping_shl",
+    "time": 102,
+    "props": 84,
+    "func": {
+      "name": "num::<impl i32>::wrapping_shl",
+      "safe": "safe abstraction",
+      "file": "core/src/num/int_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl i8>::wrapping_shl",
+    "time": 128,
+    "props": 84,
+    "func": {
+      "name": "num::<impl i8>::wrapping_shl",
+      "safe": "safe abstraction",
+      "file": "core/src/num/int_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl i64>::unchecked_shr",
+    "time": 89,
+    "props": 58,
+    "func": {
+      "name": "num::<impl i64>::unchecked_shr",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    }
+  },
+  {
     "harness": "ptr::mut_ptr::verify::check_mut_add_unit",
     "time": 289,
     "props": 231,
@@ -7187,6 +8847,26 @@
       "name": "ptr::mut_ptr::<impl *mut T>::add",
       "safe": "unsafe",
       "file": "core/src/ptr/mut_ptr.rs"
+    }
+  },
+  {
+    "harness": "num::<impl i128>::unchecked_shr",
+    "time": 90,
+    "props": 58,
+    "func": {
+      "name": "num::<impl i128>::unchecked_shr",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl isize>::unchecked_shr",
+    "time": 85,
+    "props": 58,
+    "func": {
+      "name": "num::<impl isize>::unchecked_shr",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
     }
   },
   {
@@ -7200,6 +8880,26 @@
     }
   },
   {
+    "harness": "num::<impl i16>::unchecked_shr",
+    "time": 85,
+    "props": 58,
+    "func": {
+      "name": "num::<impl i16>::unchecked_shr",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl i32>::unchecked_shr",
+    "time": 87,
+    "props": 58,
+    "func": {
+      "name": "num::<impl i32>::unchecked_shr",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    }
+  },
+  {
     "harness": "ptr::mut_ptr::verify::check_mut_add_i128",
     "time": 281,
     "props": 231,
@@ -7207,6 +8907,36 @@
       "name": "ptr::mut_ptr::<impl *mut T>::add",
       "safe": "unsafe",
       "file": "core/src/ptr/mut_ptr.rs"
+    }
+  },
+  {
+    "harness": "num::<impl i8>::unchecked_shr",
+    "time": 68,
+    "props": 58,
+    "func": {
+      "name": "num::<impl i8>::unchecked_shr",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl i32>::unchecked_shl",
+    "time": 88,
+    "props": 58,
+    "func": {
+      "name": "num::<impl i32>::unchecked_shl",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl i64>::unchecked_shl",
+    "time": 58,
+    "props": 58,
+    "func": {
+      "name": "num::<impl i64>::unchecked_shl",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
     }
   },
   {
@@ -7220,6 +8950,36 @@
     }
   },
   {
+    "harness": "num::<impl i16>::unchecked_shl",
+    "time": 67,
+    "props": 58,
+    "func": {
+      "name": "num::<impl i16>::unchecked_shl",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl isize>::unchecked_shl",
+    "time": 90,
+    "props": 58,
+    "func": {
+      "name": "num::<impl isize>::unchecked_shl",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl i8>::unchecked_shl",
+    "time": 92,
+    "props": 58,
+    "func": {
+      "name": "num::<impl i8>::unchecked_shl",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    }
+  },
+  {
     "harness": "ptr::mut_ptr::verify::check_mut_offset_i32",
     "time": 290,
     "props": 159,
@@ -7227,6 +8987,26 @@
       "name": "ptr::mut_ptr::<impl *mut T>::offset",
       "safe": "unsafe",
       "file": "core/src/ptr/mut_ptr.rs"
+    }
+  },
+  {
+    "harness": "num::<impl i128>::unchecked_shl",
+    "time": 87,
+    "props": 58,
+    "func": {
+      "name": "num::<impl i128>::unchecked_shl",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl i8>::unchecked_neg",
+    "time": 113,
+    "props": 73,
+    "func": {
+      "name": "num::<impl i8>::unchecked_neg",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
     }
   },
   {
@@ -7240,6 +9020,36 @@
     }
   },
   {
+    "harness": "num::<impl i16>::unchecked_neg",
+    "time": 106,
+    "props": 73,
+    "func": {
+      "name": "num::<impl i16>::unchecked_neg",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl isize>::unchecked_neg",
+    "time": 103,
+    "props": 73,
+    "func": {
+      "name": "num::<impl isize>::unchecked_neg",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl i128>::unchecked_neg",
+    "time": 78,
+    "props": 73,
+    "func": {
+      "name": "num::<impl i128>::unchecked_neg",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    }
+  },
+  {
     "harness": "ptr::mut_ptr::verify::check_mut_add_u16",
     "time": 395,
     "props": 231,
@@ -7247,6 +9057,26 @@
       "name": "ptr::mut_ptr::<impl *mut T>::add",
       "safe": "unsafe",
       "file": "core/src/ptr/mut_ptr.rs"
+    }
+  },
+  {
+    "harness": "num::<impl i64>::unchecked_neg",
+    "time": 102,
+    "props": 73,
+    "func": {
+      "name": "num::<impl i64>::unchecked_neg",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl i32>::unchecked_neg",
+    "time": 104,
+    "props": 73,
+    "func": {
+      "name": "num::<impl i32>::unchecked_neg",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
     }
   },
   {
@@ -7260,6 +9090,36 @@
     }
   },
   {
+    "harness": "num::<impl i8>::unchecked_sub",
+    "time": 71,
+    "props": 70,
+    "func": {
+      "name": "num::<impl i8>::unchecked_sub",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl i16>::unchecked_sub",
+    "time": 93,
+    "props": 70,
+    "func": {
+      "name": "num::<impl i16>::unchecked_sub",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl isize>::unchecked_sub",
+    "time": 145,
+    "props": 70,
+    "func": {
+      "name": "num::<impl isize>::unchecked_sub",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    }
+  },
+  {
     "harness": "ptr::mut_ptr::verify::check_mut_sub_i128",
     "time": 298,
     "props": 167,
@@ -7267,6 +9127,36 @@
       "name": "ptr::mut_ptr::<impl *mut T>::sub",
       "safe": "unsafe",
       "file": "core/src/ptr/mut_ptr.rs"
+    }
+  },
+  {
+    "harness": "num::<impl i128>::unchecked_sub",
+    "time": 162,
+    "props": 70,
+    "func": {
+      "name": "num::<impl i128>::unchecked_sub",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl i32>::unchecked_sub",
+    "time": 69,
+    "props": 70,
+    "func": {
+      "name": "num::<impl i32>::unchecked_sub",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl i64>::unchecked_sub",
+    "time": 93,
+    "props": 70,
+    "func": {
+      "name": "num::<impl i64>::unchecked_sub",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
     }
   },
   {
@@ -7280,6 +9170,26 @@
     }
   },
   {
+    "harness": "num::<impl i128>::unchecked_add",
+    "time": 99,
+    "props": 70,
+    "func": {
+      "name": "num::<impl i128>::unchecked_add",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl i16>::unchecked_add",
+    "time": 66,
+    "props": 70,
+    "func": {
+      "name": "num::<impl i16>::unchecked_add",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    }
+  },
+  {
     "harness": "ptr::mut_ptr::verify::check_mut_offset_usize",
     "time": 387,
     "props": 159,
@@ -7290,6 +9200,36 @@
     }
   },
   {
+    "harness": "num::<impl isize>::unchecked_add",
+    "time": 90,
+    "props": 70,
+    "func": {
+      "name": "num::<impl isize>::unchecked_add",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl i32>::unchecked_add",
+    "time": 91,
+    "props": 70,
+    "func": {
+      "name": "num::<impl i32>::unchecked_add",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    }
+  },
+  {
+    "harness": "num::<impl i8>::unchecked_add",
+    "time": 93,
+    "props": 70,
+    "func": {
+      "name": "num::<impl i8>::unchecked_add",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    }
+  },
+  {
     "harness": "ptr::mut_ptr::verify::check_mut_sub_i8",
     "time": 249,
     "props": 167,
@@ -7297,6 +9237,16 @@
       "name": "ptr::mut_ptr::<impl *mut T>::sub",
       "safe": "unsafe",
       "file": "core/src/ptr/mut_ptr.rs"
+    }
+  },
+  {
+    "harness": "num::<impl i64>::unchecked_add",
+    "time": 91,
+    "props": 70,
+    "func": {
+      "name": "num::<impl i64>::unchecked_add",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
     }
   },
   {
@@ -11254,6 +13204,136 @@
     }
   },
   {
+    "harness": "<u8 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+    "time": 82,
+    "props": 62,
+    "func": {
+      "name": "<u8 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+      "safe": "unsafe",
+      "file": "core/src/intrinsics/fallback.rs"
+    }
+  },
+  {
+    "harness": "<i64 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+    "time": 73,
+    "props": 62,
+    "func": {
+      "name": "<i64 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+      "safe": "unsafe",
+      "file": "core/src/intrinsics/fallback.rs"
+    }
+  },
+  {
+    "harness": "<i32 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+    "time": 82,
+    "props": 62,
+    "func": {
+      "name": "<i32 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+      "safe": "unsafe",
+      "file": "core/src/intrinsics/fallback.rs"
+    }
+  },
+  {
+    "harness": "<u16 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+    "time": 78,
+    "props": 62,
+    "func": {
+      "name": "<u16 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+      "safe": "unsafe",
+      "file": "core/src/intrinsics/fallback.rs"
+    }
+  },
+  {
+    "harness": "<u64 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+    "time": 71,
+    "props": 62,
+    "func": {
+      "name": "<u64 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+      "safe": "unsafe",
+      "file": "core/src/intrinsics/fallback.rs"
+    }
+  },
+  {
+    "harness": "<i16 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+    "time": 53,
+    "props": 62,
+    "func": {
+      "name": "<i16 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+      "safe": "unsafe",
+      "file": "core/src/intrinsics/fallback.rs"
+    }
+  },
+  {
+    "harness": "<isize as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+    "time": 54,
+    "props": 62,
+    "func": {
+      "name": "<isize as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+      "safe": "unsafe",
+      "file": "core/src/intrinsics/fallback.rs"
+    }
+  },
+  {
+    "harness": "<i128 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+    "time": 55,
+    "props": 62,
+    "func": {
+      "name": "<i128 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+      "safe": "unsafe",
+      "file": "core/src/intrinsics/fallback.rs"
+    }
+  },
+  {
+    "harness": "<usize as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+    "time": 54,
+    "props": 62,
+    "func": {
+      "name": "<usize as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+      "safe": "unsafe",
+      "file": "core/src/intrinsics/fallback.rs"
+    }
+  },
+  {
+    "harness": "<i8 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+    "time": 54,
+    "props": 62,
+    "func": {
+      "name": "<i8 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+      "safe": "unsafe",
+      "file": "core/src/intrinsics/fallback.rs"
+    }
+  },
+  {
+    "harness": "<u32 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+    "time": 53,
+    "props": 62,
+    "func": {
+      "name": "<u32 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+      "safe": "unsafe",
+      "file": "core/src/intrinsics/fallback.rs"
+    }
+  },
+  {
+    "harness": "<bool as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+    "time": 54,
+    "props": 62,
+    "func": {
+      "name": "<bool as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+      "safe": "unsafe",
+      "file": "core/src/intrinsics/fallback.rs"
+    }
+  },
+  {
+    "harness": "<u128 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+    "time": 55,
+    "props": 62,
+    "func": {
+      "name": "<u128 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+      "safe": "unsafe",
+      "file": "core/src/intrinsics/fallback.rs"
+    }
+  },
+  {
     "harness": "ptr::non_null::verify::non_null_check_read_volatile",
     "time": 79895,
     "props": 183,
@@ -13702,6 +15782,46 @@
     }
   },
   {
+    "harness": "time::Duration::from_nanos",
+    "time": 114,
+    "props": 51,
+    "func": {
+      "name": "time::Duration::from_nanos",
+      "safe": "safe abstraction",
+      "file": "core/src/time.rs"
+    }
+  },
+  {
+    "harness": "time::Duration::from_micros",
+    "time": 121,
+    "props": 53,
+    "func": {
+      "name": "time::Duration::from_micros",
+      "safe": "safe abstraction",
+      "file": "core/src/time.rs"
+    }
+  },
+  {
+    "harness": "time::Duration::from_millis",
+    "time": 112,
+    "props": 53,
+    "func": {
+      "name": "time::Duration::from_millis",
+      "safe": "safe abstraction",
+      "file": "core/src/time.rs"
+    }
+  },
+  {
+    "harness": "time::Duration::from_secs",
+    "time": 95,
+    "props": 56,
+    "func": {
+      "name": "time::Duration::from_secs",
+      "safe": "safe",
+      "file": "core/src/time.rs"
+    }
+  },
+  {
     "harness": "slice::verify::align_to_from_u128::align_to_u32",
     "time": 1354,
     "props": 241,
@@ -13809,6 +15929,46 @@
       "name": "str::validations::run_utf8_validation",
       "safe": "safe abstraction",
       "file": "core/src/str/validations.rs"
+    }
+  },
+  {
+    "harness": "unicode::unicode_data::conversions::to_upper",
+    "time": 19607,
+    "props": 204,
+    "func": {
+      "name": "unicode::unicode_data::conversions::to_upper",
+      "safe": "safe",
+      "file": "core/src/unicode/unicode_data.rs"
+    }
+  },
+  {
+    "harness": "unicode::unicode_data::conversions::to_lower",
+    "time": 11384,
+    "props": 204,
+    "func": {
+      "name": "unicode::unicode_data::conversions::to_lower",
+      "safe": "safe",
+      "file": "core/src/unicode/unicode_data.rs"
+    }
+  },
+  {
+    "harness": "alloc::__default_lib_allocator::__rdl_alloc_zeroed",
+    "time": 716,
+    "props": 124,
+    "func": {
+      "name": "alloc::__default_lib_allocator::__rdl_alloc_zeroed",
+      "safe": "unsafe",
+      "file": "std/src/alloc.rs"
+    }
+  },
+  {
+    "harness": "alloc::__default_lib_allocator::__rdl_alloc",
+    "time": 365,
+    "props": 106,
+    "func": {
+      "name": "alloc::__default_lib_allocator::__rdl_alloc",
+      "safe": "unsafe",
+      "file": "std/src/alloc.rs"
     }
   }
 ]

@@ -2,7 +2,7 @@
 # JSONs
 
 * `hash.json`: hash values for all functions; generated from core.sqlite3
-* `merge_diff.json`: merge kani-list.json and hash json; non-core functions may have no hash value
+* `merge_diff.json`: merge `kani-list.json` and hash json; non-core functions may have no hash value
 * `merge_diff-proofs-only.json`: filter in core-based functions; proof_kind and hash value must exist
 * `results-core.json`: extract core-based verification info from `results.json`
   * `results.json` contains verification results from core and deps, including stadndard/contract harnesses and autoharness

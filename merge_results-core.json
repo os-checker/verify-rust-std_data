@@ -1,5 +1,395 @@
 [
   {
+    "harness": "alloc::__default_lib_allocator::__rdl_alloc",
+    "time": 365,
+    "props": 106,
+    "func": {
+      "name": "alloc::__default_lib_allocator::__rdl_alloc",
+      "safe": "unsafe",
+      "file": "std/src/alloc.rs"
+    }
+  },
+  {
+    "harness": "alloc::__default_lib_allocator::__rdl_alloc_zeroed",
+    "time": 716,
+    "props": 124,
+    "func": {
+      "name": "alloc::__default_lib_allocator::__rdl_alloc_zeroed",
+      "safe": "unsafe",
+      "file": "std/src/alloc.rs"
+    }
+  },
+  {
+    "harness": "alloc::layout::Layout::from_size_alignment",
+    "time": 194,
+    "props": 13,
+    "func": {
+      "name": "alloc::layout::Layout::from_size_alignment",
+      "safe": "safe",
+      "file": "core/src/alloc/layout.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i16>> for num::nonzero::NonZero<i128>>::from",
+    "time": 37,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i16>> for num::nonzero::NonZero<i128>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i16>> for num::nonzero::NonZero<i32>>::from",
+    "time": 27,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i16>> for num::nonzero::NonZero<i32>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i16>> for num::nonzero::NonZero<i64>>::from",
+    "time": 34,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i16>> for num::nonzero::NonZero<i64>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i16>> for num::nonzero::NonZero<isize>>::from",
+    "time": 42,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i16>> for num::nonzero::NonZero<isize>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i32>> for num::nonzero::NonZero<i128>>::from",
+    "time": 38,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i32>> for num::nonzero::NonZero<i128>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i32>> for num::nonzero::NonZero<i64>>::from",
+    "time": 36,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i32>> for num::nonzero::NonZero<i64>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i64>> for num::nonzero::NonZero<i128>>::from",
+    "time": 30,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i64>> for num::nonzero::NonZero<i128>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i8>> for num::nonzero::NonZero<i128>>::from",
+    "time": 41,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i8>> for num::nonzero::NonZero<i128>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i8>> for num::nonzero::NonZero<i16>>::from",
+    "time": 42,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i8>> for num::nonzero::NonZero<i16>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i8>> for num::nonzero::NonZero<i32>>::from",
+    "time": 40,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i8>> for num::nonzero::NonZero<i32>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i8>> for num::nonzero::NonZero<i64>>::from",
+    "time": 27,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i8>> for num::nonzero::NonZero<i64>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i8>> for num::nonzero::NonZero<isize>>::from",
+    "time": 29,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i8>> for num::nonzero::NonZero<isize>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<i128>>::from",
+    "time": 40,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<i128>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<i32>>::from",
+    "time": 41,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<i32>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<i64>>::from",
+    "time": 41,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<i64>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<u128>>::from",
+    "time": 28,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<u128>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<u32>>::from",
+    "time": 40,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<u32>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<u64>>::from",
+    "time": 29,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<u64>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<usize>>::from",
+    "time": 42,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<usize>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u32>> for num::nonzero::NonZero<i128>>::from",
+    "time": 29,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u32>> for num::nonzero::NonZero<i128>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u32>> for num::nonzero::NonZero<i64>>::from",
+    "time": 35,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u32>> for num::nonzero::NonZero<i64>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u32>> for num::nonzero::NonZero<u128>>::from",
+    "time": 40,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u32>> for num::nonzero::NonZero<u128>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u32>> for num::nonzero::NonZero<u64>>::from",
+    "time": 41,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u32>> for num::nonzero::NonZero<u64>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u64>> for num::nonzero::NonZero<i128>>::from",
+    "time": 40,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u64>> for num::nonzero::NonZero<i128>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u64>> for num::nonzero::NonZero<u128>>::from",
+    "time": 41,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u64>> for num::nonzero::NonZero<u128>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<i128>>::from",
+    "time": 40,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<i128>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<i16>>::from",
+    "time": 39,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<i16>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<i32>>::from",
+    "time": 30,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<i32>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<i64>>::from",
+    "time": 40,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<i64>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<isize>>::from",
+    "time": 41,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<isize>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<u128>>::from",
+    "time": 38,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<u128>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<u16>>::from",
+    "time": 40,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<u16>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<u32>>::from",
+    "time": 41,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<u32>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<u64>>::from",
+    "time": 41,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<u64>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<usize>>::from",
+    "time": 27,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<usize>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    }
+  },
+  {
+    "harness": "core_arch::x86::__m128d::as_f64x2",
+    "time": 23,
+    "props": 0,
+    "func": {
+      "name": "core_arch::x86::__m128d::as_f64x2",
+      "safe": "safe",
+      "file": "core/src/../../stdarch/crates/core_arch/src/x86/mod.rs"
+    }
+  },
+  {
     "harness": "str::pattern::verify::check_small_slice_eq",
     "time": 130515,
     "props": 426,
@@ -17,6 +407,41 @@
       "name": "str::pattern::small_slice_eq_empty",
       "file": "core/src/str/pattern.rs"
     }
+  },
+  {
+    "harness": "unicode::unicode_data::conversions::to_lower",
+    "time": 11384,
+    "props": 204,
+    "func": {
+      "name": "unicode::unicode_data::conversions::to_lower",
+      "safe": "safe",
+      "file": "core/src/unicode/unicode_data.rs"
+    }
+  },
+  {
+    "harness": "unicode::unicode_data::conversions::to_upper",
+    "time": 19607,
+    "props": 204,
+    "func": {
+      "name": "unicode::unicode_data::conversions::to_upper",
+      "safe": "safe",
+      "file": "core/src/unicode/unicode_data.rs"
+    }
+  },
+  {
+    "file": "core/src/ptr/mod.rs",
+    "harness": "ptr::align_offset::{closure#0}::{closure#1}::{closure#1}::mod_inv",
+    "proof_kind": "Auto"
+  },
+  {
+    "file": "core/src/ptr/mod.rs",
+    "harness": "ptr::align_offset::{closure#2}::{closure#1}::mod_inv",
+    "proof_kind": "Auto"
+  },
+  {
+    "file": "core/src/ptr/mod.rs",
+    "harness": "ptr::align_offset::{closure#3}::{closure#0}::mod_inv",
+    "proof_kind": "Auto"
   },
   {
     "crate": "alloc",
@@ -43,6 +468,34 @@
       "file": "alloc/src/vec/mod.rs"
     },
     "hash": "123749228861437378379202950059517359640"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/alloc/layout.rs",
+    "harness": "alloc::layout::Layout::from_size_align",
+    "proof_kind": "Auto",
+    "time": 2854,
+    "props": 189,
+    "func": {
+      "name": "alloc::layout::Layout::from_size_align",
+      "safe": "safe",
+      "file": "core/src/alloc/layout.rs"
+    },
+    "hash": "1193380013036401699916295395184494393095"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/alloc/layout.rs",
+    "harness": "alloc::layout::Layout::from_size_align_unchecked",
+    "proof_kind": "Auto",
+    "time": 146,
+    "props": 143,
+    "func": {
+      "name": "alloc::layout::Layout::from_size_align_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/alloc/layout.rs"
+    },
+    "hash": "144673661539519055195865692774889120235"
   },
   {
     "crate": "core",
@@ -254,6 +707,48 @@
   },
   {
     "crate": "core",
+    "file": "core/src/ascii/ascii_char.rs",
+    "harness": "ascii::ascii_char::AsciiChar::from_u8",
+    "proof_kind": "Auto",
+    "time": 264,
+    "props": 88,
+    "func": {
+      "name": "ascii::ascii_char::AsciiChar::from_u8",
+      "safe": "safe abstraction",
+      "file": "core/src/ascii/ascii_char.rs"
+    },
+    "hash": "1263943423012824645318408613777809385475"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/ascii/ascii_char.rs",
+    "harness": "ascii::ascii_char::AsciiChar::from_u8_unchecked",
+    "proof_kind": "Auto",
+    "time": 92,
+    "props": 55,
+    "func": {
+      "name": "ascii::ascii_char::AsciiChar::from_u8_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/ascii/ascii_char.rs"
+    },
+    "hash": "15551977551413036531158252289522839939"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/char/convert.rs",
+    "harness": "char::convert::from_u32_unchecked",
+    "proof_kind": "Auto",
+    "time": 104,
+    "props": 78,
+    "func": {
+      "name": "char::convert::from_u32_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/char/convert.rs"
+    },
+    "hash": "97974469250681533633362941246048906040"
+  },
+  {
+    "crate": "core",
     "file": "core/src/char/methods.rs",
     "harness": "char::methods::verify::check_as_ascii_ascii_char",
     "proof_kind": "Contract",
@@ -277,6 +772,370 @@
       "file": "core/src/char/methods.rs"
     },
     "hash": "9876316453686709356538409161397548204"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/char/mod.rs",
+    "harness": "<char::CaseMappingIter as iter::traits::iterator::Iterator>::__iterator_get_unchecked",
+    "proof_kind": "Auto",
+    "hash": "949792096248023971711514731404863324947"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/char/mod.rs",
+    "harness": "<char::ToLowercase as iter::traits::iterator::Iterator>::__iterator_get_unchecked",
+    "proof_kind": "Auto",
+    "hash": "169461752388621164842822206058426452127"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/char/mod.rs",
+    "harness": "<char::ToUppercase as iter::traits::iterator::Iterator>::__iterator_get_unchecked",
+    "proof_kind": "Auto",
+    "hash": "158641604252574621329089955805779685"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/char/mod.rs",
+    "harness": "char::from_u32_unchecked",
+    "proof_kind": "Auto",
+    "hash": "169157450674248986457480567982993655557"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f128 as convert::num::FloatToInt<i128>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "5401272748005108225170015231844042415"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f128 as convert::num::FloatToInt<i16>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "8106237640557471073580597645246276389"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f128 as convert::num::FloatToInt<i32>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "492233870384668259417646718277520613131"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f128 as convert::num::FloatToInt<i64>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "85436354481777373298678937161968822808"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f128 as convert::num::FloatToInt<i8>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "67272556067146161882674407005627671670"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f128 as convert::num::FloatToInt<isize>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "145859362768437713122255974850783963947"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f128 as convert::num::FloatToInt<u128>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "649373533595446747616634326362916258113"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f128 as convert::num::FloatToInt<u16>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "68691467309782099588566504033335306113"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f128 as convert::num::FloatToInt<u32>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "142095150557611732085601685115493352309"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f128 as convert::num::FloatToInt<u64>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "4047051432235026783944635623816623002"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f128 as convert::num::FloatToInt<u8>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "8759826370357264640712844467855374887"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f128 as convert::num::FloatToInt<usize>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "987003126600730429312936607391211602970"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f16 as convert::num::FloatToInt<i128>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "16330166665644353718187662156311451106"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f16 as convert::num::FloatToInt<i16>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "46138308164662925421872131734313820414"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f16 as convert::num::FloatToInt<i32>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "922371780220321241915961426071415444094"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f16 as convert::num::FloatToInt<i64>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "30943267019948841189819240036255568574"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f16 as convert::num::FloatToInt<i8>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "11540754517172685714952890080583928020"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f16 as convert::num::FloatToInt<isize>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "1657647698240050611110600248014284790678"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f16 as convert::num::FloatToInt<u128>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "1584507318570215242217093049813184331868"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f16 as convert::num::FloatToInt<u16>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "605022253927063737518373324847650302490"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f16 as convert::num::FloatToInt<u32>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "113194812208013255087998247489448877960"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f16 as convert::num::FloatToInt<u64>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "1655810091731811610911551844610285981497"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f16 as convert::num::FloatToInt<u8>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "149684059415400330131224220641522900093"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f16 as convert::num::FloatToInt<usize>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "236602267344438528112569534307232442444"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f32 as convert::num::FloatToInt<i128>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "15080030101056987978349956702811452423"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f32 as convert::num::FloatToInt<i16>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "166802358580199115719878010896079132113"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f32 as convert::num::FloatToInt<i32>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "548163622760939740816876510990731455391"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f32 as convert::num::FloatToInt<i64>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "1084895836427789824717598742751658306639"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f32 as convert::num::FloatToInt<i8>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "34890024067839659768026381397380918139"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f32 as convert::num::FloatToInt<isize>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "167708659183710072111515128342092549088"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f32 as convert::num::FloatToInt<u128>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "433207813363144498614421505327452795449"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f32 as convert::num::FloatToInt<u16>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "1231920946327885171814833090428139865746"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f32 as convert::num::FloatToInt<u32>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "1214858424165111957313963051426664600400"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f32 as convert::num::FloatToInt<u64>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "94526677244680493164919154072316679657"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f32 as convert::num::FloatToInt<u8>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "93978316644746463992277797426831022622"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f32 as convert::num::FloatToInt<usize>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "440086421632680266711470680405402503739"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f64 as convert::num::FloatToInt<i128>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "147227011374976596589077049069025332704"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f64 as convert::num::FloatToInt<i16>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "79501386549668259428026726782306385145"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f64 as convert::num::FloatToInt<i32>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "53595793617303824321148836128309304338"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f64 as convert::num::FloatToInt<i64>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "5317042478714973718750854311883021473"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f64 as convert::num::FloatToInt<i8>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "119408407444599371510815039566879659785"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f64 as convert::num::FloatToInt<isize>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "59245911038507173017966681126328345067"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f64 as convert::num::FloatToInt<u128>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "1334842237500446619917057637565054429902"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f64 as convert::num::FloatToInt<u16>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "1483028211588406849813308090296863861059"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f64 as convert::num::FloatToInt<u32>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "117969322134786505349670780818056937488"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f64 as convert::num::FloatToInt<u64>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "488821708153327801840929483641102328"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f64 as convert::num::FloatToInt<u8>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "890139287041388898414349884129634908933"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "<f64 as convert::num::FloatToInt<usize>>::to_int_unchecked",
+    "proof_kind": "Auto",
+    "hash": "1231465154010309634711140755662905314330"
   },
   {
     "crate": "core",
@@ -2954,6 +3813,202 @@
       "file": "core/src/ffi/c_str.rs"
     },
     "hash": "864911414016978777811519501145437056877"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/hint.rs",
+    "harness": "hint::assert_unchecked",
+    "proof_kind": "Auto",
+    "hash": "6962362284417680556415378392413733050"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/hint.rs",
+    "harness": "hint::unreachable_unchecked",
+    "proof_kind": "Auto",
+    "hash": "1415106497522421883676194742336801697"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/intrinsics/fallback.rs",
+    "harness": "<bool as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+    "proof_kind": "Auto",
+    "time": 54,
+    "props": 62,
+    "func": {
+      "name": "<bool as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+      "safe": "unsafe",
+      "file": "core/src/intrinsics/fallback.rs"
+    },
+    "hash": "250800211300164603812517143290931935490"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/intrinsics/fallback.rs",
+    "harness": "<i128 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+    "proof_kind": "Auto",
+    "time": 55,
+    "props": 62,
+    "func": {
+      "name": "<i128 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+      "safe": "unsafe",
+      "file": "core/src/intrinsics/fallback.rs"
+    },
+    "hash": "80040651926103909678271999392285372990"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/intrinsics/fallback.rs",
+    "harness": "<i16 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+    "proof_kind": "Auto",
+    "time": 53,
+    "props": 62,
+    "func": {
+      "name": "<i16 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+      "safe": "unsafe",
+      "file": "core/src/intrinsics/fallback.rs"
+    },
+    "hash": "6989983334729211908927339249900663943"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/intrinsics/fallback.rs",
+    "harness": "<i32 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+    "proof_kind": "Auto",
+    "time": 82,
+    "props": 62,
+    "func": {
+      "name": "<i32 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+      "safe": "unsafe",
+      "file": "core/src/intrinsics/fallback.rs"
+    },
+    "hash": "1063987999954300775215342309582526319529"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/intrinsics/fallback.rs",
+    "harness": "<i64 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+    "proof_kind": "Auto",
+    "time": 73,
+    "props": 62,
+    "func": {
+      "name": "<i64 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+      "safe": "unsafe",
+      "file": "core/src/intrinsics/fallback.rs"
+    },
+    "hash": "136616187162751180573644041167231130554"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/intrinsics/fallback.rs",
+    "harness": "<i8 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+    "proof_kind": "Auto",
+    "time": 54,
+    "props": 62,
+    "func": {
+      "name": "<i8 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+      "safe": "unsafe",
+      "file": "core/src/intrinsics/fallback.rs"
+    },
+    "hash": "60458008535657027788705666854141614114"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/intrinsics/fallback.rs",
+    "harness": "<isize as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+    "proof_kind": "Auto",
+    "time": 54,
+    "props": 62,
+    "func": {
+      "name": "<isize as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+      "safe": "unsafe",
+      "file": "core/src/intrinsics/fallback.rs"
+    },
+    "hash": "62613819432045952176759186974463354075"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/intrinsics/fallback.rs",
+    "harness": "<u128 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+    "proof_kind": "Auto",
+    "time": 55,
+    "props": 62,
+    "func": {
+      "name": "<u128 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+      "safe": "unsafe",
+      "file": "core/src/intrinsics/fallback.rs"
+    },
+    "hash": "41389422597421656741395145042566161444"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/intrinsics/fallback.rs",
+    "harness": "<u16 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+    "proof_kind": "Auto",
+    "time": 78,
+    "props": 62,
+    "func": {
+      "name": "<u16 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+      "safe": "unsafe",
+      "file": "core/src/intrinsics/fallback.rs"
+    },
+    "hash": "1806494181001350783915205167250141868281"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/intrinsics/fallback.rs",
+    "harness": "<u32 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+    "proof_kind": "Auto",
+    "time": 53,
+    "props": 62,
+    "func": {
+      "name": "<u32 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+      "safe": "unsafe",
+      "file": "core/src/intrinsics/fallback.rs"
+    },
+    "hash": "14821326756404741505611264372285877509"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/intrinsics/fallback.rs",
+    "harness": "<u64 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+    "proof_kind": "Auto",
+    "time": 71,
+    "props": 62,
+    "func": {
+      "name": "<u64 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+      "safe": "unsafe",
+      "file": "core/src/intrinsics/fallback.rs"
+    },
+    "hash": "1142238300830356026814631151773818865873"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/intrinsics/fallback.rs",
+    "harness": "<u8 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+    "proof_kind": "Auto",
+    "time": 82,
+    "props": 62,
+    "func": {
+      "name": "<u8 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+      "safe": "unsafe",
+      "file": "core/src/intrinsics/fallback.rs"
+    },
+    "hash": "732735713645133618817345018103717632801"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/intrinsics/fallback.rs",
+    "harness": "<usize as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+    "proof_kind": "Auto",
+    "time": 54,
+    "props": 62,
+    "func": {
+      "name": "<usize as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
+      "safe": "unsafe",
+      "file": "core/src/intrinsics/fallback.rs"
+    },
+    "hash": "130330123525716393101034958525209554520"
   },
   {
     "crate": "core",
@@ -7057,6 +8112,454 @@
   },
   {
     "crate": "core",
+    "file": "core/src/iter/range.rs",
+    "harness": "<ascii::ascii_char::AsciiChar as iter::range::Step>::backward_unchecked",
+    "proof_kind": "Auto",
+    "time": 514,
+    "props": 82,
+    "func": {
+      "name": "<ascii::ascii_char::AsciiChar as iter::range::Step>::backward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    },
+    "hash": "115361175269263563214856908257903369446"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/iter/range.rs",
+    "harness": "<ascii::ascii_char::AsciiChar as iter::range::Step>::forward_unchecked",
+    "proof_kind": "Auto",
+    "time": 714,
+    "props": 82,
+    "func": {
+      "name": "<ascii::ascii_char::AsciiChar as iter::range::Step>::forward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    },
+    "hash": "109139637908755460326884182542280911770"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/iter/range.rs",
+    "harness": "<char as iter::range::Step>::backward_unchecked",
+    "proof_kind": "Auto",
+    "time": 119,
+    "props": 147,
+    "func": {
+      "name": "<char as iter::range::Step>::backward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    },
+    "hash": "1265179122472707272610246310318670839119"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/iter/range.rs",
+    "harness": "<char as iter::range::Step>::forward_unchecked",
+    "proof_kind": "Auto",
+    "time": 123,
+    "props": 147,
+    "func": {
+      "name": "<char as iter::range::Step>::forward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    },
+    "hash": "557055529845642736313065703630870349165"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/iter/range.rs",
+    "harness": "<i128 as iter::range::Step>::backward_unchecked",
+    "proof_kind": "Auto",
+    "time": 90,
+    "props": 68,
+    "func": {
+      "name": "<i128 as iter::range::Step>::backward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    },
+    "hash": "1308827536913111295818058482037146332557"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/iter/range.rs",
+    "harness": "<i128 as iter::range::Step>::forward_unchecked",
+    "proof_kind": "Auto",
+    "time": 79,
+    "props": 68,
+    "func": {
+      "name": "<i128 as iter::range::Step>::forward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    },
+    "hash": "95016260826018548966044271311473131715"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/iter/range.rs",
+    "harness": "<i16 as iter::range::Step>::backward_unchecked",
+    "proof_kind": "Auto",
+    "time": 73,
+    "props": 68,
+    "func": {
+      "name": "<i16 as iter::range::Step>::backward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    },
+    "hash": "1759810499816900758917023264662274670998"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/iter/range.rs",
+    "harness": "<i16 as iter::range::Step>::forward_unchecked",
+    "proof_kind": "Auto",
+    "time": 114,
+    "props": 68,
+    "func": {
+      "name": "<i16 as iter::range::Step>::forward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    },
+    "hash": "57837018818993944057738158852531290792"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/iter/range.rs",
+    "harness": "<i32 as iter::range::Step>::backward_unchecked",
+    "proof_kind": "Auto",
+    "time": 103,
+    "props": 68,
+    "func": {
+      "name": "<i32 as iter::range::Step>::backward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    },
+    "hash": "17863821184109163546794658475051781047"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/iter/range.rs",
+    "harness": "<i32 as iter::range::Step>::forward_unchecked",
+    "proof_kind": "Auto",
+    "time": 109,
+    "props": 68,
+    "func": {
+      "name": "<i32 as iter::range::Step>::forward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    },
+    "hash": "90463445971792878398614943728077777342"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/iter/range.rs",
+    "harness": "<i64 as iter::range::Step>::backward_unchecked",
+    "proof_kind": "Auto",
+    "time": 79,
+    "props": 68,
+    "func": {
+      "name": "<i64 as iter::range::Step>::backward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    },
+    "hash": "176286820448348818671472820415778077963"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/iter/range.rs",
+    "harness": "<i64 as iter::range::Step>::forward_unchecked",
+    "proof_kind": "Auto",
+    "time": 73,
+    "props": 68,
+    "func": {
+      "name": "<i64 as iter::range::Step>::forward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    },
+    "hash": "68997004867008556017717235429706063352"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/iter/range.rs",
+    "harness": "<i8 as iter::range::Step>::backward_unchecked",
+    "proof_kind": "Auto",
+    "time": 69,
+    "props": 68,
+    "func": {
+      "name": "<i8 as iter::range::Step>::backward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    },
+    "hash": "1091926353400227001213727845021289133177"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/iter/range.rs",
+    "harness": "<i8 as iter::range::Step>::forward_unchecked",
+    "proof_kind": "Auto",
+    "time": 105,
+    "props": 68,
+    "func": {
+      "name": "<i8 as iter::range::Step>::forward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    },
+    "hash": "474081880304844378314272403533923458040"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/iter/range.rs",
+    "harness": "<isize as iter::range::Step>::backward_unchecked",
+    "proof_kind": "Auto",
+    "time": 122,
+    "props": 68,
+    "func": {
+      "name": "<isize as iter::range::Step>::backward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    },
+    "hash": "233550152965384494713682276287834491780"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/iter/range.rs",
+    "harness": "<isize as iter::range::Step>::forward_unchecked",
+    "proof_kind": "Auto",
+    "time": 113,
+    "props": 68,
+    "func": {
+      "name": "<isize as iter::range::Step>::forward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    },
+    "hash": "703292125058064800113741874364144024758"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/iter/range.rs",
+    "harness": "<net::ip_addr::Ipv4Addr as iter::range::Step>::backward_unchecked",
+    "proof_kind": "Auto",
+    "time": 139,
+    "props": 72,
+    "func": {
+      "name": "<net::ip_addr::Ipv4Addr as iter::range::Step>::backward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    },
+    "hash": "49187579985920506439025799755368679125"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/iter/range.rs",
+    "harness": "<net::ip_addr::Ipv4Addr as iter::range::Step>::forward_unchecked",
+    "proof_kind": "Auto",
+    "time": 140,
+    "props": 72,
+    "func": {
+      "name": "<net::ip_addr::Ipv4Addr as iter::range::Step>::forward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    },
+    "hash": "941678835166173724915400608673219466051"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/iter/range.rs",
+    "harness": "<net::ip_addr::Ipv6Addr as iter::range::Step>::backward_unchecked",
+    "proof_kind": "Auto",
+    "time": 178,
+    "props": 72,
+    "func": {
+      "name": "<net::ip_addr::Ipv6Addr as iter::range::Step>::backward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    },
+    "hash": "11089017297407150016510725901121092452"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/iter/range.rs",
+    "harness": "<net::ip_addr::Ipv6Addr as iter::range::Step>::forward_unchecked",
+    "proof_kind": "Auto",
+    "time": 109,
+    "props": 72,
+    "func": {
+      "name": "<net::ip_addr::Ipv6Addr as iter::range::Step>::forward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    },
+    "hash": "123034551765982204453684762909376926288"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/iter/range.rs",
+    "harness": "<u128 as iter::range::Step>::backward_unchecked",
+    "proof_kind": "Auto",
+    "time": 68,
+    "props": 61,
+    "func": {
+      "name": "<u128 as iter::range::Step>::backward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    },
+    "hash": "117404571589775436933618839075873778556"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/iter/range.rs",
+    "harness": "<u128 as iter::range::Step>::forward_unchecked",
+    "proof_kind": "Auto",
+    "time": 69,
+    "props": 68,
+    "func": {
+      "name": "<u128 as iter::range::Step>::forward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    },
+    "hash": "354632026535880549015036983353725549275"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/iter/range.rs",
+    "harness": "<u16 as iter::range::Step>::backward_unchecked",
+    "proof_kind": "Auto",
+    "time": 101,
+    "props": 61,
+    "func": {
+      "name": "<u16 as iter::range::Step>::backward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    },
+    "hash": "130826625265018240842585934762694200656"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/iter/range.rs",
+    "harness": "<u16 as iter::range::Step>::forward_unchecked",
+    "proof_kind": "Auto",
+    "time": 109,
+    "props": 68,
+    "func": {
+      "name": "<u16 as iter::range::Step>::forward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    },
+    "hash": "170263472120930945276863179915420040056"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/iter/range.rs",
+    "harness": "<u32 as iter::range::Step>::backward_unchecked",
+    "proof_kind": "Auto",
+    "time": 103,
+    "props": 61,
+    "func": {
+      "name": "<u32 as iter::range::Step>::backward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    },
+    "hash": "187707461451049832517498205394896812182"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/iter/range.rs",
+    "harness": "<u32 as iter::range::Step>::forward_unchecked",
+    "proof_kind": "Auto",
+    "time": 110,
+    "props": 68,
+    "func": {
+      "name": "<u32 as iter::range::Step>::forward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    },
+    "hash": "18239385951464490937490396355773401419"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/iter/range.rs",
+    "harness": "<u64 as iter::range::Step>::backward_unchecked",
+    "proof_kind": "Auto",
+    "time": 105,
+    "props": 61,
+    "func": {
+      "name": "<u64 as iter::range::Step>::backward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    },
+    "hash": "256500575202118636616798106652967259398"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/iter/range.rs",
+    "harness": "<u64 as iter::range::Step>::forward_unchecked",
+    "proof_kind": "Auto",
+    "time": 72,
+    "props": 68,
+    "func": {
+      "name": "<u64 as iter::range::Step>::forward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    },
+    "hash": "33143189024990287768726638175856399130"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/iter/range.rs",
+    "harness": "<u8 as iter::range::Step>::backward_unchecked",
+    "proof_kind": "Auto",
+    "time": 64,
+    "props": 61,
+    "func": {
+      "name": "<u8 as iter::range::Step>::backward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    },
+    "hash": "764810948457541511713207497644013999971"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/iter/range.rs",
+    "harness": "<u8 as iter::range::Step>::forward_unchecked",
+    "proof_kind": "Auto",
+    "time": 104,
+    "props": 68,
+    "func": {
+      "name": "<u8 as iter::range::Step>::forward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    },
+    "hash": "66558832420252384767352894655095642857"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/iter/range.rs",
+    "harness": "<usize as iter::range::Step>::backward_unchecked",
+    "proof_kind": "Auto",
+    "time": 63,
+    "props": 61,
+    "func": {
+      "name": "<usize as iter::range::Step>::backward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    },
+    "hash": "174583527470119019351759393122367854049"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/iter/range.rs",
+    "harness": "<usize as iter::range::Step>::forward_unchecked",
+    "proof_kind": "Auto",
+    "time": 70,
+    "props": 68,
+    "func": {
+      "name": "<usize as iter::range::Step>::forward_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/iter/range.rs"
+    },
+    "hash": "61537032802646890302053131132263133848"
+  },
+  {
+    "crate": "core",
     "file": "core/src/mem/mod.rs",
     "harness": "mem::verify::check_swap_adt_no_drop",
     "proof_kind": "Contract",
@@ -7134,6 +8637,601 @@
       "file": "core/src/num/dec2flt/decimal_seq.rs"
     },
     "hash": "17597343262274826193522836740124476204"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/dec2flt/decimal_seq.rs",
+    "harness": "num::dec2flt::decimal_seq::number_of_digits_decimal_left_shift",
+    "proof_kind": "Auto",
+    "hash": "1221885333266410625418266723469411290891"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/int_macros.rs",
+    "harness": "num::<impl i128>::unchecked_add",
+    "proof_kind": "Auto",
+    "time": 99,
+    "props": 70,
+    "func": {
+      "name": "num::<impl i128>::unchecked_add",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "65157345591482832713269241872997089308"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/int_macros.rs",
+    "harness": "num::<impl i128>::unchecked_neg",
+    "proof_kind": "Auto",
+    "time": 78,
+    "props": 73,
+    "func": {
+      "name": "num::<impl i128>::unchecked_neg",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "55896349205668789804334167249173464015"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/int_macros.rs",
+    "harness": "num::<impl i128>::unchecked_shl",
+    "proof_kind": "Auto",
+    "time": 87,
+    "props": 58,
+    "func": {
+      "name": "num::<impl i128>::unchecked_shl",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "55278440516736372767312854892729018952"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/int_macros.rs",
+    "harness": "num::<impl i128>::unchecked_shr",
+    "proof_kind": "Auto",
+    "time": 90,
+    "props": 58,
+    "func": {
+      "name": "num::<impl i128>::unchecked_shr",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "1776943983846999345417241592300054106617"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/int_macros.rs",
+    "harness": "num::<impl i128>::unchecked_sub",
+    "proof_kind": "Auto",
+    "time": 162,
+    "props": 70,
+    "func": {
+      "name": "num::<impl i128>::unchecked_sub",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "11819746436875559037259058328413372243"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/int_macros.rs",
+    "harness": "num::<impl i128>::wrapping_shl",
+    "proof_kind": "Auto",
+    "time": 720,
+    "props": 84,
+    "func": {
+      "name": "num::<impl i128>::wrapping_shl",
+      "safe": "safe abstraction",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "113020063335006077893288349200429928576"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/int_macros.rs",
+    "harness": "num::<impl i128>::wrapping_shr",
+    "proof_kind": "Auto",
+    "time": 844,
+    "props": 84,
+    "func": {
+      "name": "num::<impl i128>::wrapping_shr",
+      "safe": "safe abstraction",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "1511444917092536035313200988884415303984"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/int_macros.rs",
+    "harness": "num::<impl i16>::unchecked_add",
+    "proof_kind": "Auto",
+    "time": 66,
+    "props": 70,
+    "func": {
+      "name": "num::<impl i16>::unchecked_add",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "6075160848709568986211520763313809958"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/int_macros.rs",
+    "harness": "num::<impl i16>::unchecked_neg",
+    "proof_kind": "Auto",
+    "time": 106,
+    "props": 73,
+    "func": {
+      "name": "num::<impl i16>::unchecked_neg",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "2543889065944748962927695197786951451"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/int_macros.rs",
+    "harness": "num::<impl i16>::unchecked_shl",
+    "proof_kind": "Auto",
+    "time": 67,
+    "props": 58,
+    "func": {
+      "name": "num::<impl i16>::unchecked_shl",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "34824380467228971085111610879517887253"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/int_macros.rs",
+    "harness": "num::<impl i16>::unchecked_shr",
+    "proof_kind": "Auto",
+    "time": 85,
+    "props": 58,
+    "func": {
+      "name": "num::<impl i16>::unchecked_shr",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "567415992430960765518962788746630930"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/int_macros.rs",
+    "harness": "num::<impl i16>::unchecked_sub",
+    "proof_kind": "Auto",
+    "time": 93,
+    "props": 70,
+    "func": {
+      "name": "num::<impl i16>::unchecked_sub",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "33314434247354018675028025711413273806"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/int_macros.rs",
+    "harness": "num::<impl i16>::wrapping_shl",
+    "proof_kind": "Auto",
+    "time": 142,
+    "props": 84,
+    "func": {
+      "name": "num::<impl i16>::wrapping_shl",
+      "safe": "safe abstraction",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "1014100411119345593712685689988358016910"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/int_macros.rs",
+    "harness": "num::<impl i16>::wrapping_shr",
+    "proof_kind": "Auto",
+    "time": 133,
+    "props": 84,
+    "func": {
+      "name": "num::<impl i16>::wrapping_shr",
+      "safe": "safe abstraction",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "1828872750385749623510296281442303944758"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/int_macros.rs",
+    "harness": "num::<impl i32>::unchecked_add",
+    "proof_kind": "Auto",
+    "time": 91,
+    "props": 70,
+    "func": {
+      "name": "num::<impl i32>::unchecked_add",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "1716488178134335331412149513624199147527"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/int_macros.rs",
+    "harness": "num::<impl i32>::unchecked_neg",
+    "proof_kind": "Auto",
+    "time": 104,
+    "props": 73,
+    "func": {
+      "name": "num::<impl i32>::unchecked_neg",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "195345537923866765915698905969066569482"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/int_macros.rs",
+    "harness": "num::<impl i32>::unchecked_shl",
+    "proof_kind": "Auto",
+    "time": 88,
+    "props": 58,
+    "func": {
+      "name": "num::<impl i32>::unchecked_shl",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "309225044988616683711155020127224174799"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/int_macros.rs",
+    "harness": "num::<impl i32>::unchecked_shr",
+    "proof_kind": "Auto",
+    "time": 87,
+    "props": 58,
+    "func": {
+      "name": "num::<impl i32>::unchecked_shr",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "120547312960899125728619459067853951567"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/int_macros.rs",
+    "harness": "num::<impl i32>::unchecked_sub",
+    "proof_kind": "Auto",
+    "time": 69,
+    "props": 70,
+    "func": {
+      "name": "num::<impl i32>::unchecked_sub",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "89204511685073125549858712728522352243"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/int_macros.rs",
+    "harness": "num::<impl i32>::wrapping_shl",
+    "proof_kind": "Auto",
+    "time": 102,
+    "props": 84,
+    "func": {
+      "name": "num::<impl i32>::wrapping_shl",
+      "safe": "safe abstraction",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "127928177452271369706670644009391015253"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/int_macros.rs",
+    "harness": "num::<impl i32>::wrapping_shr",
+    "proof_kind": "Auto",
+    "time": 101,
+    "props": 84,
+    "func": {
+      "name": "num::<impl i32>::wrapping_shr",
+      "safe": "safe abstraction",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "139123032504472380795325928126313232751"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/int_macros.rs",
+    "harness": "num::<impl i64>::unchecked_add",
+    "proof_kind": "Auto",
+    "time": 91,
+    "props": 70,
+    "func": {
+      "name": "num::<impl i64>::unchecked_add",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "1444778223937347952012490541777105135276"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/int_macros.rs",
+    "harness": "num::<impl i64>::unchecked_neg",
+    "proof_kind": "Auto",
+    "time": 102,
+    "props": 73,
+    "func": {
+      "name": "num::<impl i64>::unchecked_neg",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "54400646930767775762010208786383830546"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/int_macros.rs",
+    "harness": "num::<impl i64>::unchecked_shl",
+    "proof_kind": "Auto",
+    "time": 58,
+    "props": 58,
+    "func": {
+      "name": "num::<impl i64>::unchecked_shl",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "87012219747144066742103552929814615839"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/int_macros.rs",
+    "harness": "num::<impl i64>::unchecked_shr",
+    "proof_kind": "Auto",
+    "time": 89,
+    "props": 58,
+    "func": {
+      "name": "num::<impl i64>::unchecked_shr",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "28056106842452742041706137764596747718"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/int_macros.rs",
+    "harness": "num::<impl i64>::unchecked_sub",
+    "proof_kind": "Auto",
+    "time": 93,
+    "props": 70,
+    "func": {
+      "name": "num::<impl i64>::unchecked_sub",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "73703891702741674110780488903431585676"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/int_macros.rs",
+    "harness": "num::<impl i64>::wrapping_shl",
+    "proof_kind": "Auto",
+    "time": 265,
+    "props": 84,
+    "func": {
+      "name": "num::<impl i64>::wrapping_shl",
+      "safe": "safe abstraction",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "1593637365197260411614300666718936317991"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/int_macros.rs",
+    "harness": "num::<impl i64>::wrapping_shr",
+    "proof_kind": "Auto",
+    "time": 273,
+    "props": 84,
+    "func": {
+      "name": "num::<impl i64>::wrapping_shr",
+      "safe": "safe abstraction",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "1639721095685669627316965783591522963178"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/int_macros.rs",
+    "harness": "num::<impl i8>::unchecked_add",
+    "proof_kind": "Auto",
+    "time": 93,
+    "props": 70,
+    "func": {
+      "name": "num::<impl i8>::unchecked_add",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "41459015075024369617532737517830694057"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/int_macros.rs",
+    "harness": "num::<impl i8>::unchecked_neg",
+    "proof_kind": "Auto",
+    "time": 113,
+    "props": 73,
+    "func": {
+      "name": "num::<impl i8>::unchecked_neg",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "149573094103625928466994130595657730706"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/int_macros.rs",
+    "harness": "num::<impl i8>::unchecked_shl",
+    "proof_kind": "Auto",
+    "time": 92,
+    "props": 58,
+    "func": {
+      "name": "num::<impl i8>::unchecked_shl",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "143966678052227583529081433828961462550"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/int_macros.rs",
+    "harness": "num::<impl i8>::unchecked_shr",
+    "proof_kind": "Auto",
+    "time": 68,
+    "props": 58,
+    "func": {
+      "name": "num::<impl i8>::unchecked_shr",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "55565874155486463636716175398364160379"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/int_macros.rs",
+    "harness": "num::<impl i8>::unchecked_sub",
+    "proof_kind": "Auto",
+    "time": 71,
+    "props": 70,
+    "func": {
+      "name": "num::<impl i8>::unchecked_sub",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "143561716153360300858663795361684314271"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/int_macros.rs",
+    "harness": "num::<impl i8>::wrapping_shl",
+    "proof_kind": "Auto",
+    "time": 128,
+    "props": 84,
+    "func": {
+      "name": "num::<impl i8>::wrapping_shl",
+      "safe": "safe abstraction",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "1785053685964091224211659645355532075824"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/int_macros.rs",
+    "harness": "num::<impl i8>::wrapping_shr",
+    "proof_kind": "Auto",
+    "time": 96,
+    "props": 84,
+    "func": {
+      "name": "num::<impl i8>::wrapping_shr",
+      "safe": "safe abstraction",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "178930526543785177183469737533475930470"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/int_macros.rs",
+    "harness": "num::<impl isize>::unchecked_add",
+    "proof_kind": "Auto",
+    "time": 90,
+    "props": 70,
+    "func": {
+      "name": "num::<impl isize>::unchecked_add",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "1350713811998717550513711315200786765695"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/int_macros.rs",
+    "harness": "num::<impl isize>::unchecked_neg",
+    "proof_kind": "Auto",
+    "time": 103,
+    "props": 73,
+    "func": {
+      "name": "num::<impl isize>::unchecked_neg",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "101445464642493846677061784532715524123"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/int_macros.rs",
+    "harness": "num::<impl isize>::unchecked_shl",
+    "proof_kind": "Auto",
+    "time": 90,
+    "props": 58,
+    "func": {
+      "name": "num::<impl isize>::unchecked_shl",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "1344057091101120024214462061354265885105"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/int_macros.rs",
+    "harness": "num::<impl isize>::unchecked_shr",
+    "proof_kind": "Auto",
+    "time": 85,
+    "props": 58,
+    "func": {
+      "name": "num::<impl isize>::unchecked_shr",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "151039533468901907067873910910278321855"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/int_macros.rs",
+    "harness": "num::<impl isize>::unchecked_sub",
+    "proof_kind": "Auto",
+    "time": 145,
+    "props": 70,
+    "func": {
+      "name": "num::<impl isize>::unchecked_sub",
+      "safe": "unsafe",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "242154577893116643916663615895023882518"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/int_macros.rs",
+    "harness": "num::<impl isize>::wrapping_shl",
+    "proof_kind": "Auto",
+    "time": 219,
+    "props": 84,
+    "func": {
+      "name": "num::<impl isize>::wrapping_shl",
+      "safe": "safe abstraction",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "840076482748140882010294715766500361858"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/int_macros.rs",
+    "harness": "num::<impl isize>::wrapping_shr",
+    "proof_kind": "Auto",
+    "time": 317,
+    "props": 84,
+    "func": {
+      "name": "num::<impl isize>::wrapping_shr",
+      "safe": "safe abstraction",
+      "file": "core/src/num/int_macros.rs"
+    },
+    "hash": "66217053097956154532492629080071277071"
   },
   {
     "crate": "core",
@@ -8544,6 +10642,510 @@
       "file": "core/src/num/mod.rs"
     },
     "hash": "141690836579266773828126485218618117473"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/nonzero.rs",
+    "harness": "num::nonzero::NonZero::<i128>::count_ones",
+    "proof_kind": "Auto",
+    "time": 133,
+    "props": 59,
+    "func": {
+      "name": "num::nonzero::NonZero::<i128>::count_ones",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    },
+    "hash": "76843279974707365525303745821298609033"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/nonzero.rs",
+    "harness": "num::nonzero::NonZero::<i128>::rotate_left",
+    "proof_kind": "Auto",
+    "time": 2169,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<i128>::rotate_left",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    },
+    "hash": "5158769035594805820931533391089477156"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/nonzero.rs",
+    "harness": "num::nonzero::NonZero::<i128>::rotate_right",
+    "proof_kind": "Auto",
+    "time": 2727,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<i128>::rotate_right",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    },
+    "hash": "149275891825509949657330711657750762432"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/nonzero.rs",
+    "harness": "num::nonzero::NonZero::<i16>::count_ones",
+    "proof_kind": "Auto",
+    "time": 115,
+    "props": 59,
+    "func": {
+      "name": "num::nonzero::NonZero::<i16>::count_ones",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    },
+    "hash": "470567389088620738912093976468292292945"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/nonzero.rs",
+    "harness": "num::nonzero::NonZero::<i16>::rotate_left",
+    "proof_kind": "Auto",
+    "time": 124,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<i16>::rotate_left",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    },
+    "hash": "1072737150951978845515780254182673889712"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/nonzero.rs",
+    "harness": "num::nonzero::NonZero::<i16>::rotate_right",
+    "proof_kind": "Auto",
+    "time": 113,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<i16>::rotate_right",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    },
+    "hash": "1553123067294875711816839027135469200034"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/nonzero.rs",
+    "harness": "num::nonzero::NonZero::<i32>::count_ones",
+    "proof_kind": "Auto",
+    "time": 89,
+    "props": 59,
+    "func": {
+      "name": "num::nonzero::NonZero::<i32>::count_ones",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    },
+    "hash": "109805743578187520302125010163317677412"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/nonzero.rs",
+    "harness": "num::nonzero::NonZero::<i32>::rotate_left",
+    "proof_kind": "Auto",
+    "time": 202,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<i32>::rotate_left",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    },
+    "hash": "39804906527341348531740870260088830979"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/nonzero.rs",
+    "harness": "num::nonzero::NonZero::<i32>::rotate_right",
+    "proof_kind": "Auto",
+    "time": 234,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<i32>::rotate_right",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    },
+    "hash": "152318587802073106085451452189889555781"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/nonzero.rs",
+    "harness": "num::nonzero::NonZero::<i64>::count_ones",
+    "proof_kind": "Auto",
+    "time": 90,
+    "props": 59,
+    "func": {
+      "name": "num::nonzero::NonZero::<i64>::count_ones",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    },
+    "hash": "2859147747489694411782122534455702169"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/nonzero.rs",
+    "harness": "num::nonzero::NonZero::<i64>::rotate_left",
+    "proof_kind": "Auto",
+    "time": 514,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<i64>::rotate_left",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    },
+    "hash": "956426774393335140614338877828593838593"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/nonzero.rs",
+    "harness": "num::nonzero::NonZero::<i64>::rotate_right",
+    "proof_kind": "Auto",
+    "time": 807,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<i64>::rotate_right",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    },
+    "hash": "1740165083243012024313858560607798707371"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/nonzero.rs",
+    "harness": "num::nonzero::NonZero::<i8>::count_ones",
+    "proof_kind": "Auto",
+    "time": 82,
+    "props": 59,
+    "func": {
+      "name": "num::nonzero::NonZero::<i8>::count_ones",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    },
+    "hash": "1508312457504507334917942643972338969002"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/nonzero.rs",
+    "harness": "num::nonzero::NonZero::<i8>::rotate_left",
+    "proof_kind": "Auto",
+    "time": 161,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<i8>::rotate_left",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    },
+    "hash": "5904641252036933669924052130947246675"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/nonzero.rs",
+    "harness": "num::nonzero::NonZero::<i8>::rotate_right",
+    "proof_kind": "Auto",
+    "time": 140,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<i8>::rotate_right",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    },
+    "hash": "1183472259782495056712141934123279128595"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/nonzero.rs",
+    "harness": "num::nonzero::NonZero::<isize>::count_ones",
+    "proof_kind": "Auto",
+    "time": 126,
+    "props": 59,
+    "func": {
+      "name": "num::nonzero::NonZero::<isize>::count_ones",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    },
+    "hash": "6771512003150755210739011894274937808"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/nonzero.rs",
+    "harness": "num::nonzero::NonZero::<isize>::rotate_left",
+    "proof_kind": "Auto",
+    "time": 527,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<isize>::rotate_left",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    },
+    "hash": "66912809756759456639754899950570882981"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/nonzero.rs",
+    "harness": "num::nonzero::NonZero::<isize>::rotate_right",
+    "proof_kind": "Auto",
+    "time": 870,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<isize>::rotate_right",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    },
+    "hash": "581980736653807585917739594332672119822"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/nonzero.rs",
+    "harness": "num::nonzero::NonZero::<u128>::count_ones",
+    "proof_kind": "Auto",
+    "time": 133,
+    "props": 59,
+    "func": {
+      "name": "num::nonzero::NonZero::<u128>::count_ones",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    },
+    "hash": "169212672726146092273892908369815161389"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/nonzero.rs",
+    "harness": "num::nonzero::NonZero::<u128>::rotate_left",
+    "proof_kind": "Auto",
+    "time": 2556,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<u128>::rotate_left",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    },
+    "hash": "1370019499497032224912359031238660321645"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/nonzero.rs",
+    "harness": "num::nonzero::NonZero::<u128>::rotate_right",
+    "proof_kind": "Auto",
+    "time": 2780,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<u128>::rotate_right",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    },
+    "hash": "539499524121210181415576151016721063419"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/nonzero.rs",
+    "harness": "num::nonzero::NonZero::<u16>::count_ones",
+    "proof_kind": "Auto",
+    "time": 123,
+    "props": 59,
+    "func": {
+      "name": "num::nonzero::NonZero::<u16>::count_ones",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    },
+    "hash": "87509631546456422532675519980325554375"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/nonzero.rs",
+    "harness": "num::nonzero::NonZero::<u16>::rotate_left",
+    "proof_kind": "Auto",
+    "time": 110,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<u16>::rotate_left",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    },
+    "hash": "173625776565259361912788027262656401797"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/nonzero.rs",
+    "harness": "num::nonzero::NonZero::<u16>::rotate_right",
+    "proof_kind": "Auto",
+    "time": 158,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<u16>::rotate_right",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    },
+    "hash": "962558185158637324714703446746293809639"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/nonzero.rs",
+    "harness": "num::nonzero::NonZero::<u32>::count_ones",
+    "proof_kind": "Auto",
+    "time": 116,
+    "props": 52,
+    "func": {
+      "name": "num::nonzero::NonZero::<u32>::count_ones",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    },
+    "hash": "83819784576125417848970143689336891231"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/nonzero.rs",
+    "harness": "num::nonzero::NonZero::<u32>::rotate_left",
+    "proof_kind": "Auto",
+    "time": 198,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<u32>::rotate_left",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    },
+    "hash": "820948646973988224211043062356979914730"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/nonzero.rs",
+    "harness": "num::nonzero::NonZero::<u32>::rotate_right",
+    "proof_kind": "Auto",
+    "time": 166,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<u32>::rotate_right",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    },
+    "hash": "156299032057371922391823606644614908338"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/nonzero.rs",
+    "harness": "num::nonzero::NonZero::<u64>::count_ones",
+    "proof_kind": "Auto",
+    "time": 126,
+    "props": 59,
+    "func": {
+      "name": "num::nonzero::NonZero::<u64>::count_ones",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    },
+    "hash": "1041752668510322190665106823963897575"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/nonzero.rs",
+    "harness": "num::nonzero::NonZero::<u64>::rotate_left",
+    "proof_kind": "Auto",
+    "time": 565,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<u64>::rotate_left",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    },
+    "hash": "46862217649203762885883563588329344545"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/nonzero.rs",
+    "harness": "num::nonzero::NonZero::<u64>::rotate_right",
+    "proof_kind": "Auto",
+    "time": 827,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<u64>::rotate_right",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    },
+    "hash": "3391138322456967080331356729966170975"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/nonzero.rs",
+    "harness": "num::nonzero::NonZero::<u8>::count_ones",
+    "proof_kind": "Auto",
+    "time": 113,
+    "props": 59,
+    "func": {
+      "name": "num::nonzero::NonZero::<u8>::count_ones",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    },
+    "hash": "144266104915937025419633733492097579660"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/nonzero.rs",
+    "harness": "num::nonzero::NonZero::<u8>::rotate_left",
+    "proof_kind": "Auto",
+    "time": 167,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<u8>::rotate_left",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    },
+    "hash": "94633199299530753586711111612415568426"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/nonzero.rs",
+    "harness": "num::nonzero::NonZero::<u8>::rotate_right",
+    "proof_kind": "Auto",
+    "time": 105,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<u8>::rotate_right",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    },
+    "hash": "5706736463189182193630834288875024236"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/nonzero.rs",
+    "harness": "num::nonzero::NonZero::<usize>::count_ones",
+    "proof_kind": "Auto",
+    "time": 85,
+    "props": 59,
+    "func": {
+      "name": "num::nonzero::NonZero::<usize>::count_ones",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    },
+    "hash": "850972960555612193710888328647059603957"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/nonzero.rs",
+    "harness": "num::nonzero::NonZero::<usize>::rotate_left",
+    "proof_kind": "Auto",
+    "time": 510,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<usize>::rotate_left",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    },
+    "hash": "60825390552816501649216216703386949206"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/nonzero.rs",
+    "harness": "num::nonzero::NonZero::<usize>::rotate_right",
+    "proof_kind": "Auto",
+    "time": 1001,
+    "props": 99,
+    "func": {
+      "name": "num::nonzero::NonZero::<usize>::rotate_right",
+      "safe": "safe abstraction",
+      "file": "core/src/num/nonzero.rs"
+    },
+    "hash": "80829523617216911012571339612697689057"
   },
   {
     "crate": "core",
@@ -10251,6 +12853,552 @@
   },
   {
     "crate": "core",
+    "file": "core/src/num/uint_macros.rs",
+    "harness": "num::<impl u128>::unchecked_add",
+    "proof_kind": "Auto",
+    "time": 64,
+    "props": 70,
+    "func": {
+      "name": "num::<impl u128>::unchecked_add",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "16542401973518586331729723600158368524"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/uint_macros.rs",
+    "harness": "num::<impl u128>::unchecked_disjoint_bitor",
+    "proof_kind": "Auto",
+    "hash": "62468179505928643547186831495519549610"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/uint_macros.rs",
+    "harness": "num::<impl u128>::unchecked_shl",
+    "proof_kind": "Auto",
+    "time": 60,
+    "props": 58,
+    "func": {
+      "name": "num::<impl u128>::unchecked_shl",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "11296279574086854549744096881986383104"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/uint_macros.rs",
+    "harness": "num::<impl u128>::unchecked_shr",
+    "proof_kind": "Auto",
+    "time": 58,
+    "props": 58,
+    "func": {
+      "name": "num::<impl u128>::unchecked_shr",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "27457004682448401548577890564065915193"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/uint_macros.rs",
+    "harness": "num::<impl u128>::unchecked_sub",
+    "proof_kind": "Auto",
+    "time": 91,
+    "props": 70,
+    "func": {
+      "name": "num::<impl u128>::unchecked_sub",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "130207763582150828655089801426526668543"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/uint_macros.rs",
+    "harness": "num::<impl u128>::wrapping_shl",
+    "proof_kind": "Auto",
+    "time": 563,
+    "props": 84,
+    "func": {
+      "name": "num::<impl u128>::wrapping_shl",
+      "safe": "safe abstraction",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "805699525510286499115079895689761380820"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/uint_macros.rs",
+    "harness": "num::<impl u128>::wrapping_shr",
+    "proof_kind": "Auto",
+    "time": 484,
+    "props": 84,
+    "func": {
+      "name": "num::<impl u128>::wrapping_shr",
+      "safe": "safe abstraction",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "1798229698495998708112946194607902874336"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/uint_macros.rs",
+    "harness": "num::<impl u16>::unchecked_add",
+    "proof_kind": "Auto",
+    "time": 63,
+    "props": 70,
+    "func": {
+      "name": "num::<impl u16>::unchecked_add",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "1530195770348625061718410767804951205478"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/uint_macros.rs",
+    "harness": "num::<impl u16>::unchecked_disjoint_bitor",
+    "proof_kind": "Auto",
+    "hash": "1646567059477211263013560649947789195895"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/uint_macros.rs",
+    "harness": "num::<impl u16>::unchecked_shl",
+    "proof_kind": "Auto",
+    "time": 87,
+    "props": 58,
+    "func": {
+      "name": "num::<impl u16>::unchecked_shl",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "993579594539518272311098602637771076847"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/uint_macros.rs",
+    "harness": "num::<impl u16>::unchecked_shr",
+    "proof_kind": "Auto",
+    "time": 67,
+    "props": 58,
+    "func": {
+      "name": "num::<impl u16>::unchecked_shr",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "720730760029994113816700236689047702561"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/uint_macros.rs",
+    "harness": "num::<impl u16>::unchecked_sub",
+    "proof_kind": "Auto",
+    "time": 84,
+    "props": 70,
+    "func": {
+      "name": "num::<impl u16>::unchecked_sub",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "54024221755048604141590649326828910940"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/uint_macros.rs",
+    "harness": "num::<impl u16>::wrapping_shl",
+    "proof_kind": "Auto",
+    "time": 134,
+    "props": 84,
+    "func": {
+      "name": "num::<impl u16>::wrapping_shl",
+      "safe": "safe abstraction",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "752694264416004185114722531946185166717"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/uint_macros.rs",
+    "harness": "num::<impl u16>::wrapping_shr",
+    "proof_kind": "Auto",
+    "time": 125,
+    "props": 84,
+    "func": {
+      "name": "num::<impl u16>::wrapping_shr",
+      "safe": "safe abstraction",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "827672697390450658514618844153577975424"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/uint_macros.rs",
+    "harness": "num::<impl u32>::unchecked_add",
+    "proof_kind": "Auto",
+    "time": 63,
+    "props": 70,
+    "func": {
+      "name": "num::<impl u32>::unchecked_add",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "130854638335692444805345988580583875499"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/uint_macros.rs",
+    "harness": "num::<impl u32>::unchecked_disjoint_bitor",
+    "proof_kind": "Auto",
+    "hash": "1509205979857540178714701701431614399599"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/uint_macros.rs",
+    "harness": "num::<impl u32>::unchecked_shl",
+    "proof_kind": "Auto",
+    "time": 60,
+    "props": 58,
+    "func": {
+      "name": "num::<impl u32>::unchecked_shl",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "105363741659744331884102463898962387575"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/uint_macros.rs",
+    "harness": "num::<impl u32>::unchecked_shr",
+    "proof_kind": "Auto",
+    "time": 60,
+    "props": 58,
+    "func": {
+      "name": "num::<impl u32>::unchecked_shr",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "127320175334037829323283841671812449042"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/uint_macros.rs",
+    "harness": "num::<impl u32>::unchecked_sub",
+    "proof_kind": "Auto",
+    "time": 68,
+    "props": 70,
+    "func": {
+      "name": "num::<impl u32>::unchecked_sub",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "623932314898806384710942612752481980908"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/uint_macros.rs",
+    "harness": "num::<impl u32>::wrapping_shl",
+    "proof_kind": "Auto",
+    "time": 144,
+    "props": 84,
+    "func": {
+      "name": "num::<impl u32>::wrapping_shl",
+      "safe": "safe abstraction",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "153108392396413981513481987788874371814"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/uint_macros.rs",
+    "harness": "num::<impl u32>::wrapping_shr",
+    "proof_kind": "Auto",
+    "time": 142,
+    "props": 84,
+    "func": {
+      "name": "num::<impl u32>::wrapping_shr",
+      "safe": "safe abstraction",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "51170717787290303411248112581561361389"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/uint_macros.rs",
+    "harness": "num::<impl u64>::unchecked_add",
+    "proof_kind": "Auto",
+    "time": 63,
+    "props": 70,
+    "func": {
+      "name": "num::<impl u64>::unchecked_add",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "87221581696529708117747633625843428992"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/uint_macros.rs",
+    "harness": "num::<impl u64>::unchecked_disjoint_bitor",
+    "proof_kind": "Auto",
+    "hash": "1254196771101498421216397036414100436388"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/uint_macros.rs",
+    "harness": "num::<impl u64>::unchecked_shl",
+    "proof_kind": "Auto",
+    "time": 80,
+    "props": 58,
+    "func": {
+      "name": "num::<impl u64>::unchecked_shl",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "171217592746399518213825504702974536413"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/uint_macros.rs",
+    "harness": "num::<impl u64>::unchecked_shr",
+    "proof_kind": "Auto",
+    "time": 62,
+    "props": 58,
+    "func": {
+      "name": "num::<impl u64>::unchecked_shr",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "537151917267335587012793016823279191552"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/uint_macros.rs",
+    "harness": "num::<impl u64>::unchecked_sub",
+    "proof_kind": "Auto",
+    "time": 90,
+    "props": 70,
+    "func": {
+      "name": "num::<impl u64>::unchecked_sub",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "146999445823460923837650766748647607806"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/uint_macros.rs",
+    "harness": "num::<impl u64>::wrapping_shl",
+    "proof_kind": "Auto",
+    "time": 304,
+    "props": 84,
+    "func": {
+      "name": "num::<impl u64>::wrapping_shl",
+      "safe": "safe abstraction",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "166987003722345357923992787929595196814"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/uint_macros.rs",
+    "harness": "num::<impl u64>::wrapping_shr",
+    "proof_kind": "Auto",
+    "time": 283,
+    "props": 84,
+    "func": {
+      "name": "num::<impl u64>::wrapping_shr",
+      "safe": "safe abstraction",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "1830816449617676562415119426450220679595"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/uint_macros.rs",
+    "harness": "num::<impl u8>::unchecked_add",
+    "proof_kind": "Auto",
+    "time": 90,
+    "props": 70,
+    "func": {
+      "name": "num::<impl u8>::unchecked_add",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "18305200539080999937692536706112892813"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/uint_macros.rs",
+    "harness": "num::<impl u8>::unchecked_disjoint_bitor",
+    "proof_kind": "Auto",
+    "hash": "41980680107816792213662023038772750117"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/uint_macros.rs",
+    "harness": "num::<impl u8>::unchecked_shl",
+    "proof_kind": "Auto",
+    "time": 85,
+    "props": 58,
+    "func": {
+      "name": "num::<impl u8>::unchecked_shl",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "119219594017145745644239334786707714511"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/uint_macros.rs",
+    "harness": "num::<impl u8>::unchecked_shr",
+    "proof_kind": "Auto",
+    "time": 59,
+    "props": 58,
+    "func": {
+      "name": "num::<impl u8>::unchecked_shr",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "174894696459093223323274227398093797415"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/uint_macros.rs",
+    "harness": "num::<impl u8>::unchecked_sub",
+    "proof_kind": "Auto",
+    "time": 86,
+    "props": 70,
+    "func": {
+      "name": "num::<impl u8>::unchecked_sub",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "1532066451777410930217202448181742040419"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/uint_macros.rs",
+    "harness": "num::<impl u8>::wrapping_shl",
+    "proof_kind": "Auto",
+    "time": 133,
+    "props": 84,
+    "func": {
+      "name": "num::<impl u8>::wrapping_shl",
+      "safe": "safe abstraction",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "73680321337777102628895548863965689774"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/uint_macros.rs",
+    "harness": "num::<impl u8>::wrapping_shr",
+    "proof_kind": "Auto",
+    "time": 132,
+    "props": 84,
+    "func": {
+      "name": "num::<impl u8>::wrapping_shr",
+      "safe": "safe abstraction",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "868798987916772418226488620617727103"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/uint_macros.rs",
+    "harness": "num::<impl usize>::unchecked_add",
+    "proof_kind": "Auto",
+    "time": 76,
+    "props": 70,
+    "func": {
+      "name": "num::<impl usize>::unchecked_add",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "174107661030119018973646362480685393050"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/uint_macros.rs",
+    "harness": "num::<impl usize>::unchecked_disjoint_bitor",
+    "proof_kind": "Auto",
+    "hash": "33675937863748577387218057049454129764"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/uint_macros.rs",
+    "harness": "num::<impl usize>::unchecked_shl",
+    "proof_kind": "Auto",
+    "time": 87,
+    "props": 58,
+    "func": {
+      "name": "num::<impl usize>::unchecked_shl",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "235801083224622589114086298196149531729"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/uint_macros.rs",
+    "harness": "num::<impl usize>::unchecked_shr",
+    "proof_kind": "Auto",
+    "time": 59,
+    "props": 58,
+    "func": {
+      "name": "num::<impl usize>::unchecked_shr",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "672771047639733910031387706019824471"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/uint_macros.rs",
+    "harness": "num::<impl usize>::unchecked_sub",
+    "proof_kind": "Auto",
+    "time": 91,
+    "props": 70,
+    "func": {
+      "name": "num::<impl usize>::unchecked_sub",
+      "safe": "unsafe",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "366503061556370158810229951695642705038"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/uint_macros.rs",
+    "harness": "num::<impl usize>::wrapping_shl",
+    "proof_kind": "Auto",
+    "time": 301,
+    "props": 84,
+    "func": {
+      "name": "num::<impl usize>::wrapping_shl",
+      "safe": "safe abstraction",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "12870946966867121998618375461097558556"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/num/uint_macros.rs",
+    "harness": "num::<impl usize>::wrapping_shr",
+    "proof_kind": "Auto",
+    "time": 197,
+    "props": 84,
+    "func": {
+      "name": "num::<impl usize>::wrapping_shr",
+      "safe": "safe abstraction",
+      "file": "core/src/num/uint_macros.rs"
+    },
+    "hash": "680456226994577824710449071941321323569"
+  },
+  {
+    "crate": "core",
     "file": "core/src/ops/index_range.rs",
     "harness": "ops::index_range::verify::proof_for_index_range_new_unchecked",
     "proof_kind": "Contract",
@@ -10303,6 +13451,90 @@
       "file": "core/src/option.rs"
     },
     "hash": "603695963447420385816543023160687634184"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/ptr/alignment.rs",
+    "harness": "ptr::alignment::Alignment::as_nonzero",
+    "proof_kind": "Auto",
+    "time": 292,
+    "props": 66,
+    "func": {
+      "name": "ptr::alignment::Alignment::as_nonzero",
+      "safe": "safe",
+      "file": "core/src/ptr/alignment.rs"
+    },
+    "hash": "201181288689639124415825169679319142024"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/ptr/alignment.rs",
+    "harness": "ptr::alignment::Alignment::as_usize",
+    "proof_kind": "Auto",
+    "time": 211,
+    "props": 43,
+    "func": {
+      "name": "ptr::alignment::Alignment::as_usize",
+      "safe": "safe",
+      "file": "core/src/ptr/alignment.rs"
+    },
+    "hash": "112152844438854238887994758767167519478"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/ptr/alignment.rs",
+    "harness": "ptr::alignment::Alignment::log2",
+    "proof_kind": "Auto",
+    "time": 251,
+    "props": 79,
+    "func": {
+      "name": "ptr::alignment::Alignment::log2",
+      "safe": "safe",
+      "file": "core/src/ptr/alignment.rs"
+    },
+    "hash": "567128593324850714615319747611018204654"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/ptr/alignment.rs",
+    "harness": "ptr::alignment::Alignment::mask",
+    "proof_kind": "Auto",
+    "time": 379,
+    "props": 111,
+    "func": {
+      "name": "ptr::alignment::Alignment::mask",
+      "safe": "safe abstraction",
+      "file": "core/src/ptr/alignment.rs"
+    },
+    "hash": "78637598139928331936532242289687422514"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/ptr/alignment.rs",
+    "harness": "ptr::alignment::Alignment::new",
+    "proof_kind": "Auto",
+    "time": 387,
+    "props": 97,
+    "func": {
+      "name": "ptr::alignment::Alignment::new",
+      "safe": "safe abstraction",
+      "file": "core/src/ptr/alignment.rs"
+    },
+    "hash": "5589667399286252701694525062377909418"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/ptr/alignment.rs",
+    "harness": "ptr::alignment::Alignment::new_unchecked",
+    "proof_kind": "Auto",
+    "time": 134,
+    "props": 93,
+    "func": {
+      "name": "ptr::alignment::Alignment::new_unchecked",
+      "safe": "unsafe",
+      "file": "core/src/ptr/alignment.rs"
+    },
+    "hash": "21093895404218893828635808083668477303"
   },
   {
     "crate": "core",
@@ -12164,6 +15396,20 @@
       "file": "core/src/ptr/const_ptr.rs"
     },
     "hash": "19061813428272808454452533405461409245"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/ptr/mod.rs",
+    "harness": "ptr::align_offset::mod_inv",
+    "proof_kind": "Auto",
+    "time": 118,
+    "props": 84,
+    "func": {
+      "name": "ptr::align_offset::mod_inv",
+      "safe": "unsafe",
+      "file": "core/src/ptr/mod.rs"
+    },
+    "hash": "108552149900633290919250115311635650035"
   },
   {
     "crate": "core",
@@ -18312,6 +21558,62 @@
       "file": "core/src/str/validations.rs"
     },
     "hash": "172045965964011674729113904519434668813"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/time.rs",
+    "harness": "time::Duration::from_micros",
+    "proof_kind": "Auto",
+    "time": 121,
+    "props": 53,
+    "func": {
+      "name": "time::Duration::from_micros",
+      "safe": "safe abstraction",
+      "file": "core/src/time.rs"
+    },
+    "hash": "713582765544168457416896353134350734653"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/time.rs",
+    "harness": "time::Duration::from_millis",
+    "proof_kind": "Auto",
+    "time": 112,
+    "props": 53,
+    "func": {
+      "name": "time::Duration::from_millis",
+      "safe": "safe abstraction",
+      "file": "core/src/time.rs"
+    },
+    "hash": "103201209251474754949132317369828318810"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/time.rs",
+    "harness": "time::Duration::from_nanos",
+    "proof_kind": "Auto",
+    "time": 114,
+    "props": 51,
+    "func": {
+      "name": "time::Duration::from_nanos",
+      "safe": "safe abstraction",
+      "file": "core/src/time.rs"
+    },
+    "hash": "388956341027180722217190897267579790662"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/time.rs",
+    "harness": "time::Duration::from_secs",
+    "proof_kind": "Auto",
+    "time": 95,
+    "props": 56,
+    "func": {
+      "name": "time::Duration::from_secs",
+      "safe": "safe",
+      "file": "core/src/time.rs"
+    },
+    "hash": "1270888124877289178512994789532778292810"
   },
   {
     "crate": "core",

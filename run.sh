@@ -2,6 +2,8 @@
 
 set -exou pipefail
 
+cwd=$PWD
+
 # Entrypoint.
 all() {
   split
@@ -23,18 +25,41 @@ split() {
 
 # This relies on latest artifact-libcore, so run split first to update it.
 gen() {
+  cd "$cwd"
   # The artifacts must accord with split cmd.
-  verify_rust_std merge --hash-json ../../artifacts/artifact-libcore/json \
-    --kani-list ../../assets/kani-list_verify-rust-std-CI.json \
-    --strip-kani-list-prefix /home/runner/work/verify-rust-std/verify-rust-std/library/ >merge_diff.json
+  # verify_rust_std merge --hash-json ../../artifacts/artifact-libcore/json \
+  #   --kani-list ../../assets/kani-list_verify-rust-std-CI.json \
+  #   --strip-kani-list-prefix /home/runner/work/verify-rust-std/verify-rust-std/library/ >merge_diff.json
+
+  # Filter in autoharnesses.
+  jq '
+    .contracts
+    | map(
+      select(.harnesses[0] == "kani::internal::automatic_harness")
+      | { (.function): true }
+    ) | add' ../../assets/kani-list_verify-rust-std-CI.json >autoharness.json
+  # Add autoharness back by modifying .proof_kind field.
+  jq --slurp '
+    { auto: .[0], merge: .[1] }
+    | . as $root
+    | .merge | map(
+      if ($root.auto[.func]) then .proof_kind = "Auto" else . end
+    )
+  ' autoharness.json merge_diff.json >merge_diff_with_auto.json
+  mv merge_diff_with_auto.json merge_diff.json
+
   merge_diff
   results
   merge_results
 }
 
 merge_diff() {
+
   jq '
-    map(select(.proof_kind != null) | .harness = .func | del(.func))
+    map(
+      select(.proof_kind != null) 
+      | .harness = .func | del(.func)
+    )
     | sort_by(.file, .harness)
   ' merge_diff.json >merge_diff-proofs-only.json
 }
@@ -43,8 +68,7 @@ results() {
   jq '[
     .[] 
     | .result
-    # | select(.crate == "core") # filter in core results
-    | select(.is_autoharness | not) | del(.is_autoharness) # remove autoharness
+    | select(.time != null)
     | {
       harness,
       ok: (if (.result // "" | startswith("SUCCESSFUL") | not) then false else null end), # convert SUCCESSFUL to ok, omission as true

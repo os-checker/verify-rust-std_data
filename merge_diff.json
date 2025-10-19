@@ -12845,15 +12845,18 @@
   },
   {
     "file": "core/src/ptr/mod.rs",
-    "func": "ptr::align_offset::{closure#0}::{closure#1}::{closure#1}::mod_inv"
+    "func": "ptr::align_offset::{closure#0}::{closure#1}::{closure#1}::mod_inv",
+    "proof_kind": "Auto"
   },
   {
     "file": "core/src/ptr/mod.rs",
-    "func": "ptr::align_offset::{closure#2}::{closure#1}::mod_inv"
+    "func": "ptr::align_offset::{closure#2}::{closure#1}::mod_inv",
+    "proof_kind": "Auto"
   },
   {
     "file": "core/src/ptr/mod.rs",
-    "func": "ptr::align_offset::{closure#3}::{closure#0}::mod_inv"
+    "func": "ptr::align_offset::{closure#3}::{closure#0}::mod_inv",
+    "proof_kind": "Auto"
   },
   {
     "file": "core/src/str/pattern.rs",
@@ -43019,13 +43022,15 @@
     "crate": "core",
     "file": "core/src/alloc/layout.rs",
     "func": "alloc::layout::Layout::from_size_align",
-    "hash": "1193380013036401699916295395184494393095"
+    "hash": "1193380013036401699916295395184494393095",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/alloc/layout.rs",
     "func": "alloc::layout::Layout::from_size_align_unchecked",
-    "hash": "144673661539519055195865692774889120235"
+    "hash": "144673661539519055195865692774889120235",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -43340,13 +43345,15 @@
     "crate": "core",
     "file": "core/src/ascii/ascii_char.rs",
     "func": "ascii::ascii_char::AsciiChar::from_u8",
-    "hash": "1263943423012824645318408613777809385475"
+    "hash": "1263943423012824645318408613777809385475",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/ascii/ascii_char.rs",
     "func": "ascii::ascii_char::AsciiChar::from_u8_unchecked",
-    "hash": "15551977551413036531158252289522839939"
+    "hash": "15551977551413036531158252289522839939",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -43628,7 +43635,8 @@
     "crate": "core",
     "file": "core/src/char/convert.rs",
     "func": "char::convert::from_u32_unchecked",
-    "hash": "97974469250681533633362941246048906040"
+    "hash": "97974469250681533633362941246048906040",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -43972,7 +43980,8 @@
     "crate": "core",
     "file": "core/src/char/mod.rs",
     "func": "<char::CaseMappingIter as iter::traits::iterator::Iterator>::__iterator_get_unchecked",
-    "hash": "949792096248023971711514731404863324947"
+    "hash": "949792096248023971711514731404863324947",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -44038,7 +44047,8 @@
     "crate": "core",
     "file": "core/src/char/mod.rs",
     "func": "<char::ToLowercase as iter::traits::iterator::Iterator>::__iterator_get_unchecked",
-    "hash": "169461752388621164842822206058426452127"
+    "hash": "169461752388621164842822206058426452127",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -44104,7 +44114,8 @@
     "crate": "core",
     "file": "core/src/char/mod.rs",
     "func": "<char::ToUppercase as iter::traits::iterator::Iterator>::__iterator_get_unchecked",
-    "hash": "158641604252574621329089955805779685"
+    "hash": "158641604252574621329089955805779685",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -44218,7 +44229,8 @@
     "crate": "core",
     "file": "core/src/char/mod.rs",
     "func": "char::from_u32_unchecked",
-    "hash": "169157450674248986457480567982993655557"
+    "hash": "169157450674248986457480567982993655557",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -45730,289 +45742,337 @@
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f128 as convert::num::FloatToInt<i128>>::to_int_unchecked",
-    "hash": "5401272748005108225170015231844042415"
+    "hash": "5401272748005108225170015231844042415",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f128 as convert::num::FloatToInt<i16>>::to_int_unchecked",
-    "hash": "8106237640557471073580597645246276389"
+    "hash": "8106237640557471073580597645246276389",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f128 as convert::num::FloatToInt<i32>>::to_int_unchecked",
-    "hash": "492233870384668259417646718277520613131"
+    "hash": "492233870384668259417646718277520613131",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f128 as convert::num::FloatToInt<i64>>::to_int_unchecked",
-    "hash": "85436354481777373298678937161968822808"
+    "hash": "85436354481777373298678937161968822808",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f128 as convert::num::FloatToInt<i8>>::to_int_unchecked",
-    "hash": "67272556067146161882674407005627671670"
+    "hash": "67272556067146161882674407005627671670",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f128 as convert::num::FloatToInt<isize>>::to_int_unchecked",
-    "hash": "145859362768437713122255974850783963947"
+    "hash": "145859362768437713122255974850783963947",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f128 as convert::num::FloatToInt<u128>>::to_int_unchecked",
-    "hash": "649373533595446747616634326362916258113"
+    "hash": "649373533595446747616634326362916258113",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f128 as convert::num::FloatToInt<u16>>::to_int_unchecked",
-    "hash": "68691467309782099588566504033335306113"
+    "hash": "68691467309782099588566504033335306113",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f128 as convert::num::FloatToInt<u32>>::to_int_unchecked",
-    "hash": "142095150557611732085601685115493352309"
+    "hash": "142095150557611732085601685115493352309",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f128 as convert::num::FloatToInt<u64>>::to_int_unchecked",
-    "hash": "4047051432235026783944635623816623002"
+    "hash": "4047051432235026783944635623816623002",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f128 as convert::num::FloatToInt<u8>>::to_int_unchecked",
-    "hash": "8759826370357264640712844467855374887"
+    "hash": "8759826370357264640712844467855374887",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f128 as convert::num::FloatToInt<usize>>::to_int_unchecked",
-    "hash": "987003126600730429312936607391211602970"
+    "hash": "987003126600730429312936607391211602970",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f16 as convert::num::FloatToInt<i128>>::to_int_unchecked",
-    "hash": "16330166665644353718187662156311451106"
+    "hash": "16330166665644353718187662156311451106",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f16 as convert::num::FloatToInt<i16>>::to_int_unchecked",
-    "hash": "46138308164662925421872131734313820414"
+    "hash": "46138308164662925421872131734313820414",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f16 as convert::num::FloatToInt<i32>>::to_int_unchecked",
-    "hash": "922371780220321241915961426071415444094"
+    "hash": "922371780220321241915961426071415444094",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f16 as convert::num::FloatToInt<i64>>::to_int_unchecked",
-    "hash": "30943267019948841189819240036255568574"
+    "hash": "30943267019948841189819240036255568574",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f16 as convert::num::FloatToInt<i8>>::to_int_unchecked",
-    "hash": "11540754517172685714952890080583928020"
+    "hash": "11540754517172685714952890080583928020",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f16 as convert::num::FloatToInt<isize>>::to_int_unchecked",
-    "hash": "1657647698240050611110600248014284790678"
+    "hash": "1657647698240050611110600248014284790678",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f16 as convert::num::FloatToInt<u128>>::to_int_unchecked",
-    "hash": "1584507318570215242217093049813184331868"
+    "hash": "1584507318570215242217093049813184331868",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f16 as convert::num::FloatToInt<u16>>::to_int_unchecked",
-    "hash": "605022253927063737518373324847650302490"
+    "hash": "605022253927063737518373324847650302490",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f16 as convert::num::FloatToInt<u32>>::to_int_unchecked",
-    "hash": "113194812208013255087998247489448877960"
+    "hash": "113194812208013255087998247489448877960",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f16 as convert::num::FloatToInt<u64>>::to_int_unchecked",
-    "hash": "1655810091731811610911551844610285981497"
+    "hash": "1655810091731811610911551844610285981497",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f16 as convert::num::FloatToInt<u8>>::to_int_unchecked",
-    "hash": "149684059415400330131224220641522900093"
+    "hash": "149684059415400330131224220641522900093",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f16 as convert::num::FloatToInt<usize>>::to_int_unchecked",
-    "hash": "236602267344438528112569534307232442444"
+    "hash": "236602267344438528112569534307232442444",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f32 as convert::num::FloatToInt<i128>>::to_int_unchecked",
-    "hash": "15080030101056987978349956702811452423"
+    "hash": "15080030101056987978349956702811452423",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f32 as convert::num::FloatToInt<i16>>::to_int_unchecked",
-    "hash": "166802358580199115719878010896079132113"
+    "hash": "166802358580199115719878010896079132113",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f32 as convert::num::FloatToInt<i32>>::to_int_unchecked",
-    "hash": "548163622760939740816876510990731455391"
+    "hash": "548163622760939740816876510990731455391",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f32 as convert::num::FloatToInt<i64>>::to_int_unchecked",
-    "hash": "1084895836427789824717598742751658306639"
+    "hash": "1084895836427789824717598742751658306639",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f32 as convert::num::FloatToInt<i8>>::to_int_unchecked",
-    "hash": "34890024067839659768026381397380918139"
+    "hash": "34890024067839659768026381397380918139",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f32 as convert::num::FloatToInt<isize>>::to_int_unchecked",
-    "hash": "167708659183710072111515128342092549088"
+    "hash": "167708659183710072111515128342092549088",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f32 as convert::num::FloatToInt<u128>>::to_int_unchecked",
-    "hash": "433207813363144498614421505327452795449"
+    "hash": "433207813363144498614421505327452795449",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f32 as convert::num::FloatToInt<u16>>::to_int_unchecked",
-    "hash": "1231920946327885171814833090428139865746"
+    "hash": "1231920946327885171814833090428139865746",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f32 as convert::num::FloatToInt<u32>>::to_int_unchecked",
-    "hash": "1214858424165111957313963051426664600400"
+    "hash": "1214858424165111957313963051426664600400",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f32 as convert::num::FloatToInt<u64>>::to_int_unchecked",
-    "hash": "94526677244680493164919154072316679657"
+    "hash": "94526677244680493164919154072316679657",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f32 as convert::num::FloatToInt<u8>>::to_int_unchecked",
-    "hash": "93978316644746463992277797426831022622"
+    "hash": "93978316644746463992277797426831022622",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f32 as convert::num::FloatToInt<usize>>::to_int_unchecked",
-    "hash": "440086421632680266711470680405402503739"
+    "hash": "440086421632680266711470680405402503739",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f64 as convert::num::FloatToInt<i128>>::to_int_unchecked",
-    "hash": "147227011374976596589077049069025332704"
+    "hash": "147227011374976596589077049069025332704",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f64 as convert::num::FloatToInt<i16>>::to_int_unchecked",
-    "hash": "79501386549668259428026726782306385145"
+    "hash": "79501386549668259428026726782306385145",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f64 as convert::num::FloatToInt<i32>>::to_int_unchecked",
-    "hash": "53595793617303824321148836128309304338"
+    "hash": "53595793617303824321148836128309304338",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f64 as convert::num::FloatToInt<i64>>::to_int_unchecked",
-    "hash": "5317042478714973718750854311883021473"
+    "hash": "5317042478714973718750854311883021473",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f64 as convert::num::FloatToInt<i8>>::to_int_unchecked",
-    "hash": "119408407444599371510815039566879659785"
+    "hash": "119408407444599371510815039566879659785",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f64 as convert::num::FloatToInt<isize>>::to_int_unchecked",
-    "hash": "59245911038507173017966681126328345067"
+    "hash": "59245911038507173017966681126328345067",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f64 as convert::num::FloatToInt<u128>>::to_int_unchecked",
-    "hash": "1334842237500446619917057637565054429902"
+    "hash": "1334842237500446619917057637565054429902",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f64 as convert::num::FloatToInt<u16>>::to_int_unchecked",
-    "hash": "1483028211588406849813308090296863861059"
+    "hash": "1483028211588406849813308090296863861059",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f64 as convert::num::FloatToInt<u32>>::to_int_unchecked",
-    "hash": "117969322134786505349670780818056937488"
+    "hash": "117969322134786505349670780818056937488",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f64 as convert::num::FloatToInt<u64>>::to_int_unchecked",
-    "hash": "488821708153327801840929483641102328"
+    "hash": "488821708153327801840929483641102328",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f64 as convert::num::FloatToInt<u8>>::to_int_unchecked",
-    "hash": "890139287041388898414349884129634908933"
+    "hash": "890139287041388898414349884129634908933",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/convert/num.rs",
     "func": "<f64 as convert::num::FloatToInt<usize>>::to_int_unchecked",
-    "hash": "1231465154010309634711140755662905314330"
+    "hash": "1231465154010309634711140755662905314330",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -49970,7 +50030,8 @@
     "crate": "core",
     "file": "core/src/hint.rs",
     "func": "hint::assert_unchecked",
-    "hash": "6962362284417680556415378392413733050"
+    "hash": "6962362284417680556415378392413733050",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -50000,7 +50061,8 @@
     "crate": "core",
     "file": "core/src/hint.rs",
     "func": "hint::unreachable_unchecked",
-    "hash": "1415106497522421883676194742336801697"
+    "hash": "1415106497522421883676194742336801697",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -66608,7 +66670,8 @@
     "crate": "core",
     "file": "core/src/intrinsics/fallback.rs",
     "func": "<bool as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
-    "hash": "250800211300164603812517143290931935490"
+    "hash": "250800211300164603812517143290931935490",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -66620,7 +66683,8 @@
     "crate": "core",
     "file": "core/src/intrinsics/fallback.rs",
     "func": "<i128 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
-    "hash": "80040651926103909678271999392285372990"
+    "hash": "80040651926103909678271999392285372990",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -66632,7 +66696,8 @@
     "crate": "core",
     "file": "core/src/intrinsics/fallback.rs",
     "func": "<i16 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
-    "hash": "6989983334729211908927339249900663943"
+    "hash": "6989983334729211908927339249900663943",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -66644,7 +66709,8 @@
     "crate": "core",
     "file": "core/src/intrinsics/fallback.rs",
     "func": "<i32 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
-    "hash": "1063987999954300775215342309582526319529"
+    "hash": "1063987999954300775215342309582526319529",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -66656,7 +66722,8 @@
     "crate": "core",
     "file": "core/src/intrinsics/fallback.rs",
     "func": "<i64 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
-    "hash": "136616187162751180573644041167231130554"
+    "hash": "136616187162751180573644041167231130554",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -66668,7 +66735,8 @@
     "crate": "core",
     "file": "core/src/intrinsics/fallback.rs",
     "func": "<i8 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
-    "hash": "60458008535657027788705666854141614114"
+    "hash": "60458008535657027788705666854141614114",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -66680,7 +66748,8 @@
     "crate": "core",
     "file": "core/src/intrinsics/fallback.rs",
     "func": "<isize as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
-    "hash": "62613819432045952176759186974463354075"
+    "hash": "62613819432045952176759186974463354075",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -66692,7 +66761,8 @@
     "crate": "core",
     "file": "core/src/intrinsics/fallback.rs",
     "func": "<u128 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
-    "hash": "41389422597421656741395145042566161444"
+    "hash": "41389422597421656741395145042566161444",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -66716,7 +66786,8 @@
     "crate": "core",
     "file": "core/src/intrinsics/fallback.rs",
     "func": "<u16 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
-    "hash": "1806494181001350783915205167250141868281"
+    "hash": "1806494181001350783915205167250141868281",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -66740,7 +66811,8 @@
     "crate": "core",
     "file": "core/src/intrinsics/fallback.rs",
     "func": "<u32 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
-    "hash": "14821326756404741505611264372285877509"
+    "hash": "14821326756404741505611264372285877509",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -66764,7 +66836,8 @@
     "crate": "core",
     "file": "core/src/intrinsics/fallback.rs",
     "func": "<u64 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
-    "hash": "1142238300830356026814631151773818865873"
+    "hash": "1142238300830356026814631151773818865873",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -66788,7 +66861,8 @@
     "crate": "core",
     "file": "core/src/intrinsics/fallback.rs",
     "func": "<u8 as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
-    "hash": "732735713645133618817345018103717632801"
+    "hash": "732735713645133618817345018103717632801",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -66812,7 +66886,8 @@
     "crate": "core",
     "file": "core/src/intrinsics/fallback.rs",
     "func": "<usize as intrinsics::fallback::DisjointBitOr>::disjoint_bitor",
-    "hash": "130330123525716393101034958525209554520"
+    "hash": "130330123525716393101034958525209554520",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -69753,7 +69828,8 @@
     "crate": "core",
     "file": "core/src/iter/range.rs",
     "func": "<ascii::ascii_char::AsciiChar as iter::range::Step>::backward_unchecked",
-    "hash": "115361175269263563214856908257903369446"
+    "hash": "115361175269263563214856908257903369446",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -69765,7 +69841,8 @@
     "crate": "core",
     "file": "core/src/iter/range.rs",
     "func": "<ascii::ascii_char::AsciiChar as iter::range::Step>::forward_unchecked",
-    "hash": "109139637908755460326884182542280911770"
+    "hash": "109139637908755460326884182542280911770",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -69783,7 +69860,8 @@
     "crate": "core",
     "file": "core/src/iter/range.rs",
     "func": "<char as iter::range::Step>::backward_unchecked",
-    "hash": "1265179122472707272610246310318670839119"
+    "hash": "1265179122472707272610246310318670839119",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -69795,7 +69873,8 @@
     "crate": "core",
     "file": "core/src/iter/range.rs",
     "func": "<char as iter::range::Step>::forward_unchecked",
-    "hash": "557055529845642736313065703630870349165"
+    "hash": "557055529845642736313065703630870349165",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -69819,7 +69898,8 @@
     "crate": "core",
     "file": "core/src/iter/range.rs",
     "func": "<i128 as iter::range::Step>::backward_unchecked",
-    "hash": "1308827536913111295818058482037146332557"
+    "hash": "1308827536913111295818058482037146332557",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -69837,7 +69917,8 @@
     "crate": "core",
     "file": "core/src/iter/range.rs",
     "func": "<i128 as iter::range::Step>::forward_unchecked",
-    "hash": "95016260826018548966044271311473131715"
+    "hash": "95016260826018548966044271311473131715",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -69861,7 +69942,8 @@
     "crate": "core",
     "file": "core/src/iter/range.rs",
     "func": "<i16 as iter::range::Step>::backward_unchecked",
-    "hash": "1759810499816900758917023264662274670998"
+    "hash": "1759810499816900758917023264662274670998",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -69879,7 +69961,8 @@
     "crate": "core",
     "file": "core/src/iter/range.rs",
     "func": "<i16 as iter::range::Step>::forward_unchecked",
-    "hash": "57837018818993944057738158852531290792"
+    "hash": "57837018818993944057738158852531290792",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -69903,7 +69986,8 @@
     "crate": "core",
     "file": "core/src/iter/range.rs",
     "func": "<i32 as iter::range::Step>::backward_unchecked",
-    "hash": "17863821184109163546794658475051781047"
+    "hash": "17863821184109163546794658475051781047",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -69921,7 +70005,8 @@
     "crate": "core",
     "file": "core/src/iter/range.rs",
     "func": "<i32 as iter::range::Step>::forward_unchecked",
-    "hash": "90463445971792878398614943728077777342"
+    "hash": "90463445971792878398614943728077777342",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -69945,7 +70030,8 @@
     "crate": "core",
     "file": "core/src/iter/range.rs",
     "func": "<i64 as iter::range::Step>::backward_unchecked",
-    "hash": "176286820448348818671472820415778077963"
+    "hash": "176286820448348818671472820415778077963",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -69963,7 +70049,8 @@
     "crate": "core",
     "file": "core/src/iter/range.rs",
     "func": "<i64 as iter::range::Step>::forward_unchecked",
-    "hash": "68997004867008556017717235429706063352"
+    "hash": "68997004867008556017717235429706063352",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -69987,7 +70074,8 @@
     "crate": "core",
     "file": "core/src/iter/range.rs",
     "func": "<i8 as iter::range::Step>::backward_unchecked",
-    "hash": "1091926353400227001213727845021289133177"
+    "hash": "1091926353400227001213727845021289133177",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -70005,7 +70093,8 @@
     "crate": "core",
     "file": "core/src/iter/range.rs",
     "func": "<i8 as iter::range::Step>::forward_unchecked",
-    "hash": "474081880304844378314272403533923458040"
+    "hash": "474081880304844378314272403533923458040",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -70029,7 +70118,8 @@
     "crate": "core",
     "file": "core/src/iter/range.rs",
     "func": "<isize as iter::range::Step>::backward_unchecked",
-    "hash": "233550152965384494713682276287834491780"
+    "hash": "233550152965384494713682276287834491780",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -70047,7 +70137,8 @@
     "crate": "core",
     "file": "core/src/iter/range.rs",
     "func": "<isize as iter::range::Step>::forward_unchecked",
-    "hash": "703292125058064800113741874364144024758"
+    "hash": "703292125058064800113741874364144024758",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -70065,7 +70156,8 @@
     "crate": "core",
     "file": "core/src/iter/range.rs",
     "func": "<net::ip_addr::Ipv4Addr as iter::range::Step>::backward_unchecked",
-    "hash": "49187579985920506439025799755368679125"
+    "hash": "49187579985920506439025799755368679125",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -70077,7 +70169,8 @@
     "crate": "core",
     "file": "core/src/iter/range.rs",
     "func": "<net::ip_addr::Ipv4Addr as iter::range::Step>::forward_unchecked",
-    "hash": "941678835166173724915400608673219466051"
+    "hash": "941678835166173724915400608673219466051",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -70095,7 +70188,8 @@
     "crate": "core",
     "file": "core/src/iter/range.rs",
     "func": "<net::ip_addr::Ipv6Addr as iter::range::Step>::backward_unchecked",
-    "hash": "11089017297407150016510725901121092452"
+    "hash": "11089017297407150016510725901121092452",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -70107,7 +70201,8 @@
     "crate": "core",
     "file": "core/src/iter/range.rs",
     "func": "<net::ip_addr::Ipv6Addr as iter::range::Step>::forward_unchecked",
-    "hash": "123034551765982204453684762909376926288"
+    "hash": "123034551765982204453684762909376926288",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -70131,7 +70226,8 @@
     "crate": "core",
     "file": "core/src/iter/range.rs",
     "func": "<u128 as iter::range::Step>::backward_unchecked",
-    "hash": "117404571589775436933618839075873778556"
+    "hash": "117404571589775436933618839075873778556",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -70149,7 +70245,8 @@
     "crate": "core",
     "file": "core/src/iter/range.rs",
     "func": "<u128 as iter::range::Step>::forward_unchecked",
-    "hash": "354632026535880549015036983353725549275"
+    "hash": "354632026535880549015036983353725549275",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -70173,7 +70270,8 @@
     "crate": "core",
     "file": "core/src/iter/range.rs",
     "func": "<u16 as iter::range::Step>::backward_unchecked",
-    "hash": "130826625265018240842585934762694200656"
+    "hash": "130826625265018240842585934762694200656",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -70191,7 +70289,8 @@
     "crate": "core",
     "file": "core/src/iter/range.rs",
     "func": "<u16 as iter::range::Step>::forward_unchecked",
-    "hash": "170263472120930945276863179915420040056"
+    "hash": "170263472120930945276863179915420040056",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -70215,7 +70314,8 @@
     "crate": "core",
     "file": "core/src/iter/range.rs",
     "func": "<u32 as iter::range::Step>::backward_unchecked",
-    "hash": "187707461451049832517498205394896812182"
+    "hash": "187707461451049832517498205394896812182",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -70233,7 +70333,8 @@
     "crate": "core",
     "file": "core/src/iter/range.rs",
     "func": "<u32 as iter::range::Step>::forward_unchecked",
-    "hash": "18239385951464490937490396355773401419"
+    "hash": "18239385951464490937490396355773401419",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -70257,7 +70358,8 @@
     "crate": "core",
     "file": "core/src/iter/range.rs",
     "func": "<u64 as iter::range::Step>::backward_unchecked",
-    "hash": "256500575202118636616798106652967259398"
+    "hash": "256500575202118636616798106652967259398",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -70275,7 +70377,8 @@
     "crate": "core",
     "file": "core/src/iter/range.rs",
     "func": "<u64 as iter::range::Step>::forward_unchecked",
-    "hash": "33143189024990287768726638175856399130"
+    "hash": "33143189024990287768726638175856399130",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -70299,7 +70402,8 @@
     "crate": "core",
     "file": "core/src/iter/range.rs",
     "func": "<u8 as iter::range::Step>::backward_unchecked",
-    "hash": "764810948457541511713207497644013999971"
+    "hash": "764810948457541511713207497644013999971",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -70317,7 +70421,8 @@
     "crate": "core",
     "file": "core/src/iter/range.rs",
     "func": "<u8 as iter::range::Step>::forward_unchecked",
-    "hash": "66558832420252384767352894655095642857"
+    "hash": "66558832420252384767352894655095642857",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -70341,7 +70446,8 @@
     "crate": "core",
     "file": "core/src/iter/range.rs",
     "func": "<usize as iter::range::Step>::backward_unchecked",
-    "hash": "174583527470119019351759393122367854049"
+    "hash": "174583527470119019351759393122367854049",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -70359,7 +70465,8 @@
     "crate": "core",
     "file": "core/src/iter/range.rs",
     "func": "<usize as iter::range::Step>::forward_unchecked",
-    "hash": "61537032802646890302053131132263133848"
+    "hash": "61537032802646890302053131132263133848",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -71913,7 +72020,8 @@
     "crate": "core",
     "file": "core/src/num/dec2flt/decimal_seq.rs",
     "func": "num::dec2flt::decimal_seq::number_of_digits_decimal_left_shift",
-    "hash": "1221885333266410625418266723469411290891"
+    "hash": "1221885333266410625418266723469411290891",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -74205,7 +74313,8 @@
     "crate": "core",
     "file": "core/src/num/int_macros.rs",
     "func": "num::<impl i128>::unchecked_add",
-    "hash": "65157345591482832713269241872997089308"
+    "hash": "65157345591482832713269241872997089308",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -74235,25 +74344,29 @@
     "crate": "core",
     "file": "core/src/num/int_macros.rs",
     "func": "num::<impl i128>::unchecked_neg",
-    "hash": "55896349205668789804334167249173464015"
+    "hash": "55896349205668789804334167249173464015",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/int_macros.rs",
     "func": "num::<impl i128>::unchecked_shl",
-    "hash": "55278440516736372767312854892729018952"
+    "hash": "55278440516736372767312854892729018952",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/int_macros.rs",
     "func": "num::<impl i128>::unchecked_shr",
-    "hash": "1776943983846999345417241592300054106617"
+    "hash": "1776943983846999345417241592300054106617",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/int_macros.rs",
     "func": "num::<impl i128>::unchecked_sub",
-    "hash": "11819746436875559037259058328413372243"
+    "hash": "11819746436875559037259058328413372243",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -74331,13 +74444,15 @@
     "crate": "core",
     "file": "core/src/num/int_macros.rs",
     "func": "num::<impl i128>::wrapping_shl",
-    "hash": "113020063335006077893288349200429928576"
+    "hash": "113020063335006077893288349200429928576",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/int_macros.rs",
     "func": "num::<impl i128>::wrapping_shr",
-    "hash": "1511444917092536035313200988884415303984"
+    "hash": "1511444917092536035313200988884415303984",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -75003,7 +75118,8 @@
     "crate": "core",
     "file": "core/src/num/int_macros.rs",
     "func": "num::<impl i16>::unchecked_add",
-    "hash": "6075160848709568986211520763313809958"
+    "hash": "6075160848709568986211520763313809958",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -75033,25 +75149,29 @@
     "crate": "core",
     "file": "core/src/num/int_macros.rs",
     "func": "num::<impl i16>::unchecked_neg",
-    "hash": "2543889065944748962927695197786951451"
+    "hash": "2543889065944748962927695197786951451",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/int_macros.rs",
     "func": "num::<impl i16>::unchecked_shl",
-    "hash": "34824380467228971085111610879517887253"
+    "hash": "34824380467228971085111610879517887253",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/int_macros.rs",
     "func": "num::<impl i16>::unchecked_shr",
-    "hash": "567415992430960765518962788746630930"
+    "hash": "567415992430960765518962788746630930",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/int_macros.rs",
     "func": "num::<impl i16>::unchecked_sub",
-    "hash": "33314434247354018675028025711413273806"
+    "hash": "33314434247354018675028025711413273806",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -75129,13 +75249,15 @@
     "crate": "core",
     "file": "core/src/num/int_macros.rs",
     "func": "num::<impl i16>::wrapping_shl",
-    "hash": "1014100411119345593712685689988358016910"
+    "hash": "1014100411119345593712685689988358016910",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/int_macros.rs",
     "func": "num::<impl i16>::wrapping_shr",
-    "hash": "1828872750385749623510296281442303944758"
+    "hash": "1828872750385749623510296281442303944758",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -75801,7 +75923,8 @@
     "crate": "core",
     "file": "core/src/num/int_macros.rs",
     "func": "num::<impl i32>::unchecked_add",
-    "hash": "1716488178134335331412149513624199147527"
+    "hash": "1716488178134335331412149513624199147527",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -75831,25 +75954,29 @@
     "crate": "core",
     "file": "core/src/num/int_macros.rs",
     "func": "num::<impl i32>::unchecked_neg",
-    "hash": "195345537923866765915698905969066569482"
+    "hash": "195345537923866765915698905969066569482",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/int_macros.rs",
     "func": "num::<impl i32>::unchecked_shl",
-    "hash": "309225044988616683711155020127224174799"
+    "hash": "309225044988616683711155020127224174799",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/int_macros.rs",
     "func": "num::<impl i32>::unchecked_shr",
-    "hash": "120547312960899125728619459067853951567"
+    "hash": "120547312960899125728619459067853951567",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/int_macros.rs",
     "func": "num::<impl i32>::unchecked_sub",
-    "hash": "89204511685073125549858712728522352243"
+    "hash": "89204511685073125549858712728522352243",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -75927,13 +76054,15 @@
     "crate": "core",
     "file": "core/src/num/int_macros.rs",
     "func": "num::<impl i32>::wrapping_shl",
-    "hash": "127928177452271369706670644009391015253"
+    "hash": "127928177452271369706670644009391015253",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/int_macros.rs",
     "func": "num::<impl i32>::wrapping_shr",
-    "hash": "139123032504472380795325928126313232751"
+    "hash": "139123032504472380795325928126313232751",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -76599,7 +76728,8 @@
     "crate": "core",
     "file": "core/src/num/int_macros.rs",
     "func": "num::<impl i64>::unchecked_add",
-    "hash": "1444778223937347952012490541777105135276"
+    "hash": "1444778223937347952012490541777105135276",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -76629,25 +76759,29 @@
     "crate": "core",
     "file": "core/src/num/int_macros.rs",
     "func": "num::<impl i64>::unchecked_neg",
-    "hash": "54400646930767775762010208786383830546"
+    "hash": "54400646930767775762010208786383830546",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/int_macros.rs",
     "func": "num::<impl i64>::unchecked_shl",
-    "hash": "87012219747144066742103552929814615839"
+    "hash": "87012219747144066742103552929814615839",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/int_macros.rs",
     "func": "num::<impl i64>::unchecked_shr",
-    "hash": "28056106842452742041706137764596747718"
+    "hash": "28056106842452742041706137764596747718",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/int_macros.rs",
     "func": "num::<impl i64>::unchecked_sub",
-    "hash": "73703891702741674110780488903431585676"
+    "hash": "73703891702741674110780488903431585676",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -76725,13 +76859,15 @@
     "crate": "core",
     "file": "core/src/num/int_macros.rs",
     "func": "num::<impl i64>::wrapping_shl",
-    "hash": "1593637365197260411614300666718936317991"
+    "hash": "1593637365197260411614300666718936317991",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/int_macros.rs",
     "func": "num::<impl i64>::wrapping_shr",
-    "hash": "1639721095685669627316965783591522963178"
+    "hash": "1639721095685669627316965783591522963178",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -77397,7 +77533,8 @@
     "crate": "core",
     "file": "core/src/num/int_macros.rs",
     "func": "num::<impl i8>::unchecked_add",
-    "hash": "41459015075024369617532737517830694057"
+    "hash": "41459015075024369617532737517830694057",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -77427,25 +77564,29 @@
     "crate": "core",
     "file": "core/src/num/int_macros.rs",
     "func": "num::<impl i8>::unchecked_neg",
-    "hash": "149573094103625928466994130595657730706"
+    "hash": "149573094103625928466994130595657730706",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/int_macros.rs",
     "func": "num::<impl i8>::unchecked_shl",
-    "hash": "143966678052227583529081433828961462550"
+    "hash": "143966678052227583529081433828961462550",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/int_macros.rs",
     "func": "num::<impl i8>::unchecked_shr",
-    "hash": "55565874155486463636716175398364160379"
+    "hash": "55565874155486463636716175398364160379",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/int_macros.rs",
     "func": "num::<impl i8>::unchecked_sub",
-    "hash": "143561716153360300858663795361684314271"
+    "hash": "143561716153360300858663795361684314271",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -77523,13 +77664,15 @@
     "crate": "core",
     "file": "core/src/num/int_macros.rs",
     "func": "num::<impl i8>::wrapping_shl",
-    "hash": "1785053685964091224211659645355532075824"
+    "hash": "1785053685964091224211659645355532075824",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/int_macros.rs",
     "func": "num::<impl i8>::wrapping_shr",
-    "hash": "178930526543785177183469737533475930470"
+    "hash": "178930526543785177183469737533475930470",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -78195,7 +78338,8 @@
     "crate": "core",
     "file": "core/src/num/int_macros.rs",
     "func": "num::<impl isize>::unchecked_add",
-    "hash": "1350713811998717550513711315200786765695"
+    "hash": "1350713811998717550513711315200786765695",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -78225,25 +78369,29 @@
     "crate": "core",
     "file": "core/src/num/int_macros.rs",
     "func": "num::<impl isize>::unchecked_neg",
-    "hash": "101445464642493846677061784532715524123"
+    "hash": "101445464642493846677061784532715524123",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/int_macros.rs",
     "func": "num::<impl isize>::unchecked_shl",
-    "hash": "1344057091101120024214462061354265885105"
+    "hash": "1344057091101120024214462061354265885105",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/int_macros.rs",
     "func": "num::<impl isize>::unchecked_shr",
-    "hash": "151039533468901907067873910910278321855"
+    "hash": "151039533468901907067873910910278321855",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/int_macros.rs",
     "func": "num::<impl isize>::unchecked_sub",
-    "hash": "242154577893116643916663615895023882518"
+    "hash": "242154577893116643916663615895023882518",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -78321,13 +78469,15 @@
     "crate": "core",
     "file": "core/src/num/int_macros.rs",
     "func": "num::<impl isize>::wrapping_shl",
-    "hash": "840076482748140882010294715766500361858"
+    "hash": "840076482748140882010294715766500361858",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/int_macros.rs",
     "func": "num::<impl isize>::wrapping_shr",
-    "hash": "66217053097956154532492629080071277071"
+    "hash": "66217053097956154532492629080071277071",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -80583,7 +80733,8 @@
     "crate": "core",
     "file": "core/src/num/nonzero.rs",
     "func": "num::nonzero::NonZero::<i128>::count_ones",
-    "hash": "76843279974707365525303745821298609033"
+    "hash": "76843279974707365525303745821298609033",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -80661,13 +80812,15 @@
     "crate": "core",
     "file": "core/src/num/nonzero.rs",
     "func": "num::nonzero::NonZero::<i128>::rotate_left",
-    "hash": "5158769035594805820931533391089477156"
+    "hash": "5158769035594805820931533391089477156",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/nonzero.rs",
     "func": "num::nonzero::NonZero::<i128>::rotate_right",
-    "hash": "149275891825509949657330711657750762432"
+    "hash": "149275891825509949657330711657750762432",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -80781,7 +80934,8 @@
     "crate": "core",
     "file": "core/src/num/nonzero.rs",
     "func": "num::nonzero::NonZero::<i16>::count_ones",
-    "hash": "470567389088620738912093976468292292945"
+    "hash": "470567389088620738912093976468292292945",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -80859,13 +81013,15 @@
     "crate": "core",
     "file": "core/src/num/nonzero.rs",
     "func": "num::nonzero::NonZero::<i16>::rotate_left",
-    "hash": "1072737150951978845515780254182673889712"
+    "hash": "1072737150951978845515780254182673889712",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/nonzero.rs",
     "func": "num::nonzero::NonZero::<i16>::rotate_right",
-    "hash": "1553123067294875711816839027135469200034"
+    "hash": "1553123067294875711816839027135469200034",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -80979,7 +81135,8 @@
     "crate": "core",
     "file": "core/src/num/nonzero.rs",
     "func": "num::nonzero::NonZero::<i32>::count_ones",
-    "hash": "109805743578187520302125010163317677412"
+    "hash": "109805743578187520302125010163317677412",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -81057,13 +81214,15 @@
     "crate": "core",
     "file": "core/src/num/nonzero.rs",
     "func": "num::nonzero::NonZero::<i32>::rotate_left",
-    "hash": "39804906527341348531740870260088830979"
+    "hash": "39804906527341348531740870260088830979",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/nonzero.rs",
     "func": "num::nonzero::NonZero::<i32>::rotate_right",
-    "hash": "152318587802073106085451452189889555781"
+    "hash": "152318587802073106085451452189889555781",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -81177,7 +81336,8 @@
     "crate": "core",
     "file": "core/src/num/nonzero.rs",
     "func": "num::nonzero::NonZero::<i64>::count_ones",
-    "hash": "2859147747489694411782122534455702169"
+    "hash": "2859147747489694411782122534455702169",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -81255,13 +81415,15 @@
     "crate": "core",
     "file": "core/src/num/nonzero.rs",
     "func": "num::nonzero::NonZero::<i64>::rotate_left",
-    "hash": "956426774393335140614338877828593838593"
+    "hash": "956426774393335140614338877828593838593",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/nonzero.rs",
     "func": "num::nonzero::NonZero::<i64>::rotate_right",
-    "hash": "1740165083243012024313858560607798707371"
+    "hash": "1740165083243012024313858560607798707371",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -81375,7 +81537,8 @@
     "crate": "core",
     "file": "core/src/num/nonzero.rs",
     "func": "num::nonzero::NonZero::<i8>::count_ones",
-    "hash": "1508312457504507334917942643972338969002"
+    "hash": "1508312457504507334917942643972338969002",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -81453,13 +81616,15 @@
     "crate": "core",
     "file": "core/src/num/nonzero.rs",
     "func": "num::nonzero::NonZero::<i8>::rotate_left",
-    "hash": "5904641252036933669924052130947246675"
+    "hash": "5904641252036933669924052130947246675",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/nonzero.rs",
     "func": "num::nonzero::NonZero::<i8>::rotate_right",
-    "hash": "1183472259782495056712141934123279128595"
+    "hash": "1183472259782495056712141934123279128595",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -81573,7 +81738,8 @@
     "crate": "core",
     "file": "core/src/num/nonzero.rs",
     "func": "num::nonzero::NonZero::<isize>::count_ones",
-    "hash": "6771512003150755210739011894274937808"
+    "hash": "6771512003150755210739011894274937808",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -81651,13 +81817,15 @@
     "crate": "core",
     "file": "core/src/num/nonzero.rs",
     "func": "num::nonzero::NonZero::<isize>::rotate_left",
-    "hash": "66912809756759456639754899950570882981"
+    "hash": "66912809756759456639754899950570882981",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/nonzero.rs",
     "func": "num::nonzero::NonZero::<isize>::rotate_right",
-    "hash": "581980736653807585917739594332672119822"
+    "hash": "581980736653807585917739594332672119822",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -81765,7 +81933,8 @@
     "crate": "core",
     "file": "core/src/num/nonzero.rs",
     "func": "num::nonzero::NonZero::<u128>::count_ones",
-    "hash": "169212672726146092273892908369815161389"
+    "hash": "169212672726146092273892908369815161389",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -81855,13 +82024,15 @@
     "crate": "core",
     "file": "core/src/num/nonzero.rs",
     "func": "num::nonzero::NonZero::<u128>::rotate_left",
-    "hash": "1370019499497032224912359031238660321645"
+    "hash": "1370019499497032224912359031238660321645",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/nonzero.rs",
     "func": "num::nonzero::NonZero::<u128>::rotate_right",
-    "hash": "539499524121210181415576151016721063419"
+    "hash": "539499524121210181415576151016721063419",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -81951,7 +82122,8 @@
     "crate": "core",
     "file": "core/src/num/nonzero.rs",
     "func": "num::nonzero::NonZero::<u16>::count_ones",
-    "hash": "87509631546456422532675519980325554375"
+    "hash": "87509631546456422532675519980325554375",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -82041,13 +82213,15 @@
     "crate": "core",
     "file": "core/src/num/nonzero.rs",
     "func": "num::nonzero::NonZero::<u16>::rotate_left",
-    "hash": "173625776565259361912788027262656401797"
+    "hash": "173625776565259361912788027262656401797",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/nonzero.rs",
     "func": "num::nonzero::NonZero::<u16>::rotate_right",
-    "hash": "962558185158637324714703446746293809639"
+    "hash": "962558185158637324714703446746293809639",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -82137,7 +82311,8 @@
     "crate": "core",
     "file": "core/src/num/nonzero.rs",
     "func": "num::nonzero::NonZero::<u32>::count_ones",
-    "hash": "83819784576125417848970143689336891231"
+    "hash": "83819784576125417848970143689336891231",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -82227,13 +82402,15 @@
     "crate": "core",
     "file": "core/src/num/nonzero.rs",
     "func": "num::nonzero::NonZero::<u32>::rotate_left",
-    "hash": "820948646973988224211043062356979914730"
+    "hash": "820948646973988224211043062356979914730",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/nonzero.rs",
     "func": "num::nonzero::NonZero::<u32>::rotate_right",
-    "hash": "156299032057371922391823606644614908338"
+    "hash": "156299032057371922391823606644614908338",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -82323,7 +82500,8 @@
     "crate": "core",
     "file": "core/src/num/nonzero.rs",
     "func": "num::nonzero::NonZero::<u64>::count_ones",
-    "hash": "1041752668510322190665106823963897575"
+    "hash": "1041752668510322190665106823963897575",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -82413,13 +82591,15 @@
     "crate": "core",
     "file": "core/src/num/nonzero.rs",
     "func": "num::nonzero::NonZero::<u64>::rotate_left",
-    "hash": "46862217649203762885883563588329344545"
+    "hash": "46862217649203762885883563588329344545",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/nonzero.rs",
     "func": "num::nonzero::NonZero::<u64>::rotate_right",
-    "hash": "3391138322456967080331356729966170975"
+    "hash": "3391138322456967080331356729966170975",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -82509,7 +82689,8 @@
     "crate": "core",
     "file": "core/src/num/nonzero.rs",
     "func": "num::nonzero::NonZero::<u8>::count_ones",
-    "hash": "144266104915937025419633733492097579660"
+    "hash": "144266104915937025419633733492097579660",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -82599,13 +82780,15 @@
     "crate": "core",
     "file": "core/src/num/nonzero.rs",
     "func": "num::nonzero::NonZero::<u8>::rotate_left",
-    "hash": "94633199299530753586711111612415568426"
+    "hash": "94633199299530753586711111612415568426",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/nonzero.rs",
     "func": "num::nonzero::NonZero::<u8>::rotate_right",
-    "hash": "5706736463189182193630834288875024236"
+    "hash": "5706736463189182193630834288875024236",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -82695,7 +82878,8 @@
     "crate": "core",
     "file": "core/src/num/nonzero.rs",
     "func": "num::nonzero::NonZero::<usize>::count_ones",
-    "hash": "850972960555612193710888328647059603957"
+    "hash": "850972960555612193710888328647059603957",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -82785,13 +82969,15 @@
     "crate": "core",
     "file": "core/src/num/nonzero.rs",
     "func": "num::nonzero::NonZero::<usize>::rotate_left",
-    "hash": "60825390552816501649216216703386949206"
+    "hash": "60825390552816501649216216703386949206",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/nonzero.rs",
     "func": "num::nonzero::NonZero::<usize>::rotate_right",
-    "hash": "80829523617216911012571339612697689057"
+    "hash": "80829523617216911012571339612697689057",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -87375,13 +87561,15 @@
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
     "func": "num::<impl u128>::unchecked_add",
-    "hash": "16542401973518586331729723600158368524"
+    "hash": "16542401973518586331729723600158368524",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
     "func": "num::<impl u128>::unchecked_disjoint_bitor",
-    "hash": "62468179505928643547186831495519549610"
+    "hash": "62468179505928643547186831495519549610",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -87411,19 +87599,22 @@
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
     "func": "num::<impl u128>::unchecked_shl",
-    "hash": "11296279574086854549744096881986383104"
+    "hash": "11296279574086854549744096881986383104",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
     "func": "num::<impl u128>::unchecked_shr",
-    "hash": "27457004682448401548577890564065915193"
+    "hash": "27457004682448401548577890564065915193",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
     "func": "num::<impl u128>::unchecked_sub",
-    "hash": "130207763582150828655089801426526668543"
+    "hash": "130207763582150828655089801426526668543",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -87495,13 +87686,15 @@
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
     "func": "num::<impl u128>::wrapping_shl",
-    "hash": "805699525510286499115079895689761380820"
+    "hash": "805699525510286499115079895689761380820",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
     "func": "num::<impl u128>::wrapping_shr",
-    "hash": "1798229698495998708112946194607902874336"
+    "hash": "1798229698495998708112946194607902874336",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -88161,13 +88354,15 @@
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
     "func": "num::<impl u16>::unchecked_add",
-    "hash": "1530195770348625061718410767804951205478"
+    "hash": "1530195770348625061718410767804951205478",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
     "func": "num::<impl u16>::unchecked_disjoint_bitor",
-    "hash": "1646567059477211263013560649947789195895"
+    "hash": "1646567059477211263013560649947789195895",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -88197,19 +88392,22 @@
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
     "func": "num::<impl u16>::unchecked_shl",
-    "hash": "993579594539518272311098602637771076847"
+    "hash": "993579594539518272311098602637771076847",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
     "func": "num::<impl u16>::unchecked_shr",
-    "hash": "720730760029994113816700236689047702561"
+    "hash": "720730760029994113816700236689047702561",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
     "func": "num::<impl u16>::unchecked_sub",
-    "hash": "54024221755048604141590649326828910940"
+    "hash": "54024221755048604141590649326828910940",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -88281,13 +88479,15 @@
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
     "func": "num::<impl u16>::wrapping_shl",
-    "hash": "752694264416004185114722531946185166717"
+    "hash": "752694264416004185114722531946185166717",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
     "func": "num::<impl u16>::wrapping_shr",
-    "hash": "827672697390450658514618844153577975424"
+    "hash": "827672697390450658514618844153577975424",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -88947,13 +89147,15 @@
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
     "func": "num::<impl u32>::unchecked_add",
-    "hash": "130854638335692444805345988580583875499"
+    "hash": "130854638335692444805345988580583875499",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
     "func": "num::<impl u32>::unchecked_disjoint_bitor",
-    "hash": "1509205979857540178714701701431614399599"
+    "hash": "1509205979857540178714701701431614399599",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -88983,19 +89185,22 @@
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
     "func": "num::<impl u32>::unchecked_shl",
-    "hash": "105363741659744331884102463898962387575"
+    "hash": "105363741659744331884102463898962387575",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
     "func": "num::<impl u32>::unchecked_shr",
-    "hash": "127320175334037829323283841671812449042"
+    "hash": "127320175334037829323283841671812449042",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
     "func": "num::<impl u32>::unchecked_sub",
-    "hash": "623932314898806384710942612752481980908"
+    "hash": "623932314898806384710942612752481980908",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -89067,13 +89272,15 @@
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
     "func": "num::<impl u32>::wrapping_shl",
-    "hash": "153108392396413981513481987788874371814"
+    "hash": "153108392396413981513481987788874371814",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
     "func": "num::<impl u32>::wrapping_shr",
-    "hash": "51170717787290303411248112581561361389"
+    "hash": "51170717787290303411248112581561361389",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -89733,13 +89940,15 @@
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
     "func": "num::<impl u64>::unchecked_add",
-    "hash": "87221581696529708117747633625843428992"
+    "hash": "87221581696529708117747633625843428992",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
     "func": "num::<impl u64>::unchecked_disjoint_bitor",
-    "hash": "1254196771101498421216397036414100436388"
+    "hash": "1254196771101498421216397036414100436388",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -89769,19 +89978,22 @@
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
     "func": "num::<impl u64>::unchecked_shl",
-    "hash": "171217592746399518213825504702974536413"
+    "hash": "171217592746399518213825504702974536413",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
     "func": "num::<impl u64>::unchecked_shr",
-    "hash": "537151917267335587012793016823279191552"
+    "hash": "537151917267335587012793016823279191552",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
     "func": "num::<impl u64>::unchecked_sub",
-    "hash": "146999445823460923837650766748647607806"
+    "hash": "146999445823460923837650766748647607806",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -89853,13 +90065,15 @@
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
     "func": "num::<impl u64>::wrapping_shl",
-    "hash": "166987003722345357923992787929595196814"
+    "hash": "166987003722345357923992787929595196814",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
     "func": "num::<impl u64>::wrapping_shr",
-    "hash": "1830816449617676562415119426450220679595"
+    "hash": "1830816449617676562415119426450220679595",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -90519,13 +90733,15 @@
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
     "func": "num::<impl u8>::unchecked_add",
-    "hash": "18305200539080999937692536706112892813"
+    "hash": "18305200539080999937692536706112892813",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
     "func": "num::<impl u8>::unchecked_disjoint_bitor",
-    "hash": "41980680107816792213662023038772750117"
+    "hash": "41980680107816792213662023038772750117",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -90555,19 +90771,22 @@
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
     "func": "num::<impl u8>::unchecked_shl",
-    "hash": "119219594017145745644239334786707714511"
+    "hash": "119219594017145745644239334786707714511",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
     "func": "num::<impl u8>::unchecked_shr",
-    "hash": "174894696459093223323274227398093797415"
+    "hash": "174894696459093223323274227398093797415",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
     "func": "num::<impl u8>::unchecked_sub",
-    "hash": "1532066451777410930217202448181742040419"
+    "hash": "1532066451777410930217202448181742040419",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -90639,13 +90858,15 @@
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
     "func": "num::<impl u8>::wrapping_shl",
-    "hash": "73680321337777102628895548863965689774"
+    "hash": "73680321337777102628895548863965689774",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
     "func": "num::<impl u8>::wrapping_shr",
-    "hash": "868798987916772418226488620617727103"
+    "hash": "868798987916772418226488620617727103",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -91305,13 +91526,15 @@
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
     "func": "num::<impl usize>::unchecked_add",
-    "hash": "174107661030119018973646362480685393050"
+    "hash": "174107661030119018973646362480685393050",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
     "func": "num::<impl usize>::unchecked_disjoint_bitor",
-    "hash": "33675937863748577387218057049454129764"
+    "hash": "33675937863748577387218057049454129764",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -91341,19 +91564,22 @@
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
     "func": "num::<impl usize>::unchecked_shl",
-    "hash": "235801083224622589114086298196149531729"
+    "hash": "235801083224622589114086298196149531729",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
     "func": "num::<impl usize>::unchecked_shr",
-    "hash": "672771047639733910031387706019824471"
+    "hash": "672771047639733910031387706019824471",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
     "func": "num::<impl usize>::unchecked_sub",
-    "hash": "366503061556370158810229951695642705038"
+    "hash": "366503061556370158810229951695642705038",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -91425,13 +91651,15 @@
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
     "func": "num::<impl usize>::wrapping_shl",
-    "hash": "12870946966867121998618375461097558556"
+    "hash": "12870946966867121998618375461097558556",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/num/uint_macros.rs",
     "func": "num::<impl usize>::wrapping_shr",
-    "hash": "680456226994577824710449071941321323569"
+    "hash": "680456226994577824710449071941321323569",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -100363,25 +100591,29 @@
     "crate": "core",
     "file": "core/src/ptr/alignment.rs",
     "func": "ptr::alignment::Alignment::as_nonzero",
-    "hash": "201181288689639124415825169679319142024"
+    "hash": "201181288689639124415825169679319142024",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/ptr/alignment.rs",
     "func": "ptr::alignment::Alignment::as_usize",
-    "hash": "112152844438854238887994758767167519478"
+    "hash": "112152844438854238887994758767167519478",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/ptr/alignment.rs",
     "func": "ptr::alignment::Alignment::log2",
-    "hash": "567128593324850714615319747611018204654"
+    "hash": "567128593324850714615319747611018204654",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/ptr/alignment.rs",
     "func": "ptr::alignment::Alignment::mask",
-    "hash": "78637598139928331936532242289687422514"
+    "hash": "78637598139928331936532242289687422514",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -100393,13 +100625,15 @@
     "crate": "core",
     "file": "core/src/ptr/alignment.rs",
     "func": "ptr::alignment::Alignment::new",
-    "hash": "5589667399286252701694525062377909418"
+    "hash": "5589667399286252701694525062377909418",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/ptr/alignment.rs",
     "func": "ptr::alignment::Alignment::new_unchecked",
-    "hash": "21093895404218893828635808083668477303"
+    "hash": "21093895404218893828635808083668477303",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -101342,7 +101576,8 @@
     "crate": "core",
     "file": "core/src/ptr/mod.rs",
     "func": "ptr::align_offset::mod_inv",
-    "hash": "108552149900633290919250115311635650035"
+    "hash": "108552149900633290919250115311635650035",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -106592,13 +106827,15 @@
     "crate": "core",
     "file": "core/src/time.rs",
     "func": "time::Duration::from_micros",
-    "hash": "713582765544168457416896353134350734653"
+    "hash": "713582765544168457416896353134350734653",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
     "file": "core/src/time.rs",
     "func": "time::Duration::from_millis",
-    "hash": "103201209251474754949132317369828318810"
+    "hash": "103201209251474754949132317369828318810",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -106610,7 +106847,8 @@
     "crate": "core",
     "file": "core/src/time.rs",
     "func": "time::Duration::from_nanos",
-    "hash": "388956341027180722217190897267579790662"
+    "hash": "388956341027180722217190897267579790662",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
@@ -106622,7 +106860,8 @@
     "crate": "core",
     "file": "core/src/time.rs",
     "func": "time::Duration::from_secs",
-    "hash": "1270888124877289178512994789532778292810"
+    "hash": "1270888124877289178512994789532778292810",
+    "proof_kind": "Auto"
   },
   {
     "crate": "core",
