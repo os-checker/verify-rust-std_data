@@ -27,9 +27,9 @@ split() {
 gen() {
   cd "$cwd"
   # The artifacts must accord with split cmd.
-  # verify_rust_std merge --hash-json ../../artifacts/artifact-libcore/json \
-  #   --kani-list ../../assets/kani-list_verify-rust-std-CI.json \
-  #   --strip-kani-list-prefix /home/runner/work/verify-rust-std/verify-rust-std/library/ >merge_diff.json
+  verify_rust_std merge --hash-json ../../artifacts/artifact-libcore/json \
+    --kani-list ../../assets/kani-list_verify-rust-std-CI.json \
+    --strip-kani-list-prefix /home/runner/work/verify-rust-std/verify-rust-std/library/ >merge_diff.json
 
   # Filter in contract autoharnesses.
   jq '

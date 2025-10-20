@@ -1,5 +1,25 @@
 [
   {
+    "harness": "alloc::__default_lib_allocator::__rdl_alloc",
+    "time": 365,
+    "props": 106,
+    "func": {
+      "name": "alloc::__default_lib_allocator::__rdl_alloc",
+      "safe": "unsafe",
+      "file": "std/src/alloc.rs"
+    }
+  },
+  {
+    "harness": "alloc::__default_lib_allocator::__rdl_alloc_zeroed",
+    "time": 716,
+    "props": 124,
+    "func": {
+      "name": "alloc::__default_lib_allocator::__rdl_alloc_zeroed",
+      "safe": "unsafe",
+      "file": "std/src/alloc.rs"
+    }
+  },
+  {
     "file": "core/src/str/pattern.rs",
     "harness": "str::pattern::verify::check_small_slice_eq",
     "proof_kind": "AutoStandard",
@@ -20,30 +40,6 @@
     "func": {
       "name": "str::pattern::small_slice_eq_empty",
       "file": "core/src/str/pattern.rs"
-    }
-  },
-  {
-    "file": "std/src/alloc.rs",
-    "harness": "alloc::__default_lib_allocator::__rdl_alloc",
-    "proof_kind": "Auto",
-    "time": 365,
-    "props": 106,
-    "func": {
-      "name": "alloc::__default_lib_allocator::__rdl_alloc",
-      "safe": "unsafe",
-      "file": "std/src/alloc.rs"
-    }
-  },
-  {
-    "file": "std/src/alloc.rs",
-    "harness": "alloc::__default_lib_allocator::__rdl_alloc_zeroed",
-    "proof_kind": "Auto",
-    "time": 716,
-    "props": 124,
-    "func": {
-      "name": "alloc::__default_lib_allocator::__rdl_alloc_zeroed",
-      "safe": "unsafe",
-      "file": "std/src/alloc.rs"
     }
   },
   {
