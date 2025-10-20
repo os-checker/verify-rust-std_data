@@ -31,13 +31,33 @@ gen() {
   #   --kani-list ../../assets/kani-list_verify-rust-std-CI.json \
   #   --strip-kani-list-prefix /home/runner/work/verify-rust-std/verify-rust-std/library/ >merge_diff.json
 
-  # Filter in autoharnesses.
+  # Filter in contract autoharnesses.
   jq '
     .contracts
     | map(
       select(.harnesses[0] == "kani::internal::automatic_harness")
       | { (.function): true }
-    ) | add' ../../assets/kani-list_verify-rust-std-CI.json >autoharness.json
+    )
+    | add
+    | to_entries | sort | from_entries
+  ' ../../assets/kani-list_verify-rust-std-CI.json >autoharness-contract.json
+  # Filter in standard autoharnesses.
+  sqlite3 ../../assets/core.sqlite3 <../../assets/proof_kind.sql >proof_kind.json
+  jq --slurp '
+    {
+      proof: .[0] | to_entries | map(.value) | add,
+      standard: .[1]."standard-harnesses" | to_entries | map(.value) | add
+    }
+    | . as $root
+    | .standard | map(select($root.proof[.] | not) | { (.): true } ) | add
+    | to_entries | sort | from_entries
+  ' proof_kind.json ../../assets/kani-list_verify-rust-std-CI.json >autoharness-standard.json
+
+  # Merge autoharness.
+  jq --slurp '.[0] + .[1]
+    | to_entries | sort | from_entries
+  ' autoharness-contract.json autoharness-standard.json >autoharness.json
+
   # Add autoharness back by modifying .proof_kind field.
   jq --slurp '
     { auto: .[0], merge: .[1] }

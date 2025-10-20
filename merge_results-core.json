@@ -1,396 +1,8 @@
 [
   {
-    "harness": "alloc::__default_lib_allocator::__rdl_alloc",
-    "time": 365,
-    "props": 106,
-    "func": {
-      "name": "alloc::__default_lib_allocator::__rdl_alloc",
-      "safe": "unsafe",
-      "file": "std/src/alloc.rs"
-    }
-  },
-  {
-    "harness": "alloc::__default_lib_allocator::__rdl_alloc_zeroed",
-    "time": 716,
-    "props": 124,
-    "func": {
-      "name": "alloc::__default_lib_allocator::__rdl_alloc_zeroed",
-      "safe": "unsafe",
-      "file": "std/src/alloc.rs"
-    }
-  },
-  {
-    "harness": "alloc::layout::Layout::from_size_alignment",
-    "time": 194,
-    "props": 13,
-    "func": {
-      "name": "alloc::layout::Layout::from_size_alignment",
-      "safe": "safe",
-      "file": "core/src/alloc/layout.rs"
-    }
-  },
-  {
-    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i16>> for num::nonzero::NonZero<i128>>::from",
-    "time": 37,
-    "props": 17,
-    "func": {
-      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i16>> for num::nonzero::NonZero<i128>>::from",
-      "safe": "safe abstraction",
-      "file": "core/src/convert/num.rs"
-    }
-  },
-  {
-    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i16>> for num::nonzero::NonZero<i32>>::from",
-    "time": 27,
-    "props": 17,
-    "func": {
-      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i16>> for num::nonzero::NonZero<i32>>::from",
-      "safe": "safe abstraction",
-      "file": "core/src/convert/num.rs"
-    }
-  },
-  {
-    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i16>> for num::nonzero::NonZero<i64>>::from",
-    "time": 34,
-    "props": 17,
-    "func": {
-      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i16>> for num::nonzero::NonZero<i64>>::from",
-      "safe": "safe abstraction",
-      "file": "core/src/convert/num.rs"
-    }
-  },
-  {
-    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i16>> for num::nonzero::NonZero<isize>>::from",
-    "time": 42,
-    "props": 17,
-    "func": {
-      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i16>> for num::nonzero::NonZero<isize>>::from",
-      "safe": "safe abstraction",
-      "file": "core/src/convert/num.rs"
-    }
-  },
-  {
-    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i32>> for num::nonzero::NonZero<i128>>::from",
-    "time": 38,
-    "props": 17,
-    "func": {
-      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i32>> for num::nonzero::NonZero<i128>>::from",
-      "safe": "safe abstraction",
-      "file": "core/src/convert/num.rs"
-    }
-  },
-  {
-    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i32>> for num::nonzero::NonZero<i64>>::from",
-    "time": 36,
-    "props": 17,
-    "func": {
-      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i32>> for num::nonzero::NonZero<i64>>::from",
-      "safe": "safe abstraction",
-      "file": "core/src/convert/num.rs"
-    }
-  },
-  {
-    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i64>> for num::nonzero::NonZero<i128>>::from",
-    "time": 30,
-    "props": 17,
-    "func": {
-      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i64>> for num::nonzero::NonZero<i128>>::from",
-      "safe": "safe abstraction",
-      "file": "core/src/convert/num.rs"
-    }
-  },
-  {
-    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i8>> for num::nonzero::NonZero<i128>>::from",
-    "time": 41,
-    "props": 17,
-    "func": {
-      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i8>> for num::nonzero::NonZero<i128>>::from",
-      "safe": "safe abstraction",
-      "file": "core/src/convert/num.rs"
-    }
-  },
-  {
-    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i8>> for num::nonzero::NonZero<i16>>::from",
-    "time": 42,
-    "props": 17,
-    "func": {
-      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i8>> for num::nonzero::NonZero<i16>>::from",
-      "safe": "safe abstraction",
-      "file": "core/src/convert/num.rs"
-    }
-  },
-  {
-    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i8>> for num::nonzero::NonZero<i32>>::from",
-    "time": 40,
-    "props": 17,
-    "func": {
-      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i8>> for num::nonzero::NonZero<i32>>::from",
-      "safe": "safe abstraction",
-      "file": "core/src/convert/num.rs"
-    }
-  },
-  {
-    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i8>> for num::nonzero::NonZero<i64>>::from",
-    "time": 27,
-    "props": 17,
-    "func": {
-      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i8>> for num::nonzero::NonZero<i64>>::from",
-      "safe": "safe abstraction",
-      "file": "core/src/convert/num.rs"
-    }
-  },
-  {
-    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i8>> for num::nonzero::NonZero<isize>>::from",
-    "time": 29,
-    "props": 17,
-    "func": {
-      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i8>> for num::nonzero::NonZero<isize>>::from",
-      "safe": "safe abstraction",
-      "file": "core/src/convert/num.rs"
-    }
-  },
-  {
-    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<i128>>::from",
-    "time": 40,
-    "props": 17,
-    "func": {
-      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<i128>>::from",
-      "safe": "safe abstraction",
-      "file": "core/src/convert/num.rs"
-    }
-  },
-  {
-    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<i32>>::from",
-    "time": 41,
-    "props": 17,
-    "func": {
-      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<i32>>::from",
-      "safe": "safe abstraction",
-      "file": "core/src/convert/num.rs"
-    }
-  },
-  {
-    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<i64>>::from",
-    "time": 41,
-    "props": 17,
-    "func": {
-      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<i64>>::from",
-      "safe": "safe abstraction",
-      "file": "core/src/convert/num.rs"
-    }
-  },
-  {
-    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<u128>>::from",
-    "time": 28,
-    "props": 17,
-    "func": {
-      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<u128>>::from",
-      "safe": "safe abstraction",
-      "file": "core/src/convert/num.rs"
-    }
-  },
-  {
-    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<u32>>::from",
-    "time": 40,
-    "props": 17,
-    "func": {
-      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<u32>>::from",
-      "safe": "safe abstraction",
-      "file": "core/src/convert/num.rs"
-    }
-  },
-  {
-    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<u64>>::from",
-    "time": 29,
-    "props": 17,
-    "func": {
-      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<u64>>::from",
-      "safe": "safe abstraction",
-      "file": "core/src/convert/num.rs"
-    }
-  },
-  {
-    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<usize>>::from",
-    "time": 42,
-    "props": 17,
-    "func": {
-      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<usize>>::from",
-      "safe": "safe abstraction",
-      "file": "core/src/convert/num.rs"
-    }
-  },
-  {
-    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u32>> for num::nonzero::NonZero<i128>>::from",
-    "time": 29,
-    "props": 17,
-    "func": {
-      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u32>> for num::nonzero::NonZero<i128>>::from",
-      "safe": "safe abstraction",
-      "file": "core/src/convert/num.rs"
-    }
-  },
-  {
-    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u32>> for num::nonzero::NonZero<i64>>::from",
-    "time": 35,
-    "props": 17,
-    "func": {
-      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u32>> for num::nonzero::NonZero<i64>>::from",
-      "safe": "safe abstraction",
-      "file": "core/src/convert/num.rs"
-    }
-  },
-  {
-    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u32>> for num::nonzero::NonZero<u128>>::from",
-    "time": 40,
-    "props": 17,
-    "func": {
-      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u32>> for num::nonzero::NonZero<u128>>::from",
-      "safe": "safe abstraction",
-      "file": "core/src/convert/num.rs"
-    }
-  },
-  {
-    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u32>> for num::nonzero::NonZero<u64>>::from",
-    "time": 41,
-    "props": 17,
-    "func": {
-      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u32>> for num::nonzero::NonZero<u64>>::from",
-      "safe": "safe abstraction",
-      "file": "core/src/convert/num.rs"
-    }
-  },
-  {
-    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u64>> for num::nonzero::NonZero<i128>>::from",
-    "time": 40,
-    "props": 17,
-    "func": {
-      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u64>> for num::nonzero::NonZero<i128>>::from",
-      "safe": "safe abstraction",
-      "file": "core/src/convert/num.rs"
-    }
-  },
-  {
-    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u64>> for num::nonzero::NonZero<u128>>::from",
-    "time": 41,
-    "props": 17,
-    "func": {
-      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u64>> for num::nonzero::NonZero<u128>>::from",
-      "safe": "safe abstraction",
-      "file": "core/src/convert/num.rs"
-    }
-  },
-  {
-    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<i128>>::from",
-    "time": 40,
-    "props": 17,
-    "func": {
-      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<i128>>::from",
-      "safe": "safe abstraction",
-      "file": "core/src/convert/num.rs"
-    }
-  },
-  {
-    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<i16>>::from",
-    "time": 39,
-    "props": 17,
-    "func": {
-      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<i16>>::from",
-      "safe": "safe abstraction",
-      "file": "core/src/convert/num.rs"
-    }
-  },
-  {
-    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<i32>>::from",
-    "time": 30,
-    "props": 17,
-    "func": {
-      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<i32>>::from",
-      "safe": "safe abstraction",
-      "file": "core/src/convert/num.rs"
-    }
-  },
-  {
-    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<i64>>::from",
-    "time": 40,
-    "props": 17,
-    "func": {
-      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<i64>>::from",
-      "safe": "safe abstraction",
-      "file": "core/src/convert/num.rs"
-    }
-  },
-  {
-    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<isize>>::from",
-    "time": 41,
-    "props": 17,
-    "func": {
-      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<isize>>::from",
-      "safe": "safe abstraction",
-      "file": "core/src/convert/num.rs"
-    }
-  },
-  {
-    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<u128>>::from",
-    "time": 38,
-    "props": 17,
-    "func": {
-      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<u128>>::from",
-      "safe": "safe abstraction",
-      "file": "core/src/convert/num.rs"
-    }
-  },
-  {
-    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<u16>>::from",
-    "time": 40,
-    "props": 17,
-    "func": {
-      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<u16>>::from",
-      "safe": "safe abstraction",
-      "file": "core/src/convert/num.rs"
-    }
-  },
-  {
-    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<u32>>::from",
-    "time": 41,
-    "props": 17,
-    "func": {
-      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<u32>>::from",
-      "safe": "safe abstraction",
-      "file": "core/src/convert/num.rs"
-    }
-  },
-  {
-    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<u64>>::from",
-    "time": 41,
-    "props": 17,
-    "func": {
-      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<u64>>::from",
-      "safe": "safe abstraction",
-      "file": "core/src/convert/num.rs"
-    }
-  },
-  {
-    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<usize>>::from",
-    "time": 27,
-    "props": 17,
-    "func": {
-      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<usize>>::from",
-      "safe": "safe abstraction",
-      "file": "core/src/convert/num.rs"
-    }
-  },
-  {
-    "harness": "core_arch::x86::__m128d::as_f64x2",
-    "time": 23,
-    "props": 0,
-    "func": {
-      "name": "core_arch::x86::__m128d::as_f64x2",
-      "safe": "safe",
-      "file": "core/src/../../stdarch/crates/core_arch/src/x86/mod.rs"
-    }
-  },
-  {
+    "file": "core/src/str/pattern.rs",
     "harness": "str::pattern::verify::check_small_slice_eq",
+    "proof_kind": "Auto",
     "time": 130515,
     "props": 426,
     "func": {
@@ -400,7 +12,9 @@
     }
   },
   {
+    "file": "core/src/str/pattern.rs",
     "harness": "str::pattern::verify::check_small_slice_eq_empty",
+    "proof_kind": "Auto",
     "time": 1245,
     "props": 441,
     "func": {
@@ -409,23 +23,39 @@
     }
   },
   {
-    "harness": "unicode::unicode_data::conversions::to_lower",
-    "time": 11384,
-    "props": 204,
+    "file": "std/src/alloc.rs",
+    "harness": "alloc::__default_lib_allocator::__rdl_alloc",
+    "proof_kind": "Auto",
+    "time": 365,
+    "props": 106,
     "func": {
-      "name": "unicode::unicode_data::conversions::to_lower",
-      "safe": "safe",
-      "file": "core/src/unicode/unicode_data.rs"
+      "name": "alloc::__default_lib_allocator::__rdl_alloc",
+      "safe": "unsafe",
+      "file": "std/src/alloc.rs"
     }
   },
   {
-    "harness": "unicode::unicode_data::conversions::to_upper",
-    "time": 19607,
-    "props": 204,
+    "file": "std/src/alloc.rs",
+    "harness": "alloc::__default_lib_allocator::__rdl_alloc_zeroed",
+    "proof_kind": "Auto",
+    "time": 716,
+    "props": 124,
     "func": {
-      "name": "unicode::unicode_data::conversions::to_upper",
+      "name": "alloc::__default_lib_allocator::__rdl_alloc_zeroed",
+      "safe": "unsafe",
+      "file": "std/src/alloc.rs"
+    }
+  },
+  {
+    "file": "stdarch/crates/core_arch/src/x86/mod.rs",
+    "harness": "core_arch::x86::__m128d::as_f64x2",
+    "proof_kind": "Auto",
+    "time": 23,
+    "props": 0,
+    "func": {
+      "name": "core_arch::x86::__m128d::as_f64x2",
       "safe": "safe",
-      "file": "core/src/unicode/unicode_data.rs"
+      "file": "core/src/../../stdarch/crates/core_arch/src/x86/mod.rs"
     }
   },
   {
@@ -481,6 +111,20 @@
       "file": "core/src/alloc/layout.rs"
     },
     "hash": "144673661539519055195865692774889120235"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/alloc/layout.rs",
+    "harness": "alloc::layout::Layout::from_size_alignment",
+    "proof_kind": "Auto",
+    "time": 194,
+    "props": 13,
+    "func": {
+      "name": "alloc::layout::Layout::from_size_alignment",
+      "safe": "safe",
+      "file": "core/src/alloc/layout.rs"
+    },
+    "hash": "608664848234302571713593688644672913516"
   },
   {
     "crate": "core",
@@ -757,6 +401,496 @@
       "file": "core/src/char/methods.rs"
     },
     "hash": "9876316453686709356538409161397548204"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i16>> for num::nonzero::NonZero<i128>>::from",
+    "proof_kind": "Auto",
+    "time": 37,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i16>> for num::nonzero::NonZero<i128>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    },
+    "hash": "211986369401987044617967638233971687510"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i16>> for num::nonzero::NonZero<i32>>::from",
+    "proof_kind": "Auto",
+    "time": 27,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i16>> for num::nonzero::NonZero<i32>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    },
+    "hash": "16853406912172615815062719204690378491"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i16>> for num::nonzero::NonZero<i64>>::from",
+    "proof_kind": "Auto",
+    "time": 34,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i16>> for num::nonzero::NonZero<i64>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    },
+    "hash": "175907404212014642574398113010912783790"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i16>> for num::nonzero::NonZero<isize>>::from",
+    "proof_kind": "Auto",
+    "time": 42,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i16>> for num::nonzero::NonZero<isize>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    },
+    "hash": "890780276406736165411952470103626347292"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i32>> for num::nonzero::NonZero<i128>>::from",
+    "proof_kind": "Auto",
+    "time": 38,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i32>> for num::nonzero::NonZero<i128>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    },
+    "hash": "281966997100713716612760001486205325065"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i32>> for num::nonzero::NonZero<i64>>::from",
+    "proof_kind": "Auto",
+    "time": 36,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i32>> for num::nonzero::NonZero<i64>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    },
+    "hash": "1561935896505349220916664107205603470765"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i64>> for num::nonzero::NonZero<i128>>::from",
+    "proof_kind": "Auto",
+    "time": 30,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i64>> for num::nonzero::NonZero<i128>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    },
+    "hash": "481358386426761425015465717636004376629"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i8>> for num::nonzero::NonZero<i128>>::from",
+    "proof_kind": "Auto",
+    "time": 41,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i8>> for num::nonzero::NonZero<i128>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    },
+    "hash": "1334211500842357054014963469837480729728"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i8>> for num::nonzero::NonZero<i16>>::from",
+    "proof_kind": "Auto",
+    "time": 42,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i8>> for num::nonzero::NonZero<i16>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    },
+    "hash": "1149563802661070279112925529790459673310"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i8>> for num::nonzero::NonZero<i32>>::from",
+    "proof_kind": "Auto",
+    "time": 40,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i8>> for num::nonzero::NonZero<i32>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    },
+    "hash": "22209673400449390296392524149157592039"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i8>> for num::nonzero::NonZero<i64>>::from",
+    "proof_kind": "Auto",
+    "time": 27,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i8>> for num::nonzero::NonZero<i64>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    },
+    "hash": "435320218411848390415377875750324655671"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<i8>> for num::nonzero::NonZero<isize>>::from",
+    "proof_kind": "Auto",
+    "time": 29,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<i8>> for num::nonzero::NonZero<isize>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    },
+    "hash": "917337238911893277317248306654178875483"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<i128>>::from",
+    "proof_kind": "Auto",
+    "time": 40,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<i128>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    },
+    "hash": "1535849854977822098582903738657966392"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<i32>>::from",
+    "proof_kind": "Auto",
+    "time": 41,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<i32>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    },
+    "hash": "107643473990792647399423109426162488688"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<i64>>::from",
+    "proof_kind": "Auto",
+    "time": 41,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<i64>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    },
+    "hash": "132725541548688574921645568285100311920"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<u128>>::from",
+    "proof_kind": "Auto",
+    "time": 28,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<u128>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    },
+    "hash": "82583140954815741655994436524216072866"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<u32>>::from",
+    "proof_kind": "Auto",
+    "time": 40,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<u32>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    },
+    "hash": "117544866638536046042120119322226443831"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<u64>>::from",
+    "proof_kind": "Auto",
+    "time": 29,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<u64>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    },
+    "hash": "127269044212056042416361572833816964792"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<usize>>::from",
+    "proof_kind": "Auto",
+    "time": 42,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u16>> for num::nonzero::NonZero<usize>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    },
+    "hash": "455516869522657812813437576204583924689"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u32>> for num::nonzero::NonZero<i128>>::from",
+    "proof_kind": "Auto",
+    "time": 29,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u32>> for num::nonzero::NonZero<i128>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    },
+    "hash": "75561233371376533003535322358288847451"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u32>> for num::nonzero::NonZero<i64>>::from",
+    "proof_kind": "Auto",
+    "time": 35,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u32>> for num::nonzero::NonZero<i64>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    },
+    "hash": "179995470355608941007455558143454400811"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u32>> for num::nonzero::NonZero<u128>>::from",
+    "proof_kind": "Auto",
+    "time": 40,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u32>> for num::nonzero::NonZero<u128>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    },
+    "hash": "4248316978463551087436165207422129161"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u32>> for num::nonzero::NonZero<u64>>::from",
+    "proof_kind": "Auto",
+    "time": 41,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u32>> for num::nonzero::NonZero<u64>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    },
+    "hash": "6457029689964507203178864866598804619"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u64>> for num::nonzero::NonZero<i128>>::from",
+    "proof_kind": "Auto",
+    "time": 40,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u64>> for num::nonzero::NonZero<i128>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    },
+    "hash": "462310999085130904512053733482402481213"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u64>> for num::nonzero::NonZero<u128>>::from",
+    "proof_kind": "Auto",
+    "time": 41,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u64>> for num::nonzero::NonZero<u128>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    },
+    "hash": "1336840453889327497111246176267694428673"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<i128>>::from",
+    "proof_kind": "Auto",
+    "time": 40,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<i128>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    },
+    "hash": "41181866433850166744086444798489360241"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<i16>>::from",
+    "proof_kind": "Auto",
+    "time": 39,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<i16>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    },
+    "hash": "171413817209775049727131153442028994484"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<i32>>::from",
+    "proof_kind": "Auto",
+    "time": 30,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<i32>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    },
+    "hash": "1771125921055871951713496392825014292409"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<i64>>::from",
+    "proof_kind": "Auto",
+    "time": 40,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<i64>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    },
+    "hash": "1038385984053301623718264596491225047981"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<isize>>::from",
+    "proof_kind": "Auto",
+    "time": 41,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<isize>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    },
+    "hash": "963478781734699289715715729937152839233"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<u128>>::from",
+    "proof_kind": "Auto",
+    "time": 38,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<u128>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    },
+    "hash": "79674669660354613031460495462294931780"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<u16>>::from",
+    "proof_kind": "Auto",
+    "time": 40,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<u16>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    },
+    "hash": "1400114409259794364717424708612521604648"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<u32>>::from",
+    "proof_kind": "Auto",
+    "time": 41,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<u32>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    },
+    "hash": "1343267485601402310618411068761281447039"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<u64>>::from",
+    "proof_kind": "Auto",
+    "time": 41,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<u64>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    },
+    "hash": "8344180280606181317958394437351588285"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/convert/num.rs",
+    "harness": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<usize>>::from",
+    "proof_kind": "Auto",
+    "time": 27,
+    "props": 17,
+    "func": {
+      "name": "convert::num::<impl convert::From<num::nonzero::NonZero<u8>> for num::nonzero::NonZero<usize>>::from",
+      "safe": "safe abstraction",
+      "file": "core/src/convert/num.rs"
+    },
+    "hash": "1727499930539621677515839820266943345032"
   },
   {
     "crate": "core",
@@ -21506,5 +21640,33 @@
       "file": "core/src/time.rs"
     },
     "hash": "36485220270542255188822625827033868809"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/unicode/unicode_data.rs",
+    "harness": "unicode::unicode_data::conversions::to_lower",
+    "proof_kind": "Auto",
+    "time": 11384,
+    "props": 204,
+    "func": {
+      "name": "unicode::unicode_data::conversions::to_lower",
+      "safe": "safe",
+      "file": "core/src/unicode/unicode_data.rs"
+    },
+    "hash": "1469867097302331626115000252918213985290"
+  },
+  {
+    "crate": "core",
+    "file": "core/src/unicode/unicode_data.rs",
+    "harness": "unicode::unicode_data::conversions::to_upper",
+    "proof_kind": "Auto",
+    "time": 19607,
+    "props": 204,
+    "func": {
+      "name": "unicode::unicode_data::conversions::to_upper",
+      "safe": "safe",
+      "file": "core/src/unicode/unicode_data.rs"
+    },
+    "hash": "100936873364593785231065773565317995559"
   }
 ]
