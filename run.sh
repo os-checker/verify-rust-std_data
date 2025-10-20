@@ -36,7 +36,7 @@ gen() {
     .contracts
     | map(
       select(.harnesses[0] == "kani::internal::automatic_harness")
-      | { (.function): true }
+      | { (.function): "AutoContract" }
     )
     | add
     | to_entries | sort | from_entries
@@ -49,7 +49,7 @@ gen() {
       standard: .[1]."standard-harnesses" | to_entries | map(.value) | add
     }
     | . as $root
-    | .standard | map(select($root.proof[.] | not) | { (.): true } ) | add
+    | .standard | map(select($root.proof[.] | not) | { (.): "AutoStandard" } ) | add
     | to_entries | sort | from_entries
   ' proof_kind.json ../../assets/kani-list_verify-rust-std-CI.json >autoharness-standard.json
 
@@ -63,7 +63,7 @@ gen() {
     { auto: .[0], merge: .[1] }
     | . as $root
     | .merge | map(
-      if ($root.auto[.func]) then .proof_kind = "Auto" else . end
+      if ($root.auto[.func]) then .proof_kind = $root.auto[.func] else . end
     )
   ' autoharness.json merge_diff.json >merge_diff_with_auto.json
   mv merge_diff_with_auto.json merge_diff.json
