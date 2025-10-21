@@ -163,7 +163,7 @@ chart() {
         | del(.kind | select(. == null))
         | del(.time | select(. == null))
     )
-  ' merge_results-core.json path.json | jless >chart/merged.json
+  ' merge_results-core.json path.json >chart/merged.json
 }
 
 declare -A cmds=(
