@@ -1,42 +1,25 @@
 [
   {
     "mod": "alloc::alloc",
-    "cnt": {
-      "not_proof": 27,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 20
   },
   {
     "mod": "alloc::borrow",
-    "cnt": {
-      "not_proof": 24,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 11
   },
   {
     "mod": "alloc::boxed",
-    "cnt": {
-      "not_proof": 183,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 59
   },
   {
     "mod": "alloc::bstr",
-    "cnt": {
-      "not_proof": 110,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 100
   },
   {
     "mod": "alloc::collections",
-    "cnt": {
-      "not_proof": 1025,
-      "standard": 1,
-      "contract": 0
+    "total": 76,
+    "kind": {
+      "Standard": 1
     },
     "avg": 8866,
     "time": [
@@ -45,82 +28,41 @@
   },
   {
     "mod": "alloc::ffi",
-    "cnt": {
-      "not_proof": 105,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 104
   },
   {
     "mod": "alloc::fmt",
-    "cnt": {
-      "not_proof": 2,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 3
   },
   {
     "mod": "alloc::raw_vec",
-    "cnt": {
-      "not_proof": 54,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 73
   },
   {
     "mod": "alloc::rc",
-    "cnt": {
-      "not_proof": 168,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 71
   },
   {
     "mod": "alloc::slice",
-    "cnt": {
-      "not_proof": 32,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 14
   },
   {
     "mod": "alloc::str",
-    "cnt": {
-      "not_proof": 21,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 23
   },
   {
     "mod": "alloc::string",
-    "cnt": {
-      "not_proof": 199,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 227
   },
   {
     "mod": "alloc::sync",
-    "cnt": {
-      "not_proof": 162,
-      "standard": 0,
-      "contract": 0
-    }
-  },
-  {
-    "mod": "alloc::task",
-    "cnt": {
-      "not_proof": 18,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 80
   },
   {
     "mod": "alloc::vec",
-    "cnt": {
-      "not_proof": 301,
-      "standard": 1,
-      "contract": 0
+    "total": 182,
+    "kind": {
+      "Standard": 1
     },
     "avg": 1353,
     "time": [
@@ -129,23 +71,236 @@
   },
   {
     "mod": "alloc::wtf8",
-    "cnt": {
-      "not_proof": 57,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 55
+  },
+  {
+    "mod": "core::<ascii",
+    "avg": 614,
+    "time": [
+      514,
+      714
+    ]
+  },
+  {
+    "mod": "core::<bool as intrinsics",
+    "avg": 54,
+    "time": [
+      54
+    ]
+  },
+  {
+    "mod": "core::<char as iter",
+    "avg": 121,
+    "time": [
+      119,
+      123
+    ]
+  },
+  {
+    "mod": "core::<i128 as intrinsics",
+    "avg": 55,
+    "time": [
+      55
+    ]
+  },
+  {
+    "mod": "core::<i128 as iter",
+    "avg": 85,
+    "time": [
+      79,
+      90
+    ]
+  },
+  {
+    "mod": "core::<i16 as intrinsics",
+    "avg": 53,
+    "time": [
+      53
+    ]
+  },
+  {
+    "mod": "core::<i16 as iter",
+    "avg": 94,
+    "time": [
+      73,
+      114
+    ]
+  },
+  {
+    "mod": "core::<i32 as intrinsics",
+    "avg": 82,
+    "time": [
+      82
+    ]
+  },
+  {
+    "mod": "core::<i32 as iter",
+    "avg": 106,
+    "time": [
+      103,
+      109
+    ]
+  },
+  {
+    "mod": "core::<i64 as intrinsics",
+    "avg": 73,
+    "time": [
+      73
+    ]
+  },
+  {
+    "mod": "core::<i64 as iter",
+    "avg": 76,
+    "time": [
+      73,
+      79
+    ]
+  },
+  {
+    "mod": "core::<i8 as intrinsics",
+    "avg": 54,
+    "time": [
+      54
+    ]
+  },
+  {
+    "mod": "core::<i8 as iter",
+    "avg": 87,
+    "time": [
+      69,
+      105
+    ]
+  },
+  {
+    "mod": "core::<isize as intrinsics",
+    "avg": 54,
+    "time": [
+      54
+    ]
+  },
+  {
+    "mod": "core::<isize as iter",
+    "avg": 118,
+    "time": [
+      113,
+      122
+    ]
+  },
+  {
+    "mod": "core::<net",
+    "avg": 142,
+    "time": [
+      109,
+      139,
+      140,
+      178
+    ]
+  },
+  {
+    "mod": "core::<u128 as intrinsics",
+    "avg": 55,
+    "time": [
+      55
+    ]
+  },
+  {
+    "mod": "core::<u128 as iter",
+    "avg": 69,
+    "time": [
+      68,
+      69
+    ]
+  },
+  {
+    "mod": "core::<u16 as intrinsics",
+    "avg": 78,
+    "time": [
+      78
+    ]
+  },
+  {
+    "mod": "core::<u16 as iter",
+    "avg": 105,
+    "time": [
+      101,
+      109
+    ]
+  },
+  {
+    "mod": "core::<u32 as intrinsics",
+    "avg": 53,
+    "time": [
+      53
+    ]
+  },
+  {
+    "mod": "core::<u32 as iter",
+    "avg": 107,
+    "time": [
+      103,
+      110
+    ]
+  },
+  {
+    "mod": "core::<u64 as intrinsics",
+    "avg": 71,
+    "time": [
+      71
+    ]
+  },
+  {
+    "mod": "core::<u64 as iter",
+    "avg": 89,
+    "time": [
+      72,
+      105
+    ]
+  },
+  {
+    "mod": "core::<u8 as intrinsics",
+    "avg": 82,
+    "time": [
+      82
+    ]
+  },
+  {
+    "mod": "core::<u8 as iter",
+    "avg": 84,
+    "time": [
+      64,
+      104
+    ]
+  },
+  {
+    "mod": "core::<usize as intrinsics",
+    "avg": 54,
+    "time": [
+      54
+    ]
+  },
+  {
+    "mod": "core::<usize as iter",
+    "avg": 67,
+    "time": [
+      63,
+      70
+    ]
   },
   {
     "mod": "core::alloc",
-    "cnt": {
-      "not_proof": 58,
-      "standard": 2,
-      "contract": 12
+    "total": 91,
+    "kind": {
+      "AutoContract": 2,
+      "AutoStandard": 1,
+      "Contract": 12,
+      "Standard": 2
     },
-    "avg": 1298,
+    "avg": 1257,
     "time": [
       89,
       143,
+      146,
+      194,
       346,
       489,
       508,
@@ -156,32 +311,24 @@
       1391,
       1756,
       2615,
+      2854,
       3542,
       3638
     ]
   },
   {
     "mod": "core::any",
-    "cnt": {
-      "not_proof": 33,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 28
   },
   {
     "mod": "core::arch",
-    "cnt": {
-      "not_proof": 1,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 1
   },
   {
     "mod": "core::array",
-    "cnt": {
-      "not_proof": 164,
-      "standard": 0,
-      "contract": 1
+    "total": 475,
+    "kind": {
+      "Contract": 1
     },
     "avg": 367,
     "time": [
@@ -190,106 +337,91 @@
   },
   {
     "mod": "core::ascii",
-    "cnt": {
-      "not_proof": 56,
-      "standard": 0,
-      "contract": 0
-    }
-  },
-  {
-    "mod": "core::asserting",
-    "cnt": {
-      "not_proof": 7,
-      "standard": 0,
-      "contract": 0
-    }
-  },
-  {
-    "mod": "core::async_iter",
-    "cnt": {
-      "not_proof": 14,
-      "standard": 0,
-      "contract": 0
-    }
-  },
-  {
-    "mod": "core::bool",
-    "cnt": {
-      "not_proof": 4,
-      "standard": 0,
-      "contract": 0
-    }
-  },
-  {
-    "mod": "core::borrow",
-    "cnt": {
-      "not_proof": 7,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 200,
+    "kind": {
+      "AutoContract": 2
+    },
+    "avg": 178,
+    "time": [
+      92,
+      264
+    ]
   },
   {
     "mod": "core::bstr",
-    "cnt": {
-      "not_proof": 110,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 115
   },
   {
     "mod": "core::cell",
-    "cnt": {
-      "not_proof": 135,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 77
   },
   {
     "mod": "core::char",
-    "cnt": {
-      "not_proof": 187,
-      "standard": 0,
-      "contract": 2
+    "total": 249,
+    "kind": {
+      "AutoContract": 1,
+      "Contract": 2
     },
-    "avg": 289,
+    "avg": 227,
     "time": [
+      104,
       264,
       313
     ]
   },
   {
     "mod": "core::clone",
-    "cnt": {
-      "not_proof": 39,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 29
   },
   {
     "mod": "core::cmp",
-    "cnt": {
-      "not_proof": 306,
-      "standard": 0,
-      "contract": 0
-    }
-  },
-  {
-    "mod": "core::contracts",
-    "cnt": {
-      "not_proof": 1,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 419
   },
   {
     "mod": "core::convert",
-    "cnt": {
-      "not_proof": 391,
-      "standard": 142,
-      "contract": 48
+    "total": 775,
+    "kind": {
+      "AutoStandard": 35,
+      "Contract": 48,
+      "Standard": 142
     },
-    "avg": 344,
+    "avg": 283,
     "time": [
+      27,
+      27,
+      27,
+      28,
+      29,
+      29,
+      29,
+      30,
+      30,
+      34,
+      35,
+      36,
+      37,
+      38,
+      38,
+      39,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      41,
+      41,
+      41,
+      41,
+      41,
+      41,
+      41,
+      41,
+      42,
+      42,
+      42,
       239,
       242,
       242,
@@ -436,51 +568,27 @@
   },
   {
     "mod": "core::core_arch",
-    "cnt": {
-      "not_proof": 6419,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 5398
   },
   {
     "mod": "core::core_simd",
-    "cnt": {
-      "not_proof": 1469,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 932
   },
   {
     "mod": "core::default",
-    "cnt": {
-      "not_proof": 21,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 20
   },
   {
     "mod": "core::error",
-    "cnt": {
-      "not_proof": 42,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 18
   },
   {
     "mod": "core::escape",
-    "cnt": {
-      "not_proof": 27,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 75
   },
   {
     "mod": "core::f128",
-    "cnt": {
-      "not_proof": 51,
-      "standard": 0,
-      "contract": 0
-    },
+    "total": 115,
     "avg": 1251,
     "time": [
       67,
@@ -511,11 +619,7 @@
   },
   {
     "mod": "core::f16",
-    "cnt": {
-      "not_proof": 52,
-      "standard": 0,
-      "contract": 0
-    },
+    "total": 116,
     "avg": 245,
     "time": [
       61,
@@ -546,11 +650,7 @@
   },
   {
     "mod": "core::f32",
-    "cnt": {
-      "not_proof": 53,
-      "standard": 0,
-      "contract": 0
-    },
+    "total": 131,
     "avg": 308,
     "time": [
       58,
@@ -581,11 +681,7 @@
   },
   {
     "mod": "core::f64",
-    "cnt": {
-      "not_proof": 55,
-      "standard": 0,
-      "contract": 0
-    },
+    "total": 134,
     "avg": 364,
     "time": [
       60,
@@ -616,10 +712,10 @@
   },
   {
     "mod": "core::ffi",
-    "cnt": {
-      "not_proof": 60,
-      "standard": 9,
-      "contract": 3
+    "total": 106,
+    "kind": {
+      "Contract": 3,
+      "Standard": 9
     },
     "avg": 135547,
     "time": [
@@ -639,42 +735,47 @@
   },
   {
     "mod": "core::fmt",
-    "cnt": {
-      "not_proof": 386,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 972
   },
   {
     "mod": "core::future",
-    "cnt": {
-      "not_proof": 24,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 4
   },
   {
     "mod": "core::hash",
-    "cnt": {
-      "not_proof": 130,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 51
   },
   {
     "mod": "core::hint",
-    "cnt": {
-      "not_proof": 12,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 18
+  },
+  {
+    "mod": "core::i128",
+    "total": 2
+  },
+  {
+    "mod": "core::i16",
+    "total": 2
+  },
+  {
+    "mod": "core::i32",
+    "total": 2
+  },
+  {
+    "mod": "core::i64",
+    "total": 2
+  },
+  {
+    "mod": "core::i8",
+    "total": 2
   },
   {
     "mod": "core::intrinsics",
-    "cnt": {
-      "not_proof": 456,
-      "standard": 281,
-      "contract": 32
+    "total": 1204,
+    "kind": {
+      "AutoContract": 13,
+      "Contract": 32,
+      "Standard": 281
     },
     "avg": 503,
     "time": [
@@ -995,42 +1096,32 @@
   },
   {
     "mod": "core::io",
-    "cnt": {
-      "not_proof": 26,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 25
+  },
+  {
+    "mod": "core::isize",
+    "total": 2
   },
   {
     "mod": "core::iter",
-    "cnt": {
-      "not_proof": 1304,
-      "standard": 0,
-      "contract": 0
+    "total": 1026,
+    "kind": {
+      "AutoContract": 32
     }
   },
   {
     "mod": "core::kani",
-    "cnt": {
-      "not_proof": 302,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 1545
   },
   {
     "mod": "core::marker",
-    "cnt": {
-      "not_proof": 67,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 55
   },
   {
     "mod": "core::mem",
-    "cnt": {
-      "not_proof": 94,
-      "standard": 0,
-      "contract": 2
+    "total": 1107,
+    "kind": {
+      "Contract": 2
     },
     "avg": 812,
     "time": [
@@ -1040,20 +1131,17 @@
   },
   {
     "mod": "core::net",
-    "cnt": {
-      "not_proof": 229,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 335
   },
   {
     "mod": "core::num",
-    "cnt": {
-      "not_proof": 4885,
-      "standard": 82,
-      "contract": 150
+    "total": 5801,
+    "kind": {
+      "AutoContract": 114,
+      "Contract": 150,
+      "Standard": 82
     },
-    "avg": 843,
+    "avg": 621,
     "time": [
       43,
       43,
@@ -1063,61 +1151,148 @@
       53,
       55,
       57,
+      58,
+      58,
+      59,
+      59,
       59,
       60,
       60,
+      60,
+      60,
+      60,
+      62,
       62,
       62,
       63,
+      63,
+      63,
+      63,
+      64,
       64,
       65,
+      66,
+      67,
+      67,
       67,
       68,
+      68,
+      68,
+      69,
       69,
       69,
       69,
       70,
       71,
+      71,
       74,
       75,
       76,
+      76,
+      78,
       79,
+      80,
+      82,
       82,
       83,
       83,
       84,
+      84,
+      85,
+      85,
+      85,
+      85,
+      86,
+      87,
+      87,
+      87,
+      87,
+      88,
       89,
+      89,
+      89,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      91,
+      91,
+      91,
+      91,
+      92,
       93,
       93,
+      93,
+      93,
+      93,
+      96,
       97,
+      99,
+      101,
       101,
       102,
+      102,
+      102,
+      103,
+      104,
+      105,
+      106,
       106,
       107,
       107,
       109,
       110,
+      110,
+      113,
+      113,
+      113,
       113,
       113,
       114,
+      115,
+      116,
       116,
       117,
       121,
+      123,
+      124,
+      125,
+      126,
+      126,
+      128,
       131,
+      132,
+      133,
+      133,
+      133,
+      133,
+      134,
       135,
       135,
       140,
+      140,
+      142,
+      142,
       144,
+      144,
+      145,
       145,
       145,
       152,
       153,
       158,
+      158,
       160,
+      161,
+      162,
       162,
       162,
       163,
       165,
+      166,
+      167,
       172,
       174,
       174,
@@ -1125,6 +1300,9 @@
       179,
       180,
       183,
+      197,
+      198,
+      202,
       206,
       206,
       208,
@@ -1132,27 +1310,35 @@
       211,
       214,
       215,
+      219,
       222,
       226,
+      234,
       236,
       241,
       245,
       249,
       262,
       263,
+      265,
       267,
       270,
+      273,
       277,
+      283,
       283,
       284,
       285,
       289,
       292,
       294,
+      301,
+      304,
       306,
       308,
       311,
       316,
+      317,
       320,
       320,
       323,
@@ -1188,12 +1374,18 @@
       471,
       474,
       482,
+      484,
       494,
+      510,
       514,
+      514,
+      527,
       543,
       546,
       550,
       555,
+      563,
+      565,
       567,
       596,
       609,
@@ -1202,19 +1394,25 @@
       678,
       688,
       705,
+      720,
       741,
       762,
       772,
       792,
+      807,
       815,
       820,
+      827,
       828,
       843,
+      844,
       869,
+      870,
       903,
       915,
       923,
       976,
+      1001,
       1032,
       1077,
       1104,
@@ -1227,9 +1425,13 @@
       1624,
       1966,
       2140,
+      2169,
       2290,
       2460,
+      2556,
+      2727,
       2750,
+      2780,
       2809,
       3035,
       3657,
@@ -1243,10 +1445,9 @@
   },
   {
     "mod": "core::ops",
-    "cnt": {
-      "not_proof": 2704,
-      "standard": 0,
-      "contract": 3
+    "total": 2747,
+    "kind": {
+      "Contract": 3
     },
     "avg": 512,
     "time": [
@@ -1257,10 +1458,9 @@
   },
   {
     "mod": "core::option",
-    "cnt": {
-      "not_proof": 94,
-      "standard": 1,
-      "contract": 0
+    "total": 473,
+    "kind": {
+      "Standard": 1
     },
     "avg": 375,
     "time": [
@@ -1269,44 +1469,25 @@
   },
   {
     "mod": "core::panic",
-    "cnt": {
-      "not_proof": 35,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 26
   },
   {
     "mod": "core::panicking",
-    "cnt": {
-      "not_proof": 46,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 120
   },
   {
     "mod": "core::pat",
-    "cnt": {
-      "not_proof": 14,
-      "standard": 0,
-      "contract": 0
-    }
-  },
-  {
-    "mod": "core::pin",
-    "cnt": {
-      "not_proof": 41,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 39
   },
   {
     "mod": "core::ptr",
-    "cnt": {
-      "not_proof": 388,
-      "standard": 8,
-      "contract": 367
+    "total": 4749,
+    "kind": {
+      "AutoContract": 7,
+      "Contract": 367,
+      "Standard": 8
     },
-    "avg": 3549,
+    "avg": 3489,
     "time": [
       66,
       78,
@@ -1316,9 +1497,11 @@
       102,
       106,
       118,
+      118,
       125,
       128,
       133,
+      134,
       134,
       137,
       140,
@@ -1385,6 +1568,7 @@
       209,
       211,
       211,
+      211,
       212,
       213,
       213,
@@ -1426,6 +1610,7 @@
       249,
       249,
       250,
+      251,
       252,
       255,
       255,
@@ -1443,6 +1628,7 @@
       289,
       290,
       290,
+      292,
       298,
       301,
       301,
@@ -1492,8 +1678,10 @@
       374,
       375,
       376,
+      379,
       384,
       384,
+      387,
       387,
       389,
       390,
@@ -1686,35 +1874,19 @@
     ]
   },
   {
-    "mod": "core::random",
-    "cnt": {
-      "not_proof": 16,
-      "standard": 0,
-      "contract": 0
-    }
-  },
-  {
     "mod": "core::range",
-    "cnt": {
-      "not_proof": 90,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 16
   },
   {
     "mod": "core::result",
-    "cnt": {
-      "not_proof": 71,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 160
   },
   {
     "mod": "core::slice",
-    "cnt": {
-      "not_proof": 734,
-      "standard": 62,
-      "contract": 140
+    "total": 2219,
+    "kind": {
+      "Contract": 140,
+      "Standard": 61
     },
     "avg": 6579,
     "time": [
@@ -1923,10 +2095,9 @@
   },
   {
     "mod": "core::str",
-    "cnt": {
-      "not_proof": 549,
-      "standard": 1,
-      "contract": 0
+    "total": 581,
+    "kind": {
+      "Standard": 1
     },
     "avg": 56566,
     "time": [
@@ -1935,32 +2106,29 @@
   },
   {
     "mod": "core::sync",
-    "cnt": {
-      "not_proof": 426,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 646
   },
   {
     "mod": "core::task",
-    "cnt": {
-      "not_proof": 66,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 54
   },
   {
     "mod": "core::time",
-    "cnt": {
-      "not_proof": 73,
-      "standard": 2,
-      "contract": 22
+    "total": 120,
+    "kind": {
+      "AutoContract": 4,
+      "Contract": 22,
+      "Standard": 2
     },
-    "avg": 8931,
+    "avg": 7671,
     "time": [
       75,
       80,
       80,
+      95,
+      112,
+      114,
+      121,
       128,
       138,
       141,
@@ -1986,42 +2154,54 @@
   },
   {
     "mod": "core::tuple",
-    "cnt": {
-      "not_proof": 180,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 52
+  },
+  {
+    "mod": "core::u128",
+    "total": 2
+  },
+  {
+    "mod": "core::u16",
+    "total": 2
+  },
+  {
+    "mod": "core::u32",
+    "total": 2
+  },
+  {
+    "mod": "core::u64",
+    "total": 2
+  },
+  {
+    "mod": "core::u8",
+    "total": 2
   },
   {
     "mod": "core::ub_checks",
-    "cnt": {
-      "not_proof": 31,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 38
   },
   {
     "mod": "core::unicode",
-    "cnt": {
-      "not_proof": 22,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 135,
+    "kind": {
+      "AutoStandard": 2
+    },
+    "avg": 15496,
+    "time": [
+      11384,
+      19607
+    ]
   },
   {
     "mod": "core::unit",
-    "cnt": {
-      "not_proof": 4,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 1
+  },
+  {
+    "mod": "core::usize",
+    "total": 2
   },
   {
     "mod": "core::wtf8",
-    "cnt": {
-      "not_proof": 59,
-      "standard": 0,
-      "contract": 0
-    }
+    "total": 82
   }
 ]

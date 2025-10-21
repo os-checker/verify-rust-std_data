@@ -123,32 +123,47 @@ merge_results() {
 }
 
 chart() {
-  jq 'map(
-    select(.crate and .time)
-    # extract `crate::submod`
-    | { mod: ( .crate + "::" + (.func.name | split("::")[0]) ), time }
-  )
-  | group_by(.mod)
-  | map({
-      mod: .[0].mod,
-      avg: (map(.time) | add / length) | round,
-      time: map(.time) | sort
-    })
-  ' merge_results-core.json >chart/time.json
-
-  # Merge and flatten data.
   jq --slurp '
-    map( .local.count_in_module | to_entries | map({ mod: .key, cnt: .value }) ) | flatten 
-  ' ../../assets/json/stat/*.json >chart/count.json
+    { merge: .[0], path: .[1] } as $root
+    | $root.merge
+    | map( # filter and select { mod, proof_kind }
+        if (.crate and $root.path[.crate][.harness]) then
+          { mod: $root.path[.crate][.harness], proof_kind, time }
+        else null end
+        | select(.)
+    ) 
+    | group_by(.mod)
+    | . as $gmod
 
-  jq --slurp '
-    add | group_by(.mod) | map(
-      add
-      | select(.mod | startswith("core") or startswith("std") or startswith("alloc"))
+    # aggregate kind count
+    | map(
+        . as $mod
+        | group_by(.proof_kind)
+        | map({ (.[0].proof_kind): length }) | add | . as $kind
+        | { ($mod.[0].mod): $kind }
+      )
+    | add | . as $cntKind
+
+    # aggregate time
+    | $gmod
+    | map({ (.[0].mod): {
+          avg: (map(.time) | add / length) | round,
+          time: map(.time) | sort
+        }
+      })
+    | add | . as $time
+
+    # merge
+    | $root.path
+    | to_entries | map(.value | to_entries | map(.value)) | add # extract modules
+    | map(select(startswith("core") or startswith("alloc")))    # filter out modules
+    | group_by(.)
+    | map( 
+        { mod: .[0], total: length, kind: $cntKind[.[0]], time: $time[.[0]] }
+        | del(.kind | select(. == null))
+        | del(.time | select(. == null))
     )
-  ' chart/count.json chart/time.json >chart/merged.json
-
-  jless chart/merged.json
+  ' merge_results-core.json path.json | jless >chart/merged.json
 }
 
 declare -A cmds=(
