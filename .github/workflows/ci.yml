@@ -9,6 +9,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Mount /dev/sda1
-        run: |
-          mkdir data
-          ls -lhd .
+        run: .github/ci.sh
