@@ -16,6 +16,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: os-checker/distributed-verification
+          ref: verify-rust-std-ci
       - name: Mount /dev/sda1
         run: .github/workflows/init-submodules.sh
   dv-mnt:
@@ -24,5 +25,8 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: os-checker/distributed-verification
+          ref: verify-rust-std-ci
       - name: Mount /dev/sda1
-        run: .github/workflows/init-submodules.sh
+        run: |
+          wget https://raw.githubusercontent.com/os-checker/verify-rust-std_data/refs/heads/main/.github/mnt.sh
+          sh mnt.sh
