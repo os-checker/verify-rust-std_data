@@ -7,7 +7,7 @@ jobs:
   ci:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Mount /dev/sda1
         run: .github/ci.sh
   dv:
@@ -22,7 +22,7 @@ jobs:
   dv-mnt:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           repository: os-checker/distributed-verification
           ref: verify-rust-std-ci
