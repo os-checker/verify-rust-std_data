@@ -16,21 +16,21 @@ echo "Mount /mnt (/dev/sda1) to verify-rust-std because the available space is $
 
 TARGET_DIR=$PWD/verify-rust-std
 
-ls -lhd .
+ls -lha .
 rm "$TARGET_DIR" -rf
 mkdir "$TARGET_DIR" -p
-ls -lhd .
+ls -lha .
 
-sudo mkdir -p /mnt/my
-sudo chown runner:runner /mnt/my
-sudo chmod 755 /mnt/my
-
-rsync -aHAX "$TARGET_DIR"/ /mnt/my/
-sudo mount --bind /mnt/my "$TARGET_DIR"
-
-git submodule update --init --recursive kani verify-rust-std
-
-ls -alh "$TARGET_DIR"
-ls -alh /mnt/my
-
-df -alh
+# sudo mkdir -p /mnt/my
+# sudo chown runner:runner /mnt/my
+# sudo chmod 755 /mnt/my
+#
+# rsync -aHAX "$TARGET_DIR"/ /mnt/my/
+# sudo mount --bind /mnt/my "$TARGET_DIR"
+#
+# git submodule update --init --recursive kani verify-rust-std
+#
+# ls -alh "$TARGET_DIR"
+# ls -alh /mnt/my
+#
+# df -alh
