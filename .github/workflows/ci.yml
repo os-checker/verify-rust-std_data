@@ -29,4 +29,4 @@ jobs:
       - name: Mount /dev/sda1
         run: |
           wget https://raw.githubusercontent.com/os-checker/verify-rust-std_data/refs/heads/main/.github/mnt.sh
-          sh mnt.sh
+          bash mnt.sh

@@ -16,7 +16,7 @@ echo "Mount /mnt (/dev/sda1) to verify-rust-std because the available space is $
 
 TARGET_DIR=$PWD/verify-rust-std
 
-s -lhd .
+ls -lhd .
 rm "$TARGET_DIR" -rf
 mkdir "$TARGET_DIR" -p
 ls -lhd .
